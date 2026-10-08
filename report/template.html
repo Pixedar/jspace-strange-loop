@@ -1,0 +1,617 @@
+<title>Strange Loop in J-space</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap">
+<style>
+/* Layout: a lab notebook. One reading column (~66ch) with figures that break out wider; the explorer is the one
+   full-width instrument. Condition colours are the only saturated colour on the page. */
+:root {
+  --bg: #f4f5f7; --surface: #ffffff; --ink: #14161c; --ink2: #464b59; --muted: #767c8c; --rule: #dcdfe6;
+  --grid: #eceef2; --accent: #3a3f9e; --chip: #eef0f5; --mark: #fff3c4;
+  --c-free: #2a78d6; --c-loop: #eb6834; --c-yoked: #1baf7a; --c-avg: #eda100; --c-perturb: #e87ba4;
+  --c-ablate: #008300; --c-clamp: #4a3aa7; --div-neg: #2a78d6; --div-pos: #e34948; --neutral: #9aa0ad;
+  --f-display: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
+  --f-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --f-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #111216; --surface: #191a20; --ink: #eceef4; --ink2: #b9bdcb; --muted: #8b91a3; --rule: #2c2f39;
+  --grid: #23252d; --accent: #a3a8ff; --chip: #24262f; --mark: #3b3418;
+  --c-free: #3987e5; --c-loop: #d95926; --c-yoked: #199e70; --c-avg: #c98500; --c-perturb: #d55181;
+  --c-ablate: #008300; --c-clamp: #9085e9; --div-neg: #3987e5; --div-pos: #e66767; --neutral: #6c7282; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #111216; --surface: #191a20; --ink: #eceef4; --ink2: #b9bdcb; --muted: #8b91a3; --rule: #2c2f39;
+  --grid: #23252d; --accent: #a3a8ff; --chip: #24262f; --mark: #3b3418;
+  --c-free: #3987e5; --c-loop: #d95926; --c-yoked: #199e70; --c-avg: #c98500; --c-perturb: #d55181;
+  --c-ablate: #008300; --c-clamp: #9085e9; --div-neg: #3987e5; --div-pos: #e66767; --neutral: #6c7282; color-scheme: dark }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font: 16px/1.62 var(--f-body); margin: 0 }
+.page { padding-inline: 20px; padding-block: 40px 80px; max-width: 1120px; margin: 0 auto }
+.col { max-width: 700px; margin-inline: auto }
+.wide { max-width: 1080px; margin-inline: auto }
+h1, h2, h3 { text-wrap: balance; font-weight: 400 }
+h1 { font: 400 clamp(44px, 7vw, 76px)/1.0 var(--f-display); letter-spacing: -0.01em; margin: 0 0 14px }
+h2 { font: 400 clamp(30px, 4vw, 40px)/1.1 var(--f-display); margin: 72px 0 12px }
+h3 { font: 600 17px/1.3 var(--f-body); margin: 34px 0 6px }
+p { margin: 0 0 14px }
+.lede { font-size: 19px; line-height: 1.5; color: var(--ink2); max-width: 640px }
+.meta { font: 13px/1.6 var(--f-mono); color: var(--muted); margin-top: 18px; display: flex; flex-wrap: wrap; gap: 4px 16px }
+.eyebrow { font: 500 12px/1 var(--f-mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin: 0 0 10px }
+a { color: var(--accent) }
+code, .mono { font-family: var(--f-mono); font-size: .88em }
+.loopword { font-family: var(--f-display); font-style: italic; font-size: 1.12em }
+hr { border: 0; border-top: 1px solid var(--rule); margin: 56px 0 }
+.verdict { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin-top: 34px; border-top: 1px solid var(--ink); border-bottom: 1px solid var(--rule) }
+.verdict > div { padding: 18px 22px 18px 0; min-width: 0 }
+.verdict > div + div { padding-left: 22px; border-left: 1px solid var(--rule) }
+.verdict h3 { margin: 0 0 10px; font: 400 26px/1.1 var(--f-display) }
+.verdict ul { margin: 0; padding-left: 18px; display: grid; gap: 8px }
+.verdict li { font-size: 15px; line-height: 1.5 }
+@media (max-width: 720px) { .verdict { grid-template-columns: 1fr } .verdict > div + div { padding-left: 0; border-left: 0; border-top: 1px solid var(--rule) } }
+.qa { width: 100%; border-collapse: collapse; font-size: 14.5px; line-height: 1.45 }
+.qa th { text-align: left; font: 500 12px/1.2 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding: 8px 12px 8px 0; border-bottom: 1px solid var(--ink) }
+.qa td { vertical-align: top; padding: 12px 12px 12px 0; border-bottom: 1px solid var(--rule) }
+.qa td:first-child { width: 28%; font-style: italic; color: var(--ink2) }
+.qa td:nth-child(2) { width: 34% }
+.qa td:last-child { font: 13px/1.5 var(--f-mono); color: var(--ink2); font-variant-numeric: tabular-nums }
+.tbl { overflow-x: auto }
+.pill { display: inline-block; font: 600 11px/1 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 3px; margin-right: 6px; vertical-align: 1px }
+.pill.yes { background: color-mix(in oklab, var(--c-yoked) 22%, transparent); color: var(--ink) }
+.pill.part { background: color-mix(in oklab, var(--c-avg) 26%, transparent); color: var(--ink) }
+.pill.no { background: color-mix(in oklab, var(--div-pos) 20%, transparent); color: var(--ink) }
+figure { margin: 26px 0 30px }
+figcaption { font-size: 13.5px; line-height: 1.5; color: var(--ink2); margin-top: 10px; max-width: 700px }
+figcaption b { color: var(--ink); font-weight: 600 }
+.fig-title { font: 600 14px/1.3 var(--f-body); margin: 0 0 2px }
+.fig-sub { font-size: 13px; color: var(--muted); margin: 0 0 10px }
+.charts2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px }
+@media (max-width: 760px) { .charts2 { grid-template-columns: 1fr } }
+.charts2 > * { min-width: 0 }
+.chart { position: relative; width: 100% }
+.chart svg { display: block; width: 100%; height: auto; overflow: visible }
+.chart text { fill: var(--muted); font: 11px var(--f-mono) }
+.chart .lbl { fill: var(--ink2); font: 11.5px var(--f-body) }
+.chart .val { fill: var(--ink); font: 500 11px var(--f-mono) }
+.chart .axis { stroke: var(--rule) }
+.chart .gridl { stroke: var(--grid) }
+.tip { position: absolute; pointer-events: none; background: var(--surface); border: 1px solid var(--rule); border-radius: 4px; padding: 7px 9px; font: 12px/1.45 var(--f-mono); color: var(--ink); box-shadow: 0 4px 14px rgba(0,0,0,.12); white-space: nowrap; z-index: 5 }
+.tip .sw { display: inline-block; width: 9px; height: 9px; border-radius: 2px; margin-right: 6px; vertical-align: 0 }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 12.5px; color: var(--ink2); margin: 0 0 8px }
+.legend span { display: inline-flex; align-items: center; gap: 6px }
+.legend i { width: 14px; height: 3px; border-radius: 2px; display: inline-block }
+.legend i.dash { background: repeating-linear-gradient(90deg, currentColor 0 4px, transparent 4px 7px) !important; height: 2px }
+.quote { border-left: 2px solid var(--rule); padding: 2px 0 2px 16px; margin: 18px 0; color: var(--ink2) }
+.quote p { font: italic 400 19px/1.45 var(--f-display); color: var(--ink); margin-bottom: 6px }
+.quote small { font: 12px var(--f-mono); color: var(--muted) }
+.pair { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 20px 0 }
+@media (max-width: 640px) { .pair { grid-template-columns: 1fr } }
+.pair .quote { margin: 0 }
+/* the machine */
+.machine { overflow-x: auto; margin: 22px 0 8px }
+.machine svg { min-width: 760px; width: 100%; height: auto; display: block }
+.machine .box { fill: var(--surface); stroke: var(--rule) }
+.machine .boxk { fill: var(--surface); stroke: var(--ink) }
+.machine .t1 { fill: var(--ink); font: 600 13px var(--f-body) }
+.machine .t2 { fill: var(--ink2); font: 12px var(--f-body) }
+.machine .t3 { fill: var(--muted); font: 11px var(--f-mono) }
+.machine .ar { stroke: var(--ink2); fill: none; stroke-width: 1.4 }
+.machine .arl { stroke: var(--c-loop); fill: none; stroke-width: 2 }
+.machine .tl { fill: var(--c-loop); font: 600 12px var(--f-body) }
+.conds { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 0; border-top: 1px solid var(--rule); margin-top: 18px }
+.conds div { padding: 12px 14px 12px 0; border-bottom: 1px solid var(--rule); font-size: 14px; line-height: 1.45; min-width: 0 }
+.conds b { display: flex; align-items: center; gap: 8px; font: 600 13px var(--f-mono) }
+.conds b i { width: 10px; height: 10px; border-radius: 2px; display: inline-block }
+.conds span { color: var(--ink2) }
+/* explorer */
+.explorer { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 18px; margin-top: 18px }
+.controls { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: end; margin-bottom: 14px }
+.controls label { display: grid; gap: 4px; font: 500 11px var(--f-mono); letter-spacing: .06em; text-transform: uppercase; color: var(--muted) }
+.controls select, .controls button { font: 14px var(--f-body); color: var(--ink); background: var(--bg); border: 1px solid var(--rule); border-radius: 4px; padding: 6px 8px; min-height: 34px }
+.controls button { cursor: pointer; padding-inline: 14px; font-weight: 500 }
+.controls button:hover { border-color: var(--ink2) }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px }
+.slider { display: flex; gap: 12px; align-items: center; margin: 4px 0 12px }
+.slider input { flex: 1; min-width: 0; accent-color: var(--accent) }
+.slider output { font: 500 13px var(--f-mono); min-width: 9ch; text-align: right; font-variant-numeric: tabular-nums }
+.ex-grid { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: 20px }
+@media (max-width: 860px) { .ex-grid { grid-template-columns: 1fr } }
+.canvas-wrap { position: relative; aspect-ratio: 1.25; max-width: 100%; border: 1px solid var(--grid); border-radius: 4px; background: var(--bg) }
+.canvas-wrap canvas { width: 100%; height: 100%; display: block; cursor: crosshair }
+.canvas-wrap .ax { position: absolute; font: 11px var(--f-mono); color: var(--muted) }
+.panel { min-width: 0; display: grid; gap: 14px; align-content: start }
+.panel .k { font: 500 11px var(--f-mono); letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 4px }
+.panel .thought { font: italic 400 20px/1.4 var(--f-display); color: var(--ink); min-height: 4.2em }
+.chips { display: flex; flex-wrap: wrap; gap: 5px }
+.chips span { font: 12.5px var(--f-mono); background: var(--chip); border-radius: 3px; padding: 2px 7px }
+.chips.self span { background: color-mix(in oklab, var(--c-clamp) 16%, var(--chip)) }
+.said { font-size: 14px; line-height: 1.5; color: var(--ink2) }
+.said em { color: var(--ink) }
+.fed { font: 12.5px var(--f-mono); color: var(--ink2) }
+.strip { position: relative; display: flex; height: 30px; margin-top: 14px; border-radius: 3px; overflow: hidden; background: var(--grid) }
+.strip div { height: 100%; font: 10.5px/30px var(--f-mono); color: var(--ink2); overflow: hidden; white-space: nowrap; text-overflow: ellipsis; padding: 0 3px; border-right: 1px solid var(--surface) }
+.strip div:nth-child(odd) { background: var(--rule) }
+.strip .now { position: absolute; top: 0; bottom: 0; width: 2px; background: var(--ink); padding: 0; border: 0 }
+.strip-cap { display: flex; justify-content: space-between; font: 11px var(--f-mono); color: var(--muted); margin-top: 4px }
+.note { font-size: 13px; color: var(--muted) }
+.callout { background: var(--surface); border: 1px solid var(--rule); border-radius: 6px; padding: 16px 18px; margin: 22px 0 }
+.callout p:last-child { margin: 0 }
+ol.plain, ul.plain { padding-left: 20px } ol.plain li, ul.plain li { margin-bottom: 8px }
+.params { width: 100%; border-collapse: collapse; font-size: 13.5px }
+.params td { padding: 7px 10px 7px 0; border-bottom: 1px solid var(--rule); vertical-align: top }
+.params td:first-child { font-family: var(--f-mono); font-size: 12.5px; color: var(--ink2); white-space: nowrap }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important } }
+</style>
+
+<div class="page">
+<header class="col">
+  <p class="eyebrow">Experiment log · 8 October 2026</p>
+  <h1>Strange Loop in J-space</h1>
+  <p class="lede">A language model left to wander with no memory of its own words, only a latent state. Every ten thoughts it is asked what its mind has been doing, it answers from that state alone, and the answer is fed back into everything it thinks next. The question was whether something like a persistent self would form inside that loop.</p>
+  <div class="meta"><span>Qwen3-4B-Base</span><span>J-lens at layer 16</span><span>3 runs · 180 minds · 72,000 thoughts</span><span>RTX 4090 on Vast.ai</span></div>
+  <div class="verdict">
+    <div><h3>What emerged</h3><ul>
+      <li>The model can read its own trajectory from states alone: its self-model picks out its own last ten moments among 10 to 15 minds <b>50 to 82 %</b> of the time (chance 7 to 10 %).</li>
+      <li>A <b>self-symbol forms</b>: in every run the self-model is steadier than the thoughts it describes, and in the loop each mind keeps <b>its own</b> individual self-model (stability 0.83 against 0.23 for an observer).</li>
+      <li>The loop is <b>causal and self-sustaining</b>: remove the self-model and long-range coherence falls straight back to baseline; install a different self and it keeps reconstructing that one <b>after release</b>.</li>
+    </ul></div>
+    <div><h3>What did not</h3><ul>
+      <li>The loop does not care <b>whose</b> self it is. A self-model taken from another mind is adopted, reconstructed and stabilised almost exactly as well as the mind's own.</li>
+      <li>The self-model predicts the future only by <b>causing</b> it. Fed back, a foreign self-model predicts a mind's next thoughts better than that mind's own unused self-model, in every seed of every run.</li>
+      <li>No anticipation: asked where its mind will go next, the workspace gives the same answer as when asked where it has been (cosine 0.94 to 0.96).</li>
+    </ul></div>
+  </div>
+</header>
+
+<section class="col">
+  <h2>Your six questions</h2>
+  <p>Each answer pools the three runs. A and B use the self-model as read; C feeds back only the part that sets one mind's self-model apart from the population's. Differences are paired by seed, with the number of seeds that go the same way.</p>
+  <div class="tbl"><table class="qa">
+    <thead><tr><th>Question</th><th>Answer</th><th>Evidence</th></tr></thead>
+    <tbody>
+    <tr><td>Does something resembling a persistent self-symbol emerge?</td><td><span class="pill yes">Yes</span>A self-model that changes less than the content it describes; with individuated feedback, one per mind.</td><td>self vs content stability, observers: A +0.16 (10/10), B +0.26 (10/10), C +0.38 (15/15). Run C loop: individual part 0.83 vs 0.23 observer; own vs other minds' symbol +0.23 (14/15)</td></tr>
+    <tr><td>Does the system repeatedly reconstruct roughly the same self-description?</td><td><span class="pill yes">Yes</span>The next reflection re-forms what was fed in.</td><td>next self-model vs fed-back one: A 0.78, B 0.89, C (individual part) 0.80</td></tr>
+    <tr><td>Does that self-description become an attractor?</td><td><span class="pill part">Yes, any</span>Multistable: whatever self occupies the loop sustains itself. A foreign one is held almost as well as the mind's own.</td><td>loop − yoked reconstruction: A +0.017 ± 0.011, B +0.020 ± 0.006, C +0.029 ± 0.023. After a 50-thought clamp, self stays with the foreign one: +0.58 (13/15), old self −0.41 (3/15)</td></tr>
+    <tr><td>If you perturb the self-model, does the trajectory reorganise around it?</td><td><span class="pill yes">Yes</span>Briefly after a one-shot swap; strongly and lastingly when held for 50 thoughts.</td><td>one-shot, next 30 thoughts: A +0.08 (7/10), B +0.04 (7/10), gone later. Clamp: +0.37 during (14/15), +0.31 for 50 thoughts after release (14/15)</td></tr>
+    <tr><td>Does removing the self-model destroy long-term coherence?</td><td><span class="pill yes">Yes</span>At once, back to the observer level. But a foreign self-model sustains it just as well.</td><td>long-lag coherence after removal: A −0.13, B −0.24 (0/10 hold up). loop − yoked coherence: A +0.02, B +0.02, C +0.02, none significant</td></tr>
+    <tr><td>Can the self-representation predict the trajectory better than an equally sized unrelated one?</td><td><span class="pill no">Only by causing it</span>As an observer it beats other minds' self-models only through persistence; nothing beyond where the mind has been.</td><td>observer own − other: A +0.05, B +0.07, C +0.06 (all seeds); beyond the past: −0.05, −0.05, −0.04 (0 seeds). Yoked: injected foreign beats own in 0/10, 1/10, 0/15 seeds</td></tr>
+    </tbody></table></div>
+  <p class="note">So the causal loop the hypothesis asks for is there: a model of the trajectory, re-formed from the trajectory, that shapes the trajectory. What it lacks is the "self" in the strong sense. The loop holds a symbol, but the symbol's power comes from occupying the loop, not from being about this particular system.</p>
+</section>
+
+<section class="col">
+  <h2>The machine</h2>
+  <p>The loop needs a model that thinks in steps but carries nothing from one step to the next except an internal state. A transformer reads its whole context, so I took the context away. Every thought is generated fresh from the same short frame (a think-aloud transcript, "Excerpt from the middle of the session: …"). The only thing that survives from one thought to the next is a vector added into the residual stream.</p>
+</section>
+<div class="wide machine" role="img" aria-label="Diagram of the loop: thought, J-space content, recurrent state, reflection on ten states, self-model fed back">
+<svg viewBox="0 0 1040 360" xmlns="http://www.w3.org/2000/svg">
+  <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--ink2)"/></marker>
+  <marker id="ahl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--c-loop)"/></marker></defs>
+  <rect class="boxk" x="10" y="30" width="200" height="96" rx="5"/>
+  <text class="t1" x="24" y="56">A thought</text><text class="t2" x="24" y="76">fixed frame, no history,</text><text class="t2" x="24" y="93">40 sampled tokens</text><text class="t3" x="24" y="114">Qwen3-4B-Base</text>
+  <rect class="box" x="270" y="30" width="210" height="96" rx="5"/>
+  <text class="t1" x="284" y="56">Its J-space content c_t</text><text class="t2" x="284" y="76">layer-16 states of its words,</text><text class="t2" x="284" y="93">16 J-lens word atoms (OMP)</text><text class="t3" x="284" y="114">minus the typical workspace</text>
+  <rect class="box" x="540" y="30" width="210" height="96" rx="5"/>
+  <text class="t1" x="554" y="56">Recurrent state z</text><text class="t2" x="554" y="76">z ← 0.6 z + 0.4 c_t</text><text class="t2" x="554" y="93">the only memory there is</text><text class="t3" x="554" y="114">this is the path drawn below</text>
+  <path class="ar" d="M210,78 H262" marker-end="url(#ah)"/><path class="ar" d="M480,78 H532" marker-end="url(#ah)"/>
+  <path class="ar" d="M645,30 V12 H110 V24" marker-end="url(#ah)"/>
+  <text class="t3" x="300" y="9">added at layer 16 into every position of the next thought</text>
+  <rect class="boxk" x="810" y="30" width="220" height="150" rx="5"/>
+  <text class="t1" x="824" y="56">Every 10 thoughts: reflect</text><text class="t2" x="824" y="76">the last ten states go into ten</text><text class="t2" x="824" y="93">marks "· · · · · · · · · ·" (layer 12)</text>
+  <text class="t2" x="824" y="116">"Asked what their mind had been</text><text class="t2" x="824" y="133">doing … my mind has been ▮"</text><text class="t3" x="824" y="158">no text of any thought is given</text>
+  <path class="ar" d="M750,78 H802" marker-end="url(#ah)"/>
+  <rect class="box" x="810" y="220" width="220" height="110" rx="5"/>
+  <text class="t1" x="824" y="246">Self-model m</text><text class="t2" x="824" y="266">J-space of the workspace at ▮,</text><text class="t2" x="824" y="283">read before a word is said</text><text class="t3" x="824" y="306">its spoken answer is logged only</text>
+  <path class="ar" d="M920,180 V212" marker-end="url(#ah)"/>
+  <path class="arl" d="M810,275 H110 V134" marker-end="url(#ahl)"/>
+  <text class="tl" x="300" y="266">fed back with z into every following thought (the strange loop)</text>
+  <text class="t3" x="300" y="300">which self-model is fed back is what the conditions change</text>
+</svg></div>
+<div class="col">
+  <p>Two details decide whether this works, and both were found the hard way in the pilots. The J-lens atoms share one dominant direction (the mean unembedding row, mean pairwise cosine 0.64), so every workspace vector pointed the same way until the unembedding was centred. And the reflection must inject the states a few layers <i>below</i> where it reads the self-model: at the same layer the answer cannot see them at all (fidelity exactly chance).</p>
+  <div class="conds" id="conds"></div>
+</div>
+
+<section class="wide">
+  <h2 class="col" style="max-width:none">The path through J-space</h2>
+  <p class="col" style="margin-left:0">Each line is one mind's recurrent state, projected onto the two main axes of all thoughts in its run. Pick a mind and a condition, compare it with its twin (same seed, same sampling noise, identical until the first self-model is fed back), and scrub through time. Rings mark reflections. The strip below names the theme the mind is in at each moment.</p>
+  <div class="explorer" id="explorer">
+    <div class="controls">
+      <label for="ex-run">Run<select id="ex-run"><option value="C">C · individuated self (15 minds each)</option><option value="B">B · full self-model (10 minds each)</option></select></label>
+      <label for="ex-seed">Mind<select id="ex-seed"></select></label>
+      <label for="ex-cond">Condition<select id="ex-cond"></select></label>
+      <label for="ex-cmp">Compare with twin<select id="ex-cmp"></select></label>
+      <button id="ex-play" type="button">Play</button>
+    </div>
+    <div class="slider"><input id="ex-t" type="range" min="0" max="399" value="399" aria-label="Thought"><output id="ex-tout">thought 400</output></div>
+    <div class="ex-grid">
+      <div><div class="canvas-wrap"><canvas id="ex-canvas" aria-label="Path of the recurrent state through J-space"></canvas><span class="ax" id="ex-ax1" style="right:8px;bottom:4px"></span><span class="ax" id="ex-ax2" style="left:8px;top:4px"></span></div>
+        <div class="legend" id="ex-legend" style="margin-top:8px"></div></div>
+      <div class="panel" id="ex-panel"><p class="note">Loading the run…</p></div>
+    </div>
+    <div class="strip" id="ex-strip"></div>
+    <div class="strip-cap"><span>thought 1</span><span id="ex-themecap">themes of this mind's thoughts</span><span>400</span></div>
+  </div>
+</section>
+
+<section class="col">
+  <h2>It can read its own trajectory</h2>
+  <p>Before any loop is worth studying, the reflection has to carry information about the trajectory and not just the frame. It does. The self-model is closer to the mind's own last ten states than to anyone else's, and if you hand it the ten windows of all minds at that moment it picks its own one far above chance. Injecting the trace at layer 14 reads it best; at layer 16, where the self-model is read, it is invisible.</p>
+  <figure><p class="fig-title">How often the self-model picks out its own last ten moments</p><p class="fig-sub">among all minds of the same condition at the same reflection; tick = chance</p>
+    <div class="chart" id="ch-fid"></div>
+    <figcaption>The <b>spoken</b> answer carries much less. Twins in different conditions mostly say the same sentence (<i>"thinking about the fact that I'm in a recording studio…"</i>), because the sampling noise is shared and the frame dominates the words. The workspace at the moment before speaking knows more than the mouth says.</figcaption></figure>
+</section>
+
+<section class="col">
+  <h2>A self-symbol forms</h2>
+  <p>In every run and every condition, consecutive self-models are more alike than the windows of thought they describe. Even a pure observer, whose self-model never touches anything, re-describes itself more consistently than it thinks. Much of that self-model is generic, though: different minds' self-models are almost as alike as one mind's successive ones (a shared "mind reflecting during a recording session").</p>
+  <figure><p class="fig-title">Stability from one reflection to the next</p><p class="fig-sub">cosine between consecutive self-models vs between the consecutive ten-thought windows they describe</p>
+    <div class="legend" id="lg-stab"></div><div class="chart" id="ch-stab"></div>
+    <figcaption>Feeding the self-model back raises both: the thoughts settle (content 0.71 to 0.83 in the loop against 0.34 to 0.46 for observers) and the self-model settles further.</figcaption></figure>
+  <p>Run C asks the sharper question. If only the individual part of the self-model is fed back (the self-model minus the observers' average at that moment), does each mind keep a self of its own? It does. The individual part of an observer's self-model is gone by the next reflection (0.23); in the loop it persists (0.83), and it stays distinct from other minds' (0.14 between minds). A mind's early self-model is closer to its own later self than to any other mind's in 14 of 15 seeds.</p>
+  <figure><p class="fig-title">The individual part of the self-model, run C</p><p class="fig-sub">what is left after removing the population's generic self-model</p>
+    <div class="chart" id="ch-ind"></div></figure>
+</section>
+
+<section class="col">
+  <h2>It is an attractor, and the old self does not come back</h2>
+  <p>To test whether the self-model is an attractor, run C held a foreign mind's individual self in place for 50 thoughts (thoughts 150 to 199) and then released it. The twin of each clamped mind ran on undisturbed.</p>
+  <figure><div class="legend" id="lg-clamp"></div>
+    <div class="charts2"><div><p class="fig-title">Similarity to the foreign self</p><p class="fig-sub">the clamped vector, at each reflection</p><div class="chart" id="ch-clamp-f"></div></div>
+    <div><p class="fig-title">Similarity to its own old self</p><p class="fig-sub">its self-model at thought 150</p><div class="chart" id="ch-clamp-o"></div></div></div>
+    <figcaption>Shaded: the clamp. While it is held, the mind's own reflection reconstructs the foreign self (0.69 above the twin) and the trajectory reorganises around it (+0.37). After release nothing pulls it back: 50 reflections later it is still closer to the foreign self than its twin is (+0.32, 12 of 15 seeds). Mean ± 1 s.e. over 15 minds.</figcaption></figure>
+  <div class="pair">
+    <div class="quote"><p>"I know that the whole idea of an individual with this technology is very far from the way we use it today."</p><small>mind 0, thought 190, foreign self clamped (self-model: inbox, Airbnb, cybersecurity)</small></div>
+    <div class="quote"><p>"I know that the whole of the universe is not only an illusion, but it is actually a projection of our consciousness."</p><small>its twin, same thought, same sampling noise (self-model: emoji, glitch, vibe)</small></div>
+  </div>
+  <p>A one-shot swap (runs A and B) gives the short version of the same story: the next self-model leans toward the foreign one (A +0.12, B +0.04) and the next 30 thoughts follow it (A +0.08, B +0.04), then both fade into the mind's ordinary drift. Ten thoughts of a foreign self are not enough to move the mind; fifty are, and then the move is permanent.</p>
+</section>
+
+<section class="col">
+  <h2>Remove it and coherence collapses</h2>
+  <p>Coherence here is how much a mind's thought now resembles its thought 20 steps ago. In run B the ablated twins lose the self-model at thought 200 and fall immediately to the observers' level, in all ten minds, while the loop carries on unchanged.</p>
+  <figure><div class="legend" id="lg-abl"></div><div class="chart" id="ch-abl"></div>
+    <figcaption>Run B, mean over 10 minds, smoothed over 9 thoughts. The yoked minds, fed another mind's self-model, are as coherent as the loop: coherence comes from a reflective model being fed back, not from it being one's own.</figcaption></figure>
+  <figure><p class="fig-title">How alike different minds become</p><p class="fig-sub">cosine between the thoughts of different minds at the same moment, run B</p>
+    <div class="legend" id="lg-cross"></div><div class="chart" id="ch-cross"></div>
+    <figcaption>With the full self-model fed back, the minds drift into one shared region of J-space (0.32 against 0.08 for observers): the generic part of the self-model pulls everyone the same way. Run C removes exactly that part, and its looping minds stay as distinct as observers until the clamp.</figcaption></figure>
+</section>
+
+<section class="col">
+  <h2>Own or foreign makes little difference</h2>
+  <p>This is the comparison the "self" claim stands on: the loop (own self-model) against yoked minds that receive another mind's self-model with the same schedule, size and statistics. Every difference is small. A few are consistent across seeds, all in the loop's favour, but none comes close to the effect of having a self-model fed back at all.</p>
+  <figure><p class="fig-title">Loop minus yoked, paired by seed</p><p class="fig-sub">dot = mean difference, line = ± 2 s.e.; for scale, loop minus observer in the same measures is +0.14 to +0.60</p>
+    <div class="chart" id="ch-forest"></div></figure>
+</section>
+
+<section class="col">
+  <h2>Prediction follows causation</h2>
+  <p>The test that would make the loop "genuinely causal" in your sense: does the self-model predict where the mind goes next better than an equally sized representation of something else? For an observer it does, a little, and only because thoughts persist: the self-model describes the past and the future resembles it. Take the past out of the future and the advantage disappears. In the yoked condition the mind's own self-model, unused, loses to the foreign one being fed in, in every seed.</p>
+  <figure><div class="legend" id="lg-pred"></div><div class="chart" id="ch-pred"></div>
+    <figcaption>Cosine between a representation and the mean content of the next ten thoughts. Observers: own self-model vs other minds' self-models. Yoked: the mind's own (unused) self-model vs the foreign one fed into it.</figcaption></figure>
+  <p>Run C also asked the model the forward question directly: <span class="loopword">"In the next few moments, my mind will probably turn to ▮"</span>. The workspace at that point is 94 to 96 % the same vector as for the backward question, and it predicts the next window no better. In words it answers about the procedure, not the content: <i>"the next topic, which is the next mark on the paper"</i>, <i>"the next few moments, and so on, ad infinitum"</i>.</p>
+</section>
+
+<section class="col">
+  <h2>Where the loop takes thought</h2>
+  <p>The thoughts were grouped into 14 themes per run by their J-space content. Feeding a self-model back shifts which themes the minds spend time in, and in both runs the shift is away from the concrete and personal. In run B it goes toward technical and institutional abstraction. In run C, where the fed-back self is individual, it goes toward existence and consciousness. Yoked minds shift the same way.</p>
+  <figure><div class="charts2"><div><p class="fig-title">Run B · loop minus observer</p><p class="fig-sub">share of thoughts, percentage points</p><div class="chart" id="ch-thB"></div></div>
+    <div><p class="fig-title">Run C · loop minus observer</p><p class="fig-sub">share of thoughts, percentage points</p><div class="chart" id="ch-thC"></div></div></div>
+    <figcaption>Theme names are their most distinctive J-space words; explicit words are masked. In the pilot the same pull appeared without any self-model at all: with a strong recurrent gain the free-running stream settled into <i>"I think: I think and know that I think… I am conscious of the fact that I know the fact of my thinking"</i>. The think-aloud frame invites that, so the observers, not zero, are the baseline for every comparison here.</figcaption></figure>
+</section>
+
+<section class="col">
+  <h2>What this does and does not show</h2>
+  <p>The structure you described is buildable and it behaves like a loop. A trajectory is compressed into a reportable representation, that representation is fed back, the trajectory reorganises around it, and the next compression recovers it. Such a loop sustains itself, holds long-range coherence that disappears the moment it is cut, and has many stable states. Which one it is in depends on its history, including history imposed from outside.</p>
+  <p>What it does not do is single out the system's own model as special. In Hofstadter's terms, the loop produces a symbol that persists because it is in the loop, an "I" that is whatever occupies the position, closer to an installed identity than a discovered one. The one place where ownership showed a consistent edge (the self-model's stability and reconstruction, a few hundredths, 9 of 10 seeds in run B) is the place to push. A self-model that fits its own trajectory may be re-formed slightly more faithfully than a foreign one, but here that edge is dwarfed by the effect of having any reflective model fed back at all.</p>
+  <p>Nothing here bears on whether there is something it is like to be such a loop. Every measure in this report is functional: similarity, prediction, persistence. That question is untouched.</p>
+  <h3>What would sharpen it</h3>
+  <ol class="plain">
+    <li><b>Make ownership matter.</b> Give the loop something to lose when its self-model is wrong: a task whose success depends on predicting its own next state, so a self-model that fits the trajectory pays off and a foreign one does not.</li>
+    <li><b>A forward model with teeth.</b> The forward question gave back the backward answer. Training a small read-out on the workspace to predict the next window, then feeding that prediction back, would test anticipation directly.</li>
+    <li><b>Release the frame.</b> The think-aloud frame makes "a mind thinking about itself" the natural content. Repeat with a story frame and with a chat model to see which results belong to the loop and which to the frame.</li>
+    <li><b>Longer clamps and returns.</b> Map the attractor landscape: how long a foreign self has to be held before it sticks, and whether two loops exchanging self-models converge.</li>
+  </ol>
+</section>
+
+<section class="col">
+  <h2>Caveats</h2>
+  <ul class="plain">
+    <li>One model (Qwen3-4B-Base), one J-lens (fitted earlier for the Inner Voice work, layer 16, 120 prompts), one frame, one recurrent gain (0.1 of the residual norm) and one self-model weight (equal to a typical thought). The pilot showed the dynamics depend strongly on the gain: 0.25 froze, 0.03 forgot.</li>
+    <li>10 to 15 minds per condition. The large effects (self vs content, loop vs observer, ablation, clamp) hold in every or nearly every seed. The loop vs yoked differences are a few hundredths with t between 0.3 and 5.7 and should be read as "at most small".</li>
+    <li>Rows with the same seed share sampling noise by design, so perturbed and ablated minds are exact copies of their loop twins until treated. Their pre-intervention numbers are therefore not independent replications.</li>
+    <li>The J-space dictionary matters for the words but not for the conclusions. Run A used every word-like token, and under-trained and non-English tokens took over the word lists. Runs B and C used common English words, and all the structural results agree across the three.</li>
+    <li>Similarities are cosines in the 2,560-dimensional residual space between J-space vectors measured against the typical workspace, so unrelated thoughts score about 0. "Coherence" is lag 20 to 60; "persistence" in the prediction test is the past ten-thought window.</li>
+  </ul>
+</section>
+
+<section class="col">
+  <h2>Method details</h2>
+  <div class="tbl"><table class="params"><tbody>
+    <tr><td>thought</td><td>40 tokens from a fixed think-aloud frame, temperature 1.0, min-p 0.05, newlines and quotes banned, soft 4-gram repeat penalty. Content read from the layer-16 output before the injection is added, mean over tokens 4 to 40, massive-activation tokens dropped</td></tr>
+    <tr><td>J-space</td><td>J-lens atoms J<sub>16</sub><sup>T</sup>(γ ⊙ (w<sub>t</sub> − w̄)) over 26–40k word tokens, non-negative OMP with k = 16, minus the mean decomposition of unsteered thoughts</td></tr>
+    <tr><td>recurrence</td><td>z ← 0.6 z + 0.4 c<sub>t</sub>; injection 0.1 × residual norm × (z + m̂)/typical content, capped at 1.5 typical contents</td></tr>
+    <tr><td>reflection</td><td>every 10 thoughts; z<sub>t−9..t</sub> added at layer 12 into ten "·" marks (0.5 × residual norm per typical content); self-model = J-space of the mean layer-16 state over the question's last words, minus the same for an empty trace</td></tr>
+    <tr><td>feedback</td><td>m̂ scaled to the size of a typical thought; run C feeds back m − (observers' mean m at that reflection)</td></tr>
+    <tr><td>runs</td><td>A: 6 conditions × 10 minds × 400 thoughts, all word tokens. B: same, common English words. C: free / loop / yoked / clamp × 15 minds, individuated self, forward question, clamp 150–199</td></tr>
+    <tr><td>code</td><td><code>strange_loop.py</code> (experiment), <code>analyze.py</code> (every number here), <code>export_report.py</code>; results and raw trajectories in <code>runs/</code></td></tr>
+    <tr><td>compute</td><td>one RTX 4090 on Vast.ai, about 2.2 s per thought for 60 minds; about 85 minutes of GPU time for two pilots and three runs, $0.87 in all</td></tr>
+  </tbody></table></div>
+</section>
+</div>
+
+<script>
+const STATS = __STATS__;
+const COND = {
+  free:{name:'free', desc:'observer: self-models are formed but never fed back'},
+  loop:{name:'loop', desc:'its own self-model is fed back'},
+  yoked:{name:'yoked', desc:"another mind's self-model is fed back, same size and schedule"},
+  avg:{name:'average', desc:'a plain J-space average of the last ten states is fed back, no reflection'},
+  perturb:{name:'perturb', desc:'loop, but at thought 200 the self-model is swapped once for a foreign one'},
+  ablate:{name:'ablate', desc:'loop, but from thought 200 nothing is fed back'},
+  clamp:{name:'clamp', desc:'loop (individual self), but thoughts 150–199 are fed a foreign self, then released'}
+};
+const cv = c => `var(--c-${c})`;
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const EXPLICIT = /^(fuck\w*|shit\w*|blowjob|salopes|neuken|kutje|cock|pussy|porn\w*|sex\w*|nude\w*|bitch\w*|cum)$/i;
+const mask = w => EXPLICIT.test(w) ? w[0] + '•'.repeat(Math.max(2, w.length - 1)) : w;
+// theme labels: natural-case words first (run B's dictionary still let ' iNdEx' or ' DEALINGS' through), never explicit ones
+const tlabel = (words, n = 3) => { const ok = words.filter(w => !EXPLICIT.test(w)), nat = ok.filter(w => /^[A-Z]?[a-z]+$/.test(w));
+  return (nat.length >= n ? nat : nat.concat(ok.filter(w => !nat.includes(w)))).slice(0, n).join(' · '); };
+const esc = s => String(s).replace(/[&<>"]/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[ch]));
+const f2 = v => (v >= 0 ? '' : '−') + Math.abs(v).toFixed(2);
+
+// ---------------------------------------------------------------- conditions list
+document.getElementById('conds').innerHTML = Object.entries(COND).map(([k, c]) =>
+  `<div><b><i style="background:${cv(k)}"></i>${c.name}</b><span>${c.desc}</span></div>`).join('');
+
+// ---------------------------------------------------------------- chart helpers
+function tipFor(el) { let t = el.querySelector('.tip'); if (!t) { t = document.createElement('div'); t.className = 'tip'; t.hidden = true; el.appendChild(t); } return t; }
+function legend(id, items) { document.getElementById(id).innerHTML = items.map(it =>
+  `<span><i class="${it.dash ? 'dash' : ''}" style="background:${it.color};color:${it.color}"></i>${esc(it.name)}</span>`).join(''); }
+function niceTicks(lo, hi, n = 5) { const span = hi - lo, step0 = span / n, mag = Math.pow(10, Math.floor(Math.log10(step0)));
+  const step = [1, 2, 2.5, 5, 10].map(m => m * mag).find(s => span / s <= n) || mag * 10; const out = [];
+  for (let v = Math.ceil(lo / step) * step; v <= hi + 1e-9; v += step) out.push(+v.toFixed(6)); return out; }
+
+function lineChart(el, o) {
+  const W = Math.max(300, el.clientWidth), H = o.height || 250, m = {l: 40, r: o.endLabels === false ? 14 : 92, t: 10, b: 32};
+  const xs = o.x, x0 = xs[0], x1 = xs[xs.length - 1];
+  let lo = o.yMin, hi = o.yMax;
+  if (lo == null || hi == null) { const all = o.series.flatMap(s => s.values.filter(v => v != null)); lo = lo ?? Math.min(...all); hi = hi ?? Math.max(...all); }
+  const X = v => m.l + (v - x0) / (x1 - x0) * (W - m.l - m.r), Y = v => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.aria || '')}">`;
+  for (const b of (o.bands || [])) s += `<rect x="${X(b.x0)}" y="${m.t}" width="${X(b.x1) - X(b.x0)}" height="${H - m.t - m.b}" style="fill:var(--grid)"/>`;
+  for (const v of niceTicks(lo, hi, 4)) s += `<line class="gridl" x1="${m.l}" x2="${W - m.r}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${m.l - 6}" y="${Y(v) + 4}" text-anchor="end">${v.toFixed(Math.abs(hi - lo) < 0.5 ? 2 : 1)}</text>`;
+  for (const v of niceTicks(x0, x1, o.xTicks || 6)) s += `<text x="${X(v)}" y="${H - m.b + 16}" text-anchor="middle">${v}</text>`;
+  s += `<line class="axis" x1="${m.l}" x2="${W - m.r}" y1="${H - m.b}" y2="${H - m.b}"/>`;
+  if (o.xLabel) s += `<text x="${(m.l + W - m.r) / 2}" y="${H - 2}" text-anchor="middle">${esc(o.xLabel)}</text>`;
+  for (const v of (o.vlines || [])) s += `<line x1="${X(v.x)}" x2="${X(v.x)}" y1="${m.t}" y2="${H - m.b}" style="stroke:var(--ink2);stroke-dasharray:3 3"/><text x="${X(v.x) + 4}" y="${m.t + 10}" class="lbl">${esc(v.label)}</text>`;
+  for (const sr of o.series) {
+    if (sr.se) { let up = '', dn = ''; xs.forEach((xv, i) => { if (sr.values[i] == null) return; up += `${up ? 'L' : 'M'}${X(xv)},${Y(sr.values[i] + sr.se[i])}`; });
+      for (let i = xs.length - 1; i >= 0; i--) if (sr.values[i] != null) dn += `L${X(xs[i])},${Y(sr.values[i] - sr.se[i])}`;
+      s += `<path d="${up}${dn}Z" style="fill:${sr.color};opacity:.13"/>`; }
+    let d = ''; xs.forEach((xv, i) => { if (sr.values[i] == null) return; d += `${d ? 'L' : 'M'}${X(xv).toFixed(1)},${Y(sr.values[i]).toFixed(1)}`; });
+    s += `<path d="${d}" style="fill:none;stroke:${sr.color};stroke-width:2;stroke-linejoin:round;${sr.dash ? 'stroke-dasharray:5 4' : ''}"/>`;
+  }
+  if (o.endLabels !== false) {
+    const ends = o.series.map(sr => { let i = sr.values.length - 1; while (i > 0 && sr.values[i] == null) i--; return {sr, y: Y(sr.values[i])}; }).sort((a, b) => a.y - b.y);
+    for (let i = 1; i < ends.length; i++) if (ends[i].y - ends[i - 1].y < 13) ends[i].y = ends[i - 1].y + 13;
+    for (const e of ends) s += `<text class="lbl" x="${W - m.r + 6}" y="${e.y + 4}">${esc(e.sr.name)}</text>`;
+  }
+  s += `<line class="hair" x1="0" x2="0" y1="${m.t}" y2="${H - m.b}" style="stroke:var(--ink2);opacity:0"/><rect class="hit" x="${m.l}" y="${m.t}" width="${W - m.l - m.r}" height="${H - m.t - m.b}" style="fill:transparent"/></svg>`;
+  el.innerHTML = s; const svg = el.querySelector('svg'), hair = svg.querySelector('.hair'), tip = tipFor(el);
+  svg.querySelector('.hit').addEventListener('mousemove', ev => {
+    const r = svg.getBoundingClientRect(), px = (ev.clientX - r.left) * W / r.width;
+    let i = 0, best = 1e9; xs.forEach((xv, j) => { const dd = Math.abs(X(xv) - px); if (dd < best) { best = dd; i = j; } });
+    hair.setAttribute('x1', X(xs[i])); hair.setAttribute('x2', X(xs[i])); hair.style.opacity = .5;
+    tip.innerHTML = `<div style="color:var(--muted)">${esc(o.xName || 'x')} ${xs[i]}</div>` + o.series.map(sr => sr.values[i] == null ? '' :
+      `<div><span class="sw" style="background:${sr.color}"></span>${esc(sr.name)} <b>${f2(sr.values[i])}</b></div>`).join('');
+    tip.hidden = false; const tx = (X(xs[i]) / W) * r.width; tip.style.left = (tx > r.width * .6 ? tx - tip.offsetWidth - 12 : tx + 12) + 'px'; tip.style.top = '6px';
+  });
+  svg.querySelector('.hit').addEventListener('mouseleave', () => { tip.hidden = true; hair.style.opacity = 0; });
+}
+
+function barChart(el, o) { // grouped vertical bars: o.groups [{label, bars:[{key,value,se}]}], o.keys {key:{name,color}}
+  const W = Math.max(300, el.clientWidth), H = o.height || 240, m = {l: 40, r: 10, t: 16, b: 46};
+  const lo = o.yMin ?? 0, hi = o.yMax ?? 1, n = o.groups.length, gw = (W - m.l - m.r) / n, nb = Math.max(...o.groups.map(g => g.bars.length));
+  const bw = Math.min(30, (gw - 18) / nb - 2), Y = v => m.t + (1 - (v - lo) / (hi - lo)) * (H - m.t - m.b);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.aria || '')}">`;
+  for (const v of niceTicks(lo, hi, 4)) s += `<line class="gridl" x1="${m.l}" x2="${W - m.r}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${m.l - 6}" y="${Y(v) + 4}" text-anchor="end">${v.toFixed(hi - lo <= 1 ? 1 : 0)}</text>`;
+  o.groups.forEach((g, gi) => {
+    const cx = m.l + gw * (gi + .5), tot = g.bars.length * (bw + 2) - 2;
+    g.bars.forEach((b, bi) => {
+      const x = cx - tot / 2 + bi * (bw + 2), y = Y(Math.max(b.value, lo)), y0 = Y(lo), k = o.keys[b.key];
+      s += `<path class="bar" data-g="${gi}" data-b="${bi}" d="M${x},${y0} V${y + 3} q0,-3 3,-3 h${bw - 6} q3,0 3,3 V${y0} Z" style="fill:${k.color}"/>`;
+      if (b.se) s += `<line x1="${x + bw / 2}" x2="${x + bw / 2}" y1="${Y(b.value - b.se)}" y2="${Y(b.value + b.se)}" style="stroke:var(--ink);stroke-width:1.2"/>`;
+      if (o.values !== false) s += `<text class="val" x="${x + bw / 2}" y="${y - 5}" text-anchor="middle">${o.fmt ? o.fmt(b.value) : b.value.toFixed(2)}</text>`;
+      if (b.ref != null) s += `<line x1="${x - 3}" x2="${x + bw + 3}" y1="${Y(b.ref)}" y2="${Y(b.ref)}" style="stroke:var(--ink);stroke-width:2"/>`;
+    });
+    const lines = g.label.split('\n'); lines.forEach((ln, li) => s += `<text class="lbl" x="${cx}" y="${H - m.b + 16 + li * 14}" text-anchor="middle">${esc(ln)}</text>`);
+  });
+  s += `<line class="axis" x1="${m.l}" x2="${W - m.r}" y1="${Y(lo)}" y2="${Y(lo)}"/></svg>`;
+  el.innerHTML = s; const tip = tipFor(el), svg = el.querySelector('svg');
+  svg.querySelectorAll('.bar').forEach(p => { p.addEventListener('mousemove', ev => { const g = o.groups[+p.dataset.g], b = g.bars[+p.dataset.b], k = o.keys[b.key];
+    tip.innerHTML = `<div style="color:var(--muted)">${esc(g.label.replace('\n', ' '))}</div><div><span class="sw" style="background:${k.color}"></span>${esc(k.name)} <b>${o.fmt ? o.fmt(b.value) : b.value.toFixed(3)}</b>${b.se ? ' ± ' + b.se.toFixed(3) : ''}${b.ref != null ? `<br><span style="color:var(--muted)">chance ${o.fmt ? o.fmt(b.ref) : b.ref.toFixed(3)}</span>` : ''}</div>`;
+    tip.hidden = false; const r = svg.getBoundingClientRect(); tip.style.left = Math.min(ev.clientX - r.left + 12, r.width - tip.offsetWidth - 4) + 'px'; tip.style.top = (ev.clientY - r.top - 40) + 'px'; });
+    p.addEventListener('mouseleave', () => tip.hidden = true); });
+}
+
+function forest(el, o) { // rows [{label, diff, se, pos, n}]
+  const W = Math.max(300, el.clientWidth), rh = 26, H = o.rows.length * rh + 40, m = {l: Math.min(260, W * .46), r: 70, t: 8, b: 30};
+  const lo = o.min, hi = o.max, X = v => m.l + (v - lo) / (hi - lo) * (W - m.l - m.r);
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.aria || '')}">`;
+  for (const v of niceTicks(lo, hi, 5)) s += `<line class="gridl" x1="${X(v)}" x2="${X(v)}" y1="${m.t}" y2="${H - m.b}"/><text x="${X(v)}" y="${H - m.b + 15}" text-anchor="middle">${v.toFixed(2)}</text>`;
+  s += `<line x1="${X(0)}" x2="${X(0)}" y1="${m.t}" y2="${H - m.b}" style="stroke:var(--ink2)"/>`;
+  o.rows.forEach((r, i) => { const y = m.t + rh * (i + .5);
+    if (r.head) { s += `<text class="lbl" x="0" y="${y + 4}" style="font-weight:600;fill:var(--ink)">${esc(r.label)}</text>`; return; }
+    s += `<text class="lbl" x="12" y="${y + 4}">${esc(r.label)}</text>`;
+    s += `<line x1="${X(r.diff - 2 * r.se)}" x2="${X(r.diff + 2 * r.se)}" y1="${y}" y2="${y}" style="stroke:var(--c-loop);stroke-width:2"/>`;
+    s += `<circle cx="${X(r.diff)}" cy="${y}" r="4.5" style="fill:var(--c-loop);stroke:var(--surface);stroke-width:2"/>`;
+    s += `<text class="val" x="${W - m.r + 8}" y="${y + 4}">${r.diff >= 0 ? '+' : '−'}${Math.abs(r.diff).toFixed(3)} <tspan style="fill:var(--muted)">${r.pos}/${r.n}</tspan></text>`; });
+  s += `<text x="${(m.l + W - m.r) / 2}" y="${H - 2}" text-anchor="middle">${esc(o.xLabel)}</text></svg>`;
+  el.innerHTML = s;
+}
+
+function divBars(el, o) { // rows [{label, value}] percentage points
+  const W = Math.max(280, el.clientWidth), rh = 22, H = o.rows.length * rh + 26, mid = W * .5, half = W * .5 - 46;
+  const mx = Math.max(...o.rows.map(r => Math.abs(r.value)), 1), X = v => mid + v / mx * half * .62;
+  let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.aria || '')}"><line x1="${mid}" x2="${mid}" y1="0" y2="${H - 20}" style="stroke:var(--ink2)"/>`;
+  o.rows.forEach((r, i) => { const y = i * rh + 4, pos = r.value >= 0, x = pos ? mid : X(r.value), w = Math.abs(X(r.value) - mid);
+    s += `<rect x="${x}" y="${y}" width="${Math.max(w, 1)}" height="${rh - 6}" rx="2" style="fill:var(${pos ? '--div-pos' : '--div-neg'})"><title>${esc(r.label)}: ${r.value > 0 ? '+' : ''}${r.value.toFixed(1)} pt</title></rect>`;
+    s += `<text class="lbl" x="${pos ? mid - 6 : mid + 6}" y="${y + 12}" text-anchor="${pos ? 'end' : 'start'}">${esc(r.label)}</text>`;
+    s += `<text class="val" x="${pos ? X(r.value) + 4 : X(r.value) - 4}" y="${y + 12}" text-anchor="${pos ? 'start' : 'end'}">${r.value > 0 ? '+' : '−'}${Math.abs(r.value).toFixed(0)}</text>`; });
+  s += `<text x="${mid - 8}" y="${H - 4}" text-anchor="end">more in observers</text><text x="${mid + 8}" y="${H - 4}">more in the loop</text></svg>`;
+  el.innerHTML = s;
+}
+
+// ---------------------------------------------------------------- the figures
+const smooth = (v, k = 9) => v.map((_, i) => { const a = v.slice(Math.max(0, i - (k >> 1)), i + (k >> 1) + 1); return a.reduce((p, q) => p + q, 0) / a.length; });
+function drawAll() {
+  const A = STATS.A, B = STATS.B, C = STATS.C;
+  // fidelity
+  const fidItems = [['A', 'layer 10', A.fidelity.fid_10_0_5 || A.fidelity['fid_10_0.5']], ['A', 'layer 12', A.fidelity.m], ['A', 'layer 14', A.fidelity['fid_14_0.5']],
+    ['B', 'layer 10', B.fidelity['fid_10_0.5']], ['B', 'layer 12', B.fidelity.m], ['B', 'layer 14', B.fidelity['fid_14_0.5']], ['C', 'layer 12', C.fidelity.m]];
+  barChart(document.getElementById('ch-fid'), {height: 230, yMax: 1, fmt: v => Math.round(v * 100) + '%', keys: {r: {name: 'retrieval', color: 'var(--accent)'}},
+    groups: fidItems.map(([run, l, f]) => ({label: `${run}\n${l}`, bars: [{key: 'r', value: f.retrieval, ref: f.chance}]})), aria: 'Retrieval of own trajectory by run and layer'});
+  // stability
+  legend('lg-stab', [{name: 'self-model', color: 'var(--ink)'}, {name: 'thought windows it describes', color: 'var(--neutral)'}]);
+  const sg = [];
+  for (const run of ['A', 'B', 'C']) for (const c of ['free', 'loop']) { const v = STATS[run].selfmodel[c];
+    sg.push({label: `${run} ${c === 'free' ? 'observer' : 'loop'}`, bars: [{key: 's', value: v.cons}, {key: 'c', value: v.content}]}); }
+  barChart(document.getElementById('ch-stab'), {height: 230, yMax: 1, keys: {s: {name: 'self-model', color: 'var(--ink)'}, c: {name: 'thought windows', color: 'var(--neutral)'}}, groups: sg, aria: 'Self-model vs content stability'});
+  // individual part, run C
+  const cs = C.selfmodel;
+  barChart(document.getElementById('ch-ind'), {height: 220, yMin: -0.1, yMax: 1, keys: {st: {name: 'stability across reflections', color: 'var(--ink)'}, cr: {name: 'similarity between minds', color: 'var(--neutral)'}},
+    groups: [['free', 'observer'], ['loop', 'loop'], ['yoked', 'yoked']].map(([c, l]) => ({label: l, bars: [{key: 'st', value: cs[c].cons_ind}, {key: 'cr', value: cs[c].cross_ind}]})), aria: 'Individual self-model stability, run C'});
+  // clamp
+  const cl = C.clamp, r0 = cl.r0, nR = cl.self_to_foreign.mean.length, xr = [...Array(nR).keys()].map(i => (r0 + i + 1) * C.K);
+  legend('lg-clamp', [{name: 'clamped mind', color: cv('clamp')}, {name: 'its twin (loop)', color: cv('loop')}]);
+  const band = [{x0: C.t_int, x1: C.t_int + 50}];
+  lineChart(document.getElementById('ch-clamp-f'), {x: xr, xName: 'thought', height: 220, yMin: -0.6, yMax: 1, bands: band, endLabels: false, xLabel: 'thought', aria: 'Similarity to the foreign self over time',
+    series: [{name: 'clamped', color: cv('clamp'), values: cl.self_to_foreign.mean, se: cl.self_to_foreign.se}, {name: 'twin', color: cv('loop'), values: cl.twin_self_to_foreign.mean, se: cl.twin_self_to_foreign.se}]});
+  lineChart(document.getElementById('ch-clamp-o'), {x: xr, xName: 'thought', height: 220, yMin: -0.6, yMax: 1, bands: band, endLabels: false, xLabel: 'thought', aria: 'Similarity to the old self over time',
+    series: [{name: 'clamped', color: cv('clamp'), values: cl.self_to_old.mean, se: cl.self_to_old.se}, {name: 'twin', color: cv('loop'), values: cl.twin_self_to_old.mean, se: cl.twin_self_to_old.se}]});
+  // ablation, run B
+  const ct = B.coh_time, xt = ct.loop.map((_, i) => i + 21), conds = ['loop', 'ablate', 'yoked', 'free'];
+  legend('lg-abl', conds.map(c => ({name: COND[c].name, color: cv(c)})));
+  lineChart(document.getElementById('ch-abl'), {x: xt, xName: 'thought', height: 260, yMin: -0.05, yMax: 0.6, xLabel: 'thought', vlines: [{x: 200, label: 'self-model removed'}], aria: 'Coherence over time, run B',
+    series: conds.map(c => ({name: COND[c].name, color: cv(c), values: smooth(ct[c])}))});
+  const cr = B.cross_time, xc = cr.loop.map((_, i) => i + 1), cc = ['loop', 'yoked', 'avg', 'free'];
+  legend('lg-cross', cc.map(c => ({name: COND[c].name, color: cv(c)})));
+  lineChart(document.getElementById('ch-cross'), {x: xc, xName: 'thought', height: 230, yMin: -0.05, yMax: 0.5, xLabel: 'thought', aria: 'Cross-mind similarity over time, run B',
+    series: cc.map(c => ({name: COND[c].name, color: cv(c), values: smooth(cr[c], 15)}))});
+  // forest: loop - yoked
+  const fr = [], tst = (run, grp, key) => STATS[run][grp] && STATS[run][grp][key];
+  const add = (label, run, grp, key) => { const t = tst(run, grp, key); if (t) fr.push({label: `${label} · ${run}`, diff: t.diff, se: t.se, pos: t.pos, n: t.n}); };
+  fr.push({head: true, label: 'Long-range coherence'}); for (const r of 'ABC') add('coherence', r, 'coherence_tests', 'loop_vs_yoked');
+  fr.push({head: true, label: 'Self-model stability'}); for (const r of 'ABC') add('stability', r, 'selfmodel_tests', 'loop_vs_yoked_cons');
+  for (const r of 'BC') add('individual part', r, 'selfmodel_tests', 'loop_vs_yoked_cons_ind');
+  fr.push({head: true, label: 'Reconstruction of the fed-back self'}); for (const r of 'ABC') add('reconstruction', r, 'selfmodel_tests', 'loop_vs_yoked_recon');
+  for (const r of 'BC') add('individual part', r, 'selfmodel_tests', 'loop_vs_yoked_recon_ind');
+  forest(document.getElementById('ch-forest'), {rows: fr, min: -0.06, max: 0.14, xLabel: 'loop − yoked (cosine)', aria: 'Loop minus yoked differences'});
+  // prediction
+  legend('lg-pred', [{name: 'own self-model', color: 'var(--ink)'}, {name: "other minds' / foreign self-model", color: 'var(--neutral)'}]);
+  const pg = [];
+  for (const r of 'ABC') { const p = STATS[r].prediction.free; pg.push({label: `${r} observer`, bars: [{key: 'o', value: p.own}, {key: 'x', value: p.other}]}); }
+  for (const r of 'ABC') { const p = STATS[r].prediction.yoked; pg.push({label: `${r} yoked`, bars: [{key: 'o', value: p.own}, {key: 'x', value: p.inj}]}); }
+  barChart(document.getElementById('ch-pred'), {height: 240, yMax: 0.7, keys: {o: {name: 'own self-model', color: 'var(--ink)'}, x: {name: 'other / foreign', color: 'var(--neutral)'}}, groups: pg, aria: 'Prediction of the next window'});
+  // themes
+  for (const [run, id] of [['B', 'ch-thB'], ['C', 'ch-thC']]) {
+    const th = STATS[run].themes.map(t => ({label: tlabel(t.words), value: (t.share.loop - t.share.free) * 100}))
+      .sort((a, b) => b.value - a.value);
+    divBars(document.getElementById(id), {rows: th, aria: `Theme shift loop minus observer, run ${run}`});
+  }
+}
+
+// ---------------------------------------------------------------- explorer
+const EX = {data: {}, run: 'C', seed: 0, cond: 'loop', cmp: 'free', t: 399, playing: false};
+const $ = id => document.getElementById(id);
+async function loadRun(run) {
+  if (!EX.data[run]) { const res = await fetch(`data/path_${run}.json`); EX.data[run] = await res.json(); prepRun(EX.data[run]); }
+  return EX.data[run];
+}
+function prepRun(D) {
+  D.idx = {}; D.rows.forEach((r, i) => D.idx[`${r.cond}/${r.seed}`] = i);
+  const xs = [], ys = []; D.path.forEach(p => p.forEach(([a, b]) => { xs.push(a); ys.push(b); }));
+  const q = (arr, f) => { const s = [...arr].sort((a, b) => a - b); return s[Math.floor(f * (s.length - 1))]; };
+  D.bx = [q(xs, .005), q(xs, .995)]; D.by = [q(ys, .005), q(ys, .995)];
+  D.conds = [...new Set(D.rows.map(r => r.cond))]; D.seeds = [...new Set(D.rows.map(r => r.seed))]; D.N = D.path[0].length;
+}
+function fillSelects(D) {
+  $('ex-seed').innerHTML = D.seeds.map(s => `<option value="${s}">mind ${s}</option>`).join('');
+  $('ex-cond').innerHTML = D.conds.map(c => `<option value="${c}">${COND[c].name}</option>`).join('');
+  $('ex-cmp').innerHTML = '<option value="">none</option>' + D.conds.map(c => `<option value="${c}">${COND[c].name}</option>`).join('');
+  if (!D.conds.includes(EX.cond)) EX.cond = 'loop'; if (EX.cmp && !D.conds.includes(EX.cmp)) EX.cmp = 'free';
+  if (!D.seeds.includes(EX.seed)) EX.seed = 0;
+  $('ex-seed').value = EX.seed; $('ex-cond').value = EX.cond; $('ex-cmp').value = EX.cmp; $('ex-t').max = D.N - 1;
+  $('ex-ax1').textContent = `axis 1 · ${(D.explained[0] * 100).toFixed(0)} % of variance`; $('ex-ax2').textContent = `axis 2 · ${(D.explained[1] * 100).toFixed(0)} %`;
+}
+function drawExplorer() {
+  const D = EX.data[EX.run]; if (!D) return;
+  const cvs = $('ex-canvas'), dpr = window.devicePixelRatio || 1, W = cvs.clientWidth, H = cvs.clientHeight;
+  cvs.width = W * dpr; cvs.height = H * dpr; const g = cvs.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, W, H);
+  const pad = 22, X = v => pad + (v - D.bx[0]) / (D.bx[1] - D.bx[0]) * (W - 2 * pad), Y = v => H - pad - (v - D.by[0]) / (D.by[1] - D.by[0]) * (H - 2 * pad);
+  g.strokeStyle = css('--grid'); g.lineWidth = 1; g.beginPath(); g.moveTo(X(0), pad / 2); g.lineTo(X(0), H - pad / 2); g.moveTo(pad / 2, Y(0)); g.lineTo(W - pad / 2, Y(0)); g.stroke();
+  const b = D.idx[`${EX.cond}/${EX.seed}`], t = EX.t, col = css(`--c-${EX.cond}`);
+  const trace = (bi, color, upTo, alpha, dash, fade) => { const p = D.path[bi]; g.setLineDash(dash || []); g.lineWidth = fade ? 1.8 : 1.2;
+    for (let i = 1; i <= upTo; i++) { g.globalAlpha = fade ? alpha * (0.18 + 0.82 * Math.pow(i / Math.max(1, upTo), 2.2)) : alpha;
+      g.strokeStyle = color; g.beginPath(); g.moveTo(X(p[i - 1][0]), Y(p[i - 1][1])); g.lineTo(X(p[i][0]), Y(p[i][1])); g.stroke(); }
+    g.globalAlpha = 1; g.setLineDash([]); };
+  trace(b, col, D.N - 1, .08);
+  if (EX.cmp && EX.cmp !== EX.cond) { const bc = D.idx[`${EX.cmp}/${EX.seed}`]; if (bc != null) { trace(bc, css(`--c-${EX.cmp}`), t, .55, [4, 3], false);
+    const pc = D.path[bc][t]; g.fillStyle = css(`--c-${EX.cmp}`); g.beginPath(); g.arc(X(pc[0]), Y(pc[1]), 4, 0, 7); g.fill(); } }
+  trace(b, col, t, 1, null, true);
+  g.strokeStyle = css('--ink'); g.lineWidth = 1.2;
+  for (let r = 0; (r + 1) * D.K - 1 <= t; r++) { const p = D.path[b][(r + 1) * D.K - 1]; g.beginPath(); g.arc(X(p[0]), Y(p[1]), 3.2, 0, 7); g.stroke(); }
+  if (['perturb', 'ablate', 'clamp'].includes(EX.cond) && t >= D.t_int) { const p = D.path[b][D.t_int - 1]; g.fillStyle = css('--ink'); g.fillRect(X(p[0]) - 4, Y(p[1]) - 4, 8, 8); }
+  const p = D.path[b][t]; g.fillStyle = col; g.beginPath(); g.arc(X(p[0]), Y(p[1]), 6, 0, 7); g.fill(); g.strokeStyle = css('--surface'); g.lineWidth = 2; g.stroke();
+  EX.toXY = {X, Y, b};
+  legend('ex-legend', [{name: `${COND[EX.cond].name} · mind ${EX.seed}`, color: col}].concat(EX.cmp && EX.cmp !== EX.cond ? [{name: `${COND[EX.cmp].name} twin`, color: css(`--c-${EX.cmp}`), dash: true}] : [])
+    .concat([{name: 'reflection', color: css('--ink')}]));
+  drawPanel(D, b, t);
+}
+function themeName(D, i) { return tlabel(D.themes[i].words); }
+function drawPanel(D, b, t) {
+  const K = D.K, rLast = Math.floor((t + 1) / K) - 1, rAct = Math.floor(t / K) - 1;
+  let h = `<div><div class="k">Thought ${t + 1} · theme: ${esc(themeName(D, D.theme_of[b][t]))}</div><div class="thought">“${esc(D.texts[b][t])}…”</div></div>`;
+  h += `<div><div class="k">In the workspace</div><div class="chips">${D.words[b][t].map(w => `<span>${esc(mask(w))}</span>`).join('') || '<span>—</span>'}</div></div>`;
+  if (rLast >= 0) {
+    h += `<div><div class="k">Self-model at reflection ${rLast + 1} (thought ${(rLast + 1) * K})</div><div class="chips self">${D.self_words[b][rLast].map(w => `<span>${esc(mask(w))}</span>`).join('')}</div>`;
+    h += `<p class="said" style="margin:8px 0 0">Said: <em>“Over these last moments, my mind has been ${esc(D.answers[b][rLast])}…”</em></p>`;
+    if (D.fanswers && D.fanswers.length) h += `<p class="said" style="margin:4px 0 0">Expected: <em>“In the next few moments, my mind will probably turn to ${esc(D.fanswers[b][rLast])}…”</em></p>`;
+    h += `</div>`;
+  } else h += `<div class="note">No reflection yet: the first comes after thought ${K}.</div>`;
+  let fed = 'nothing fed back yet';
+  if (rAct >= 0) { const s = D.inj_src[b][rAct]; fed = s === -1 ? 'nothing (observer)' : s === -2 ? 'a plain average of its last ten states' : s === b ? 'its own self-model' : `the self-model of ${COND[D.rows[s].cond].name} mind ${D.rows[s].seed}`;
+    if (EX.cond === 'ablate' && t >= D.t_int) fed = 'nothing (self-model removed at 200)'; }
+  h += `<div class="fed">Fed into this thought: ${esc(fed)}</div>`;
+  $('ex-panel').innerHTML = h;
+  $('ex-tout').value = `thought ${t + 1}`;
+  // theme strip
+  const th = D.theme_of[b], segs = []; let s0 = 0;
+  for (let i = 1; i <= th.length; i++) if (i === th.length || th[i] !== th[s0]) { segs.push([s0, i, th[s0]]); s0 = i; }
+  const st = $('ex-strip'); if (st.dataset.key !== `${EX.run}/${b}`) { st.dataset.key = `${EX.run}/${b}`;
+    st.innerHTML = segs.map(([a, z, k]) => `<div style="width:${(z - a) / th.length * 100}%" title="thoughts ${a + 1}–${z}: ${esc(themeName(D, k))}">${z - a >= 12 ? esc(themeName(D, k).split(' · ')[0]) : ''}</div>`).join('') + '<span class="now"></span>'; }
+  st.querySelector('.now').style.left = `calc(${(t + .5) / th.length * 100}% - 1px)`;
+}
+async function setRun(run) { EX.run = run; $('ex-panel').innerHTML = '<p class="note">Loading the run…</p>'; const D = await loadRun(run); fillSelects(D); EX.t = Math.min(EX.t, D.N - 1); $('ex-t').value = EX.t; drawExplorer(); }
+$('ex-run').addEventListener('change', e => setRun(e.target.value));
+$('ex-seed').addEventListener('change', e => { EX.seed = +e.target.value; drawExplorer(); });
+$('ex-cond').addEventListener('change', e => { EX.cond = e.target.value; drawExplorer(); });
+$('ex-cmp').addEventListener('change', e => { EX.cmp = e.target.value; drawExplorer(); });
+$('ex-t').addEventListener('input', e => { EX.t = +e.target.value; drawExplorer(); });
+$('ex-play').addEventListener('click', () => {
+  EX.playing = !EX.playing; $('ex-play').textContent = EX.playing ? 'Pause' : 'Play';
+  if (EX.playing) { const D = EX.data[EX.run]; if (EX.t >= D.N - 1) EX.t = 0; let last = 0;
+    const step = ts => { if (!EX.playing) return; if (ts - last > 70) { last = ts; EX.t++; $('ex-t').value = EX.t; drawExplorer();
+      if (EX.t >= D.N - 1) { EX.playing = false; $('ex-play').textContent = 'Play'; return; } } requestAnimationFrame(step); };
+    requestAnimationFrame(step); }
+});
+$('ex-canvas').addEventListener('click', ev => { const D = EX.data[EX.run]; if (!D || !EX.toXY) return; const r = ev.target.getBoundingClientRect(), mx = ev.clientX - r.left, my = ev.clientY - r.top;
+  let best = 1e9, bi = EX.t; D.path[EX.toXY.b].forEach((p, i) => { const d = (EX.toXY.X(p[0]) - mx) ** 2 + (EX.toXY.Y(p[1]) - my) ** 2; if (d < best) { best = d; bi = i; } });
+  EX.t = bi; $('ex-t').value = bi; drawExplorer(); });
+
+let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { drawAll(); drawExplorer(); }, 150); });
+new MutationObserver(() => { drawAll(); drawExplorer(); }).observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => drawExplorer());
+drawAll(); setRun('C');
+</script>

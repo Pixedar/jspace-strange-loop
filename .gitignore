@@ -1,0 +1,7 @@
+.venv/
+.idea/
+.claude/
+__pycache__/
+*.pt
+*.npz
+!qwen3-4b-base-jlens.npz
