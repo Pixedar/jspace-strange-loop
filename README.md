@@ -10,6 +10,9 @@ thought trajectory → compressed model of the trajectory → model shapes the t
 
 Qwen3-4B-Base · J-lens at layer 16 · 3 runs · 180 minds · 72,000 thoughts · one RTX 4090 (Vast.ai), about $0.87
 
+- **Interactive report** (explore any mind's path through J-space): https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space
+- **All data**, including the raw trajectories: https://huggingface.co/datasets/Pixedar/jspace-strange-loop
+
 ## The short answer
 
 The causal loop is real. A model of the trajectory, rebuilt from the trajectory, shapes the trajectory, sustains itself,
@@ -88,7 +91,7 @@ are treated differently.
 | `qwen3-4b-base-jlens.npz` | the fitted J-lens used in every run |
 | `runs/main{A,B,C}/` | `results.json`, `meta.json` (every thought and answer), `summary.txt` |
 
-The raw trajectories (`traj.npz`, 160–175 MB per run) are too large for this repository and are not included.
+The raw trajectories (`traj.npz`, 160–175 MB per run) are too large for this repository; they are in the Hugging Face dataset linked above.
 
 ## Run it
 
