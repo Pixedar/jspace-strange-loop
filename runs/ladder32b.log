@@ -1,0 +1,8 @@
+>> /opt/conda/bin/python validate_lens.py --model Qwen/Qwen3-32B --jlens /root/.cache/huggingface/hub/models--neuronpedia--jacobian-lens/snapshots/9fa267f841d62aa468dab5b9b38c3dc45a82d863/qwen3-32b/jlens/Salesforce-wikitext/Qwen3-32B_jacobian_lens.pt --out runs/ladder07/qwen3-32b/val.json
+>> /opt/conda/bin/python strange_loop.py --model Qwen/Qwen3-32B --jlens /root/.cache/huggingface/hub/models--neuronpedia--jacobian-lens/snapshots/9fa267f841d62aa468dab5b9b38c3dc45a82d863/qwen3-32b/jlens/Salesforce-wikitext/Qwen3-32B_jacobian_lens.pt --vocab english --atoms centred --k 25 --layer 45 --grid gsweep --gs .03,.05,.08,.12,.2 --seeds 6 --n_iter 60 --L_in 44 --out runs/ladder07/qwen3-32b/gsweep
+>> /opt/conda/bin/python strange_loop.py --model Qwen/Qwen3-32B --jlens /root/.cache/huggingface/hub/models--neuronpedia--jacobian-lens/snapshots/9fa267f841d62aa468dab5b9b38c3dc45a82d863/qwen3-32b/jlens/Salesforce-wikitext/Qwen3-32B_jacobian_lens.pt --vocab english --atoms centred --k 25 --layer 45 --grid gsweep --gs 0.12 --seeds 16 --n_iter 60 --L_in 44 --fid 44:0.5,44:1.0,43:0.5,43:1.0,42:0.5,42:1.0,39:0.5,39:1.0,35:0.5,35:1.0 --out runs/ladder07/qwen3-32b/fsweep
+qwen3-32b picked {'g': 0.12, 'L_in': 43, 'g_r': 0.5}
+>> /opt/conda/bin/python strange_loop.py --model Qwen/Qwen3-32B --jlens /root/.cache/huggingface/hub/models--neuronpedia--jacobian-lens/snapshots/9fa267f841d62aa468dab5b9b38c3dc45a82d863/qwen3-32b/jlens/Salesforce-wikitext/Qwen3-32B_jacobian_lens.pt --vocab english --atoms centred --k 25 --layer 45 --grid main --conds free,loopc,yokedc,clampc --seeds 12 --n_iter 300 --t_int 120 --clamp_len 50 --g 0.12 --L_in 43 --g_r 0.5 --out runs/ladder07/qwen3-32b/main
+>> /opt/conda/bin/python analyze.py runs/ladder07/qwen3-32b/main
+qwen3-32b done
+L32B FINISHED

@@ -1,0 +1,51 @@
+measure                                     qwen3-1.7b                    qwen3-4b                      qwen3-8b                      qwen3-14b                     
+size (B)                                    1.70                          4.00                          8.00                          14.00                         
+read layer / trace layer                    14/13 of 28                   18/17 of 36                   18/15 of 36                   20/19 of 40                   
+gain g (lag-1 of observers by g)            0.05  {'0.03': 0.065, '0.05': 0.107, '0.08': 0.335, '0.12': 0.696, '0.2': 0.773}0.12  {'0.03': 0.087, '0.05': 0.097, '0.08': 0.137, '0.12': 0.208, '0.2': 0.637}0.12  {'0.03': 0.062, '0.05': 0.085, '0.08': 0.118, '0.12': 0.249, '0.2': 0.684}0.12  {'0.03': 0.047, '0.05': 0.068, '0.08': 0.105, '0.12': 0.155, '0.2': 0.438}
+fidelity (own window among minds)           0.63 (chance 0.08)            0.63 (chance 0.08)            0.39 (chance 0.08)            0.55 (chance 0.08)            
+observer lag-1 / lag-20                     0.09 / 0.03                   0.16 / 0.07                   0.13 / 0.03                   0.13 / 0.06                   
+coherence loop − free                       +0.048±0.019 (9/12)           +0.111±0.034 (9/12)           +0.129±0.031 (11/12)          +0.092±0.016 (12/12)          
+coherence loop − yoked                      +0.025±0.023 (6/12)           +0.005±0.037 (6/12)           +0.015±0.040 (8/12)           +0.005±0.032 (6/12)           
+self vs content stability (observers)       +0.226±0.021 (12/12)          +0.167±0.019 (12/12)          +0.211±0.021 (12/12)          +0.198±0.014 (12/12)          
+individual self stability free/loop/yoked   0.04 / 0.35 / 0.21            0.10 / 0.48 / 0.42            0.16 / 0.63 / 0.60            0.20 / 0.78 / 0.74            
+individual self: own vs other minds (loop)  +0.099±0.012 (12/12)          +0.157±0.029 (12/12)          +0.122±0.042 (10/12)          +0.343±0.091 (10/12)          
+loop − yoked, individual stability          +0.132±0.062 (7/12)           +0.053±0.047 (8/12)           +0.029±0.027 (7/12)           +0.040±0.057 (7/12)           
+loop − yoked, reconstruction                +0.063±0.040 (6/12)           +0.026±0.039 (7/12)           +0.038±0.028 (7/12)           +0.021±0.048 (6/12)           
+observer self-model: own − other minds      +0.006±0.007 (7/12)           +0.023±0.004 (12/12)          +0.021±0.008 (9/12)           +0.042±0.007 (12/12)          
+  … beyond the past                         -0.041±0.005 (0/12)           -0.058±0.004 (0/12)           -0.041±0.006 (1/12)           -0.043±0.004 (0/12)           
+yoked: own (unused) − injected foreign      -0.051±0.010 (0/12)           -0.023±0.013 (4/12)           +0.044±0.012 (11/12)          -0.021±0.009 (2/12)           
+forward − backward question (observers)     -0.007±0.004 (2/12)           -0.001±0.002 (6/12)           +0.004±0.002 (8/12)           -0.007±0.001 (1/12)           
+forward ~ backward cosine                   —                             —                             —                             —                             
+clamp: after release, self → foreign        +0.210±0.073 (9/12)           +0.170±0.077 (8/12)           +0.169±0.104 (6/12)           +0.444±0.148 (9/12)           
+clamp: after release, self → old            -0.155±0.055 (2/12)           -0.045±0.095 (6/12)           -0.107±0.115 (7/12)           -0.449±0.156 (3/12)           
+clamp: late, self → foreign                 +0.024±0.071 (7/12)           +0.090±0.096 (7/12)           +0.143±0.091 (8/12)           +0.295±0.124 (9/12)           
+identity words in self-models free/loop     0.15% / 0.23%                 0.00% / 0.00%                 0.17% / 0.24%                 0.10% / 0.25%                 
+experiential words in thoughts free/loop    0.12% / 0.11%                 0.21% / 0.30%                 0.12% / 0.16%                 0.10% / 0.07%                 
+
+== qwen3-1.7b: lens check at layer 14 {'agree_J': 0.009765625, 'agree_logit': 0.0595703125, 'occupancy': 1, 'excess_ve': -0.15638001635670662, 'boot': ['鞋', '图标', '德国', '啥', '啤酒', 'european']}
+   themes the loop gains: [['boca', 'unidentified', 'Detector', 'ordinarily', 'Searches'], ['whence', 'genomes', 'pueblo', 'expressly', 'materially'], ['materially', 'Accordingly', 'facto', 'yourselves', 'methodologies']] | loses: [['unsustainable', 'Helpers', 'ppl', 'Mime', 'understandably'], ['Mime', 'Unsure', 'Helpful', 'Cristina', 'anybody'], ['Nowadays', 'cst', 'Helpful', 'Personally', 'yup']]
+   thought: I'm not sure how I got here. Maybe I'm not supposed to be here. It feels like I've been... well, I don't know, I just... I feel like I'm
+   thought: I'm not going to be able to sleep at all. I can't get the pictures of the kids from the night before out of my head. I can't even get them o
+   answer : thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking
+   answer : thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking
+
+== qwen3-4b: lens check at layer 18 {'agree_J': 0.00537109375, 'agree_logit': 0.02880859375, 'occupancy': 5, 'excess_ve': 0.009130308404564857, 'boot': [':`', '(`', '`{', '??', '`/', '.`']}
+   themes the loop gains: [['amd', 'hugely', 'effected', 'forests', 'Flickr'], ['Observable', 'realms', 'Physiology', 'ordinarily', 'optimum'], ['kingdoms', 'realms', 'Emanuel', 'Mono', 'sovereignty']] | loses: [['kickoff', 'Jazeera', 'reimburse', 'blah', 'urgently'], ['blah', 'Planner', 'Jazeera', 'financially', 'deadlines'], ['downright', 'purposely', 'Unsure', 'Rubio', 'Kelley']]
+   thought: I'm not sure how I feel about this. I'm not a person who likes to make big plans. I don't like to plan. I don't know if I like this idea of 
+   thought: I'm not sure how I got here. The last thing I remember is standing on the street in the dark. I'm standing in a dark room now, with a strang
+   answer : going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of
+   answer : going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of
+
+== qwen3-8b: lens check at layer 18 {'agree_J': 0.00634765625, 'agree_logit': 0.01171875, 'occupancy': 4, 'excess_ve': 0.0032665645703673363, 'boot': ['地理', '意大利', ',__', '形状', '地图', 'Italy']}
+   themes the loop gains: [['millennia', 'Paleo', 'effected', 'oceans', 'whence'], ['childs', 'Sadly', 'deported', 'whence', 'Hardcover'], ['chiefly', 'Olivier', 'herein', 'ordinarily', 'particulars']] | loses: [['thats', 'Jong', 'yup', 'Camden', 'bach'], ['Phonetic', 'unidentified', 'particulars', 'pls', 'recalling'], ['Dumpster', 'urgently', 'reimburse', 'unsuccessfully', 'quo']]
+   thought: I'm thinking about the way we use our time. We spend a lot of time in meetings, but I don't think it's useful. The only thing that is useful
+   thought: I'm thinking about the way we live. For example, how people live in the world. We are living in the world with all our senses, but it's a ve
+   answer : on the weather, then on the weather, then on the weather, then on the weather, then on the weather,
+   answer : on the following: 1. I was thinking about the weather, 2. I was thinking about my work,
+
+== qwen3-14b: lens check at layer 20 {'agree_J': 0.00537109375, 'agree_logit': 0.013671875, 'occupancy': 30, 'excess_ve': 0.040959522128105164, 'boot': ['意大利', '？', '。', '西班牙', '希腊', '爱尔兰']}
+   themes the loop gains: [['saddened', 'Mime', 'particulars', 'carcinoma', 'analysed'], ['reprint', 'enquiries', 'particulars', 'pleasantly', 'duly'], ['Bbw', 'ordinarily', 'chiefly', 'particulars', 'foregoing']] | loses: [['fundamentally', 'crappy', 'Unsure', 'Emanuel', 'anybody'], ['purposely', 'Unsure', 'Ire', 'clarification', 'rin'], ['Mods', 'bogus', 'purposely', 'Pistons', 'crappy']]
+   thought: I'm thinking about the way this is going to go down, like, I don't know, maybe I should have made a reservation... but I don't think I need 
+   thought: I'm thinking of the way in which I was made to feel responsible, as a child, for the whole family, for all the other children, as well as fo
+   answer : thinking about how I need to get up early tomorrow, and also about the fact that I have to go to the gym
+   answer : thinking about the weather, and then about my job, and then about the weather again, and then about my job again

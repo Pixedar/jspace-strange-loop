@@ -10,6 +10,7 @@
   --grid: #eceef2; --accent: #3a3f9e; --chip: #eef0f5; --mark: #fff3c4;
   --c-free: #2a78d6; --c-loop: #eb6834; --c-yoked: #1baf7a; --c-avg: #eda100; --c-perturb: #e87ba4;
   --c-ablate: #008300; --c-clamp: #4a3aa7; --div-neg: #2a78d6; --div-pos: #e34948; --neutral: #9aa0ad;
+  --seq1: #86b6ef; --seq2: #5598e7; --seq3: #2a78d6; --seq4: #1c5cab; --seq5: #104281;
   --f-display: 'Instrument Serif', 'Iowan Old Style', Georgia, serif;
   --f-body: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --f-mono: 'IBM Plex Mono', ui-monospace, 'Cascadia Mono', Consolas, monospace;
@@ -18,11 +19,13 @@
   --bg: #111216; --surface: #191a20; --ink: #eceef4; --ink2: #b9bdcb; --muted: #8b91a3; --rule: #2c2f39;
   --grid: #23252d; --accent: #a3a8ff; --chip: #24262f; --mark: #3b3418;
   --c-free: #3987e5; --c-loop: #d95926; --c-yoked: #199e70; --c-avg: #c98500; --c-perturb: #d55181;
+  --seq1: #b7d3f6; --seq2: #86b6ef; --seq3: #5598e7; --seq4: #2a78d6; --seq5: #1c5cab;
   --c-ablate: #008300; --c-clamp: #9085e9; --div-neg: #3987e5; --div-pos: #e66767; --neutral: #6c7282; color-scheme: dark } }
 :root[data-theme="dark"] {
   --bg: #111216; --surface: #191a20; --ink: #eceef4; --ink2: #b9bdcb; --muted: #8b91a3; --rule: #2c2f39;
   --grid: #23252d; --accent: #a3a8ff; --chip: #24262f; --mark: #3b3418;
   --c-free: #3987e5; --c-loop: #d95926; --c-yoked: #199e70; --c-avg: #c98500; --c-perturb: #d55181;
+  --seq1: #b7d3f6; --seq2: #86b6ef; --seq3: #5598e7; --seq4: #2a78d6; --seq5: #1c5cab;
   --c-ablate: #008300; --c-clamp: #9085e9; --div-neg: #3987e5; --div-pos: #e66767; --neutral: #6c7282; color-scheme: dark }
 * { box-sizing: border-box }
 body { background: var(--bg); color: var(--ink); font: 16px/1.62 var(--f-body); margin: 0 }
@@ -55,6 +58,10 @@ hr { border: 0; border-top: 1px solid var(--rule); margin: 56px 0 }
 .qa td:nth-child(2) { width: 34% }
 .qa td:last-child { font: 13px/1.5 var(--f-mono); color: var(--ink2); font-variant-numeric: tabular-nums }
 .tbl { overflow-x: auto }
+.lt { width: 100%; border-collapse: collapse; font-size: 13.5px; line-height: 1.45 }
+.lt th { text-align: left; font: 500 11.5px/1.25 var(--f-mono); letter-spacing: .05em; text-transform: uppercase; color: var(--muted); padding: 8px 12px 8px 0; border-bottom: 1px solid var(--ink); vertical-align: bottom }
+.lt td { vertical-align: top; padding: 9px 12px 9px 0; border-bottom: 1px solid var(--rule) }
+.lt td:first-child { color: var(--ink2) }
 .pill { display: inline-block; font: 600 11px/1 var(--f-mono); letter-spacing: .06em; text-transform: uppercase; padding: 4px 7px; border-radius: 3px; margin-right: 6px; vertical-align: 1px }
 .pill.yes { background: color-mix(in oklab, var(--c-yoked) 22%, transparent); color: var(--ink) }
 .pill.part { background: color-mix(in oklab, var(--c-avg) 26%, transparent); color: var(--ink) }
@@ -147,7 +154,7 @@ ol.plain, ul.plain { padding-left: 20px } ol.plain li, ul.plain li { margin-bott
   <p class="eyebrow">Experiment log · 8 October 2026</p>
   <h1>Strange Loop in J-space</h1>
   <p class="lede">A language model left to wander with no memory of its own words, only a latent state. Every ten thoughts it is asked what its mind has been doing, it answers from that state alone, and the answer is fed back into everything it thinks next. The question was whether something like a persistent self would form inside that loop.</p>
-  <div class="meta"><span>Qwen3-4B-Base</span><span>J-lens at layer 16</span><span>3 runs · 180 minds · 72,000 thoughts</span><span>RTX 4090 on Vast.ai</span></div>
+  <div class="meta"><span>Part 1: Qwen3-4B-Base · 180 minds · 72,000 thoughts</span><span>Part 2: Qwen3 1.7B–32B · 720 minds · 216,000 thoughts</span><span>RTX 4090 and A100 on Vast.ai</span></div>
   <div class="verdict">
     <div><h3>What emerged</h3><ul>
       <li>The model can read its own trajectory from states alone: its self-model picks out its own last ten moments among 10 to 15 minds <b>50 to 82 %</b> of the time (chance 7 to 10 %).</li>
@@ -159,6 +166,10 @@ ol.plain, ul.plain { padding-left: 20px } ol.plain li, ul.plain li { margin-bott
       <li>The self-model predicts the future only by <b>causing</b> it. Fed back, a foreign self-model predicts a mind's next thoughts better than that mind's own unused self-model, in every seed of every run.</li>
       <li>No anticipation: asked where its mind will go next, the workspace gives the same answer as when asked where it has been (cosine 0.94 to 0.96).</li>
     </ul></div>
+  </div>
+  <div class="callout" style="margin-top:22px">
+    <p class="eyebrow" style="margin:0 0 6px">Part 2 · the next day</p>
+    <p>Rebuilt on Anthropic's own lens code (Neuronpedia's lenses, checked layer by layer the way the paper does) and run up the Qwen3 family from 1.7B to 32B. The findings above replicate at every size. Two things are new. With scale the loop's self becomes steadier, more individual and harder to dislodge. And the small edge a mind's own self-model has over a stranger's turns out to be <b>resemblance, not ownership</b>: the most similar stranger's self is held as well as one's own, one's own outdated self worse than a random stranger's. <a href="#part2">Read Part 2</a></p>
   </div>
 </header>
 
@@ -299,17 +310,90 @@ ol.plain, ul.plain { padding-left: 20px } ol.plain li, ul.plain li { margin-bott
     <figcaption>Theme names are their most distinctive J-space words; explicit words are masked. In the pilot the same pull appeared without any self-model at all: with a strong recurrent gain the free-running stream settled into <i>"I think: I think and know that I think… I am conscious of the fact that I know the fact of my thinking"</i>. The think-aloud frame invites that, so the observers, not zero, are the baseline for every comparison here.</figcaption></figure>
 </section>
 
+<section class="col" id="part2">
+  <p class="eyebrow" style="margin-top:72px">Part 2 · 9 October 2026</p>
+  <h2 style="margin-top:0">Doing J-space properly, and five model sizes</h2>
+  <p>Part 1 borrowed its J-space from an earlier project: a Jacobian lens fitted on 120 prompts, a dictionary of common English words with the unembedding centred, and a read layer that was never checked. So before scaling up I went back to the paper and the reference code and rebuilt each piece from them, then measured where my choices still differ.</p>
+  <div class="tbl"><table class="lt">
+    <thead><tr><th>Piece</th><th>The paper</th><th>Part 1</th><th>Part 2</th></tr></thead>
+    <tbody>
+      <tr><td>Lens</td><td>J = average Jacobian from layer ℓ to the last block, over source positions and all later target positions, ~1,000 prompts × 128 tokens</td><td>same definition, fitted on 120 prompts</td><td>Neuronpedia's lenses, fitted with Anthropic's reference code on 460–615 wikitext prompts × 128 tokens</td></tr>
+      <tr><td>J-space</td><td>sparse non-negative combination of J-lens vectors (rows of W<sub>U</sub>·J), gradient pursuit, K ≤ 25</td><td>non-negative OMP, K = 16</td><td>non-negative OMP, K = 25</td></tr>
+      <tr><td>Dictionary</td><td>one vector per vocabulary token</td><td>common English words, unembedding centred</td><td>common English words, tested against the full vocabulary (below)</td></tr>
+      <tr><td>Layer</td><td>workspace band found from CKA, occupancy and lens accuracy: ~38–92 % of depth</td><td>layer 16 of 36, unchecked</td><td>validated per model; read at 70 % of depth, inside the band found below</td></tr>
+      <tr><td>Models</td><td>Claude Sonnet, Haiku and Opus 4.5</td><td>Qwen3-4B-Base</td><td>Qwen3 1.7B, 4B, 8B, 14B and 32B</td></tr>
+    </tbody></table></div>
+
+  <h3>Where the workspace is in Qwen3</h3>
+  <p>For every model I checked the lens at every few layers on held-out wikitext, the way the paper does: how many J-lens vectors are worth using (occupancy: the K at which K J-lens vectors beat K random directions by the most), how much variance they explain beyond random directions, and what the lens says on a few concept prompts. Up to 8B the J-lens turns conceptual only past about 60 % of depth, later than in the paper's Claude models. The larger models are different: at 14B and 32B the concepts arrive earlier (from 0.40 and 0.55 of depth) and many more J-lens vectors are worth using (occupancy 30 to 37 at 14B, 13 to 19 at 32B, against at most 11 below), and at 32B the J-lens finally beats the logit lens at agreeing with the model's prediction (0.13 vs 0.09 at 84 % depth).</p>
+  <figure><div class="legend" id="lg-val"></div><div class="charts2">
+    <div><p class="fig-title">Occupancy</p><p class="fig-sub">how many J-lens vectors beat random directions, by depth</p><div class="chart" id="ch-occ"></div></div>
+    <div><p class="fig-title">Variance explained beyond random</p><p class="fig-sub">25 J-lens vectors minus 25 random directions</p><div class="chart" id="ch-val"></div></div>
+    </div><figcaption>Mean-subtracted residuals on held-out wikitext; darker = larger model. Up to 8B a handful of J-lens vectors are worth using and only from about 60 % of depth. At 14B the band widens and fills: about 30 to 37 vectors across most of the middle, the plateau the paper reports for Claude.</figcaption></figure>
+  <div class="tbl" id="probe-table"></div>
+  <p class="note" style="margin-top:8px">Qwen3-4B, top J-lens tokens at the second-to-last position of each prompt. At half depth the lens still reads punctuation; from about 0.64 it names the answer ("Italy" for the boot), the scene and, late, the experiential words the paper finds in stream-of-consciousness text.</p>
+
+  <h3>The dictionary matters, the full vocabulary loses information</h3>
+  <p>The paper's dictionary is every vocabulary token. On Qwen's 151,643 tokens that dictionary is dominated by code fragments, CJK pieces and under-trained tokens, and the self-model drowns in them. I measured it directly: the same 16 observer minds, the same residual states, and the question of whether the self-model picks out its own last ten states, asked in three spaces.</p>
+  <div class="tbl" id="dict-table"></div>
+  <p>Projecting onto J-space reads the trajectory <i>better</i> than the raw residual stream at 4B, which is what a workspace that concentrates the reportable content should do. The common-English dictionary keeps the most, so Part 2 uses it. A full run of the 1.7B model with the paper's dictionary is the robustness check: there the loop barely works at all (<span id="paper17-text"></span>).</p>
+</section>
+
+<section class="col">
+  <h2>Up the ladder: Qwen3 from 1.7B to 32B</h2>
+  <p>Every model ran the design of run C: 12 observers, 12 loops feeding back their own individual self-model, 12 yoked minds fed another mind's, and 12 clamped minds held to a foreign self for thoughts 120 to 169. Per model, the recurrent gain was chosen so that observers keep the same memory (lag-1 similarity about 0.2), and the reflection layer so that the self-model reads its trajectory best.</p>
+  <div id="ladder-text">
+  <p>Five things hold at every size, and three change with it.</p>
+  <ul class="plain">
+    <li><b>The self-model reads its own trajectory at every size</b>, 51 to 73 % of the time at depth 0.7 against 8 % chance.</li>
+    <li><b>A self-symbol forms at every size:</b> even an observer's self-model is steadier than the thoughts it describes (+0.09 to +0.29, 12 of 12 seeds in every run).</li>
+    <li><b>An individual self persists only when it is fed back</b>: in observers its individual part is gone by the next reflection (0.03 to 0.20), in the loop it lasts (0.25 to 0.78).</li>
+    <li><b>No anticipation at any size.</b> Asked where its mind will go next, the workspace answers as it does about where it has been; pooled over all runs, the forward answer predicts the next thoughts no better (+0.0000 ± 0.0005).</li>
+    <li><b>Behaviour follows whichever self is fed in.</b> A foreign self-model predicts a yoked mind's next thoughts better than that mind's own unused one in 14 of 15 runs (pooled z = −18).</li>
+  </ul>
+  <p>What changes with size: the loop's self gets <b>steadier</b> up to 8B and then levels off (individual-self stability at depth 0.7: 0.25, 0.35, 0.61, 0.68, 0.64 from 1.7B to 32B), and steadily <b>more individual</b>: closer to its own earlier self than to other minds' by +0.01, +0.06, +0.14, +0.23 and +0.25 (11 of 12 seeds at 32B). It also gets <b>stickier</b>. A foreign self held for 50 thoughts is still dominant after release in the larger models (at depth 0.5 the late effect grows from +0.02 at 1.7B to +0.30 at 14B; at depth 0.7, 14B holds it to the end, +0.19, and 32B for a while, +0.21 right after release, before it fades), where the small ones drift back to neutral. None of this is specific to the mind's own self: the yoked minds' foreign selves become steadier with size in the same way.</p>
+  <p>At 32B, the largest model, the self-model reads its own trajectory 72 % of the time, its J-lens is the only one in the ladder that agrees with the model's own prediction better than the plain logit lens does (as the paper reports for Claude), and still the foreign self being fed in predicts its next thoughts better than its own unused self-model in every seed (−0.061, 0 of 12).</p>
+  </div>
+  <figure><div class="charts2">
+    <div><p class="fig-title">The self-model reads its own trajectory</p><p class="fig-sub">picks its own last ten states among 12 minds</p><div class="chart" id="ch-l-fid"></div></div>
+    <div><p class="fig-title">An individual self persists in the loop</p><p class="fig-sub">stability of the individual part across reflections</p><div class="legend" id="lg-l-ind"></div><div class="chart" id="ch-l-ind"></div></div>
+  </div></figure>
+  <figure><p class="fig-title">Own versus foreign self, at every size</p><p class="fig-sub">loop minus yoked, paired by seed; dot = mean, line = ± 2 s.e.</p>
+    <div class="chart" id="ch-l-forest"></div></figure>
+  <h3>A small ownership effect, visible only in the pooled evidence</h3>
+  <div id="pooled-text">
+  <p>No single run shows a reliable edge for the mind's own self over a foreign one. Pooled over every independent run, it is there: <span id="pooled-num"></span> It does not reach behaviour. Long-range coherence barely differs, and the next thoughts still follow whichever self-model is fed in.</p>
+  </div>
+  <figure><p class="fig-title">Stability of the individual self: own minus foreign, every independent run</p><p class="fig-sub">per run: mean ± 2 s.e. over seeds; last row: inverse-variance pooled estimate</p>
+    <div class="chart" id="ch-pooled"></div></figure>
+  <h3>Ownership, or just resemblance?</h3>
+  <div id="own-text">
+  <p>A mind's own current self-model is, almost by construction, the one that best matches its present state. So the pooled edge could be ownership, or just resemblance. Two more conditions separate them, 16 minds each: <b>match</b> feeds each mind the self-model of whichever other mind resembles it most at that moment, and <b>stale</b> feeds the mind its own self-model from five reflections (50 thoughts) earlier.</p>
+  <p>The answer is resemblance. Pooled over the three sizes, the most similar stranger's self is held slightly <i>better</i> than the mind's own (own minus matched stranger −0.045 ± 0.014, z = −3.2), and the mind's own self from 50 thoughts earlier is held <i>worse than a random stranger's</i> (−0.113 ± 0.018, z = −6.5). What the loop keeps is the self-description that best fits the present, whoever produced it. Being one's own adds nothing once fit is accounted for, and being out of date costs more than being someone else's.</p>
+  <div class="tbl" id="own-table"></div>
+  <p>One side effect: feeding every mind its closest neighbour couples the population, and the matched minds drift toward each other (at 4B, their individual selves resemble other minds' twice as much as the loop minds' do).</p>
+  </div>
+  <figure id="own-fig"><div class="legend" id="lg-own"></div><div class="chart" id="ch-own"></div></figure>
+  <figure><div class="charts2">
+    <div><p class="fig-title">After the clamp is released</p><p class="fig-sub">self-model's pull toward the foreign self, minus its twin's (± 1 s.e.)</p><div class="legend" id="lg-l-clamp"></div><div class="chart" id="ch-l-clamp"></div></div>
+    <div><p class="fig-title">Who predicts a mind's next thoughts</p><p class="fig-sub">paired differences (± 1 s.e.); above zero = the first predicts better</p><div class="legend" id="lg-l-pred"></div><div class="chart" id="ch-l-pred"></div></div>
+  </div></figure>
+  <div class="tbl" id="ladder-table"></div>
+</section>
+
 <section class="col">
   <h2>What this does and does not show</h2>
   <p>The structure you described is buildable and it behaves like a loop. A trajectory is compressed into a reportable representation, that representation is fed back, the trajectory reorganises around it, and the next compression recovers it. Such a loop sustains itself, holds long-range coherence that disappears the moment it is cut, and has many stable states. Which one it is in depends on its history, including history imposed from outside.</p>
-  <p>What it does not do is single out the system's own model as special. In Hofstadter's terms, the loop produces a symbol that persists because it is in the loop, an "I" that is whatever occupies the position, closer to an installed identity than a discovered one. The one place where ownership showed a consistent edge (the self-model's stability and reconstruction, a few hundredths, 9 of 10 seeds in run B) is the place to push. A self-model that fits its own trajectory may be re-formed slightly more faithfully than a foreign one, but here that edge is dwarfed by the effect of having any reflective model fed back at all.</p>
+  <p>What it does not do is single out the system's own model as special. Across five model sizes and two read depths, a mind holds its own self-model slightly better than a random stranger's, but the controls show why: it holds the most similar stranger's self just as well, and its own self from 50 thoughts earlier worse than a random one. The loop keeps whichever self-description best fits the present. In Hofstadter's terms the loop does produce a persistent symbol, an "I" defined by its fit to the current state of the loop rather than by whose history produced it.</p>
+  <p>Scale makes that symbol steadier, more individual and harder to dislodge. In the larger models, a self installed for 50 thoughts keeps itself going after it is removed. The workspace itself also changes with scale: up to 8B only a handful of J-lens vectors are worth using, late in the network; at 14B about 30 are, across most of the middle, as the paper reports for Claude. Neither the loop nor the workspace shows any sign of anticipating its own future.</p>
   <p>Nothing here bears on whether there is something it is like to be such a loop. Every measure in this report is functional: similarity, prediction, persistence. That question is untouched.</p>
   <h3>What would sharpen it</h3>
   <ol class="plain">
-    <li><b>Make ownership matter.</b> Give the loop something to lose when its self-model is wrong: a task whose success depends on predicting its own next state, so a self-model that fits the trajectory pays off and a foreign one does not.</li>
+    <li><b>Make ownership matter.</b> Give the loop something to lose when its self-model is wrong: a task whose success depends on predicting its own next state. Part 2 shows that without such a stake, fit to the present is all that counts.</li>
     <li><b>A forward model with teeth.</b> The forward question gave back the backward answer. Training a small read-out on the workspace to predict the next window, then feeding that prediction back, would test anticipation directly.</li>
     <li><b>Release the frame.</b> The think-aloud frame makes "a mind thinking about itself" the natural content. Repeat with a story frame and with a chat model to see which results belong to the loop and which to the frame.</li>
-    <li><b>Longer clamps and returns.</b> Map the attractor landscape: how long a foreign self has to be held before it sticks, and whether two loops exchanging self-models converge.</li>
+    <li><b>Longer clamps and returns.</b> Map how long a foreign self has to be held before it sticks, and at which size the stickiness appears; the match condition already shows that minds fed each other's selves converge.</li>
+    <li><b>Base models on the ladder.</b> Part 2's lenses exist only for the post-trained Qwen3 models. The same ladder on base models would separate what post-training adds to the self-symbol.</li>
   </ol>
 </section>
 
@@ -320,7 +404,10 @@ ol.plain, ul.plain { padding-left: 20px } ol.plain li, ul.plain li { margin-bott
     <li>10 to 15 minds per condition. The large effects (self vs content, loop vs observer, ablation, clamp) hold in every or nearly every seed. The loop vs yoked differences are a few hundredths with t between 0.3 and 5.7 and should be read as "at most small".</li>
     <li>Rows with the same seed share sampling noise by design, so perturbed and ablated minds are exact copies of their loop twins until treated. Their pre-intervention numbers are therefore not independent replications.</li>
     <li>The J-space dictionary matters for the words but not for the conclusions. Run A used every word-like token, and under-trained and non-English tokens took over the word lists. Runs B and C used common English words, and all the structural results agree across the three.</li>
-    <li>Similarities are cosines in the 2,560-dimensional residual space between J-space vectors measured against the typical workspace, so unrelated thoughts score about 0. "Coherence" is lag 20 to 60; "persistence" in the prediction test is the past ten-thought window.</li>
+    <li>Similarities are cosines in the residual space between J-space vectors measured against the typical workspace, so unrelated thoughts score about 0. "Coherence" is lag 20 to 60; "persistence" in the prediction test is the past ten-thought window.</li>
+    <li>Part 2 uses the post-trained Qwen3 models (the lenses exist only for those) with a human think-aloud frame, the common-English dictionary rather than the paper's full vocabulary (measured: the full vocabulary reads the trajectory worse), and per-model gains from a coarse grid, so the observers' memory is matched only roughly across sizes (lag-1 0.09 to 0.16).</li>
+    <li>The pooled ownership test treats each model × depth run as independent. Runs share their sampling-noise streams (the same base seed), so the effective number of independent runs is somewhat lower than the count.</li>
+    <li>On the way, two runs were cut short and resumed from checkpoints after the GPU account ran dry; the resumed runs continue exactly where they stopped.</li>
   </ul>
 </section>
 
@@ -381,7 +468,9 @@ function lineChart(el, o) {
   let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(o.aria || '')}">`;
   for (const b of (o.bands || [])) s += `<rect x="${X(b.x0)}" y="${m.t}" width="${X(b.x1) - X(b.x0)}" height="${H - m.t - m.b}" style="fill:var(--grid)"/>`;
   for (const v of niceTicks(lo, hi, 4)) s += `<line class="gridl" x1="${m.l}" x2="${W - m.r}" y1="${Y(v)}" y2="${Y(v)}"/><text x="${m.l - 6}" y="${Y(v) + 4}" text-anchor="end">${v.toFixed(Math.abs(hi - lo) < 0.5 ? 2 : 1)}</text>`;
-  for (const v of niceTicks(x0, x1, o.xTicks || 6)) s += `<text x="${X(v)}" y="${H - m.b + 16}" text-anchor="middle">${v}</text>`;
+  if (o.xTickLabels) xs.forEach((v, i) => s += `<text x="${X(v)}" y="${H - m.b + 16}" text-anchor="middle">${esc(o.xTickLabels[i])}</text>`);
+  else for (const v of niceTicks(x0, x1, o.xTicks || 6)) s += `<text x="${X(v)}" y="${H - m.b + 16}" text-anchor="middle">${v}</text>`;
+  if (o.zero) s += `<line x1="${m.l}" x2="${W - m.r}" y1="${Y(0)}" y2="${Y(0)}" style="stroke:var(--ink2)"/>`;
   s += `<line class="axis" x1="${m.l}" x2="${W - m.r}" y1="${H - m.b}" y2="${H - m.b}"/>`;
   if (o.xLabel) s += `<text x="${(m.l + W - m.r) / 2}" y="${H - 2}" text-anchor="middle">${esc(o.xLabel)}</text>`;
   for (const v of (o.vlines || [])) s += `<line x1="${X(v.x)}" x2="${X(v.x)}" y1="${m.t}" y2="${H - m.b}" style="stroke:var(--ink2);stroke-dasharray:3 3"/><text x="${X(v.x) + 4}" y="${m.t + 10}" class="lbl">${esc(v.label)}</text>`;
@@ -391,6 +480,7 @@ function lineChart(el, o) {
       s += `<path d="${up}${dn}Z" style="fill:${sr.color};opacity:.13"/>`; }
     let d = ''; xs.forEach((xv, i) => { if (sr.values[i] == null) return; d += `${d ? 'L' : 'M'}${X(xv).toFixed(1)},${Y(sr.values[i]).toFixed(1)}`; });
     s += `<path d="${d}" style="fill:none;stroke:${sr.color};stroke-width:2;stroke-linejoin:round;${sr.dash ? 'stroke-dasharray:5 4' : ''}"/>`;
+    if (o.points) xs.forEach((xv, i) => { if (sr.values[i] != null) s += `<circle cx="${X(xv)}" cy="${Y(sr.values[i])}" r="4" style="fill:${sr.color};stroke:var(--surface);stroke-width:2"/>`; });
   }
   if (o.endLabels !== false) {
     const ends = o.series.map(sr => { let i = sr.values.length - 1; while (i > 0 && sr.values[i] == null) i--; return {sr, y: Y(sr.values[i])}; }).sort((a, b) => a.y - b.y);
@@ -403,7 +493,7 @@ function lineChart(el, o) {
     const r = svg.getBoundingClientRect(), px = (ev.clientX - r.left) * W / r.width;
     let i = 0, best = 1e9; xs.forEach((xv, j) => { const dd = Math.abs(X(xv) - px); if (dd < best) { best = dd; i = j; } });
     hair.setAttribute('x1', X(xs[i])); hair.setAttribute('x2', X(xs[i])); hair.style.opacity = .5;
-    tip.innerHTML = `<div style="color:var(--muted)">${esc(o.xName || 'x')} ${xs[i]}</div>` + o.series.map(sr => sr.values[i] == null ? '' :
+    tip.innerHTML = `<div style="color:var(--muted)">${esc(o.xName || 'x')} ${esc(o.xTickLabels ? o.xTickLabels[i] : xs[i])}</div>` + o.series.map(sr => sr.values[i] == null ? '' :
       `<div><span class="sw" style="background:${sr.color}"></span>${esc(sr.name)} <b>${f2(sr.values[i])}</b></div>`).join('');
     tip.hidden = false; const tx = (X(xs[i]) / W) * r.width; tip.style.left = (tx > r.width * .6 ? tx - tip.offsetWidth - 12 : tx + 12) + 'px'; tip.style.top = '6px';
   });
@@ -610,8 +700,116 @@ $('ex-canvas').addEventListener('click', ev => { const D = EX.data[EX.run]; if (
   let best = 1e9, bi = EX.t; D.path[EX.toXY.b].forEach((p, i) => { const d = (EX.toXY.X(p[0]) - mx) ** 2 + (EX.toXY.Y(p[1]) - my) ** 2; if (d < best) { best = d; bi = i; } });
   EX.t = bi; $('ex-t').value = bi; drawExplorer(); });
 
-let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { drawAll(); drawExplorer(); }, 150); });
-new MutationObserver(() => { drawAll(); drawExplorer(); }).observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+// ---------------------------------------------------------------- part 2: proper J-space and the model ladder
+const LADDER = __LADDER__;
+const SEQ = ['var(--seq1)', 'var(--seq2)', 'var(--seq3)', 'var(--seq4)', 'var(--seq5)'];
+const pct = v => v == null ? '—' : Math.round(v * 100) + ' %';
+const sgn = (t, d = 3) => !t ? '—' : `${t.diff >= 0 ? '+' : '−'}${Math.abs(t.diff).toFixed(d)} <span style="color:var(--muted)">± ${t.se.toFixed(d)} · ${t.pos}/${t.n}</span>`;
+function drawLadder() {
+  if (!LADDER) return;
+  const L = LADDER.models07 || {}, L5 = LADDER.models05 || {}, V = LADDER.validation || {};
+  const size = t => (L[t] || L5[t] || {}).size || parseFloat(t.split('-')[1]);
+  const tags = Object.keys(L).sort((a, b) => size(a) - size(b));
+  const xs = tags.map((_, i) => i), xl = tags.map(t => `${size(t)}B`);
+  const val = f => tags.map(t => { try { const v = f(L[t]); return v == null || Number.isNaN(v) ? null : v; } catch (e) { return null; } });
+  // lens validation: excess variance explained vs depth, one line per model
+  const vt = Object.keys(V).sort((a, b) => size(a) - size(b)), grid = [...Array(19).keys()].map(i => +(0.05 * (i + 1)).toFixed(2));
+  legend('lg-val', vt.map((t, i) => ({name: `Qwen3-${size(t)}B`, color: SEQ[i % 5]})));
+  const at = (t, g, key) => { const near = V[t].layers.reduce((b, x) => Math.abs(x.depth - g) < Math.abs(b.depth - g) ? x : b); return Math.abs(near.depth - g) < 0.03 ? near[key] : null; };
+  const vmax = Math.max(0.05, ...vt.flatMap(t => V[t].layers.map(x => x.excess_ve))) * 1.1, omax = Math.max(10, ...vt.flatMap(t => V[t].layers.map(x => x.occupancy))) * 1.1;
+  lineChart(document.getElementById('ch-occ'), {x: grid, xName: 'depth', height: 220, yMin: 0, yMax: omax, endLabels: false, xLabel: 'depth', xTicks: 5,
+    vlines: [{x: 0.7, label: 'read'}], aria: 'J-lens occupancy by depth', series: vt.map((t, i) => ({name: `Qwen3-${size(t)}B`, color: SEQ[i % 5], values: grid.map(g => at(t, g, 'occupancy'))}))});
+  lineChart(document.getElementById('ch-val'), {x: grid, xName: 'depth', height: 220, yMin: 0, yMax: vmax, endLabels: false, xLabel: 'depth', xTicks: 5,
+    vlines: [{x: 0.7, label: 'read'}], aria: 'Excess variance explained by J-lens vectors by depth',
+    series: vt.map((t, i) => ({name: `Qwen3-${size(t)}B`, color: SEQ[i % 5], values: grid.map(g => at(t, g, 'excess_ve'))}))});
+  // probe table for the 4B lens
+  const v4 = V['qwen3-4b'];
+  if (v4) {
+    const want = [0.5, 0.64, 0.69, 0.75, 0.81, 0.86], names = ['"…country shaped like a boot is"', '"…the ocean, the waves and the"', '"…what it feels like to be"'];
+    const rows = want.map(w => v4.layers.reduce((b, x) => Math.abs(x.depth - w) < Math.abs(b.depth - w) ? x : b));
+    document.getElementById('probe-table').innerHTML = `<table class="lt"><thead><tr><th>depth</th>${names.map(n => `<th>${esc(n)}</th>`).join('')}</tr></thead><tbody>` +
+      rows.map(r => `<tr><td style="font-style:normal">${r.depth.toFixed(2)} · layer ${r.layer}</td>${['boot', 'ocean', 'self'].map(k => `<td style="font:13px/1.5 var(--f-mono)">${esc((r.probes?.[k] || []).slice(0, 5).map(mask).join(', '))}</td>`).join('')}</tr>`).join('') + '</tbody></table>';
+  }
+  // dictionary test
+  const D = LADDER.diag || {}, best = (f, sp) => Math.max(...Object.values(f.fidelity).map(v => v[sp]));
+  document.getElementById('dict-table').innerHTML = `<table class="lt"><thead><tr><th>model</th><th>raw residual</th><th>paper: every token</th><th>common English words</th><th>chance</th></tr></thead><tbody>` +
+    Object.entries(D).map(([t, f]) => `<tr><td style="font-style:normal">Qwen3-${size(t)}B</td>${['raw', 'paper', 'english'].map(sp => `<td style="font:13px var(--f-mono)">${pct(best(f, sp))}</td>`).join('')}<td style="font:13px var(--f-mono)">${pct(f.chance)}</td></tr>`).join('') +
+    '</tbody></table><p class="note" style="margin-top:6px">Share of reflections in which the self-model is closest to its own last ten states among 16 observers; best reflection setting per space.</p>';
+  const p17 = LADDER.paper17;
+  if (p17) document.getElementById('paper17-text').innerHTML = `the self-model picks out its own trajectory ${pct(p17.fidelity.retrieval)} of the time against ${pct(p17.fidelity.chance)} chance, and feeding it back changes long-range coherence by ${sgn(p17.coherence_loop_vs_free)}`;
+  if (!tags.length) return;
+  // the ladder
+  lineChart(document.getElementById('ch-l-fid'), {x: xs, xTickLabels: xl, xName: 'Qwen3', points: true, yMin: 0, yMax: 1, height: 220, endLabels: false,
+    aria: 'Reflection fidelity by model size', series: [{name: 'own window picked', color: 'var(--accent)', values: val(o => o.fidelity.retrieval)},
+      {name: 'chance', color: 'var(--neutral)', dash: true, values: val(o => o.fidelity.chance)}]});
+  legend('lg-l-ind', ['free', 'loop', 'yoked'].map(c => ({name: COND[c].name, color: cv(c)})));
+  lineChart(document.getElementById('ch-l-ind'), {x: xs, xTickLabels: xl, xName: 'Qwen3', points: true, yMin: 0, yMax: 1, height: 220, endLabels: false,
+    aria: 'Individual self-model stability by model size', series: ['free', 'loop', 'yoked'].map(c => ({name: COND[c].name, color: cv(c), values: val(o => o.ind_stab[c])}))});
+  const fr = [];
+  for (const [label, key] of [['Stability of the individual self', 'loop_vs_yoked_cons_ind'], ['Reconstruction of the fed-back self', 'loop_vs_yoked_recon_ind'], ['Long-range coherence', 'coherence_loop_vs_yoked']]) {
+    fr.push({head: true, label}); tags.forEach(t => { const x = L[t][key]; if (x) fr.push({label: `Qwen3-${size(t)}B`, diff: x.diff, se: x.se, pos: x.pos, n: x.n}); });
+  }
+  const ext = Math.max(0.15, ...fr.filter(r => !r.head).map(r => Math.abs(r.diff) + 2 * r.se));
+  forest(document.getElementById('ch-l-forest'), {rows: fr, min: -Math.min(ext, 0.4), max: Math.min(ext, 0.4), xLabel: 'loop − yoked (cosine)', aria: 'Own minus foreign self by model size'});
+  const cl = k => ({values: val(o => o.clamp[k].diff), se: val(o => o.clamp[k].se)});
+  legend('lg-l-clamp', [{name: 'toward foreign, right after', color: cv('clamp')}, {name: 'toward foreign, late', color: cv('clamp'), dash: true}, {name: 'toward its old self', color: cv('loop')}]);
+  lineChart(document.getElementById('ch-l-clamp'), {x: xs, xTickLabels: xl, xName: 'Qwen3', points: true, zero: true, height: 220, endLabels: false, yMin: -0.6, yMax: 0.8,
+    aria: 'Clamp release effects by model size', series: [{name: 'foreign, after', color: cv('clamp'), ...cl('after_self_to_foreign')},
+      {name: 'foreign, late', color: cv('clamp'), dash: true, ...cl('late_self_to_foreign')}, {name: 'old self, after', color: cv('loop'), ...cl('after_self_to_old')}]});
+  const pr = k => ({values: val(o => o[k].diff), se: val(o => o[k].se)});
+  legend('lg-l-pred', [{name: 'observer: own − other minds', color: 'var(--ink)'}, {name: '… beyond the past', color: 'var(--ink)', dash: true},
+    {name: 'yoked: own unused − injected foreign', color: cv('yoked')}, {name: 'forward − backward question', color: 'var(--accent)'}]);
+  lineChart(document.getElementById('ch-l-pred'), {x: xs, xTickLabels: xl, xName: 'Qwen3', points: true, zero: true, height: 220, endLabels: false, yMin: -0.12, yMax: 0.08,
+    aria: 'Prediction differences by model size', series: [{name: 'own − other', color: 'var(--ink)', ...pr('observer_own_vs_other')},
+      {name: 'beyond past', color: 'var(--ink)', dash: true, ...pr('observer_beyond_past')}, {name: 'yoked own − injected', color: cv('yoked'), ...pr('yoked_own_vs_injected')},
+      {name: 'forward − backward', color: 'var(--accent)', ...pr('fwd_vs_back_free')}]});
+  // pooled evidence across runs
+  const PL = LADDER.pooled && LADDER.pooled['individual self stability, loop − yoked'];
+  if (PL) {
+    const lab = n => n.replace('ladder07/', '').replace('ladder2/', '').replace('qwen3-', 'Qwen3-').toUpperCase().replace('QWEN3-', 'Qwen3-') + (n.startsWith('ladder07') ? ' · depth 0.7' : n.startsWith('ladder2') ? ' · depth 0.5' : '');
+    const nm = n => n.startsWith('main') ? `Part 1 run ${n.slice(4)} · Qwen3-4B-Base` : n.startsWith('own/') ? `Qwen3-${size(n.slice(4))}B · ownership run` : lab(n);
+    const rows = PL.per_run.map(([n, d, se, pos, nn]) => ({label: nm(n), diff: d, se, pos, n: nn}));
+    rows.push({head: true, label: 'Pooled'}); rows.push({label: `all ${PL.n_runs} runs (z = ${PL.z.toFixed(1)})`, diff: PL.pooled, se: PL.se, pos: PL.runs_positive, n: PL.n_runs});
+    forest(document.getElementById('ch-pooled'), {rows, min: -0.15, max: 0.3, xLabel: 'loop − yoked, stability of the individual self (cosine)', aria: 'Pooled ownership effect'});
+  }
+  const PR = LADDER.pooled && LADDER.pooled['reconstruction of the fed-back self, loop − yoked'];
+  if (PL && PR) document.getElementById('pooled-num').innerHTML = `the individual self is ${PL.pooled.toFixed(3)} ± ${PL.se.toFixed(3)} more stable when the loop runs on the mind's own self-model (z = ${PL.z.toFixed(1)}, positive in ${PL.runs_positive} of ${PL.n_runs} runs), and the fed-back self is rebuilt ${PR.pooled.toFixed(3)} ± ${PR.se.toFixed(3)} more faithfully (z = ${PR.z.toFixed(1)}, ${PR.runs_positive} of ${PR.n_runs}).`;
+  // ownership or resemblance
+  const OW = LADDER.ownership || {};
+  const otab = Object.keys(OW).sort((a, b) => size(a) - size(b));
+  if (otab.length) {
+    const cols = [['loop_vs_match', 'own − most similar stranger'], ['loop_vs_stale', 'own − own from 50 thoughts ago'], ['stale_vs_yoked', 'own outdated − random stranger'], ['loop_vs_yoked', 'own − random stranger']];
+    document.getElementById('own-table').innerHTML = `<table class="lt"><thead><tr><th>stability of the individual self</th>${cols.map(c => `<th>${esc(c[1])}</th>`).join('')}</tr></thead><tbody>` +
+      otab.map(t => `<tr><td>Qwen3-${size(t)}B · 16 minds each</td>${cols.map(([k]) => `<td style="font:12.5px/1.5 var(--f-mono)">${sgn(OW[t].tests[k] && OW[t].tests[k].stability)}</td>`).join('')}</tr>`).join('') + '</tbody></table>';
+  }
+  const ot = Object.keys(OW).sort((a, b) => size(a) - size(b));
+  if (ot.length) {
+    const cs = ['loop', 'match', 'stale', 'yoked'], nm2 = {loop: 'own self', match: 'most similar stranger', stale: 'own self, 50 thoughts old', yoked: 'random stranger'};
+    const col2 = {loop: cv('loop'), match: 'var(--accent)', stale: cv('clamp'), yoked: cv('yoked')};
+    legend('lg-own', cs.map(c => ({name: nm2[c], color: col2[c]})));
+    const groups = [];
+    for (const t of ot) for (const [k, lab2] of [['stability', 'stability'], ['recon', 'reconstruction']])
+      groups.push({label: `Qwen3-${size(t)}B
+${lab2}`, bars: cs.map(c => ({key: c, value: OW[t].cond[c][k], se: OW[t].cond[c][k + '_se']}))});
+    const keys = {}; cs.forEach(c => keys[c] = {name: nm2[c], color: col2[c]});
+    barChart(document.getElementById('ch-own'), {height: 250, yMax: 1, keys, groups, values: false, aria: 'Ownership versus resemblance'});
+  } else { const f = document.getElementById('own-fig'); if (f) f.hidden = true; }
+  // full table, depth 0.7 and (where run) 0.5
+  const meas = [['read / trace layer', o => `${o.L} / ${o.L_in} of ${o.layers}`], ['recurrent gain', o => o.g], ['self-model reads own trajectory', o => `${pct(o.fidelity.retrieval)} (chance ${pct(o.fidelity.chance)})`],
+    ['individual self stability: observer / loop / yoked', o => ['free', 'loop', 'yoked'].map(c => (o.ind_stab[c] ?? NaN).toFixed(2)).join(' / ')],
+    ['own self vs other minds’ (loop)', o => sgn(o.own_symbol_loop)], ['loop − yoked, self stability', o => sgn(o.loop_vs_yoked_cons_ind)],
+    ['loop − yoked, reconstruction', o => sgn(o.loop_vs_yoked_recon_ind)], ['loop − free, coherence', o => sgn(o.coherence_loop_vs_free)],
+    ['clamp: foreign after release', o => sgn(o.clamp.after_self_to_foreign)], ['clamp: foreign, late', o => sgn(o.clamp.late_self_to_foreign)],
+    ['yoked: own unused − injected', o => sgn(o.yoked_own_vs_injected)], ['forward − backward', o => sgn(o.fwd_vs_back_free)]];
+  const col = (LL, t) => LL[t] ? meas.map(([_, f]) => { try { return `<td style="font:12.5px/1.5 var(--f-mono)">${f(LL[t])}</td>`; } catch (e) { return '<td>—</td>'; } }) : meas.map(() => '<td>—</td>');
+  const heads = tags.map(t => `Qwen3-${size(t)}B`);
+  const cols = tags.map(t => col(L, t)), cols5 = tags.filter(t => L5[t]).map(t => col(L5, t)), heads5 = tags.filter(t => L5[t]).map(t => `${size(t)}B · depth 0.5`);
+  document.getElementById('ladder-table').innerHTML = `<table class="lt"><thead><tr><th>measure (depth 0.7)</th>${heads.map(h => `<th>${h}</th>`).join('')}${heads5.map(h => `<th>${h}</th>`).join('')}</tr></thead><tbody>` +
+    meas.map(([name], i) => `<tr><td>${esc(name)}</td>${cols.map(c => c[i]).join('')}${cols5.map(c => c[i]).join('')}</tr>`).join('') + '</tbody></table>';
+}
+
+let rz; window.addEventListener('resize', () => { clearTimeout(rz); rz = setTimeout(() => { drawAll(); drawLadder(); drawExplorer(); }, 150); });
+new MutationObserver(() => { drawAll(); drawLadder(); drawExplorer(); }).observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
 window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => drawExplorer());
-drawAll(); setRun('C');
+drawAll(); drawLadder(); setRun('C');
 </script>

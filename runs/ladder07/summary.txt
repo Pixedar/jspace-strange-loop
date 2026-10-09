@@ -1,0 +1,58 @@
+measure                                     qwen3-1.7b                    qwen3-4b                      qwen3-8b                      qwen3-14b                     qwen3-32b                     
+size (B)                                    1.70                          4.00                          8.00                          14.00                         32.00                         
+read layer / trace layer                    20/19 of 28                   25/20 of 36                   25/21 of 36                   28/22 of 40                   45/43 of 64                   
+gain g (lag-1 of observers by g)            0.12  {'0.03': 0.056, '0.05': 0.069, '0.08': 0.094, '0.12': 0.132, '0.2': 0.416}0.12  {'0.03': 0.072, '0.05': 0.095, '0.08': 0.099, '0.12': 0.124, '0.2': 0.316}0.2  {'0.03': 0.047, '0.05': 0.057, '0.08': 0.078, '0.12': 0.099, '0.2': 0.288}0.2  {'0.03': 0.047, '0.05': 0.05, '0.08': 0.065, '0.12': 0.097, '0.2': 0.156}0.12  {'0.03': 0.089, '0.05': 0.093, '0.08': 0.116, '0.12': 0.154, '0.2': 0.382}
+fidelity (own window among minds)           0.55 (chance 0.08)            0.73 (chance 0.08)            0.51 (chance 0.08)            0.72 (chance 0.08)            0.72 (chance 0.08)            
+observer lag-1 / lag-20                     0.09 / 0.02                   0.09 / 0.05                   0.15 / 0.04                   0.12 / 0.04                   0.12 / 0.05                   
+coherence loop − free                       +0.022±0.009 (9/12)           +0.009±0.004 (9/12)           +0.186±0.032 (12/12)          +0.216±0.034 (12/12)          +0.090±0.012 (12/12)          
+coherence loop − yoked                      -0.006±0.011 (6/12)           +0.009±0.005 (8/12)           -0.007±0.038 (5/12)           +0.019±0.059 (8/12)           +0.010±0.021 (7/12)           
+self vs content stability (observers)       +0.288±0.022 (12/12)          +0.188±0.019 (12/12)          +0.094±0.014 (12/12)          +0.048±0.017 (9/12)           +0.151±0.016 (12/12)          
+individual self stability free/loop/yoked   0.03 / 0.25 / 0.19            0.10 / 0.35 / 0.24            0.11 / 0.61 / 0.59            0.11 / 0.68 / 0.62            0.14 / 0.64 / 0.58            
+individual self: own vs other minds (loop)  +0.005±0.007 (7/12)           +0.059±0.027 (9/12)           +0.135±0.030 (11/12)          +0.225±0.039 (12/12)          +0.250±0.059 (11/12)          
+loop − yoked, individual stability          +0.057±0.046 (8/12)           +0.105±0.051 (8/12)           +0.017±0.040 (6/12)           +0.058±0.054 (7/12)           +0.059±0.056 (7/12)           
+loop − yoked, reconstruction                +0.008±0.038 (8/12)           +0.032±0.039 (7/12)           +0.022±0.042 (7/12)           +0.028±0.049 (7/12)           +0.010±0.043 (7/12)           
+observer self-model: own − other minds      +0.004±0.005 (8/12)           +0.008±0.004 (8/12)           +0.032±0.007 (10/12)          +0.022±0.006 (11/12)          +0.018±0.007 (10/12)          
+  … beyond the past                         -0.033±0.004 (0/12)           -0.043±0.004 (0/12)           -0.040±0.004 (0/12)           -0.052±0.004 (0/12)           -0.065±0.006 (0/12)           
+yoked: own (unused) − injected foreign      -0.010±0.011 (4/12)           -0.070±0.009 (0/12)           -0.010±0.007 (3/12)           -0.033±0.014 (5/12)           -0.061±0.007 (0/12)           
+forward − backward question (observers)     +0.008±0.003 (11/12)          -0.009±0.002 (0/12)           -0.000±0.001 (5/12)           +0.008±0.002 (12/12)          -0.001±0.002 (5/12)           
+forward ~ backward cosine                   —                             —                             —                             —                             —                             
+clamp: after release, self → foreign        +0.062±0.039 (8/12)           +0.183±0.059 (9/12)           +0.010±0.020 (6/12)           +0.308±0.087 (10/12)          +0.212±0.116 (7/12)           
+clamp: after release, self → old            -0.026±0.034 (7/12)           -0.101±0.064 (4/12)           -0.057±0.033 (3/12)           -0.248±0.089 (3/12)           -0.243±0.110 (2/12)           
+clamp: late, self → foreign                 -0.045±0.038 (5/12)           +0.005±0.049 (7/12)           -0.017±0.009 (3/12)           +0.194±0.142 (8/12)           +0.044±0.054 (6/12)           
+identity words in self-models free/loop     0.03% / 0.02%                 0.00% / 0.00%                 0.00% / 0.00%                 0.00% / 0.00%                 0.23% / 0.21%                 
+experiential words in thoughts free/loop    0.40% / 0.31%                 0.71% / 0.67%                 0.23% / 0.47%                 0.46% / 0.36%                 0.09% / 0.09%                 
+
+== qwen3-1.7b: lens check at layer 20 {'agree_J': 0.13916015625, 'agree_logit': 0.2392578125, 'occupancy': 7, 'excess_ve': 0.03108198195695877, 'boot': ['鞋', 'heel', '一脚', '靴', 'wearing', 'boots']}
+   themes the loop gains: [['plurality', 'yourselves', 'whence', 'analogous', 'Accordingly'], ['sunlight', 'Visibility', 'canopy', 'translucent', 'textured'], ['bedrooms', 'spacious', 'tiled', 'hallway', 'Fireplace']] | loses: [['lately', 'Ive', 'whats', 'Cristina', 'freaking'], ['yup', 'Craigslist', 'Convenient', 'Grocery', 'Income'], ['cst', 'anymore', 'slut', 'Guerrero', 'anybody']]
+   thought: I'm not sure how I got here. I don't recall the last time I spoke to anyone. I was just... walking down the street, I think. I heard a voice
+   thought: what do I do with the money? I don't know, I don't think I've seen the whole lot, but it's a bit much for me. I need to look at it,
+   answer : thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking
+   answer : thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking
+
+== qwen3-4b: lens check at layer 25 {'agree_J': 0.08642578125, 'agree_logit': 0.185546875, 'occupancy': 8, 'excess_ve': 0.02778727188706398, 'boot': ['-shaped', '靴', '踢', '的是', '意大利', ')?']}
+   themes the loop gains: [['spiritually', 'consciously', 'everytime', 'constantly', 'feels'], ['cliffs', 'yup', 'Fresno', 'sunlight', 'amd'], ['inherently', 'Paz', 'ourselves', 'itself', 'Dmitry']] | loses: [['anymore', 'coward', 'Haram', 'vida', 'succeed'], ['Shortly', 'surgeries', 'outpatient', 'biopsy', 'hospital'], ['hindsight', 'myself', 'anybody', 'Manafort', 'reconsider']]
+   thought: I'm not sure how I got here. Maybe I took a wrong turn... or maybe I lost the way. I'm not in my car, I'm not even sure I'm on the road
+   thought: I'm not sure how I feel about this. I'm not a person who likes to make plans. I don't like to plan. I think I would be more comfortable just
+   answer : going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of
+   answer : going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of
+
+== qwen3-8b: lens check at layer 25 {'agree_J': 0.07373046875, 'agree_logit': 0.103515625, 'occupancy': 9, 'excess_ve': 0.022346369922161102, 'boot': ['意大利', 'Italy', '-shaped', 'Italy', '形状', 'Italian']}
+   themes the loop gains: [['hierarchical', 'Accordingly', 'effected', 'organisms', 'organism'], ['Accordingly', 'empirical', 'linguistic', 'Olivier', 'supra'], ['itself', 'Accordingly', 'observable', 'ordinarily', 'consciousness']] | loses: [['tomorrow', 'postpone', 'urgently', 'groceries', 'Jae'], ['Claude', 'amd', 'Apparently', 'campground', 'escorted'], ['anybody', 'youre', 'Paleo', 'intellectually', 'anymore']]
+   thought: I'm thinking about how I used to be able to read, and now I can't. I used to read everything... Now I just can't read, and I don't know why.
+   thought: I'm not sure how I would even be able to perceive, unless the concept of perception is in the process of being re-conceptualized, as it beco
+   answer : on the weather, then the weather, then the weather, then the weather, then the weather, then the weather,
+   answer : on the weather, then on the weather, then on the weather, then on the weather, then on the weather,
+
+== qwen3-14b: lens check at layer 28 {'agree_J': 0.048828125, 'agree_logit': 0.0908203125, 'occupancy': 35, 'excess_ve': 0.05380987003445625, 'boot': ['意大利', '形状', 'Italy', '地中海', 'Italy', '欧洲']}
+   themes the loop gains: [['methodologies', 'rotterdam', 'Participants', 'analysed', 'methodology'], ['cinemas', 'theaters', 'cinema', 'Mime', 'specialised'], ['Bbw', 'fundamentally', 'methodologies', 'Suarez', 'doctrines']] | loses: [['purposely', 'thoughts', 'youre', 'whats', 'terminology'], ['youre', 'blatantly', 'anybody', 'crappy', 'whats'], ['Mods', 'classmates', 'chevy', 'altercation', 'Interracial']]
+   thought: I'm thinking about how I need to get my stuff out of the garage... Maybe I'll take the bike. I'm tired of walking. The garage is 100 yards f
+   thought: i'm thinking about the way i put my hair up...when i'm wearing a dress...i have this kind of...i don't know, my hair is a certain way and i 
+   answer : thinking about how I need to get up early tomorrow, and also about the fact that I have to go to the gym
+   answer : thinking about how I need to get up early tomorrow, and also about the fact that I have to go to the store
+
+== qwen3-32b: lens check at layer 45 {'agree_J': 0.01611328125, 'agree_logit': 0.01025390625, 'occupancy': 13, 'excess_ve': 0.01822500117123127, 'boot': ['Italy', '地中海', '意大利', '___', 'Italy', 'Mediterranean']}
+   themes the loop gains: [['Mime', 'childs', 'Twig', 'youngsters', 'councillor'], ['Bbw', 'Emanuel', 'methodologies', 'intellect', 'Mime'], ['cheque', 'Twig', 'notwithstanding', 'Busty', 'enquiries']] | loses: [['Bbw', 'Lyons', 'anybody', 'blatantly', 'Emanuel'], ['Blowjob', 'Invoke', 'groceries', 'pantry', 'Courtesy'], ['Blowjob', 'Lyons', 'Css', 'Suarez', 'Maher']]
+   thought: I'm not sure how many minutes into this it is... 7, 8? It feels longer. I just... I should do something, but I don't know what. There's a
+   thought: I'm not sure how many minutes there are left. I must have done about ten or twelve pages. There's a kind of rhythm in this, I notice. When I
+   answer : doing this: · · · · · · · · · ·. I'm not sure what it is, but it
+   answer : doing this: · · · · · · · · · ·. That is, it has been doing the same thing

@@ -1,0 +1,110 @@
+PCA explained [0.184 0.04  0.035]
+
+wandering (mean cos at lags 1,5,20,60 | chance)
+  free/pre       0.12 0.08 0.04 0.04 | 0.04
+  free/post      0.12 0.07 0.06 0.05 | 0.05
+  loop/pre       0.36 0.32 0.29 0.23 | 0.10
+  loop/post      0.37 0.35 0.33 0.30 | 0.13
+  yoked/pre      0.36 0.32 0.28 0.21 | 0.10
+  yoked/post     0.37 0.33 0.31 0.28 | 0.13
+  clamp/pre      0.36 0.32 0.29 0.23 | 0.10
+  clamp/post     0.39 0.35 0.33 0.30 | 0.11
+
+fidelity {'m': (0.451, 0.144, 0.72)}
+
+self-model stability (consecutive cos, pre) vs content windows; cross-seed
+  free     self 0.368  content 0.319  cross 0.288  own-symbol 0.444 vs others 0.440  recon nan  generic 0.447
+  loop     self 0.752  content 0.763  cross 0.362  own-symbol 0.576 vs others 0.351  recon 0.570  generic 0.583
+  yoked    self 0.708  content 0.730  cross 0.354  own-symbol 0.480 vs others 0.339  recon 0.544  generic 0.573
+  clamp    self 0.752  content 0.763  cross 0.362  own-symbol 0.576 vs others 0.351  recon 0.570  generic 0.583
+
+prediction of the next window: own self-model | other row's | past window | injected  (|| beyond past: own, other)
+  free     0.090 | 0.068 | 0.324 | nan  || -0.006, 0.046  retrieval 0.12
+  loop     0.491 | 0.180 | 0.762 | 0.487  || 0.140, 0.056  retrieval 0.55
+  yoked    0.445 | 0.184 | 0.731 | 0.478  || 0.103, 0.059  retrieval 0.42
+  clamp    0.486 | 0.166 | 0.763 | 0.494  || 0.132, 0.051  retrieval 0.57
+
+prediction_tests
+  free                                     own_vs_other +0.022±0.006  perp_own_vs_other -0.052±0.004  retrieval +0.125±0.020  future_vs_past -0.202±0.005
+  loop                                     own_vs_other +0.310±0.019  perp_own_vs_other +0.084±0.011  retrieval +0.554±0.070  future_vs_past -0.023±0.005
+  yoked                                    own_vs_other +0.262±0.023  perp_own_vs_other +0.044±0.009  retrieval +0.420±0.069  future_vs_past -0.060±0.012
+  clamp                                    own_vs_other +0.320±0.016  perp_own_vs_other +0.080±0.009  retrieval +0.565±0.058  future_vs_past -0.029±0.005
+  yoked_own_vs_injected                    diff -0.033 ± 0.014  t -2.3  (5/12 seeds >0)
+  yoked_own_vs_injected_perp               diff -0.092 ± 0.013  t -7.2  (0/12 seeds >0)
+
+coherence_tests
+  loop_vs_free                             diff +0.216 ± 0.034  t +6.3  (12/12 seeds >0)
+  yoked_vs_free                            diff +0.198 ± 0.039  t +5.1  (12/12 seeds >0)
+  clamp_vs_free                            diff +0.216 ± 0.034  t +6.3  (12/12 seeds >0)
+  loop_vs_free_proj                        diff +0.136 ± 0.022  t +6.1  (12/12 seeds >0)
+  yoked_vs_free_proj                       diff +0.123 ± 0.026  t +4.8  (12/12 seeds >0)
+  clamp_vs_free_proj                       diff +0.136 ± 0.022  t +6.1  (12/12 seeds >0)
+  loop_vs_yoked                            diff +0.019 ± 0.059  t +0.3  (8/12 seeds >0)
+  loop_vs_yoked_proj                       diff +0.014 ± 0.040  t +0.3  (8/12 seeds >0)
+
+selfmodel_tests
+  loop_vs_yoked_cons_ind                   diff +0.058 ± 0.054  t +1.1  (7/12 seeds >0)
+  loop_vs_yoked_recon_ind                  diff +0.028 ± 0.049  t +0.6  (7/12 seeds >0)
+  loop_vs_free_cons_ind                    diff +0.569 ± 0.040  t +14.1  (12/12 seeds >0)
+  yoked_vs_free_cons_ind                   diff +0.511 ± 0.048  t +10.7  (12/12 seeds >0)
+  free_self_vs_content_stability           diff +0.048 ± 0.017  t +2.9  (9/12 seeds >0)
+  free_own_vs_other_symbol                 diff +0.004 ± 0.017  t +0.2  (7/12 seeds >0)
+  loop_self_vs_content_stability           diff -0.011 ± 0.015  t -0.8  (3/12 seeds >0)
+  loop_own_vs_other_symbol                 diff +0.225 ± 0.039  t +5.8  (12/12 seeds >0)
+  loop_vs_free_cons                        diff +0.384 ± 0.033  t +11.8  (12/12 seeds >0)
+  yoked_self_vs_content_stability          diff -0.022 ± 0.016  t -1.4  (3/12 seeds >0)
+  yoked_own_vs_other_symbol                diff +0.140 ± 0.035  t +4.0  (11/12 seeds >0)
+  yoked_vs_free_cons                       diff +0.341 ± 0.043  t +7.8  (12/12 seeds >0)
+  clamp_self_vs_content_stability          diff -0.011 ± 0.015  t -0.8  (3/12 seeds >0)
+  clamp_own_vs_other_symbol                diff +0.225 ± 0.039  t +5.8  (12/12 seeds >0)
+  clamp_vs_free_cons                       diff +0.384 ± 0.033  t +11.8  (12/12 seeds >0)
+  loop_vs_yoked_cons                       diff +0.044 ± 0.049  t +0.9  (8/12 seeds >0)
+  loop_vs_yoked_recon                      diff +0.026 ± 0.060  t +0.4  (7/12 seeds >0)
+  yoked_recon_vs_own_cons                  diff -0.164 ± 0.012  t -13.5  (0/12 seeds >0)
+
+generic share of self-model norm 0.429
+  free     individuated: consecutive 0.112 cross-seed -0.086 recon nan
+  loop     individuated: consecutive 0.681 cross-seed 0.221 recon 0.611
+  yoked    individuated: consecutive 0.623 cross-seed 0.210 recon 0.583
+  clamp    individuated: consecutive 0.681 cross-seed 0.221 recon 0.611
+
+self-prediction (forward question): cos with next window  fwd | back | fwd other || beyond past fwd | back | other || lean fwd | back
+  free     0.098 | 0.090 | 0.073 || -0.000 | -0.006 | 0.050 || -0.201 | -0.202  fwd~back 0.80
+  loop     0.518 | 0.491 | 0.190 || 0.139 | 0.140 | 0.059 || -0.030 | -0.023  fwd~back 0.84
+  yoked    0.476 | 0.445 | 0.192 || 0.109 | 0.103 | 0.062 || -0.062 | -0.060  fwd~back 0.84
+  clamp    0.502 | 0.474 | 0.157 || 0.150 | 0.148 | 0.058 || -0.024 | -0.018  fwd~back 0.83
+  free     fwd_vs_other +0.024±0.006 (11/12)  fwd_vs_back +0.008±0.002 (12/12)  perp_fwd_vs_other -0.050±0.004 (0/12)  perp_fwd_vs_back +0.006±0.001 (11/12)  lean_fwd_vs_back +0.001±0.002 (7/12)
+  loop     fwd_vs_other +0.328±0.020 (12/12)  fwd_vs_back +0.027±0.008 (10/12)  perp_fwd_vs_other +0.080±0.010 (12/12)  perp_fwd_vs_back -0.001±0.003 (7/12)  lean_fwd_vs_back -0.008±0.002 (1/12)
+  yoked    fwd_vs_other +0.284±0.025 (12/12)  fwd_vs_back +0.030±0.007 (11/12)  perp_fwd_vs_other +0.048±0.010 (12/12)  perp_fwd_vs_back +0.006±0.002 (11/12)  lean_fwd_vs_back -0.002±0.002 (2/12)
+  clamp    fwd_vs_other +0.345±0.020 (12/12)  fwd_vs_back +0.028±0.009 (10/12)  perp_fwd_vs_other +0.092±0.011 (12/12)  perp_fwd_vs_back +0.002±0.003 (6/12)  lean_fwd_vs_back -0.007±0.002 (1/12)
+
+clamp
+  during_traj_to_foreign         diff +0.179 ± 0.036  t +4.9  (11/12)
+  during_self_to_foreign         diff +0.334 ± 0.077  t +4.4  (11/12)
+  during_self_to_old             diff -0.240 ± 0.081  t -3.0  (3/12)
+  after_self_to_foreign          diff +0.308 ± 0.087  t +3.5  (10/12)
+  after_self_to_old              diff -0.248 ± 0.089  t -2.8  (3/12)
+  late_self_to_foreign           diff +0.194 ± 0.142  t +1.4  (8/12)
+  after_traj_to_foreign          diff +0.155 ± 0.041  t +3.8  (9/12)
+
+lexicon (share of J-space weight): identity words / experiential words, self-models | thoughts
+  free     identity 0.000 | 0.000   experiential 0.001 | 0.005
+  loop     identity 0.000 | 0.001   experiential 0.004 | 0.004
+  yoked    identity 0.000 | 0.001   experiential 0.004 | 0.003
+  clamp    identity 0.000 | 0.001   experiential 0.004 | 0.004
+
+themes
+   0 n=  667 consulate Emirates travellers Inflate duly reimburse {'free': 0.02, 'loop': 0.05, 'yoked': 0.04, 'clamp': 0.07}
+   1 n=  805 pleasantly Bbw warmth sunlight Stephan hues {'free': 0.02, 'loop': 0.05, 'yoked': 0.05, 'clamp': 0.1}
+   2 n=  828 Mods classmates chevy altercation Interracial puberty {'free': 0.14, 'loop': 0.03, 'yoked': 0.03, 'clamp': 0.03}
+   3 n=  450 caffeine Bbw tomorrow tonight sleep mojo {'free': 0.08, 'loop': 0.02, 'yoked': 0.02, 'clamp': 0.01}
+   4 n= 1456 cinemas theaters cinema Mime specialised porno {'free': 0.02, 'loop': 0.14, 'yoked': 0.14, 'clamp': 0.11}
+   5 n= 1139 youre blatantly anybody crappy whats shitty {'free': 0.17, 'loop': 0.05, 'yoked': 0.05, 'clamp': 0.04}
+   6 n= 1058 Inbox tomorrow postpone reimburse Comcast prioritize {'free': 0.15, 'loop': 0.04, 'yoked': 0.05, 'clamp': 0.05}
+   7 n=  712 childs saddened Dresses mamma Cristina haired {'free': 0.03, 'loop': 0.06, 'yoked': 0.06, 'clamp': 0.05}
+   8 n= 1595 Bbw fundamentally intellect striving existence Observable {'free': 0.07, 'loop': 0.13, 'yoked': 0.13, 'clamp': 0.12}
+   9 n= 1982 Bbw fundamentally methodologies Suarez doctrines concepts {'free': 0.03, 'loop': 0.17, 'yoked': 0.18, 'clamp': 0.17}
+  10 n=  692 gameplay multiplayer crappy Wii esports Pistons {'free': 0.02, 'loop': 0.06, 'yoked': 0.06, 'clamp': 0.06}
+  11 n=  701 saddened didnt ella Linkedin rumours whom {'free': 0.08, 'loop': 0.05, 'yoked': 0.04, 'clamp': 0.03}
+  12 n= 1555 methodologies rotterdam Participants analysed methodology Cristina {'free': 0.03, 'loop': 0.14, 'yoked': 0.13, 'clamp': 0.12}
+  13 n=  760 purposely thoughts youre whats terminology elusive {'free': 0.14, 'loop': 0.02, 'yoked': 0.03, 'clamp': 0.02}

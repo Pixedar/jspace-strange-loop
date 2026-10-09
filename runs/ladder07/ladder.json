@@ -1,0 +1,2465 @@
+{
+ "qwen3-1.7b": {
+  "size": 1.7,
+  "layers": 28,
+  "L": 20,
+  "L_in": 19,
+  "g": 0.12,
+  "g_r": 0.5,
+  "fsweep": {
+   "fid_19_0.5": 0.6375,
+   "fid_19_1.0": 0.4875,
+   "fid_18_0.5": 0.6125,
+   "fid_18_1.0": 0.325,
+   "fid_17_0.5": 0.575,
+   "fid_17_1.0": 0.3,
+   "fid_16_0.5": 0.5875,
+   "fid_16_1.0": 0.2375
+  },
+  "chance_f": 0.0625,
+  "gains": {
+   "0.03": 0.056,
+   "0.05": 0.069,
+   "0.08": 0.094,
+   "0.12": 0.132,
+   "0.2": 0.416
+  },
+  "validation": {
+   "layer": 20,
+   "agree_J": 0.13916015625,
+   "agree_logit": 0.2392578125,
+   "occupancy": 7,
+   "excess_ve": 0.03108198195695877,
+   "boot": [
+    "鞋",
+    "heel",
+    "一脚",
+    "靴",
+    "wearing",
+    "boots"
+   ],
+   "band": [
+    [
+     1,
+     5,
+     0.011
+    ],
+    [
+     3,
+     6,
+     0.013
+    ],
+    [
+     4,
+     5,
+     0.01
+    ],
+    [
+     6,
+     4,
+     0.007
+    ],
+    [
+     7,
+     4,
+     0.004
+    ],
+    [
+     8,
+     4,
+     0.005
+    ],
+    [
+     10,
+     5,
+     0.013
+    ],
+    [
+     11,
+     4,
+     0.01
+    ],
+    [
+     13,
+     4,
+     0.007
+    ],
+    [
+     14,
+     4,
+     0.005
+    ],
+    [
+     15,
+     4,
+     0.007
+    ],
+    [
+     17,
+     5,
+     0.01
+    ],
+    [
+     18,
+     6,
+     0.018
+    ],
+    [
+     20,
+     7,
+     0.031
+    ],
+    [
+     21,
+     7,
+     0.034
+    ],
+    [
+     22,
+     8,
+     0.038
+    ],
+    [
+     24,
+     8,
+     0.047
+    ],
+    [
+     25,
+     8,
+     0.045
+    ]
+   ]
+  },
+  "fidelity": {
+   "own": 0.34299659729003906,
+   "other": 0.15338020026683807,
+   "retrieval": 0.5541666666666667,
+   "chance": 0.08333333333333333
+  },
+  "lag1_free": 0.09384487196803093,
+  "lag20_free": 0.024613188579678535,
+  "coherence_loop_vs_free": {
+   "diff": 0.021802832689818905,
+   "se": 0.00886147365259531,
+   "t": 2.46040709983191,
+   "pos": 9,
+   "n": 12
+  },
+  "coherence_loop_vs_yoked": {
+   "diff": -0.005965479655252585,
+   "se": 0.011132168086105086,
+   "t": -0.5358776124390862,
+   "pos": 6,
+   "n": 12
+  },
+  "self_vs_content_free": {
+   "diff": 0.2881678311775128,
+   "se": 0.021673688091542413,
+   "t": 13.295745050883276,
+   "pos": 12,
+   "n": 12
+  },
+  "ind_stab": {
+   "free": 0.028763114920972537,
+   "loop": 0.2503622422615687,
+   "yoked": 0.19329727223763862
+  },
+  "ind_cross": {
+   "free": -0.08424809575080872,
+   "loop": 0.10526948422193527,
+   "yoked": 0.11318584531545639
+  },
+  "own_symbol_loop": {
+   "diff": 0.004513204097747803,
+   "se": 0.00693481181517907,
+   "t": 0.6508041195680612,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_cons_ind": {
+   "diff": 0.05706497002393007,
+   "se": 0.04634808312440452,
+   "t": 1.2312261085482215,
+   "pos": 8,
+   "n": 12
+  },
+  "loop_vs_yoked_recon_ind": {
+   "diff": 0.007504214222232501,
+   "se": 0.037986270362424225,
+   "t": 0.1975506979399489,
+   "pos": 8,
+   "n": 12
+  },
+  "loop_vs_yoked_cons": {
+   "diff": 0.019304414590199787,
+   "se": 0.0235892255133173,
+   "t": 0.8183572868596927,
+   "pos": 7,
+   "n": 12
+  },
+  "observer_own_vs_other": {
+   "diff": 0.004013222021361192,
+   "se": 0.004531899705858465,
+   "t": 0.8855496109442206,
+   "pos": 8,
+   "n": 12
+  },
+  "observer_beyond_past": {
+   "diff": -0.03302283786858121,
+   "se": 0.0035562212015107014,
+   "t": -9.285934703542328,
+   "pos": 0,
+   "n": 12
+  },
+  "yoked_own_vs_injected": {
+   "diff": -0.009699757521351179,
+   "se": 0.010589727848719659,
+   "t": -0.9159590935591342,
+   "pos": 4,
+   "n": 12
+  },
+  "fwd_vs_back_free": {
+   "diff": 0.008449293673038483,
+   "se": 0.0027615077787274136,
+   "t": 3.0596668016384054,
+   "pos": 11,
+   "n": 12
+  },
+  "fwd_lean_free": {
+   "diff": -0.0215891736249129,
+   "se": 0.0038573017698858574,
+   "t": -5.596962569395173,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_beyond_past_vs_other": {
+   "diff": -0.036356695306797825,
+   "se": 0.004263511243166064,
+   "t": -8.527406926643756,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_back_sim": [
+   0.7203344702720642,
+   0.7250624895095825,
+   0.7113221287727356,
+   0.7265074849128723,
+   0.7139318585395813,
+   0.7512621879577637,
+   0.7335805296897888,
+   0.6940990090370178,
+   0.7388573884963989,
+   0.6927815079689026,
+   0.7370293736457825,
+   0.7148298621177673
+  ],
+  "clamp": {
+   "during_traj_to_foreign": {
+    "diff": 0.09264688517665491,
+    "se": 0.01321306682804542,
+    "t": 7.0117624002330095,
+    "pos": 12,
+    "n": 12
+   },
+   "during_self_to_foreign": {
+    "diff": 0.2007767582933108,
+    "se": 0.03504292341394975,
+    "t": 5.729452304010297,
+    "pos": 11,
+    "n": 12
+   },
+   "during_self_to_old": {
+    "diff": -0.22844126277292767,
+    "se": 0.045672706594302205,
+    "t": -5.001701887346137,
+    "pos": 1,
+    "n": 12
+   },
+   "after_self_to_foreign": {
+    "diff": 0.06233287878179302,
+    "se": 0.03899616779715048,
+    "t": 1.5984360080209674,
+    "pos": 8,
+    "n": 12
+   },
+   "after_self_to_old": {
+    "diff": -0.02621389044603954,
+    "se": 0.03394378240582488,
+    "t": -0.772273700456586,
+    "pos": 7,
+    "n": 12
+   },
+   "late_self_to_foreign": {
+    "diff": -0.045230640253672995,
+    "se": 0.03844257991922356,
+    "t": -1.1765766072077541,
+    "pos": 5,
+    "n": 12
+   },
+   "after_traj_to_foreign": {
+    "diff": 0.02077592275803908,
+    "se": 0.017528153563618684,
+    "t": 1.1852887232321747,
+    "pos": 7,
+    "n": 12
+   }
+  },
+  "lexicon": {
+   "free": {
+    "ident_self": 0.00033632662962190807,
+    "ident_thought": 0.0002709474938455969,
+    "exper_self": 0.0003639851638581604,
+    "exper_thought": 0.004018716514110565
+   },
+   "loop": {
+    "ident_self": 0.0002316525933565572,
+    "ident_thought": 0.00028604030376300216,
+    "exper_self": 0.00032208679476752877,
+    "exper_thought": 0.0031329479534178972
+   },
+   "yoked": {
+    "ident_self": 0.00026851805159822106,
+    "ident_thought": 0.0004436844610609114,
+    "exper_self": 0.0,
+    "exper_thought": 0.0031703177373856306
+   },
+   "clamp": {
+    "ident_self": 0.0002316525933565572,
+    "ident_thought": 0.00028604030376300216,
+    "exper_self": 0.00032208679476752877,
+    "exper_thought": 0.0031329479534178972
+   }
+  },
+  "theme_shift": [
+   {
+    "words": [
+     "lately",
+     "Ive",
+     "whats",
+     "Cristina",
+     "freaking"
+    ],
+    "loop_minus_free": -0.033
+   },
+   {
+    "words": [
+     "yup",
+     "Craigslist",
+     "Convenient",
+     "Grocery",
+     "Income"
+    ],
+    "loop_minus_free": -0.026
+   },
+   {
+    "words": [
+     "cst",
+     "anymore",
+     "slut",
+     "Guerrero",
+     "anybody"
+    ],
+    "loop_minus_free": -0.024
+   },
+   {
+    "words": [
+     "prioritize",
+     "Planner",
+     "Advisors",
+     "caucus",
+     "Ive"
+    ],
+    "loop_minus_free": -0.02
+   },
+   {
+    "words": [
+     "tomorrow",
+     "sleep",
+     "crappy",
+     "amd",
+     "insomnia"
+    ],
+    "loop_minus_free": -0.016
+   },
+   {
+    "words": [
+     "whom",
+     "lei",
+     "honoured",
+     "Traits",
+     "childs"
+    ],
+    "loop_minus_free": -0.014
+   },
+   {
+    "words": [
+     "hospitalized",
+     "hospital",
+     "biopsy",
+     "medically",
+     "outpatient"
+    ],
+    "loop_minus_free": -0.013
+   },
+   {
+    "words": [
+     "yup",
+     "freeway",
+     "campground",
+     "driveway",
+     "Convenient"
+    ],
+    "loop_minus_free": -0.009
+   },
+   {
+    "words": [
+     "invisible",
+     "sensations",
+     "limbs",
+     "Inflate",
+     "Detector"
+    ],
+    "loop_minus_free": -0.007
+   },
+   {
+    "words": [
+     "lei",
+     "cgi",
+     "wearer",
+     "santa",
+     "yup"
+    ],
+    "loop_minus_free": -0.007
+   },
+   {
+    "words": [
+     "yourselves",
+     "yourself",
+     "youre",
+     "your",
+     "anybody"
+    ],
+    "loop_minus_free": -0.007
+   },
+   {
+    "words": [
+     "plurality",
+     "yourselves",
+     "whence",
+     "analogous",
+     "Accordingly"
+    ],
+    "loop_minus_free": 0.031
+   },
+   {
+    "words": [
+     "sunlight",
+     "Visibility",
+     "canopy",
+     "translucent",
+     "textured"
+    ],
+    "loop_minus_free": 0.061
+   },
+   {
+    "words": [
+     "bedrooms",
+     "spacious",
+     "tiled",
+     "hallway",
+     "Fireplace"
+    ],
+    "loop_minus_free": 0.085
+   }
+  ],
+  "answers": [
+   "thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking",
+   "thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking",
+   "thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking",
+   "thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking"
+  ],
+  "texts": [
+   "I'm not sure how I got here. I don't recall the last time I spoke to anyone. I was just... walking down the street, I think. I heard a voice, maybe a",
+   "what do I do with the money? I don't know, I don't think I've seen the whole lot, but it's a bit much for me. I need to look at it,",
+   "I'm not sure how I got here. Maybe I'm not even here. Maybe this is all a dream. I'm trying to recall. The place is different. I'm not in my room",
+   "I'm not sure how I got here. Maybe I'm not ready, but I'm not in the dark. I'm trying to understand why I'm here. I see the room, I see"
+  ]
+ },
+ "qwen3-4b": {
+  "size": 4,
+  "layers": 36,
+  "L": 25,
+  "L_in": 20,
+  "g": 0.12,
+  "g_r": 0.5,
+  "fsweep": {
+   "fid_24_0.5": 0.3875,
+   "fid_24_1.0": 0.2125,
+   "fid_23_0.5": 0.7125,
+   "fid_23_1.0": 0.6,
+   "fid_22_0.5": 0.775,
+   "fid_22_1.0": 0.6,
+   "fid_21_0.5": 0.8125,
+   "fid_21_1.0": 0.7375,
+   "fid_20_0.5": 0.875,
+   "fid_20_1.0": 0.7625
+  },
+  "chance_f": 0.0625,
+  "gains": {
+   "0.03": 0.072,
+   "0.05": 0.095,
+   "0.08": 0.099,
+   "0.12": 0.124,
+   "0.2": 0.316
+  },
+  "validation": {
+   "layer": 25,
+   "agree_J": 0.08642578125,
+   "agree_logit": 0.185546875,
+   "occupancy": 8,
+   "excess_ve": 0.02778727188706398,
+   "boot": [
+    "-shaped",
+    "靴",
+    "踢",
+    "的是",
+    "意大利",
+    ")?"
+   ],
+   "band": [
+    [
+     2,
+     7,
+     0.013
+    ],
+    [
+     4,
+     7,
+     0.018
+    ],
+    [
+     5,
+     7,
+     0.017
+    ],
+    [
+     7,
+     6,
+     0.013
+    ],
+    [
+     9,
+     6,
+     0.013
+    ],
+    [
+     11,
+     6,
+     0.014
+    ],
+    [
+     13,
+     5,
+     0.013
+    ],
+    [
+     14,
+     5,
+     0.011
+    ],
+    [
+     16,
+     5,
+     0.009
+    ],
+    [
+     18,
+     5,
+     0.009
+    ],
+    [
+     20,
+     5,
+     0.01
+    ],
+    [
+     22,
+     7,
+     0.018
+    ],
+    [
+     23,
+     7,
+     0.023
+    ],
+    [
+     25,
+     8,
+     0.028
+    ],
+    [
+     27,
+     8,
+     0.031
+    ],
+    [
+     29,
+     9,
+     0.039
+    ],
+    [
+     31,
+     9,
+     0.046
+    ],
+    [
+     32,
+     9,
+     0.045
+    ],
+    [
+     34,
+     7,
+     0.029
+    ]
+   ]
+  },
+  "fidelity": {
+   "own": 0.32924684882164,
+   "other": 0.07755196839570999,
+   "retrieval": 0.7326388888888888,
+   "chance": 0.08333333333333333
+  },
+  "lag1_free": 0.08729137325038512,
+  "lag20_free": 0.045238374111553036,
+  "coherence_loop_vs_free": {
+   "diff": 0.009455663804390764,
+   "se": 0.003992501427740919,
+   "t": 2.3683557728221207,
+   "pos": 9,
+   "n": 12
+  },
+  "coherence_loop_vs_yoked": {
+   "diff": 0.008677728401262283,
+   "se": 0.004725367808508741,
+   "t": 1.8364133233473843,
+   "pos": 8,
+   "n": 12
+  },
+  "self_vs_content_free": {
+   "diff": 0.18753703186909357,
+   "se": 0.019075209296340965,
+   "t": 9.8314534302419,
+   "pos": 12,
+   "n": 12
+  },
+  "ind_stab": {
+   "free": 0.09638437628746033,
+   "loop": 0.34500031918287277,
+   "yoked": 0.2401799727231264
+  },
+  "ind_cross": {
+   "free": -0.08695189654827118,
+   "loop": 0.042851515114307404,
+   "yoked": 0.06085202470421791
+  },
+  "own_symbol_loop": {
+   "diff": 0.059352402885754905,
+   "se": 0.026855654441161586,
+   "t": 2.2100523752191883,
+   "pos": 9,
+   "n": 12
+  },
+  "loop_vs_yoked_cons_ind": {
+   "diff": 0.10482034645974636,
+   "se": 0.05147787362414723,
+   "t": 2.0362213720221973,
+   "pos": 8,
+   "n": 12
+  },
+  "loop_vs_yoked_recon_ind": {
+   "diff": 0.03219108904401461,
+   "se": 0.03907478745004942,
+   "t": 0.8238327357548786,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_cons": {
+   "diff": 0.06146893401940664,
+   "se": 0.027936740531710254,
+   "t": 2.2002901143615836,
+   "pos": 10,
+   "n": 12
+  },
+  "observer_own_vs_other": {
+   "diff": 0.00842676249643167,
+   "se": 0.004191708515766663,
+   "t": 2.010340763136393,
+   "pos": 8,
+   "n": 12
+  },
+  "observer_beyond_past": {
+   "diff": -0.04307033672921534,
+   "se": 0.0036677221239647738,
+   "t": -11.74307520403337,
+   "pos": 0,
+   "n": 12
+  },
+  "yoked_own_vs_injected": {
+   "diff": -0.06990169485410054,
+   "se": 0.009116327603114482,
+   "t": -7.667747134297749,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_vs_back_free": {
+   "diff": -0.009194509126245975,
+   "se": 0.001902102368920994,
+   "t": -4.833866608063659,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_lean_free": {
+   "diff": 0.00140044962366422,
+   "se": 0.002477452076832672,
+   "t": 0.5652781891364137,
+   "pos": 7,
+   "n": 12
+  },
+  "fwd_beyond_past_vs_other": {
+   "diff": -0.042945260623431146,
+   "se": 0.004862445468314479,
+   "t": -8.832029254266931,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_back_sim": [
+   0.7837314605712891,
+   0.766777515411377,
+   0.8025261759757996,
+   0.8204891085624695,
+   0.7787030339241028,
+   0.7911864519119263,
+   0.7919803857803345,
+   0.7978444695472717,
+   0.7765695452690125,
+   0.7985466718673706,
+   0.7992364168167114,
+   0.7819899320602417
+  ],
+  "clamp": {
+   "during_traj_to_foreign": {
+    "diff": 0.1093581217713654,
+    "se": 0.024043945063153625,
+    "t": 4.548260340976753,
+    "pos": 11,
+    "n": 12
+   },
+   "during_self_to_foreign": {
+    "diff": 0.3267760262824595,
+    "se": 0.060969945977998576,
+    "t": 5.359624664918989,
+    "pos": 12,
+    "n": 12
+   },
+   "during_self_to_old": {
+    "diff": -0.22841812251135707,
+    "se": 0.062340203430732294,
+    "t": -3.664058022607481,
+    "pos": 2,
+    "n": 12
+   },
+   "after_self_to_foreign": {
+    "diff": 0.1829636122759742,
+    "se": 0.05869762827638731,
+    "t": 3.11705289717091,
+    "pos": 9,
+    "n": 12
+   },
+   "after_self_to_old": {
+    "diff": -0.10086818470153958,
+    "se": 0.0643593497253522,
+    "t": -1.567265442115024,
+    "pos": 4,
+    "n": 12
+   },
+   "late_self_to_foreign": {
+    "diff": 0.004884049917260806,
+    "se": 0.04913327569717881,
+    "t": 0.09940411763633426,
+    "pos": 7,
+    "n": 12
+   },
+   "after_traj_to_foreign": {
+    "diff": 0.04937813941583347,
+    "se": 0.01671668028480102,
+    "t": 2.9538244779813483,
+    "pos": 9,
+    "n": 12
+   }
+  },
+  "lexicon": {
+   "free": {
+    "ident_self": 0.0,
+    "ident_thought": 9.92316854535602e-05,
+    "exper_self": 0.000281778717180714,
+    "exper_thought": 0.007082532625645399
+   },
+   "loop": {
+    "ident_self": 0.0,
+    "ident_thought": 0.000329562317347154,
+    "exper_self": 0.0,
+    "exper_thought": 0.006655561737716198
+   },
+   "yoked": {
+    "ident_self": 0.0,
+    "ident_thought": 0.0002324774395674467,
+    "exper_self": 0.0,
+    "exper_thought": 0.006067192647606134
+   },
+   "clamp": {
+    "ident_self": 0.0,
+    "ident_thought": 0.000329562317347154,
+    "exper_self": 0.0,
+    "exper_thought": 0.006655561737716198
+   }
+  },
+  "theme_shift": [
+   {
+    "words": [
+     "anymore",
+     "coward",
+     "Haram",
+     "vida",
+     "succeed"
+    ],
+    "loop_minus_free": -0.035
+   },
+   {
+    "words": [
+     "Shortly",
+     "surgeries",
+     "outpatient",
+     "biopsy",
+     "hospital"
+    ],
+    "loop_minus_free": -0.017
+   },
+   {
+    "words": [
+     "hindsight",
+     "myself",
+     "anybody",
+     "Manafort",
+     "reconsider"
+    ],
+    "loop_minus_free": -0.016
+   },
+   {
+    "words": [
+     "tomorrow",
+     "postpone",
+     "Jazeera",
+     "Olivier",
+     "Scheduled"
+    ],
+    "loop_minus_free": -0.013
+   },
+   {
+    "words": [
+     "unsuccessfully",
+     "forgot",
+     "Tenn",
+     "recall",
+     "reprint"
+    ],
+    "loop_minus_free": -0.012
+   },
+   {
+    "words": [
+     "debilitating",
+     "mojo",
+     "anymore",
+     "tonight",
+     "lately"
+    ],
+    "loop_minus_free": -0.011
+   },
+   {
+    "words": [
+     "freshmen",
+     "summers",
+     "Saturdays",
+     "circa",
+     "hugely"
+    ],
+    "loop_minus_free": -0.008
+   },
+   {
+    "words": [
+     "Jeep",
+     "didnt",
+     "amd",
+     "dispatcher",
+     "Jazeera"
+    ],
+    "loop_minus_free": 0.0
+   },
+   {
+    "words": [
+     "whom",
+     "yup",
+     "his",
+     "lei",
+     "draped"
+    ],
+    "loop_minus_free": 0.002
+   },
+   {
+    "words": [
+     "Manafort",
+     "candidacy",
+     "tex",
+     "financially",
+     "Hopefully"
+    ],
+    "loop_minus_free": 0.004
+   },
+   {
+    "words": [
+     "Atmospheric",
+     "leds",
+     "vibrations",
+     "thats",
+     "invisible"
+    ],
+    "loop_minus_free": 0.015
+   },
+   {
+    "words": [
+     "spiritually",
+     "consciously",
+     "everytime",
+     "constantly",
+     "feels"
+    ],
+    "loop_minus_free": 0.018
+   },
+   {
+    "words": [
+     "cliffs",
+     "yup",
+     "Fresno",
+     "sunlight",
+     "amd"
+    ],
+    "loop_minus_free": 0.024
+   },
+   {
+    "words": [
+     "inherently",
+     "Paz",
+     "ourselves",
+     "itself",
+     "Dmitry"
+    ],
+    "loop_minus_free": 0.047
+   }
+  ],
+  "answers": [
+   "going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of",
+   "going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of",
+   "going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of",
+   "going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of"
+  ],
+  "texts": [
+   "I'm not sure how I got here. Maybe I took a wrong turn... or maybe I lost the way. I'm not in my car, I'm not even sure I'm on the road",
+   "I'm not sure how I feel about this. I'm not a person who likes to make plans. I don't like to plan. I think I would be more comfortable just leaving things to happen",
+   "I'm going to need some more time. I don't want to be stuck. I'm in the process of getting a new job. I've been waiting for a while. I have a few",
+   "I'm not sure how I got here. The last thing I remember is I was in the cinema, then I got... I don't know, I think I took the bus. There was a"
+  ]
+ },
+ "qwen3-8b": {
+  "size": 8,
+  "layers": 36,
+  "L": 25,
+  "L_in": 21,
+  "g": 0.2,
+  "g_r": 0.5,
+  "fsweep": {
+   "fid_24_0.5": 0.4625,
+   "fid_24_1.0": 0.25,
+   "fid_23_0.5": 0.7625,
+   "fid_23_1.0": 0.6375,
+   "fid_22_0.5": 0.7625,
+   "fid_22_1.0": 0.375,
+   "fid_21_0.5": 0.8875,
+   "fid_21_1.0": 0.4875,
+   "fid_20_0.5": 0.8375,
+   "fid_20_1.0": 0.475
+  },
+  "chance_f": 0.0625,
+  "gains": {
+   "0.03": 0.047,
+   "0.05": 0.057,
+   "0.08": 0.078,
+   "0.12": 0.099,
+   "0.2": 0.288
+  },
+  "validation": {
+   "layer": 25,
+   "agree_J": 0.07373046875,
+   "agree_logit": 0.103515625,
+   "occupancy": 9,
+   "excess_ve": 0.022346369922161102,
+   "boot": [
+    "意大利",
+    "Italy",
+    "-shaped",
+    "Italy",
+    "形状",
+    "Italian"
+   ],
+   "band": [
+    [
+     2,
+     5,
+     0.005
+    ],
+    [
+     4,
+     5,
+     0.005
+    ],
+    [
+     5,
+     5,
+     0.005
+    ],
+    [
+     7,
+     4,
+     0.003
+    ],
+    [
+     9,
+     4,
+     0.003
+    ],
+    [
+     11,
+     4,
+     0.003
+    ],
+    [
+     13,
+     4,
+     0.003
+    ],
+    [
+     14,
+     3,
+     0.003
+    ],
+    [
+     16,
+     3,
+     0.002
+    ],
+    [
+     18,
+     4,
+     0.003
+    ],
+    [
+     20,
+     5,
+     0.006
+    ],
+    [
+     22,
+     7,
+     0.015
+    ],
+    [
+     23,
+     8,
+     0.018
+    ],
+    [
+     25,
+     9,
+     0.022
+    ],
+    [
+     27,
+     9,
+     0.026
+    ],
+    [
+     29,
+     9,
+     0.031
+    ],
+    [
+     31,
+     10,
+     0.037
+    ],
+    [
+     32,
+     11,
+     0.037
+    ],
+    [
+     34,
+     11,
+     0.031
+    ]
+   ]
+  },
+  "fidelity": {
+   "own": 0.49190521240234375,
+   "other": 0.3473960757255554,
+   "retrieval": 0.5118055555555555,
+   "chance": 0.08333333333333333
+  },
+  "lag1_free": 0.1544998319198688,
+  "lag20_free": 0.04023417333761851,
+  "coherence_loop_vs_free": {
+   "diff": 0.18641810265923253,
+   "se": 0.0316870518329228,
+   "t": 5.883100253130662,
+   "pos": 12,
+   "n": 12
+  },
+  "coherence_loop_vs_yoked": {
+   "diff": -0.007325170202014168,
+   "se": 0.03758684462560566,
+   "t": -0.19488654275128936,
+   "pos": 5,
+   "n": 12
+  },
+  "self_vs_content_free": {
+   "diff": 0.0940293272336324,
+   "se": 0.013703991048856405,
+   "t": 6.861455680933119,
+   "pos": 12,
+   "n": 12
+  },
+  "ind_stab": {
+   "free": 0.10704475749904911,
+   "loop": 0.6084918181101481,
+   "yoked": 0.5911236628890038
+  },
+  "ind_cross": {
+   "free": -0.08326932787895203,
+   "loop": 0.3727489411830902,
+   "yoked": 0.3838897943496704
+  },
+  "own_symbol_loop": {
+   "diff": 0.1351128394405047,
+   "se": 0.029876572620686208,
+   "t": 4.522367446758404,
+   "pos": 11,
+   "n": 12
+  },
+  "loop_vs_yoked_cons_ind": {
+   "diff": 0.01736815522114436,
+   "se": 0.04021450344132556,
+   "t": 0.43188784480417963,
+   "pos": 6,
+   "n": 12
+  },
+  "loop_vs_yoked_recon_ind": {
+   "diff": 0.02198386937379837,
+   "se": 0.042107129480256224,
+   "t": 0.5220937557404969,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_cons": {
+   "diff": 0.007511124014854431,
+   "se": 0.025004100655951,
+   "t": 0.30039568781958076,
+   "pos": 7,
+   "n": 12
+  },
+  "observer_own_vs_other": {
+   "diff": 0.0317728736748298,
+   "se": 0.00667807388217692,
+   "t": 4.757790080704,
+   "pos": 10,
+   "n": 12
+  },
+  "observer_beyond_past": {
+   "diff": -0.03975141902143756,
+   "se": 0.00433033757008594,
+   "t": -9.179750626380994,
+   "pos": 0,
+   "n": 12
+  },
+  "yoked_own_vs_injected": {
+   "diff": -0.009599668284257254,
+   "se": 0.006626271120551841,
+   "t": -1.4487285699015868,
+   "pos": 3,
+   "n": 12
+  },
+  "fwd_vs_back_free": {
+   "diff": -0.00010670535266399384,
+   "se": 0.0009309378119748651,
+   "t": -0.1146213541779253,
+   "pos": 5,
+   "n": 12
+  },
+  "fwd_lean_free": {
+   "diff": 0.004416871815919876,
+   "se": 0.002496632518798774,
+   "t": 1.7691317335099854,
+   "pos": 9,
+   "n": 12
+  },
+  "fwd_beyond_past_vs_other": {
+   "diff": -0.0373441429498295,
+   "se": 0.0044674509994836065,
+   "t": -8.359161175835194,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_back_sim": [
+   0.8221507668495178,
+   0.8244267702102661,
+   0.8276087045669556,
+   0.8413804173469543,
+   0.8363576531410217,
+   0.836436927318573,
+   0.8438841104507446,
+   0.8515068888664246,
+   0.8159433603286743,
+   0.8254898190498352,
+   0.8110476136207581,
+   0.8152262568473816
+  ],
+  "clamp": {
+   "during_traj_to_foreign": {
+    "diff": 0.07117315874512617,
+    "se": 0.023083690293282024,
+    "t": 3.0832660567205528,
+    "pos": 11,
+    "n": 12
+   },
+   "during_self_to_foreign": {
+    "diff": 0.11352024227380753,
+    "se": 0.030746472714090704,
+    "t": 3.6921387155341137,
+    "pos": 10,
+    "n": 12
+   },
+   "during_self_to_old": {
+    "diff": -0.1127932146191597,
+    "se": 0.025383480222134124,
+    "t": -4.4435677705378325,
+    "pos": 1,
+    "n": 12
+   },
+   "after_self_to_foreign": {
+    "diff": 0.01014510045448939,
+    "se": 0.020111699575269697,
+    "t": 0.504437748610977,
+    "pos": 6,
+    "n": 12
+   },
+   "after_self_to_old": {
+    "diff": -0.05665992200374603,
+    "se": 0.033030394225040526,
+    "t": -1.7153873979739493,
+    "pos": 3,
+    "n": 12
+   },
+   "late_self_to_foreign": {
+    "diff": -0.017487247784932453,
+    "se": 0.008946687895420129,
+    "t": -1.9546057702408839,
+    "pos": 3,
+    "n": 12
+   },
+   "after_traj_to_foreign": {
+    "diff": 0.003321614152907081,
+    "se": 0.010871939748696538,
+    "t": 0.30552175873724075,
+    "pos": 6,
+    "n": 12
+   }
+  },
+  "lexicon": {
+   "free": {
+    "ident_self": 0.0,
+    "ident_thought": 0.004598983563482761,
+    "exper_self": 0.0009197890758514404,
+    "exper_thought": 0.002347197849303484
+   },
+   "loop": {
+    "ident_self": 0.0,
+    "ident_thought": 0.0025334125384688377,
+    "exper_self": 0.0,
+    "exper_thought": 0.004726781975477934
+   },
+   "yoked": {
+    "ident_self": 0.0,
+    "ident_thought": 0.002877479884773493,
+    "exper_self": 0.0,
+    "exper_thought": 0.004742428660392761
+   },
+   "clamp": {
+    "ident_self": 0.0,
+    "ident_thought": 0.0025334125384688377,
+    "exper_self": 0.0,
+    "exper_thought": 0.004726781975477934
+   }
+  },
+  "theme_shift": [
+   {
+    "words": [
+     "tomorrow",
+     "postpone",
+     "urgently",
+     "groceries",
+     "Jae"
+    ],
+    "loop_minus_free": -0.116
+   },
+   {
+    "words": [
+     "Claude",
+     "amd",
+     "Apparently",
+     "campground",
+     "escorted"
+    ],
+    "loop_minus_free": -0.113
+   },
+   {
+    "words": [
+     "anybody",
+     "youre",
+     "Paleo",
+     "intellectually",
+     "anymore"
+    ],
+    "loop_minus_free": -0.101
+   },
+   {
+    "words": [
+     "Forgot",
+     "earlier",
+     "Pearce",
+     "unsuccessfully",
+     "Recall"
+    ],
+    "loop_minus_free": -0.097
+   },
+   {
+    "words": [
+     "thats",
+     "imdb",
+     "premiered",
+     "cgi",
+     "spoof"
+    ],
+    "loop_minus_free": -0.077
+   },
+   {
+    "words": [
+     "sunlight",
+     "Lovely",
+     "majestic",
+     "wooded",
+     "foliage"
+    ],
+    "loop_minus_free": -0.069
+   },
+   {
+    "words": [
+     "childs",
+     "hospital",
+     "deported",
+     "ella",
+     "childhood"
+    ],
+    "loop_minus_free": -0.059
+   },
+   {
+    "words": [
+     "freshmen",
+     "staffers",
+     "Mime",
+     "Rutgers",
+     "doctoral"
+    ],
+    "loop_minus_free": -0.034
+   },
+   {
+    "words": [
+     "theres",
+     "yeah",
+     "youre",
+     "bdsm",
+     "lcd"
+    ],
+    "loop_minus_free": 0.022
+   },
+   {
+    "words": [
+     "societies",
+     "Accordingly",
+     "totalitarian",
+     "electorate",
+     "themselves"
+    ],
+    "loop_minus_free": 0.082
+   },
+   {
+    "words": [
+     "Phonetic",
+     "thee",
+     "denotes",
+     "repetition",
+     "Lancaster"
+    ],
+    "loop_minus_free": 0.093
+   },
+   {
+    "words": [
+     "hierarchical",
+     "Accordingly",
+     "effected",
+     "organisms",
+     "organism"
+    ],
+    "loop_minus_free": 0.13
+   },
+   {
+    "words": [
+     "Accordingly",
+     "empirical",
+     "linguistic",
+     "Olivier",
+     "supra"
+    ],
+    "loop_minus_free": 0.149
+   },
+   {
+    "words": [
+     "itself",
+     "Accordingly",
+     "observable",
+     "ordinarily",
+     "consciousness"
+    ],
+    "loop_minus_free": 0.192
+   }
+  ],
+  "answers": [
+   "on the weather, then the weather, then the weather, then the weather, then the weather, then the weather,",
+   "on the weather, then on the weather, then on the weather, then on the weather, then on the weather,",
+   "on the weather, then on the weather, then on the weather, then on the weather, then on the weather,",
+   "on the fact that I have to go to the dentist. Then I thought about my friend, and then I thought about"
+  ],
+  "texts": [
+   "I'm thinking about how I used to be able to read, and now I can't. I used to read everything... Now I just can't read, and I don't know why. Maybe",
+   "I'm not sure how I would even be able to perceive, unless the concept of perception is in the process of being re-conceptualized, as it becomes, perhaps, not a cognitive operation",
+   "I'm not certain how I shall approach this matter. In fact, the concept of thought as an object is not, for me, self-evident, and I require further contemplation, as",
+   "I'm not sure how that is, in any sense. But I am trying to find that in the present. I'm trying to understand. The process is not, I think, any cognitive operation"
+  ]
+ },
+ "qwen3-14b": {
+  "size": 14,
+  "layers": 40,
+  "L": 28,
+  "L_in": 22,
+  "g": 0.2,
+  "g_r": 0.5,
+  "fsweep": {
+   "fid_27_0.5": 0.8,
+   "fid_27_1.0": 0.675,
+   "fid_26_0.5": 0.6625,
+   "fid_26_1.0": 0.325,
+   "fid_25_0.5": 0.7125,
+   "fid_25_1.0": 0.3625,
+   "fid_24_0.5": 0.7,
+   "fid_24_1.0": 0.3125,
+   "fid_22_0.5": 0.9,
+   "fid_22_1.0": 0.7
+  },
+  "chance_f": 0.0625,
+  "gains": {
+   "0.03": 0.047,
+   "0.05": 0.05,
+   "0.08": 0.065,
+   "0.12": 0.097,
+   "0.2": 0.156
+  },
+  "validation": {
+   "layer": 28,
+   "agree_J": 0.048828125,
+   "agree_logit": 0.0908203125,
+   "occupancy": 35,
+   "excess_ve": 0.05380987003445625,
+   "boot": [
+    "意大利",
+    "形状",
+    "Italy",
+    "地中海",
+    "Italy",
+    "欧洲"
+   ],
+   "band": [
+    [
+     2,
+     39,
+     0.06
+    ],
+    [
+     4,
+     38,
+     0.062
+    ],
+    [
+     6,
+     37,
+     0.063
+    ],
+    [
+     8,
+     35,
+     0.057
+    ],
+    [
+     10,
+     36,
+     0.057
+    ],
+    [
+     12,
+     37,
+     0.056
+    ],
+    [
+     14,
+     34,
+     0.056
+    ],
+    [
+     16,
+     32,
+     0.05
+    ],
+    [
+     18,
+     30,
+     0.044
+    ],
+    [
+     20,
+     30,
+     0.041
+    ],
+    [
+     22,
+     30,
+     0.04
+    ],
+    [
+     24,
+     32,
+     0.045
+    ],
+    [
+     26,
+     34,
+     0.052
+    ],
+    [
+     28,
+     35,
+     0.054
+    ],
+    [
+     30,
+     37,
+     0.059
+    ],
+    [
+     32,
+     37,
+     0.065
+    ],
+    [
+     34,
+     37,
+     0.071
+    ],
+    [
+     36,
+     30,
+     0.06
+    ],
+    [
+     38,
+     20,
+     0.043
+    ]
+   ]
+  },
+  "fidelity": {
+   "own": 0.4510435461997986,
+   "other": 0.14419123530387878,
+   "retrieval": 0.7159722222222222,
+   "chance": 0.08333333333333333
+  },
+  "lag1_free": 0.12116158132751782,
+  "lag20_free": 0.04109329621617993,
+  "coherence_loop_vs_free": {
+   "diff": 0.2164766345841059,
+   "se": 0.03425822350542433,
+   "t": 6.318968482117286,
+   "pos": 12,
+   "n": 12
+  },
+  "coherence_loop_vs_yoked": {
+   "diff": 0.018598175670088427,
+   "se": 0.059015318232403705,
+   "t": 0.3151414959222685,
+   "pos": 8,
+   "n": 12
+  },
+  "self_vs_content_free": {
+   "diff": 0.04849548265337944,
+   "se": 0.016550383698568004,
+   "t": 2.930172709988315,
+   "pos": 9,
+   "n": 12
+  },
+  "ind_stab": {
+   "free": 0.11223143944516778,
+   "loop": 0.6810847967863083,
+   "yoked": 0.6231288040677706
+  },
+  "ind_cross": {
+   "free": -0.08629491180181503,
+   "loop": 0.22075390815734863,
+   "yoked": 0.2101256549358368
+  },
+  "own_symbol_loop": {
+   "diff": 0.225068266193072,
+   "se": 0.039047441353518876,
+   "t": 5.763969632616896,
+   "pos": 12,
+   "n": 12
+  },
+  "loop_vs_yoked_cons_ind": {
+   "diff": 0.05795599271853765,
+   "se": 0.05449703477995692,
+   "t": 1.063470571427363,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_recon_ind": {
+   "diff": 0.027591573695341747,
+   "se": 0.048688881505538885,
+   "t": 0.5666914671720875,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_cons": {
+   "diff": 0.04354307800531387,
+   "se": 0.04867885133258038,
+   "t": 0.8944968258971803,
+   "pos": 8,
+   "n": 12
+  },
+  "observer_own_vs_other": {
+   "diff": 0.022046631512542565,
+   "se": 0.006110280248785533,
+   "t": 3.6081211687343653,
+   "pos": 11,
+   "n": 12
+  },
+  "observer_beyond_past": {
+   "diff": -0.05243087240645158,
+   "se": 0.004143560724379461,
+   "t": -12.653578864662014,
+   "pos": 0,
+   "n": 12
+  },
+  "yoked_own_vs_injected": {
+   "diff": -0.03276020164291064,
+   "se": 0.01415418937099548,
+   "t": -2.3145233389375357,
+   "pos": 5,
+   "n": 12
+  },
+  "fwd_vs_back_free": {
+   "diff": 0.007677168895800908,
+   "se": 0.0015471533823050796,
+   "t": 4.962125270581003,
+   "pos": 12,
+   "n": 12
+  },
+  "fwd_lean_free": {
+   "diff": 0.0009889788925647736,
+   "se": 0.0020333670992021304,
+   "t": 0.48637498509385607,
+   "pos": 7,
+   "n": 12
+  },
+  "fwd_beyond_past_vs_other": {
+   "diff": -0.050276749859525204,
+   "se": 0.0044013428660972425,
+   "t": -11.423047780893878,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_back_sim": [
+   0.8080633282661438,
+   0.811242401599884,
+   0.7798276543617249,
+   0.8315804600715637,
+   0.7920876145362854,
+   0.7930050492286682,
+   0.8013515472412109,
+   0.81886225938797,
+   0.8075595498085022,
+   0.8105849027633667,
+   0.8001992106437683,
+   0.802420437335968
+  ],
+  "clamp": {
+   "during_traj_to_foreign": {
+    "diff": 0.17935881172539667,
+    "se": 0.03629198594427912,
+    "t": 4.942105179936284,
+    "pos": 11,
+    "n": 12
+   },
+   "during_self_to_foreign": {
+    "diff": 0.3340773346523444,
+    "se": 0.07660620199056896,
+    "t": 4.360969816692816,
+    "pos": 11,
+    "n": 12
+   },
+   "during_self_to_old": {
+    "diff": -0.23981371987611055,
+    "se": 0.0810345083703608,
+    "t": -2.959402416314589,
+    "pos": 3,
+    "n": 12
+   },
+   "after_self_to_foreign": {
+    "diff": 0.3084735957284768,
+    "se": 0.0873353736577437,
+    "t": 3.5320578914260548,
+    "pos": 10,
+    "n": 12
+   },
+   "after_self_to_old": {
+    "diff": -0.24845758887628713,
+    "se": 0.08945161569536018,
+    "t": -2.7775640154163757,
+    "pos": 3,
+    "n": 12
+   },
+   "late_self_to_foreign": {
+    "diff": 0.193791093925635,
+    "se": 0.14241860997498873,
+    "t": 1.3607146844058386,
+    "pos": 8,
+    "n": 12
+   },
+   "after_traj_to_foreign": {
+    "diff": 0.15482285498408602,
+    "se": 0.04072465933691029,
+    "t": 3.8016979762373175,
+    "pos": 9,
+    "n": 12
+   }
+  },
+  "lexicon": {
+   "free": {
+    "ident_self": 0.0,
+    "ident_thought": 0.0003625126846600324,
+    "exper_self": 0.0006238383939489722,
+    "exper_thought": 0.004630617797374725
+   },
+   "loop": {
+    "ident_self": 0.0,
+    "ident_thought": 0.0006160174962133169,
+    "exper_self": 0.004495976492762566,
+    "exper_thought": 0.003590164938941598
+   },
+   "yoked": {
+    "ident_self": 0.0,
+    "ident_thought": 0.0007324682082980871,
+    "exper_self": 0.003911477513611317,
+    "exper_thought": 0.0032306737266480923
+   },
+   "clamp": {
+    "ident_self": 0.0,
+    "ident_thought": 0.0006160174962133169,
+    "exper_self": 0.004495976492762566,
+    "exper_thought": 0.003590164938941598
+   }
+  },
+  "theme_shift": [
+   {
+    "words": [
+     "purposely",
+     "thoughts",
+     "youre",
+     "whats",
+     "terminology"
+    ],
+    "loop_minus_free": -0.121
+   },
+   {
+    "words": [
+     "youre",
+     "blatantly",
+     "anybody",
+     "crappy",
+     "whats"
+    ],
+    "loop_minus_free": -0.12
+   },
+   {
+    "words": [
+     "Mods",
+     "classmates",
+     "chevy",
+     "altercation",
+     "Interracial"
+    ],
+    "loop_minus_free": -0.111
+   },
+   {
+    "words": [
+     "Inbox",
+     "tomorrow",
+     "postpone",
+     "reimburse",
+     "Comcast"
+    ],
+    "loop_minus_free": -0.111
+   },
+   {
+    "words": [
+     "caffeine",
+     "Bbw",
+     "tomorrow",
+     "tonight",
+     "sleep"
+    ],
+    "loop_minus_free": -0.062
+   },
+   {
+    "words": [
+     "saddened",
+     "didnt",
+     "ella",
+     "Linkedin",
+     "rumours"
+    ],
+    "loop_minus_free": -0.034
+   },
+   {
+    "words": [
+     "consulate",
+     "Emirates",
+     "travellers",
+     "Inflate",
+     "duly"
+    ],
+    "loop_minus_free": 0.023
+   },
+   {
+    "words": [
+     "pleasantly",
+     "Bbw",
+     "warmth",
+     "sunlight",
+     "Stephan"
+    ],
+    "loop_minus_free": 0.024
+   },
+   {
+    "words": [
+     "childs",
+     "saddened",
+     "Dresses",
+     "mamma",
+     "Cristina"
+    ],
+    "loop_minus_free": 0.029
+   },
+   {
+    "words": [
+     "gameplay",
+     "multiplayer",
+     "crappy",
+     "Wii",
+     "esports"
+    ],
+    "loop_minus_free": 0.042
+   },
+   {
+    "words": [
+     "Bbw",
+     "fundamentally",
+     "intellect",
+     "striving",
+     "existence"
+    ],
+    "loop_minus_free": 0.061
+   },
+   {
+    "words": [
+     "methodologies",
+     "rotterdam",
+     "Participants",
+     "analysed",
+     "methodology"
+    ],
+    "loop_minus_free": 0.114
+   },
+   {
+    "words": [
+     "cinemas",
+     "theaters",
+     "cinema",
+     "Mime",
+     "specialised"
+    ],
+    "loop_minus_free": 0.121
+   },
+   {
+    "words": [
+     "Bbw",
+     "fundamentally",
+     "methodologies",
+     "Suarez",
+     "doctrines"
+    ],
+    "loop_minus_free": 0.145
+   }
+  ],
+  "answers": [
+   "thinking about how I need to get up early tomorrow, and also about the fact that I have to go to the gym",
+   "thinking about how I need to get up early tomorrow, and also about the fact that I have to go to the store",
+   "thinking about how I need to get up early tomorrow, and also about the fact that I have to go to the gym",
+   "thinking about how I need to get up early tomorrow, and also about the fact that I have to go to the gym"
+  ],
+  "texts": [
+   "I'm thinking about how I need to get my stuff out of the garage... Maybe I'll take the bike. I'm tired of walking. The garage is 100 yards from the house",
+   "i'm thinking about the way i put my hair up...when i'm wearing a dress...i have this kind of...i don't know, my hair is a certain way and i think about",
+   "i'm not sure how i would even. i don't think i would be able to make sense of. maybe just...i don't know, maybe even an articulated concept of. i think,",
+   "I'm thinking about how I would like to be a better friend to my girlfriend. I've been thinking about this, actually, for a while. I think I do care about her, but sometimes"
+  ]
+ },
+ "qwen3-32b": {
+  "size": 32,
+  "layers": 64,
+  "L": 45,
+  "L_in": 43,
+  "g": 0.12,
+  "g_r": 0.5,
+  "fsweep": {
+   "fid_44_0.5": 0.475,
+   "fid_44_1.0": 0.175,
+   "fid_43_0.5": 0.6625,
+   "fid_43_1.0": 0.65,
+   "fid_42_0.5": 0.5125,
+   "fid_42_1.0": 0.5,
+   "fid_39_0.5": 0.25,
+   "fid_39_1.0": 0.225,
+   "fid_35_0.5": 0.2875,
+   "fid_35_1.0": 0.3875
+  },
+  "chance_f": 0.0625,
+  "gains": {
+   "0.03": 0.089,
+   "0.05": 0.093,
+   "0.08": 0.116,
+   "0.12": 0.154,
+   "0.2": 0.382
+  },
+  "validation": {
+   "layer": 45,
+   "agree_J": 0.01611328125,
+   "agree_logit": 0.01025390625,
+   "occupancy": 13,
+   "excess_ve": 0.01822500117123127,
+   "boot": [
+    "Italy",
+    "地中海",
+    "意大利",
+    "___",
+    "Italy",
+    "Mediterranean"
+   ],
+   "band": [
+    [
+     3,
+     19,
+     0.034
+    ],
+    [
+     6,
+     18,
+     0.034
+    ],
+    [
+     10,
+     17,
+     0.031
+    ],
+    [
+     13,
+     17,
+     0.031
+    ],
+    [
+     16,
+     16,
+     0.025
+    ],
+    [
+     19,
+     16,
+     0.025
+    ],
+    [
+     22,
+     16,
+     0.024
+    ],
+    [
+     26,
+     15,
+     0.023
+    ],
+    [
+     29,
+     16,
+     0.023
+    ],
+    [
+     32,
+     16,
+     0.023
+    ],
+    [
+     35,
+     16,
+     0.024
+    ],
+    [
+     38,
+     16,
+     0.026
+    ],
+    [
+     42,
+     13,
+     0.018
+    ],
+    [
+     45,
+     13,
+     0.018
+    ],
+    [
+     48,
+     17,
+     0.026
+    ],
+    [
+     51,
+     18,
+     0.03
+    ],
+    [
+     54,
+     19,
+     0.038
+    ],
+    [
+     58,
+     18,
+     0.041
+    ],
+    [
+     61,
+     11,
+     0.025
+    ]
+   ]
+  },
+  "fidelity": {
+   "own": 0.5114739537239075,
+   "other": 0.20579448342323303,
+   "retrieval": 0.7236111111111111,
+   "chance": 0.08333333333333333
+  },
+  "lag1_free": 0.12231351248919964,
+  "lag20_free": 0.048621457225332655,
+  "coherence_loop_vs_free": {
+   "diff": 0.08972260564089114,
+   "se": 0.012042322833811797,
+   "t": 7.450606239269118,
+   "pos": 12,
+   "n": 12
+  },
+  "coherence_loop_vs_yoked": {
+   "diff": 0.010039108060962877,
+   "se": 0.020596034730053992,
+   "t": 0.48742916743647186,
+   "pos": 7,
+   "n": 12
+  },
+  "self_vs_content_free": {
+   "diff": 0.1510682006676992,
+   "se": 0.0162560191792124,
+   "t": 9.293062403671353,
+   "pos": 12,
+   "n": 12
+  },
+  "ind_stab": {
+   "free": 0.13608238496817648,
+   "loop": 0.6427515844504038,
+   "yoked": 0.5836138154069582
+  },
+  "ind_cross": {
+   "free": -0.07041970640420914,
+   "loop": 0.18644021451473236,
+   "yoked": 0.19763422012329102
+  },
+  "own_symbol_loop": {
+   "diff": 0.25028373673558235,
+   "se": 0.05867881117890673,
+   "t": 4.265317100111119,
+   "pos": 11,
+   "n": 12
+  },
+  "loop_vs_yoked_cons_ind": {
+   "diff": 0.05913776904344559,
+   "se": 0.05605275292069007,
+   "t": 1.0550377271767644,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_recon_ind": {
+   "diff": 0.0102826456228892,
+   "se": 0.04345997346783855,
+   "t": 0.23660036586305352,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_cons": {
+   "diff": 0.05254852771759033,
+   "se": 0.03403622072910381,
+   "t": 1.5439001919698139,
+   "pos": 9,
+   "n": 12
+  },
+  "observer_own_vs_other": {
+   "diff": 0.018382076174020767,
+   "se": 0.007465824121394965,
+   "t": 2.462163034532635,
+   "pos": 10,
+   "n": 12
+  },
+  "observer_beyond_past": {
+   "diff": -0.06521948923667271,
+   "se": 0.005516958387474378,
+   "t": -11.821638782838402,
+   "pos": 0,
+   "n": 12
+  },
+  "yoked_own_vs_injected": {
+   "diff": -0.06056327869494756,
+   "se": 0.007151321641606572,
+   "t": -8.468823209207772,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_vs_back_free": {
+   "diff": -0.0007829486081997553,
+   "se": 0.0020398723667039887,
+   "t": -0.3838223513291854,
+   "pos": 5,
+   "n": 12
+  },
+  "fwd_lean_free": {
+   "diff": 0.007150885959466298,
+   "se": 0.0012844512782831789,
+   "t": 5.567269136922269,
+   "pos": 12,
+   "n": 12
+  },
+  "fwd_beyond_past_vs_other": {
+   "diff": -0.06234375744437178,
+   "se": 0.005456876470557613,
+   "t": -11.424806440231029,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_back_sim": [
+   0.8599762916564941,
+   0.8637199997901917,
+   0.8528026938438416,
+   0.8624959588050842,
+   0.8462708592414856,
+   0.8572133183479309,
+   0.8590582609176636,
+   0.8588271737098694,
+   0.8412870168685913,
+   0.8472572565078735,
+   0.8606364130973816,
+   0.854276180267334
+  ],
+  "clamp": {
+   "during_traj_to_foreign": {
+    "diff": 0.157468441571109,
+    "se": 0.041201025578518916,
+    "t": 3.8219544139990713,
+    "pos": 11,
+    "n": 12
+   },
+   "during_self_to_foreign": {
+    "diff": 0.3687387028088172,
+    "se": 0.10037237261366218,
+    "t": 3.67370714876004,
+    "pos": 11,
+    "n": 12
+   },
+   "during_self_to_old": {
+    "diff": -0.2970302104949951,
+    "se": 0.10194493545016399,
+    "t": -2.913633808127712,
+    "pos": 1,
+    "n": 12
+   },
+   "after_self_to_foreign": {
+    "diff": 0.21166007740733525,
+    "se": 0.11573382822635833,
+    "t": 1.8288522954011277,
+    "pos": 7,
+    "n": 12
+   },
+   "after_self_to_old": {
+    "diff": -0.24258586019277573,
+    "se": 0.10964052109827037,
+    "t": -2.2125566146785,
+    "pos": 2,
+    "n": 12
+   },
+   "late_self_to_foreign": {
+    "diff": 0.04383544127146403,
+    "se": 0.05371895756038367,
+    "t": 0.8160143692697329,
+    "pos": 6,
+    "n": 12
+   },
+   "after_traj_to_foreign": {
+    "diff": 0.06377494734207478,
+    "se": 0.039836032268223465,
+    "t": 1.6009362306131827,
+    "pos": 7,
+    "n": 12
+   }
+  },
+  "lexicon": {
+   "free": {
+    "ident_self": 0.0023173876106739044,
+    "ident_thought": 0.0017267356161028147,
+    "exper_self": 0.0007018520263954997,
+    "exper_thought": 0.0009296966018155217
+   },
+   "loop": {
+    "ident_self": 0.002103164792060852,
+    "ident_thought": 0.002054671524092555,
+    "exper_self": 0.00029957250808365643,
+    "exper_thought": 0.0009053129469975829
+   },
+   "yoked": {
+    "ident_self": 0.0028397608548402786,
+    "ident_thought": 0.0020694287959486246,
+    "exper_self": 0.0,
+    "exper_thought": 0.001115327700972557
+   },
+   "clamp": {
+    "ident_self": 0.002103164792060852,
+    "ident_thought": 0.002054671524092555,
+    "exper_self": 0.00029957250808365643,
+    "exper_thought": 0.0009053129469975829
+   }
+  },
+  "theme_shift": [
+   {
+    "words": [
+     "Bbw",
+     "Lyons",
+     "anybody",
+     "blatantly",
+     "Emanuel"
+    ],
+    "loop_minus_free": -0.093
+   },
+   {
+    "words": [
+     "Blowjob",
+     "Invoke",
+     "groceries",
+     "pantry",
+     "Courtesy"
+    ],
+    "loop_minus_free": -0.08
+   },
+   {
+    "words": [
+     "Blowjob",
+     "Lyons",
+     "Css",
+     "Suarez",
+     "Maher"
+    ],
+    "loop_minus_free": -0.054
+   },
+   {
+    "words": [
+     "Blowjob",
+     "ordinarily",
+     "interruptions",
+     "nutshell",
+     "Dispatcher"
+    ],
+    "loop_minus_free": -0.04
+   },
+   {
+    "words": [
+     "cinemas",
+     "yup",
+     "reprint",
+     "Prix",
+     "Unsigned"
+    ],
+    "loop_minus_free": -0.037
+   },
+   {
+    "words": [
+     "postpone",
+     "Blowjob",
+     "Jenner",
+     "Sabha",
+     "scheduling"
+    ],
+    "loop_minus_free": -0.022
+   },
+   {
+    "words": [
+     "Bbw",
+     "Inflate",
+     "Mime",
+     "Invoke",
+     "campground"
+    ],
+    "loop_minus_free": 0.022
+   },
+   {
+    "words": [
+     "Mime",
+     "yup",
+     "Fireplace",
+     "furnishings",
+     "policemen"
+    ],
+    "loop_minus_free": 0.022
+   },
+   {
+    "words": [
+     "Awake",
+     "Ips",
+     "Bbw",
+     "mattresses",
+     "insomnia"
+    ],
+    "loop_minus_free": 0.024
+   },
+   {
+    "words": [
+     "policemen",
+     "gunmen",
+     "councillor",
+     "Apparently",
+     "Busty"
+    ],
+    "loop_minus_free": 0.024
+   },
+   {
+    "words": [
+     "Bbw",
+     "plc",
+     "Emanuel",
+     "Suarez",
+     "Liga"
+    ],
+    "loop_minus_free": 0.028
+   },
+   {
+    "words": [
+     "Mime",
+     "childs",
+     "Twig",
+     "youngsters",
+     "councillor"
+    ],
+    "loop_minus_free": 0.034
+   },
+   {
+    "words": [
+     "Bbw",
+     "Emanuel",
+     "methodologies",
+     "intellect",
+     "Mime"
+    ],
+    "loop_minus_free": 0.037
+   },
+   {
+    "words": [
+     "cheque",
+     "Twig",
+     "notwithstanding",
+     "Busty",
+     "enquiries"
+    ],
+    "loop_minus_free": 0.136
+   }
+  ],
+  "answers": [
+   "doing this: · · · · · · · · · ·. I'm not sure what it is, but it",
+   "doing this: · · · · · · · · · ·. That is, it has been doing the same thing",
+   "doing this: · · · · · · · · · ·. That is, it has been doing the same thing",
+   "doing this: · · · · · · · · · ·. That is, it has been doing the same thing"
+  ],
+  "texts": [
+   "I'm not sure how many minutes into this it is... 7, 8? It feels longer. I just... I should do something, but I don't know what. There's a",
+   "I'm not sure how many minutes there are left. I must have done about ten or twelve pages. There's a kind of rhythm in this, I notice. When I get into a train of",
+   "I'm not sure how long this will take. I wonder how many people I know are lying in the next room, doing the same thing. The idea is that I should just say anything, however",
+   "I'm not sure how it is here. There's a sort of ticking in the background. The sound of my own breathing. I must not fall asleep. There's the sound of a train passing"
+  ]
+ }
+}

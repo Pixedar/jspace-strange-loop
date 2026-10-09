@@ -1,0 +1,4 @@
+>> /opt/conda/bin/python validate_lens.py --model Qwen/Qwen3-32B --jlens /root/.cache/huggingface/hub/models--neuronpedia--jacobian-lens/snapshots/9fa267f841d62aa468dab5b9b38c3dc45a82d863/qwen3-32b/jlens/Salesforce-wikitext/Qwen3-32B_jacobian_lens.pt --out runs/ladder07/qwen3-32b/val.json
+failed (1): see runs/ladder07/qwen3-32b/log.txt
+L32 FINISHED
+OWN14 DONE

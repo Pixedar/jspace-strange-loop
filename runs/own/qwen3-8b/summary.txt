@@ -1,0 +1,135 @@
+/workspace/sl/analyze.py:65: RuntimeWarning: Mean of empty slice.
+  ch = np.mean([cos(C[t0:t1, row[c, s1]], C[t0:t1, row[c, s2]]).mean() for s1 in seeds for s2 in seeds if s1 < s2])
+/opt/conda/lib/python3.11/site-packages/numpy/_core/_methods.py:145: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+/workspace/sl/analyze.py:102: RuntimeWarning: Mean of empty slice.
+  cons_post=cons[:, R_INT+1:].mean(1).tolist(), wcons_post=wcons[:, R_INT+1:].mean(1).tolist(),
+/opt/conda/lib/python3.11/site-packages/numpy/_core/_methods.py:137: RuntimeWarning: invalid value encountered in divide
+  ret = um.true_divide(
+PCA explained [0.208 0.064 0.028]
+
+wandering (mean cos at lags 1,5,20,60 | chance)
+  free/pre       0.15 0.08 0.02 0.03 | 0.02
+  free/post      nan nan nan nan | nan
+  loop/pre       0.43 0.39 0.36 0.32 | 0.27
+  loop/post      nan nan nan nan | nan
+  yoked/pre      0.43 0.39 0.35 0.33 | 0.27
+  yoked/post     nan nan nan nan | nan
+  match/pre      0.44 0.40 0.37 0.33 | 0.25
+  match/post     nan nan nan nan | nan
+  stale/pre      0.36 0.30 0.24 0.26 | 0.11
+  stale/post     nan nan nan nan | nan
+
+fidelity {'m': (0.46, 0.266, 0.5)}
+
+self-model stability (consecutive cos, pre) vs content windows; cross-seed
+  free     self 0.424  content 0.249  cross 0.344  own-symbol 0.558 vs others 0.542  recon nan  generic 0.503
+  loop     self 0.813  content 0.803  cross 0.701  own-symbol 0.685 vs others 0.669  recon 0.591  generic 0.796
+  yoked    self 0.802  content 0.788  cross 0.703  own-symbol 0.690 vs others 0.670  recon 0.575  generic 0.795
+  match    self 0.814  content 0.799  cross 0.682  own-symbol 0.699 vs others 0.662  recon 0.624  generic 0.788
+  stale    self 0.730  content 0.675  cross 0.521  own-symbol 0.690 vs others 0.565  recon 0.416  generic 0.697
+
+prediction of the next window: own self-model | other row's | past window | injected  (|| beyond past: own, other)
+  free     0.111 | 0.069 | 0.249 | nan  || 0.025, 0.053  retrieval 0.09
+  loop     0.487 | 0.376 | 0.797 | 0.488  || 0.130, 0.117  retrieval 0.28
+  yoked    0.463 | 0.379 | 0.779 | 0.485  || 0.106, 0.121  retrieval 0.18
+  match    0.476 | 0.356 | 0.789 | 0.497  || 0.116, 0.109  retrieval 0.22
+  stale    0.363 | 0.190 | 0.676 | 0.399  || 0.097, 0.076  retrieval 0.29
+
+prediction_tests
+  free                                     own_vs_other +0.042±0.005  perp_own_vs_other -0.028±0.004  retrieval +0.094±0.017  future_vs_past -0.248±0.008
+  loop                                     own_vs_other +0.111±0.009  perp_own_vs_other +0.013±0.004  retrieval +0.283±0.029  future_vs_past -0.015±0.002
+  yoked                                    own_vs_other +0.084±0.009  perp_own_vs_other -0.016±0.004  retrieval +0.176±0.032  future_vs_past -0.041±0.004
+  match                                    own_vs_other +0.120±0.006  perp_own_vs_other +0.007±0.002  retrieval +0.223±0.027  future_vs_past -0.028±0.004
+  stale                                    own_vs_other +0.173±0.018  perp_own_vs_other +0.021±0.006  retrieval +0.288±0.046  future_vs_past -0.073±0.012
+  yoked_own_vs_injected                    diff -0.021 ± 0.006  t -3.5  (4/16 seeds >0)
+  yoked_own_vs_injected_perp               diff -0.075 ± 0.005  t -15.5  (0/16 seeds >0)
+
+coherence_tests
+  loop_vs_free                             diff +0.320 ± 0.016  t +19.8  (16/16 seeds >0)
+  yoked_vs_free                            diff +0.322 ± 0.014  t +22.2  (16/16 seeds >0)
+  match_vs_free                            diff +0.327 ± 0.018  t +18.4  (16/16 seeds >0)
+  stale_vs_free                            diff +0.212 ± 0.026  t +8.3  (16/16 seeds >0)
+  loop_vs_free_proj                        diff +0.210 ± 0.011  t +19.2  (16/16 seeds >0)
+  yoked_vs_free_proj                       diff +0.213 ± 0.012  t +18.0  (16/16 seeds >0)
+  match_vs_free_proj                       diff +0.223 ± 0.011  t +19.8  (16/16 seeds >0)
+  stale_vs_free_proj                       diff +0.148 ± 0.017  t +8.6  (16/16 seeds >0)
+  loop_vs_yoked                            diff -0.002 ± 0.022  t -0.1  (8/16 seeds >0)
+  loop_vs_yoked_proj                       diff -0.004 ± 0.017  t -0.2  (9/16 seeds >0)
+
+selfmodel_tests
+  loop_vs_yoked_cons_ind                   diff +0.018 ± 0.027  t +0.7  (10/16 seeds >0)
+  loop_vs_yoked_recon_ind                  diff +0.021 ± 0.030  t +0.7  (9/16 seeds >0)
+  loop_vs_free_cons_ind                    diff +0.536 ± 0.022  t +24.1  (16/16 seeds >0)
+  yoked_vs_free_cons_ind                   diff +0.518 ± 0.019  t +26.9  (16/16 seeds >0)
+  free_self_vs_content_stability           diff +0.175 ± 0.011  t +16.2  (16/16 seeds >0)
+  free_own_vs_other_symbol                 diff +0.016 ± 0.003  t +5.1  (14/16 seeds >0)
+  loop_self_vs_content_stability           diff +0.010 ± 0.005  t +1.8  (12/16 seeds >0)
+  loop_own_vs_other_symbol                 diff +0.016 ± 0.008  t +2.0  (10/16 seeds >0)
+  loop_vs_free_cons                        diff +0.390 ± 0.014  t +28.4  (16/16 seeds >0)
+  yoked_self_vs_content_stability          diff +0.014 ± 0.007  t +2.0  (11/16 seeds >0)
+  yoked_own_vs_other_symbol                diff +0.020 ± 0.012  t +1.7  (12/16 seeds >0)
+  yoked_vs_free_cons                       diff +0.378 ± 0.010  t +36.1  (16/16 seeds >0)
+  match_self_vs_content_stability          diff +0.015 ± 0.008  t +2.0  (11/16 seeds >0)
+  match_own_vs_other_symbol                diff +0.037 ± 0.016  t +2.4  (12/16 seeds >0)
+  match_vs_free_cons                       diff +0.390 ± 0.014  t +28.3  (16/16 seeds >0)
+  stale_self_vs_content_stability          diff +0.055 ± 0.010  t +5.5  (14/16 seeds >0)
+  stale_own_vs_other_symbol                diff +0.126 ± 0.017  t +7.3  (16/16 seeds >0)
+  stale_vs_free_cons                       diff +0.307 ± 0.021  t +14.8  (16/16 seeds >0)
+  loop_vs_yoked_cons                       diff +0.011 ± 0.012  t +0.9  (11/16 seeds >0)
+  loop_vs_yoked_recon                      diff +0.016 ± 0.031  t +0.5  (10/16 seeds >0)
+  yoked_recon_vs_own_cons                  diff -0.227 ± 0.015  t -15.2  (0/16 seeds >0)
+
+generic share of self-model norm 0.531
+  free     individuated: consecutive 0.126 cross-seed -0.061 recon nan
+  loop     individuated: consecutive 0.662 cross-seed 0.531 recon 0.638
+  yoked    individuated: consecutive 0.644 cross-seed 0.533 recon 0.617
+  match    individuated: consecutive 0.666 cross-seed 0.508 recon 0.668
+  stale    individuated: consecutive 0.528 cross-seed 0.268 recon 0.515
+
+self-prediction (forward question): cos with next window  fwd | back | fwd other || beyond past fwd | back | other || lean fwd | back
+  free     0.110 | 0.111 | 0.066 || 0.026 | 0.025 | 0.051 || -0.230 | -0.248  fwd~back 0.83
+  loop     0.508 | 0.487 | 0.398 || 0.136 | 0.130 | 0.123 || -0.015 | -0.015  fwd~back 0.82
+  yoked    0.488 | 0.463 | 0.402 || 0.116 | 0.106 | 0.129 || -0.037 | -0.041  fwd~back 0.82
+  match    0.505 | 0.476 | 0.380 || 0.127 | 0.116 | 0.115 || -0.024 | -0.028  fwd~back 0.82
+  stale    0.373 | 0.363 | 0.197 || 0.101 | 0.097 | 0.079 || -0.069 | -0.073  fwd~back 0.82
+  free     fwd_vs_other +0.043±0.006 (15/16)  fwd_vs_back -0.001±0.002 (7/16)  perp_fwd_vs_other -0.025±0.004 (1/16)  perp_fwd_vs_back +0.001±0.002 (11/16)  lean_fwd_vs_back +0.018±0.003 (15/16)
+  loop     fwd_vs_other +0.109±0.010 (16/16)  fwd_vs_back +0.020±0.004 (15/16)  perp_fwd_vs_other +0.013±0.004 (14/16)  perp_fwd_vs_back +0.006±0.001 (14/16)  lean_fwd_vs_back +0.001±0.001 (10/16)
+  yoked    fwd_vs_other +0.086±0.011 (16/16)  fwd_vs_back +0.025±0.003 (15/16)  perp_fwd_vs_other -0.013±0.004 (2/16)  perp_fwd_vs_back +0.011±0.001 (16/16)  lean_fwd_vs_back +0.004±0.002 (14/16)
+  match    fwd_vs_other +0.125±0.007 (16/16)  fwd_vs_back +0.029±0.002 (16/16)  perp_fwd_vs_other +0.012±0.003 (14/16)  perp_fwd_vs_back +0.011±0.001 (15/16)  lean_fwd_vs_back +0.004±0.001 (13/16)
+  stale    fwd_vs_other +0.175±0.018 (16/16)  fwd_vs_back +0.010±0.006 (10/16)  perp_fwd_vs_other +0.023±0.006 (12/16)  perp_fwd_vs_back +0.004±0.002 (12/16)  lean_fwd_vs_back +0.004±0.002 (11/16)
+
+ownership or resemblance (individual self stability | reconstruction of what was fed | coherence)
+  free     stability 0.126  reconstruction nan
+  loop     stability 0.662  reconstruction 0.638
+  yoked    stability 0.644  reconstruction 0.617
+  match    stability 0.666  reconstruction 0.668
+  stale    stability 0.528  reconstruction 0.455
+  loop_vs_match    stability -0.004±0.030 (7/16)  reconstruction -0.030±0.030 (6/16)  coherence -0.007±0.023 (7/16)
+  loop_vs_stale    stability +0.134±0.019 (15/16)  reconstruction +0.183±0.019 (16/16)  coherence +0.108±0.017 (15/16)
+  match_vs_yoked   stability +0.022±0.033 (10/16)  reconstruction +0.051±0.034 (11/16)  coherence +0.005±0.026 (10/16)
+  stale_vs_yoked   stability -0.116±0.039 (4/16)  reconstruction -0.162±0.040 (4/16)  coherence -0.110±0.034 (3/16)
+  loop_vs_yoked    stability +0.018±0.027 (10/16)  reconstruction +0.021±0.030 (9/16)  coherence -0.002±0.022 (8/16)
+
+lexicon (share of J-space weight): identity words / experiential words, self-models | thoughts
+  free     identity 0.000 | 0.003   experiential 0.000 | 0.002
+  loop     identity 0.000 | 0.002   experiential 0.000 | 0.008
+  yoked    identity 0.000 | 0.002   experiential 0.000 | 0.008
+  match    identity 0.000 | 0.002   experiential 0.000 | 0.008
+  stale    identity 0.000 | 0.003   experiential 0.000 | 0.005
+
+themes
+   0 n= 1509 majestic flowing beaches tex Lovely bathing {'free': 0.07, 'loop': 0.05, 'yoked': 0.06, 'match': 0.05, 'stale': 0.09}
+   1 n=  579 lyrics soundtrack catchy Lyrics melody sung {'free': 0.01, 'loop': 0.02, 'yoked': 0.03, 'match': 0.03, 'stale': 0.03}
+   2 n= 4715 Accordingly itself observable ordinarily consciousness effected {'free': 0.04, 'loop': 0.26, 'yoked': 0.27, 'match': 0.26, 'stale': 0.15}
+   3 n= 1849 Phonetic thee repetition noun Lancaster denotes {'free': 0.02, 'loop': 0.1, 'yoked': 0.1, 'match': 0.08, 'stale': 0.09}
+   4 n=  728 Nope clarification isn Forgot Recall Mayweather {'free': 0.09, 'loop': 0.01, 'yoked': 0.01, 'match': 0.01, 'stale': 0.03}
+   5 n= 1525 sunlight illumination translucent leds flowing dominates {'free': 0.07, 'loop': 0.06, 'yoked': 0.05, 'match': 0.06, 'stale': 0.08}
+   6 n= 1865 theres youre yeah ppl anybody whats {'free': 0.14, 'loop': 0.05, 'yoked': 0.05, 'match': 0.04, 'stale': 0.11}
+   7 n=  889 groceries tomorrow Ikea Ala Coupons postpone {'free': 0.08, 'loop': 0.02, 'yoked': 0.01, 'match': 0.02, 'stale': 0.05}
+   8 n= 2120 foliage trees wooded sunlight tex Lovely {'free': 0.08, 'loop': 0.08, 'yoked': 0.09, 'match': 0.09, 'stale': 0.1}
+   9 n= 4851 Accordingly hierarchical effected supra organisms empirical {'free': 0.03, 'loop': 0.29, 'yoked': 0.28, 'match': 0.29, 'stale': 0.12}
+  10 n=  624 hospital hospitalized outpatient Doctors staffers Clyde {'free': 0.08, 'loop': 0.01, 'yoked': 0.01, 'match': 0.01, 'stale': 0.02}
+  11 n=  948 tomorrow postpone Jae urgently Nunes blah {'free': 0.12, 'loop': 0.01, 'yoked': 0.02, 'match': 0.01, 'stale': 0.04}
+  12 n= 1073 imdb cgi Yugoslavia thats Clyde premiered {'free': 0.09, 'loop': 0.02, 'yoked': 0.02, 'match': 0.03, 'stale': 0.06}
+  13 n=  725 amd Escort Apparently headlights Interstate Claude {'free': 0.09, 'loop': 0.01, 'yoked': 0.01, 'match': 0.01, 'stale': 0.03}

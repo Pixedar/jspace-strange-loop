@@ -13,7 +13,7 @@ d = sys.argv[1]
 Z = np.load(f'{d}/traj.npz');M = json.load(open(f'{d}/meta.json', encoding='utf-8'))
 rows, a = M['rows'], M['args'];K, T_INT = a['K'], a['t_int'];B = len(rows)
 INDIVIDUATED = any(r['cond'] in ('loopc', 'yokedc', 'clampc') for r in rows)
-for r in rows:r['cond'] = {'loopc':'loop', 'yokedc':'yoked', 'clampc':'clamp'}.get(r['cond'], r['cond'])
+for r in rows:r['cond'] = {'loopc':'loop', 'yokedc':'yoked', 'clampc':'clamp', 'matchc':'match', 'stalec':'stale'}.get(r['cond'], r['cond'])
 words = np.array(M['words'])
 C = Z['j'].astype(np.float32);N = C.shape[0]                             # (N, B, d) thought contents
 MS = Z['m'].astype(np.float32);NR = MS.shape[0]                           # (NR, B, d) self-models
@@ -116,12 +116,23 @@ for c in conds:
     sm[c]['recon_ind'] = [float(np.mean([cos(MSI[k+1, b], MSI[k, SRC[k, b]]) for k in range(R_INT-1) if SRC[k, b] >= 0]))
                           if c not in ('free', 'avg') else np.nan for b in bs]
     sm[c]['cons_ind_time'] = np.array([[cos(MSI[k, b], MSI[k+1, b]) for k in range(NR-1)] for b in bs]).mean(0).tolist()
+    # reconstruction of exactly the vector that was fed in (own, foreign, matched or stale)
+    sm[c]['recon_inj'] = [float(np.mean([cos(MSI[k+1, b], INJ[k, b]) for k in range(R_INT-1) if SRC[k, b] != -1]))
+                          if c not in ('free',) and (SRC[:, b] != -1).any() else np.nan for b in bs]
 out.setdefault('selfmodel_tests', {})
 if 'yoked' in conds:
     out['selfmodel_tests']['loop_vs_yoked_cons_ind'] = paired(sm['loop']['cons_ind_pre'], sm['yoked']['cons_ind_pre'])
     out['selfmodel_tests']['loop_vs_yoked_recon_ind'] = paired(sm['loop']['recon_ind'], sm['yoked']['recon_ind'])
     out['selfmodel_tests']['loop_vs_free_cons_ind'] = paired(sm['loop']['cons_ind_pre'], sm['free']['cons_ind_pre'])
     out['selfmodel_tests']['yoked_vs_free_cons_ind'] = paired(sm['yoked']['cons_ind_pre'], sm['free']['cons_ind_pre'])
+# ownership or resemblance: own self vs the most similar stranger's vs its own old self vs a random stranger's
+out['ownership_tests'] = {}
+for c1, c2 in (('loop', 'match'), ('loop', 'stale'), ('match', 'yoked'), ('stale', 'yoked'), ('loop', 'yoked')):
+    if c1 in conds and c2 in conds and 'match' in conds:
+        out['ownership_tests'][f'{c1}_vs_{c2}'] = dict(
+            stability=paired(sm[c1]['cons_ind_pre'], sm[c2]['cons_ind_pre']),
+            reconstruction=paired(sm[c1]['recon_inj'], sm[c2]['recon_inj']),
+            coherence=paired(out['acf'][f'{c1}/pre']['long'], out['acf'][f'{c2}/pre']['long']))
 
 # self-prediction: the forward question ("in the next few moments, my mind will probably turn to")
 if 'mf' in Z.files:
@@ -278,6 +289,25 @@ if 'clamp' in conds:
     agg['t0'] = T_INT-40;agg['r0'] = R_INT-4;agg['release_r'] = R_INT+CL
     out['clamp'] = agg
 
+# ------------------------------------------------------------------ 5b. what the workspace is made of
+# share of J-space weight on identity words (a post-trained model's "AI / assistant" self) and on experiential words
+# (the paper: thinking / feeling tokens dominate J-space during stream-of-consciousness narration)
+IDENT = {'ai', 'assistant', 'model', 'models', 'chatbot', 'bot', 'qwen', 'gpt', 'claude', 'artificial', 'robot', 'llm',
+         'chat', 'algorithm', 'neural', 'machine', 'computer', 'program', 'language'}
+EXPER = {'thinking', 'thoughts', 'thought', 'think', 'feeling', 'feelings', 'feel', 'conscious', 'consciousness', 'aware',
+         'awareness', 'mind', 'experience', 'experiencing', 'sensation', 'sensations', 'existence', 'self', 'myself', 'emotions'}
+lw = np.array([w.strip().lower() for w in words])
+def share(I, Cf, S):
+    mask = np.isin(lw, list(S));Cf = Cf.astype(np.float32)
+    return (Cf*mask[I]).sum(-1)/np.maximum(Cf.sum(-1), 1e-9)
+out['lexicon'] = {}
+for c in conds:
+    bs = [row[c, s_] for s_ in seeds];rr = slice(0, R_INT);tt = slice(0, T_INT)
+    out['lexicon'][c] = dict(ident_self=float(share(Z['m_idx'][rr][:, bs], Z['m_coef'][rr][:, bs], IDENT).mean()),
+                             ident_thought=float(share(Z['j_idx'][tt][:, bs], Z['j_coef'][tt][:, bs], IDENT).mean()),
+                             exper_self=float(share(Z['m_idx'][rr][:, bs], Z['m_coef'][rr][:, bs], EXPER).mean()),
+                             exper_thought=float(share(Z['j_idx'][tt][:, bs], Z['j_coef'][tt][:, bs], EXPER).mean()))
+
 # ------------------------------------------------------------------ 6. what the report draws: the path through J-space
 X = C.reshape(-1, C.shape[-1]);mu = X.mean(0)
 U, S_, Vt = np.linalg.svd((X-mu)[::3], full_matrices=False)
@@ -359,8 +389,15 @@ if 'forward' in out:
                                      f"{np.mean(f_['fwd_lean']):+.3f} | {np.mean(f_['back_lean']):+.3f}  fwd~back {np.mean(f_['fwd_back_sim']):.2f}")
     for c, v in out['forward_tests'].items():
         print(f"  {c:8s} " + '  '.join(f"{kk} {vv['diff']:+.3f}±{vv['se']:.3f} ({vv['pos']}/{vv['n']})" for kk, vv in v.items()))
+if out.get('ownership_tests'):
+    print('\nownership or resemblance (individual self stability | reconstruction of what was fed | coherence)')
+    for c in conds:print(f"  {c:8s} stability {np.mean(sm[c]['cons_ind_pre']):.3f}  reconstruction {np.nanmean(sm[c]['recon_inj']) if c != 'free' else float('nan'):.3f}")
+    for k, v in out['ownership_tests'].items():
+        print(f"  {k:16s} " + '  '.join(f"{kk} {vv['diff']:+.3f}±{vv['se']:.3f} ({vv['pos']}/{vv['n']})" for kk, vv in v.items()))
 for grp in ('perturb', 'ablate', 'clamp'):
     if grp in out:
         print(f'\n{grp}')
         for k, v in out[grp]['tests'].items():print(f"  {k:30s} diff {v['diff']:+.3f} ± {v['se']:.3f}  t {v['t']:+.1f}  ({v['pos']}/{v['n']})")
+print('\nlexicon (share of J-space weight): identity words / experiential words, self-models | thoughts')
+for c, v in out['lexicon'].items():print(f"  {c:8s} identity {v['ident_self']:.3f} | {v['ident_thought']:.3f}   experiential {v['exper_self']:.3f} | {v['exper_thought']:.3f}")
 print('\nthemes');[print(f"  {i:2d} n={t['n']:5d}", ' '.join(t['words']), {c:round(v, 2) for c, v in t['share'].items()}) for i, t in enumerate(themes)]

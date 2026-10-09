@@ -53,5 +53,8 @@ with open(f'{out_dir}/stats.json', 'w', encoding='utf-8') as f:json.dump(stats, 
 tpl = os.path.join(os.path.dirname(out_dir.rstrip('/')), 'template.html')     # the page, with the numbers inlined
 if os.path.exists(tpl):
     with open(tpl, encoding='utf-8') as f:page = f.read().replace('__STATS__', json.dumps(stats, ensure_ascii=False, separators=(',', ':')))
+    lad = os.path.join(out_dir, 'ladder.json')                                   # the model ladder (export_ladder.py)
+    page = page.replace('__LADDER__', open(lad, encoding='utf-8').read() if os.path.exists(lad) else 'null')
+    page = page.replace(chr(0xFFFD), '')                                     # broken-byte token pieces in the data
     with open(os.path.join(os.path.dirname(tpl), 'index.html'), 'w', encoding='utf-8') as f:f.write(page)
 for fn in sorted(os.listdir(out_dir)):print(fn, os.path.getsize(f'{out_dir}/{fn}')//1024, 'KB')

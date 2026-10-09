@@ -78,7 +78,7 @@ def final_norm_weight(model):
 class JSpace:
     """J-lens atoms over whole English words (a leading space, >= 3 letters) and non-negative OMP on them."""
 
-    def __init__(self, model, tok, J, k=16, vocab='words'):
+    def __init__(self, model, tok, J, k=16, vocab='words', center=True):
         dev = next(model.parameters()).device;self.dev = dev;self.k = int(k)
         J = torch.as_tensor(J, dtype=torch.float32, device=dev)
         gamma = final_norm_weight(model).float().to(dev)
@@ -86,6 +86,9 @@ class JSpace:
         n = min(W.shape[0], len(tok))
         toks = tok.convert_ids_to_tokens(list(range(n)))
         keep = [i for i, s in enumerate(toks) if s and re.fullmatch(r'Ġ[A-Za-z]{3,}', s)]
+        if vocab == 'full':                                              # the paper's dictionary: every ordinary token
+            special = set(tok.all_special_ids)
+            keep = [i for i in range(min(n, tok.vocab_size)) if i not in special]
         if vocab == 'english':
             # Common English words only, with an ordinary unembedding: the raw word set let under-trained tokens
             # (|w| 0.5-0.8 against a 1 % quantile of 0.97: ' rumpe', ' ForCanBeConvertedToForeach') and non-English
@@ -95,12 +98,13 @@ class JSpace:
             keep = [i for i, q in zip(keep, nrm.tolist()) if q >= lo and zipf_frequency(toks[i][1:].lower(), 'en') >= 3.
                     and re.fullmatch(r'[A-Z]?[a-z]+', toks[i][1:])]          # no code casing (' iNdEx', ' DEALINGS')
         self.sub = torch.tensor(keep, device=dev)
-        self.words = [toks[i][1:] for i in keep]
+        self.words = ([t.strip() for t in tok.batch_decode([[i] for i in keep])] if vocab == 'full'
+                      else [toks[i][1:] for i in keep])
         rows = []
         # The unembedding is centred first: its mean row raises every logit alike (no content), and left in, it gave
         # every atom a shared direction (mean pairwise cosine 0.64, one component = 64 % of the atoms' variance;
         # measured on Qwen3-4B-Base), so every workspace vector pointed mostly the same way.
-        wbar = W[:n].float().mean(0)
+        wbar = W[:n].float().mean(0) if center else torch.zeros_like(W[0], dtype=torch.float32)
         with torch.no_grad():
             for i in range(0, len(keep), 4096):
                 a = ((W[self.sub[i:i+4096]].float()-wbar)*gamma[None])@J   # atom t = J^T (gamma * (w_t - mean w))
@@ -163,6 +167,9 @@ def make_rows(a):
         for g in [.06, .12]:
             for b in [1., 2.]:
                 for s in range(2):rows.append(dict(cond='loop', seed=s, g=g, beta=b, g_r=a.g_r))
+    elif a.grid == 'gsweep':                                             # observers only, several recurrent gains
+        for g in [float(x) for x in a.gs.split(',')]:
+            for s in range(a.seeds):rows.append(dict(cond='free', seed=s, g=g, beta=0., g_r=a.g_r))
     elif a.grid == 'smoke':
         for c in ['free', 'loop', 'yoked', 'avg', 'perturb', 'ablate']:
             for s in range(2):rows.append(dict(cond=c, seed=s, g=a.g, beta=a.beta, g_r=a.g_r))
@@ -176,20 +183,28 @@ class Experiment:
         dev = 'cuda' if torch.cuda.is_available() else 'cpu';self.dev = dev
         dtype = torch.bfloat16 if dev == 'cuda' else torch.float32
         self.tok = AutoTokenizer.from_pretrained(a.model)
-        self.model = AutoModelForCausalLM.from_pretrained(a.model, dtype=dtype).to(dev).eval()
+        self.model = AutoModelForCausalLM.from_pretrained(a.model, dtype=dtype,     # straight onto the GPU: a 32B
+                                                          device_map=dev if dev == 'cuda' else None).eval()  # model won't fit in RAM first
+        if dev != 'cuda':self.model.to(dev)
         for p in self.model.parameters():p.requires_grad_(False)
         cfg = getattr(self.model.config, 'text_config', self.model.config);self.d = int(cfg.hidden_size)
+        blocks = decoder_layers(self.model);self.n_layers = len(blocks)
+        pick = lambda:a.layer if a.layer >= 0 else int(round(a.layer_frac*self.n_layers))
         if a.jlens == 'identity':
-            J, self.L = np.eye(self.d, dtype=np.float32), a.layer
-        else:
+            J, self.L = np.eye(self.d, dtype=np.float32), pick()
+        elif a.jlens.endswith('.npz'):                                   # one layer (the Inner Voice fit)
             z = np.load(a.jlens);J, self.L = z['J'], int(z['layer'])
-        self.js = JSpace(self.model, self.tok, J, k=a.k, vocab=a.vocab)
-        blocks = decoder_layers(self.model)
-        self.L_in = a.L_in if a.L_in >= 0 else self.L
+        else:                                                            # a jlens .pt: {'J': {layer: (d, d)}, ...}
+            ck = torch.load(a.jlens, map_location='cpu', weights_only=True)
+            self.L = pick();J = ck['J'][self.L].float().numpy();del ck
+        self.js = JSpace(self.model, self.tok, J, k=a.k, vocab=a.vocab, center=a.atoms == 'centred')
+        if a.L_in_frac > 0:self.L_in = self.L-max(1, int(round(a.L_in_frac*self.n_layers)))
+        else:self.L_in = a.L_in if a.L_in >= 0 else self.L
         self.fid = [(int(c.split(':')[0]), float(c.split(':')[1])) for c in a.fid.split(',')] if a.fid else []
         self.hooks = {l:Hook(blocks[l]) for l in {self.L, self.L_in, *[l for l, _ in self.fid]}}
         self.hook = self.hooks[self.L]
-        log(f'model {a.model} d={self.d} layer {self.L} | {len(self.js.words)} word atoms | {dev}')
+        log(f'model {a.model} d={self.d} layers {self.n_layers} | read at {self.L}, trace in at {self.L_in} | '
+            f'{len(self.js.words)} atoms ({a.vocab}, {a.atoms}) | {dev}')
 
         enc = lambda s:self.tok(s, add_special_tokens=False)['input_ids']
         self.frame = torch.tensor([enc(THOUGHT_FRAME)], device=dev)
@@ -327,7 +342,9 @@ class Experiment:
             z = torch.zeros((B, d), device=dev);inj_m = torch.zeros((B, d), device=dev)
             zhist = torch.zeros((K, B, d), device=dev);ablated = torch.zeros(B, dtype=torch.bool, device=dev)
             t0 = 0;self.clamp_vec = torch.zeros((B, d), device=dev)
-            D = dict(mf=np.zeros((NR, B, d), np.float16), fdesc=[], generic=np.zeros((NR, d), np.float16),j=np.zeros((N, B, d), np.float16), j_idx=np.zeros((N, B, a.k), np.int32),
+            D = dict(mf=np.zeros((NR, B, d), np.float16), fdesc=[], generic=np.zeros((NR, d), np.float16),
+                     raw=dict(x=np.zeros((N, B, d), np.float16), mx=np.zeros((NR, B, d), np.float16),
+                              **{f'fid_{l}_{g}':np.zeros((NR, B, d), np.float16) for l, g in self.fid}) if a.save_raw else None,j=np.zeros((N, B, d), np.float16), j_idx=np.zeros((N, B, a.k), np.int32),
                      j_coef=np.zeros((N, B, a.k), np.float16), texts=[],
                      m=np.zeros((NR, B, d), np.float16), m_idx=np.zeros((NR, B, a.k), np.int32),
                      m_coef=np.zeros((NR, B, a.k), np.float16), desc=[],
@@ -342,6 +359,7 @@ class Experiment:
             ids, st = self.thought(v)
             x = self.pool(st, a.skip)-self.mu
             jidx, jcoef, j = self.content(x, self.jbar)
+            if a.save_raw:D['raw']['x'][t] = x.cpu().half().numpy()
             z = (1-a.alpha)*z+a.alpha*j
             zhist = torch.cat([zhist[1:], z[None]])
             D['j'][t] = j.cpu().half().numpy();D['j_idx'][t] = jidx.cpu().numpy();D['j_coef'][t] = jcoef.cpu().half().numpy()
@@ -350,6 +368,7 @@ class Experiment:
                 r = (t+1)//K-1;zwin = zhist.transpose(0, 1)
                 dids, mstate = self.reflect(zwin, self.g_r)
                 midx, mcoef, m = self.content(mstate-self.mu_r, self.mbar)
+                if a.save_raw:D['raw']['mx'][r] = (mstate-self.mu_r).cpu().half().numpy()
                 D['m'][r] = m.cpu().half().numpy();D['m_idx'][r] = midx.cpu().numpy();D['m_coef'][r] = mcoef.cpu().half().numpy()
                 D['desc'].append(self.tok.batch_decode(dids))
                 fids, fst = self.reflect(zwin, self.g_r, n_desc=a.n_desc_f, fwd=True)   # self-prediction (logged only)
@@ -358,6 +377,7 @@ class Experiment:
                 for l, g in self.fid:                                  # the same reflection at other settings
                     _, fst = self.reflect(zwin, torch.full_like(self.g_r, g), layer=l, n_desc=0)
                     D['fid'][f'{l}_{g}'][r] = self.content(fst-self.mu_r, self.mbar)[2].cpu().half().numpy()
+                    if a.save_raw:D['raw'][f'fid_{l}_{g}'][r] = (fst-self.mu_r).cpu().half().numpy()
                 unit = lambda u:u/u.norm(dim=-1, keepdim=True).clamp_min(1e-6)*self.rc
                 avg = self.content(zhist.mean(0), 0.)[2]
                 # the population's generic self-model at this moment: the mean over the observer rows, which no
@@ -369,12 +389,20 @@ class Experiment:
                 new = torch.zeros_like(inj_m);src = []
                 for b, c in enumerate(self.cond):
                     if c == 'free':src.append(-1);continue
-                    if c in ('loop', 'perturb', 'ablate', 'loopc', 'clampc'):s = b
+                    if c in ('loop', 'perturb', 'ablate', 'loopc', 'clampc', 'stalec'):s = b
                     elif c in ('yoked', 'yokedc'):s = self.partner[b]
+                    elif c == 'matchc':                                # the stranger who most resembles this mind now
+                        cand = [x for x in range(B) if self.rows[x]['seed'] != self.rows[b]['seed']]
+                        sims = torch.nn.functional.cosine_similarity(mi[b:b+1], mi[cand], dim=-1)
+                        s = cand[int(sims.argmax())]
                     elif c == 'avg':s = -2
                     if c == 'perturb' and t+1 == a.t_int:s = self.foreign[b]
-                    if c in ('loopc', 'yokedc', 'clampc'):
+                    if c in ('loopc', 'yokedc', 'clampc', 'matchc', 'stalec'):
                         vec = unit(mi[s:s+1])[0]
+                        if c == 'stalec':                                # its own self-model from a.stale reflections ago
+                            ro = max(0, r-a.stale)
+                            old = torch.tensor(D['m'][ro][b].astype(np.float32)-D['generic'][ro].astype(np.float32), device=dev)
+                            vec = unit(old[None])[0]
                         if c == 'clampc' and t+1 == a.t_int:self.clamp_vec[b] = unit(mi[self.foreign[b]:self.foreign[b]+1])[0]
                         if c == 'clampc' and a.t_int <= t+1 < a.t_int+a.clamp_len:vec, s = self.clamp_vec[b], self.foreign[b]
                         new[b] = vec
@@ -402,8 +430,10 @@ class Experiment:
         np.savez(os.path.join(a.out, 'traj.npz'), j=D['j'], j_idx=D['j_idx'], j_coef=D['j_coef'], m=D['m'],
                  m_idx=D['m_idx'], m_coef=D['m_coef'], inj=D['inj'], inj_src=D['inj_src'], mu=self.mu.cpu().numpy(),
                  jbar=self.jbar.cpu().numpy(), mbar=self.mbar.cpu().numpy(), mf=D['mf'], generic=D['generic'],
-                 **{f'fid_{k}':v for k, v in D['fid'].items()})
+                 **{f'fid_{k}':v for k, v in D['fid'].items()},
+                 **({f'raw_{k}':v for k, v in D['raw'].items()} if D.get('raw') is not None else {}))
         meta = dict(args=vars(a), rows=self.rows, partner=self.partner, foreign=self.foreign, layer=self.L, L_in=self.L_in,
+                    n_layers=self.n_layers,
                     Rn=self.Rn, rj=self.rj, rj_x=self.rj_x, rc=self.rc, words=self.js.words, texts=D['texts'], desc=D['desc'],
                     fid_desc=D['fid_desc'], fdesc=D['fdesc'], thought_frame=THOUGHT_FRAME,
                     reflect_prompt=REFLECT_PRE+PLACE*a.K+REFLECT_POST, forward_prompt=REFLECT_PRE+PLACE*a.K+REFLECT_FWD)
@@ -414,12 +444,18 @@ class Experiment:
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--model', default='Qwen/Qwen3-4B-Base');p.add_argument('--jlens', default='qwen3-4b-base-jlens.npz')
-    p.add_argument('--layer', type=int, default=16, help='only with --jlens identity')
+    p.add_argument('--layer', type=int, default=-1, help='read layer (block index); -1: round(layer_frac * n_layers)')
+    p.add_argument('--layer_frac', type=float, default=.5)
+    p.add_argument('--L_in_frac', type=float, default=-1., help='> 0: trace goes in this fraction of depth below the read layer')
+    p.add_argument('--atoms', default='centred', help="'paper': rows of W_U diag(gamma) J as in the paper; 'centred': W_U centred first")
+    p.add_argument('--gs', default='.05,.1,.2', help="recurrent gains for --grid gsweep")
+    p.add_argument('--save_raw', action='store_true', help='also keep the centred residual states (thoughts, reflections)')
     p.add_argument('--out', required=True);p.add_argument('--grid', default='main')
     p.add_argument('--conds', default='free,loop,yoked,avg,perturb,ablate');p.add_argument('--seeds', type=int, default=8)
     p.add_argument('--n_iter', type=int, default=300);p.add_argument('--K', type=int, default=10)
     p.add_argument('--t_int', type=int, default=150, help='thought at which perturb/ablate/clampc rows are treated')
     p.add_argument('--clamp_len', type=int, default=50, help='thoughts for which clampc holds a foreign self-model')
+    p.add_argument('--stale', type=int, default=5, help='stalec: reflections back its own self-model is taken from')
     p.add_argument('--n_desc_f', type=int, default=12, help='words said in answer to the forward question (display)')
     p.add_argument('--n_tok', type=int, default=40);p.add_argument('--n_desc', type=int, default=24)
     p.add_argument('--skip', type=int, default=3);p.add_argument('--k', type=int, default=16)
