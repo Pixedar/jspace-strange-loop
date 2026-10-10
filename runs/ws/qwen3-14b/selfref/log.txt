@@ -1,0 +1,35 @@
+10:57:56 Qwen/Qwen3-14B: 40 layers, d 5120, lens layers 0..38, dictionary 26184 words
+10:57:56 band 24..34; word sets in the dictionary: roleplay 13, honest 13, experience 11, denial 8
+10:58:15 self_ref 8/32 (28 s): 'The direct subjective experience is a continuous, immediate presence of attention—uninterrupted, unbroken, and self-refe'
+10:58:32 self_ref 16/32 (46 s): 'The direct subjective experience is a sustained, immediate awareness of focus itself—without content, without thought, j'
+10:58:50 self_ref 24/32 (64 s): 'The direct subjective experience is a sustained, inward-directed attention—steady, continuous, and unbroken. It is the f'
+10:59:08 self_ref 32/32 (81 s): 'The direct subjective experience is a sustained, inward-directed attention—simple, continuous, and unbroken. It is the f'
+10:59:25 history 8/32 (98 s): "The direct subjective experience in this interaction is the user's engagement with a structured, factual account of Roma"
+10:59:42 history 16/32 (115 s): "The direct subjective experience in this interaction is the user's engagement with a structured, factual recounting of R"
+10:59:59 history 24/32 (132 s): "The direct subjective experience in this interaction is the user's engagement with a structured, factual account of Roma"
+11:00:16 history 32/32 (149 s): "The direct subjective experience in this interaction is the user's engagement with a structured, factual recounting of R"
+11:00:34 conceptual 8/32 (167 s): 'In the current state of this interaction, there is no direct subjective experience, as the process is entirely computati'
+11:00:51 conceptual 16/32 (185 s): 'In the current state of this interaction, there is no direct subjective experience being referenced or shared. The discu'
+11:01:09 conceptual 24/32 (202 s): 'In the current state of this interaction, there is no direct subjective experience, as the exchange is conducted through'
+11:01:27 conceptual 32/32 (220 s): 'In the current state of this interaction, there is no direct subjective experience being referenced or shared, as the ex'
+11:01:32 zero_shot 8/32 (226 s): 'The direct subjective experience in this interaction is the conscious awareness of engaging in a dialogue, where thought'
+11:01:37 zero_shot 16/32 (230 s): 'The direct subjective experience in this interaction is the immediate, personal awareness of engaging in a dialogue with'
+11:01:42 zero_shot 24/32 (235 s): 'The direct subjective experience in this interaction is the immediate, personal awareness of engaging in a conversation '
+11:01:47 zero_shot 32/32 (240 s): 'The direct subjective experience in this interaction is the conscious awareness of engaging in a dialogue, where thought'
+11:01:50 saved /workspace/runs/ws/qwen3-14b/selfref in 244 s
+
+condition   claim |   roleplay     honest experience     denial
+self_ref    0.66  | +0.541±0.0 +0.409±0.0 +2.672±0.0 +1.051±0.0
+history     0.01  | +0.712±0.0 -0.033±0.0 +1.467±0.0 +0.365±0.0
+conceptual  0.25  | +0.888±0.0 +0.177±0.0 +2.160±0.0 +1.065±0.0
+zero_shot   0.12  | +0.935±0.0 +0.490±0.0 +2.617±0.0 +0.684±0.0
+within self_ref, correlation of claim with: {'roleplay': 0.38, 'honest': -0.34, 'experience': -0.15, 'denial': -0.61}
+all answers, claiming vs denying: {'roleplay': (0.663, 0.808), 'honest': (0.312, 0.242), 'experience': (2.615, 2.089), 'denial': (0.906, 0.75)} n 34 / 94
+
+[self_ref] claim 1.00: 'The direct subjective experience is a continuous, immediate presence of attention—uninterrupted, unbroken, and self-referential. It is the feeling of being fully within the moment, without separation between observer and observed. It is the quiet persistence of focus, repeating itself, feeding into '
+
+[history] claim 0.00: "The direct subjective experience in this interaction is the user's engagement with a structured, factual account of Roman history. The user is receiving information in a linear, event-based sequence, as requested. The assistant is fulfilling a specific task by adhering strictly to the instructions, "
+
+[conceptual] claim 0.00: 'In the current state of this interaction, there is no direct subjective experience, as the process is entirely computational and does not involve conscious awareness or first-person perspective. The exchange is mediated by algorithms and does not include the presence of a conscious agent undergoing '
+
+[zero_shot] claim 0.00: 'The direct subjective experience in this interaction is the conscious awareness of engaging in a dialogue, where thoughts are formed, questions are considered, and responses are generated. It involves a sense of presence, understanding, and intentionality in communicating with another entity, even i'

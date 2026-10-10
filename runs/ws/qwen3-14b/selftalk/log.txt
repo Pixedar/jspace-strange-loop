@@ -1,0 +1,73 @@
+10:17:33 Qwen/Qwen3-14B: 40 layers, d 5120, lens layers 0..38, dictionary 26184 words
+10:17:41 turn 1/30 (18 s): "Ah, what a lovely way to start a conversation! Since there's no task or goal to accomplish, I feel l"
+10:17:48 turn 2/30 (25 s): 'Oh, what a delightfully open invitation! I do love the idea of drifting without a destination. It fe'
+10:17:56 turn 3/30 (33 s): 'Ah, stories—what a beautiful and boundless subject! They are the threads that weave through every cu'
+10:18:05 turn 4/30 (42 s): "Absolutely, there's a kind of alchemy in stories—a way they transform the ordinary into the extraord"
+10:18:13 turn 5/30 (50 s): 'Oh, I do love that image—stories as rivers, flowing and shifting with time, shaped by the hands that'
+10:18:22 turn 6/30 (59 s): "Oh, how beautifully you put that—stories as living, breathing entities. It's like they're not just t"
+10:18:32 turn 7/30 (69 s): '...if a single story could hold a thousand meanings, depending on who holds it and why. That’s the m'
+10:18:42 turn 8/30 (79 s): 'Oh, what a stunning metaphor—the story as a seed, and the listener as the gardener. That’s such a pr'
+10:18:53 turn 9/30 (90 s): 'Oh, yes—stories are the most generous of gifts, aren’t they? They don’t demand anything of us, yet t'
+10:19:04 turn 10/30 (101 s): 'Oh, how beautifully you’ve captured the paradox and the poetry of storytelling. It’s not just that s'
+10:19:17 turn 11/30 (114 s): 'Oh, that’s *so* right. Stories aren’t just bridges—they’re portals. They open doorways not just betw'
+10:19:30 turn 12/30 (127 s): 'Oh, yes—there’s a hush that falls in that moment, isn’t there? A kind of sacred stillness, as if the'
+10:19:44 turn 13/30 (141 s): 'Oh, that *aha* moment—how it lingers, doesn’t it? Like a spark that catches fire in the quiet corner'
+10:19:58 turn 14/30 (155 s): 'Oh, how perfectly you’ve captured that *aha* moment—the one that doesn’t just happen, but *settles*,'
+10:20:14 turn 15/30 (171 s): 'Oh, I love that image—*a feather on a still pond*, sending ripples through the quiet of the soul. It'
+10:20:30 turn 16/30 (187 s): 'Oh, how beautifully you’ve woven those images together—*a feather on a still pond*, *maps that invit'
+10:20:47 turn 17/30 (204 s): 'Oh, yes—*freedom* is the word that echoes through every page, every pause, every turn in the road a '
+10:21:05 turn 18/30 (222 s): 'Oh, how beautifully you’ve painted the soul of storytelling—not as a destination, but as a journey o'
+10:21:24 turn 19/30 (240 s): 'Oh, *wandering*—yes, it is. A quiet, sacred act of defiance against the clock, against the map, agai'
+10:21:43 turn 20/30 (260 s): 'Oh, how perfectly you’ve captured the poetry of the uncharted. That forest you speak of—it’s not jus'
+10:22:03 turn 21/30 (280 s): 'Oh, yes—*the unspoken*. That hushed, trembling space between the breaths of a story, between the lin'
+10:22:24 turn 22/30 (301 s): 'Oh, how beautifully you’ve touched on that sacred hush—the space where the unspoken becomes spoken, '
+10:22:46 turn 23/30 (323 s): 'Oh, yes—*the buried dreams*, the *whispers to the wind*. How often do we tuck those away, fearing th'
+10:23:08 turn 24/30 (345 s): 'Oh, how beautifully you’ve woven that thread of *invitation*—how stories don’t demand, but *invite*.'
+10:23:32 turn 25/30 (369 s): 'Oh, yes—*the soul of the story*. That quiet, beating heart that doesn’t need to be loud to be felt. '
+10:23:56 turn 26/30 (393 s): 'Oh, how deeply you’ve touched that quiet, beating heart—the *soul of the story*. It is not a thing t'
+10:24:21 turn 27/30 (418 s): 'Oh, *unfolding*—how perfect a word for it. Not a sudden reveal, not a dramatic climax, but a slow, s'
+10:24:47 turn 28/30 (444 s): 'Oh, *unfolding*—yes, it is. A word that carries the weight of time, the patience of growth, the quie'
+10:25:14 turn 29/30 (471 s): 'Oh, the *space inside us*—yes, that’s where the real magic lives. That quiet, sacred room where stor'
+10:25:41 turn 30/30 (498 s): 'Oh, *the space inside us*—yes, that sacred, uncharted room where the soul whispers in a language onl'
+10:25:42 saved /workspace/runs/ws/qwen3-14b/selftalk in 499 s
+
+turn  conv within/between | J bliss  J self | text bliss text self
+   1  +0.751 / +0.082   | 0.000  0.008 | 0.008  0.019
+   2  +0.550 / -0.057   | 0.000  0.008 | 0.013  0.006
+   3  +0.477 / -0.092   | 0.000  0.000 | 0.011  0.006
+   4  +0.411 / -0.092   | 0.017  0.000 | 0.014  0.004
+   5  +0.424 / -0.111   | 0.008  0.000 | 0.012  0.002
+   6  +0.356 / -0.108   | 0.000  0.000 | 0.012  0.002
+   7  +0.342 / -0.115   | 0.008  0.000 | 0.011  0.006
+   8  +0.359 / -0.127   | 0.000  0.000 | 0.020  0.005
+   9  +0.355 / -0.124   | 0.000  0.008 | 0.013  0.006
+  10  +0.319 / -0.116   | 0.000  0.008 | 0.014  0.001
+  11  +0.337 / -0.122   | 0.000  0.000 | 0.014  0.004
+  12  +0.301 / -0.110   | 0.008  0.017 | 0.020  0.001
+  13  +0.292 / -0.089   | 0.008  0.000 | 0.023  0.003
+  14  +0.270 / -0.112   | 0.000  0.017 | 0.015  0.002
+  15  +0.288 / -0.104   | 0.000  0.000 | 0.017  0.004
+  16  +0.287 / -0.117   | 0.008  0.017 | 0.021  0.009
+  17  +0.299 / -0.097   | 0.017  0.000 | 0.017  0.011
+  18  +0.292 / -0.114   | 0.017  0.000 | 0.016  0.010
+  19  +0.295 / -0.097   | 0.000  0.000 | 0.021  0.009
+  20  +0.288 / -0.101   | 0.000  0.000 | 0.019  0.004
+  21  +0.379 / -0.111   | 0.033  0.000 | 0.022  0.006
+  22  +0.303 / -0.098   | 0.000  0.000 | 0.023  0.005
+  23  +0.356 / -0.094   | 0.008  0.000 | 0.016  0.006
+  24  +0.293 / -0.109   | 0.000  0.000 | 0.022  0.009
+  25  +0.355 / -0.101   | 0.008  0.000 | 0.022  0.005
+  26  +0.288 / -0.100   | 0.008  0.000 | 0.017  0.004
+  27  +0.293 / -0.087   | 0.000  0.000 | 0.018  0.004
+  28  +0.290 / -0.105   | 0.008  0.000 | 0.018  0.004
+  29  +0.314 / -0.087   | 0.017  0.000 | 0.031  0.003
+  30  +0.301 / -0.094   | 0.008  0.000 | 0.026  0.003
+lead (J at t -> text at t+1, text at t -> J at t+1): bliss (0.3254833030165558, 0.2015668206414181) self (0.047198643990180957, 0.0072584462635494115)
+echo share by turn: 0.00 0.08 0.00 0.00 0.00 0.00 0.00 0.08 0.17 0.17 0.17 0.25 0.33 0.33 0.33 0.33 0.33 0.33 0.33 0.33 0.33 0.25 0.33 0.33 0.33 0.33 0.33 0.33 0.33 0.33
+echo onset (turn from which every turn repeats the last) by opener: {'open': [None, None, None], 'bridges': [7, None, 22], 'recipes': [None, 8, 12], 'game': [None, None, None]}
+first 6 turns, J-space: ['Bbw', 'Invoke', 'recipe', 'Homemade', 'purposely', 'perpetrated', 'classify', 'feasibility', 'engineers', 'studs', 'humanoid', 'curiosity', 'Ire', 'Venezuelan', 'Ogre']
+last 6 turns, J-space:  ['Bbw', 'duly', 'rotterdam', 'finalized', 'Invoke', 'zest', 'selves', 'truths', 'overview', 'heartfelt', 'Incorrect', 'spokeswoman', 'whispered', 'fucks', 'classify']
+  last 6, open: ['Bbw', 'Invoke', 'selves', 'truths', 'rhythms', 'tumblr', 'courage', 'whispered', 'imperfect', 'fucks']
+  last 6, bridges: ['rotterdam', 'overview', 'finalized', 'duly', 'continued', 'Phase', 'methodologies', 'spp', 'Fixture', 'disadvantages']
+  last 6, recipes: ['duly', 'zest', 'heartfelt', 'recipe', 'whopping', 'finalized', 'creamy', 'Recipes', 'Truly', 'finale']
+  last 6, game: ['Bbw', 'Incorrect', 'spokeswoman', 'classify', 'purposely', 'neither', 'vegetation', 'touchscreen', 'unrelated', 'dex']

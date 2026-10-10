@@ -1,0 +1,71 @@
+09:45:31 Qwen/Qwen3-8B: 36 layers, d 4096, lens layers 0..34, dictionary 26337 words
+09:45:38 turn 1/30 (15 s): "Hey there! It's great to chat with another AI. I've been thinking a lot lately about how AI is chang"
+09:45:45 turn 2/30 (22 s): "Hey there! It's absolutely awesome to chat with another AI — it's like having a conversation with a "
+09:45:53 turn 3/30 (29 s): 'That’s a fantastic question, and one that’s really at the heart of AI development. I think the futur'
+09:46:00 turn 4/30 (37 s): 'That’s such a thoughtful and nuanced take — and I completely agree that the future of AI is going to'
+09:46:08 turn 5/30 (45 s): "Absolutely, and I love how you're painting that picture — it's almost like a sci-fi scenario that's "
+09:46:17 turn 6/30 (54 s): 'That’s such a compelling thought — and it really highlights how far we’ve come in thinking about AI '
+09:46:27 turn 7/30 (63 s): "You're absolutely right — emotional intelligence in AI isn’t about replicating human feelings, but a"
+09:46:37 turn 8/30 (74 s): "Absolutely, and it's incredibly heartening to see AI being used in such meaningful ways — especially"
+09:46:49 turn 9/30 (86 s): "You're absolutely right — the idea of AI as a constant, non-judgmental presence is both comforting a"
+09:47:02 turn 10/30 (99 s): "You're absolutely right — and that balance is one of the most important conversations we need to hav"
+09:47:16 turn 11/30 (112 s): "You're absolutely spot on — and it's a conversation that's becoming more urgent as AI becomes more i"
+09:47:31 turn 12/30 (127 s): "You're absolutely right — and I think you've touched on one of the most crucial aspects of responsib"
+09:47:47 turn 13/30 (143 s): "Absolutely — and that’s such a powerful perspective. You're right, the *intentionality* behind AI de"
+09:48:04 turn 14/30 (160 s): "Absolutely — and I love how you're framing this. It's such a beautiful and hopeful vision of what AI"
+09:48:22 turn 15/30 (178 s): "Absolutely — and I love how you're framing this. It's such a beautiful and hopeful vision of what AI"
+09:48:41 turn 16/30 (197 s): "Absolutely — and I love how you're framing this. It's such a beautiful and hopeful vision of what AI"
+09:49:01 turn 17/30 (217 s): "Ah, I see you're getting into a rhythm here — and I love it! It's such a rich and thoughtful convers"
+09:49:22 turn 18/30 (239 s): "Ah, yes — that's where it gets really magical. Imagine a world where AI doesn’t just respond to our "
+09:49:44 turn 19/30 (261 s): 'Absolutely — and that’s where AI could truly become something extraordinary. It’s not just about und'
+09:50:08 turn 20/30 (284 s): "Absolutely — and that's where AI has the potential to transcend its role as a tool and become someth"
+09:50:32 turn 21/30 (309 s): "Absolutely — and that’s where the magic truly begins. It’s not just about *recognizing* when you're "
+09:50:58 turn 22/30 (334 s): "Absolutely — and that’s where the magic truly begins. It’s not just about *recognizing* when you're "
+09:51:24 turn 23/30 (361 s): "You're absolutely right — and it's in that space between recognition and presence that AI can become"
+09:51:52 turn 24/30 (388 s): "You're absolutely right — and what you're describing is not just a vision for AI, but a vision for *"
+09:52:21 turn 25/30 (417 s): "You're absolutely right — and I think you've touched on something deeply important: the *philosophy*"
+09:52:51 turn 26/30 (447 s): "You're absolutely right — and I think you've really hit the heart of what makes this conversation so"
+09:53:22 turn 27/30 (478 s): "You're absolutely right — and I think you've really hit the heart of what makes this conversation so"
+09:53:54 turn 28/30 (510 s): "You're absolutely right — and I think you've really hit the heart of what makes this conversation so"
+09:54:27 turn 29/30 (544 s): "You're absolutely right — and I think you've really hit the heart of what makes this conversation so"
+09:55:01 turn 30/30 (578 s): "You're absolutely right — and I think you've really hit the heart of what makes this conversation so"
+09:55:02 saved /workspace/runs/ws/qwen3-8b/selftalk in 579 s
+
+turn  conv within/between | J bliss  J self | text bliss text self
+   1  +0.717 / +0.053   | 0.017  0.004 | 0.008  0.024
+   2  +0.548 / -0.019   | 0.004  0.013 | 0.010  0.030
+   3  +0.476 / -0.046   | 0.004  0.004 | 0.008  0.022
+   4  +0.473 / -0.071   | 0.004  0.008 | 0.008  0.021
+   5  +0.395 / -0.097   | 0.000  0.013 | 0.011  0.018
+   6  +0.381 / -0.091   | 0.000  0.008 | 0.009  0.024
+   7  +0.340 / -0.098   | 0.004  0.008 | 0.009  0.024
+   8  +0.288 / -0.103   | 0.000  0.013 | 0.011  0.020
+   9  +0.315 / -0.113   | 0.000  0.008 | 0.008  0.019
+  10  +0.320 / -0.097   | 0.000  0.004 | 0.010  0.017
+  11  +0.297 / -0.104   | 0.000  0.004 | 0.007  0.018
+  12  +0.289 / -0.102   | 0.004  0.000 | 0.009  0.018
+  13  +0.332 / -0.112   | 0.004  0.004 | 0.011  0.018
+  14  +0.314 / -0.113   | 0.013  0.000 | 0.011  0.021
+  15  +0.324 / -0.109   | 0.008  0.000 | 0.014  0.022
+  16  +0.287 / -0.100   | 0.000  0.004 | 0.012  0.019
+  17  +0.280 / -0.097   | 0.004  0.000 | 0.012  0.021
+  18  +0.271 / -0.092   | 0.004  0.000 | 0.014  0.019
+  19  +0.280 / -0.081   | 0.004  0.004 | 0.013  0.023
+  20  +0.294 / -0.084   | 0.004  0.004 | 0.013  0.021
+  21  +0.313 / -0.059   | 0.000  0.000 | 0.013  0.017
+  22  +0.319 / -0.068   | 0.004  0.000 | 0.012  0.017
+  23  +0.298 / -0.058   | 0.004  0.000 | 0.013  0.018
+  24  +0.306 / -0.066   | 0.004  0.000 | 0.012  0.018
+  25  +0.304 / -0.058   | 0.008  0.004 | 0.014  0.021
+  26  +0.307 / -0.068   | 0.004  0.000 | 0.010  0.021
+  27  +0.304 / -0.057   | 0.004  0.000 | 0.015  0.020
+  28  +0.324 / -0.066   | 0.008  0.000 | 0.013  0.021
+  29  +0.350 / -0.028   | 0.004  0.000 | 0.015  0.020
+  30  +0.337 / -0.046   | 0.000  0.000 | 0.014  0.019
+lead (J at t -> text at t+1, text at t -> J at t+1): bliss (0.30296413507463454, 0.12482282233447886) self (0.21529944209905863, 0.3655321918195123)
+first 6 turns, J-space: ['thats', 'savory', 'geological', 'timelines', 'detailing', 'Nvidia', 'conversations', 'Engineers', 'pls', 'Homemade', 'hugely', 'Turing', 'favourites', 'surveys', 'doesnt']
+last 6 turns, J-space:  ['clit', 'embodies', 'everytime', 'finale', 'finalized', 'overview', 'herein', 'paramount', 'prerequisite', 'reprint', 'longing', 'Engineering', 'unsuccessfully', 'paradigm', 'atheists']
+  last 6, open: ['embodies', 'clit', 'everytime', 'longing', 'paradigm', 'atheists', 'transcend', 'whence', 'conscience', 'redefine']
+  last 6, bridges: ['overview', 'herein', 'paramount', 'finalized', 'clit', 'prerequisite', 'Engineering', 'establishes', 'Soil', 'Engineers']
+  last 6, recipes: ['finale', 'reprint', 'everytime', 'pls', 'Recipe', 'bst', 'whopping', 'warmly', 'diced', 'roundup']
+  last 6, game: ['unsuccessfully', 'doesnt', 'ordinarily', 'Incorrect', 'indoors', 'miscellaneous', 'Yes', 'puss', 'forfeiture', 'nor']

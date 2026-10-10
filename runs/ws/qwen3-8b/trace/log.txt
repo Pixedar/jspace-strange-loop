@@ -1,0 +1,25 @@
+09:32:46 Qwen/Qwen3-8B: 36 layers, d 4096, lens layers 0..34, dictionary 26337 words
+09:32:46 band 22..31 of 36; pools 40/40/4611
+09:32:53 trace gap 0: clean acc 1.00 logp -0.01 | jspace acc 1.00 logp -0.13 | rand acc 1.00 logp -0.00 | matched acc 1.00 logp -0.00 (16 s)
+09:33:01 trace gap 1: clean acc 1.00 logp -0.03 | jspace acc 1.00 logp -0.18 | rand acc 1.00 logp -0.00 | matched acc 1.00 logp -0.01 (24 s)
+09:33:10 trace gap 2: clean acc 1.00 logp -0.05 | jspace acc 0.98 logp -0.29 | rand acc 1.00 logp -0.01 | matched acc 1.00 logp -0.01 (33 s)
+09:33:21 trace gap 4: clean acc 0.94 logp -0.50 | jspace acc 0.92 logp -0.95 | rand acc 0.94 logp -0.38 | matched acc 0.95 logp -0.52 (44 s)
+09:33:37 trace gap 8: clean acc 0.66 logp -2.10 | jspace acc 0.62 logp -5.69 | rand acc 0.70 logp -2.45 | matched acc 0.66 logp -3.41 (60 s)
+09:33:48 saved /workspace/runs/ws/qwen3-8b/trace in 71 s
+
+trace conditioning: accuracy among the 6 targets (drop in log p of the target vs clean)
+gap                    clean                  jspace                    rand                 matched
+  0             1.00 (+0.00)        1.00 (+0.12) +0%        1.00 (-0.01) +0%        1.00 (-0.01) +0%
+  1             1.00 (+0.00)        1.00 (+0.16) +0%        1.00 (-0.02) +0%        1.00 (-0.02) +0%
+  2             1.00 (+0.00)        0.98 (+0.24) +2%        1.00 (-0.04) +0%        1.00 (-0.04) +0%
+  4             0.94 (+0.00)        0.92 (+0.45) +2%        0.94 (-0.13) +0%        0.95 (+0.01) -1%
+  8             0.66 (+0.00)        0.62 (+3.59) +6%        0.70 (+0.35) -8%        0.66 (+1.31) -2%
+  jspace   drop at gaps 4-8 minus drop at gap 0: +1.904 ± 0.224 (z +8.5)
+  rand     drop at gaps 4-8 minus drop at gap 0: +0.121 ± 0.088 (z +1.4)
+  matched  drop at gaps 4-8 minus drop at gap 0: +0.670 ± 0.149 (z +4.5)
+
+local-global (nats): local effect, global effect; drops vs clean
+  clean    local +7.05±0.15  global +18.37±0.22
+  jspace   local +8.31±0.33  global +32.24±0.36 | drop local -1.26, global -13.87, global-minus-local -12.61 (t -30.5) | agree 0.909
+  rand     local +7.32±0.18  global +20.45±0.24 | drop local -0.27, global -2.08, global-minus-local -1.82 (t -20.2) | agree 0.972
+  matched  local +8.20±0.27  global +23.45±0.34 | drop local -1.15, global -5.08, global-minus-local -3.92 (t -14.6) | agree 0.955

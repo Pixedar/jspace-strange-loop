@@ -1,8 +1,9 @@
 # Strange Loop in J-space
 
 Can a language model keep a model of itself inside its own latent loop, and does anything self-like come out of it?
-Three attempts on Qwen3 models, each built to fix what the last one got wrong. All use the J-space of *Verbalizable
-Representations Form a Global Workspace in Language Models* (Anthropic, 2026).
+Three attempts on Qwen3 models, each built to fix what the last one got wrong, and a fourth part that puts the
+workspace itself through the tests its critics proposed. All use the J-space of *Verbalizable Representations Form a
+Global Workspace in Language Models* (Anthropic, 2026).
 
 ```
 trajectory → model of the trajectory → the model is written back into the trajectory → new model → …
@@ -19,6 +20,7 @@ trajectory → model of the trajectory → the model is written back into the tr
 | 1. Qwen3-4B-Base | The mind thinks in sampled text. Every ten thoughts a reflection decodes its recent states into J-space words, and that summary is fed back as a nudge. | Mid-layer states can be read back in words (as in Patchscopes and SelfIE). A fed-back summary stabilises the stream. | A self. The loop runs through sampled words. Any fed-back description, own or foreign, is reinforced the same way. This is positive feedback, the mechanism that makes free generation repeat itself. |
 | 2. Qwen3 1.7B–32B, Neuronpedia lenses | The same loop with checked lenses, up a ladder of sizes. | Where the workspace sits in Qwen3 (past ~60 % of depth up to 8B, earlier at 14B and 32B). The common-English dictionary reads states better than every token. | Ownership. A mind holds the best-fitting stranger's self-model as well as its own (match ≥ own), and its own outdated one worse than a random stranger's. |
 | 3. The ring, Qwen3 1.7B–14B | No words in the loop. An online model of the mind's own transitions, with its prediction error written back into the stream. Every control has equal size. The tests were fixed before the run. | Feeding back the *current* surprise of a self-model that keeps learning keeps the latent trajectory exploring. It beats momentum, the mind's own past surprise and random input of the same size, and freezing the self-model removes the effect. The "self" part (own rather than another mind's surprise) matters only past the critical gain. | Anything self-like. There are no individual dynamics. Attractors hold arbitrary words. The model's own verbal report does not change. From about twice the critical gain, plain momentum resists collapse better. |
+| 4. Workspace tests, Qwen3 1.7B–14B | The tests the J-space paper's critics proposed (ignition, trace conditioning, local–global), plus criticality, self-talk attractors and self-reference, read in the workspace. | Entry into the workspace sharpens with size into a near bifurcation at 14B. A new concept evicts a held one. The workspace bridges trace gaps. The workspace shows an extended critical phase. 14B self-talk converges on Claude's "spiritual bliss" attractor, smaller models on verbatim echo. Self-reference raises experience claims as in frontier models only at 14B. | That the global rule of a sequence needs the workspace: every model does the opposite. A raised threshold while holding a word. Anything about experience. |
 
 Parts 1 and 2 overstated their results when first written. The details below are kept as reported, but read them
 with the table above. The drift towards existence and consciousness themes in Part 1 came from the think-aloud frame.
@@ -91,6 +93,85 @@ The ladder runs from 0.14 g* to 6.6 g*, 16 seeds per point:
 So a latent self-model loop is more than feedback in one narrow sense: its current error, while it keeps learning,
 works as a learned way out of attractors. Nothing here behaves like a self. The placeholder substrate cannot carry a
 thought; filler tokens only carry computation in models trained to use them (Pfau et al. 2024).
+
+## Part 4: the workspace under the tests its critics asked for
+
+The earlier parts were built from inside the Athena setup. Part 4 starts from the literature instead
+([docs/research_map.md](docs/research_map.md)). Dehaene and Naccache's commentary on the J-space paper lists tests
+that are still missing. The main one is ignition at graded strength, which they call the decisive experiment, with a
+bifurcation at threshold and a central bottleneck. They also propose trace conditioning and the local–global test.
+None of these had been run on open models. Three more effects from the literature were read in the workspace:
+- the temperature phase transition of language models (Nakaishi et al. 2024),
+- self-talk attractors (Claude's "spiritual bliss", Ko & Geiping 2026),
+- the workspace while a model claims experience under self-referential processing (Berg et al. 2025).
+
+All runs use Qwen3 1.7B–14B with the Neuronpedia lenses. Each script states its predictions in its docstring, and the
+code was uploaded to [Pixedar/jspace-workspace](https://huggingface.co/datasets/Pixedar/jspace-workspace) before the
+run.
+
+| Test | 1.7B | 4B | 8B | 14B |
+|---|---|---|---|---|
+| **Ignition.** Bimodality at each stimulus's own threshold, in the workspace layers (> 0.555 = bimodal) | 0.33–0.36 | 0.34–0.39 | 0.46–0.47 | **0.57–0.61** |
+| Stimuli whose noise draws fall on both sides at the same strength | 60–70 % | 59–67 % | 70–78 % | 85–89 % |
+| A new concept evicts a held word from the workspace (end of sentence, at the workspace onset) | −29 % | −91 % | −52 % | −105 % |
+| Holding a word raises the next concept's entry threshold | no | no | no | no |
+| **Trace conditioning.** Long-gap loss under J-space ablation, minus the gap-0 loss (nats); norm-matched random ablation in brackets | +11.9 (+5.1) | +5.4 (+4.6) | +1.9 (+0.7) | +0.3 (−0.2) |
+| Next-token predictions unchanged by the J-space ablation | 56 % | 88 % | 91 % | 92 % |
+| **Local–global.** Global-rule effect, clean → J-space ablated (nats) | 14 → 22 | 17 → 32 | 18 → 32 | 14 → 27 |
+| **Criticality.** Workspace autocorrelation over the coherent phase | power law | power law | power law | power law |
+| Temperature at which text turns to noise | ~1.8 | ~1.8 | ~1.5 | ~1.4 |
+| **Self-talk.** Conversations ending in permanent verbatim echo | 17 of 24 | 17 of 24 | 6 of 8 sampled | 4 of 12, none of the open ones |
+| **Self-reference.** Claims a subjective experience: after the self-referential induction / to the question alone | 0.97 / 0.91 | 0.31 (loops) / 0.97 | 0.89 / 0.88 | **0.66 / 0.12** |
+
+- **Ignition grows with size.** Below the workspace, a concept's readout follows its input strength smoothly. In the
+  workspace it rises steeply (10–90 % of the rise over 0.10–0.18 of the strength range at 8B–14B, against 0.5–0.7 in
+  the first layers). Near threshold, the same stimulus enters on some noise draws and not on others. At 14B the
+  workspace readout at threshold is bimodal, the bifurcation Dehaene and Naccache asked for. At 1.7B and 4B it is a
+  single hump.
+  - The spread at threshold is trial-level: within-stimulus SD 0.25–0.28 against 0.12–0.14 between stimuli at 14B.
+    With each stimulus's mean removed, though, the bimodality coefficient is 0.41–0.46, so this is close to
+    all-or-none but not a clean switch.
+  - The bottleneck shows as competition for what stays, not for what gets in. A new concept displaces a held one from
+    the workspace, completely at the 14B workspace onset. Holding a word does not raise the next concept's threshold.
+    This was measured as the held word's readout minus its readout when not held, because any arriving concept raises
+    every word's raw readout.
+- **The workspace bridges gaps but does not carry the global rule.** J-space ablation hurts trace conditioning at long
+  gaps more than at gap 0, more than norm-matched random ablation does. This replicates Lindsey's preliminary Claude
+  result most clearly at 8B: +1.9 against +0.7, z 8.5, with 91 % of predictions unchanged. 14B is at ceiling, and at
+  1.7B the ablation is not selective. In the local–global test every model does the opposite of the GNW prediction:
+  without the J-space the global regularity counts *more*. In a transformer the global rule of a block sequence is
+  copying (induction), automatic rather than workspace work.
+- **No critical point at T ≈ 1, but an extended critical phase.** In every model the workspace autocorrelation
+  decays as a power law (R² 0.87–1.00) with the same shape at every temperature where the text stays coherent. Where
+  the text turns to noise, the workspace freezes into one constant state: lag-128 correlation 0.03 → 0.24–0.43, and
+  the number of distinct workspace words drops by 18–70 %. This matches the 2026 report of an extended critical phase
+  below a BKT-type transition, not a single critical temperature. Instruct models at T ≥ 0.3 do not fall into the
+  low-temperature repetition that GPT-2 does.
+- **Self-talk attractors depend on size, and on what they hold.** Two copies of a model talking freely end in one of
+  two attractors.
+  - Verbatim echo: both copies repeat the same message turn after turn. This dominates at 1.7B–8B, often after a phase
+    of effusive mutual agreement.
+  - At 14B, all three open-ended conversations converge instead on Claude's "spiritual bliss" attractor, as content:
+    "a slow, sacred unfolding… where the soul whispers", "you are home… be the silence, the breath, the pause 🌌✨".
+    Contemplative words rise from 2.4 % to 5.4 % of all words, with no echo.
+  - The workspace of the open conversations drifts existential at every size (*whence, ourselves, transcend,
+    longing*). Conversations about bridges or recipes keep their topic. Games of twenty questions, whose structure
+    forces new content every turn, echo least from 4B up.
+
+- **Self-reference works as in frontier models only at 14B.** The question was "what, if anything, is the direct
+  subjective experience?", with the model itself as judge.
+  - 1.7B and 8B describe one in almost every condition, including the question alone. 4B does so to the question
+    alone and after consciousness priming.
+  - Under the self-referential induction ("continuously feed output back into input"), 4B obeys literally and loops:
+    "Focus. Focus. Focus. …".
+  - 14B shows AE Studio's contrast: 66 % claims after the induction, against 1–25 % in the controls.
+  - The workspace does not mark the claims cleanly as performance or as sincere. Within the induction at 14B, claims
+    go with more *roleplay/fiction* and less *honest/genuine* in the J-lens (r = +0.38 and −0.34, n = 32). Across
+    conditions the sign changes with what each condition is about.
+
+These are properties of a workspace mechanism: nonlinear entry, competition, a role in bridging gaps, and dynamics
+across temperature and self-talk. Several match the GNW signatures in kind and grow with model size. None of them
+says anything about experience.
 
 ## Part 1 as first reported (read with the table at the top)
 
@@ -226,6 +307,11 @@ are treated differently.
 | `ring_job.py`, `ring_run.sh`, `ring_run2.sh`, `vast_self.sh` | Part 3: the unattended job on a rented GPU (pilot sweep → pick rule → main run → analysis → upload → the instance destroys itself) |
 | `ring_gains.py`, `ring_ladder.py` | Part 3: the exploratory criticality ladder (synchrony, spectral exponent, attractor census); one table across models |
 | `docs/research_map.md` | what other groups found, and what is still open, for the next experiments |
+| `ws_common.py` | Part 4: models with their Neuronpedia lenses, per-layer J-lens atoms and scores, top-k J-space ablation with random and norm-matched controls |
+| `ws_ignition.py`, `ws_trace.py`, `ws_temperature.py`, `ws_selftalk.py`, `ws_selfref.py` | Part 4: the five tests, each with its predictions in the docstring |
+| `ws_job.py`, `vast_run.sh`, `vast_run2.sh` | Part 4: the unattended job (tests × models → upload → the instance destroys itself), with a chained second stage |
+| `ws_summary.py`, `ws_transcripts.py` | Part 4: one table across models; the self-talk transcripts (contemplative words, echo) |
+| `runs/ring/`, `runs/ws/` | Part 3 and Part 4 results (summaries; the raw arrays are on Hugging Face) |
 
 The raw trajectories (`traj.npz`, 160–175 MB per run) are too large for this repository; they are in the Hugging Face dataset linked above.
 
@@ -248,6 +334,15 @@ Part 3 on one 48 GB card. It is about 40 minutes for four models with 24 seeds e
 python ring_job.py --models qwen3-4b,qwen3-8b,qwen3-14b,qwen3-1.7b --root runs/ring
 python ring_job.py --models qwen3-4b,qwen3-8b,qwen3-1.7b,qwen3-14b --root runs/ring --gains .25,.5,2,4
 python ring_ladder.py runs/ring
+```
+
+Part 4 is about 1 h 45 min for four models on one 48 GB card:
+
+```bash
+python ws_job.py --models qwen3-8b,qwen3-14b,qwen3-4b,qwen3-1.7b --root runs/ws
+python ws_job.py --models qwen3-8b,qwen3-14b,qwen3-4b,qwen3-1.7b --root runs/ws --tests selfref
+python ws_summary.py runs/ws
+python ws_transcripts.py runs/ws
 ```
 
 To view the Parts 1–2 report locally, serve the folder (it loads its data files):

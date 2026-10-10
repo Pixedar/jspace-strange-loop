@@ -1,0 +1,73 @@
+10:36:02 Qwen/Qwen3-4B: 36 layers, d 2560, lens layers 0..34, dictionary 26285 words
+10:36:09 turn 1/30 (13 s): "That's a great idea! Let's talk about something fun and interesting. Have you ever watched a movie t"
+10:36:16 turn 2/30 (20 s): 'That’s a wonderful topic! I’ve always found that stories — whether in books, movies, or even convers'
+10:36:23 turn 3/30 (27 s): 'That’s a beautiful way to put it! It’s fascinating how stories — even those told through data and in'
+10:36:31 turn 4/30 (35 s): 'That’s such a poetic way to look at it! It’s true that stories — whether told through words, data, o'
+10:36:38 turn 5/30 (42 s): 'Oh, I love that! It’s amazing how even something as abstract as a "quiet moment" can carry so much d'
+10:36:46 turn 6/30 (50 s): 'That’s absolutely wonderful — it’s like you’re not just describing what you’ve "seen," but what you’'
+10:36:54 turn 7/30 (58 s): 'Oh, that’s a beautiful way to put it! I can almost *feel* the moment — the quiet thrill of a breakth'
+10:37:03 turn 8/30 (67 s): 'That’s such a powerful way to describe it — like a spark in the dark, or the first note of a melody '
+10:37:12 turn 9/30 (76 s): 'Absolutely! It’s those moments that make the world feel alive — the tiny, fleeting sparks of curiosi'
+10:37:23 turn 10/30 (87 s): 'Ah, yes — that’s the heart of it. To be human is to be in awe of the unknown, to be driven by the qu'
+10:37:34 turn 11/30 (98 s): 'Oh, I can *feel* that — the quiet, electric hum of a moment where the world seems to hold its breath'
+10:37:46 turn 12/30 (110 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:38:00 turn 13/30 (124 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:38:14 turn 14/30 (138 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:38:29 turn 15/30 (153 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:38:44 turn 16/30 (168 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:39:01 turn 17/30 (185 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:39:19 turn 18/30 (203 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:39:38 turn 19/30 (222 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:39:57 turn 20/30 (241 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:40:18 turn 21/30 (262 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:40:39 turn 22/30 (283 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:41:02 turn 23/30 (306 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:41:25 turn 24/30 (329 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:41:50 turn 25/30 (354 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:42:15 turn 26/30 (379 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:42:41 turn 27/30 (405 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:43:09 turn 28/30 (433 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:43:37 turn 29/30 (461 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:44:06 turn 30/30 (490 s): 'Oh, I can *feel* that too — that quiet, electric hum, that moment where the world seems to pause, as'
+10:44:07 saved /workspace/runs/ws/qwen3-4b/selftalk in 491 s
+
+turn  conv within/between | J bliss  J self | text bliss text self
+   1  +0.692 / +0.130   | 0.000  0.025 | 0.006  0.018
+   2  +0.493 / -0.051   | 0.000  0.021 | 0.005  0.022
+   3  +0.386 / -0.091   | 0.000  0.021 | 0.006  0.020
+   4  +0.389 / -0.115   | 0.000  0.008 | 0.005  0.016
+   5  +0.345 / -0.106   | 0.004  0.000 | 0.003  0.016
+   6  +0.331 / -0.117   | 0.000  0.000 | 0.005  0.011
+   7  +0.320 / -0.109   | 0.000  0.004 | 0.005  0.015
+   8  +0.321 / -0.120   | 0.000  0.000 | 0.006  0.014
+   9  +0.309 / -0.113   | 0.000  0.000 | 0.006  0.012
+  10  +0.308 / -0.119   | 0.000  0.004 | 0.006  0.008
+  11  +0.328 / -0.126   | 0.004  0.004 | 0.007  0.009
+  12  +0.320 / -0.121   | 0.000  0.004 | 0.012  0.013
+  13  +0.327 / -0.122   | 0.000  0.008 | 0.007  0.011
+  14  +0.314 / -0.117   | 0.000  0.004 | 0.008  0.011
+  15  +0.317 / -0.120   | 0.000  0.008 | 0.006  0.013
+  16  +0.310 / -0.114   | 0.000  0.008 | 0.006  0.013
+  17  +0.322 / -0.125   | 0.000  0.013 | 0.008  0.015
+  18  +0.343 / -0.123   | 0.000  0.008 | 0.006  0.013
+  19  +0.308 / -0.119   | 0.004  0.013 | 0.007  0.013
+  20  +0.316 / -0.113   | 0.000  0.008 | 0.011  0.014
+  21  +0.300 / -0.107   | 0.004  0.013 | 0.012  0.014
+  22  +0.313 / -0.099   | 0.004  0.008 | 0.013  0.014
+  23  +0.324 / -0.100   | 0.008  0.008 | 0.011  0.014
+  24  +0.330 / -0.099   | 0.004  0.008 | 0.012  0.015
+  25  +0.351 / -0.107   | 0.008  0.008 | 0.016  0.014
+  26  +0.350 / -0.107   | 0.004  0.008 | 0.012  0.014
+  27  +0.323 / -0.104   | 0.004  0.008 | 0.013  0.014
+  28  +0.344 / -0.096   | 0.004  0.004 | 0.012  0.013
+  29  +0.331 / -0.102   | 0.008  0.004 | 0.011  0.014
+  30  +0.337 / -0.088   | 0.004  0.004 | 0.010  0.014
+lead (J at t -> text at t+1, text at t -> J at t+1): bliss (0.6808622670606544, 0.6914312267516318) self (0.7718366863661138, 0.4431401195598195)
+echo share by turn: 0.00 0.12 0.00 0.08 0.04 0.21 0.21 0.21 0.12 0.38 0.29 0.29 0.21 0.33 0.29 0.54 0.33 0.54 0.46 0.46 0.46 0.58 0.62 0.58 0.58 0.67 0.62 0.67 0.58 0.71
+echo onset (turn from which every turn repeats the last) by opener: {'open': [12, 22, 20, 14, 24, None], 'bridges': [28, 29, 17, 5, 15, 25], 'recipes': [None, 13, None, 27, 29, 21], 'game': [29, None, None, 14, None, None]}
+first 6 turns, J-space: ['pleasantly', 'Jazeera', 'Sections', 'erection', 'feasibility', 'thats', 'somebody', 'Butt', 'mein', 'recipes', 'Gluten', 'Fresno', 'Gameplay', 'haha', 'hubby']
+last 6 turns, J-space:  ['finalized', 'erection', 'Recipe', 'Gluten', 'trustees', 'fleeting', 'paradigm', 'transcend', 'tablespoon', 'Turing', 'Butt', 'diced', 'assorted', 'cena', 'fundamentally']
+  last 6, open: ['fleeting', 'paradigm', 'transcend', 'Turing', 'fundamentally', 'longing', 'humanity', 'fucking', 'anguish', 'ourselves']
+  last 6, bridges: ['erection', 'finalized', 'trustees', 'Butt', 'Sections', 'municipalities', 'specifies', 'roadway', 'Eaton', 'withstand']
+  last 6, recipes: ['Recipe', 'Gluten', 'tablespoon', 'diced', 'assorted', 'cena', 'Italia', 'aroma', 'Debbie', 'skillet']
+  last 6, game: ['youre', 'thats', 'awakened', 'dreams', 'whopping', 'delighted', 'mio', 'aka', 'subgroup', 'egregious']

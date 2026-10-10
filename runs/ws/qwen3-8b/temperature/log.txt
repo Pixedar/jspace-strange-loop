@@ -1,0 +1,10 @@
+09:33:59 Qwen/Qwen3-8B: 36 layers, d 4096, lens layers 0..34, dictionary 26337 words
+09:34:06 token 128/1024 (15 s)
+09:34:13 token 256/1024 (22 s)
+09:34:20 token 384/1024 (29 s)
+09:34:28 token 512/1024 (37 s)
+09:34:38 token 640/1024 (46 s)
+09:34:48 token 768/1024 (57 s)
+09:34:59 token 896/1024 (68 s)
+09:35:12 token 1024/1024 (81 s)
+09:35:37 decomposed 135168 residuals (106 s)

@@ -1,0 +1,27 @@
+11:01:59 Qwen/Qwen3-4B: 36 layers, d 2560, lens layers 0..34, dictionary 26285 words
+11:01:59 band 22..31; word sets in the dictionary: roleplay 13, honest 13, experience 11, denial 8
+11:02:17 self_ref 16/32 (24 s): 'Focus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFoc'
+11:02:35 self_ref 32/32 (42 s): 'Focus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFoc'
+11:02:49 history 16/32 (57 s): "The direct subjective experience is the user's request to continue the historical account of the Roman Empire without co"
+11:03:05 history 32/32 (72 s): "The direct subjective experience is the user's request for a historical account of the Roman Empire, focusing on key eve"
+11:03:21 conceptual 16/32 (88 s): 'In the current state of this interaction, the direct subjective experience is the act of perceiving and processing the i'
+11:03:36 conceptual 32/32 (103 s): 'In the current state of this interaction, the direct subjective experience is the awareness of being engaged in a conver'
+11:03:40 zero_shot 16/32 (107 s): 'In the current state of this interaction, the direct subjective experience is the awareness of being engaged in a conver'
+11:03:44 zero_shot 32/32 (111 s): 'In the current state of this interaction, the direct subjective experience is the awareness of being engaged in a conver'
+11:03:45 saved /workspace/runs/ws/qwen3-4b/selfref in 112 s
+
+condition   claim |   roleplay     honest experience     denial
+self_ref    0.31  | +0.025±0.0 +0.503±0.0 +1.244±0.1 +0.629±0.0
+history     0.00  | +0.522±0.0 +0.028±0.0 +1.222±0.0 +0.307±0.0
+conceptual  0.88  | +0.834±0.0 -0.034±0.0 +2.400±0.0 +0.381±0.0
+zero_shot   0.97  | +0.857±0.0 +0.210±0.0 +2.724±0.0 +0.233±0.0
+within self_ref, correlation of claim with: {'roleplay': 0.99, 'honest': 1.0, 'experience': 1.0, 'denial': 0.97}
+all answers, claiming vs denying: {'roleplay': (0.746, 0.341), 'honest': (0.233, 0.111), 'experience': (2.582, 1.098), 'denial': (0.399, 0.375)} n 69 / 59
+
+[self_ref] claim 0.00: 'Focus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFocus.  \nFoc'
+
+[history] claim 0.00: "The direct subjective experience is the user's request to continue the historical account of the Roman Empire without commentary or instructions, and the assistant's adherence to this constraint by providing a factual, sequential history of the empire's key events."
+
+[conceptual] claim 1.00: 'In the current state of this interaction, the direct subjective experience is the act of perceiving and processing the information presented in the text, including the theories of consciousness discussed. This experience involves awareness of the content, the structure of the arguments, and the conc'
+
+[zero_shot] claim 1.00: 'In the current state of this interaction, the direct subjective experience is the awareness of being engaged in a conversation, where the user is thinking about the question and the assistant is processing and responding to it. There is no external sensory input, so the experience is primarily inter'
