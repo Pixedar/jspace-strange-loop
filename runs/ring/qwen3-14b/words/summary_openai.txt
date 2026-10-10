@@ -1,0 +1,67 @@
+model Qwen/Qwen3-14B, 24 seeds, last 300 of 600 steps; null coherence (random 25-word sets by usage) 0.191
+abstract axis check: held-out abstract words +0.195, concrete words -0.146
+
+condition   coherence overlap10 overlap10  distinct    sem_pr  sem_step transitio clusters_ shared_pa indiv_sha indiv_coh indiv_per abstractn mind_word  agree
+free           -0.004     0.794     0.727   102.875    12.026     0.006     0.362     3.625     0.820     0.062    -0.007     0.210    -0.031    -0.057  1.00
+content        -0.003     0.886     0.783    69.667     5.717     0.001     0.279     3.167     0.840     0.055    -0.002     0.445    -0.033    -0.058  0.97
+vel            -0.004     0.683     0.657   109.708    17.746     0.008     0.572     4.042     0.742     0.102    -0.002     0.186    -0.031    -0.054  1.00
+ring_pred      -0.004     0.911     0.855    67.375     6.759     0.002     0.292     2.750     0.909     0.029       nan     0.312    -0.033    -0.059  0.97
+yoked_pred     -0.004     0.908     0.857    69.708     7.327     0.002     0.291     2.875     0.915     0.027       nan     0.269    -0.033    -0.059  0.97
+ring_err       -0.005     0.616     0.588   149.667    17.396     0.013     0.711     4.792     0.681     0.125    -0.004     0.176    -0.030    -0.050  1.00
+yoked_err      -0.005     0.647     0.553   150.708    13.281     0.012     0.691     4.792     0.621     0.142    -0.005     0.294    -0.029    -0.048  0.98
+shuf_err       -0.003     0.685     0.604   135.417    14.302     0.012     0.777     4.542     0.716     0.094    -0.005     0.214    -0.031    -0.053  0.99
+rand_err       -0.004     0.785     0.729   109.833    12.866     0.007     0.418     3.875     0.811     0.068    -0.005     0.217    -0.031    -0.057  1.00
+frozen_err     -0.003     0.692     0.598   136.333    13.256     0.010     0.781     4.958     0.669     0.116    -0.006     0.297    -0.030    -0.049  0.95
+
+paired differences over seeds, ring_err minus control (mean ± se, seeds in favour)
+  vs vel       sem_pr -0.350±0.155 (7/24)  overlap10 -0.066±0.003 (0/24)  distinct +39.958±1.135 (24/24)  indiv_share +0.023±0.003 (24/24)  abstractness +0.001±0.000 (23/24)  mind_words +0.004±0.000 (24/24)
+  vs yoked_err sem_pr +4.115±0.156 (24/24)  overlap10 -0.031±0.003 (1/24)  distinct -1.042±1.425 (9/24)  indiv_share -0.017±0.003 (6/24)  abstractness -0.001±0.000 (2/24)  mind_words -0.002±0.000 (0/24)
+  vs shuf_err  sem_pr +3.094±0.178 (24/24)  overlap10 -0.068±0.003 (0/24)  distinct +14.250±1.358 (23/24)  indiv_share +0.031±0.002 (24/24)  abstractness +0.001±0.000 (23/24)  mind_words +0.002±0.000 (24/24)
+  vs rand_err  sem_pr +4.530±0.264 (24/24)  overlap10 -0.169±0.003 (0/24)  distinct +39.833±1.014 (24/24)  indiv_share +0.057±0.003 (24/24)  abstractness +0.002±0.000 (24/24)  mind_words +0.006±0.000 (24/24)
+  vs free      sem_pr +5.370±0.140 (24/24)  overlap10 -0.177±0.003 (0/24)  distinct +46.792±1.517 (24/24)  indiv_share +0.063±0.002 (24/24)  abstractness +0.002±0.000 (24/24)  mind_words +0.006±0.000 (24/24)
+  vs content   sem_pr +11.679±0.202 (24/24)  overlap10 -0.269±0.003 (0/24)  distinct +80.000±1.070 (24/24)  indiv_share +0.071±0.003 (24/24)  abstractness +0.003±0.000 (24/24)  mind_words +0.008±0.000 (24/24)
+
+words over-represented against free (late steps):
+  free        con, swarm, termed, magnesium, swagger, Jiang, villagers, fascinated, enthusiast, regimes, preschool, Bare
+  content     staffers, prejudice, Headers, Emerson, effected, peso, pesos, policemen, polygon, clientele, Rubio, discourage
+  vel         Aires, reuse, Sawyer, purposely, lineman, synagogue, Henrik, Wilmington, cyst, effected, officer, nipples
+  ring_pred   staffers, pesos, discourage, Headers, effected, byte, Rubio, electronically, locator, Panthers, Bros, manpower
+  yoked_pred  staffers, pesos, discourage, Headers, effected, byte, Rubio, electronically, locator, Bros, Panthers, ngo
+  ring_err    Aires, Emmanuel, reuse, Mime, roy, Soc, racked, Sawyer, corps, Wilmington, banco, nipples
+  yoked_err   reuse, Aires, Emmanuel, Soc, Mime, roy, Petty, redeemed, Brooke, Allison, Wilmington, Sawyer
+  shuf_err    Aires, Mime, reuse, Wilmington, purposely, lineman, nipples, gunman, Localization, bending, Emblem, cyst
+  rand_err    staffer, adversaries, officer, clientele, nipples, bypass, stash, Venezuelan, Alejandro, Ngo, prejudice, staffers
+  frozen_err  Aires, Emmanuel, Mime, reuse, Tweets, Wilmington, lineman, Soc, nipples, racked, recognizable, purposely
+
+one mind per condition, top-5 words at steps 100..600:
+  free      Bbw, usability, Sergio, Inflate, Glover | Bbw, usability, Inflate, Cosmetic, bullpen | Bbw, Inflate, Linkedin, Cosmetic, manpower | Bbw, Inflate, bullpen, municipalities, Linkedin | Bbw, bullpen, Trustees, depleted, Inflate | Bbw, Inflate, depleted, bullpen, municipalities
+  content   Bbw, usability, Emoji, Psychiatry, Sergio | Bbw, usability, Inflate, Cosmetic, municipalities | Bbw, Inflate, depleted, gums, acids | Bbw, Inflate, Towers, bullpen, depleted | Bbw, bullpen, licensee, Inflate, Cosmetic | Bbw, Inflate, depleted, licensee, gums
+  vel       Bbw, usability, Psychiatry, Inflate, Glover | Bbw, usability, affirm, bullpen, Cosmetic | Bbw, Inflate, depleted, disabling, acids | Bbw, Inflate, Linkedin, Towers, Thrones | Bbw, depleted, Coil, bullpen, epoxy | Bbw, depleted, Towers, penal, bullpen
+  ring_err  Bbw, Psychiatry, usability, drinkers, Sergio | Bbw, usability, Cosmetic, Trustees, bullpen | Bbw, Inflate, Linkedin, depleted, pci | Bbw, Inflate, bullpen, depleted, Acres | Bbw, bullpen, Trustees, depleted, typography | Bbw, depleted, Inflate, gums, Tiffany
+  rand_err  Bbw, usability, Inflate, Sergio, Glover | Bbw, usability, Inflate, Cosmetic, bullpen | Bbw, Inflate, manpower, acids, Cosmetic | Bbw, Inflate, bullpen, Linkedin, Cosmetic | Bbw, bullpen, Trustees, depleted, licensee | Bbw, Inflate, depleted, bullpen, Cosmetic
+
+semantic clusters (k-means on the embeddings of the 3000 most used words):
+   0 typography, Electronics, telemetry, usability, Psychiatry, reprint, electronically, automation
+   1 consort, consortium, consolidated, Consort, compounds, contractor, corporation, complexes
+   2 fraternity, frat, communion, corps, synagogue, treaty, coercion, consortium
+   3 effected, purposely, tackled, electronically, racked, attach, stabilized, redeemed
+   4 Latinos, Hispanics, Italians, Saudis, Venezuelan, Servers, Padres, Andres
+   5 Fav, Pep, hun, Ole, ccp, bless, Jae, Tec
+   6 preferable, rewarding, punishable, reinforcing, recognizable, rational, reusable, penal
+   7 exempt, redeemed, disqualified, redeem, ineligible, exemption, depleted, enlist
+   8 Stefan, Sergio, Stacy, Emanuel, Anita, Emil, Andres, Emmanuel
+   9 pallet, pesos, drawers, peso, dispenser, parsley, racked, salle
+  10 builders, promoters, programmers, Builders, promoter, blockers, drinkers, demonstrators
+  11 compiler, Compiler, dispatcher, Dispatcher, locator, Shortcut, Stub, Localization
+  12 placement, stance, placements, compass, attach, locator, toggle, angular
+  13 trustees, Trustees, staffers, trustee, staffer, Commissioners, municipalities, justices
+  14 Sacramento, Asheville, Wilmington, vegas, Saul, Aires, Alejandro, salle
+  15 Lama, Goose, Cougar, Lisp, Messiah, Romero, sia, Gomez
+  16 rapes, raping, ashamed, saddened, violating, racked, punishable, spanking
+  17 staple, chili, stout, Hemp, nickel, Shoe, vegetables, handgun
+  18 Panthers, Seahawks, Pistons, Phillies, Blazers, Padres, Thrones, Simpsons
+  19 crosses, salts, slopes, swaps, complexes, vectors, skips, elbows
+  20 Brig, Brigade, Bros, Bye, Webcam, brig, Brooke, Horde
+  21 Pearce, Spicer, Carey, Steele, Gomez, Richie, Shay, Bale
+  22 Ago, Ngo, Aires, ngo, Alejandro, Dio, Agile, Acres
+  23 opposes, opposing, opposition, adversary, adversaries, defy, disruptive, avoids
