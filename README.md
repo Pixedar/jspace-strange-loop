@@ -1,20 +1,98 @@
 # Strange Loop in J-space
 
-A language model left to wander with no memory of its own words, only a latent state. Every ten thoughts it is asked
-what its mind has been doing. It answers from that state alone, and the answer is fed back into everything it thinks
-next. The question: does something like a persistent self form inside that loop?
+Can a language model keep a model of itself inside its own latent loop, and does anything self-like come out of it?
+Three attempts on Qwen3 models, each built to fix what the last one got wrong. All use the J-space of *Verbalizable
+Representations Form a Global Workspace in Language Models* (Anthropic, 2026).
 
 ```
-thought trajectory → compressed model of the trajectory → model shapes the trajectory → new compressed model → …
+trajectory → model of the trajectory → the model is written back into the trajectory → new model → …
 ```
 
-Part 1: Qwen3-4B-Base, 180 minds, 72,000 thoughts · Part 2: Qwen3 1.7B–32B with Anthropic/Neuronpedia lenses, 720 minds,
-216,000 thoughts · RTX 4090 and A100 on Vast.ai
+- **Interactive report for Parts 1–2**: https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space
+- **Data**: Parts 1–2 https://huggingface.co/datasets/Pixedar/jspace-strange-loop · Part 3
+  https://huggingface.co/datasets/Pixedar/jspace-ring (code and tests uploaded before any result)
 
-- **Interactive report** (explore any mind's path through J-space): https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space
-- **All data**, including the raw trajectories: https://huggingface.co/datasets/Pixedar/jspace-strange-loop
+## Read this first: what each part showed
 
-## The short answer
+| Part | What was built | What it showed | What it did not show |
+|---|---|---|---|
+| 1. Qwen3-4B-Base | The mind thinks in sampled text. Every ten thoughts a reflection decodes its recent states into J-space words, and that summary is fed back as a nudge. | Mid-layer states can be read back in words (as in Patchscopes and SelfIE). A fed-back summary stabilises the stream. | A self. The loop runs through sampled words. Any fed-back description, own or foreign, is reinforced the same way. This is positive feedback, the mechanism that makes free generation repeat itself. |
+| 2. Qwen3 1.7B–32B, Neuronpedia lenses | The same loop with checked lenses, up a ladder of sizes. | Where the workspace sits in Qwen3 (past ~60 % of depth up to 8B, earlier at 14B and 32B). The common-English dictionary reads states better than every token. | Ownership. A mind holds the best-fitting stranger's self-model as well as its own (match ≥ own), and its own outdated one worse than a random stranger's. |
+| 3. The ring, Qwen3 1.7B–14B | No words in the loop. An online model of the mind's own transitions, with its prediction error written back into the stream. Every control has equal size. The tests were fixed before the run. | Feeding back the *current* surprise of a self-model that keeps learning keeps the latent trajectory exploring. It beats momentum, the mind's own past surprise and random input of the same size, and freezing the self-model removes the effect. The "self" part (own rather than another mind's surprise) matters only past the critical gain. | Anything self-like. There are no individual dynamics. Attractors hold arbitrary words. The model's own verbal report does not change. From about twice the critical gain, plain momentum resists collapse better. |
+
+Parts 1 and 2 overstated their results when first written. The details below are kept as reported, but read them
+with the table above. The drift towards existence and consciousness themes in Part 1 came from the think-aloud frame.
+The J-space paper itself reports such words while a model narrates its own processing.
+
+## Part 3: the ring
+
+The review of Parts 1–2 said what a real strange loop needs: no sampled text in the loop, a self-model of the
+*process* rather than the content, and controls that would expose plain feedback. `ring.py` builds that:
+
+- **Substrate.** After a short prompt that opens the assistant's thinking, the model reads one placeholder token at a
+  time. At each step the J-space content at 70 % of depth (non-negative pursuit on common English words, K = 25) is
+  written back at 50 % of depth of the next placeholder. No word is ever sampled inside the loop.
+- **Self-model.** Each mind has its own online learner: a rank-32 linear map with a skip connection that predicts its
+  next J-space state. It is trained at every step on the transition that just happened, so it learns from the effects
+  of its own output.
+- **Closure and controls.** Every condition writes back a vector of the same norm on the same schedule, and minds with
+  the same seed share all noise.
+
+| Condition | What is written back |
+|---|---|
+| `ring_err` | the self-model's current surprise, c − m_prev |
+| `ring_pred` | the self-model's prediction of the next state |
+| `frozen_err` | `ring_err`, with learning stopped at step 300 of 600 |
+| `vel` | momentum, c − c_prev (what `ring_err` starts as) |
+| `yoked_err` / `yoked_pred` | another mind's surprise or prediction |
+| `shuf_err` | the mind's own surprise from a random earlier step |
+| `rand_err` | an isotropic random direction |
+| `content` | the current content: plain feedback, the "banana" control |
+| `free` | nothing |
+
+The gain was set per model by a fixed rule, the largest memory before the free minds collapse. There were 24 paired
+seeds and 600 steps per model (`ring_job.py`, `ring_analyze.py`). The tests were uploaded at 19:03:34 UTC on 9 Oct
+2026, before the first result.
+
+**Pre-registered result.** Each cell is how much more `ring_err` explores than the control. Exploration is the
+participation ratio of the trajectory in 100-step windows over the last 200 steps, as a paired difference over 24
+seeds. The last column is Stouffer's z over the four models.
+
+| `ring_err` minus | 1.7B | 4B | 8B | 14B | z |
+|---|---|---|---|---|---|
+| momentum (`vel`) | +1.57 | +2.07 | +2.48 | −0.31 | +26.9 |
+| another mind's surprise | +0.41 | +1.31 | +0.20 | +4.33 | +15.9 |
+| own surprise, wrong time | +2.27 | +2.01 | +1.22 | +3.09 | +28.0 |
+| random direction | +3.16 | +3.65 | +3.34 | +4.75 | +52.9 |
+| freezing the self-model (change after the freeze) | −2.20 | −3.90 | −1.87 | −4.99 | −33.0 |
+
+4B passes every test. 1.7B and 8B pass all but "another mind's surprise", which is weak there (16 of 24 seeds). 14B
+fails against momentum on exploration but collapses less (stuck 2.5 % vs 7.4 %). Feeding back the self-model's
+*prediction* behaves like plain content feedback: it collapses (14B: 80 % of late steps stuck, `content` 85 %). One's
+own prediction does no more than another mind's. No mind develops dynamics of its own. A next-state predictor fitted
+to another mind of the same condition predicts it as well as one fitted to itself, in every condition and model.
+
+**Across the critical point (exploratory, added after the first results; `ring_gains.py`).** Each substrate has a gain
+g* where the free minds' trajectory turns 1/f (spectral exponent β crosses 1): 0.035 (1.7B), 0.088 (4B), 0.09 (8B),
+0.03 (14B). Collapse sets in just above it. The fixed rule had picked 0.55–1.66 g*, close to the edge in all four.
+The ladder runs from 0.14 g* to 6.6 g*, 16 seeds per point:
+
+- **Below the edge**, the surprise loop beats momentum (+1.1 to +2.7), but whose surprise it is hardly matters (+0.05
+  to +0.45). Minds move almost in lockstep: different minds' states have cosine 0.8–0.95 at the same step.
+- **Past the edge**, "own" and "still learning" matter more the higher the gain. At the top of the ladder, another
+  mind's surprise is worse by 3.0–5.5 and freezing costs 4.3–8.0. But from about 2 g* plain momentum beats the
+  surprise loop, by up to 8.7. A unit-size push along the last motion can never settle into a fixed point, while the
+  self-model learns to predict its own pushes and partly cancels them.
+- **The attractors are trivial.** At or below the edge, every condition and seed ends in one shared state holding
+  arbitrary words (4B: *reprint, Syntax, worthwhile, construed*). Past it they splinter into per-seed states holding
+  junk. After 600 steps the model's own account of what it was thinking does not depend on the condition. On 14B it
+  is the same sentence everywhere.
+
+So a latent self-model loop is more than feedback in one narrow sense: its current error, while it keeps learning,
+works as a learned way out of attractors. Nothing here behaves like a self. The placeholder substrate cannot carry a
+thought; filler tokens only carry computation in models trained to use them (Pfau et al. 2024).
+
+## Part 1 as first reported (read with the table at the top)
 
 The causal loop is real. A model of the trajectory, rebuilt from the trajectory, shapes the trajectory, sustains itself,
 and holds long-range coherence that disappears the moment it is cut. What it lacks is the "self" in the strong sense.
@@ -143,6 +221,11 @@ are treated differently.
 | `report/` | the interactive report (`template.html` → `index.html`, built by `export_report.py`) |
 | `qwen3-4b-base-jlens.npz` | the fitted J-lens used in every run |
 | `runs/main{A,B,C}/` | `results.json`, `meta.json` (every thought and answer), `summary.txt` |
+| `ring.py` | Part 3: the ring (placeholder substrate, online self-models, all conditions, paired noise) |
+| `ring_analyze.py` | Part 3: the pre-registered tests for one run (or a folder of seed chunks) |
+| `ring_job.py`, `ring_run.sh`, `ring_run2.sh`, `vast_self.sh` | Part 3: the unattended job on a rented GPU (pilot sweep → pick rule → main run → analysis → upload → the instance destroys itself) |
+| `ring_gains.py`, `ring_ladder.py` | Part 3: the exploratory criticality ladder (synchrony, spectral exponent, attractor census); one table across models |
+| `docs/research_map.md` | what other groups found, and what is still open, for the next experiments |
 
 The raw trajectories (`traj.npz`, 160–175 MB per run) are too large for this repository; they are in the Hugging Face dataset linked above.
 
@@ -157,8 +240,17 @@ python analyze.py runs/mainB
 python export_report.py report/data runs/mainA runs/mainB runs/mainC
 ```
 
-A run of 60 minds × 400 thoughts takes about 15 minutes on one RTX 4090 and needs about 12 GB of GPU memory. To view
-the report locally, serve the folder (it loads its data files):
+A run of 60 minds × 400 thoughts takes about 15 minutes on one RTX 4090 and needs about 12 GB of GPU memory.
+
+Part 3 on one 48 GB card. It is about 40 minutes for four models with 24 seeds each, plus 45 minutes for the ladder:
+
+```bash
+python ring_job.py --models qwen3-4b,qwen3-8b,qwen3-14b,qwen3-1.7b --root runs/ring
+python ring_job.py --models qwen3-4b,qwen3-8b,qwen3-1.7b,qwen3-14b --root runs/ring --gains .25,.5,2,4
+python ring_ladder.py runs/ring
+```
+
+To view the Parts 1–2 report locally, serve the folder (it loads its data files):
 
 ```bash
 python -m http.server 8000 --directory report

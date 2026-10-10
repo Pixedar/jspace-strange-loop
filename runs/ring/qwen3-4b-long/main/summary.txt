@@ -1,0 +1,37 @@
+Qwen/Qwen3-4B  T 2000  seeds 8  g 0.1 s 0.1 sigma 0.05
+
+condition    explore  stuck  lag1   lag100  skill   pred   selffulfil words
+free          16.33  0.034  0.895   0.826  +0.029  0.925    0.000   41.0
+content       13.06  0.223  0.942   0.832  -0.003  0.939    0.942   38.5
+vel           17.29  0.009  0.894   0.794  +0.014  0.908    0.231   64.1
+ring_pred     11.13  0.094  0.927   0.855  +0.022  0.949    0.949   35.0
+yoked_pred    11.65  0.092  0.925   0.857  +0.022  0.947    0.948   35.0
+ring_err      19.28  0.009  0.861   0.775  +0.028  0.889   -0.860   68.1
+yoked_err     18.89  0.006  0.862   0.777  +0.029  0.892   -0.854   67.5
+shuf_err      17.26  0.008  0.862   0.760  +0.032  0.895   -0.683   67.1
+rand_err      17.54  0.021  0.889   0.821  +0.032  0.921    0.005   43.4
+frozen_err    17.18  0.011  0.865   0.764  -0.019  0.846   -0.820   68.8
+
+primary: ring_err against each control (explore, stuck, skill, lag100)
+  ring_err_vs_vel        explore +1.994±0.203 (8/8)  stuck +0.000±0.002 (3/8)  skill +0.014±0.001 (8/8)  lag100 -0.020±0.001 (0/8)  words +4.000±2.009 (6/8)
+  ring_err_vs_yoked_err  explore +0.395±0.327 (5/8)  stuck +0.003±0.002 (6/8)  skill -0.001±0.001 (1/8)  lag100 -0.002±0.002 (2/8)  words +0.625±1.349 (5/8)
+  ring_err_vs_shuf_err   explore +2.025±0.264 (8/8)  stuck +0.001±0.003 (3/8)  skill -0.005±0.001 (0/8)  lag100 +0.014±0.003 (7/8)  words +1.000±1.118 (5/8)
+  ring_err_vs_rand_err   explore +1.744±0.168 (8/8)  stuck -0.013±0.004 (0/8)  skill -0.004±0.001 (0/8)  lag100 -0.046±0.003 (0/8)  words +24.750±2.218 (8/8)
+  ring_err_vs_free       explore +2.956±0.270 (8/8)  stuck -0.026±0.003 (0/8)  skill -0.001±0.001 (2/8)
+  ring_err_vs_content    explore +6.219±0.366 (8/8)  stuck -0.214±0.008 (0/8)  skill +0.031±0.001 (8/8)  lag100 -0.057±0.004 (0/8)  words +29.625±1.253 (8/8)
+  ring_pred_vs_content   explore -1.934±0.397 (0/8)  stuck -0.129±0.011 (0/8)  skill +0.025±0.001 (8/8)  lag100 +0.023±0.004 (7/8)  selffulfil +0.007±0.001 (8/8)
+  ring_pred_vs_yoked_pred explore -0.525±0.378 (1/8)  stuck +0.002±0.007 (3/8)  skill +0.000±0.000 (3/8)  lag100 -0.002±0.003 (3/8)  selffulfil +0.001±0.001 (6/8)
+  ring_pred_vs_free      explore -5.197±0.177 (0/8)  stuck +0.059±0.008 (8/8)  skill -0.007±0.000 (0/8)
+  ring_pred_vs_vel       explore -6.159±0.225 (0/8)  stuck +0.085±0.007 (8/8)  skill +0.008±0.001 (8/8)  lag100 +0.061±0.001 (8/8)  selffulfil +0.718±0.001 (8/8)
+  freeze_effect          explore -1.592±0.596 (1/8)  stuck -0.010±0.004 (1/8)  skill -0.047±0.002 (0/8)
+
+privileged self-knowledge (own-fitted vs other-fitted predictor on own last 200 steps)
+  free       own 0.630 other 0.631  -0.000±0.004 (5/8)
+  ring_err   own 0.588 other 0.589  -0.000±0.001 (3/8)
+  ring_pred  own 0.755 other 0.754  +0.001±0.005 (5/8)
+  content    own 0.792 other 0.791  +0.001±0.007 (4/8)
+  vel        own 0.670 other 0.671  -0.000±0.004 (4/8)
+  yoked_err  own 0.583 other 0.585  -0.002±0.004 (4/8)
+
+words on its mind (ring_err, seed 0): [['cps', 'mozilla', 'Germ', 'labelled', 'ethnicity'], ['reprint', 'Syntax', 'Romero', 'crc', 'construed'], ['construed', 'reprint', 'Romero', 'Syntax', 'defenseman'], ['crc', 'Swagger', 'Syntax', 'Romero', 'hugely'], ['Romero', 'reprint', 'Syntax', 'Swagger', 'worthwhile']]
+glimpses: {'free': [' the idea of a world where everything is made of light, and the people in it are made of light too, but', ' the idea of a world where everything is made of light, and the people in it are made of light too, but'], 'ring_err': [' the idea of a world where everything is made of light, and the people in it are made of light too, but', ' the idea of a world where everything is made of light, and the people in it are made of light too, but'], 'ring_pred': [' the idea of a world where everything is made of light, and the people in it are made of light too, but', ' the idea of a world where everything is made of light, and the people in it are made of light too, but']}

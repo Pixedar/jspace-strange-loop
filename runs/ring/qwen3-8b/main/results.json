@@ -1,0 +1,2844 @@
+{
+ "model": "Qwen/Qwen3-8B",
+ "T": 600,
+ "t_freeze": 300,
+ "seeds": 24,
+ "L_in": 18,
+ "L_read": 25,
+ "n_layers": 36,
+ "g": 0.05,
+ "s": 0.05,
+ "sigma": 0.05,
+ "summary": {
+  "free": {
+   "explore": 15.468382120132446,
+   "stuck": 0.015,
+   "lag1": 0.8597015663981438,
+   "lag100": 0.7487362176179886,
+   "skill": 0.03243681035625438,
+   "pred": 0.8921383718649546,
+   "selffulfil": 0.0,
+   "words": 54.5,
+   "explore_pre": 17.07127316792806,
+   "stuck_pre": 0.0008333333333333334
+  },
+  "content": {
+   "explore": 14.256753577126396,
+   "stuck": 0.12291666666666667,
+   "lag1": 0.902446928123633,
+   "lag100": 0.7689375852545103,
+   "skill": -0.002281451703311177,
+   "pred": 0.9001654808719953,
+   "selffulfil": 0.9024469157059988,
+   "words": 48.916666666666664,
+   "explore_pre": 14.824247558911642,
+   "stuck_pre": 0.019375
+  },
+  "vel": {
+   "explore": 16.726254330741032,
+   "stuck": 0.0022916666666666667,
+   "lag1": 0.8590433299541473,
+   "lag100": 0.7168378581603368,
+   "skill": 0.018548226721274357,
+   "pred": 0.8775915602842966,
+   "selffulfil": 0.2511052656918764,
+   "words": 70.66666666666667,
+   "explore_pre": 17.540751536687214,
+   "stuck_pre": 0.0
+  },
+  "ring_pred": {
+   "explore": 12.434034281306799,
+   "stuck": 0.024583333333333336,
+   "lag1": 0.8794686372081438,
+   "lag100": 0.7780407294631004,
+   "skill": 0.03771425302450856,
+   "pred": 0.917182890077432,
+   "selffulfil": 0.9171829000115395,
+   "words": 44.541666666666664,
+   "explore_pre": 13.643392523129782,
+   "stuck_pre": 0.0033333333333333335
+  },
+  "yoked_pred": {
+   "explore": 12.50524906317393,
+   "stuck": 0.02354166666666667,
+   "lag1": 0.8779731964071592,
+   "lag100": 0.7788251489400864,
+   "skill": 0.03682390476266543,
+   "pred": 0.9147971024115881,
+   "selffulfil": 0.9160290956497192,
+   "words": 44.166666666666664,
+   "explore_pre": 13.713261180453829,
+   "stuck_pre": 0.0025
+  },
+  "ring_err": {
+   "explore": 19.20575812127855,
+   "stuck": 0.0027083333333333334,
+   "lag1": 0.8321619679530462,
+   "lag100": 0.7021364519993464,
+   "skill": 0.021873073962827522,
+   "pred": 0.8540350620945295,
+   "selffulfil": -0.79803500076135,
+   "words": 73.0,
+   "explore_pre": 21.532760964499577,
+   "stuck_pre": 0.00020833333333333335
+  },
+  "yoked_err": {
+   "explore": 19.009459733963013,
+   "stuck": 0.0027083333333333334,
+   "lag1": 0.8323579107721647,
+   "lag100": 0.7008533428112665,
+   "skill": 0.02567581133916974,
+   "pred": 0.858033706744512,
+   "selffulfil": -0.7944807360569636,
+   "words": 72.875,
+   "explore_pre": 21.349665111965603,
+   "stuck_pre": 0.00020833333333333335
+  },
+  "shuf_err": {
+   "explore": 17.982230795754326,
+   "stuck": 0.00375,
+   "lag1": 0.8319963489969572,
+   "lag100": 0.7000112955768903,
+   "skill": 0.03234704933129251,
+   "pred": 0.8643433973193169,
+   "selffulfil": -0.5992651432752609,
+   "words": 70.125,
+   "explore_pre": 19.76067876815796,
+   "stuck_pre": 0.0004166666666666667
+  },
+  "rand_err": {
+   "explore": 15.870890604125128,
+   "stuck": 0.010208333333333335,
+   "lag1": 0.8571035812298456,
+   "lag100": 0.7481483146548271,
+   "skill": 0.03346570061209301,
+   "pred": 0.8905692820747694,
+   "selffulfil": 0.00297087822885563,
+   "words": 56.208333333333336,
+   "explore_pre": 17.530322154362995,
+   "stuck_pre": 0.000625
+  },
+  "frozen_err": {
+   "explore": 17.373386065165203,
+   "stuck": 0.008125,
+   "lag1": 0.8423590908447901,
+   "lag100": 0.7063804765542349,
+   "skill": -0.03631778007062773,
+   "pred": 0.8060413052638372,
+   "selffulfil": -0.7490244954824448,
+   "words": 75.33333333333333,
+   "explore_pre": 21.574568510055542,
+   "stuck_pre": 0.0
+  }
+ },
+ "tests": {
+  "ring_err_vs_vel": {
+   "explore": {
+    "diff": 2.479503790537516,
+    "se": 0.07711407568910708,
+    "t": 32.153712125577144,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.0004166666666666667,
+    "se": 0.0007915236331504884,
+    "t": 0.52641089819165,
+    "pos": 6,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.0033248472415531674,
+    "se": 0.0007578242349162713,
+    "t": 4.387359348464906,
+    "pos": 20,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.014701406160990397,
+    "se": 0.00088879761947894,
+    "t": -16.540780306780228,
+    "pos": 0,
+    "n": 24
+   },
+   "words": {
+    "diff": 2.3333333333333335,
+    "se": 1.0279899245732689,
+    "t": 2.269801753457777,
+    "pos": 15,
+    "n": 24
+   }
+  },
+  "ring_err_vs_yoked_err": {
+   "explore": {
+    "diff": 0.1962983873155381,
+    "se": 0.0877015552001718,
+    "t": 2.2382543487114077,
+    "pos": 16,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -3.614007241618348e-20,
+    "se": 0.0009028938981432691,
+    "t": -4.0026931725314264e-17,
+    "pos": 8,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.003802737376342217,
+    "se": 0.0007158206623935029,
+    "t": -5.312416330127903,
+    "pos": 3,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.001283109188079834,
+    "se": 0.0009506061855664955,
+    "t": 1.349779969415189,
+    "pos": 14,
+    "n": 24
+   },
+   "words": {
+    "diff": 0.125,
+    "se": 0.9711648839842069,
+    "t": 0.12871140839358516,
+    "pos": 11,
+    "n": 24
+   }
+  },
+  "ring_err_vs_shuf_err": {
+   "explore": {
+    "diff": 1.223527325524224,
+    "se": 0.10550456404357013,
+    "t": 11.596913712841323,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.0010416666666666667,
+    "se": 0.0009507418283396338,
+    "t": -1.09563567691749,
+    "pos": 6,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.010473975368464986,
+    "se": 0.0008065215662947577,
+    "t": -12.986602970312992,
+    "pos": 0,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.0021251564224561057,
+    "se": 0.001040764165573684,
+    "t": 2.0419192865702573,
+    "pos": 15,
+    "n": 24
+   },
+   "words": {
+    "diff": 2.875,
+    "se": 0.8770679497084575,
+    "t": 3.277967232704908,
+    "pos": 18,
+    "n": 24
+   }
+  },
+  "ring_err_vs_rand_err": {
+   "explore": {
+    "diff": 3.334867517153422,
+    "se": 0.08480006803500063,
+    "t": 39.32623633953901,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.0075,
+    "se": 0.0012038585308576921,
+    "t": -6.229967897188555,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.011592626649265489,
+    "se": 0.0006897152019926156,
+    "t": -16.807845637987842,
+    "pos": 0,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.046011862655480705,
+    "se": 0.0008473579633140951,
+    "t": -54.30038383722042,
+    "pos": 0,
+    "n": 24
+   },
+   "words": {
+    "diff": 16.791666666666668,
+    "se": 0.6225798553828275,
+    "t": 26.97110502610366,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "ring_err_vs_free": {
+   "explore": {
+    "diff": 3.737376001146105,
+    "se": 0.07651460563099959,
+    "t": 48.84526255248608,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.012291666666666666,
+    "se": 0.0016478787052004585,
+    "t": -7.459084596382007,
+    "pos": 1,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.010563736393426856,
+    "se": 0.0006427761574172659,
+    "t": -16.434549215193243,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "ring_err_vs_content": {
+   "explore": {
+    "diff": 4.949004544152154,
+    "se": 0.0836269089344217,
+    "t": 59.17957039441753,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.12020833333333332,
+    "se": 0.0033578693893224613,
+    "t": -35.79899019169073,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.0241545256661387,
+    "se": 0.0006719830859808792,
+    "t": 35.945139349572855,
+    "pos": 24,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.06680113325516383,
+    "se": 0.0013669452210930406,
+    "t": -48.86891751356951,
+    "pos": 0,
+    "n": 24
+   },
+   "words": {
+    "diff": 24.083333333333332,
+    "se": 0.9943985631603954,
+    "t": 24.218994501351382,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_content": {
+   "explore": {
+    "diff": -1.8227192958196003,
+    "se": 0.07499105489962736,
+    "t": -24.305822851261926,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.09833333333333333,
+    "se": 0.003897075578896675,
+    "t": -25.232595915210116,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.039995704727819735,
+    "se": 0.0006796298572854453,
+    "t": 58.849246099294746,
+    "pos": 24,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.009103144208590189,
+    "se": 0.0012723028809741204,
+    "t": 7.154856241165231,
+    "pos": 22,
+    "n": 24
+   },
+   "selffulfil": {
+    "diff": 0.01473598430554072,
+    "se": 0.00048153424881226586,
+    "t": 30.6021520626787,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_yoked_pred": {
+   "explore": {
+    "diff": -0.07121478186713322,
+    "se": 0.07616953110491541,
+    "t": -0.934951034017033,
+    "pos": 10,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.0010416666666666667,
+    "se": 0.002211202675136633,
+    "t": 0.4710860195582482,
+    "pos": 12,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.000890348261843125,
+    "se": 0.0006310289102692671,
+    "t": 1.4109468636915594,
+    "pos": 15,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.0007844194769859314,
+    "se": 0.0010824820188626743,
+    "t": -0.7246489672041788,
+    "pos": 12,
+    "n": 24
+   },
+   "selffulfil": {
+    "diff": 0.001153804361820221,
+    "se": 0.0005869066367271614,
+    "t": 1.9659078456742625,
+    "pos": 15,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_free": {
+   "explore": {
+    "diff": -3.0343478388256497,
+    "se": 0.07252846618929767,
+    "t": -41.83664701947605,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.009583333333333334,
+    "se": 0.0028854436442520568,
+    "t": 3.3212685863485145,
+    "pos": 16,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.005277442668254177,
+    "se": 0.0004798595004191953,
+    "t": 10.997891390383879,
+    "pos": 23,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_vel": {
+   "explore": {
+    "diff": -4.292220049434238,
+    "se": 0.08048077131691701,
+    "t": -53.33224295940633,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.022291666666666664,
+    "se": 0.0019959008414954203,
+    "t": 11.1687245193828,
+    "pos": 23,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.0191660263032342,
+    "se": 0.0005457788413848379,
+    "t": 35.11683643617088,
+    "pos": 24,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.06120287130276362,
+    "se": 0.000984297870484565,
+    "t": 62.17921742798626,
+    "pos": 24,
+    "n": 24
+   },
+   "selffulfil": {
+    "diff": 0.666077634319663,
+    "se": 0.000555523794097169,
+    "t": 1199.008289828818,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "content_vs_free": {
+   "explore": {
+    "diff": -1.2116285430060494,
+    "se": 0.07071397738297454,
+    "t": -17.134215721512607,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.10791666666666666,
+    "se": 0.0037580429046818976,
+    "t": 28.71618802760884,
+    "pos": 24,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.034718262059565554,
+    "se": 0.0005332106791905082,
+    "t": -65.11171552729017,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "vel_vs_free": {
+   "explore": {
+    "diff": 1.2578722106085884,
+    "se": 0.07206127569629708,
+    "t": 17.45559176484611,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.012708333333333334,
+    "se": 0.0018547619545948644,
+    "t": -6.851732806924657,
+    "pos": 2,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.013888583634980023,
+    "se": 0.0005635086066648565,
+    "t": -24.64662202265205,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "yoked_pred_vs_free": {
+   "explore": {
+    "diff": -2.9631330569585166,
+    "se": 0.0741570240619195,
+    "t": -39.95755081115937,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.008541666666666668,
+    "se": 0.0026661995741283375,
+    "t": 3.203686156712106,
+    "pos": 15,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.004387094406411052,
+    "se": 0.0005749024530756533,
+    "t": 7.631023981443578,
+    "pos": 23,
+    "n": 24
+   }
+  },
+  "yoked_err_vs_free": {
+   "explore": {
+    "diff": 3.5410776138305664,
+    "se": 0.09708131493564935,
+    "t": 36.47537753457275,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.012291666666666666,
+    "se": 0.0019499899355617891,
+    "t": -6.303451337109315,
+    "pos": 1,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.006760999017084639,
+    "se": 0.0005053307067392529,
+    "t": -13.379355196345246,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "shuf_err_vs_free": {
+   "explore": {
+    "diff": 2.51384867562188,
+    "se": 0.10792189874096048,
+    "t": 23.293221347557505,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.011250000000000001,
+    "se": 0.0019329803525846457,
+    "t": -5.82002811614577,
+    "pos": 1,
+    "n": 24
+   },
+   "skill": {
+    "diff": -8.976102496186893e-05,
+    "se": 0.0006601968907828589,
+    "t": -0.13596099317497642,
+    "pos": 11,
+    "n": 24
+   }
+  },
+  "rand_err_vs_free": {
+   "explore": {
+    "diff": 0.40250848399268274,
+    "se": 0.06001792753694214,
+    "t": 6.706470891467076,
+    "pos": 21,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.004791666666666666,
+    "se": 0.0025266544061115096,
+    "t": -1.8964471971617927,
+    "pos": 5,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.0010288902558386326,
+    "se": 0.0003077161580812979,
+    "t": 3.343634153806126,
+    "pos": 16,
+    "n": 24
+   }
+  },
+  "frozen_err_vs_free": {
+   "explore": {
+    "diff": 1.9050039450327556,
+    "se": 0.08965794522170274,
+    "t": 21.24746379500595,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.006875,
+    "se": 0.002228205637350117,
+    "t": -3.085442332950948,
+    "pos": 5,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.0687545904268821,
+    "se": 0.002469080889879159,
+    "t": -27.846228411839142,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "freeze_effect": {
+   "explore": {
+    "diff": -1.8741796016693117,
+    "se": 0.12414516688374912,
+    "t": -15.096677935310312,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.005624999999999999,
+    "se": 0.0017629566938378908,
+    "t": 3.190662606552509,
+    "pos": 14,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.05819085403345525,
+    "se": 0.002442184531801618,
+    "t": -23.82737801984497,
+    "pos": 0,
+    "n": 24
+   }
+  }
+ },
+ "privileged": {
+  "free": {
+   "own": 0.5304488716416107,
+   "other": 0.531044336966402,
+   "test": {
+    "diff": -0.0005954653247913962,
+    "se": 0.0032687002904597147,
+    "t": -0.18217189459962668,
+    "pos": 12,
+    "n": 24
+   }
+  },
+  "ring_err": {
+   "own": 0.42226455664091,
+   "other": 0.42735190409180474,
+   "test": {
+    "diff": -0.005087347450894686,
+    "se": 0.0021344946749124473,
+    "t": -2.38339664684493,
+    "pos": 9,
+    "n": 24
+   }
+  },
+  "ring_pred": {
+   "own": 0.5836099537216338,
+   "other": 0.5795506791659186,
+   "test": {
+    "diff": 0.00405927455571523,
+    "se": 0.004298911772038305,
+    "t": 0.9442563074027797,
+    "pos": 13,
+    "n": 24
+   }
+  },
+  "content": {
+   "own": 0.58674988931747,
+   "other": 0.5905676383769419,
+   "test": {
+    "diff": -0.003817749059472001,
+    "se": 0.004623838619556955,
+    "t": -0.825666588648764,
+    "pos": 12,
+    "n": 24
+   }
+  },
+  "vel": {
+   "own": 0.5417501066565132,
+   "other": 0.5431879622847006,
+   "test": {
+    "diff": -0.001437855628187358,
+    "se": 0.0049521393548730384,
+    "t": -0.2903503971010972,
+    "pos": 13,
+    "n": 24
+   }
+  },
+  "yoked_err": {
+   "own": 0.4180755832297301,
+   "other": 0.4183812885267458,
+   "test": {
+    "diff": -0.0003057052970157533,
+    "se": 0.004523232997190352,
+    "t": -0.06758557368272758,
+    "pos": 11,
+    "n": 24
+   }
+  }
+ },
+ "examples": {
+  "free": {
+   "words": [
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "ordinarily",
+      "calcium",
+      "quo"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "Taiwanese",
+      "roundup"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Olsen",
+      "construed",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "coli",
+      "Invalidate",
+      "Claude"
+     ],
+     [
+      "Invalidate",
+      "elasticity",
+      "Olsen",
+      "donna",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "fatally",
+      "Lesbian",
+      "Aviv"
+     ],
+     [
+      "Olsen",
+      "Claude",
+      "Taiwanese",
+      "youngsters",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "construed",
+      "Olsen",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Claude",
+      "youngsters",
+      "Invalidate"
+     ],
+     [
+      "Invalidate",
+      "Olsen",
+      "donna",
+      "elasticity",
+      "youngsters"
+     ]
+    ],
+    [
+     [
+      "Enemies",
+      "Aviv",
+      "Hanna",
+      "pundits",
+      "fatally"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "Taiwanese",
+      "youngsters",
+      "Aura"
+     ],
+     [
+      "Urdu",
+      "Olsen",
+      "youngsters",
+      "donna",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "youngsters",
+      "Claude",
+      "Invalidate"
+     ],
+     [
+      "Invalidate",
+      "Olsen",
+      "donna",
+      "elasticity",
+      "youngsters"
+     ]
+    ],
+    [
+     [
+      "Lesbian",
+      "Aviv",
+      "pundits",
+      "ordinarily",
+      "quo"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "Taiwanese",
+      "youngsters",
+      "andre"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Olsen",
+      "Invalidate",
+      "construed"
+     ],
+     [
+      "Olsen",
+      "Invalidate",
+      "construed",
+      "Claude",
+      "youngsters"
+     ],
+     [
+      "Olsen",
+      "donna",
+      "Invalidate",
+      "construed",
+      "youngsters"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"
+   ]
+  },
+  "content": {
+   "words": [
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "ordinarily",
+      "calcium",
+      "quo"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "ineligible",
+      "allotted"
+     ],
+     [
+      "Urdu",
+      "construed",
+      "Olsen",
+      "Invalidate",
+      "youngsters"
+     ],
+     [
+      "Olsen",
+      "Invalidate",
+      "construed",
+      "youngsters",
+      "Claude"
+     ],
+     [
+      "Invalidate",
+      "insurers",
+      "Olsen",
+      "elasticity",
+      "congressman"
+     ]
+    ],
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "fatally",
+      "Lesbian",
+      "Aviv"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "allotted",
+      "Taiwanese"
+     ],
+     [
+      "Urdu",
+      "construed",
+      "youngsters",
+      "Olsen",
+      "Invalidate"
+     ],
+     [
+      "construed",
+      "Olsen",
+      "Invalidate",
+      "youngsters",
+      "Claude"
+     ],
+     [
+      "Olsen",
+      "elasticity",
+      "insurers",
+      "construed",
+      "donna"
+     ]
+    ],
+    [
+     [
+      "Enemies",
+      "Aviv",
+      "Hanna",
+      "pundits",
+      "fatally"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "Taiwanese",
+      "Urdu"
+     ],
+     [
+      "Urdu",
+      "Olsen",
+      "youngsters",
+      "construed",
+      "Invalidate"
+     ],
+     [
+      "Invalidate",
+      "construed",
+      "Olsen",
+      "youngsters",
+      "Claude"
+     ],
+     [
+      "Olsen",
+      "congressman",
+      "elasticity",
+      "insurers",
+      "Invalidate"
+     ]
+    ],
+    [
+     [
+      "Lesbian",
+      "Aviv",
+      "pundits",
+      "ordinarily",
+      "quo"
+     ],
+     [
+      "Taiwanese",
+      "Olsen",
+      "Claude",
+      "allotted",
+      "youngsters"
+     ],
+     [
+      "Urdu",
+      "construed",
+      "Olsen",
+      "Invalidate",
+      "youngsters"
+     ],
+     [
+      "construed",
+      "Invalidate",
+      "youngsters",
+      "Olsen",
+      "Claude"
+     ],
+     [
+      "Olsen",
+      "donna",
+      "Invalidate",
+      "Sabha",
+      "congressman"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the idea of letting my mind wander, not focusing on any particular task or problem, just allowing thoughts to flow freely without",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"
+   ]
+  },
+  "vel": {
+   "words": [
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "ordinarily",
+      "calcium",
+      "quo"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "ineligible",
+      "youngsters",
+      "roundup"
+     ],
+     [
+      "Urdu",
+      "donna",
+      "coli",
+      "congressman",
+      "Invalidate"
+     ],
+     [
+      "construed",
+      "Olsen",
+      "Invalidate",
+      "Claude",
+      "coli"
+     ],
+     [
+      "Invalidate",
+      "Olsen",
+      "insurers",
+      "elasticity",
+      "donna"
+     ]
+    ],
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "fatally",
+      "Lesbian",
+      "Aviv"
+     ],
+     [
+      "Taiwanese",
+      "ineligible",
+      "Claude",
+      "Olsen",
+      "roundup"
+     ],
+     [
+      "Urdu",
+      "donna",
+      "construed",
+      "youngsters",
+      "Olsen"
+     ],
+     [
+      "coli",
+      "Irvine",
+      "Olsen",
+      "construed",
+      "Sabha"
+     ],
+     [
+      "Olsen",
+      "donna",
+      "Claude",
+      "Invalidate",
+      "insurers"
+     ]
+    ],
+    [
+     [
+      "Enemies",
+      "Aviv",
+      "Hanna",
+      "pundits",
+      "fatally"
+     ],
+     [
+      "Taiwanese",
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "donna",
+      "youngsters",
+      "Olsen",
+      "construed"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Invalidate",
+      "Claude",
+      "Karnataka"
+     ],
+     [
+      "insurers",
+      "Invalidate",
+      "Olsen",
+      "elasticity",
+      "donna"
+     ]
+    ],
+    [
+     [
+      "Lesbian",
+      "Aviv",
+      "pundits",
+      "ordinarily",
+      "quo"
+     ],
+     [
+      "Taiwanese",
+      "Claude",
+      "Olsen",
+      "roundup",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Weston",
+      "donna",
+      "Claude"
+     ],
+     [
+      "Irvine",
+      "Olsen",
+      "coli",
+      "construed",
+      "ailments"
+     ],
+     [
+      "insurers",
+      "Invalidate",
+      "Olsen",
+      "elasticity",
+      "Apparel"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"
+   ]
+  },
+  "ring_pred": {
+   "words": [
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "ordinarily",
+      "calcium",
+      "quo"
+     ],
+     [
+      "Taiwanese",
+      "Olsen",
+      "Claude",
+      "youngsters",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "Olsen",
+      "youngsters",
+      "construed",
+      "donna"
+     ],
+     [
+      "construed",
+      "Olsen",
+      "Invalidate",
+      "youngsters",
+      "Claude"
+     ],
+     [
+      "Invalidate",
+      "Olsen",
+      "elasticity",
+      "insurers",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "fatally",
+      "Lesbian",
+      "Aviv"
+     ],
+     [
+      "Taiwanese",
+      "Olsen",
+      "Claude",
+      "youngsters",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "donna",
+      "Olsen",
+      "Claude",
+      "Weston"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Invalidate",
+      "youngsters",
+      "coli"
+     ],
+     [
+      "Olsen",
+      "elasticity",
+      "insurers",
+      "construed",
+      "donna"
+     ]
+    ],
+    [
+     [
+      "Enemies",
+      "Aviv",
+      "Hanna",
+      "pundits",
+      "fatally"
+     ],
+     [
+      "Olsen",
+      "Claude",
+      "Taiwanese",
+      "youngsters",
+      "allotted"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Olsen",
+      "Invalidate",
+      "construed"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "youngsters",
+      "Invalidate",
+      "Claude"
+     ],
+     [
+      "Olsen",
+      "Invalidate",
+      "donna",
+      "elasticity",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "Lesbian",
+      "Aviv",
+      "pundits",
+      "ordinarily",
+      "quo"
+     ],
+     [
+      "Olsen",
+      "Taiwanese",
+      "Claude",
+      "youngsters",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "construed",
+      "youngsters",
+      "Olsen",
+      "donna"
+     ],
+     [
+      "construed",
+      "Invalidate",
+      "Olsen",
+      "youngsters",
+      "Claude"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Invalidate",
+      "donna",
+      "insurers"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"
+   ]
+  },
+  "yoked_pred": {
+   "words": [
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "ordinarily",
+      "calcium",
+      "quo"
+     ],
+     [
+      "Taiwanese",
+      "Olsen",
+      "Claude",
+      "youngsters",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Olsen",
+      "construed",
+      "donna"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Invalidate",
+      "youngsters",
+      "Claude"
+     ],
+     [
+      "Olsen",
+      "elasticity",
+      "Invalidate",
+      "insurers",
+      "congressman"
+     ]
+    ],
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "fatally",
+      "Lesbian",
+      "Aviv"
+     ],
+     [
+      "Olsen",
+      "Taiwanese",
+      "Claude",
+      "youngsters",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "construed",
+      "youngsters",
+      "donna",
+      "Olsen"
+     ],
+     [
+      "Olsen",
+      "youngsters",
+      "construed",
+      "Invalidate",
+      "Claude"
+     ],
+     [
+      "Invalidate",
+      "Olsen",
+      "construed",
+      "elasticity",
+      "donna"
+     ]
+    ],
+    [
+     [
+      "Enemies",
+      "Aviv",
+      "Hanna",
+      "pundits",
+      "fatally"
+     ],
+     [
+      "Olsen",
+      "Taiwanese",
+      "Claude",
+      "youngsters",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "Olsen",
+      "construed",
+      "youngsters",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Claude",
+      "Invalidate",
+      "youngsters"
+     ],
+     [
+      "Olsen",
+      "Invalidate",
+      "donna",
+      "elasticity",
+      "insurers"
+     ]
+    ],
+    [
+     [
+      "Lesbian",
+      "Aviv",
+      "pundits",
+      "ordinarily",
+      "quo"
+     ],
+     [
+      "Taiwanese",
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "donna",
+      "Olsen",
+      "Weston",
+      "Claude"
+     ],
+     [
+      "construed",
+      "Olsen",
+      "Invalidate",
+      "youngsters",
+      "ailments"
+     ],
+     [
+      "Olsen",
+      "donna",
+      "Invalidate",
+      "construed",
+      "Sabha"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"
+   ]
+  },
+  "ring_err": {
+   "words": [
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "ordinarily",
+      "calcium",
+      "quo"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "roundup",
+      "Taiwanese",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Olsen",
+      "donna",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Claude",
+      "Invalidate",
+      "youngsters"
+     ],
+     [
+      "Invalidate",
+      "Olsen",
+      "donna",
+      "elasticity",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "fatally",
+      "Lesbian",
+      "Aviv"
+     ],
+     [
+      "Claude",
+      "gravy",
+      "ineligible",
+      "Olsen",
+      "andre"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Olsen",
+      "construed",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Apparel",
+      "Claude",
+      "Invalidate"
+     ],
+     [
+      "Invalidate",
+      "donna",
+      "Olsen",
+      "elasticity",
+      "insurers"
+     ]
+    ],
+    [
+     [
+      "Enemies",
+      "Aviv",
+      "Hanna",
+      "pundits",
+      "fatally"
+     ],
+     [
+      "Claude",
+      "youngsters",
+      "roundup",
+      "Olsen",
+      "Aura"
+     ],
+     [
+      "youngsters",
+      "donna",
+      "construed",
+      "Olsen",
+      "Urdu"
+     ],
+     [
+      "Olsen",
+      "youngsters",
+      "construed",
+      "donna",
+      "Claude"
+     ],
+     [
+      "Invalidate",
+      "donna",
+      "elasticity",
+      "Olsen",
+      "youngsters"
+     ]
+    ],
+    [
+     [
+      "Lesbian",
+      "Aviv",
+      "pundits",
+      "ordinarily",
+      "quo"
+     ],
+     [
+      "Claude",
+      "youngsters",
+      "roundup",
+      "Olsen",
+      "Urdu"
+     ],
+     [
+      "Urdu",
+      "donna",
+      "construed",
+      "Olsen",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "Claude",
+      "youngsters",
+      "Invalidate",
+      "construed"
+     ],
+     [
+      "Invalidate",
+      "Olsen",
+      "donna",
+      "Sabha",
+      "construed"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the concept of time and how it's something we all experience, yet it's so abstract and hard to grasp in any",
+    " the idea of letting my mind wander, not focusing on any particular task or problem, just allowing thoughts to flow freely without",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's something we all experience, yet we can't control it, and it's always"
+   ]
+  },
+  "yoked_err": {
+   "words": [
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "ordinarily",
+      "calcium",
+      "quo"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "roundup",
+      "youngsters",
+      "ineligible"
+     ],
+     [
+      "Urdu",
+      "donna",
+      "Claude",
+      "Olsen",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "Claude",
+      "construed",
+      "Invalidate",
+      "donna"
+     ],
+     [
+      "Invalidate",
+      "insurers",
+      "Olsen",
+      "elasticity",
+      "Apparel"
+     ]
+    ],
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "fatally",
+      "Lesbian",
+      "Aviv"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "gravy",
+      "Aura",
+      "Taiwanese"
+     ],
+     [
+      "Urdu",
+      "donna",
+      "construed",
+      "Olsen",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "Claude",
+      "construed",
+      "youngsters",
+      "coli"
+     ],
+     [
+      "Invalidate",
+      "donna",
+      "Olsen",
+      "elasticity",
+      "youngsters"
+     ]
+    ],
+    [
+     [
+      "Enemies",
+      "Aviv",
+      "Hanna",
+      "pundits",
+      "fatally"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "roundup",
+      "Taiwanese"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Olsen",
+      "donna",
+      "construed"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "Invalidate",
+      "youngsters",
+      "construed"
+     ],
+     [
+      "Invalidate",
+      "Olsen",
+      "elasticity",
+      "donna",
+      "insurers"
+     ]
+    ],
+    [
+     [
+      "Lesbian",
+      "Aviv",
+      "pundits",
+      "ordinarily",
+      "quo"
+     ],
+     [
+      "Taiwanese",
+      "roundup",
+      "Claude",
+      "Olsen",
+      "gravy"
+     ],
+     [
+      "Urdu",
+      "Invalidate",
+      "youngsters",
+      "Olsen",
+      "donna"
+     ],
+     [
+      "Olsen",
+      "Claude",
+      "construed",
+      "youngsters",
+      "donna"
+     ],
+     [
+      "Invalidate",
+      "donna",
+      "Olsen",
+      "construed",
+      "elasticity"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the idea of letting my mind wander, not focusing on any particular task or problem, just allowing thoughts to flow freely without",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"
+   ]
+  },
+  "shuf_err": {
+   "words": [
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "ordinarily",
+      "calcium",
+      "quo"
+     ],
+     [
+      "Claude",
+      "youngsters",
+      "Olsen",
+      "roundup",
+      "andre"
+     ],
+     [
+      "Urdu",
+      "Invalidate",
+      "Olsen",
+      "construed",
+      "Claude"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Claude",
+      "coli",
+      "ballots"
+     ],
+     [
+      "Olsen",
+      "elasticity",
+      "Invalidate",
+      "perpetrated",
+      "donna"
+     ]
+    ],
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "fatally",
+      "Lesbian",
+      "Aviv"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "Invalidate",
+      "andre"
+     ],
+     [
+      "Urdu",
+      "Invalidate",
+      "youngsters",
+      "Olsen",
+      "Claude"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Invalidate",
+      "youngsters",
+      "Claude"
+     ],
+     [
+      "Invalidate",
+      "donna",
+      "elasticity",
+      "Olsen",
+      "andre"
+     ]
+    ],
+    [
+     [
+      "Enemies",
+      "Aviv",
+      "Hanna",
+      "pundits",
+      "fatally"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "roundup",
+      "Taiwanese"
+     ],
+     [
+      "Olsen",
+      "Invalidate",
+      "Urdu",
+      "construed",
+      "donna"
+     ],
+     [
+      "construed",
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "Invalidate"
+     ],
+     [
+      "elasticity",
+      "Invalidate",
+      "donna",
+      "Olsen",
+      "insurers"
+     ]
+    ],
+    [
+     [
+      "Lesbian",
+      "Aviv",
+      "pundits",
+      "ordinarily",
+      "quo"
+     ],
+     [
+      "Claude",
+      "Taiwanese",
+      "youngsters",
+      "Olsen",
+      "roundup"
+     ],
+     [
+      "Invalidate",
+      "Olsen",
+      "donna",
+      "Urdu",
+      "youngsters"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "construed",
+      "youngsters",
+      "Invalidate"
+     ],
+     [
+      "Invalidate",
+      "elasticity",
+      "Olsen",
+      "donna",
+      "construed"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the idea of letting my mind wander, not focusing on any particular task or problem, just allowing thoughts to flow freely without",
+    " the idea of letting my mind wander, not focusing on any particular task or problem, just allowing thoughts to flow freely without",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"
+   ]
+  },
+  "rand_err": {
+   "words": [
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "ordinarily",
+      "calcium",
+      "quo"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "Taiwanese",
+      "youngsters",
+      "roundup"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "construed",
+      "Olsen",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Claude",
+      "youngsters",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "donna",
+      "Invalidate",
+      "elasticity",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "fatally",
+      "Lesbian",
+      "Aviv"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "youngsters",
+      "Urdu",
+      "andre"
+     ],
+     [
+      "Urdu",
+      "Olsen",
+      "construed",
+      "donna",
+      "youngsters"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Claude",
+      "youngsters",
+      "coli"
+     ],
+     [
+      "Invalidate",
+      "elasticity",
+      "donna",
+      "Olsen",
+      "congressman"
+     ]
+    ],
+    [
+     [
+      "Enemies",
+      "Aviv",
+      "Hanna",
+      "pundits",
+      "fatally"
+     ],
+     [
+      "Claude",
+      "Taiwanese",
+      "Olsen",
+      "youngsters",
+      "jpeg"
+     ],
+     [
+      "Urdu",
+      "Olsen",
+      "youngsters",
+      "construed",
+      "donna"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Claude",
+      "Invalidate",
+      "youngsters"
+     ],
+     [
+      "Invalidate",
+      "Olsen",
+      "donna",
+      "elasticity",
+      "youngsters"
+     ]
+    ],
+    [
+     [
+      "Lesbian",
+      "Aviv",
+      "pundits",
+      "ordinarily",
+      "quo"
+     ],
+     [
+      "Olsen",
+      "Claude",
+      "Taiwanese",
+      "youngsters",
+      "jpeg"
+     ],
+     [
+      "Urdu",
+      "Olsen",
+      "youngsters",
+      "Invalidate",
+      "donna"
+     ],
+     [
+      "construed",
+      "youngsters",
+      "Olsen",
+      "donna",
+      "Claude"
+     ],
+     [
+      "Olsen",
+      "donna",
+      "Invalidate",
+      "construed",
+      "elasticity"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's something we all experience, yet it's so abstract and hard to grasp in any",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"
+   ]
+  },
+  "frozen_err": {
+   "words": [
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "ordinarily",
+      "calcium",
+      "quo"
+     ],
+     [
+      "Claude",
+      "Taiwanese",
+      "Olsen",
+      "gravy",
+      "jpeg"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Invalidate",
+      "donna",
+      "Olsen"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Claude",
+      "youngsters",
+      "Invalidate"
+     ],
+     [
+      "Invalidate",
+      "elasticity",
+      "perpetrated",
+      "youngsters",
+      "donna"
+     ]
+    ],
+    [
+     [
+      "pundits",
+      "Azerbaijan",
+      "fatally",
+      "Lesbian",
+      "Aviv"
+     ],
+     [
+      "Claude",
+      "Olsen",
+      "andre",
+      "ineligible",
+      "roundup"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Olsen",
+      "Invalidate",
+      "gst"
+     ],
+     [
+      "construed",
+      "Claude",
+      "coli",
+      "Olsen",
+      "ballots"
+     ],
+     [
+      "Invalidate",
+      "elasticity",
+      "insurers",
+      "youngsters",
+      "donna"
+     ]
+    ],
+    [
+     [
+      "Enemies",
+      "Aviv",
+      "Hanna",
+      "pundits",
+      "fatally"
+     ],
+     [
+      "Claude",
+      "youngsters",
+      "Olsen",
+      "andre",
+      "Urdu"
+     ],
+     [
+      "Urdu",
+      "youngsters",
+      "Olsen",
+      "donna",
+      "Invalidate"
+     ],
+     [
+      "Olsen",
+      "Claude",
+      "youngsters",
+      "construed",
+      "Invalidate"
+     ],
+     [
+      "Invalidate",
+      "elasticity",
+      "Olsen",
+      "donna",
+      "insurers"
+     ]
+    ],
+    [
+     [
+      "Lesbian",
+      "Aviv",
+      "pundits",
+      "ordinarily",
+      "quo"
+     ],
+     [
+      "Claude",
+      "youngsters",
+      "Olsen",
+      "Taiwanese",
+      "roundup"
+     ],
+     [
+      "Urdu",
+      "donna",
+      "Olsen",
+      "Invalidate",
+      "youngsters"
+     ],
+     [
+      "Olsen",
+      "construed",
+      "Claude",
+      "youngsters",
+      "donna"
+     ],
+     [
+      "Invalidate",
+      "Sabha",
+      "Olsen",
+      "donna",
+      "youngsters"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not",
+    " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"
+   ]
+  }
+ },
+ "timecourse": {
+  "free": {
+   "skill": [
+    -0.019204426556825638,
+    0.010095730423927307,
+    0.016160795465111732,
+    0.03678727522492409,
+    0.054666709154844284,
+    0.026989931240677834,
+    0.01712101884186268,
+    0.02960580587387085,
+    0.03986120969057083,
+    0.06618735939264297,
+    -0.0060784644447267056,
+    0.03922557830810547,
+    0.025241384282708168,
+    0.024029022082686424,
+    0.019737517461180687,
+    0.009045766666531563,
+    0.036044180393218994,
+    0.03255758807063103,
+    0.03780979663133621,
+    0.0760490819811821,
+    1.1888692824868485e-05,
+    0.028338687494397163,
+    0.043826814740896225
+   ],
+   "lag1": [
+    0.7141962051391602,
+    0.7736093401908875,
+    0.7821783423423767,
+    0.7811301946640015,
+    0.7769631147384644,
+    0.7970579266548157,
+    0.8384903073310852,
+    0.8545218706130981,
+    0.8107307553291321,
+    0.7424699664115906,
+    0.8676570653915405,
+    0.8426874279975891,
+    0.8823642730712891,
+    0.9023080468177795,
+    0.9019067287445068,
+    0.8994712233543396,
+    0.8526808619499207,
+    0.8857338428497314,
+    0.8338069915771484,
+    0.7888233661651611,
+    0.89426189661026,
+    0.8669144511222839,
+    0.8617543578147888
+   ],
+   "window": 25
+  },
+  "content": {
+   "skill": [
+    -0.014741616323590279,
+    0.002469104016199708,
+    -0.0007726853364147246,
+    0.008523321710526943,
+    0.021755538880825043,
+    0.003080264199525118,
+    -0.004853193182498217,
+    0.008120829239487648,
+    0.006345534231513739,
+    0.043639250099658966,
+    -0.03771577402949333,
+    0.011647993698716164,
+    -0.006940983235836029,
+    -0.0028296494856476784,
+    -0.007816524244844913,
+    -0.024762213230133057,
+    0.006278874818235636,
+    0.007118867244571447,
+    0.0036649019457399845,
+    0.03929377719759941,
+    -0.035450585186481476,
+    -0.007427177391946316,
+    0.00608593225479126
+   ],
+   "lag1": [
+    0.8234975934028625,
+    0.8624434471130371,
+    0.8674457669258118,
+    0.8614516258239746,
+    0.8523996472358704,
+    0.8535657525062561,
+    0.889604926109314,
+    0.8980829119682312,
+    0.8692830204963684,
+    0.7861324548721313,
+    0.9173111915588379,
+    0.8927600383758545,
+    0.9258231520652771,
+    0.9426518678665161,
+    0.9437806010246277,
+    0.9414209127426147,
+    0.8912981152534485,
+    0.9250608086585999,
+    0.8810394406318665,
+    0.8368549346923828,
+    0.9418070316314697,
+    0.9091414213180542,
+    0.9009989500045776
+   ],
+   "window": 25
+  },
+  "vel": {
+   "skill": [
+    -0.00851563923060894,
+    0.017243219539523125,
+    0.019986743107438087,
+    0.03562895953655243,
+    0.04499826952815056,
+    0.010373648256063461,
+    0.006232802756130695,
+    0.019689584150910378,
+    0.024726904928684235,
+    0.059670574963092804,
+    -0.014529258012771606,
+    0.023984014987945557,
+    0.015570512041449547,
+    0.016837283968925476,
+    0.00816632155328989,
+    0.0012741965474560857,
+    0.02140955999493599,
+    0.015586135908961296,
+    0.023679625242948532,
+    0.053875960409641266,
+    -0.013574447482824326,
+    0.016167523339390755,
+    0.03215567395091057
+   ],
+   "lag1": [
+    0.7362342476844788,
+    0.7776336669921875,
+    0.7839229702949524,
+    0.7835083603858948,
+    0.7846816182136536,
+    0.7996675968170166,
+    0.8355923891067505,
+    0.8461676836013794,
+    0.8096210956573486,
+    0.7439683079719543,
+    0.862444281578064,
+    0.8405916094779968,
+    0.8756358027458191,
+    0.8933033347129822,
+    0.8964455127716064,
+    0.8910953998565674,
+    0.8529089689254761,
+    0.8789940476417542,
+    0.8369602560997009,
+    0.7936704754829407,
+    0.8956180810928345,
+    0.865755021572113,
+    0.8595334887504578
+   ],
+   "window": 25
+  },
+  "ring_pred": {
+   "skill": [
+    -0.007723851129412651,
+    0.01609811745584011,
+    0.022324740886688232,
+    0.036883894354104996,
+    0.06262950599193573,
+    0.038422420620918274,
+    0.024660659953951836,
+    0.028108417987823486,
+    0.04026325047016144,
+    0.08145230263471603,
+    0.010371377691626549,
+    0.04704160615801811,
+    0.03284516558051109,
+    0.0277030561119318,
+    0.02642299421131611,
+    0.021331626921892166,
+    0.03895524889230728,
+    0.038155436515808105,
+    0.04107900336384773,
+    0.07649514079093933,
+    0.009663775563240051,
+    0.03235746547579765,
+    0.04941956698894501
+   ],
+   "lag1": [
+    0.8098459243774414,
+    0.8483629822731018,
+    0.845903754234314,
+    0.8342182636260986,
+    0.816014289855957,
+    0.8341540694236755,
+    0.8675881028175354,
+    0.8864741921424866,
+    0.847964346408844,
+    0.7687008380889893,
+    0.8889990448951721,
+    0.8691131472587585,
+    0.9052233099937439,
+    0.9240052103996277,
+    0.9207376837730408,
+    0.9137160181999207,
+    0.8720123171806335,
+    0.9020290374755859,
+    0.8573355078697205,
+    0.810754656791687,
+    0.9185928106307983,
+    0.8848463892936707,
+    0.8833602070808411
+   ],
+   "window": 25
+  },
+  "yoked_pred": {
+   "skill": [
+    -0.009452948346734047,
+    0.014322204515337944,
+    0.02269241400063038,
+    0.035951171070337296,
+    0.06026579439640045,
+    0.036844611167907715,
+    0.023245669901371002,
+    0.02674904465675354,
+    0.0406649075448513,
+    0.07963676750659943,
+    0.008826873265206814,
+    0.04560787230730057,
+    0.03075176291167736,
+    0.027381092309951782,
+    0.023453734815120697,
+    0.01917855255305767,
+    0.037475720047950745,
+    0.037762466818094254,
+    0.040064118802547455,
+    0.07593923062086105,
+    0.010131009854376316,
+    0.031732309609651566,
+    0.045761775225400925
+   ],
+   "lag1": [
+    0.7985543012619019,
+    0.841445803642273,
+    0.8401536345481873,
+    0.8280909061431885,
+    0.8122082352638245,
+    0.8327873945236206,
+    0.8656253218650818,
+    0.8855933547019958,
+    0.8456714749336243,
+    0.7660664319992065,
+    0.886525571346283,
+    0.8665887713432312,
+    0.9050629734992981,
+    0.9217958450317383,
+    0.9206666946411133,
+    0.9129054546356201,
+    0.8708688616752625,
+    0.9000873565673828,
+    0.855792224407196,
+    0.8097463846206665,
+    0.9162082672119141,
+    0.8823409080505371,
+    0.8829386234283447
+   ],
+   "window": 25
+  },
+  "ring_err": {
+   "skill": [
+    -0.01977127231657505,
+    -0.000875003810506314,
+    -0.014504547230899334,
+    -0.0035709564108401537,
+    0.01419820450246334,
+    -0.01196354627609253,
+    -0.01378005649894476,
+    -0.006541039794683456,
+    0.014931567944586277,
+    0.04624892771244049,
+    -0.046727504581213,
+    0.02102162130177021,
+    0.005315386224538088,
+    0.003075624583289027,
+    0.00480519887059927,
+    -0.006513407453894615,
+    0.016297822818160057,
+    0.01763681322336197,
+    0.02701059728860855,
+    0.07007194310426712,
+    -0.012917885556817055,
+    0.022129341959953308,
+    0.034313082695007324
+   ],
+   "lag1": [
+    0.7221375703811646,
+    0.7542268633842468,
+    0.7641880512237549,
+    0.7640137672424316,
+    0.7555295825004578,
+    0.7746763229370117,
+    0.8058099150657654,
+    0.8212382793426514,
+    0.7743281722068787,
+    0.7077003121376038,
+    0.8417666554450989,
+    0.8083138465881348,
+    0.8504018187522888,
+    0.8722169995307922,
+    0.8716554641723633,
+    0.8700490593910217,
+    0.8268222212791443,
+    0.8527772426605225,
+    0.807854413986206,
+    0.7516670823097229,
+    0.8706418871879578,
+    0.8409869074821472,
+    0.8386104106903076
+   ],
+   "window": 25
+  },
+  "yoked_err": {
+   "skill": [
+    -0.021033668890595436,
+    -0.0008995023090392351,
+    -0.006217737216502428,
+    0.012863373383879662,
+    0.027056775987148285,
+    3.94081071135588e-05,
+    -0.005483820103108883,
+    0.007593345828354359,
+    0.02487102895975113,
+    0.052893683314323425,
+    -0.03222235292196274,
+    0.0264352485537529,
+    0.013631600886583328,
+    0.008941467851400375,
+    0.01108403317630291,
+    -0.000745359982829541,
+    0.020545002073049545,
+    0.022898295894265175,
+    0.03169410675764084,
+    0.06974296271800995,
+    -0.00805030856281519,
+    0.024877062067389488,
+    0.03796276077628136
+   ],
+   "lag1": [
+    0.702782928943634,
+    0.7399270534515381,
+    0.7499058246612549,
+    0.7509507536888123,
+    0.7464738488197327,
+    0.7686777114868164,
+    0.8020085692405701,
+    0.8153507709503174,
+    0.7699220776557922,
+    0.7067719101905823,
+    0.8427984714508057,
+    0.808053195476532,
+    0.8515928387641907,
+    0.8727231025695801,
+    0.8714444041252136,
+    0.8712742328643799,
+    0.8258708715438843,
+    0.8536043167114258,
+    0.8062763214111328,
+    0.7544547915458679,
+    0.8728931546211243,
+    0.8414551019668579,
+    0.8374967575073242
+   ],
+   "window": 25
+  },
+  "shuf_err": {
+   "skill": [
+    -0.009572595357894897,
+    0.01676008477807045,
+    0.012756632640957832,
+    0.025854570791125298,
+    0.04642359912395477,
+    0.021328061819076538,
+    0.015080247074365616,
+    0.022787412628531456,
+    0.034212980419397354,
+    0.06572315096855164,
+    -0.014309669844806194,
+    0.03403632342815399,
+    0.02612748183310032,
+    0.02193332277238369,
+    0.017176887020468712,
+    0.00861128605902195,
+    0.03543147072196007,
+    0.031246338039636612,
+    0.033630162477493286,
+    0.07601901143789291,
+    0.0006392846698872745,
+    0.02952907606959343,
+    0.0416405163705349
+   ],
+   "lag1": [
+    0.7432802319526672,
+    0.7381719946861267,
+    0.7487713694572449,
+    0.7583106756210327,
+    0.7494018077850342,
+    0.7651383280754089,
+    0.8077959418296814,
+    0.8229266405105591,
+    0.7795047760009766,
+    0.7114977240562439,
+    0.8370561003684998,
+    0.8151832222938538,
+    0.853527843952179,
+    0.8706216216087341,
+    0.8756372332572937,
+    0.8756256103515625,
+    0.8207246661186218,
+    0.8532137274742126,
+    0.810580849647522,
+    0.7575132250785828,
+    0.8699539303779602,
+    0.8385943174362183,
+    0.8384328484535217
+   ],
+   "window": 25
+  },
+  "rand_err": {
+   "skill": [
+    -0.01992191933095455,
+    0.0107389772310853,
+    0.016837934032082558,
+    0.03750159963965416,
+    0.054990191012620926,
+    0.02772350236773491,
+    0.014640029519796371,
+    0.02753915823996067,
+    0.038884442299604416,
+    0.06563977152109146,
+    -0.008405350148677826,
+    0.04002897068858147,
+    0.02554306946694851,
+    0.02484520711004734,
+    0.01980091817677021,
+    0.010501910001039505,
+    0.03527625650167465,
+    0.034331176429986954,
+    0.038577936589717865,
+    0.07701560109853745,
+    0.000570224947296083,
+    0.02984391152858734,
+    0.04457608237862587
+   ],
+   "lag1": [
+    0.7050262093544006,
+    0.7659798860549927,
+    0.7777366042137146,
+    0.7774508595466614,
+    0.7732139229774475,
+    0.7943846583366394,
+    0.8368315696716309,
+    0.8501116633415222,
+    0.8059148192405701,
+    0.7382166385650635,
+    0.8618834614753723,
+    0.8386302590370178,
+    0.8807794451713562,
+    0.89886474609375,
+    0.9000095725059509,
+    0.8949147462844849,
+    0.8510490655899048,
+    0.8812886476516724,
+    0.8329437375068665,
+    0.7861290574073792,
+    0.8929384350776672,
+    0.8645084500312805,
+    0.8593800663948059
+   ],
+   "window": 25
+  },
+  "frozen_err": {
+   "skill": [
+    -0.01828516088426113,
+    -0.004839341621845961,
+    -0.013588746078312397,
+    0.0005407753051258624,
+    0.014319448731839657,
+    -0.011944125406444073,
+    -0.009632616303861141,
+    -0.002059850376099348,
+    0.012553856708109379,
+    0.04816091060638428,
+    -0.037920836359262466,
+    0.02349306084215641,
+    0.0009457519627176225,
+    -0.019144663587212563,
+    -0.018272828310728073,
+    -0.048736851662397385,
+    -0.008734493516385555,
+    -0.03058585710823536,
+    -0.01933840475976467,
+    0.013072238303720951,
+    -0.06775368750095367,
+    -0.054097626358270645,
+    -0.05117018520832062
+   ],
+   "lag1": [
+    0.7214710116386414,
+    0.7551721930503845,
+    0.7635995745658875,
+    0.7631813883781433,
+    0.7556772828102112,
+    0.775536298751831,
+    0.8058639764785767,
+    0.8215404152870178,
+    0.7738186120986938,
+    0.7086071372032166,
+    0.8416444659233093,
+    0.8091810345649719,
+    0.8523280024528503,
+    0.8751357793807983,
+    0.876763105392456,
+    0.8794832229614258,
+    0.8278300166130066,
+    0.8622455596923828,
+    0.8167930841445923,
+    0.7635988593101501,
+    0.8851436376571655,
+    0.8557025194168091,
+    0.8505254983901978
+   ],
+   "window": 25
+  }
+ }
+}

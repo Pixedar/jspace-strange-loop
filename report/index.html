@@ -155,6 +155,11 @@ ol.plain, ul.plain { padding-left: 20px } ol.plain li, ul.plain li { margin-bott
   <h1>Strange Loop in J-space</h1>
   <p class="lede">A language model left to wander with no memory of its own words, only a latent state. Every ten thoughts it is asked what its mind has been doing, it answers from that state alone, and the answer is fed back into everything it thinks next. The question was whether something like a persistent self would form inside that loop.</p>
   <div class="meta"><span>Part 1: Qwen3-4B-Base · 180 minds · 72,000 thoughts</span><span>Part 2: Qwen3 1.7B–32B · 720 minds · 216,000 thoughts</span><span>RTX 4090 and A100 on Vast.ai</span></div>
+  <div class="callout" style="border-color:var(--ink2)">
+    <p class="eyebrow" style="margin:0 0 6px">Correction · 10 October 2026</p>
+    <p>This report overstated its results. The loop ran through sampled words: each thought was written as text, decoded into a J-space summary, and the summary was fed back as a nudge. The effects below that look like a self (a stable self-symbol, an attractor, persistence after a clamp) are what positive feedback does to any description that is fed back, the mind's own or a foreign one. It is the same mechanism that makes free generation repeat itself. "It can read its own trajectory" is decoding of recent states, as in Patchscopes and SelfIE, not introspection. The drift towards existence and consciousness came from the think-aloud frame. What stands: the negative results (no ownership, no anticipation) and the notes on where the workspace sits in Qwen3.</p>
+    <p>Part 3 rebuilt the loop with no words in it, a self-model of the process rather than of the content, and controls that expose plain feedback. Feeding back the current error of a self-model that keeps learning works as a learned way out of attractors. Nothing in it behaves like a self. <a href="https://github.com/Pixedar/jspace-strange-loop#part-3-the-ring">Read Part 3</a></p>
+  </div>
   <div class="verdict">
     <div><h3>What emerged</h3><ul>
       <li>The model can read its own trajectory from states alone: its self-model picks out its own last ten moments among 10 to 15 minds <b>50 to 82 %</b> of the time (chance 7 to 10 %).</li>
