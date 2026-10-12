@@ -218,7 +218,9 @@ Variance-normalised MSE (detached) → collapse anyway (0.998), the loop destroy
 | plain loop (no pressure) | 0.38 vs 0.46 | −0.92 | — | none |
 | cross-trace-only control | 0.14 vs 0.44 (p = 0.24) | −0.65 | — | none (identity code) |
 
-Steps between consecutive segment means have nearly constant length (CV 0.06–0.19) and turn by a nearly constant angle
+(The 99th percentiles of the scrambled-order null vary by about ±0.03 between permutation runs; the canonical run, with
+every arm, is in `phaseB_trained_self_model_loop/results/phaseB_arms_summary.md`.) Steps between consecutive segment
+means have nearly constant length (CV 0.06–0.19) and turn by a nearly constant angle
 (81–91°). Beyond the shared stage template, each trajectory's own deviation also turns with the rotation (linear R²
 0.62–0.80, rotation 0.49–0.77, persistence negative; trajectory-shuffle null q99 ≤ −0.56). Read in the model's
 vocabulary (the plane of the segment means mapped back through the reader to J-lens words), the plain loop drifts
@@ -229,7 +231,7 @@ Suggestions*), and so does the 14B pressure loop (*kinds, maybe, stuff* → *som
 universally* → *Ultimately, concludes*). Under strong pressure at 8B the clock plane instead cycles through topic
 directions (*espresso, coffee* → *music, instruments* → *movies, games* → *baseball, football* → *animals*): a
 self-generated carousel unrelated to the thought being processed — the same arms in which the state stops carrying the
-thought's content. Pressure organises the drift into a strong rotary code (segment position decodable 0.69–0.87 vs
+thought's content. Pressure organises the drift into a strong rotary code (segment position decodable 0.69–0.88 vs
 0.21–0.23). Every arm, with all measures: `phaseB_trained_self_model_loop/results/phaseB_arms_summary.md`.
 
 ![time code](figures/phaseB_time_code.png)
