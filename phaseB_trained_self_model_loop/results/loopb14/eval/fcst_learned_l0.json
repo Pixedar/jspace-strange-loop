@@ -1,0 +1,685 @@
+{
+ "tag": "fcst_learned_l0",
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 0.0,
+ "ploss": "cos",
+ "nll_own": [
+  0.7715699076652527,
+  1.5131078958511353,
+  1.6276812553405762,
+  1.6973521709442139,
+  1.7208019495010376,
+  1.737878441810608,
+  1.730340838432312,
+  1.741153359413147
+ ],
+ "nll_foreign": [
+  0.7715699076652527,
+  1.7989522218704224,
+  1.9147802591323853,
+  2.0010461807250977,
+  2.0118651390075684,
+  2.055722713470459,
+  2.041924238204956,
+  2.0593934059143066
+ ],
+ "nll_stale": [
+  0.7715699076652527,
+  1.5131078958511353,
+  1.7818007469177246,
+  1.8436133861541748,
+  1.8573821783065796,
+  1.878422737121582,
+  1.8855891227722168,
+  1.8913005590438843
+ ],
+ "bnd_own": 3.3285648822784424,
+ "bnd_foreign": 5.066127777099609,
+ "necessity_foreign": [
+  0.3021955192089081,
+  0.004091618116945028
+ ],
+ "necessity_stale": [
+  0.1471499800682068,
+  0.0021293244790285826
+ ],
+ "swap_pull_state": [
+  0.016400402411818504,
+  0.0007255520904436707
+ ],
+ "swap_pull_forecast": [
+  0.0319770984351635,
+  0.0011630345834419131
+ ],
+ "swap_stay": 0.9941117763519287,
+ "swap_dnll": 0.08658541738986969,
+ "S_cos": [
+  0.4905133545398712,
+  0.5081614851951599,
+  0.5215619802474976,
+  0.5216907858848572,
+  0.5008721351623535,
+  0.5005395412445068,
+  0.4812111258506775
+ ],
+ "R2": {
+  "S": -0.09539151191711426,
+  "persistence": -0.39881396293640137,
+  "segment_mean": 0.002779364585876465
+ },
+ "collapse": 0.30768921971321106,
+ "retrieval": {
+  "S": 0.11071428337267467,
+  "persistence": 0.07428571528622083,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.9918161034584045,
+  0.9995055198669434,
+  0.9999569058418274,
+  0.9999912977218628,
+  0.9999939799308777
+ ],
+ "identity_donor": [
+  0.13698171079158783,
+  0.08453288674354553,
+  0.09326839447021484,
+  0.08385629951953888,
+  0.06884673982858658
+ ],
+ "nll_corrupt": [
+  0.7715699076652527,
+  1.5131078958511353,
+  1.6276812553405762,
+  2.0010461807250977,
+  1.7254784107208252,
+  1.738287329673767,
+  1.7303073406219482,
+  1.741247534751892
+ ],
+ "track_fresh": [
+  0.5109524726867676,
+  0.5002287030220032,
+  0.5005495548248291,
+  0.4812489449977875
+ ],
+ "track_stale": [
+  0.5205731391906738,
+  0.5008500814437866,
+  0.5005825161933899,
+  0.48126891255378723
+ ],
+ "observer_cos": [
+  0.24381209909915924,
+  0.25755879282951355,
+  0.2810729742050171,
+  0.26446273922920227,
+  0.25389033555984497,
+  0.24618522822856903,
+  0.26788467168807983
+ ],
+ "baselines": {
+  "persistence": [
+   0.3353443443775177,
+   0.3550318479537964,
+   0.3681907653808594,
+   0.3837914764881134,
+   0.3439587652683258,
+   0.3544597923755646,
+   0.34698066115379333
+  ],
+  "segment_mean": [
+   0.32849106192588806,
+   0.3245560824871063,
+   0.3310512602329254,
+   0.3199065625667572,
+   0.30066925287246704,
+   0.2848208546638489,
+   0.26903238892555237
+  ],
+  "linear": [
+   0.4754487102258967,
+   0.4977598223697385,
+   0.505923292436484,
+   0.5139470734835647,
+   0.4864147827456025,
+   0.4890169600085175,
+   0.4693217105363239
+  ]
+ },
+ "pr": 21.500966923805272,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "Maybe",
+     "Hmm",
+     "maybe",
+     "hmm",
+     "remember",
+     "let",
+     "Perhaps",
+     "wait",
+     "wikipedia",
+     "remembers"
+    ],
+    "neg": [
+     "ours",
+     "despite",
+     "conducive",
+     "accordingly",
+     "yours",
+     "Courage",
+     "Valor",
+     "suited",
+     "primarily",
+     "courtesy"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "recalls",
+     "recalling",
+     "remembered",
+     "remembers",
+     "remember",
+     "Recall",
+     "memory",
+     "memories"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "Hmm",
+     "Perhaps",
+     "Would",
+     "hmm",
+     "yeah",
+     "huh",
+     "let",
+     "perhaps"
+    ]
+   },
+   "2": {
+    "pos": [
+     "too",
+     "like",
+     "might",
+     "aspects",
+     "tho",
+     "aspect",
+     "angles",
+     "everyone",
+     "hundred",
+     "things"
+    ],
+    "neg": [
+     "Dungeons",
+     "Pussy",
+     "Thrones",
+     "Cavaliers",
+     "Seahawks",
+     "paddle",
+     "wait",
+     "Wait",
+     "Sleeping",
+     "Guardians"
+    ]
+   },
+   "3": {
+    "pos": [
+     "moderation",
+     "leash",
+     "beginners",
+     "pets",
+     "hospitals",
+     "puppies",
+     "beaches",
+     "hiking",
+     "puppy",
+     "placebo"
+    ],
+    "neg": [
+     "remember",
+     "recall",
+     "remembers",
+     "Remember",
+     "recalling",
+     "Recall",
+     "remembered",
+     "heard",
+     "definitely",
+     "recalls"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instruments",
+     "violin",
+     "instrument",
+     "flute",
+     "Instruments",
+     "musical",
+     "guitar",
+     "orchestra",
+     "bamboo"
+    ],
+    "neg": [
+     "marriages",
+     "Deadpool",
+     "Voldemort",
+     "Dumbledore",
+     "alliances",
+     "Netflix",
+     "Zuckerberg",
+     "became",
+     "Thrones",
+     "captains"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instrument",
+     "instruments",
+     "percussion",
+     "guitar",
+     "violin",
+     "orchestra",
+     "musical",
+     "Instruments",
+     "instrumentation",
+     "musician"
+    ],
+    "neg": [
+     "recalls",
+     "remember",
+     "remembers",
+     "memorable",
+     "Remember",
+     "remembered",
+     "yummy",
+     "kinda",
+     "famous",
+     "parks"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "Mention",
+     "consideration",
+     "mentioning",
+     "underrated",
+     "considerations",
+     "noteworthy",
+     "mentioned",
+     "mentions",
+     "referenced"
+    ],
+    "neg": [
+     "remembers",
+     "remember",
+     "recall",
+     "might",
+     "instruments",
+     "Hmm",
+     "remembering",
+     "heard",
+     "waited",
+     "guitar"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "Spark",
+     "scala",
+     "sparks",
+     "broker",
+     "Seems",
+     "Maybe",
+     "kinda",
+     "sparked",
+     "Scala"
+    ],
+    "neg": [
+     "Championship",
+     "Disney",
+     "Beach",
+     "Memorial",
+     "trivia",
+     "names",
+     "Basketball",
+     "beaches",
+     "basketball",
+     "sports"
+    ]
+   }
+  },
+  "write_mean": [
+   "supremacy",
+   "Parliament",
+   "Parliamentary",
+   "Cairo",
+   "Pradesh",
+   "Surrey",
+   "Tunisia",
+   "Hess",
+   "Lotto",
+   "Kumar"
+  ],
+  "write_pc0": {
+   "pos": [
+    "learnt",
+    "hindi",
+    "whatsapp",
+    "Searches",
+    "Homepage",
+    "Downloads",
+    "neighbourhood",
+    "Packages",
+    "everytime",
+    "nigeria"
+   ],
+   "neg": [
+    "famously",
+    "dubbed",
+    "fictional",
+    "Downing",
+    "outright",
+    "Allen",
+    "Titan",
+    "Prometheus",
+    "Pike",
+    "Sebastian"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "italian",
+    "european",
+    "english",
+    "spanish",
+    "italia",
+    "friday",
+    "ppl",
+    "japanese",
+    "cafe",
+    "chinese"
+   ],
+   "neg": [
+    "Moses",
+    "Oilers",
+    "Millennials",
+    "Foley",
+    "Fisheries",
+    "Seahawks",
+    "Methodist",
+    "Jupiter",
+    "Flooring",
+    "forestry"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "whereas",
+    "another",
+    "albeit",
+    "though",
+    "admittedly",
+    "Heard",
+    "notably",
+    "Mandela",
+    "definitely",
+    "Mayweather"
+   ],
+   "neg": [
+    "transformation",
+    "transform",
+    "programmer",
+    "inference",
+    "computation",
+    "deduction",
+    "workflow",
+    "injection",
+    "guide",
+    "formats"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Regards",
+    "Dirk",
+    "Volvo",
+    "Relevant",
+    "Remarks",
+    "Carlton",
+    "Lionel",
+    "Levin",
+    "Killed",
+    "Coordinates"
+   ],
+   "neg": [
+    "resistant",
+    "fixed",
+    "shape",
+    "functional",
+    "workload",
+    "purchasing",
+    "properties",
+    "shapes",
+    "pricing",
+    "insulation"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6815364956855774,
+    0.2284286469221115,
+    0.13948631286621094,
+    0.09699837118387222,
+    0.04855428263545036,
+    0.0429842472076416,
+    0.040907345712184906,
+    0.029632385820150375
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.0026473028119653463,
+    -0.0010258150286972523,
+    -0.01212084386497736,
+    0.0035300971940159798,
+    0.0028380025178194046,
+    -0.006133747287094593,
+    -0.0074896421283483505
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.20396946370601654,
+    0.10599038749933243,
+    0.1177779883146286,
+    0.14455699920654297,
+    0.12797054648399353,
+    0.0990048497915268,
+    0.12562507390975952,
+    0.14113518595695496
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6815364956855774,
+    0.2284286469221115,
+    0.13948631286621094,
+    0.004057229030877352,
+    0.006487433798611164,
+    0.00755325797945261,
+    0.008270460180938244,
+    0.0005288864485919476
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.0026473028119653463,
+    -0.0010258150286972523,
+    0.09336107224225998,
+    0.08466760814189911,
+    0.05851239711046219,
+    0.028493817895650864,
+    0.044659487903118134
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.10310906171798706,
+    0.13003911077976227,
+    0.09871096163988113,
+    0.09048405289649963,
+    0.11908820271492004
+   ],
+   "z_vs_donor_run": [
+    0.20396946370601654,
+    0.10599038749933243,
+    0.1177779883146286,
+    0.24474695324897766,
+    0.2091253399848938,
+    0.13952705264091492,
+    0.11401589959859848,
+    0.109873928129673
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6815364956855774,
+    0.2284286469221115,
+    0.13948631286621094,
+    0.04522380232810974,
+    0.03962234780192375,
+    0.024534501135349274,
+    0.01427684910595417,
+    0.019360607489943504
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.0026473028119653463,
+    -0.0010258150286972523,
+    0.0527002215385437,
+    0.02939692512154579,
+    0.025079945102334023,
+    0.020780283957719803,
+    0.014069067314267159
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.17123576998710632,
+    0.14349320530891418,
+    0.12075227499008179,
+    0.11163783073425293,
+    0.14494583010673523
+   ],
+   "z_vs_donor_run": [
+    0.20396946370601654,
+    0.10599038749933243,
+    0.1177779883146286,
+    0.18988600373268127,
+    0.153455913066864,
+    0.1545761525630951,
+    0.13596665859222412,
+    0.08927061408758163
+   ]
+  },
+  "S_cos_free": [
+   0.4683217704296112,
+   0.4953635632991791,
+   0.46498700976371765,
+   0.44088611006736755,
+   0.48909690976142883,
+   0.48416653275489807,
+   0.48140376806259155
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "donor_start": "<think>\nOkay, let's see. The question is: Kate's parents have three kids. The first kid's name is Peter, the second kid's name is Parker. What is the third kid's name?\n\nHmm. Wait, the first thing that comes to mind is that the question might be a trick question.",
+    "own": [
+     ". There's also the aspect of personal relationships. People might be more inclined to form close bonds with others if they feel a sense of shared purpose and connection. This could lead to stronger communities and more social support, which are important for mental health.\n\nAnother angle is the impact on creativity and innovation. When people are more",
+     " user's intent is to enjoy the music, so I should avoid any negative or critical points unless the user asks for a review. Maybe highlight the emotional aspects and the user's personal connection to the music.\n\nI should also consider if the user is a fan of the artist or the genre. If they're a fan,",
+     " suggesting that there's a lack of clarity in the question. Maybe they want to know the most common or popular ones. Alternatively, they might be looking for a list of well-known artists in the field.\n\nI should also consider that the user might not be a native English speaker, so their question might have some grammatical",
+     " in the UK, they're called \"caterpillars\" and \"butterflies\" respectively. So the names are different based on the region. \n\nBut the user is asking about the names in the UK. So in the UK, the common names are \"caterpillars\" and \"butterflies"
+    ],
+    "corrupt": [
+     ". There's also the aspect of personal relationships. People might be more inclined to form close bonds with others if they feel a sense of shared purpose and connection. This could lead to stronger communities and more social support, which are important for mental health.\n\nAnother angle is the impact on creativity and innovation. When people are more",
+     " points. I should start with the basics. What is a healthy lifestyle? It's about making choices that benefit your physical, mental, and social well-being. So, maybe I can break it down into categories like diet, exercise, sleep, stress management, and social connections.\n\nDiet is a big one. People",
+     " people need to eat, so they should have access to food. That's a basic human right. I should mention that food is essential for survival, so ensuring access is crucial. Also, maybe touch on the role of governments and organizations in providing food security. But I need to make sure I don't get too technical",
+     " cover the basics, maybe with a bit of extra tips. I should mention the time it takes, like 45 minutes to an hour, and the cost, which is around $150. Also, include the location\u2014maybe a popular spot like the West Village or East Village. Use a friendly tone,"
+    ],
+    "chanswap": [
+     ". There's also the aspect of personal relationships. People might be more inclined to form close bonds with others if they feel a sense of shared purpose and connection. This could lead to stronger communities and more social support, which are important for mental health.\n\nAnother angle is the impact on creativity and innovation. When people are more",
+     " purpose is to highlight the benefits of the product in a way that's easy for the user to understand. \n\nI should also consider the tone. It needs to be friendly and encouraging, not too salesy. Maybe use some emojis or exclamation points to make it lively. \n\nWait, the user mentioned \"key features",
+     ": Avoid jargon unless it's common knowledge. Make sure to explain any terms that might not be widely understood. For example, if I mention \"Bluetooth,\" I should explain it's a wireless technology for connecting devices. But if I mention \"Wi-Fi,\" it's probably safe as it's common knowledge.\n\nAlso,",
+     " user might not know the exact model, so I should mention that as well. Also, check if the location is correct. Maybe they have a different store. Lastly, confirm that the return is within the 30-day policy. If all that's good, then proceed with the return. Need to be polite and"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "donor_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "own": [
+     " by the fact that they are more expensive. Maybe the user is looking for a balance between performance and cost. So, I should mention that while they are more expensive, they offer better performance, durability, and comfort, which might justify the higher price for frequent users.\n\nI should also consider if there are any other factors",
+     " they are not the same, but some people might consider them similar.\n\nI should also mention that the temperature of the water can affect the taste. For example, if the water is too hot, it might make the coffee taste bitter. So it's better to use water that's not too hot.\n\nWait, but I",
+     " should check if there are any additional details. The user might also be interested in the different types of wood used, like oak or maple, and how that affects the taste. Maybe mention the grain of the wood and how it's processed. Also, the size of the barrel can matter\u2014like 50-gallon",
+     " check if the user is asking about the same product. If so, maybe they're looking for more details or have a follow-up question. But the user hasn't specified a particular product, so I should list the common ones.\n\nI should also consider that the user might be a buyer looking to compare products. They might"
+    ],
+    "corrupt": [
+     " by the fact that they are more expensive. Maybe the user is looking for a balance between performance and cost. So, I should mention that while they are more expensive, they offer better performance, durability, and comfort, which might justify the higher price for frequent users.\n\nI should also consider if there are any other factors",
+     " theme might be the importance of family, but the user could also mention cultural aspects or the setting. I need to make sure the answer is comprehensive but not too long. Maybe start with the main theme, then mention other possible themes like family dynamics, cultural identity, or the setting's impact on the story. Also,",
+     " mention the benefits and how to use them. Maybe include some personal anecdotes or examples. Also, ensure the tone is encouraging and supportive, not too salesy. Alright, let's start with an introduction that's welcoming and sets the right tone. Then go into the different types of supplements, their benefits, and how to",
+     " Also, I should avoid making the explanation too technical. Maybe start with the basics: what is a chatbot, why they're used, then move to AI. Then mention specific examples like chatbots in customer service, healthcare, education. Highlight the benefits but also touch on limitations. Maybe end with future trends or how"
+    ],
+    "chanswap": [
+     " by the fact that they are more expensive. Maybe the user is looking for a balance between performance and cost. So, I should mention that while they are more expensive, they offer better performance, durability, and comfort, which might justify the higher price for frequent users.\n\nI should also consider if there are any other factors",
+     " they're not the same, but it's a bit of a toss-up. Maybe the user is looking for a balance between both. Also, considering the cost and availability, maybe the user is in a place where one is more accessible. But I should mention both and explain their pros and cons.\n</think>\n\nWhen comparing",
+     " a) **Cucumbers**: These are generally safe and can be a hydrating addition to a dog's diet.  \nb) **Onions**: These are **toxic** to dogs and can cause hemolytic anemia.  \nc) **Grapes**: These are **toxic** and",
+     " one is the classic, which uses meat and cheese, and the other is the vegan version, which uses plant-based ingredients. That's the classic and vegan pizza. \n\nThen there's the classic with meat and cheese, and the vegan with plant-based. So the names are classic and vegan. \n\nI think that's"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking for five factors to consider when deciding where to live. Let me start by breaking down the main aspects people usually think about. First, cost of living is a big one. People want to know if the place is affordable for their budget. Then, job opportunities are important because you",
+    "donor_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "own": [
+     " need to travel more. Maybe flying is faster. But I'm not sure how to fly a plane.\n\nThen there's the car. I know how to drive, but the roads might be closed or blocked. I should check the weather and road conditions. Also, fuel levels are important. If I don't have enough",
+     " or maybe a French onion soup. Wait, but the user might be looking for something more specific. Maybe they want a recipe that's quick to make. Let me check if there are any common ingredients mentioned. The user didn't specify any dietary restrictions, so I can assume a standard recipe. Also, considering the time",
+     " option, maybe the user is looking for a specific type of beer, like a local craft beer or something with a unique flavor.\n\nAlso, considering the time of day, if it's evening, maybe they want something more substantial. But the question is about beer, so the focus is on the drink itself. I should",
+     ".\n\nAlso, I should mention that the user might not know the exact terms, so including synonyms or related terms could be helpful. For example, \"shampoo\" and \"conditioner\" are related to \"hair care products.\" Similarly, \"lotion\" and \"moisturizer\" are related to \"skin"
+    ],
+    "corrupt": [
+     " need to travel more. Maybe flying is faster. But I'm not sure how to fly a plane.\n\nThen there's the car. I know how to drive, but the roads might be closed or blocked. I should check the weather and road conditions. Also, fuel levels are important. If I don't have enough",
+     " it's more about the user's experience. Maybe they don't like the idea of being tracked, even if the data is anonymized. Or they might not want their location shared with third parties. Also, some might not use the app much, so the data collection isn't a big deal. But others might be",
+     " interested in, so maybe the user is looking for a more nuanced answer. \n\nI should also consider if there are any recent studies or changes in the industry that I should mention. For example, maybe there's a new technology or a shift in how these roles are being utilized. But I'm not sure about the latest",
+     " numbers. So, for example, the US has a population of about 330 million, which is 3.3 x 10^8. The UK is about 67 million, which is 6.7 x 10^7. So the US is roughly 5 times larger"
+    ],
+    "chanswap": [
+     " need to travel more. Maybe flying is faster. But I'm not sure how to fly a plane.\n\nThen there's the car. I know how to drive, but the roads might be closed or blocked. I should check the weather and road conditions. Also, fuel levels are important. If I don't have enough",
+     " or a sourdough starter for the bread. Maybe some nuts and seeds for texture. Oh, and maybe some herbs like rosemary or thyme if they're in season. I should also consider the texture\u2014maybe a mix of soft and crunchy elements. Let me think about the types of vegetables. Carrots,",
+     " pasta, right? But maybe adding some cheese or garlic. Or maybe a simple oil and vinegar dressing.\n\nWait, but the user didn't mention any specific ingredients they have. So I should suggest a basic vinaigrette. Let me check if there are any common additions. Some people add herbs like basil or o",
+     " it's a bit hard to find, but I think it's in the fridge. Let me check.\n\nWait, the user might be asking for something specific. Maybe they want a recipe? But the original request was about a type of bread. Wait, the user might be confused. Let me clarify.\n\nWait, the"
+    ]
+   }
+  ]
+ }
+}

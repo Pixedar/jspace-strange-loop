@@ -1,0 +1,685 @@
+{
+ "tag": "fcst_learned_l1_c",
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 1.0,
+ "ploss": "nce",
+ "nll_own": [
+  0.8101014494895935,
+  1.6593023538589478,
+  1.8124852180480957,
+  1.9076615571975708,
+  1.9203294515609741,
+  1.964809536933899,
+  1.9679886102676392,
+  1.9982428550720215
+ ],
+ "nll_foreign": [
+  0.8101014494895935,
+  1.786803126335144,
+  1.929868221282959,
+  2.0355753898620605,
+  2.038429021835327,
+  2.0826635360717773,
+  2.074878692626953,
+  2.081400156021118
+ ],
+ "nll_stale": [
+  0.8101014494895935,
+  1.6593023538589478,
+  1.8530665636062622,
+  1.9253942966461182,
+  1.9696807861328125,
+  1.9901132583618164,
+  1.985054612159729,
+  1.9874933958053589
+ ],
+ "bnd_own": 3.9672436714172363,
+ "bnd_foreign": 4.55684232711792,
+ "necessity_foreign": [
+  0.11411400139331818,
+  0.002946015913039446
+ ],
+ "necessity_stale": [
+  0.023214904591441154,
+  0.0016615905333310366
+ ],
+ "swap_pull_state": [
+  0.22509774565696716,
+  0.00421462906524539
+ ],
+ "swap_pull_forecast": [
+  0.24256452918052673,
+  0.004201262257993221
+ ],
+ "swap_stay": 0.8899903297424316,
+ "swap_dnll": 0.017749648541212082,
+ "S_cos": [
+  0.8819317817687988,
+  0.8872084617614746,
+  0.8877084255218506,
+  0.8900169134140015,
+  0.9006955027580261,
+  0.8882546424865723,
+  0.8791283965110779
+ ],
+ "R2": {
+  "S": 0.6962869167327881,
+  "persistence": 0.012280583381652832,
+  "segment_mean": 0.31644952297210693
+ },
+ "collapse": 0.29554983973503113,
+ "retrieval": {
+  "S": 0.9228571397917611,
+  "persistence": 0.08535714287843023,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.6166996955871582,
+  0.7329696416854858,
+  0.7603671550750732,
+  0.7918529510498047,
+  0.8082160949707031
+ ],
+ "identity_donor": [
+  0.8363828063011169,
+  0.7012739777565002,
+  0.6074522733688354,
+  0.5185957551002502,
+  0.4969656467437744
+ ],
+ "nll_corrupt": [
+  0.8101014494895935,
+  1.6593023538589478,
+  1.8124852180480957,
+  2.0355753898620605,
+  1.9635025262832642,
+  1.9803372621536255,
+  1.9790159463882446,
+  2.000781297683716
+ ],
+ "track_fresh": [
+  0.8722145557403564,
+  0.8980712890625,
+  0.8853738307952881,
+  0.8803941607475281
+ ],
+ "track_stale": [
+  0.6006836295127869,
+  0.6501414775848389,
+  0.6637066602706909,
+  0.6774550676345825
+ ],
+ "observer_cos": [
+  0.9301545023918152,
+  0.9301172494888306,
+  0.9236566424369812,
+  0.9218283891677856,
+  0.9386025071144104,
+  0.926249623298645,
+  0.91913902759552
+ ],
+ "baselines": {
+  "persistence": [
+   0.6173769235610962,
+   0.559094250202179,
+   0.5331603288650513,
+   0.5218456387519836,
+   0.5236479043960571,
+   0.5241661667823792,
+   0.4622349441051483
+  ],
+  "segment_mean": [
+   0.6702998280525208,
+   0.6249232292175293,
+   0.6287021040916443,
+   0.6199875473976135,
+   0.5907151699066162,
+   0.5871238112449646,
+   0.6099774241447449
+  ],
+  "linear": [
+   0.9193312268570475,
+   0.9250423687546493,
+   0.926212231600738,
+   0.9259531687291799,
+   0.9377021269538663,
+   0.9264201919766931,
+   0.9177743219710903
+  ]
+ },
+ "pr": 10.54005540748219,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "hmm",
+     "wait",
+     "perhaps",
+     "remember",
+     "remembers",
+     "Hmm",
+     "Wait",
+     "recalling"
+    ],
+    "neg": [
+     "regarded",
+     "Accordingly",
+     "Agile",
+     "Anxiety",
+     "Auckland",
+     "Essentially",
+     "pragmatic",
+     "Phantom",
+     "Tay",
+     "playoffs"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "memories",
+     "recalls",
+     "recalling",
+     "remember",
+     "Recall",
+     "remembered",
+     "remembers",
+     "remembering"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "perhaps",
+     "Hmm",
+     "huh",
+     "yeah",
+     "Perhaps",
+     "wait",
+     "hmm",
+     "let"
+    ]
+   },
+   "2": {
+    "pos": [
+     "foe",
+     "too",
+     "tho",
+     "aspects",
+     "aspect",
+     "everyone",
+     "london",
+     "japanese",
+     "angles",
+     "chinese"
+    ],
+    "neg": [
+     "Cavaliers",
+     "Pussy",
+     "Playoff",
+     "Wait",
+     "Dungeons",
+     "Emmy",
+     "Who",
+     "quarterbacks",
+     "Shaman",
+     "Preserve"
+    ]
+   },
+   "3": {
+    "pos": [
+     "hobbies",
+     "paragraphs",
+     "avoidance",
+     "avoid",
+     "leash",
+     "rhetorical",
+     "moderation",
+     "puppy",
+     "pets",
+     "sunscreen"
+    ],
+    "neg": [
+     "Remember",
+     "remember",
+     "remembers",
+     "recall",
+     "recalling",
+     "remembered",
+     "Recall",
+     "played",
+     "remembering",
+     "definitely"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instruments",
+     "instrument",
+     "violin",
+     "guitar",
+     "flute",
+     "musical",
+     "Instruments",
+     "Instrument",
+     "bamboo"
+    ],
+    "neg": [
+     "Deadpool",
+     "Dumbledore",
+     "Hulk",
+     "Netflix",
+     "Rowling",
+     "Voldemort",
+     "alliances",
+     "Avengers",
+     "Loki",
+     "Thrones"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instrument",
+     "instruments",
+     "percussion",
+     "guitar",
+     "musician",
+     "orchestra",
+     "musicians",
+     "Instruments",
+     "Guitar",
+     "musical"
+    ],
+    "neg": [
+     "parks",
+     "comfy",
+     "beaches",
+     "outdoor",
+     "Outdoor",
+     "pricey",
+     "vets",
+     "vacations",
+     "hiking",
+     "yummy"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "Mention",
+     "mentioned",
+     "famous",
+     "mentions",
+     "notable",
+     "underrated",
+     "mentioning",
+     "acclaimed",
+     "names"
+    ],
+    "neg": [
+     "remember",
+     "recall",
+     "remembers",
+     "remembering",
+     "recalling",
+     "guitar",
+     "recalls",
+     "Yamaha",
+     "cannot",
+     "nuisance"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "scala",
+     "Spark",
+     "companion",
+     "sparking",
+     "sparks",
+     "kinda",
+     "broker",
+     "Kurdistan",
+     "sparked"
+    ],
+    "neg": [
+     "Beach",
+     "museums",
+     "tourist",
+     "beaches",
+     "sports",
+     "Disneyland",
+     "Sports",
+     "Basketball",
+     "Memorial",
+     "names"
+    ]
+   }
+  },
+  "write_mean": [
+   "Mayweather",
+   "Cena",
+   "Aires",
+   "Saudis",
+   "Garner",
+   "Jennings",
+   "Cavs",
+   "Cavaliers",
+   "Aviv",
+   "Benghazi"
+  ],
+  "write_pc0": {
+   "pos": [
+    "racing",
+    "masterpiece",
+    "kite",
+    "slices",
+    "slice",
+    "wedge",
+    "wed",
+    "tomb",
+    "Wed",
+    "host"
+   ],
+   "neg": [
+    "Scotia",
+    "Canadiens",
+    "Rowe",
+    "Wii",
+    "pau",
+    "Siri",
+    "Rockefeller",
+    "Blackhawks",
+    "furry",
+    "Rapids"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "Chennai",
+    "Mumbai",
+    "Kolkata",
+    "Pune",
+    "Cairo",
+    "Prague",
+    "Armenia",
+    "Karachi",
+    "Maharashtra",
+    "Gujarat"
+   ],
+   "neg": [
+    "Crusher",
+    "tec",
+    "berry",
+    "freezer",
+    "Sanford",
+    "creatures",
+    "canyon",
+    "icy",
+    "Blizzard",
+    "wilderness"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "eats",
+    "meats",
+    "presently",
+    "eaten",
+    "pops",
+    "ratified",
+    "notifying",
+    "Mercury",
+    "Mig",
+    "misdemeanor"
+   ],
+   "neg": [
+    "Read",
+    "Islamist",
+    "Tactics",
+    "Huawei",
+    "Themes",
+    "Bangladesh",
+    "parachute",
+    "commanders",
+    "Hive",
+    "Rules"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Creature",
+    "squid",
+    "imdb",
+    "Terminator",
+    "terminator",
+    "Crusher",
+    "Dirk",
+    "Stephan",
+    "Martian",
+    "Animated"
+   ],
+   "neg": [
+    "stadiums",
+    "cities",
+    "borough",
+    "establishments",
+    "roads",
+    "city",
+    "downtown",
+    "Nationals",
+    "nightlife",
+    "tourists"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6815364956855774,
+    0.11801670491695404,
+    0.09245075285434723,
+    0.04810287803411484,
+    0.02911105938255787,
+    0.02104322984814644,
+    0.013345807790756226,
+    0.01551838405430317
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    0.0030381777323782444,
+    -0.0010959380306303501,
+    0.005621739197522402,
+    -0.0024197192396968603,
+    0.00016753398813307285,
+    0.0032035978510975838,
+    -0.0005108189070597291
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.6570249199867249,
+    0.485826700925827,
+    0.4319058954715729,
+    0.4462500512599945,
+    0.48195379972457886,
+    0.44905582070350647,
+    0.4352976977825165,
+    0.4809715747833252
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6815364956855774,
+    0.11801670491695404,
+    0.09245075285434723,
+    0.012957907281816006,
+    0.007224353961646557,
+    0.006166796199977398,
+    0.0035442053340375423,
+    0.008419939316809177
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    0.0030381777323782444,
+    -0.0010959380306303501,
+    0.07654033601284027,
+    0.04047784209251404,
+    0.02679349109530449,
+    0.008204219862818718,
+    0.009372320026159286
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.44944310188293457,
+    0.4715927839279175,
+    0.4420492649078369,
+    0.4348847270011902,
+    0.4570571780204773
+   ],
+   "z_vs_donor_run": [
+    0.6570249199867249,
+    0.485826700925827,
+    0.4319058954715729,
+    0.875124454498291,
+    0.7925237417221069,
+    0.7512202262878418,
+    0.6934492588043213,
+    0.6774278879165649
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6815364956855774,
+    0.11801670491695404,
+    0.09245075285434723,
+    0.059360239654779434,
+    0.05001156032085419,
+    0.02844424918293953,
+    0.013977820053696632,
+    0.013645891100168228
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    0.0030381777323782444,
+    -0.0010959380306303501,
+    0.006857508793473244,
+    0.021293234080076218,
+    0.002854805439710617,
+    0.006349384784698486,
+    0.008415564894676208
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.7293047308921814,
+    0.6890255212783813,
+    0.6378873586654663,
+    0.5902574062347412,
+    0.5864691138267517
+   ],
+   "z_vs_donor_run": [
+    0.6570249199867249,
+    0.485826700925827,
+    0.4319058954715729,
+    0.7033637762069702,
+    0.6775306463241577,
+    0.6525928974151611,
+    0.6161949634552002,
+    0.6309789419174194
+   ]
+  },
+  "S_cos_free": [
+   0.875409722328186,
+   0.8692479133605957,
+   0.866385281085968,
+   0.8832216262817383,
+   0.8953527212142944,
+   0.8826304078102112,
+   0.8687208890914917
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "donor_start": "<think>\nOkay, let's see. The question is: Kate's parents have three kids. The first kid's name is Peter, the second kid's name is Parker. What is the third kid's name?\n\nHmm. Wait, the first thing that comes to mind is that the question might be a trick question.",
+    "own": [
+     ". Maybe I should start with the basics. What exactly are they asking? The user wants to know the top 10 most common names in the US. I need to make sure I understand the scope. Are they asking for the most common first names or surnames? Probably first names since that's more common",
+     ". Then, they have a meeting with the principal to discuss the issue. Maybe the principal is in the school office, and the students can go there after their class. But they need to get permission from their teacher first. Wait, the problem is about arranging the meeting. So the students need to schedule a time when",
+     " the usual route to the village. Then, the first time, the player can get the key, and then the second time, they can open the door. But maybe the key is in a different location, or the door is in a different place. Or maybe the key is not required for the first time. Wait",
+     ", but I think that's a bit much. I'm not sure if I want to go that route. Maybe I can just have the character think about it and move on. Let me check the script again. The scene is in a forest, and the character is alone. The previous line was about the wolf,"
+    ],
+    "corrupt": [
+     ". Maybe I should start with the basics. What exactly are they asking? The user wants to know the top 10 most common names in the US. I need to make sure I understand the scope. Are they asking for the most common first names or surnames? Probably first names since that's more common",
+     ", which is the title of the book. I'm not sure about the exact title, but maybe it's \"The Hitchhiker's Guide to the Galaxy\" by Douglas Adams. Wait, but the user mentioned a book that has a title starting with \"The Hitchhiker's Guide to the Galaxy\" and the",
+     " \"the number of possible 2-3-4 triangles is 1000000, but I can't see how that's possible.\"\n\nWait, no, maybe I made a mistake here. Let me think again. The problem says \"how many different 2-3-4 triangles can be",
+     ", and the answer is: 215\n</think>\n\nTo solve the problem of finding the number of distinct 4-digit numbers that can be formed using the digits 1, 2, 3, 4, and 5, where **no digit is repeated**, we need to approach this systematically.\n\n"
+    ],
+    "chanswap": [
+     ". Maybe I should start with the basics. What exactly are they asking? The user wants to know the top 10 most common names in the US. I need to make sure I understand the scope. Are they asking for the most common first names or surnames? Probably first names since that's more common",
+     " because there's a lot of things that can be said about that.\n\nSo, let's start with the basics. What is a slot? Well, a slot is a position in a machine or device where a component can be inserted or removed. It's a way to connect different parts of a machine or device. So",
+     ", perhaps, but the material is so rich that it's hard to know where to start. Let's try to break it down.\n\nFirst, the question is about the difference between \"a\" and \"the\" in English. I know that both are articles, but they're used in different contexts. \"A\"",
+     " is a type of non-bonding interaction that involves the attraction between a hydrogen atom and an electronegative atom. This interaction is responsible for the high boiling point of water compared to other similar molecules. The hydrogen atom must be bonded to a highly electronegative atom such as oxygen, nitrogen, or fluor"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "donor_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "own": [
+     ".\n\nI think I need to break down the problem step by step. First, I should figure out the total number of possible outcomes when rolling two dice. Each die has 6 faces, so for two dice, it's 6 * 6 = 36 possible outcomes. That part is straightforward.\n\nNow,",
+     ". 12\n\n3.1.2.3.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+     " the athlete's performance.\n\nSo the key is to keep the sentence structure similar but with the new words. Let's check the words again: \"influence,\" \"affect,\" \"impact,\" \"effect,\" \"alter.\" All are verbs or nouns related to causing change. The original sentence uses \"affect\" as",
+     ". (the rest of the text is similar, with some words replaced with dots)\n\nI need to find the words that were replaced with dots and reconstruct the original text.\n\nThe key is that the original text is a coherent paragraph, and the dots are replacing some words. The original text was probably a coherent paragraph, so"
+    ],
+    "corrupt": [
+     ".\n\nI think I need to break down the problem step by step. First, I should figure out the total number of possible outcomes when rolling two dice. Each die has 6 faces, so for two dice, it's 6 * 6 = 36 possible outcomes. That part is straightforward.\n\nNow,",
+     ". 1979\u5e74\uff0c\u7f8e\u56fd\u7684\u7ecf\u6d4e\u72b6\u51b5\u53ef\u80fd\u6709\u901a\u80c0\u95ee\u9898\uff0c\u4f46\u5f53\u65f6\u653f\u5e9c\u53ef\u80fd\u66f4\u5173\u6ce8\u5176\u4ed6\u4e8b\u60c5\uff0c\u6bd4\u5982\u8d8a\u5357\u6218\u4e89\u6216\u8005\u793e\u4f1a\u95ee\u9898\u3002\u4e0d\u8fc7\uff0c\u8fd9\u79cd\u7ecf\u6d4e\u6570\u636e\u53ef\u80fd\u9700\u8981\u67e5\u8bc1\u3002\u53e6\u5916\uff0c\u53ef\u80fd\u8fd8\u6709\u5176\u4ed6\u56e0\u7d20\uff0c\u6bd4\u5982\u80fd\u6e90\u5371\u673a\u6216\u8005\u5931\u4e1a\u7387\uff1f\n\n\u7136\u540e\uff0c\u6211\u5e94\u8be5\u8003\u8651\u97f3\u4e50\u7684",
+     " song. Then I would play some music, like maybe a few notes on the piano, and she would react. I think she would enjoy that. But I don't know if she would prefer a specific song. Maybe something with a happy melody.\n\nI should also consider her personality. Since she's a fan of music",
+     " stars in this movie. It's just that the plot is too cheesy. The main character is a young woman who's trying to find her father, who's a scientist who disappeared. She's got a psychic ability to see the future, but it's not really clear how that works. The movie's got a lot"
+    ],
+    "chanswap": [
+     ".\n\nI think I need to break down the problem step by step. First, I should figure out the total number of possible outcomes when rolling two dice. Each die has 6 faces, so for two dice, it's 6 * 6 = 36 possible outcomes. That part is straightforward.\n\nNow,",
+     ", but I'm not sure. Maybe I can use the fact that the sum of the first n terms of an arithmetic sequence is S_n = n/2 (a1 + an). Here, n is the number of terms, which in this case is 100. So S_100 =",
+     " to the question, and I can't see how to proceed. Maybe I need to consider the definition of the function f(x). Let me check the problem statement again.\n\nWait, the problem says \"f(x) is defined as follows: f(x) = 1 if x is rational, f(x) = ",
+     " \n\nAlright, let's tackle this problem step by step. So, we have a function $ f(x) $ defined as:\n\n$$\nf(x) = \\begin{cases} \n\\frac{1}{2}x & \\text{if } x \\leq 0 \\\\\n\\frac{1}{"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking for five factors to consider when deciding where to live. Let me start by breaking down the main aspects people usually think about. First, cost of living is a big one. People want to know if the place is affordable for their budget. Then, job opportunities are important because you",
+    "donor_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "own": [
+     " need to cover all the possible reasons. \n\nI should start by thinking about common causes of car stalling, especially when it happens in specific situations like idling or after starting. Maybe the issue is related to the fuel system, ignition system, or sensors.\n\nFirst, the fuel system. If the fuel filter is old",
+     " the country's economy. But with the rise of the internet and digital platforms, the traditional media landscape is changing. People are now getting news and information from online sources like social media, news websites, and streaming services. This shift has led to a decline in traditional media's influence and revenue.\n\nAdditionally, there's the",
+     " chance of being in a specific state. Maybe the user is looking for a more detailed explanation or an example. I should check if the question is about quantum states or something else. Since it's tagged with quantum physics, it's likely about superposition. I need to mention that in quantum mechanics, a system can exist",
+     " to handle the case where the user might have made a mistake in the query. For example, if they wrote \"can you tell me the population of France\" but the model is trained on older data, it might not have the latest info. So, the model should respond that it can't provide real-time data and"
+    ],
+    "corrupt": [
+     " need to cover all the possible reasons. \n\nI should start by thinking about common causes of car stalling, especially when it happens in specific situations like idling or after starting. Maybe the issue is related to the fuel system, ignition system, or sensors.\n\nFirst, the fuel system. If the fuel filter is old",
+     "? That's a lot of question marks. Maybe the user is trying to ask something but didn't finish the sentence. I need to ask them to clarify their question.\n\nI should respond by letting them know I can't help with their query as it's unclear and ask them to provide more details. Maybe they had a",
+     " problem, but it's a bit tricky. Let me think. So, the user is asking for the number of unique ways to climb a staircase with 10 steps, where you can either take 1 or 2 steps at a time. Hmm, I remember this is a classic problem, maybe related to Fibonacci",
+     " but maybe I should focus on the main points. The key is that the user wants a summary of the article, not the full text. So, I need to extract the main ideas and present them concisely. Let me check the original article again to ensure I capture all critical points.\n\nWait, the article is"
+    ],
+    "chanswap": [
+     " need to cover all the possible reasons. \n\nI should start by thinking about common causes of car stalling, especially when it happens in specific situations like idling or after starting. Maybe the issue is related to the fuel system, ignition system, or sensors.\n\nFirst, the fuel system. If the fuel filter is old",
+     " of the sun, which is crucial for photosynthesis. So, plants need sunlight to grow. But what if a plant doesn't get enough sunlight? Maybe it can't make enough food, so it might not grow well. Also, some plants might need different amounts of sunlight. Like, some plants need a lot,",
+     " maybe the user is looking for a specific type of exercise, like cardio, strength training, or flexibility? I should ask for clarification. Also, they mentioned not using markdown, so I need to present the answer in plain text. Maybe they want a list of exercises but don't know which category. I should prompt them",
+     " help. I'm trying to understand how to calculate the number of possible outcomes when rolling multiple dice, considering different scenarios. Let me see. So, if I have a single die, it's straightforward\u2014there are 6 possible outcomes. But when I add more dice, it gets more complex. For example, if"
+    ]
+   }
+  ]
+ }
+}

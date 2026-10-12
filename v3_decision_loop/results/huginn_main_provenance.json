@@ -1,0 +1,8 @@
+{
+ "model": "tomg-group-umd/huginn-0125",
+ "revision": "bb6621b65e90b6a4b9b29ef88dc83866d450470c",
+ "dtype": "bfloat16",
+ "K": 64,
+ "readout": "coda exit lens",
+ "example_prompt": "<|begin_text|><|begin_header|>system<|end_header|>\n\nYou are a helpful assistant.<|end_turn|><|begin_header|>user<|end_header|>\n\nOver dinner, Alice told Laura that she had missed the train. Only Alice had been planning to take the train.\nQuestion: Who missed the train? Answer with one word.<|end_turn|><|begin_header|>Huginn<|end_header|>\n\n"
+}

@@ -1,0 +1,685 @@
+{
+ "tag": "state_learned_l0_c",
+ "chan": "state",
+ "reader": "learned",
+ "lam": 0.0,
+ "ploss": "nce",
+ "nll_own": [
+  0.8574592471122742,
+  1.6360876560211182,
+  1.7197577953338623,
+  1.7698948383331299,
+  1.7979669570922852,
+  1.7753994464874268,
+  1.7913960218429565,
+  1.805996298789978
+ ],
+ "nll_foreign": [
+  0.8574592471122742,
+  1.9055575132369995,
+  2.0094263553619385,
+  2.061666965484619,
+  2.08431339263916,
+  2.0720224380493164,
+  2.089916229248047,
+  2.1105411052703857
+ ],
+ "nll_stale": [
+  0.8574592471122742,
+  1.6360876560211182,
+  1.8782910108566284,
+  1.9118821620941162,
+  1.948793649673462,
+  1.9211925268173218,
+  1.9530625343322754,
+  1.9696041345596313
+ ],
+ "bnd_own": 3.335329532623291,
+ "bnd_foreign": 5.082090377807617,
+ "necessity_foreign": [
+  0.2909919321537018,
+  0.0035688611678779125
+ ],
+ "necessity_stale": [
+  0.15373612940311432,
+  0.002007923321798444
+ ],
+ "swap_pull_state": [
+  0.002443633507937193,
+  0.0005046498263254762
+ ],
+ "swap_pull_forecast": [
+  0.009656410664319992,
+  0.00046840347931720316
+ ],
+ "swap_stay": 0.9968824982643127,
+ "swap_dnll": 0.07920749485492706,
+ "S_cos": [
+  0.2858257293701172,
+  0.3043602705001831,
+  0.3088001608848572,
+  0.2944311201572418,
+  0.2884799838066101,
+  0.28489136695861816,
+  0.29526904225349426
+ ],
+ "R2": {
+  "S": -0.4490382671356201,
+  "persistence": -0.43663930892944336,
+  "segment_mean": -0.00021004676818847656
+ },
+ "collapse": 0.2058015614748001,
+ "retrieval": {
+  "S": 0.10142857155629567,
+  "persistence": 0.06107142833726747,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.9919002056121826,
+  0.9997425079345703,
+  0.9999844431877136,
+  0.9999948143959045,
+  0.9999951720237732
+ ],
+ "identity_donor": [
+  0.06710991263389587,
+  0.04816379398107529,
+  0.06929817795753479,
+  0.03679701313376427,
+  0.019547494128346443
+ ],
+ "nll_corrupt": [
+  0.8574592471122742,
+  1.6360876560211182,
+  1.7197577953338623,
+  2.061666965484619,
+  1.8012290000915527,
+  1.7754483222961426,
+  1.7912977933883667,
+  1.8062233924865723
+ ],
+ "track_fresh": [
+  0.2824542820453644,
+  0.28819385170936584,
+  0.28485843539237976,
+  0.29526787996292114
+ ],
+ "track_stale": [
+  0.29242512583732605,
+  0.2882327437400818,
+  0.2848517894744873,
+  0.2952529489994049
+ ],
+ "observer_cos": [
+  0.1726822853088379,
+  0.2159372866153717,
+  0.2315535992383957,
+  0.21799907088279724,
+  0.21733030676841736,
+  0.19685186445713043,
+  0.20964807271957397
+ ],
+ "baselines": {
+  "persistence": [
+   0.2805238366127014,
+   0.2896554172039032,
+   0.296823114156723,
+   0.3061845600605011,
+   0.29386788606643677,
+   0.305268257856369,
+   0.3235929608345032
+  ],
+  "segment_mean": [
+   0.2143610417842865,
+   0.2129402607679367,
+   0.2126830816268921,
+   0.2189653366804123,
+   0.23980550467967987,
+   0.22635671496391296,
+   0.2096489667892456
+  ],
+  "linear": [
+   0.4262369553573553,
+   0.42301057119792324,
+   0.44073687580491333,
+   0.41175648386218155,
+   0.4270621109461619,
+   0.4207108793082647,
+   0.42070964870308536
+  ]
+ },
+ "pr": 15.874826215943175,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "hearty",
+     "sausage",
+     "imprint",
+     "adept",
+     "immensely",
+     "dealt",
+     "killings",
+     "beasts",
+     "fraught",
+     "badass"
+    ],
+    "neg": [
+     "Maybe",
+     "Hmm",
+     "maybe",
+     "perhaps",
+     "remember",
+     "yeah",
+     "recall",
+     "unsure",
+     "clarify",
+     "sure"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "mentioning",
+     "Mention",
+     "mentions",
+     "emphasize",
+     "highlight",
+     "recommending",
+     "highlighting",
+     "emphasizing",
+     "Highlight"
+    ],
+    "neg": [
+     "Hmm",
+     "wait",
+     "isn",
+     "but",
+     "right",
+     "comes",
+     "instrument",
+     "definitely",
+     "Wait",
+     "played"
+    ]
+   },
+   "2": {
+    "pos": [
+     "though",
+     "isn",
+     "but",
+     "might",
+     "again",
+     "right",
+     "would",
+     "per",
+     "because",
+     "seems"
+    ],
+    "neg": [
+     "Helmet",
+     "Cowboy",
+     "Godzilla",
+     "Zack",
+     "Santana",
+     "Lego",
+     "Simpsons",
+     "Buffy",
+     "Hogan",
+     "Sour"
+    ]
+   },
+   "3": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "yeah",
+     "they",
+     "perhaps",
+     "but",
+     "Yeah",
+     "explaining",
+     "though",
+     "huh"
+    ],
+    "neg": [
+     "recall",
+     "Recall",
+     "recalls",
+     "remembers",
+     "memory",
+     "fuzzy",
+     "forget",
+     "confuse",
+     "remember",
+     "Memory"
+    ]
+   },
+   "4": {
+    "pos": [
+     "tenants",
+     "touchdowns",
+     "clinics",
+     "arrivals",
+     "lesbians",
+     "vacancies",
+     "endings",
+     "bravery",
+     "invitations",
+     "brokers"
+    ],
+    "neg": [
+     "definitely",
+     "classified",
+     "categorized",
+     "classify",
+     "not",
+     "Definitely",
+     "classification",
+     "known",
+     "commonly",
+     "notable"
+    ]
+   },
+   "5": {
+    "pos": [
+     "Deadpool",
+     "Marvel",
+     "Mayweather",
+     "list",
+     "franchise",
+     "Batman",
+     "fictional",
+     "spelling",
+     "pronunciation",
+     "title"
+    ],
+    "neg": [
+     "shady",
+     "learnt",
+     "Noticed",
+     "heard",
+     "recalls",
+     "know",
+     "think",
+     "coarse",
+     "learned",
+     "need"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Famous",
+     "Quite",
+     "Rookie",
+     "Definitely",
+     "undefeated",
+     "Blackhawks",
+     "reigning",
+     "blockbuster",
+     "Playboy",
+     "Greatest"
+    ],
+    "neg": [
+     "instruments",
+     "instrument",
+     "guitar",
+     "percussion",
+     "guitars",
+     "chords",
+     "musical",
+     "chord",
+     "musicians",
+     "octave"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "someone",
+     "their",
+     "expressing",
+     "she",
+     "impose",
+     "dealing",
+     "expresses",
+     "teh",
+     "seeking"
+    ],
+    "neg": [
+     "Definitely",
+     "Certainly",
+     "Probably",
+     "definitely",
+     "sure",
+     "Sure",
+     "probable",
+     "Yeah",
+     "Likely",
+     "Yep"
+    ]
+   }
+  },
+  "write_mean": [
+   "Embassy",
+   "Resorts",
+   "Latinos",
+   "Rodgers",
+   "hometown",
+   "touring",
+   "toured",
+   "nicer",
+   "Emirates",
+   "vacations"
+  ],
+  "write_pc0": {
+   "pos": [
+    "los",
+    "tha",
+    "sha",
+    "breach",
+    "qui",
+    "han",
+    "mak",
+    "dun",
+    "dont",
+    "gan"
+   ],
+   "neg": [
+    "Sporting",
+    "Venezuelan",
+    "Volley",
+    "Newcastle",
+    "Midlands",
+    "Recall",
+    "Juventus",
+    "Kolkata",
+    "Charlottesville",
+    "Napoli"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "upto",
+    "thou",
+    "thy",
+    "ara",
+    "hart",
+    "arab",
+    "bla",
+    "gia",
+    "witch",
+    "mata"
+   ],
+   "neg": [
+    "categorized",
+    "simplistic",
+    "checklist",
+    "firsthand",
+    "standout",
+    "influencers",
+    "showcasing",
+    "specifics",
+    "realistic",
+    "tailored"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "Cart",
+    "Label",
+    "Name",
+    "name",
+    "alphabetical",
+    "Names",
+    "Barn",
+    "nickname",
+    "rename",
+    "Pant"
+   ],
+   "neg": [
+    "motivations",
+    "attitudes",
+    "addicts",
+    "entrepreneurial",
+    "advocates",
+    "advocacy",
+    "fostering",
+    "incentives",
+    "profitability",
+    "needy"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Dialogue",
+    "Quotes",
+    "isbn",
+    "Biography",
+    "Selected",
+    "Titles",
+    "narrator",
+    "Dialog",
+    "Albums",
+    "Username"
+   ],
+   "neg": [
+    "faster",
+    "heavier",
+    "stricter",
+    "lower",
+    "higher",
+    "slower",
+    "cheaper",
+    "tougher",
+    "stronger",
+    "accelerated"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.17028717696666718,
+    0.09707318246364594,
+    0.06437766551971436,
+    0.05131260305643082,
+    0.03738654404878616,
+    0.02713683247566223,
+    0.007891431450843811
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.007799791172146797,
+    -0.007354719564318657,
+    0.006282718852162361,
+    0.017136553302407265,
+    0.008133281022310257,
+    0.004908796399831772,
+    0.009100029245018959
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.07887239754199982,
+    0.07149747014045715,
+    0.06240697205066681,
+    0.08290298283100128,
+    0.08492125570774078,
+    0.08217158913612366,
+    0.07915293425321579,
+    0.07500212639570236
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.17028717696666718,
+    0.09707318246364594,
+    0.008474236354231834,
+    0.015117589384317398,
+    0.004381801001727581,
+    0.006814146414399147,
+    0.003658562432974577
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.007799791172146797,
+    -0.007354719564318657,
+    0.07941974699497223,
+    0.030099019408226013,
+    0.03223014995455742,
+    0.01799835078418255,
+    0.01871809922158718
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.12768691778182983,
+    0.054673127830028534,
+    0.057790495455265045,
+    0.0967877060174942,
+    0.05615686625242233
+   ],
+   "z_vs_donor_run": [
+    0.07887239754199982,
+    0.07149747014045715,
+    0.06240697205066681,
+    0.18228386342525482,
+    0.1258317530155182,
+    0.10628561675548553,
+    0.07673880457878113,
+    0.09834088385105133
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6704888939857483,
+    0.17028717696666718,
+    0.09707318246364594,
+    0.06273041665554047,
+    0.038710590451955795,
+    0.0357956662774086,
+    0.01877921260893345,
+    0.011771177873015404
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.007799791172146797,
+    -0.007354719564318657,
+    0.004063691012561321,
+    0.018086114898324013,
+    0.005192022770643234,
+    0.0015861206920817494,
+    0.010634878650307655
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.1922151744365692,
+    0.08398839831352234,
+    0.08613193035125732,
+    0.1090003252029419,
+    0.08904795348644257
+   ],
+   "z_vs_donor_run": [
+    0.07887239754199982,
+    0.07149747014045715,
+    0.06240697205066681,
+    0.12170910835266113,
+    0.09813359379768372,
+    0.0821208506822586,
+    0.04679002985358238,
+    0.06607925891876221
+   ]
+  },
+  "S_cos_free": [
+   0.2101699262857437,
+   0.24470971524715424,
+   0.24607758224010468,
+   0.24162304401397705,
+   0.23687893152236938,
+   0.25497254729270935,
+   0.2327176332473755
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     " to be clear, I'm not sure if I should include the \"all right\" here. Maybe it's better to just say \"Okay, so the question is...\" to keep it more direct. \n\nAlso, I need to make sure that the rest of the points are covered. Let me check the original list again",
+     ". So, that's 4.5. Then, 4.5 times 4 is 18. So, 4.5 times 4 is 18. Then, 18 divided by 2 is 9. So, the answer is 9. Wait, but let me",
+     " make sure to check the units. The answer should be in feet per second. \n\nWait, the problem says the speed is 40 miles per hour. So I need to convert that to feet per second. Let me recall the conversion factors. \n\nFirst, 1 mile is 5280 feet.",
+     " is more about the user's experience and the potential for future use, which are important but not the primary focus of the game's design.\n\nThe game's unique features, like the time-based mechanics and the emphasis on player choice, are central to its identity. These elements differentiate it from other games and offer a distinct gameplay"
+    ],
+    "corrupt": [
+     " to be clear, I'm not sure if I should include the \"all right\" here. Maybe it's better to just say \"Okay, so the question is...\" to keep it more direct. \n\nAlso, I need to make sure that the rest of the points are covered. Let me check the original list again",
+     ", but I need to make sure that the first letter is a consonant. Let's think of a name that starts with a consonant and is a common name. Maybe \"Alex\" or \"Jordan\"? Wait, but I need to check if they are names that are commonly used. \"Alex\" is a common",
+     " name. So, the name could be \"A\" or \"B\" or \"C\" or \"D\" or \"E\" or \"F\" or \"G\" or \"H\" or \"I\" or \"J\" or \"K\" or \"L\" or \"M\" or \"N\" or",
+     " the same as the previous one. So, maybe I need to use a different approach.\n\nWait, maybe the user wants the answer in a specific format. Let me check the original question again.\n\nThe user wrote: \"Please write a response in the same language as the query. Please write in English. Please write in"
+    ],
+    "chanswap": [
+     " to be clear, I'm not sure if I should include the \"all right\" here. Maybe it's better to just say \"Okay, so the question is...\" to keep it more direct. \n\nAlso, I need to make sure that the rest of the points are covered. Let me check the original list again",
+     "\". Maybe \"circular\" is a better fit. The user might be referring to a circular shape, like a ring or a circle. But I should confirm that. Alternatively, \"circular\" could refer to a process or a cycle. The user might be asking for a circular pattern or a circular object. Without",
+     " it's just the way it is.\n</think>\n\nThe phrase \"it's just the way it is\" is often used to express acceptance of a situation, whether it's something that's difficult, frustrating, or simply unavoidable. It can carry different connotations depending on the context and tone in which it's said:\n\n1",
+     ". So, if I have a cat, then I have a mammal. But a cat is a specific type of mammal. So, the cat is a subset of the mammal category. Therefore, if I have a cat, I must have a mammal. So, that makes sense. But then,"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I should check if there are any other factors. Let me think. Maybe I confused the order of some names. For example, in the first round, the top 8 teams are the ones that go to the next round, and then the next round would be the top 4, and so on. Wait,",
+     " the 2024 season. The user is asking about the 2024 season, so I should focus on that. Let me check if any notable teams or players have been mentioned in recent updates. \n\nWait, the user might be confused because the 2023 season is still ongoing,",
+     " so the answer is 18. \n\nBut wait, maybe I should check the exact years. Let me think again. The user asked for the years between 1901 and 2000. So the first year is 1901, the last is 2000.",
+     " the countries. But I think that's a bit of a stretch. Let me think. The main countries that have large populations and are well-known are the US, China, India, Russia, and maybe Brazil. But the user might be thinking of the top five. However, the answer provided earlier lists the top five"
+    ],
+    "corrupt": [
+     " I should check if there are any other factors. Let me think. Maybe I confused the order of some names. For example, in the first round, the top 8 teams are the ones that go to the next round, and then the next round would be the top 4, and so on. Wait,",
+     ". So, I need to make sure that the user's input is properly handled. Let me list the possible sources of confusion:\n\n1. **\"Does it mean that the car is not working?\"**  \n   - The user might be asking if the car's engine is not working, which could be a common issue",
+     ". If they're not, the user might need to adjust their setup.\n\nAnother thing to consider is the time of year. If the user is in the northern hemisphere, the sun might be lower in the sky during winter, requiring a different angle. Similarly, in the southern hemisphere, the sun's position changes with the",
+     " Falls, which is also a city in the state of Florida. Wait, no, that's not right. Let me check. Oh, right, there's a city called Falls in Florida, but the main one is probably Falls in another state. Wait, no, the user might be confused. Let me think."
+    ],
+    "chanswap": [
+     " I should check if there are any other factors. Let me think. Maybe I confused the order of some names. For example, in the first round, the top 8 teams are the ones that go to the next round, and then the next round would be the top 4, and so on. Wait,",
+     ". The 2023 UEFA Champions League final will be the 68th final of the UEFA Champions League, which is the top club football competition in Europe. It will be played on June 10, 2023, at the Atat\u00fcrk Olympic Stadium in Istanbul, Turkey. The final will",
+     " have been played in the NFL since 1920, and the Super Bowl is the championship game of the NFL. The NFL is the most popular football league in the world. The NFL is a professional league, so the players are paid for their performances. The NFL is based in the United States, and the",
+     " so maybe they are all in different countries. But the user didn't specify, so I should assume they're all in the same country, maybe the US. Wait, but the user didn't say that. Hmm. I need to be careful here. If I assume they're in the same country, maybe the answer"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " traditional approach. The approach of using the same model for both the data and the model might be more straightforward. But I need to remember that in the model, the data is just a set of parameters, so maybe the traditional approach is better.\n\nWait, in the traditional approach, the model is a function that takes parameters",
+     " go through the process of finding the right balance. \n\nFirst, I should consider the different types of income. There's salary, bonuses, side hustles, investments, and passive income. Each has its own tax implications. For example, salary is subject to income tax, while investments might be taxed differently based on the",
+     " time, they can be more expensive. The cost depends on the type of product, the brand, and the quantity. For example, a single box of cigarettes might cost around $5 to $10, but if you buy a case of 200, it could be cheaper per unit. Some brands are",
+     ". Also, they should be able to explain the process clearly. \n\nI need to make sure the user knows that the answer should be in the form of a code block. \n\nWait, the user mentioned \"put your final answer within \\boxed{}.\" So maybe they want the final answer in a box, but also"
+    ],
+    "corrupt": [
+     " traditional approach. The approach of using the same model for both the data and the model might be more straightforward. But I need to remember that in the model, the data is just a set of parameters, so maybe the traditional approach is better.\n\nWait, in the traditional approach, the model is a function that takes parameters",
+     " that the user is a fan of the NHL and the team they support is the Dallas Stars. The user is asking about the current season and the team's performance. The answer should be concise and to the point, not too long. The user might be looking for updates on key players, recent games, or standings.",
+     " Also, I need to check if the user is asking for a specific type of dish, like vegetarian or if they have any dietary restrictions. \n\nI should also consider the occasion. Is it a casual meal, a dinner party, or something more special? The level of detail in the response should match the user's needs",
+     " inner conflict and the need for authenticity. The idea that one's true self might be buried under societal expectations is a common theme in many stories. \n\nAlso, the title \"The Other Side\" could hint at a duality, like the surface versus the deeper self, or perhaps a literal other side, like another world"
+    ],
+    "chanswap": [
+     " traditional approach. The approach of using the same model for both the data and the model might be more straightforward. But I need to remember that in the model, the data is just a set of parameters, so maybe the traditional approach is better.\n\nWait, in the traditional approach, the model is a function that takes parameters",
+     " that's a lot of different things. Let me break it down. First, the player is in a position where they can either go for a layup, a three, or a jump shot. But wait, the context might be more specific. Maybe they're in a tight game situation. \n\nWait, the user",
+     " asked in Sports Cricket \u00b7 1 decade ago\n\nWhat's the best way to get a 100 in cricket?\n\nTop Answer\n\nSort by: Votes\u00a0|\u00a0Date\u00a0|\u00a0Recent\n  \u2022 1 decade ago\n\n    Well, to get a 100, you need to score a",
+     " the story of a man who lived in a small village called Rasskazovka, where the people were known for their love of storytelling. He was a curious boy named Ivan who always wanted to know more about the world. One day, he asked his grandfather, \"Why do we tell stories?\" His grandfather"
+    ]
+   }
+  ]
+ }
+}

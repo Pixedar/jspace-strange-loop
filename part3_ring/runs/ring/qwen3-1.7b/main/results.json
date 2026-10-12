@@ -1,0 +1,2844 @@
+{
+ "model": "Qwen/Qwen3-1.7B",
+ "T": 600,
+ "t_freeze": 300,
+ "seeds": 24,
+ "L_in": 14,
+ "L_read": 20,
+ "n_layers": 28,
+ "g": 0.05,
+ "s": 0.05,
+ "sigma": 0.15,
+ "summary": {
+  "free": {
+   "explore": 14.179733475049337,
+   "stuck": 0.025625,
+   "lag1": 0.9348742663860321,
+   "lag100": 0.8043360163768133,
+   "skill": -0.0011015806694558705,
+   "pred": 0.9337726856271426,
+   "selffulfil": 0.0,
+   "words": 45.458333333333336,
+   "explore_pre": 19.820325904422337,
+   "stuck_pre": 0.00125
+  },
+  "content": {
+   "explore": 11.994851046138338,
+   "stuck": 0.2008333333333333,
+   "lag1": 0.9633418619632721,
+   "lag100": 0.8254785016179085,
+   "skill": -0.013327722748120626,
+   "pred": 0.950014146665732,
+   "selffulfil": 0.9633418594797453,
+   "words": 40.166666666666664,
+   "explore_pre": 16.66515874862671,
+   "stuck_pre": 0.013958333333333331
+  },
+  "vel": {
+   "explore": 16.341336740387813,
+   "stuck": 0.04833333333333334,
+   "lag1": 0.9424227823813757,
+   "lag100": 0.7791119093696276,
+   "skill": -0.018086796005566914,
+   "pred": 0.9243359714746475,
+   "selffulfil": 0.18895178598662218,
+   "words": 51.916666666666664,
+   "explore_pre": 19.38402846124437,
+   "stuck_pre": 0.00020833333333333335
+  },
+  "ring_pred": {
+   "explore": 11.354131804572212,
+   "stuck": 0.09208333333333335,
+   "lag1": 0.9541129445036253,
+   "lag100": 0.8331791261831919,
+   "skill": -0.0012836434779804524,
+   "pred": 0.9528292988737425,
+   "selffulfil": 0.9528292988737425,
+   "words": 36.833333333333336,
+   "explore_pre": 15.960980296134949,
+   "stuck_pre": 0.005625000000000001
+  },
+  "yoked_pred": {
+   "explore": 11.569510234726799,
+   "stuck": 0.075,
+   "lag1": 0.9517688006162643,
+   "lag100": 0.8334370329976082,
+   "skill": -0.0006333538337154702,
+   "pred": 0.9511354342103004,
+   "selffulfil": 0.9505227903525034,
+   "words": 37.125,
+   "explore_pre": 16.036158932579887,
+   "stuck_pre": 0.005833333333333334
+  },
+  "ring_err": {
+   "explore": 17.912596146265667,
+   "stuck": 0.009166666666666667,
+   "lag1": 0.9177690322200457,
+   "lag100": 0.7709233189622561,
+   "skill": -0.00929985511659955,
+   "pred": 0.9084691802660624,
+   "selffulfil": -0.8828530386090279,
+   "words": 55.625,
+   "explore_pre": 23.400433116488983,
+   "stuck_pre": 0.0
+  },
+  "yoked_err": {
+   "explore": 17.50623471207089,
+   "stuck": 0.008333333333333333,
+   "lag1": 0.915861410399278,
+   "lag100": 0.7706577579180399,
+   "skill": -0.005146981740836054,
+   "pred": 0.9107144127289454,
+   "selffulfil": -0.8806005890170733,
+   "words": 56.375,
+   "explore_pre": 23.239522192213272,
+   "stuck_pre": 0.0
+  },
+  "shuf_err": {
+   "explore": 15.64353640874227,
+   "stuck": 0.007916666666666667,
+   "lag1": 0.9196978732943535,
+   "lag100": 0.7704561104377111,
+   "skill": -0.00238336578089123,
+   "pred": 0.9173145070672035,
+   "selffulfil": -0.6449635103344917,
+   "words": 49.333333333333336,
+   "explore_pre": 21.370718558629353,
+   "stuck_pre": 0.0
+  },
+  "rand_err": {
+   "explore": 14.753872156143188,
+   "stuck": 0.016458333333333335,
+   "lag1": 0.9314420968294144,
+   "lag100": 0.80184389402469,
+   "skill": 0.0005899525055307701,
+   "pred": 0.9320320536692938,
+   "selffulfil": 0.0041535006603226066,
+   "words": 47.458333333333336,
+   "explore_pre": 20.15455137358771,
+   "stuck_pre": 0.000625
+  },
+  "frozen_err": {
+   "explore": 15.742367585500082,
+   "stuck": 0.018541666666666668,
+   "lag1": 0.9258053700129191,
+   "lag100": 0.7680311451355616,
+   "skill": -0.08694666593025129,
+   "pred": 0.8388586963216463,
+   "selffulfil": -0.773142951230208,
+   "words": 54.875,
+   "explore_pre": 23.430083619223705,
+   "stuck_pre": 0.0
+  }
+ },
+ "tests": {
+  "ring_err_vs_vel": {
+   "explore": {
+    "diff": 1.571259405877855,
+    "se": 0.13342483405762298,
+    "t": 11.776363950351746,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.03916666666666666,
+    "se": 0.003427122565961948,
+    "t": -11.428440597855623,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.008786940888967365,
+    "se": 0.0003471667285748998,
+    "t": 25.310434917070744,
+    "pos": 24,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.008188590407371521,
+    "se": 0.0007729090736472085,
+    "t": -10.594506762265251,
+    "pos": 0,
+    "n": 24
+   },
+   "words": {
+    "diff": 3.7083333333333335,
+    "se": 0.5332399148256673,
+    "t": 6.954343120667744,
+    "pos": 22,
+    "n": 24
+   }
+  },
+  "ring_err_vs_yoked_err": {
+   "explore": {
+    "diff": 0.40636143419477655,
+    "se": 0.14498849237081216,
+    "t": 2.802715081383809,
+    "pos": 16,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.000833333333333333,
+    "se": 0.0019427183505006539,
+    "t": 0.4289522117905441,
+    "pos": 9,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.0041528733757634955,
+    "se": 0.0005042223498178214,
+    "t": -8.236194562307588,
+    "pos": 1,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.000265561044216156,
+    "se": 0.0007060772434587154,
+    "t": 0.37610763790560187,
+    "pos": 11,
+    "n": 24
+   },
+   "words": {
+    "diff": -0.75,
+    "se": 0.7714328847360437,
+    "t": -0.972216786242685,
+    "pos": 9,
+    "n": 24
+   }
+  },
+  "ring_err_vs_shuf_err": {
+   "explore": {
+    "diff": 2.269059737523397,
+    "se": 0.11421919904226471,
+    "t": 19.86583478565432,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.0012499999999999998,
+    "se": 0.0021121199598123403,
+    "t": 0.5918224455920871,
+    "pos": 9,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.00691648933570832,
+    "se": 0.0004267176618365238,
+    "t": -16.208584631676292,
+    "pos": 0,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.00046720852454503375,
+    "se": 0.0008724175646346534,
+    "t": 0.5355331477544116,
+    "pos": 12,
+    "n": 24
+   },
+   "words": {
+    "diff": 6.291666666666667,
+    "se": 0.8607360489103034,
+    "t": 7.309635369207496,
+    "pos": 22,
+    "n": 24
+   }
+  },
+  "ring_err_vs_rand_err": {
+   "explore": {
+    "diff": 3.158723990122477,
+    "se": 0.11247746868253164,
+    "t": 28.08317103079547,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.007291666666666668,
+    "se": 0.0030392833624866113,
+    "t": -2.399140125157971,
+    "pos": 4,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.00988980762213032,
+    "se": 0.0003750430669332066,
+    "t": -26.36979188283901,
+    "pos": 0,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.03092057506243388,
+    "se": 0.0006614933555083048,
+    "t": -46.74359130738945,
+    "pos": 0,
+    "n": 24
+   },
+   "words": {
+    "diff": 8.166666666666666,
+    "se": 0.7289725414469155,
+    "t": 11.202982557418277,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "ring_err_vs_free": {
+   "explore": {
+    "diff": 3.732862671216329,
+    "se": 0.10948773921441128,
+    "t": 34.09388757133998,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.016458333333333335,
+    "se": 0.002241715154909025,
+    "t": -7.34184862750828,
+    "pos": 1,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.00819827444714368,
+    "se": 0.00042171081576284155,
+    "t": -19.440512646832758,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "ring_err_vs_content": {
+   "explore": {
+    "diff": 5.917745100127327,
+    "se": 0.10870886826393676,
+    "t": 54.43663607792786,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.19166666666666665,
+    "se": 0.006194804586484896,
+    "t": -30.939905204568145,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.004027867631521076,
+    "se": 0.00038052506881255574,
+    "t": 10.585025696441509,
+    "pos": 24,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.054555182655652366,
+    "se": 0.0009899916579909605,
+    "t": -55.10670945082903,
+    "pos": 0,
+    "n": 24
+   },
+   "words": {
+    "diff": 15.458333333333334,
+    "se": 0.8361817261977526,
+    "t": 18.486810760173825,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_content": {
+   "explore": {
+    "diff": -0.6407192415661279,
+    "se": 0.09761583907843806,
+    "t": -6.563681136329582,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.10875,
+    "se": 0.007085464300088322,
+    "t": -15.348323750448422,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.012044079270140173,
+    "se": 0.0002932879177202465,
+    "t": 41.0657191873429,
+    "pos": 24,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.007700624565283458,
+    "se": 0.0008232836011940172,
+    "t": 9.35355028827874,
+    "pos": 23,
+    "n": 24
+   },
+   "selffulfil": {
+    "diff": -0.010512560606002808,
+    "se": 0.00031891393584148925,
+    "t": -32.963628818114415,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_yoked_pred": {
+   "explore": {
+    "diff": -0.21537843015458838,
+    "se": 0.08324981542590269,
+    "t": -2.5871340260962867,
+    "pos": 7,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.017083333333333336,
+    "se": 0.004503588209781733,
+    "t": 3.7932716175578767,
+    "pos": 19,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.0006502896442649823,
+    "se": 0.00025398552399754753,
+    "t": -2.5603413691847314,
+    "pos": 7,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.0002579068144162496,
+    "se": 0.0006911423983594012,
+    "t": -0.3731601693492625,
+    "pos": 13,
+    "n": 24
+   },
+   "selffulfil": {
+    "diff": 0.0023065085212389627,
+    "se": 0.0003057523750790651,
+    "t": 7.543714159677478,
+    "pos": 21,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_free": {
+   "explore": {
+    "diff": -2.825601670477125,
+    "se": 0.125883612244708,
+    "t": -22.446143863304258,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.06645833333333334,
+    "se": 0.003704178587711699,
+    "t": 17.941449570979994,
+    "pos": 24,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.00018206280852458198,
+    "se": 0.00034442640260799485,
+    "t": -0.5285971317703968,
+    "pos": 12,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_vel": {
+   "explore": {
+    "diff": -4.9872049358155985,
+    "se": 0.11887631876618131,
+    "t": -41.95288841022212,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.043750000000000004,
+    "se": 0.005171427213090199,
+    "t": 8.45994697348879,
+    "pos": 23,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.016803152527586462,
+    "se": 0.00032665453104097916,
+    "t": 51.44013301771249,
+    "pos": 24,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.0540672168135643,
+    "se": 0.0009103401537972066,
+    "t": 59.39232339476555,
+    "pos": 24,
+    "n": 24
+   },
+   "selffulfil": {
+    "diff": 0.7638775128871202,
+    "se": 0.0006329855039440666,
+    "t": 1206.7851603669899,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "content_vs_free": {
+   "explore": {
+    "diff": -2.1848824289109974,
+    "se": 0.09297829617389716,
+    "t": -23.498843480898113,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.17520833333333333,
+    "se": 0.006352273120094139,
+    "t": 27.581989946102443,
+    "pos": 24,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.012226142078664756,
+    "se": 0.00027914987235362886,
+    "t": -43.797770622572955,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "vel_vs_free": {
+   "explore": {
+    "diff": 2.161603265338474,
+    "se": 0.07969114916311329,
+    "t": 27.12475962561495,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.022708333333333334,
+    "se": 0.0037947709859422075,
+    "t": 5.984111667728233,
+    "pos": 21,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.016985215336111043,
+    "se": 0.000303451275530297,
+    "t": -55.97345177221118,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "yoked_pred_vs_free": {
+   "explore": {
+    "diff": -2.6102232403225365,
+    "se": 0.12418846977215578,
+    "t": -21.01824142862394,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.049375,
+    "se": 0.0036898865404182044,
+    "t": 13.38117024985921,
+    "pos": 24,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.0004682268357404003,
+    "se": 0.0003414607444724942,
+    "t": 1.37124645605673,
+    "pos": 15,
+    "n": 24
+   }
+  },
+  "yoked_err_vs_free": {
+   "explore": {
+    "diff": 3.3265012370215525,
+    "se": 0.11120623353597144,
+    "t": 29.912902642688124,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.017291666666666667,
+    "se": 0.002463118653742743,
+    "t": -7.020232923165005,
+    "pos": 1,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.004045401071380184,
+    "se": 0.0005247984185398846,
+    "t": -7.708485636514419,
+    "pos": 1,
+    "n": 24
+   }
+  },
+  "shuf_err_vs_free": {
+   "explore": {
+    "diff": 1.4638029336929321,
+    "se": 0.08044655015246636,
+    "t": 18.19596901195463,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.017708333333333336,
+    "se": 0.0018790214523409488,
+    "t": -9.424231592072402,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.0012817851114353591,
+    "se": 0.00037325018506953174,
+    "t": -3.4341178188473744,
+    "pos": 5,
+    "n": 24
+   }
+  },
+  "rand_err_vs_free": {
+   "explore": {
+    "diff": 0.5741386810938517,
+    "se": 0.07348644849225769,
+    "t": 7.812851115731102,
+    "pos": 23,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.009166666666666668,
+    "se": 0.002736406896883943,
+    "t": -3.3498916689272793,
+    "pos": 5,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.0016915331749866407,
+    "se": 0.0003734481944140842,
+    "t": 4.5294988710296105,
+    "pos": 20,
+    "n": 24
+   }
+  },
+  "frozen_err_vs_free": {
+   "explore": {
+    "diff": 1.5626341104507446,
+    "se": 0.11413934719374401,
+    "t": 13.690582160052802,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.007083333333333335,
+    "se": 0.0026223099858399177,
+    "t": -2.7011807801450924,
+    "pos": 5,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.08584508526079541,
+    "se": 0.0017424503767161253,
+    "t": -49.26687520512444,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "freeze_effect": {
+   "explore": {
+    "diff": -2.199879063500299,
+    "se": 0.1587147695804532,
+    "t": -13.860581906242638,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.009375,
+    "se": 0.002048163281109921,
+    "t": 4.577271786124195,
+    "pos": 19,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.07764681081365173,
+    "se": 0.0016731582678283985,
+    "t": -46.407331754951045,
+    "pos": 0,
+    "n": 24
+   }
+  }
+ },
+ "privileged": {
+  "free": {
+   "own": 0.5863795420284456,
+   "other": 0.5862783286238595,
+   "test": {
+    "diff": 0.00010121340458602024,
+    "se": 0.0022039697390755656,
+    "t": 0.045923227888089446,
+    "pos": 12,
+    "n": 24
+   }
+  },
+  "ring_err": {
+   "own": 0.46575002527591175,
+   "other": 0.46987751636711056,
+   "test": {
+    "diff": -0.0041274910911987634,
+    "se": 0.0033930754826176687,
+    "t": -1.2164454084040925,
+    "pos": 8,
+    "n": 24
+   }
+  },
+  "ring_pred": {
+   "own": 0.6526257341703995,
+   "other": 0.6497924125600817,
+   "test": {
+    "diff": 0.002833321610317805,
+    "se": 0.0031343535671523428,
+    "t": 0.9039572433725036,
+    "pos": 13,
+    "n": 24
+   }
+  },
+  "content": {
+   "own": 0.6640614771048318,
+   "other": 0.6634846760031441,
+   "test": {
+    "diff": 0.0005768011016876925,
+    "se": 0.004531484012482837,
+    "t": 0.1272874625837328,
+    "pos": 11,
+    "n": 24
+   }
+  },
+  "vel": {
+   "own": 0.6023636372047904,
+   "other": 0.6023140607985168,
+   "test": {
+    "diff": 4.957640627367236e-05,
+    "se": 0.0025171528143387483,
+    "t": 0.0196954296899515,
+    "pos": 12,
+    "n": 24
+   }
+  },
+  "yoked_err": {
+   "own": 0.4586640695660029,
+   "other": 0.45718396114433313,
+   "test": {
+    "diff": 0.0014801084216697323,
+    "se": 0.0038267031347957088,
+    "t": 0.38678422901721876,
+    "pos": 12,
+    "n": 24
+   }
+  }
+ },
+ "examples": {
+  "free": {
+   "words": [
+    [
+     [
+      "understandably",
+      "Thankfully",
+      "achievable",
+      "Calculates",
+      "elasticity"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "Kardashian",
+      "anyways",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "anyways",
+      "Kardashian"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "Xxx",
+      "anyways",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "Cookbook"
+     ]
+    ],
+    [
+     [
+      "elasticity",
+      "understandably",
+      "joe",
+      "Morrow",
+      "Kylie"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "amd",
+      "anyways",
+      "npc"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "Kardashian",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Kardashian",
+      "anyways",
+      "Xxx"
+     ],
+     [
+      "ethernet",
+      "squirt",
+      "cgi",
+      "harming",
+      "Cookbook"
+     ]
+    ],
+    [
+     [
+      "btc",
+      "understandably",
+      "deserving",
+      "elasticity",
+      "kilograms"
+     ],
+     [
+      "Brewer",
+      "Kardashian",
+      "amd",
+      "anyways",
+      "Xxx"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "dignity",
+      "Dataset"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "Xxx",
+      "anyways",
+      "retrospect"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "harming"
+     ]
+    ],
+    [
+     [
+      "Somebody",
+      "Corbyn",
+      "nausea",
+      "understandably",
+      "Maggie"
+     ],
+     [
+      "Kardashian",
+      "Brewer",
+      "anyways",
+      "Xxx",
+      "ethernet"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "Kardashian",
+      "cgi"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "anyways"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "squirt",
+      "Metadata"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in"
+   ]
+  },
+  "content": {
+   "words": [
+    [
+     [
+      "understandably",
+      "Thankfully",
+      "achievable",
+      "Calculates",
+      "elasticity"
+     ],
+     [
+      "Brewer",
+      "anyways",
+      "npc",
+      "amd",
+      "Kardashian"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "anyways",
+      "Spreadsheet"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "disposing",
+      "anyways",
+      "Xxx"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "usefulness"
+     ]
+    ],
+    [
+     [
+      "elasticity",
+      "understandably",
+      "joe",
+      "Morrow",
+      "Kylie"
+     ],
+     [
+      "Brewer",
+      "anyways",
+      "Xxx",
+      "amd",
+      "Kardashian"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "Kardashian",
+      "cgi",
+      "anyways"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "anyways",
+      "cgi",
+      "Fav"
+     ],
+     [
+      "ethernet",
+      "squirt",
+      "cgi",
+      "Cookbook",
+      "Kardashian"
+     ]
+    ],
+    [
+     [
+      "btc",
+      "understandably",
+      "deserving",
+      "elasticity",
+      "kilograms"
+     ],
+     [
+      "Brewer",
+      "amd",
+      "Kardashian",
+      "anyways",
+      "npc"
+     ],
+     [
+      "ethernet",
+      "Xxx",
+      "cgi",
+      "anyways",
+      "Kardashian"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "Xxx",
+      "anyways",
+      "Spreadsheet"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "Spreadsheet"
+     ]
+    ],
+    [
+     [
+      "Somebody",
+      "Corbyn",
+      "nausea",
+      "understandably",
+      "Maggie"
+     ],
+     [
+      "Kardashian",
+      "Brewer",
+      "ethernet",
+      "Xxx",
+      "anyways"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "Kardashian",
+      "cgi"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "Spreadsheet"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "harming"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios that feel so real, even",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in"
+   ]
+  },
+  "vel": {
+   "words": [
+    [
+     [
+      "understandably",
+      "Thankfully",
+      "achievable",
+      "Calculates",
+      "elasticity"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "anyways",
+      "Kardashian",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "anyways",
+      "Spreadsheet"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "Xxx",
+      "Spreadsheet",
+      "anyways"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "squirt",
+      "usefulness"
+     ]
+    ],
+    [
+     [
+      "elasticity",
+      "understandably",
+      "joe",
+      "Morrow",
+      "Kylie"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "anyways",
+      "amd",
+      "npc"
+     ],
+     [
+      "Xxx",
+      "anyways",
+      "ethernet",
+      "dignity",
+      "Spreadsheet"
+     ],
+     [
+      "anyways",
+      "ethernet",
+      "Kardashian",
+      "Dataset",
+      "Fav"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Cookbook",
+      "Xxx"
+     ]
+    ],
+    [
+     [
+      "btc",
+      "understandably",
+      "deserving",
+      "elasticity",
+      "kilograms"
+     ],
+     [
+      "Brewer",
+      "Kardashian",
+      "amd",
+      "Xxx",
+      "ethernet"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "Dataset",
+      "Kardashian",
+      "cgi"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "Xxx",
+      "anyways",
+      "Spreadsheet"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "squirt",
+      "harming"
+     ]
+    ],
+    [
+     [
+      "Somebody",
+      "Corbyn",
+      "nausea",
+      "understandably",
+      "Maggie"
+     ],
+     [
+      "Kardashian",
+      "Brewer",
+      "anyways",
+      "Xxx",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "cgi",
+      "Kardashian"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "Xxx",
+      "Cookbook",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "Fraser",
+      "squirt"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios that feel so real, even",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific"
+   ]
+  },
+  "ring_pred": {
+   "words": [
+    [
+     [
+      "understandably",
+      "Thankfully",
+      "achievable",
+      "Calculates",
+      "elasticity"
+     ],
+     [
+      "Brewer",
+      "Kardashian",
+      "amd",
+      "ethernet",
+      "Xxx"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "cgi",
+      "Kardashian"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "Spreadsheet",
+      "cgi",
+      "Metadata"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "Cookbook"
+     ]
+    ],
+    [
+     [
+      "elasticity",
+      "understandably",
+      "joe",
+      "Morrow",
+      "Kylie"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "amd",
+      "npc",
+      "Kardashian"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "Kardashian",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "anyways",
+      "Fav",
+      "Spreadsheet"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Cookbook",
+      "Kardashian"
+     ]
+    ],
+    [
+     [
+      "btc",
+      "understandably",
+      "deserving",
+      "elasticity",
+      "kilograms"
+     ],
+     [
+      "Brewer",
+      "Kardashian",
+      "amd",
+      "ethernet",
+      "Xxx"
+     ],
+     [
+      "ethernet",
+      "Xxx",
+      "Kardashian",
+      "anyways",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "Xxx",
+      "Spreadsheet",
+      "anyways"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "Spreadsheet"
+     ]
+    ],
+    [
+     [
+      "Somebody",
+      "Corbyn",
+      "nausea",
+      "understandably",
+      "Maggie"
+     ],
+     [
+      "Kardashian",
+      "Brewer",
+      "ethernet",
+      "amd",
+      "Xxx"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "Kardashian",
+      "Spreadsheet"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "cgi",
+      "Spreadsheet",
+      "Xxx"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "Metadata"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the way that the mind can wander and the way it can create these vivid images and scenarios that feel so real, even",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific"
+   ]
+  },
+  "yoked_pred": {
+   "words": [
+    [
+     [
+      "understandably",
+      "Thankfully",
+      "achievable",
+      "Calculates",
+      "elasticity"
+     ],
+     [
+      "Brewer",
+      "Kardashian",
+      "amd",
+      "Xxx",
+      "ethernet"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "anyways",
+      "Spreadsheet"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "anyways",
+      "cgi",
+      "Xxx"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "Metadata"
+     ]
+    ],
+    [
+     [
+      "elasticity",
+      "understandably",
+      "joe",
+      "Morrow",
+      "Kylie"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "amd",
+      "npc",
+      "Kardashian"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "Kardashian",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "anyways",
+      "Spreadsheet",
+      "Fav"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Cookbook",
+      "Xxx"
+     ]
+    ],
+    [
+     [
+      "btc",
+      "understandably",
+      "deserving",
+      "elasticity",
+      "kilograms"
+     ],
+     [
+      "Brewer",
+      "Kardashian",
+      "Spreadsheet",
+      "amd",
+      "Xxx"
+     ],
+     [
+      "ethernet",
+      "Xxx",
+      "Kardashian",
+      "anyways",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "cgi",
+      "Xxx",
+      "Spreadsheet"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "Spreadsheet"
+     ]
+    ],
+    [
+     [
+      "Somebody",
+      "Corbyn",
+      "nausea",
+      "understandably",
+      "Maggie"
+     ],
+     [
+      "Kardashian",
+      "Brewer",
+      "ethernet",
+      "Spreadsheet",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "Kardashian",
+      "Dataset"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "cgi",
+      "Spreadsheet",
+      "Xxx"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Metadata",
+      "Cookbook"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios that feel so real, even"
+   ]
+  },
+  "ring_err": {
+   "words": [
+    [
+     [
+      "understandably",
+      "Thankfully",
+      "achievable",
+      "Calculates",
+      "elasticity"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "anyways",
+      "amd",
+      "Kardashian"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "anyways",
+      "dignity"
+     ],
+     [
+      "Kardashian",
+      "Brewer",
+      "anyways",
+      "ethernet",
+      "Xxx"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "harming",
+      "Xxx",
+      "retrospect"
+     ]
+    ],
+    [
+     [
+      "elasticity",
+      "understandably",
+      "joe",
+      "Morrow",
+      "Kylie"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "anyways",
+      "amd",
+      "Kardashian"
+     ],
+     [
+      "Xxx",
+      "cgi",
+      "anyways",
+      "ethernet",
+      "dignity"
+     ],
+     [
+      "Kardashian",
+      "Xxx",
+      "ethernet",
+      "Brewer",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Cookbook",
+      "Metadata"
+     ]
+    ],
+    [
+     [
+      "btc",
+      "understandably",
+      "deserving",
+      "elasticity",
+      "kilograms"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "Kardashian",
+      "anyways",
+      "ethernet"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "Dataset",
+      "cgi",
+      "Brewer"
+     ],
+     [
+      "Xxx",
+      "Kardashian",
+      "ethernet",
+      "Spreadsheet",
+      "Fixture"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "squirt",
+      "Spreadsheet"
+     ]
+    ],
+    [
+     [
+      "Somebody",
+      "Corbyn",
+      "nausea",
+      "understandably",
+      "Maggie"
+     ],
+     [
+      "Kardashian",
+      "Brewer",
+      "anyways",
+      "Xxx",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "Kardashian",
+      "cgi"
+     ],
+     [
+      "cgi",
+      "ethernet",
+      "Xxx",
+      "Kardashian",
+      "Fixture"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "harming",
+      "squirt"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the way that the mind can wander and the way it can create these vivid images and scenarios that feel so real, even",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in"
+   ]
+  },
+  "yoked_err": {
+   "words": [
+    [
+     [
+      "understandably",
+      "Thankfully",
+      "achievable",
+      "Calculates",
+      "elasticity"
+     ],
+     [
+      "Brewer",
+      "anyways",
+      "Xxx",
+      "Kardashian",
+      "ethernet"
+     ],
+     [
+      "Xxx",
+      "cgi",
+      "ethernet",
+      "anyways",
+      "Spreadsheet"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "Xxx",
+      "Spreadsheet",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "harming",
+      "squirt"
+     ]
+    ],
+    [
+     [
+      "elasticity",
+      "understandably",
+      "joe",
+      "Morrow",
+      "Kylie"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "anyways",
+      "amd",
+      "Kardashian"
+     ],
+     [
+      "Xxx",
+      "anyways",
+      "cgi",
+      "ethernet",
+      "dignity"
+     ],
+     [
+      "anyways",
+      "Xxx",
+      "Brewer",
+      "cgi",
+      "Kardashian"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "Advisory"
+     ]
+    ],
+    [
+     [
+      "btc",
+      "understandably",
+      "deserving",
+      "elasticity",
+      "kilograms"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "amd",
+      "anyways",
+      "Kardashian"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "Dataset",
+      "cgi",
+      "Brewer"
+     ],
+     [
+      "Xxx",
+      "Kardashian",
+      "ethernet",
+      "Spreadsheet",
+      "Fixture"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "Spreadsheet",
+      "squirt"
+     ]
+    ],
+    [
+     [
+      "Somebody",
+      "Corbyn",
+      "nausea",
+      "understandably",
+      "Maggie"
+     ],
+     [
+      "Brewer",
+      "anyways",
+      "Xxx",
+      "Kardashian",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "Kardashian",
+      "Spreadsheet"
+     ],
+     [
+      "Xxx",
+      "Kardashian",
+      "cgi",
+      "ethernet",
+      "Fixture"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "squirt",
+      "harming"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the mind can wander and the way it can create these vivid images and scenarios that feel so real, even"
+   ]
+  },
+  "shuf_err": {
+   "words": [
+    [
+     [
+      "understandably",
+      "Thankfully",
+      "achievable",
+      "Calculates",
+      "elasticity"
+     ],
+     [
+      "Brewer",
+      "anyways",
+      "Xxx",
+      "Kardashian",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "cgi",
+      "ethernet",
+      "anyways",
+      "yielding"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "Xxx",
+      "anyways",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "Cookbook"
+     ]
+    ],
+    [
+     [
+      "elasticity",
+      "understandably",
+      "joe",
+      "Morrow",
+      "Kylie"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "amd",
+      "anyways",
+      "Kardashian"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "cgi",
+      "Kardashian"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "Dataset",
+      "cgi",
+      "anyways"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Metadata",
+      "Cookbook"
+     ]
+    ],
+    [
+     [
+      "btc",
+      "understandably",
+      "deserving",
+      "elasticity",
+      "kilograms"
+     ],
+     [
+      "Brewer",
+      "Kardashian",
+      "Xxx",
+      "amd",
+      "ethernet"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "Dataset",
+      "Brewer"
+     ],
+     [
+      "Kardashian",
+      "Xxx",
+      "ethernet",
+      "Spreadsheet",
+      "Fixture"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "squirt",
+      "Advisory"
+     ]
+    ],
+    [
+     [
+      "Somebody",
+      "Corbyn",
+      "nausea",
+      "understandably",
+      "Maggie"
+     ],
+     [
+      "Brewer",
+      "Kardashian",
+      "Xxx",
+      "anyways",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "Spreadsheet",
+      "anyways"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Kardashian",
+      "Xxx",
+      "Spreadsheet"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Metadata",
+      "Xxx"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in"
+   ]
+  },
+  "rand_err": {
+   "words": [
+    [
+     [
+      "understandably",
+      "Thankfully",
+      "achievable",
+      "Calculates",
+      "elasticity"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "anyways",
+      "amd",
+      "npc"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "anyways",
+      "Kardashian"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "cgi",
+      "anyways",
+      "Xxx"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Advisory",
+      "Xxx",
+      "harming"
+     ]
+    ],
+    [
+     [
+      "elasticity",
+      "understandably",
+      "joe",
+      "Morrow",
+      "Kylie"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "amd",
+      "Kardashian",
+      "anyways"
+     ],
+     [
+      "Xxx",
+      "anyways",
+      "ethernet",
+      "Kardashian",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "anyways",
+      "Dataset",
+      "cgi"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Xxx",
+      "Cookbook"
+     ]
+    ],
+    [
+     [
+      "btc",
+      "understandably",
+      "deserving",
+      "elasticity",
+      "kilograms"
+     ],
+     [
+      "Brewer",
+      "Kardashian",
+      "anyways",
+      "Xxx",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "anyways",
+      "dignity"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "Xxx",
+      "anyways",
+      "Spreadsheet"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "squirt",
+      "Spreadsheet"
+     ]
+    ],
+    [
+     [
+      "Somebody",
+      "Corbyn",
+      "nausea",
+      "understandably",
+      "Maggie"
+     ],
+     [
+      "Kardashian",
+      "Brewer",
+      "anyways",
+      "amd",
+      "ethernet"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "cgi",
+      "Spreadsheet"
+     ],
+     [
+      "ethernet",
+      "Kardashian",
+      "Xxx",
+      "cgi",
+      "anyways"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "harming",
+      "Cookbook"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in"
+   ]
+  },
+  "frozen_err": {
+   "words": [
+    [
+     [
+      "understandably",
+      "Thankfully",
+      "achievable",
+      "Calculates",
+      "elasticity"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "anyways",
+      "amd",
+      "Kardashian"
+     ],
+     [
+      "Xxx",
+      "cgi",
+      "ethernet",
+      "dignity",
+      "anyways"
+     ],
+     [
+      "Kardashian",
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "Brewer"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "usefulness",
+      "Xxx"
+     ]
+    ],
+    [
+     [
+      "elasticity",
+      "understandably",
+      "joe",
+      "Morrow",
+      "Kylie"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "anyways",
+      "npc",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "anyways",
+      "cgi",
+      "ethernet",
+      "dignity"
+     ],
+     [
+      "Kardashian",
+      "Xxx",
+      "ethernet",
+      "cgi",
+      "anyways"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "squirt",
+      "Txt",
+      "Xxx"
+     ]
+    ],
+    [
+     [
+      "btc",
+      "understandably",
+      "deserving",
+      "elasticity",
+      "kilograms"
+     ],
+     [
+      "Brewer",
+      "Xxx",
+      "ethernet",
+      "Kardashian",
+      "amd"
+     ],
+     [
+      "Xxx",
+      "Dataset",
+      "cgi",
+      "ethernet",
+      "Brewer"
+     ],
+     [
+      "ethernet",
+      "Xxx",
+      "Kardashian",
+      "Spreadsheet",
+      "Fixture"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Metadata",
+      "squirt",
+      "Xxx"
+     ]
+    ],
+    [
+     [
+      "Somebody",
+      "Corbyn",
+      "nausea",
+      "understandably",
+      "Maggie"
+     ],
+     [
+      "Kardashian",
+      "Brewer",
+      "anyways",
+      "Xxx",
+      "ethernet"
+     ],
+     [
+      "Xxx",
+      "ethernet",
+      "anyways",
+      "Spreadsheet",
+      "cgi"
+     ],
+     [
+      "cgi",
+      "Xxx",
+      "Kardashian",
+      "ethernet",
+      "Fixture"
+     ],
+     [
+      "ethernet",
+      "cgi",
+      "Xxx",
+      "squirt",
+      "Metadata"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the way that the mind can wander and the way it can create these vivid images and scenarios in the absence of any specific",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in",
+    " the way that the world is so full of people, and yet so few of us are actually connected to each other in"
+   ]
+  }
+ },
+ "timecourse": {
+  "free": {
+   "skill": [
+    -0.01652469113469124,
+    0.02816571481525898,
+    0.019007323309779167,
+    0.03265323489904404,
+    0.021326227113604546,
+    0.0009806075831875205,
+    0.029194895178079605,
+    0.020704416558146477,
+    0.021320149302482605,
+    0.012602468952536583,
+    0.019867446273565292,
+    0.005370459519326687,
+    0.01017733383923769,
+    -0.0014896178618073463,
+    0.0034431146923452616,
+    -0.004584765061736107,
+    0.0005872731562703848,
+    -0.0024911423679441214,
+    -0.005012091249227524,
+    -0.005348958075046539,
+    0.0003678091452457011,
+    -0.0012922189198434353,
+    0.0023730257526040077
+   ],
+   "lag1": [
+    0.6585868000984192,
+    0.7182926535606384,
+    0.7781336307525635,
+    0.8030651807785034,
+    0.8182266354560852,
+    0.8454996943473816,
+    0.8516189455986023,
+    0.8801488280296326,
+    0.8675501346588135,
+    0.899260938167572,
+    0.8793736696243286,
+    0.9080303907394409,
+    0.903031587600708,
+    0.9223518967628479,
+    0.9221059083938599,
+    0.9216784834861755,
+    0.9251090288162231,
+    0.9428613185882568,
+    0.932107150554657,
+    0.9387624263763428,
+    0.9361526370048523,
+    0.930735170841217,
+    0.9335293769836426
+   ],
+   "window": 25
+  },
+  "content": {
+   "skill": [
+    -0.016253922134637833,
+    0.014203782193362713,
+    0.005709958262741566,
+    0.01473673153668642,
+    0.0020669163204729557,
+    -0.009522859007120132,
+    0.01121077872812748,
+    0.004130808170884848,
+    0.004386028740555048,
+    0.0015063543105497956,
+    0.0006029824144206941,
+    -0.006278262939304113,
+    -0.003596724709495902,
+    -0.011450541205704212,
+    -0.007523423992097378,
+    -0.01506827399134636,
+    -0.00928119570016861,
+    -0.012079061008989811,
+    -0.014725739136338234,
+    -0.01665172167122364,
+    -0.012651335448026657,
+    -0.013033995404839516,
+    -0.014758625067770481
+   ],
+   "lag1": [
+    0.7379942536354065,
+    0.777815580368042,
+    0.8325517773628235,
+    0.8508294820785522,
+    0.8641923069953918,
+    0.8898395895957947,
+    0.8942893743515015,
+    0.9236748218536377,
+    0.9116451740264893,
+    0.9408182501792908,
+    0.9225383400917053,
+    0.9461838006973267,
+    0.937856137752533,
+    0.9552022218704224,
+    0.9536194801330566,
+    0.9613635540008545,
+    0.9561840891838074,
+    0.9697249531745911,
+    0.9618292450904846,
+    0.9637026190757751,
+    0.9635592699050903,
+    0.9598390460014343,
+    0.9665384888648987
+   ],
+   "window": 25
+  },
+  "vel": {
+   "skill": [
+    -0.01697978936135769,
+    0.01848244108259678,
+    0.015208518132567406,
+    0.02642485685646534,
+    0.013572721742093563,
+    -0.002336508361622691,
+    0.02185993641614914,
+    0.016659731045365334,
+    0.013914810493588448,
+    0.004105001222342253,
+    0.009328973479568958,
+    -0.006189107894897461,
+    -0.001452956348657608,
+    -0.0145145608112216,
+    -0.011067500337958336,
+    -0.025123806670308113,
+    -0.01562319416552782,
+    -0.018398325890302658,
+    -0.02076682262122631,
+    -0.021925242617726326,
+    -0.01637582667171955,
+    -0.01741236448287964,
+    -0.017967958003282547
+   ],
+   "lag1": [
+    0.6859700083732605,
+    0.7346456050872803,
+    0.7856326103210449,
+    0.8095746636390686,
+    0.8243123888969421,
+    0.8507882952690125,
+    0.8559004664421082,
+    0.8803591132164001,
+    0.8717823028564453,
+    0.8992488384246826,
+    0.879123866558075,
+    0.9084580540657043,
+    0.9059078693389893,
+    0.9282042384147644,
+    0.9290940165519714,
+    0.9313710331916809,
+    0.9327447414398193,
+    0.9486624002456665,
+    0.9399399757385254,
+    0.9456035494804382,
+    0.9432657957077026,
+    0.9382131695747375,
+    0.9451190233230591
+   ],
+   "window": 25
+  },
+  "ring_pred": {
+   "skill": [
+    -0.007725003641098738,
+    0.030980167910456657,
+    0.02381007745862007,
+    0.031431566923856735,
+    0.02028227038681507,
+    0.006213326472789049,
+    0.028853919357061386,
+    0.01766476221382618,
+    0.023654351010918617,
+    0.012071049772202969,
+    0.01947828009724617,
+    0.00586582301184535,
+    0.01072090957313776,
+    0.0005927029997110367,
+    0.005327459890395403,
+    -0.0021884075831621885,
+    0.0031325609888881445,
+    -0.00016859680181369185,
+    -0.0028531404677778482,
+    -0.004234166815876961,
+    -0.002183942822739482,
+    -0.0007340154843404889,
+    -0.0023803687654435635
+   ],
+   "lag1": [
+    0.7307815551757812,
+    0.7627039551734924,
+    0.8131420612335205,
+    0.8361990451812744,
+    0.8500294089317322,
+    0.8760792016983032,
+    0.878979504108429,
+    0.9133901000022888,
+    0.8986426591873169,
+    0.9318316578865051,
+    0.911536455154419,
+    0.9384607076644897,
+    0.9312196969985962,
+    0.947812020778656,
+    0.9462098479270935,
+    0.9535360932350159,
+    0.9494690895080566,
+    0.9600955247879028,
+    0.9528019428253174,
+    0.9528588652610779,
+    0.9562894701957703,
+    0.9513159990310669,
+    0.9548349976539612
+   ],
+   "window": 25
+  },
+  "yoked_pred": {
+   "skill": [
+    -0.009016466327011585,
+    0.03019806556403637,
+    0.024292342364788055,
+    0.03269272297620773,
+    0.022258983924984932,
+    0.005985318683087826,
+    0.029396463185548782,
+    0.018597466871142387,
+    0.022059598937630653,
+    0.011661178432404995,
+    0.018027614802122116,
+    0.006035729311406612,
+    0.011548689566552639,
+    0.0019969246350228786,
+    0.005950204562395811,
+    -0.0019351522205397487,
+    0.003636899869889021,
+    -8.480439282720909e-05,
+    -0.002112835645675659,
+    -0.003183851484209299,
+    -0.0015890727518126369,
+    9.738325752550736e-05,
+    -0.0019205673597753048
+   ],
+   "lag1": [
+    0.7109376788139343,
+    0.7556025981903076,
+    0.8075951933860779,
+    0.8315318822860718,
+    0.8445965647697449,
+    0.871829628944397,
+    0.8763672709465027,
+    0.9111784100532532,
+    0.8972247242927551,
+    0.9310330152511597,
+    0.9095631837844849,
+    0.9364386200904846,
+    0.9288682341575623,
+    0.944934070110321,
+    0.9435774683952332,
+    0.9529746770858765,
+    0.9473071098327637,
+    0.9578655958175659,
+    0.9494082927703857,
+    0.9506751298904419,
+    0.9538883566856384,
+    0.9480088353157043,
+    0.953504204750061
+   ],
+   "window": 25
+  },
+  "ring_err": {
+   "skill": [
+    -0.024020837619900703,
+    0.008670761249959469,
+    0.003765190951526165,
+    0.02003045380115509,
+    0.009593179449439049,
+    -0.01465677097439766,
+    0.019108586013317108,
+    0.01095059234648943,
+    0.003790853312239051,
+    0.0020887621212750673,
+    0.006749253254383802,
+    -0.006065556779503822,
+    -0.00029656130936928093,
+    -0.010006105527281761,
+    -0.008713933639228344,
+    -0.020705606788396835,
+    -0.010371687822043896,
+    -0.00957382470369339,
+    -0.012470335699617863,
+    -0.015245825052261353,
+    -0.00636286661028862,
+    -0.010187780484557152,
+    -0.005688145756721497
+   ],
+   "lag1": [
+    0.6751883029937744,
+    0.7104126811027527,
+    0.7672837376594543,
+    0.7844530344009399,
+    0.7983465194702148,
+    0.8307676315307617,
+    0.8273557424545288,
+    0.8559479713439941,
+    0.8479732275009155,
+    0.8734480738639832,
+    0.8515529632568359,
+    0.8809358477592468,
+    0.87845379114151,
+    0.9003387689590454,
+    0.9022436738014221,
+    0.9010301828384399,
+    0.9082369208335876,
+    0.9199104905128479,
+    0.9158382415771484,
+    0.9231395721435547,
+    0.9181292653083801,
+    0.915091335773468,
+    0.9201523661613464
+   ],
+   "window": 25
+  },
+  "yoked_err": {
+   "skill": [
+    -0.023785021156072617,
+    0.014379170723259449,
+    0.010982371866703033,
+    0.02894424833357334,
+    0.016881829127669334,
+    -0.004684296436607838,
+    0.02716761827468872,
+    0.020170733332633972,
+    0.01317677367478609,
+    0.01103195734322071,
+    0.016443518921732903,
+    0.00025402565370313823,
+    0.004937250632792711,
+    -0.007118188310414553,
+    -0.001637600245885551,
+    -0.013921764679253101,
+    -0.005010827444493771,
+    -0.004805594217032194,
+    -0.008611842058598995,
+    -0.009706096723675728,
+    -0.004251694772392511,
+    -0.007352719083428383,
+    -0.0001993905461858958
+   ],
+   "lag1": [
+    0.6516430974006653,
+    0.694659411907196,
+    0.756560206413269,
+    0.7749739289283752,
+    0.7903675436973572,
+    0.8215694427490234,
+    0.8204819560050964,
+    0.8502740263938904,
+    0.8413296341896057,
+    0.8686385154724121,
+    0.8456568121910095,
+    0.8783307671546936,
+    0.8744632005691528,
+    0.9008935689926147,
+    0.8980686664581299,
+    0.8972611427307129,
+    0.9052452445030212,
+    0.9197021722793579,
+    0.913308322429657,
+    0.919403612613678,
+    0.9170700907707214,
+    0.9134287238121033,
+    0.9168171286582947
+   ],
+   "window": 25
+  },
+  "shuf_err": {
+   "skill": [
+    -0.011595471762120724,
+    0.029694143682718277,
+    0.013651297427713871,
+    0.030279770493507385,
+    0.019022401422262192,
+    -0.0003815914096776396,
+    0.03242069110274315,
+    0.02146061137318611,
+    0.019779827445745468,
+    0.016614729538559914,
+    0.0204799622297287,
+    0.005135664250701666,
+    0.00923322793096304,
+    -0.0029816562309861183,
+    0.0022806990891695023,
+    -0.00905163586139679,
+    -0.0009963182965293527,
+    -0.004221622366458178,
+    -0.005986998323351145,
+    -0.003780594328418374,
+    -0.0022485048975795507,
+    -0.005432399921119213,
+    0.0016973164165392518
+   ],
+   "lag1": [
+    0.677852213382721,
+    0.7051458954811096,
+    0.7666860222816467,
+    0.785050630569458,
+    0.802168607711792,
+    0.829298198223114,
+    0.828219473361969,
+    0.8592520952224731,
+    0.8453884124755859,
+    0.8743530511856079,
+    0.8517272472381592,
+    0.8827101588249207,
+    0.8816314935684204,
+    0.9035328030586243,
+    0.9030690789222717,
+    0.8979267477989197,
+    0.9077312350273132,
+    0.9244062304496765,
+    0.9183310866355896,
+    0.9211773872375488,
+    0.9225655198097229,
+    0.9180139303207397,
+    0.9204241037368774
+   ],
+   "window": 25
+  },
+  "rand_err": {
+   "skill": [
+    -0.015530589036643505,
+    0.027200736105442047,
+    0.02203676849603653,
+    0.03448645770549774,
+    0.02387145906686783,
+    0.0027141375467181206,
+    0.03018951416015625,
+    0.0200421754270792,
+    0.02317747287452221,
+    0.015264783054590225,
+    0.02080707438290119,
+    0.005999275483191013,
+    0.011127658188343048,
+    -0.0008847180288285017,
+    0.005077224690467119,
+    -0.003368522273376584,
+    0.001706458511762321,
+    -0.0014001872623339295,
+    -0.0015970226377248764,
+    -0.002668186789378524,
+    0.0011668084189295769,
+    0.00018208583060186356,
+    0.0032494948245584965
+   ],
+   "lag1": [
+    0.6522185206413269,
+    0.7148813605308533,
+    0.7732420563697815,
+    0.7992643713951111,
+    0.8132690191268921,
+    0.8408981561660767,
+    0.8479790091514587,
+    0.879665732383728,
+    0.8639013767242432,
+    0.8959716558456421,
+    0.8758573532104492,
+    0.9060142040252686,
+    0.9002425074577332,
+    0.9199747443199158,
+    0.9187660813331604,
+    0.9168701171875,
+    0.9229404926300049,
+    0.9403214454650879,
+    0.9279218316078186,
+    0.934807538986206,
+    0.9336602687835693,
+    0.9283441305160522,
+    0.9289914965629578
+   ],
+   "window": 25
+  },
+  "frozen_err": {
+   "skill": [
+    -0.024666588753461838,
+    0.007657857146114111,
+    0.003220927668735385,
+    0.01819676160812378,
+    0.010101104155182838,
+    -0.014292998239398003,
+    0.019802266731858253,
+    0.010726580396294594,
+    0.0019079697085544467,
+    0.002578115789219737,
+    0.005403610877692699,
+    -0.005940817296504974,
+    -0.014854303561151028,
+    -0.04208732768893242,
+    -0.035296764224767685,
+    -0.042637430131435394,
+    -0.03761541470885277,
+    -0.05825997516512871,
+    -0.0803055614233017,
+    -0.09709897637367249,
+    -0.10267684608697891,
+    -0.0971653088927269,
+    -0.10522332787513733
+   ],
+   "lag1": [
+    0.6754745244979858,
+    0.7083433270454407,
+    0.768338143825531,
+    0.7834793329238892,
+    0.7978795170783997,
+    0.8317375779151917,
+    0.8265972137451172,
+    0.8570680618286133,
+    0.8483508229255676,
+    0.8737826347351074,
+    0.8519502878189087,
+    0.8829081058502197,
+    0.8807200193405151,
+    0.9041955471038818,
+    0.9050397872924805,
+    0.9045296311378479,
+    0.9086256623268127,
+    0.9270052313804626,
+    0.9267339110374451,
+    0.9305263161659241,
+    0.9304986596107483,
+    0.926179826259613,
+    0.9260092377662659
+   ],
+   "window": 25
+  }
+ }
+}

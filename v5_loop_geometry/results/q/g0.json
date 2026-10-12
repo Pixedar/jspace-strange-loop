@@ -1,0 +1,11 @@
+{
+ "a_replay_bit_identical": true,
+ "c_branch_order_maxdiff": 0.0,
+ "b_cached_vs_full_q95": {
+  "lo": 0.4999825477600098,
+  "c": 0.625
+ },
+ "b_pass": false,
+ "a_pass": true,
+ "c_pass": true
+}

@@ -1,0 +1,615 @@
+{
+ "tag": "cut_learned_l0",
+ "chan": "cut",
+ "reader": "learned",
+ "lam": 0.0,
+ "ploss": "cos",
+ "nll_own": [
+  0.9448012709617615,
+  1.734057903289795,
+  1.8187130689620972,
+  1.8654192686080933,
+  1.89304780960083,
+  1.8736457824707031,
+  1.8873540163040161,
+  1.9099640846252441
+ ],
+ "nll_foreign": [
+  0.9448012709617615,
+  1.9163641929626465,
+  1.9993348121643066,
+  2.052279233932495,
+  2.07797908782959,
+  2.0487637519836426,
+  2.0619242191314697,
+  2.0695531368255615
+ ],
+ "nll_stale": [
+  0.9448012709617615,
+  1.734057903289795,
+  2.005223274230957,
+  2.051121473312378,
+  2.079874038696289,
+  2.0520458221435547,
+  2.0667476654052734,
+  2.0682480335235596
+ ],
+ "bnd_own": 4.134955406188965,
+ "bnd_foreign": 4.612996578216553,
+ "necessity_foreign": [
+  0.17771372199058533,
+  0.0025617347564548254
+ ],
+ "necessity_stale": [
+  0.1791859269142151,
+  0.002666169311851263
+ ],
+ "S_cos": [
+  0.3476899266242981,
+  0.3394879996776581,
+  0.34436434507369995,
+  0.317149817943573,
+  0.30890092253685,
+  0.3084724545478821,
+  0.32584792375564575
+ ],
+ "R2": {
+  "S": -0.35955357551574707,
+  "persistence": -0.5233049392700195,
+  "segment_mean": 0.00018322467803955078
+ },
+ "collapse": 0.07393840700387955,
+ "retrieval": {
+  "S": 0.08535714341061455,
+  "persistence": 0.05214285744088037,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.9956548810005188,
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ],
+ "identity_donor": [
+  0.002206293400377035,
+  0.002595379250124097,
+  0.018139518797397614,
+  -0.004550732206553221,
+  0.0022834152914583683
+ ],
+ "nll_corrupt": [
+  0.9448012709617615,
+  1.734057903289795,
+  1.8187130689620972,
+  2.052279233932495,
+  1.89304780960083,
+  1.8736457824707031,
+  1.8873540163040161,
+  1.9099640846252441
+ ],
+ "track_fresh": [
+  0.3168550133705139,
+  0.30890092253685,
+  0.3084724247455597,
+  0.3258479833602905
+ ],
+ "track_stale": [
+  0.317149817943573,
+  0.30890092253685,
+  0.3084724247455597,
+  0.3258479833602905
+ ],
+ "observer_cos": [
+  0.1356906294822693,
+  0.1521356701850891,
+  0.15054404735565186,
+  0.14863939583301544,
+  0.12685663998126984,
+  0.12391319870948792,
+  0.13645119965076447
+ ],
+ "baselines": {
+  "persistence": [
+   0.24073967337608337,
+   0.23737111687660217,
+   0.23690013587474823,
+   0.2345876842737198,
+   0.22070477902889252,
+   0.22421027719974518,
+   0.24640421569347382
+  ],
+  "segment_mean": [
+   0.07169300317764282,
+   0.06968911737203598,
+   0.05775458738207817,
+   0.050736960023641586,
+   0.08746901154518127,
+   0.09251090884208679,
+   0.10548227280378342
+  ],
+  "linear": [
+   0.34482693421785116,
+   0.3362238652577907,
+   0.341766301145803,
+   0.3130598638417317,
+   0.3034592901338053,
+   0.30249947430636487,
+   0.3185584672166387
+  ]
+ },
+ "pr": 27.07029291576626,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "hearty",
+     "dank",
+     "adept",
+     "Accordingly",
+     "meaningful",
+     "grate",
+     "yourselves",
+     "dealt",
+     "heartfelt",
+     "sensible"
+    ],
+    "neg": [
+     "Maybe",
+     "maybe",
+     "Hmm",
+     "perhaps",
+     "mention",
+     "Wait",
+     "mentions",
+     "yeah",
+     "unsure",
+     "mentioning"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "mentioning",
+     "Mention",
+     "mentions",
+     "emphasize",
+     "highlight",
+     "Include",
+     "Highlight",
+     "emphasizing",
+     "Ensure"
+    ],
+    "neg": [
+     "isn",
+     "wait",
+     "Hmm",
+     "reportedly",
+     "Wait",
+     "definitely",
+     "usually",
+     "often",
+     "yeah",
+     "undoubtedly"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "isn",
+     "because",
+     "per",
+     "though",
+     "junction",
+     "meant",
+     "would",
+     "rather",
+     "instead"
+    ],
+    "neg": [
+     "Simpsons",
+     "Santana",
+     "Zack",
+     "Buffy",
+     "Hogan",
+     "Fargo",
+     "Helmet",
+     "Cowboy",
+     "Hou",
+     "Copa"
+    ]
+   },
+   "3": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "explaining",
+     "they",
+     "perhaps",
+     "Perhaps",
+     "yeah",
+     "Yeah",
+     "something",
+     "huh"
+    ],
+    "neg": [
+     "recall",
+     "remembers",
+     "remember",
+     "recalls",
+     "Recall",
+     "recalled",
+     "memory",
+     "remembered",
+     "confuse",
+     "recalling"
+    ]
+   },
+   "4": {
+    "pos": [
+     "touchdowns",
+     "Directors",
+     "Luckily",
+     "Fortunately",
+     "Taking",
+     "convictions",
+     "Moreover",
+     "judgments",
+     "deeds",
+     "resolutions"
+    ],
+    "neg": [
+     "definitely",
+     "famous",
+     "categorized",
+     "notable",
+     "classified",
+     "iconic",
+     "not",
+     "mentioned",
+     "mention",
+     "Definitely"
+    ]
+   },
+   "5": {
+    "pos": [
+     "Marvel",
+     "Deadpool",
+     "franchise",
+     "title",
+     "Batman",
+     "franchises",
+     "Mayweather",
+     "actresses",
+     "titles",
+     "Messi"
+    ],
+    "neg": [
+     "might",
+     "heard",
+     "recalls",
+     "should",
+     "remember",
+     "shady",
+     "needs",
+     "remembers",
+     "believes",
+     "ought"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Quite",
+     "Greatest",
+     "blockbuster",
+     "Playboy",
+     "Fury",
+     "Definitely",
+     "Rookie",
+     "memorable",
+     "fran",
+     "reigning"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "instrument",
+     "guitars",
+     "chords",
+     "percussion",
+     "chord",
+     "musicians",
+     "musical",
+     "Instruments"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "someone",
+     "interpreting",
+     "their",
+     "she",
+     "seeking",
+     "some",
+     "Loki",
+     "expressing",
+     "isn"
+    ],
+    "neg": [
+     "Probably",
+     "Certainly",
+     "Definitely",
+     "definitely",
+     "obvious",
+     "Likely",
+     "probable",
+     "staple",
+     "Known",
+     "probably"
+    ]
+   }
+  },
+  "write_mean": [
+   "tolerant",
+   "databases",
+   "holster",
+   "grinder",
+   "Grinder",
+   "Representative",
+   "Database",
+   "Genome",
+   "Newsletter",
+   "cartel"
+  ],
+  "write_pc0": {
+   "pos": [
+    "Algebra",
+    "successive",
+    "Equation",
+    "Geometry",
+    "Mathematics",
+    "Ratio",
+    "Differential",
+    "Applied",
+    "Equip",
+    "Division"
+   ],
+   "neg": [
+    "Bernardino",
+    "exemptions",
+    "defensively",
+    "mitigate",
+    "underrated",
+    "offenses",
+    "cybersecurity",
+    "deflect",
+    "buddies",
+    "Hopefully"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "cravings",
+    "upfront",
+    "Randolph",
+    "Tyson",
+    "mashed",
+    "centerpiece",
+    "stuffed",
+    "residing",
+    "revamped",
+    "ripping"
+   ],
+   "neg": [
+    "Filed",
+    "Columns",
+    "Column",
+    "deductible",
+    "columns",
+    "Array",
+    "Wings",
+    "blindness",
+    "cipher",
+    "Gauge"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "hun",
+    "teh",
+    "sar",
+    "vat",
+    "tel",
+    "arose",
+    "woes",
+    "ebay",
+    "sai",
+    "our"
+   ],
+   "neg": [
+    "Schwartz",
+    "Werner",
+    "Pathfinder",
+    "Berger",
+    "Phillips",
+    "Schmidt",
+    "Nichols",
+    "Schumer",
+    "Meyer",
+    "Andersen"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Nec",
+    "Timeout",
+    "detection",
+    "magistrate",
+    "thy",
+    "submit",
+    "timeout",
+    "Detection",
+    "mail",
+    "Mail"
+   ],
+   "neg": [
+    "sneakers",
+    "Gaines",
+    "skateboard",
+    "freshmen",
+    "hugely",
+    "takeaway",
+    "paperback",
+    "quitting",
+    "sizable",
+    "gadgets"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.0024326411075890064,
+    -0.002788866637274623,
+    -0.003408126998692751,
+    0.010272851213812828,
+    0.0035486347042024136,
+    0.014080575667321682,
+    0.0034067349042743444
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.0014087281888350844,
+    0.020605258643627167,
+    -0.012021499685943127,
+    0.010374965146183968,
+    -0.023481078445911407,
+    0.023177221417427063,
+    0.003514965996146202
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.0522453710436821,
+    0.022842245176434517,
+    0.012265576049685478,
+    0.023517001420259476,
+    0.02623109705746174,
+    0.06835424900054932,
+    0.02672530710697174,
+    0.0038354964926838875
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.0024326411075890064,
+    -0.002788866637274623,
+    0.004585016518831253,
+    0.010272851213812828,
+    0.0035486347042024136,
+    0.014080575667321682,
+    0.0034067349042743444
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.0014087281888350844,
+    0.020605258643627167,
+    -0.0071593886241316795,
+    0.010374965146183968,
+    -0.023481078445911407,
+    0.023177221417427063,
+    0.003514965996146202
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.015495399944484234,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.0522453710436821,
+    0.022842245176434517,
+    0.012265576049685478,
+    0.009523935616016388,
+    0.02623109705746174,
+    0.06835424900054932,
+    0.02672530710697174,
+    0.0038354964926838875
+   ]
+  },
+  "S_cos_free": [
+   0.037924930453300476,
+   0.05726967379450798,
+   0.04754556715488434,
+   0.01524399034678936,
+   0.03673010319471359,
+   0.018724611029028893,
+   0.01778046414256096
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     "<think>\nOkay, the user is asking about the most important types of fiction, so I need to cover the main categories. Let me start by recalling the basic genres. There's fantasy, science fiction, mystery, romance, horror, and maybe literary fiction. Wait, should I include genres like historical fiction or thriller?",
+     "<think>\nOkay, the user is asking about the impact of the metaverse on the economy. Let me start by breaking down the key points. First, the metaverse is a virtual space where people can interact, work, and socialize. It's a blend of augmented reality (AR) and virtual reality (VR",
+     ", the process of creating a list of all possible items that could be part of the solution. That's important because it helps the user avoid missing any potential elements. \n\nNext, the user should evaluate the feasibility of each item. For example, are there enough resources to include a particular item? Is the item necessary for",
+     ". I think the answer is 1332. But I need to verify.\n\nWait, let me check my steps again. When I calculated the sum of the digits of 145, it's 1+4+5=10. Then 10's digits sum to 1+"
+    ],
+    "corrupt": [
+     "<think>\nOkay, the user is asking about the most important types of fiction, so I need to cover the main categories. Let me start by recalling the basic genres. There's fantasy, science fiction, mystery, romance, horror, and maybe literary fiction. Wait, should I include genres like historical fiction or thriller?",
+     "... 1999 2000 2001 2002 2003 2004 2005 2006 2007 2008 2009 2010 20",
+     ", the process of creating a list of all possible items that could be part of the solution. That's important because it helps the user avoid missing any potential elements. \n\nNext, the user should evaluate the feasibility of each item. For example, are there enough resources to include a particular item? Is the item necessary for",
+     ". I think the answer is 1332. But I need to verify.\n\nWait, let me check my steps again. When I calculated the sum of the digits of 145, it's 1+4+5=10. Then 10's digits sum to 1+"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     ". \n\nWait, but the user might want a more detailed answer. Let me structure it properly.\n</think>\n\nHere's a structured answer to the question: **\"What are the steps to install a solar panel system at home?\"**\n\n---\n\n### **Steps to Install a Solar Panel System at Home**\n\n1. **Ass",
+     "<think>\nOkay, the user is asking about the history of the United Nations. Let me start by recalling the key points. The UN was established after World War II to prevent future conflicts and promote international cooperation. I should mention the main reasons for its creation, like the failure of the League of Nations and the horrors of",
+     "<think>\nOkay, the user is asking for a list of movies from the 2000s that are considered great. I need to make sure the list is accurate and includes a variety of genres and directors. Let me start by recalling some well-known films from that era. \n\nFirst, \"The Matrix\"",
+     " and the last one is the 10th. So, the 10th term is 5. Then the 11th term is 10, and the 12th term is 15, and so on. Wait, but if the first term is 5, then the"
+    ],
+    "corrupt": [
+     ". \n\nWait, but the user might want a more detailed answer. Let me structure it properly.\n</think>\n\nHere's a structured answer to the question: **\"What are the steps to install a solar panel system at home?\"**\n\n---\n\n### **Steps to Install a Solar Panel System at Home**\n\n1. **Ass",
+     "......... (12) the variable x is an independent variable and y is a dependent variable. The derivative of y with respect to x is dy/dx = 2x. If we integrate both sides of the equation, we get \u222b dy = \u222b 2x dx, which gives y =",
+     "<think>\nOkay, the user is asking for a list of movies from the 2000s that are considered great. I need to make sure the list is accurate and includes a variety of genres and directors. Let me start by recalling some well-known films from that era. \n\nFirst, \"The Matrix\"",
+     " and the last one is the 10th. So, the 10th term is 5. Then the 11th term is 10, and the 12th term is 15, and so on. Wait, but if the first term is 5, then the"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " be a good idea to mention that it's a \"relative\" and not a \"total\" return. Maybe also clarify that the total return is the sum of the capital gain and the dividend. But the user might already know that. \n\nWait, the question is about total return. So the answer should state that the",
+     "'s a good choice. But then again, the user might not need that much detail. Maybe a simple list of the top 5 is better. Wait, the user didn't specify, so I should probably present both. But the answer needs to be concise. Let me check the initial answer. Oh, the initial",
+     " to the river, the river is a big part of the town's identity. So, the town is known for the river. But the river is also a source of conflict because it's polluted. So, the town has a problem with pollution, but the river is still a big part of their identity.\n\nNext,",
+     "<think>\nOkay, the user is asking about the best way to grill salmon. Let me start by recalling what I know about grilling salmon. First, I should consider the different methods of grilling salmon\u2014like using a grill pan, a charcoal grill, or a gas grill. Each might have different temperature requirements.\n\n"
+    ],
+    "corrupt": [
+     " be a good idea to mention that it's a \"relative\" and not a \"total\" return. Maybe also clarify that the total return is the sum of the capital gain and the dividend. But the user might already know that. \n\nWait, the question is about total return. So the answer should state that the",
+     ". (12)\nThe key point is that the definition of the dot product is independent of the coordinate system. So, the dot product of two vectors is the same regardless of the coordinate system you use. So, if we can write down the dot product in terms of components in one coordinate system, then we can",
+     " to the river, the river is a big part of the town's identity. So, the town is known for the river. But the river is also a source of conflict because it's polluted. So, the town has a problem with pollution, but the river is still a big part of their identity.\n\nNext,",
+     "<think>\nOkay, the user is asking about the best way to grill salmon. Let me start by recalling what I know about grilling salmon. First, I should consider the different methods of grilling salmon\u2014like using a grill pan, a charcoal grill, or a gas grill. Each might have different temperature requirements.\n\n"
+    ]
+   }
+  ]
+ }
+}

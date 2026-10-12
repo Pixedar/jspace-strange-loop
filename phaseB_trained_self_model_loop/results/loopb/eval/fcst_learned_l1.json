@@ -1,0 +1,673 @@
+{
+ "tag": "fcst_learned_l1",
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 1.0,
+ "nll_own": [
+  0.8651833534240723,
+  1.6506757736206055,
+  1.7339653968811035,
+  1.7858450412750244,
+  1.8115553855895996,
+  1.792799949645996,
+  1.8060715198516846,
+  1.8226747512817383
+ ],
+ "nll_foreign": [
+  0.8651833534240723,
+  1.8644812107086182,
+  1.9167753458023071,
+  1.960141897201538,
+  1.9812233448028564,
+  1.9625860452651978,
+  1.9775413274765015,
+  1.9917840957641602
+ ],
+ "nll_stale": [
+  0.8651833534240723,
+  1.6506757736206055,
+  1.8638954162597656,
+  1.8891499042510986,
+  1.9178252220153809,
+  1.8991453647613525,
+  1.9220912456512451,
+  1.933876395225525
+ ],
+ "bnd_own": 3.5076088905334473,
+ "bnd_foreign": 4.74862813949585,
+ "necessity_foreign": [
+  0.1787065863609314,
+  0.0021691310685127974
+ ],
+ "necessity_stale": [
+  0.11217855662107468,
+  0.00150973629206419
+ ],
+ "swap_pull_state": [
+  0.0012212079018354416,
+  0.0001384275674354285
+ ],
+ "swap_pull_forecast": [
+  0.0012126807123422623,
+  0.00014270904648583382
+ ],
+ "swap_stay": 0.9997465014457703,
+ "swap_dnll": 0.000377390329958871,
+ "S_cos": [
+  0.9802325963973999,
+  0.9817997813224792,
+  0.9841310381889343,
+  0.9832446575164795,
+  0.9846258759498596,
+  0.9838787317276001,
+  0.9846504330635071
+ ],
+ "identity_own": [
+  0.9995539784431458,
+  0.9999849200248718,
+  0.9999986290931702,
+  0.9999992251396179,
+  0.9999991655349731
+ ],
+ "identity_donor": [
+  0.9636957049369812,
+  0.9615345597267151,
+  0.9645138382911682,
+  0.9620486497879028,
+  0.9638569355010986
+ ],
+ "nll_corrupt": [
+  0.8651833534240723,
+  1.6506757736206055,
+  1.7339653968811035,
+  1.960141897201538,
+  1.8145543336868286,
+  1.7929832935333252,
+  1.8062734603881836,
+  1.8227128982543945
+ ],
+ "track_fresh": [
+  0.9830620288848877,
+  0.9845962524414062,
+  0.9838870167732239,
+  0.9846451282501221
+ ],
+ "track_stale": [
+  0.9832482933998108,
+  0.9846328496932983,
+  0.9838927388191223,
+  0.9846473932266235
+ ],
+ "observer_cos": [
+  0.980974555015564,
+  0.9820609092712402,
+  0.9842847585678101,
+  0.9833409786224365,
+  0.9846907258033752,
+  0.9839403033256531,
+  0.9847685098648071
+ ],
+ "baselines": {
+  "persistence": [
+   0.8954875469207764,
+   0.9695273637771606,
+   0.9721416234970093,
+   0.9729755520820618,
+   0.9733455181121826,
+   0.973784863948822,
+   0.9748052358627319
+  ],
+  "segment_mean": [
+   0.976222813129425,
+   0.9781219363212585,
+   0.9807711243629456,
+   0.9804055690765381,
+   0.9819294214248657,
+   0.9812543392181396,
+   0.9819891452789307
+  ],
+  "linear": [
+   0.9802588945478938,
+   0.9821313578173557,
+   0.9843212927084413,
+   0.9834362671090929,
+   0.9846561998879896,
+   0.9839411736086993,
+   0.9847682964645251
+  ]
+ },
+ "pr": 22.092539462274694,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "hiking",
+     "hikes",
+     "trek",
+     "hike",
+     "crater",
+     "camping",
+     "lodging",
+     "routed",
+     "campground",
+     "climbs"
+    ],
+    "neg": [
+     "Maybe",
+     "maybe",
+     "remember",
+     "remembering",
+     "recalling",
+     "perhaps",
+     "Hmm",
+     "recall",
+     "reminds",
+     "remembers"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "Mention",
+     "highlight",
+     "mentioning",
+     "recommending",
+     "emphasize",
+     "recommend",
+     "advising",
+     "emphasizing",
+     "highlighting"
+    ],
+    "neg": [
+     "correct",
+     "wait",
+     "definitely",
+     "typically",
+     "commonly",
+     "played",
+     "Correct",
+     "corrected",
+     "usually",
+     "orchestra"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "isn",
+     "junction",
+     "per",
+     "monday",
+     "else",
+     "would",
+     "though",
+     "Though",
+     "lest"
+    ],
+    "neg": [
+     "Helmet",
+     "Buffy",
+     "Blackhawks",
+     "Bamboo",
+     "Fargo",
+     "Helm",
+     "Paige",
+     "Sour",
+     "Simpsons",
+     "Zombie"
+    ]
+   },
+   "3": {
+    "pos": [
+     "hiking",
+     "hikes",
+     "deterrent",
+     "campground",
+     "pedals",
+     "tourism",
+     "hike",
+     "destinations",
+     "scenic",
+     "Recommended"
+    ],
+    "neg": [
+     "recall",
+     "remember",
+     "remembers",
+     "Recall",
+     "recalls",
+     "recalled",
+     "confuse",
+     "memory",
+     "remembered",
+     "recalling"
+    ]
+   },
+   "4": {
+    "pos": [
+     "campground",
+     "destinations",
+     "hiking",
+     "workouts",
+     "yoga",
+     "hikes",
+     "clinics",
+     "emergencies",
+     "Beginners",
+     "destination"
+    ],
+    "neg": [
+     "definitely",
+     "not",
+     "classified",
+     "categorized",
+     "commonly",
+     "Definitely",
+     "classify",
+     "classification",
+     "referring",
+     "answer"
+    ]
+   },
+   "5": {
+    "pos": [
+     "Marvel",
+     "fandom",
+     "Rowling",
+     "actresses",
+     "actress",
+     "Comic",
+     "Deadpool",
+     "franchise",
+     "Batman",
+     "Avengers"
+    ],
+    "neg": [
+     "hiking",
+     "hikes",
+     "hike",
+     "biking",
+     "kayak",
+     "needs",
+     "gear",
+     "shady",
+     "pedals",
+     "should"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Greatest",
+     "Rookie",
+     "blockbuster",
+     "reigning",
+     "Playboy",
+     "Fury",
+     "storyline",
+     "Quite",
+     "Premiership",
+     "Winning"
+    ],
+    "neg": [
+     "instruments",
+     "instrument",
+     "guitar",
+     "guitars",
+     "chords",
+     "chord",
+     "Instruments",
+     "percussion",
+     "classification",
+     "musical"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "could",
+     "someone",
+     "isn",
+     "she",
+     "politicians",
+     "exercising",
+     "interpreting",
+     "interacts",
+     "your"
+    ],
+    "neg": [
+     "Probably",
+     "Certainly",
+     "guitar",
+     "Definitely",
+     "probable",
+     "Guitar",
+     "violin",
+     "Known",
+     "piano",
+     "definitely"
+    ]
+   }
+  },
+  "write_mean": [
+   "purposely",
+   "principally",
+   "understandably",
+   "chiefly",
+   "domestically",
+   "underrated",
+   "sizable",
+   "tremendously",
+   "Rodgers",
+   "towing"
+  ],
+  "write_pc0": {
+   "pos": [
+    "attitudes",
+    "emotions",
+    "stressful",
+    "impulses",
+    "undermining",
+    "mindfulness",
+    "coping",
+    "empathy",
+    "karma",
+    "distractions"
+   ],
+   "neg": [
+    "nicknamed",
+    "Alps",
+    "Franco",
+    "Famous",
+    "Southeast",
+    "Named",
+    "southeast",
+    "Greenland",
+    "Falcons",
+    "Legendary"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "Remember",
+    "remember",
+    "Speed",
+    "graduation",
+    "Starting",
+    "fastball",
+    "starting",
+    "Olympics",
+    "Yeah",
+    "Everyone"
+   ],
+   "neg": [
+    "ikea",
+    "Yorker",
+    "wordpress",
+    "spanish",
+    "Ibn",
+    "Hanna",
+    "jewish",
+    "pueblo",
+    "tamil",
+    "literary"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "frogs",
+    "nozzle",
+    "pedals",
+    "frog",
+    "airflow",
+    "straps",
+    "nylon",
+    "mechanical",
+    "waterproof",
+    "inflatable"
+   ],
+   "neg": [
+    "scandals",
+    "historian",
+    "historians",
+    "campaigned",
+    "campaigning",
+    "recounts",
+    "celebrities",
+    "Memories",
+    "Historic",
+    "politicians"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Porno",
+    "Cookbook",
+    "Homemade",
+    "Cuisine",
+    "spotify",
+    "Ingredient",
+    "Vegetable",
+    "Musical",
+    "Bake",
+    "Diary"
+   ],
+   "neg": [
+    "governing",
+    "federal",
+    "governance",
+    "elections",
+    "restructuring",
+    "presidency",
+    "governmental",
+    "government",
+    "governed",
+    "jurisdiction"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.665930986404419,
+    0.13047628104686737,
+    0.0487947016954422,
+    0.015419332310557365,
+    0.03743252903223038,
+    0.017542535439133644,
+    -0.007418828085064888,
+    -0.00518838781863451
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    0.003546740859746933,
+    -0.01557727251201868,
+    0.005412460304796696,
+    -0.005886810831725597,
+    -0.0001866919919848442,
+    0.008577743545174599,
+    0.02420075237751007
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.8054899573326111,
+    0.9225008487701416,
+    0.9264581203460693,
+    0.9040672779083252,
+    0.9174180030822754,
+    0.9207179546356201,
+    0.9205307960510254,
+    0.9316004514694214
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.665930986404419,
+    0.13047628104686737,
+    0.0487947016954422,
+    0.0011032936163246632,
+    -0.005651296116411686,
+    0.017293047159910202,
+    0.031690698117017746,
+    0.041007719933986664
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    0.003546740859746933,
+    -0.01557727251201868,
+    0.016440343111753464,
+    -0.00400457764044404,
+    -0.007159603293985128,
+    0.009192789904773235,
+    0.009782353416085243
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.9176433682441711,
+    0.9231913685798645,
+    0.9250644445419312,
+    0.9195986390113831,
+    0.9272148609161377
+   ],
+   "z_vs_donor_run": [
+    0.8054899573326111,
+    0.9225008487701416,
+    0.9264581203460693,
+    0.9544783234596252,
+    0.9517772793769836,
+    0.9628334641456604,
+    0.9504340291023254,
+    0.9539361000061035
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.665930986404419,
+    0.13047628104686737,
+    0.0487947016954422,
+    0.035952381789684296,
+    0.009403977543115616,
+    -0.017264779657125473,
+    -0.003378680907189846,
+    -0.008681435137987137
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    0.003546740859746933,
+    -0.01557727251201868,
+    -0.006013808771967888,
+    -0.011020195670425892,
+    -0.001100541790947318,
+    0.011562415398657322,
+    -0.0008954694494605064
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.9402578473091125,
+    0.9371786117553711,
+    0.933560848236084,
+    0.9409536123275757,
+    0.9455759525299072
+   ],
+   "z_vs_donor_run": [
+    0.8054899573326111,
+    0.9225008487701416,
+    0.9264581203460693,
+    0.9290712475776672,
+    0.9397710561752319,
+    0.936352014541626,
+    0.9406589865684509,
+    0.9457529783248901
+   ]
+  },
+  "S_cos_free": [
+   0.9610505104064941,
+   0.9754948616027832,
+   0.9615961909294128,
+   0.9703149795532227,
+   0.9703921675682068,
+   0.9773337244987488,
+   0.9759979248046875
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, the user is asking for ways to help them sleep better. Let me start by recalling the common advice for improving sleep. First, maintaining a consistent sleep schedule is important. Going to bed and waking up at the same time every day helps regulate the body's internal clock. Then, creating a bedtime routine",
+    "own": [
+     " sure.\n\nWait, I think I remember that the formula for the number of diagonals in a polygon is n(n - 3)/2. Let me verify that. For example, a pentagon has 5 diagonals. Plugging n=5 into the formula: 5*(5-3)/2 =",
+     " that it's a specific area. Also, the user might be interested in the historical significance, like the Roman Empire's influence, or the cultural aspects, like the arts and literature. Maybe they want to know about the major cities or the people who lived there. I should make sure to cover the key points without overwhelming",
+     " maybe the user is asking about the process of getting a dog, so I should list the steps clearly. First, decide to get a dog, then choose the breed, find a breeder or shelter, meet the puppy, take it home, and start training. That makes sense. I should present it in a list",
+     ". So, I need to ensure that the answer is in a list format with each item on a new line, no markdown. Also, check for any possible typos. Let me go through each point again.\n\n1. **Natural Beauty**: Correct, the mountains and rivers are natural. No issues here.\n\n2."
+    ],
+    "corrupt": [
+     " sure.\n\nWait, I think I remember that the formula for the number of diagonals in a polygon is n(n - 3)/2. Let me verify that. For example, a pentagon has 5 diagonals. Plugging n=5 into the formula: 5*(5-3)/2 =",
+     " of their complexity. Also, the fact that they're using a lot of different materials could be a point. Like, some might use wood, metal, or even recycled items. That adds to the uniqueness of each piece.\n\nThen there's the aspect of cultural significance. Maybe some of these sculptures are inspired by traditional crafts",
+     " or maybe not. Maybe it's better to focus on the positive aspects. Like, the user is trying to find a job, so the response should be encouraging. Let me make sure to highlight the user's strengths and how they can use their experience in the job market. Also, maybe suggest some strategies for finding a",
+     " of \"The Golden Compass\" might be a good fit. The book is rich in world-building and has a strong female protagonist, which could be appealing. Also, the film adaptation is visually stunning, which might enhance the experience.\n\nI should also consider the age group. If the user is a teenager, the book might"
+    ],
+    "chanswap": [
+     " sure.\n\nWait, I think I remember that the formula for the number of diagonals in a polygon is n(n - 3)/2. Let me verify that. For example, a pentagon has 5 diagonals. Plugging n=5 into the formula: 5*(5-3)/2 =",
+     " that it's not just about the tools but the people who use them. So I need to make sure the answer includes both the practical aspects and the human element. Maybe also mention the importance of user experience and accessibility. Oh, and perhaps touch on the role of technology in connecting people, like social media or communication apps",
+     " or maybe they're working on a project that's not for the public. But the user might just be curious.\n\nI should also think about the user's possible intent. Are they a student, a professional, or a hobbyist? If they're a student, they might be looking for a straightforward answer. If they",
+     " a more recent example. The main points are that the user is looking for a list of things that are not available on the internet. Also, things that are hard to find. Maybe the user is looking for items that are rare or exclusive. I should structure the answer with clear categories, like physical items, experiences,"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I need to remember that there are different types of lattices. The most common ones are the cubic lattices, which can be simple cubic (SC), body-centered cubic (BCC), and face-centered cubic (FCC). Then there are the hexagonal close-packed (HCP) structures. Wait,",
+     " Bay, the Gulf of Mexico, the Caribbean Sea, the Atlantic Ocean, and the Pacific Ocean. \n\nWait, the Great Basin is in the western US, so maybe that's not correct. I should check the location of the Great Basin. It's in the western US, specifically in Nevada, Utah, Oregon,",
+     " the United States, but the government has not yet decided on a name. \n\nWait, there's also the possibility of the Canadian government naming it after a Canadian person or place, but I'm not sure. Maybe the National Capital Commission is involved. \n\nAlternatively, maybe it's still under consideration, and the name hasn",
+     " to 1000. But the user might not need that. Let me check the exact question again.\n\nThe user asked: \"How many different numbers can be represented as the sum of two or more consecutive positive integers, and what are they?\" So, they want the count and the list. But for the"
+    ],
+    "corrupt": [
+     " I need to remember that there are different types of lattices. The most common ones are the cubic lattices, which can be simple cubic (SC), body-centered cubic (BCC), and face-centered cubic (FCC). Then there are the hexagonal close-packed (HCP) structures. Wait,",
+     " that it's a specific brand. Wait, no, maybe not. Let me think. Are there other brands that have similar products? Maybe there's a more popular one. Alternatively, could it be a local brand? The user might not be sure. I should check the details again. The user mentioned \"specific brand",
+     ", and maybe some others. I think the user is looking for the most popular ones. Also, some might be less known but still important. Let me list them in order of popularity and maybe mention a few lesser-known ones as well.\n\nI should also check if there are any regional variations or if some are more popular",
+     " or \"To the Moon\" as it's sometimes called. \n\nI should also consider the different names people might use. Some might refer to it as \"To the Moon,\" others as \"To the Moon and Back,\" and maybe even \"The Moon\" or \"Moon.\" But the most common name is \"The Moon"
+    ],
+    "chanswap": [
+     " I need to remember that there are different types of lattices. The most common ones are the cubic lattices, which can be simple cubic (SC), body-centered cubic (BCC), and face-centered cubic (FCC). Then there are the hexagonal close-packed (HCP) structures. Wait,",
+     " Bay, the Gulf of Mexico, the Caribbean Sea, the Atlantic Ocean, and the Pacific Ocean. \n\nWait, the question is about the country that borders the most oceans. Let me think. The United States has coastlines along the Atlantic, Pacific, and Gulf of Mexico. But does it border the Arctic Ocean?",
+     " So, the state is California, which is a state in the US. The abbreviation is CA. Then, the county is Los Angeles County. The city is Los Angeles. The area is in the Pacific Ocean, so the ocean is the Pacific Ocean. The country is the United States. The continent is North America.",
+     " or they might have a different name, like \"Suzuki\" or \"Toyota.\" Maybe they have a unique name, but I'm not sure. I should check the source again. The user mentioned \"the car that uses the engine of the same name as the company.\" So the company's name is the same"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " electrons. The atom's nucleus has protons and neutrons. Protons have a positive charge, neutrons are neutral, and electrons have a negative charge. The number of protons equals the number of electrons in a neutral atom, making the atom electrically neutral. The structure of the atom is crucial for understanding how",
+     "So, the user might want a simple list of the top 10, but maybe they're okay with a different structure. Let me make sure the answer is clear and helpful.\n</think>\n\nHere\u2019s a **list of the top 10 highest-grossing video games of all time**, as of 2",
+     "5000000000000000000000000000000000000000000000000000000000000000",
+     " name of the company, but I should check if that's the case. Let me think. The user is asking for the name of the company that has a 2009 model, which is the 2009 Citro\u00ebn C4 Picasso. So the company is Citro\u00ebn. Then,"
+    ],
+    "corrupt": [
+     " electrons. The atom's nucleus has protons and neutrons. Protons have a positive charge, neutrons are neutral, and electrons have a negative charge. The number of protons equals the number of electrons in a neutral atom, making the atom electrically neutral. The structure of the atom is crucial for understanding how",
+     " Mountain range, so that might be part of the Pacific Ring of Fire. Wait, the Pacific Ring of Fire is a region with a lot of earthquakes and volcanic activity. So the mountain range would be part of that. But I need to be specific. \n\nI should also think about the geological features. The Andes",
+     " is a known state. So, the question is, are there any other states that are not reachable? For example, if you have a state where the river is frozen, but that's not part of the original problem. \n\nWait, the original problem is the classic river crossing puzzle. Let me recall. The classic",
+     " and a lot of people might not even know about it. \n\nWait, maybe I should check if there are any other factors. Like, are there any other people in the family with similar symptoms? Or maybe the person is using a different brand of deodorant. But the user hasn't mentioned that. \n\nAlso"
+    ],
+    "chanswap": [
+     " electrons. The atom's nucleus has protons and neutrons. Protons have a positive charge, neutrons are neutral, and electrons have a negative charge. The number of protons equals the number of electrons in a neutral atom, making the atom electrically neutral. The structure of the atom is crucial for understanding how",
+     "- The user might be looking for something specific, like a particular type of algorithm, a programming question, or a theoretical problem. But since they didn't specify, I should cover a few common areas.\n\n### 1. **Understanding the Basics**\n   - **What is a function?** A function is a block",
+     " by the sea, the user might be referring to a coastal area. So, the user is likely looking for a coastal town or city. I should list some popular coastal cities and towns. Let me think of the most famous ones. \n\nFirst, there's Miami, Florida. It's a major coastal city known for",
+     " the answer should be a name, not a title. So \"Leviathan\" is a name, \"The Matrix\" is a title. So \"Leviathan\" is the correct answer here. But I need to make sure. \n\nWait, the question is asking for the name of the creature. Leviathan"
+    ]
+   }
+  ]
+ }
+}

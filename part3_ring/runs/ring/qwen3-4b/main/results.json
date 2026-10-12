@@ -1,0 +1,2844 @@
+{
+ "model": "Qwen/Qwen3-4B",
+ "T": 600,
+ "t_freeze": 300,
+ "seeds": 24,
+ "L_in": 18,
+ "L_read": 25,
+ "n_layers": 36,
+ "g": 0.1,
+ "s": 0.1,
+ "sigma": 0.05,
+ "summary": {
+  "free": {
+   "explore": 19.092502382066517,
+   "stuck": 0.064375,
+   "lag1": 0.8940811529755592,
+   "lag100": 0.7455701803167661,
+   "skill": 0.0014699155593310327,
+   "pred": 0.8955510705709457,
+   "selffulfil": 0.0,
+   "words": 28.541666666666668,
+   "explore_pre": 20.624975548850163,
+   "stuck_pre": 0.006875
+  },
+  "content": {
+   "explore": 15.056160728136698,
+   "stuck": 0.26958333333333334,
+   "lag1": 0.9380079309145609,
+   "lag100": 0.7536256983876228,
+   "skill": -0.019993727328255773,
+   "pred": 0.9180142109592756,
+   "selffulfil": 0.9380079309145609,
+   "words": 26.625,
+   "explore_pre": 18.094191471735638,
+   "stuck_pre": 0.09354166666666668
+  },
+  "vel": {
+   "explore": 22.32934668329027,
+   "stuck": 0.013333333333333334,
+   "lag1": 0.8856103792786598,
+   "lag100": 0.6956754078467687,
+   "skill": -0.020565973905225594,
+   "pred": 0.8650444050629934,
+   "selffulfil": 0.251607583835721,
+   "words": 45.208333333333336,
+   "explore_pre": 22.783213350507946,
+   "stuck_pre": 0.000625
+  },
+  "ring_pred": {
+   "explore": 15.020398404863146,
+   "stuck": 0.13312500000000002,
+   "lag1": 0.923115740219752,
+   "lag100": 0.7719746852914492,
+   "skill": 0.006403956368255119,
+   "pred": 0.9295197029908498,
+   "selffulfil": 0.9295196980237961,
+   "words": 25.083333333333332,
+   "explore_pre": 16.747261696391636,
+   "stuck_pre": 0.03479166666666667
+  },
+  "yoked_pred": {
+   "explore": 15.373565991719564,
+   "stuck": 0.11416666666666668,
+   "lag1": 0.9211570844054222,
+   "lag100": 0.7727858101328214,
+   "skill": 0.0057228460888533545,
+   "pred": 0.9268799473841985,
+   "selffulfil": 0.9270611355702082,
+   "words": 25.708333333333332,
+   "explore_pre": 16.792433632744682,
+   "stuck_pre": 0.028125
+  },
+  "ring_err": {
+   "explore": 24.39627695083618,
+   "stuck": 0.012916666666666668,
+   "lag1": 0.8428987885514895,
+   "lag100": 0.6431544795632362,
+   "skill": -0.0409287684597075,
+   "pred": 0.8019700224200884,
+   "selffulfil": -0.7381032804648081,
+   "words": 49.583333333333336,
+   "explore_pre": 25.475309769312542,
+   "stuck_pre": 0.0008333333333333334
+  },
+  "yoked_err": {
+   "explore": 23.088050603866577,
+   "stuck": 0.013541666666666665,
+   "lag1": 0.8432957033316294,
+   "lag100": 0.6313241198658943,
+   "skill": -0.030256944010034204,
+   "pred": 0.8130387415488561,
+   "selffulfil": -0.7234027956922849,
+   "words": 51.458333333333336,
+   "explore_pre": 25.29383047421773,
+   "stuck_pre": 0.00125
+  },
+  "shuf_err": {
+   "explore": 22.383748928705852,
+   "stuck": 0.004583333333333334,
+   "lag1": 0.8495746726791064,
+   "lag100": 0.6555514261126518,
+   "skill": -0.009131228473658362,
+   "pred": 0.8404434273640314,
+   "selffulfil": -0.49832125877340633,
+   "words": 47.083333333333336,
+   "explore_pre": 23.415841897328693,
+   "stuck_pre": 0.0004166666666666667
+  },
+  "rand_err": {
+   "explore": 20.746321307288277,
+   "stuck": 0.031041666666666665,
+   "lag1": 0.8828867202003797,
+   "lag100": 0.7373562976717949,
+   "skill": 0.005051326615406045,
+   "pred": 0.8879380524158478,
+   "selffulfil": 0.005237657896941528,
+   "words": 32.166666666666664,
+   "explore_pre": 22.33080514272054,
+   "stuck_pre": 0.001875
+  },
+  "frozen_err": {
+   "explore": 20.664031147956848,
+   "stuck": 0.025208333333333333,
+   "lag1": 0.865379087626934,
+   "lag100": 0.6432804316282272,
+   "skill": -0.15454834947983423,
+   "pred": 0.7108307406306267,
+   "selffulfil": -0.6025809720158577,
+   "words": 54.666666666666664,
+   "explore_pre": 25.644454982545643,
+   "stuck_pre": 0.0008333333333333334
+  }
+ },
+ "tests": {
+  "ring_err_vs_vel": {
+   "explore": {
+    "diff": 2.066930267545912,
+    "se": 0.17941768900166613,
+    "t": 11.520214528717498,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.00041666666666666675,
+    "se": 0.00227057155119193,
+    "t": -0.18350739330277382,
+    "pos": 7,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.020362794554481905,
+    "se": 0.0007938730198955095,
+    "t": -25.649939025717337,
+    "pos": 0,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.05252092828353246,
+    "se": 0.0014706198492683202,
+    "t": -35.713463482533086,
+    "pos": 0,
+    "n": 24
+   },
+   "words": {
+    "diff": 4.375,
+    "se": 0.9905577772875885,
+    "t": 4.416703498083592,
+    "pos": 19,
+    "n": 24
+   }
+  },
+  "ring_err_vs_yoked_err": {
+   "explore": {
+    "diff": 1.3082263469696045,
+    "se": 0.20461895657024767,
+    "t": 6.393475799591802,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.0006250000000000004,
+    "se": 0.002278453343318919,
+    "t": -0.27430888669837383,
+    "pos": 12,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.010671824449673295,
+    "se": 0.0010270950746614097,
+    "t": -10.39029853511015,
+    "pos": 0,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.011830359697341919,
+    "se": 0.0027809590784405322,
+    "t": 4.254057454155703,
+    "pos": 19,
+    "n": 24
+   },
+   "words": {
+    "diff": -1.875,
+    "se": 1.0361447845222953,
+    "t": -1.809592663118457,
+    "pos": 9,
+    "n": 24
+   }
+  },
+  "ring_err_vs_shuf_err": {
+   "explore": {
+    "diff": 2.01252802213033,
+    "se": 0.22198918818838587,
+    "t": 9.065883066442163,
+    "pos": 22,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.008333333333333333,
+    "se": 0.001494757343821469,
+    "t": 5.575040903982774,
+    "pos": 19,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.03179753998604914,
+    "se": 0.001068588247913892,
+    "t": -29.75658776720088,
+    "pos": 0,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.012396946549415588,
+    "se": 0.0019988379555397513,
+    "t": -6.202076819212696,
+    "pos": 2,
+    "n": 24
+   },
+   "words": {
+    "diff": 2.5,
+    "se": 1.0512242690159488,
+    "t": 2.37817949383936,
+    "pos": 15,
+    "n": 24
+   }
+  },
+  "ring_err_vs_rand_err": {
+   "explore": {
+    "diff": 3.6499556435479055,
+    "se": 0.1892555727385221,
+    "t": 19.28585558001365,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.018125,
+    "se": 0.0020370770655560614,
+    "t": -8.89755243258429,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.045980095075113546,
+    "se": 0.000659157377044247,
+    "t": -69.75586813773467,
+    "pos": 0,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.09420181810855865,
+    "se": 0.0016129163210118957,
+    "t": -58.4046530383295,
+    "pos": 0,
+    "n": 24
+   },
+   "words": {
+    "diff": 17.416666666666668,
+    "se": 0.8574411431752398,
+    "t": 20.312375730152166,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "ring_err_vs_free": {
+   "explore": {
+    "diff": 5.303774568769667,
+    "se": 0.16173998999486242,
+    "t": 32.791980319388784,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.05145833333333333,
+    "se": 0.003398091518217774,
+    "t": -15.143304133351334,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.042398684019038534,
+    "se": 0.000658789495880662,
+    "t": -64.35847001834854,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "ring_err_vs_content": {
+   "explore": {
+    "diff": 9.340116222699484,
+    "se": 0.20844820120210072,
+    "t": 44.80785235293916,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.25666666666666665,
+    "se": 0.006194804586484896,
+    "t": -41.43256870872604,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.020935041131451726,
+    "se": 0.0006544043884475855,
+    "t": -31.99098523944039,
+    "pos": 0,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.1104712188243866,
+    "se": 0.0023769269577855897,
+    "t": -46.4764886706088,
+    "pos": 0,
+    "n": 24
+   },
+   "words": {
+    "diff": 22.958333333333332,
+    "se": 0.6634319167876689,
+    "t": 34.60540976758756,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_content": {
+   "explore": {
+    "diff": -0.03576232327355274,
+    "se": 0.2117044794292718,
+    "t": -0.16892568059950072,
+    "pos": 12,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.13645833333333332,
+    "se": 0.00854696724894798,
+    "t": -15.965702144246494,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.026397683696510892,
+    "se": 0.0005316148699266209,
+    "t": 49.655653349490734,
+    "pos": 24,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.018348986903826397,
+    "se": 0.003029150735096582,
+    "t": 6.057469075813869,
+    "pos": 21,
+    "n": 24
+   },
+   "selffulfil": {
+    "diff": -0.008488232890764872,
+    "se": 0.0005937851761527109,
+    "t": -14.295124283435884,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_yoked_pred": {
+   "explore": {
+    "diff": -0.3531675868564181,
+    "se": 0.21340307955938262,
+    "t": -1.6549320074743528,
+    "pos": 8,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.018958333333333327,
+    "se": 0.00670265985669789,
+    "t": 2.8284791021266704,
+    "pos": 16,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.0006811102794017643,
+    "se": 0.0005000931188318767,
+    "t": 1.361966909268237,
+    "pos": 13,
+    "n": 24
+   },
+   "lag100": {
+    "diff": -0.000811124841372172,
+    "se": 0.003420252889211501,
+    "t": -0.23715347012225382,
+    "pos": 10,
+    "n": 24
+   },
+   "selffulfil": {
+    "diff": 0.00245856245358785,
+    "se": 0.0007680932483765348,
+    "t": 3.2008645549018198,
+    "pos": 20,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_free": {
+   "explore": {
+    "diff": -4.072103977203369,
+    "se": 0.2349074725670436,
+    "t": -17.33492737674053,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.06874999999999999,
+    "se": 0.0051274516935379535,
+    "t": 13.40821993245583,
+    "pos": 24,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.0049340408089240855,
+    "se": 0.0004025269624383607,
+    "t": 12.257665372365308,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "ring_pred_vs_vel": {
+   "explore": {
+    "diff": -7.308948278427124,
+    "se": 0.2176840089403419,
+    "t": -33.57595403542114,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.11979166666666667,
+    "se": 0.004637973057503202,
+    "t": 25.82845246866421,
+    "pos": 24,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.026969930273480713,
+    "se": 0.00045142396887608684,
+    "t": 59.74412555148084,
+    "pos": 24,
+    "n": 24
+   },
+   "lag100": {
+    "diff": 0.07629927744468053,
+    "se": 0.0031626280129254604,
+    "t": 24.1252771849393,
+    "pos": 24,
+    "n": 24
+   },
+   "selffulfil": {
+    "diff": 0.6779121141880751,
+    "se": 0.0006901484353797302,
+    "t": 982.2700153121081,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "content_vs_free": {
+   "explore": {
+    "diff": -4.036341653929816,
+    "se": 0.16831344421076705,
+    "t": -23.981100694935517,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.20520833333333333,
+    "se": 0.007282343936711614,
+    "t": 28.17888513873136,
+    "pos": 24,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.021463642887586804,
+    "se": 0.0004364348290596319,
+    "t": -49.1794913202359,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "vel_vs_free": {
+   "explore": {
+    "diff": 3.236844301223755,
+    "se": 0.1586821890640571,
+    "t": 20.398283640497926,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.05104166666666667,
+    "se": 0.003378040319618193,
+    "t": -15.109845305942267,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.02203588946455663,
+    "se": 0.0005305973848490771,
+    "t": -41.53033937554085,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "yoked_pred_vs_free": {
+   "explore": {
+    "diff": -3.718936390346951,
+    "se": 0.21369343030412888,
+    "t": -17.40313862271832,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.04979166666666667,
+    "se": 0.004657462131076909,
+    "t": 10.690729256697946,
+    "pos": 24,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.004252930529522321,
+    "se": 0.0004648402231921088,
+    "t": 9.149230891244697,
+    "pos": 24,
+    "n": 24
+   }
+  },
+  "yoked_err_vs_free": {
+   "explore": {
+    "diff": 3.995548221800062,
+    "se": 0.23662635376432448,
+    "t": 16.885474327933714,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.050833333333333335,
+    "se": 0.003019661816813715,
+    "t": -16.834114684727055,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.03172685956936524,
+    "se": 0.0010310598504461163,
+    "t": -30.771113389429086,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "shuf_err_vs_free": {
+   "explore": {
+    "diff": 3.291246546639337,
+    "se": 0.22985634566650492,
+    "t": 14.31871083261089,
+    "pos": 24,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.05979166666666667,
+    "se": 0.00301684832105801,
+    "t": -19.819248534741615,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.010601144032989396,
+    "se": 0.0008509333816226229,
+    "t": -12.458253797464552,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "rand_err_vs_free": {
+   "explore": {
+    "diff": 1.653818925221761,
+    "se": 0.14822567519891258,
+    "t": 11.157438972717824,
+    "pos": 23,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.03333333333333333,
+    "se": 0.004000301920972616,
+    "t": -8.332704378780692,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": 0.0035814110560750123,
+    "se": 0.0004682761192073778,
+    "t": 7.648075375137743,
+    "pos": 23,
+    "n": 24
+   }
+  },
+  "frozen_err_vs_free": {
+   "explore": {
+    "diff": 1.5715287658903334,
+    "se": 0.2328575044652737,
+    "t": 6.748886060164306,
+    "pos": 21,
+    "n": 24
+   },
+   "stuck": {
+    "diff": -0.039166666666666676,
+    "se": 0.0032368276352157865,
+    "t": -12.10032509625913,
+    "pos": 0,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.15601826503916527,
+    "se": 0.0031525339476563834,
+    "t": -49.48979697907786,
+    "pos": 0,
+    "n": 24
+   }
+  },
+  "freeze_effect": {
+   "explore": {
+    "diff": -3.901391016112434,
+    "se": 0.20500038154348324,
+    "t": -19.03114026782871,
+    "pos": 0,
+    "n": 24
+   },
+   "stuck": {
+    "diff": 0.012291666666666668,
+    "se": 0.0027580443388167688,
+    "t": 4.45666028412724,
+    "pos": 19,
+    "n": 24
+   },
+   "skill": {
+    "diff": -0.11361958102012674,
+    "se": 0.003174233498120477,
+    "t": -35.79433620349701,
+    "pos": 0,
+    "n": 24
+   }
+  }
+ },
+ "privileged": {
+  "free": {
+   "own": 0.37158193807870504,
+   "other": 0.3710730296464672,
+   "test": {
+    "diff": 0.0005089084322378104,
+    "se": 0.0077353100680467345,
+    "t": 0.0657903080498383,
+    "pos": 10,
+    "n": 24
+   }
+  },
+  "ring_err": {
+   "own": 0.303199639204971,
+   "other": 0.31078635322617376,
+   "test": {
+    "diff": -0.007586714021202756,
+    "se": 0.004813760717992702,
+    "t": -1.5760471834101368,
+    "pos": 9,
+    "n": 24
+   }
+  },
+  "ring_pred": {
+   "own": 0.4242161219302439,
+   "other": 0.4130861322622405,
+   "test": {
+    "diff": 0.011129989668003396,
+    "se": 0.024236931796450367,
+    "t": 0.4592161153679297,
+    "pos": 9,
+    "n": 24
+   }
+  },
+  "content": {
+   "own": 0.4158478840401454,
+   "other": 0.41846501673062825,
+   "test": {
+    "diff": -0.0026171326904828734,
+    "se": 0.018586495588323187,
+    "t": -0.14080829159247565,
+    "pos": 10,
+    "n": 24
+   }
+  },
+  "vel": {
+   "own": 0.3987480254341163,
+   "other": 0.39773845440189753,
+   "test": {
+    "diff": 0.0010095710322187978,
+    "se": 0.005757300831901127,
+    "t": 0.17535492094225444,
+    "pos": 10,
+    "n": 24
+   }
+  },
+  "yoked_err": {
+   "own": 0.31055611597504534,
+   "other": 0.30953306817747284,
+   "test": {
+    "diff": 0.0010230477975724957,
+    "se": 0.006177372494207974,
+    "t": 0.16561212692479294,
+    "pos": 13,
+    "n": 24
+   }
+  }
+ },
+ "examples": {
+  "free": {
+   "words": [
+    [
+     [
+      "cps",
+      "Antarctic",
+      "mozilla",
+      "Germ",
+      "downright"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Flickr",
+      "construed",
+      "Chun"
+     ],
+     [
+      "Romero",
+      "Flickr",
+      "construed",
+      "Syntax",
+      "Livingston"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "construed",
+      "Romero",
+      "Inflate"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "construed",
+      "Genetics"
+     ]
+    ],
+    [
+     [
+      "mozilla",
+      "cps",
+      "Germ",
+      "restores",
+      "Antarctic"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "construed",
+      "Stat",
+      "Livingston"
+     ],
+     [
+      "Romero",
+      "Syntax",
+      "oxide",
+      "Flickr",
+      "Genetics"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Livingston",
+      "Romero",
+      "Inflate"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "Syntax",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "Antarctic",
+      "cps",
+      "restores",
+      "ethnicity",
+      "mozilla"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Livingston",
+      "Flickr",
+      "Chun"
+     ],
+     [
+      "Syntax",
+      "Romero",
+      "Flickr",
+      "Genetics",
+      "construed"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Romero",
+      "construed",
+      "Swagger"
+     ],
+     [
+      "reprint",
+      "Romero",
+      "worthwhile",
+      "Syntax",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "Germ",
+      "cps",
+      "downright",
+      "Antarctic",
+      "labelled"
+     ],
+     [
+      "Genetics",
+      "Livingston",
+      "Inflate",
+      "construed",
+      "Flickr"
+     ],
+     [
+      "Romero",
+      "Syntax",
+      "construed",
+      "Flickr",
+      "Genetics"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Romero",
+      "Inflate",
+      "oxide"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "construed",
+      "Genetics"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can"
+   ]
+  },
+  "content": {
+   "words": [
+    [
+     [
+      "cps",
+      "Antarctic",
+      "mozilla",
+      "Germ",
+      "downright"
+     ],
+     [
+      "Genetics",
+      "Livingston",
+      "Inflate",
+      "Stat",
+      "Flickr"
+     ],
+     [
+      "Syntax",
+      "construed",
+      "Romero",
+      "Flickr",
+      "Inflate"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "construed",
+      "Romero",
+      "Swagger"
+     ],
+     [
+      "worthwhile",
+      "reprint",
+      "Romero",
+      "Swagger",
+      "Genetics"
+     ]
+    ],
+    [
+     [
+      "mozilla",
+      "cps",
+      "Germ",
+      "restores",
+      "Antarctic"
+     ],
+     [
+      "Inflate",
+      "Genetics",
+      "Livingston",
+      "Romero",
+      "construed"
+     ],
+     [
+      "Syntax",
+      "construed",
+      "Romero",
+      "Flickr",
+      "Inflate"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Romero",
+      "Inflate",
+      "construed"
+     ],
+     [
+      "worthwhile",
+      "reprint",
+      "Romero",
+      "Genetics",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "Antarctic",
+      "cps",
+      "restores",
+      "ethnicity",
+      "mozilla"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Livingston",
+      "construed",
+      "Defendants"
+     ],
+     [
+      "construed",
+      "Romero",
+      "Syntax",
+      "Flickr",
+      "Genetics"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Romero",
+      "Inflate",
+      "construed"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "defenseman",
+      "Swagger"
+     ]
+    ],
+    [
+     [
+      "Germ",
+      "cps",
+      "downright",
+      "Antarctic",
+      "labelled"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Livingston",
+      "Stat",
+      "Flickr"
+     ],
+     [
+      "Romero",
+      "construed",
+      "Syntax",
+      "Flickr",
+      "Genetics"
+     ],
+     [
+      "Swagger",
+      "Romero",
+      "Genetics",
+      "worthwhile",
+      "Syntax"
+     ],
+     [
+      "reprint",
+      "Romero",
+      "worthwhile",
+      "Syntax",
+      "defenseman"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and"
+   ]
+  },
+  "vel": {
+   "words": [
+    [
+     [
+      "cps",
+      "Antarctic",
+      "mozilla",
+      "Germ",
+      "downright"
+     ],
+     [
+      "Livingston",
+      "Genetics",
+      "Flickr",
+      "Stat",
+      "construed"
+     ],
+     [
+      "Romero",
+      "construed",
+      "Flickr",
+      "Syntax",
+      "Livingston"
+     ],
+     [
+      "Syntax",
+      "Inflate",
+      "Genetics",
+      "construed",
+      "Romero"
+     ],
+     [
+      "Romero",
+      "reprint",
+      "construed",
+      "worthwhile",
+      "ailments"
+     ]
+    ],
+    [
+     [
+      "mozilla",
+      "cps",
+      "Germ",
+      "restores",
+      "Antarctic"
+     ],
+     [
+      "Genetics",
+      "Livingston",
+      "Inflate",
+      "Flickr",
+      "Stat"
+     ],
+     [
+      "Romero",
+      "Livingston",
+      "Flickr",
+      "Syntax",
+      "oxide"
+     ],
+     [
+      "Genetics",
+      "Syntax",
+      "Inflate",
+      "construed",
+      "Romero"
+     ],
+     [
+      "worthwhile",
+      "reprint",
+      "Romero",
+      "construed",
+      "Genetics"
+     ]
+    ],
+    [
+     [
+      "Antarctic",
+      "cps",
+      "restores",
+      "ethnicity",
+      "mozilla"
+     ],
+     [
+      "Livingston",
+      "Genetics",
+      "Inflate",
+      "Stat",
+      "Hint"
+     ],
+     [
+      "Flickr",
+      "Syntax",
+      "Romero",
+      "construed",
+      "Genetics"
+     ],
+     [
+      "Genetics",
+      "Syntax",
+      "Inflate",
+      "construed",
+      "Romero"
+     ],
+     [
+      "Romero",
+      "worthwhile",
+      "Syntax",
+      "Genetics",
+      "reprint"
+     ]
+    ],
+    [
+     [
+      "Germ",
+      "cps",
+      "downright",
+      "Antarctic",
+      "labelled"
+     ],
+     [
+      "Genetics",
+      "Livingston",
+      "Stat",
+      "construed",
+      "Flickr"
+     ],
+     [
+      "Romero",
+      "Livingston",
+      "Genetics",
+      "Syntax",
+      "Flickr"
+     ],
+     [
+      "Syntax",
+      "Inflate",
+      "Genetics",
+      "construed",
+      "defenseman"
+     ],
+     [
+      "Romero",
+      "reprint",
+      "Genetics",
+      "worthwhile",
+      "construed"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and"
+   ]
+  },
+  "ring_pred": {
+   "words": [
+    [
+     [
+      "cps",
+      "Antarctic",
+      "mozilla",
+      "Germ",
+      "downright"
+     ],
+     [
+      "Genetics",
+      "Livingston",
+      "Stat",
+      "Inflate",
+      "construed"
+     ],
+     [
+      "Syntax",
+      "Flickr",
+      "Romero",
+      "construed",
+      "Genetics"
+     ],
+     [
+      "Syntax",
+      "Inflate",
+      "Genetics",
+      "Romero",
+      "construed"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "Genetics",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "mozilla",
+      "cps",
+      "Germ",
+      "restores",
+      "Antarctic"
+     ],
+     [
+      "Genetics",
+      "Livingston",
+      "Inflate",
+      "Stat",
+      "Hint"
+     ],
+     [
+      "Syntax",
+      "construed",
+      "Romero",
+      "Genetics",
+      "Flickr"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Romero",
+      "Inflate",
+      "construed"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "defenseman",
+      "Genetics"
+     ]
+    ],
+    [
+     [
+      "Antarctic",
+      "cps",
+      "restores",
+      "ethnicity",
+      "mozilla"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Stat",
+      "Livingston",
+      "Defendants"
+     ],
+     [
+      "Syntax",
+      "Romero",
+      "Flickr",
+      "construed",
+      "Genetics"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Inflate",
+      "Romero",
+      "construed"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "Genetics",
+      "Swagger"
+     ]
+    ],
+    [
+     [
+      "Germ",
+      "cps",
+      "downright",
+      "Antarctic",
+      "labelled"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Stat",
+      "Livingston",
+      "dives"
+     ],
+     [
+      "Syntax",
+      "construed",
+      "Romero",
+      "Genetics",
+      "Flickr"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "construed",
+      "Inflate",
+      "Romero"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Syntax",
+      "Romero",
+      "defenseman"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can"
+   ]
+  },
+  "yoked_pred": {
+   "words": [
+    [
+     [
+      "cps",
+      "Antarctic",
+      "mozilla",
+      "Germ",
+      "downright"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Livingston",
+      "Stat",
+      "Flickr"
+     ],
+     [
+      "construed",
+      "Syntax",
+      "Romero",
+      "Flickr",
+      "Genetics"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Inflate",
+      "Romero",
+      "construed"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "defenseman",
+      "Genetics"
+     ]
+    ],
+    [
+     [
+      "mozilla",
+      "cps",
+      "Germ",
+      "restores",
+      "Antarctic"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Livingston",
+      "Stat",
+      "dives"
+     ],
+     [
+      "Syntax",
+      "construed",
+      "Romero",
+      "Flickr",
+      "Genetics"
+     ],
+     [
+      "Genetics",
+      "Syntax",
+      "Romero",
+      "Inflate",
+      "construed"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "Genetics",
+      "Swagger"
+     ]
+    ],
+    [
+     [
+      "Antarctic",
+      "cps",
+      "restores",
+      "ethnicity",
+      "mozilla"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Hint",
+      "Livingston",
+      "Stat"
+     ],
+     [
+      "construed",
+      "Romero",
+      "Syntax",
+      "Genetics",
+      "Flickr"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Romero",
+      "construed",
+      "Inflate"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "defenseman",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "Germ",
+      "cps",
+      "downright",
+      "Antarctic",
+      "labelled"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Stat",
+      "Livingston",
+      "dives"
+     ],
+     [
+      "Syntax",
+      "construed",
+      "Romero",
+      "Flickr",
+      "Genetics"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Inflate",
+      "Romero",
+      "construed"
+     ],
+     [
+      "reprint",
+      "Romero",
+      "Syntax",
+      "worthwhile",
+      "Genetics"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and"
+   ]
+  },
+  "ring_err": {
+   "words": [
+    [
+     [
+      "cps",
+      "Antarctic",
+      "mozilla",
+      "Germ",
+      "downright"
+     ],
+     [
+      "Genetics",
+      "Chun",
+      "Stat",
+      "wont",
+      "Flickr"
+     ],
+     [
+      "rgb",
+      "Romero",
+      "Sail",
+      "Seq",
+      "Constructs"
+     ],
+     [
+      "Romero",
+      "Syntax",
+      "Genetics",
+      "construed",
+      "Gerry"
+     ],
+     [
+      "Romero",
+      "worthwhile",
+      "Genetics",
+      "reprint",
+      "ailments"
+     ]
+    ],
+    [
+     [
+      "mozilla",
+      "cps",
+      "Germ",
+      "restores",
+      "Antarctic"
+     ],
+     [
+      "Genetics",
+      "Livingston",
+      "Inflate",
+      "construed",
+      "Flickr"
+     ],
+     [
+      "Romero",
+      "construed",
+      "oxide",
+      "Livingston",
+      "Sail"
+     ],
+     [
+      "construed",
+      "Syntax",
+      "Romero",
+      "Livingston",
+      "Inflate"
+     ],
+     [
+      "reprint",
+      "Romero",
+      "construed",
+      "worthwhile",
+      "Genetics"
+     ]
+    ],
+    [
+     [
+      "Antarctic",
+      "cps",
+      "restores",
+      "ethnicity",
+      "mozilla"
+     ],
+     [
+      "Inflate",
+      "Flickr",
+      "Genetics",
+      "Chun",
+      "Livingston"
+     ],
+     [
+      "Romero",
+      "construed",
+      "Livingston",
+      "Syntax",
+      "Inflate"
+     ],
+     [
+      "Syntax",
+      "construed",
+      "Genetics",
+      "Inflate",
+      "southeastern"
+     ],
+     [
+      "Romero",
+      "reprint",
+      "worthwhile",
+      "ailments",
+      "Syntax"
+     ]
+    ],
+    [
+     [
+      "Germ",
+      "cps",
+      "downright",
+      "Antarctic",
+      "labelled"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "construed",
+      "Chun",
+      "Stat"
+     ],
+     [
+      "Romero",
+      "construed",
+      "Sail",
+      "Thumbnail",
+      "Naked"
+     ],
+     [
+      "Genetics",
+      "Syntax",
+      "construed",
+      "achievable",
+      "Romero"
+     ],
+     [
+      "Romero",
+      "reprint",
+      "Genetics",
+      "worthwhile",
+      "construed"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the idea of a person who is completely unaware of their own existence, like a dream or a hallucination, and how",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and"
+   ]
+  },
+  "yoked_err": {
+   "words": [
+    [
+     [
+      "cps",
+      "Antarctic",
+      "mozilla",
+      "Germ",
+      "downright"
+     ],
+     [
+      "Genetics",
+      "Flickr",
+      "Livingston",
+      "Chun",
+      "Inflate"
+     ],
+     [
+      "Romero",
+      "construed",
+      "Livingston",
+      "Sail",
+      "Naked"
+     ],
+     [
+      "Syntax",
+      "construed",
+      "Romero",
+      "Inflate",
+      "Genetics"
+     ],
+     [
+      "reprint",
+      "Romero",
+      "worthwhile",
+      "Genetics",
+      "ailments"
+     ]
+    ],
+    [
+     [
+      "mozilla",
+      "cps",
+      "Germ",
+      "restores",
+      "Antarctic"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Stat",
+      "Livingston",
+      "Flickr"
+     ],
+     [
+      "Romero",
+      "oxide",
+      "construed",
+      "ailments",
+      "Baldwin"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Inflate",
+      "construed",
+      "Romero"
+     ],
+     [
+      "worthwhile",
+      "reprint",
+      "Romero",
+      "ailments",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "Antarctic",
+      "cps",
+      "restores",
+      "ethnicity",
+      "mozilla"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Chun",
+      "deported",
+      "Flickr"
+     ],
+     [
+      "Romero",
+      "Genetics",
+      "construed",
+      "Sail",
+      "Flickr"
+     ],
+     [
+      "Swagger",
+      "Gerry",
+      "oxide",
+      "Syntax",
+      "Livingston"
+     ],
+     [
+      "Romero",
+      "Syntax",
+      "reprint",
+      "worthwhile",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "Germ",
+      "cps",
+      "downright",
+      "Antarctic",
+      "labelled"
+     ],
+     [
+      "Inflate",
+      "wont",
+      "Genetics",
+      "construed",
+      "Flickr"
+     ],
+     [
+      "Romero",
+      "Sail",
+      "construed",
+      "Inflate",
+      "Metadata"
+     ],
+     [
+      "Genetics",
+      "Syntax",
+      "rgb",
+      "Inflate",
+      "achievable"
+     ],
+     [
+      "Romero",
+      "reprint",
+      "worthwhile",
+      "Genetics",
+      "speculated"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a person who is completely unaware of their own existence, like a dream or a hallucination, and then"
+   ]
+  },
+  "shuf_err": {
+   "words": [
+    [
+     [
+      "cps",
+      "Antarctic",
+      "mozilla",
+      "Germ",
+      "downright"
+     ],
+     [
+      "Genetics",
+      "Stat",
+      "Livingston",
+      "glucose",
+      "Chun"
+     ],
+     [
+      "construed",
+      "Flickr",
+      "Romero",
+      "Livingston",
+      "Syntax"
+     ],
+     [
+      "construed",
+      "Syntax",
+      "Inflate",
+      "oxide",
+      "Livingston"
+     ],
+     [
+      "reprint",
+      "construed",
+      "worthwhile",
+      "Romero",
+      "Genetics"
+     ]
+    ],
+    [
+     [
+      "mozilla",
+      "cps",
+      "Germ",
+      "restores",
+      "Antarctic"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Chun",
+      "Stat",
+      "Flickr"
+     ],
+     [
+      "Livingston",
+      "Romero",
+      "Sail",
+      "Syntax",
+      "Flickr"
+     ],
+     [
+      "Romero",
+      "reprint",
+      "Swagger",
+      "Livingston",
+      "Fisheries"
+     ],
+     [
+      "worthwhile",
+      "Romero",
+      "reprint",
+      "construed",
+      "Swagger"
+     ]
+    ],
+    [
+     [
+      "Antarctic",
+      "cps",
+      "restores",
+      "ethnicity",
+      "mozilla"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Stat",
+      "Flickr",
+      "Livingston"
+     ],
+     [
+      "Livingston",
+      "ailments",
+      "Romero",
+      "Syntax",
+      "Flickr"
+     ],
+     [
+      "Syntax",
+      "construed",
+      "Genetics",
+      "reprint",
+      "extortion"
+     ],
+     [
+      "Romero",
+      "reprint",
+      "Syntax",
+      "worthwhile",
+      "construed"
+     ]
+    ],
+    [
+     [
+      "Germ",
+      "cps",
+      "downright",
+      "Antarctic",
+      "labelled"
+     ],
+     [
+      "Genetics",
+      "Livingston",
+      "Inflate",
+      "glucose",
+      "Stat"
+     ],
+     [
+      "Syntax",
+      "Romero",
+      "Sail",
+      "Flickr",
+      "Livingston"
+     ],
+     [
+      "Syntax",
+      "reprint",
+      "Swagger",
+      "oxide",
+      "Romero"
+     ],
+     [
+      "reprint",
+      "Romero",
+      "worthwhile",
+      "ailments",
+      "Syntax"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the idea of a person who is completely unaware of their own thoughts and feelings, and how that might affect their ability to",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a person who is completely unaware of their own thoughts, like a blank slate, and how that might affect"
+   ]
+  },
+  "rand_err": {
+   "words": [
+    [
+     [
+      "cps",
+      "Antarctic",
+      "mozilla",
+      "Germ",
+      "downright"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "construed",
+      "Flickr",
+      "glucose"
+     ],
+     [
+      "Romero",
+      "Syntax",
+      "Flickr",
+      "Genetics",
+      "construed"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Romero",
+      "construed",
+      "Inflate"
+     ],
+     [
+      "reprint",
+      "Romero",
+      "worthwhile",
+      "Syntax",
+      "Genetics"
+     ]
+    ],
+    [
+     [
+      "mozilla",
+      "cps",
+      "Germ",
+      "restores",
+      "Antarctic"
+     ],
+     [
+      "Genetics",
+      "Flickr",
+      "Inflate",
+      "construed",
+      "Livingston"
+     ],
+     [
+      "Romero",
+      "oxide",
+      "Syntax",
+      "Genetics",
+      "Flickr"
+     ],
+     [
+      "Syntax",
+      "construed",
+      "Genetics",
+      "Romero",
+      "oxide"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "construed",
+      "Syntax"
+     ]
+    ],
+    [
+     [
+      "Antarctic",
+      "cps",
+      "restores",
+      "ethnicity",
+      "mozilla"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "Flickr",
+      "Livingston",
+      "construed"
+     ],
+     [
+      "Syntax",
+      "Flickr",
+      "Romero",
+      "construed",
+      "oxide"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Inflate",
+      "construed",
+      "Swagger"
+     ],
+     [
+      "reprint",
+      "Genetics",
+      "Romero",
+      "worthwhile",
+      "Syntax"
+     ]
+    ],
+    [
+     [
+      "Germ",
+      "cps",
+      "downright",
+      "Antarctic",
+      "labelled"
+     ],
+     [
+      "Genetics",
+      "construed",
+      "Inflate",
+      "Livingston",
+      "Flickr"
+     ],
+     [
+      "Syntax",
+      "Romero",
+      "construed",
+      "Flickr",
+      "Genetics"
+     ],
+     [
+      "Syntax",
+      "Genetics",
+      "Inflate",
+      "construed",
+      "Swagger"
+     ],
+     [
+      "reprint",
+      "Romero",
+      "construed",
+      "worthwhile",
+      "Syntax"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can"
+   ]
+  },
+  "frozen_err": {
+   "words": [
+    [
+     [
+      "cps",
+      "Antarctic",
+      "mozilla",
+      "Germ",
+      "downright"
+     ],
+     [
+      "Flickr",
+      "wont",
+      "Livingston",
+      "Genetics",
+      "Chun"
+     ],
+     [
+      "construed",
+      "Livingston",
+      "Romero",
+      "rgb",
+      "Sail"
+     ],
+     [
+      "Swagger",
+      "defenseman",
+      "Syntax",
+      "Genetics",
+      "Inflate"
+     ],
+     [
+      "reprint",
+      "Romero",
+      "construed",
+      "ailments",
+      "Conversely"
+     ]
+    ],
+    [
+     [
+      "mozilla",
+      "cps",
+      "Germ",
+      "restores",
+      "Antarctic"
+     ],
+     [
+      "Genetics",
+      "Livingston",
+      "Inflate",
+      "Flickr",
+      "Chun"
+     ],
+     [
+      "Romero",
+      "construed",
+      "Livingston",
+      "Seq",
+      "Sail"
+     ],
+     [
+      "construed",
+      "reprint",
+      "Livingston",
+      "Syntax",
+      "Inflate"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "construed",
+      "Livingston"
+     ]
+    ],
+    [
+     [
+      "Antarctic",
+      "cps",
+      "restores",
+      "ethnicity",
+      "mozilla"
+     ],
+     [
+      "Genetics",
+      "Inflate",
+      "wont",
+      "Livingston",
+      "Flickr"
+     ],
+     [
+      "Livingston",
+      "construed",
+      "Sail",
+      "Romero",
+      "Syntax"
+     ],
+     [
+      "Swagger",
+      "reprint",
+      "Dependency",
+      "Gerry",
+      "Constructs"
+     ],
+     [
+      "reprint",
+      "worthwhile",
+      "Romero",
+      "construed",
+      "Fisheries"
+     ]
+    ],
+    [
+     [
+      "Germ",
+      "cps",
+      "downright",
+      "Antarctic",
+      "labelled"
+     ],
+     [
+      "Flickr",
+      "wont",
+      "Genetics",
+      "Chun",
+      "construed"
+     ],
+     [
+      "rgb",
+      "Romero",
+      "Sail",
+      "Naked",
+      "Canadiens"
+     ],
+     [
+      "Swagger",
+      "reprint",
+      "defenseman",
+      "await",
+      "Gerry"
+     ],
+     [
+      "reprint",
+      "Romero",
+      "worthwhile",
+      "Swagger",
+      "ailments"
+     ]
+    ]
+   ],
+   "glimpse": [
+    " the idea of a person who is completely unaware of their own existence, like a dream or a hallucination, and then",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can",
+    " the idea of a world where everything is made of light, and the people in it are made of light too, and",
+    " the idea of a person who is very good at something, but not necessarily good at everything else, and how that can"
+   ]
+  }
+ },
+ "timecourse": {
+  "free": {
+   "skill": [
+    -0.028232332319021225,
+    -0.01647266559302807,
+    0.0023064471315592527,
+    0.01989147998392582,
+    0.007988300174474716,
+    -0.015273968689143658,
+    0.010967799462378025,
+    -0.011708833277225494,
+    -0.022056808695197105,
+    0.004056182689964771,
+    -0.013673006556928158,
+    -0.00737876258790493,
+    -0.010413584299385548,
+    -0.007619929499924183,
+    0.0007402963237836957,
+    -0.011065107770264149,
+    -0.003628902370110154,
+    0.0011690064566209912,
+    -0.009434058330953121,
+    0.0037173128221184015,
+    -0.0073638977482914925,
+    0.040120046585798264,
+    -0.005944244563579559
+   ],
+   "lag1": [
+    0.7512395977973938,
+    0.8058284521102905,
+    0.8438618183135986,
+    0.7765029668807983,
+    0.8313223123550415,
+    0.8750588893890381,
+    0.795233964920044,
+    0.8100174069404602,
+    0.8729106783866882,
+    0.8289973735809326,
+    0.874220609664917,
+    0.8639028668403625,
+    0.9094537496566772,
+    0.8690639138221741,
+    0.8923908472061157,
+    0.9099575877189636,
+    0.8784757256507874,
+    0.8774211406707764,
+    0.8892149925231934,
+    0.8928886651992798,
+    0.9088704586029053,
+    0.8399484157562256,
+    0.9222322702407837
+   ],
+   "window": 25
+  },
+  "content": {
+   "skill": [
+    -0.0169048048555851,
+    -0.01267300732433796,
+    0.001559317810460925,
+    0.0027737042400985956,
+    -0.01219126395881176,
+    -0.03804764524102211,
+    -0.011961480602622032,
+    -0.03271249309182167,
+    -0.05076852813363075,
+    -0.024409500882029533,
+    -0.03093775361776352,
+    -0.03372257202863693,
+    -0.038150470703840256,
+    -0.029694031924009323,
+    -0.022069822996854782,
+    -0.029569998383522034,
+    -0.026952365413308144,
+    -0.01801881194114685,
+    -0.022556127980351448,
+    -0.01998182199895382,
+    -0.026212479919195175,
+    -0.0004107847926206887,
+    -0.02921695075929165
+   ],
+   "lag1": [
+    0.85549396276474,
+    0.8821040987968445,
+    0.8963679075241089,
+    0.8286842703819275,
+    0.8825254440307617,
+    0.9275380373001099,
+    0.8433416485786438,
+    0.8785574436187744,
+    0.9253597259521484,
+    0.8939970135688782,
+    0.9280734062194824,
+    0.9252504706382751,
+    0.9503560662269592,
+    0.9246165156364441,
+    0.9459143280982971,
+    0.9523220062255859,
+    0.9298507571220398,
+    0.9225677251815796,
+    0.9313696026802063,
+    0.9409887790679932,
+    0.9454737305641174,
+    0.8974419236183167,
+    0.9630357027053833
+   ],
+   "window": 25
+  },
+  "vel": {
+   "skill": [
+    -0.018149273470044136,
+    -0.012342548929154873,
+    0.007150953635573387,
+    0.01906558685004711,
+    -0.0014338069595396519,
+    -0.023617105558514595,
+    -0.0038418681360781193,
+    -0.018669385462999344,
+    -0.045846741646528244,
+    -0.018052520230412483,
+    -0.03320339694619179,
+    -0.038460880517959595,
+    -0.033742353320121765,
+    -0.029689257964491844,
+    -0.026335185393691063,
+    -0.03422818332910538,
+    -0.02706735208630562,
+    -0.02082035131752491,
+    -0.029316307976841927,
+    -0.018597237765789032,
+    -0.023929806426167488,
+    0.005920124240219593,
+    -0.019901009276509285
+   ],
+   "lag1": [
+    0.7857277393341064,
+    0.8111649751663208,
+    0.8240441679954529,
+    0.7759158611297607,
+    0.822248101234436,
+    0.8500629663467407,
+    0.7870808839797974,
+    0.802752673625946,
+    0.851006805896759,
+    0.8224550485610962,
+    0.8591929078102112,
+    0.8556933403015137,
+    0.8891428709030151,
+    0.8525042533874512,
+    0.8834123611450195,
+    0.8894252777099609,
+    0.8683007955551147,
+    0.867702841758728,
+    0.8750869631767273,
+    0.8923927545547485,
+    0.9022973775863647,
+    0.8391873240470886,
+    0.910437822341919
+   ],
+   "window": 25
+  },
+  "ring_pred": {
+   "skill": [
+    -0.013324454426765442,
+    -0.0006290196324698627,
+    0.014816037379205227,
+    0.023663638159632683,
+    0.013801430352032185,
+    -0.008858732879161835,
+    0.02469247207045555,
+    0.0020049014128744602,
+    -0.01965413987636566,
+    0.011185434646904469,
+    0.006694405805319548,
+    0.01010154839605093,
+    -0.009001577273011208,
+    0.010757893323898315,
+    0.00443753506988287,
+    -0.005456096958369017,
+    0.006812229752540588,
+    0.01322055235505104,
+    0.00423382269218564,
+    0.0055470094084739685,
+    2.6857256671064533e-05,
+    0.029510866850614548,
+    -0.004394351504743099
+   ],
+   "lag1": [
+    0.8494623303413391,
+    0.871238112449646,
+    0.8847891092300415,
+    0.8166433572769165,
+    0.8630985617637634,
+    0.902423620223999,
+    0.8286557197570801,
+    0.8591250777244568,
+    0.9009017944335938,
+    0.8747847676277161,
+    0.9064943194389343,
+    0.9023128151893616,
+    0.9351745843887329,
+    0.8987583518028259,
+    0.9275059103965759,
+    0.9413099884986877,
+    0.9150278568267822,
+    0.9097248315811157,
+    0.9202622771263123,
+    0.9263613820075989,
+    0.9290748834609985,
+    0.878716230392456,
+    0.9432908296585083
+   ],
+   "window": 25
+  },
+  "yoked_pred": {
+   "skill": [
+    -0.013685803860425949,
+    0.0005504858563654125,
+    0.015810325741767883,
+    0.021920114755630493,
+    0.014022232964634895,
+    -0.0062227812595665455,
+    0.02408701181411743,
+    0.008666652254760265,
+    -0.021616075187921524,
+    0.010075273923575878,
+    0.007051222957670689,
+    0.010521956719458103,
+    -0.008649819530546665,
+    0.011520902626216412,
+    0.00409592455253005,
+    -0.003298521740362048,
+    0.0046761175617575645,
+    0.013493221253156662,
+    0.002932448172941804,
+    0.005525941029191017,
+    0.000974253925960511,
+    0.02746005356311798,
+    -0.005200221668928862
+   ],
+   "lag1": [
+    0.8365972638130188,
+    0.8630366921424866,
+    0.8812863230705261,
+    0.813468337059021,
+    0.8592042922973633,
+    0.8963484764099121,
+    0.8244644403457642,
+    0.8552981615066528,
+    0.897198498249054,
+    0.8713933229446411,
+    0.9022458791732788,
+    0.8991398215293884,
+    0.9313893914222717,
+    0.8931602239608765,
+    0.9254837036132812,
+    0.9377341866493225,
+    0.9116231203079224,
+    0.9057035446166992,
+    0.9191029667854309,
+    0.924628496170044,
+    0.9265370965003967,
+    0.8786224126815796,
+    0.9424849152565002
+   ],
+   "window": 25
+  },
+  "ring_err": {
+   "skill": [
+    -0.026910705491900444,
+    -0.042947784066200256,
+    -0.014577411115169525,
+    -0.013973467983305454,
+    -0.03943509981036186,
+    -0.056449323892593384,
+    -0.048137977719306946,
+    -0.05722480267286301,
+    -0.09321871399879456,
+    -0.04648277908563614,
+    -0.07780211418867111,
+    -0.0682915523648262,
+    -0.07369326055049896,
+    -0.05441443249583244,
+    -0.057161763310432434,
+    -0.06390992552042007,
+    -0.0639008954167366,
+    -0.05657977983355522,
+    -0.049867209047079086,
+    -0.024294694885611534,
+    -0.045220330357551575,
+    0.014672393910586834,
+    -0.04857511445879936
+   ],
+   "lag1": [
+    0.778312087059021,
+    0.8021608591079712,
+    0.7977520823478699,
+    0.7541981339454651,
+    0.8048049211502075,
+    0.8357059359550476,
+    0.7644144892692566,
+    0.7778377532958984,
+    0.8407367467880249,
+    0.784363329410553,
+    0.8424971103668213,
+    0.8224440217018127,
+    0.8552917242050171,
+    0.8162893652915955,
+    0.8410527110099792,
+    0.852508008480072,
+    0.8311630487442017,
+    0.8284208178520203,
+    0.8310430645942688,
+    0.8472657203674316,
+    0.8700636029243469,
+    0.7580351829528809,
+    0.8786073923110962
+   ],
+   "window": 25
+  },
+  "yoked_err": {
+   "skill": [
+    -0.025370366871356964,
+    -0.039007097482681274,
+    -0.009334816597402096,
+    -0.005215751938521862,
+    -0.021270792931318283,
+    -0.04105954244732857,
+    -0.02976827323436737,
+    -0.044076256453990936,
+    -0.07375963032245636,
+    -0.03463806211948395,
+    -0.06500101834535599,
+    -0.05007275938987732,
+    -0.05591365322470665,
+    -0.03781409561634064,
+    -0.04177718609571457,
+    -0.05248556658625603,
+    -0.047792524099349976,
+    -0.0398644357919693,
+    -0.04103896766901016,
+    -0.018553346395492554,
+    -0.034869443625211716,
+    0.020178673788905144,
+    -0.03908434882760048
+   ],
+   "lag1": [
+    0.755009651184082,
+    0.7824282050132751,
+    0.7876725196838379,
+    0.7442328929901123,
+    0.7942383885383606,
+    0.8245675563812256,
+    0.7579014897346497,
+    0.7699307799339294,
+    0.8314921855926514,
+    0.7818262577056885,
+    0.8409025073051453,
+    0.8242952823638916,
+    0.8565950393676758,
+    0.8154284954071045,
+    0.840262770652771,
+    0.8483402132987976,
+    0.8330130577087402,
+    0.8308351635932922,
+    0.8306633234024048,
+    0.8465373516082764,
+    0.8694490790367126,
+    0.7565305829048157,
+    0.8769016265869141
+   ],
+   "window": 25
+  },
+  "shuf_err": {
+   "skill": [
+    -0.01628796011209488,
+    0.00033807914587669075,
+    0.011888581328094006,
+    0.01650257408618927,
+    0.006671182345598936,
+    -0.020022006705403328,
+    -0.0005790116265416145,
+    -0.023027334362268448,
+    -0.04276662319898605,
+    -0.012998350895941257,
+    -0.029447371140122414,
+    -0.023719800636172295,
+    -0.02558983862400055,
+    -0.014728838577866554,
+    -0.017010580748319626,
+    -0.025695975869894028,
+    -0.02392246574163437,
+    -0.018540184944868088,
+    -0.02151770517230034,
+    5.184710062167142e-06,
+    -0.013649472035467625,
+    0.02939671277999878,
+    -0.012539379298686981
+   ],
+   "lag1": [
+    0.7590233087539673,
+    0.7809404730796814,
+    0.7912371754646301,
+    0.7381529211997986,
+    0.7933393120765686,
+    0.829724133014679,
+    0.7463104128837585,
+    0.7594679594039917,
+    0.8260678648948669,
+    0.7844241261482239,
+    0.8346590399742126,
+    0.8220695853233337,
+    0.8525122404098511,
+    0.8057042360305786,
+    0.8374246954917908,
+    0.8493366241455078,
+    0.8318583965301514,
+    0.8265573382377625,
+    0.8306106328964233,
+    0.8493863940238953,
+    0.8801557421684265,
+    0.795104444026947,
+    0.8846834301948547
+   ],
+   "window": 25
+  },
+  "rand_err": {
+   "skill": [
+    -0.028495721518993378,
+    -0.014019136317074299,
+    0.010171291418373585,
+    0.02556615136563778,
+    0.009595782496035099,
+    -0.0121871093288064,
+    0.013418442569673061,
+    -0.0018554124981164932,
+    -0.018511462956666946,
+    0.006102379877120256,
+    -0.007538000121712685,
+    -0.005992462392896414,
+    -0.009071173146367073,
+    0.00024212032440118492,
+    0.004702093545347452,
+    -0.005268832668662071,
+    -0.001696923398412764,
+    0.0045769293792545795,
+    -0.0031217182986438274,
+    0.007755683269351721,
+    -0.0016418298473581672,
+    0.0414159819483757,
+    -0.0038917374331504107
+   ],
+   "lag1": [
+    0.7295904755592346,
+    0.7924661040306091,
+    0.8226768970489502,
+    0.7622435688972473,
+    0.8180234432220459,
+    0.8589023947715759,
+    0.777423620223999,
+    0.8000568151473999,
+    0.8578053712844849,
+    0.8200643658638,
+    0.8593447804450989,
+    0.852495551109314,
+    0.8926969170570374,
+    0.8517568111419678,
+    0.8764363527297974,
+    0.8979722261428833,
+    0.8690221905708313,
+    0.8639571070671082,
+    0.8748073577880859,
+    0.8826685547828674,
+    0.8981585502624512,
+    0.8300935626029968,
+    0.9124143719673157
+   ],
+   "window": 25
+  },
+  "frozen_err": {
+   "skill": [
+    -0.028932642191648483,
+    -0.04055178537964821,
+    -0.015008247457444668,
+    -0.014420878142118454,
+    -0.034383002668619156,
+    -0.056402988731861115,
+    -0.04669694975018501,
+    -0.06050910800695419,
+    -0.08756966888904572,
+    -0.0504230260848999,
+    -0.08187467604875565,
+    -0.07482593506574631,
+    -0.10601969063282013,
+    -0.10901656746864319,
+    -0.1303250938653946,
+    -0.13258901238441467,
+    -0.1322120875120163,
+    -0.1483149379491806,
+    -0.13778074085712433,
+    -0.13360275328159332,
+    -0.16866064071655273,
+    -0.1326807141304016,
+    -0.18698275089263916
+   ],
+   "lag1": [
+    0.7770900726318359,
+    0.8000531196594238,
+    0.7994610667228699,
+    0.7576667666435242,
+    0.8028468489646912,
+    0.8361751437187195,
+    0.7666571140289307,
+    0.7776155471801758,
+    0.8388653993606567,
+    0.7846782803535461,
+    0.8442922234535217,
+    0.8252463936805725,
+    0.8626955151557922,
+    0.8305061459541321,
+    0.856070339679718,
+    0.8653177618980408,
+    0.8504363298416138,
+    0.842815101146698,
+    0.8448657393455505,
+    0.8602719902992249,
+    0.8892244696617126,
+    0.8028230667114258,
+    0.9059153199195862
+   ],
+   "window": 25
+  }
+ }
+}

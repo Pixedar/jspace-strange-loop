@@ -1,0 +1,2648 @@
+{
+ "init_learned": {
+  "0": {
+   "pos": [
+    "maybe",
+    "Maybe",
+    "remember",
+    "wait",
+    "Wait",
+    "remembers",
+    "Hmm",
+    "remembering",
+    "remembered",
+    "hmm",
+    "recalling",
+    "perhaps"
+   ],
+   "neg": [
+    "Accordingly",
+    "ours",
+    "conducive",
+    "accordingly",
+    "yours",
+    "yourself",
+    "Indeed",
+    "consequently",
+    "Fortunately",
+    "remarkably",
+    "regarded",
+    "ourselves"
+   ]
+  },
+  "1": {
+   "pos": [
+    "recall",
+    "recalled",
+    "recalls",
+    "recalling",
+    "Recall",
+    "remember",
+    "memories",
+    "remembers",
+    "remembered",
+    "Remember",
+    "remembering",
+    "memory"
+   ],
+   "neg": [
+    "maybe",
+    "Maybe",
+    "perhaps",
+    "yeah",
+    "Perhaps",
+    "huh",
+    "let",
+    "Hmm",
+    "hmm",
+    "wait",
+    "yes",
+    "Would"
+   ]
+  },
+  "2": {
+   "pos": [
+    "too",
+    "aspects",
+    "aspect",
+    "might",
+    "angles",
+    "everyone",
+    "like",
+    "nan",
+    "thousands",
+    "suited",
+    "thoughts",
+    "tho"
+   ],
+   "neg": [
+    "Pussy",
+    "Cavaliers",
+    "Shaman",
+    "quarterbacks",
+    "Conor",
+    "Dungeons",
+    "Thrones",
+    "playoff",
+    "Playoff",
+    "Meghan",
+    "Seahawks",
+    "wait"
+   ]
+  },
+  "3": {
+   "pos": [
+    "hobbies",
+    "paragraphs",
+    "campground",
+    "avoidance",
+    "recreational",
+    "moderation",
+    "leash",
+    "groceries",
+    "couch",
+    "rhetorical",
+    "obedience",
+    "avoid"
+   ],
+   "neg": [
+    "recall",
+    "remember",
+    "remembers",
+    "Remember",
+    "recalling",
+    "heard",
+    "remembered",
+    "Recall",
+    "definitely",
+    "recalls",
+    "remembering",
+    "recalled"
+   ]
+  },
+  "4": {
+   "pos": [
+    "percussion",
+    "instruments",
+    "instrument",
+    "flute",
+    "violin",
+    "Instruments",
+    "guitar",
+    "musical",
+    "drums",
+    "Instrument",
+    "guitars",
+    "bamboo"
+   ],
+   "neg": [
+    "Deadpool",
+    "Dumbledore",
+    "Hulk",
+    "Voldemort",
+    "Netflix",
+    "vampires",
+    "elves",
+    "marriages",
+    "fandom",
+    "Avengers",
+    "alliances",
+    "Romeo"
+   ]
+  },
+  "5": {
+   "pos": [
+    "instrument",
+    "instruments",
+    "percussion",
+    "guitar",
+    "musician",
+    "Instruments",
+    "musical",
+    "Guitar",
+    "instrumentation",
+    "orchestra",
+    "violin",
+    "musicians"
+   ],
+   "neg": [
+    "parks",
+    "outdoor",
+    "beaches",
+    "recalls",
+    "beach",
+    "Outdoor",
+    "remember",
+    "pricey",
+    "memorable",
+    "hiking",
+    "Parks",
+    "remembers"
+   ]
+  },
+  "6": {
+   "pos": [
+    "mention",
+    "mentioned",
+    "Mention",
+    "famous",
+    "mentions",
+    "mentioning",
+    "acclaimed",
+    "popular",
+    "referenced",
+    "referred",
+    "names",
+    "notable"
+   ],
+   "neg": [
+    "remember",
+    "remembers",
+    "recall",
+    "remembering",
+    "Hmm",
+    "cannot",
+    "recalls",
+    "recalling",
+    "Recall",
+    "heard",
+    "believe",
+    "memory"
+   ]
+  },
+  "7": {
+   "pos": [
+    "spark",
+    "Spark",
+    "scala",
+    "Maybe",
+    "sparks",
+    "Probably",
+    "probably",
+    "Scala",
+    "sparked",
+    "maybe",
+    "companion",
+    "Perhaps"
+   ],
+   "neg": [
+    "beaches",
+    "Beach",
+    "museums",
+    "Disneyland",
+    "tourist",
+    "Basketball",
+    "parks",
+    "names",
+    "Disney",
+    "Memorial",
+    "resorts",
+    "coastal"
+   ]
+  }
+ },
+ "J": {
+  "0": {
+   "pos": [
+    "New",
+    "All",
+    "High",
+    "White",
+    "Great",
+    "South",
+    "Two",
+    "One",
+    "First",
+    "Don",
+    "National",
+    "all"
+   ],
+   "neg": [
+    "Bbw",
+    "crappy",
+    "didnt",
+    "apis",
+    "saddened",
+    "doesnt",
+    "purposely",
+    "shitty",
+    "uber",
+    "npc",
+    "Invoke",
+    "staffers"
+   ]
+  },
+  "1": {
+   "pos": [
+    "more",
+    "large",
+    "not",
+    "significant",
+    "all",
+    "high",
+    "very",
+    "over",
+    "much",
+    "approach",
+    "out",
+    "being"
+   ],
+   "neg": [
+    "Playlist",
+    "Asked",
+    "Toggle",
+    "Sidebar",
+    "Password",
+    "Bbw",
+    "Doesn",
+    "Txt",
+    "Encryption",
+    "Uploaded",
+    "Upload",
+    "Username"
+   ]
+  },
+  "2": {
+   "pos": [
+    "Implementation",
+    "Parameters",
+    "Optimization",
+    "Allocation",
+    "Requirements",
+    "Evaluation",
+    "Verification",
+    "Configuration",
+    "Constraints",
+    "Application",
+    "Evaluate",
+    "Compatibility"
+   ],
+   "neg": [
+    "very",
+    "wildly",
+    "strangely",
+    "barely",
+    "quite",
+    "brilliantly",
+    "killed",
+    "nearly",
+    "almost",
+    "went",
+    "came",
+    "died"
+   ]
+  },
+  "3": {
+   "pos": [
+    "festivals",
+    "hotels",
+    "restaurants",
+    "airports",
+    "highways",
+    "seafood",
+    "Lakers",
+    "apartments",
+    "tourism",
+    "aquarium",
+    "Orioles",
+    "cuisine"
+   ],
+   "neg": [
+    "considered",
+    "not",
+    "determined",
+    "asked",
+    "according",
+    "resulted",
+    "seems",
+    "discussed",
+    "Considering",
+    "described",
+    "considering",
+    "thus"
+   ]
+  },
+  "4": {
+   "pos": [
+    "veggies",
+    "Bbw",
+    "tricky",
+    "yummy",
+    "Hmm",
+    "Maybe",
+    "Sticky",
+    "fridge",
+    "Skinny",
+    "Tricks",
+    "Ignore",
+    "Cute"
+   ],
+   "neg": [
+    "institutions",
+    "renowned",
+    "political",
+    "established",
+    "government",
+    "acclaimed",
+    "national",
+    "establishment",
+    "institutional",
+    "governance",
+    "historically",
+    "instituted"
+   ]
+  },
+  "5": {
+   "pos": [
+    "cylinder",
+    "storage",
+    "components",
+    "module",
+    "units",
+    "vessel",
+    "container",
+    "component",
+    "containers",
+    "chassis",
+    "equipment",
+    "device"
+   ],
+   "neg": [
+    "heartbreaking",
+    "wonderfully",
+    "heartfelt",
+    "outraged",
+    "thoughtful",
+    "enthusiastically",
+    "unsettling",
+    "saddened",
+    "passionately",
+    "insightful",
+    "poignant",
+    "passionate"
+   ]
+  },
+  "6": {
+   "pos": [
+    "companies",
+    "Businesses",
+    "Companies",
+    "businesses",
+    "Offices",
+    "Organizations",
+    "customers",
+    "Employees",
+    "Officials",
+    "Restaurants",
+    "Customers",
+    "Offers"
+   ],
+   "neg": [
+    "vowel",
+    "melody",
+    "poem",
+    "ambiguity",
+    "poetic",
+    "irony",
+    "contradiction",
+    "narrative",
+    "phrase",
+    "myth",
+    "betrayal",
+    "dictionary"
+   ]
+  },
+  "7": {
+   "pos": [
+    "Run",
+    "Good",
+    "Final",
+    "Return",
+    "Ready",
+    "Full",
+    "High",
+    "campaign",
+    "Day",
+    "Road",
+    "full",
+    "State"
+   ],
+   "neg": [
+    "ebooks",
+    "councillors",
+    "textbooks",
+    "websites",
+    "Mormons",
+    "dictionaries",
+    "manuscripts",
+    "galaxies",
+    "texts",
+    "pastors",
+    "murderers",
+    "theories"
+   ]
+  }
+ },
+ "const_learned_l0": {
+  "axes": {
+   "0": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "perhaps",
+     "remember",
+     "wait",
+     "Wait",
+     "Hmm",
+     "remembers",
+     "remembering",
+     "hmm",
+     "sure",
+     "Perhaps"
+    ],
+    "neg": [
+     "Indeed",
+     "yourself",
+     "lush",
+     "conducive",
+     "ours",
+     "remarked",
+     "ourselves",
+     "regarded",
+     "Foo",
+     "Accordingly",
+     "yours",
+     "proposes"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "recalls",
+     "remembered",
+     "recalling",
+     "memories",
+     "memory",
+     "remember",
+     "remembers",
+     "Recall",
+     "wary",
+     "remembering"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "Perhaps",
+     "Hmm",
+     "perhaps",
+     "yeah",
+     "Would",
+     "interesting",
+     "huh",
+     "hmm",
+     "Yeah",
+     "Interesting"
+    ]
+   },
+   "2": {
+    "pos": [
+     "aspects",
+     "aspect",
+     "too",
+     "tho",
+     "basics",
+     "legally",
+     "like",
+     "typical",
+     "areas",
+     "textbook",
+     "planets",
+     "area"
+    ],
+    "neg": [
+     "Thrones",
+     "Cavaliers",
+     "Pussy",
+     "percussion",
+     "Orchestra",
+     "Dungeons",
+     "paddle",
+     "Shaman",
+     "Wait",
+     "Emmy",
+     "Playoff",
+     "Dancing"
+    ]
+   },
+   "3": {
+    "pos": [
+     "ideally",
+     "avoidance",
+     "paragraphs",
+     "couch",
+     "rhetorical",
+     "manifestations",
+     "avoid",
+     "avoiding",
+     "moderation",
+     "ideal",
+     "calmly",
+     "subconscious"
+    ],
+    "neg": [
+     "remember",
+     "recall",
+     "remembers",
+     "Remember",
+     "remembered",
+     "recalling",
+     "heard",
+     "Recall",
+     "definitely",
+     "pronounced",
+     "Memory",
+     "known"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instrument",
+     "instruments",
+     "violin",
+     "musical",
+     "flute",
+     "guitar",
+     "Instruments",
+     "rhythm",
+     "Yamaha",
+     "guitars",
+     "drums"
+    ],
+    "neg": [
+     "marriages",
+     "Deadpool",
+     "births",
+     "Spark",
+     "marry",
+     "Hulk",
+     "movies",
+     "Voldemort",
+     "actors",
+     "tweets",
+     "became",
+     "Netflix"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instrument",
+     "instruments",
+     "percussion",
+     "musical",
+     "guitar",
+     "Instruments",
+     "instrumentation",
+     "orchestra",
+     "musician",
+     "violin",
+     "guitars",
+     "Guitar"
+    ],
+    "neg": [
+     "vacations",
+     "kinda",
+     "parks",
+     "pricey",
+     "comfy",
+     "recalls",
+     "famously",
+     "vets",
+     "workouts",
+     "remember",
+     "beaches",
+     "lots"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "referenced",
+     "mentioned",
+     "famous",
+     "references",
+     "mentioning",
+     "notable",
+     "names",
+     "referred",
+     "universally",
+     "popular",
+     "fictional"
+    ],
+    "neg": [
+     "remember",
+     "remembers",
+     "did",
+     "recall",
+     "instruments",
+     "might",
+     "Hmm",
+     "guitar",
+     "remembering",
+     "Recall",
+     "hearings",
+     "heard"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "Spark",
+     "sparks",
+     "scala",
+     "Seems",
+     "immature",
+     "sparking",
+     "sparked",
+     "kittens",
+     "propane",
+     "broker",
+     "amor"
+    ],
+    "neg": [
+     "museums",
+     "Beach",
+     "tourist",
+     "Disneyland",
+     "beaches",
+     "Memorial",
+     "Disney",
+     "championship",
+     "coastal",
+     "sports",
+     "iconic",
+     "Yankee"
+    ]
+   }
+  },
+  "overlap_with_init": 0.8736387491226196,
+  "overlap_with_J": 0.08644343912601471
+ },
+ "fcst_learned_l0": {
+  "axes": {
+   "0": {
+    "pos": [
+     "Maybe",
+     "Hmm",
+     "maybe",
+     "hmm",
+     "remember",
+     "let",
+     "Perhaps",
+     "wait",
+     "wikipedia",
+     "remembers",
+     "perhaps",
+     "spanish"
+    ],
+    "neg": [
+     "ours",
+     "despite",
+     "conducive",
+     "accordingly",
+     "yours",
+     "Courage",
+     "Valor",
+     "suited",
+     "primarily",
+     "courtesy",
+     "yourself",
+     "precinct"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "recalls",
+     "recalling",
+     "remembered",
+     "remembers",
+     "remember",
+     "Recall",
+     "memory",
+     "memories",
+     "remembering",
+     "Remember"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "Hmm",
+     "Perhaps",
+     "Would",
+     "hmm",
+     "yeah",
+     "huh",
+     "let",
+     "perhaps",
+     "interesting",
+     "did"
+    ]
+   },
+   "2": {
+    "pos": [
+     "too",
+     "like",
+     "might",
+     "aspects",
+     "tho",
+     "aspect",
+     "angles",
+     "everyone",
+     "hundred",
+     "things",
+     "nan",
+     "paired"
+    ],
+    "neg": [
+     "Dungeons",
+     "Pussy",
+     "Thrones",
+     "Cavaliers",
+     "Seahawks",
+     "paddle",
+     "wait",
+     "Wait",
+     "Sleeping",
+     "Guardians",
+     "Fireplace",
+     "Playoff"
+    ]
+   },
+   "3": {
+    "pos": [
+     "moderation",
+     "leash",
+     "beginners",
+     "pets",
+     "hospitals",
+     "puppies",
+     "beaches",
+     "hiking",
+     "puppy",
+     "placebo",
+     "couch",
+     "parks"
+    ],
+    "neg": [
+     "remember",
+     "recall",
+     "remembers",
+     "Remember",
+     "recalling",
+     "Recall",
+     "remembered",
+     "heard",
+     "definitely",
+     "recalls",
+     "Memories",
+     "remembering"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instruments",
+     "violin",
+     "instrument",
+     "flute",
+     "Instruments",
+     "musical",
+     "guitar",
+     "orchestra",
+     "bamboo",
+     "classification",
+     "guitars"
+    ],
+    "neg": [
+     "marriages",
+     "Deadpool",
+     "Voldemort",
+     "Dumbledore",
+     "alliances",
+     "Netflix",
+     "Zuckerberg",
+     "became",
+     "Thrones",
+     "captains",
+     "vampires",
+     "Stark"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instrument",
+     "instruments",
+     "percussion",
+     "guitar",
+     "violin",
+     "orchestra",
+     "musical",
+     "Instruments",
+     "instrumentation",
+     "musician",
+     "Instrument",
+     "flute"
+    ],
+    "neg": [
+     "recalls",
+     "remember",
+     "remembers",
+     "memorable",
+     "Remember",
+     "remembered",
+     "yummy",
+     "kinda",
+     "famous",
+     "parks",
+     "recall",
+     "Recall"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "Mention",
+     "consideration",
+     "mentioning",
+     "underrated",
+     "considerations",
+     "noteworthy",
+     "mentioned",
+     "mentions",
+     "referenced",
+     "Consider",
+     "chronological"
+    ],
+    "neg": [
+     "remembers",
+     "remember",
+     "recall",
+     "might",
+     "instruments",
+     "Hmm",
+     "remembering",
+     "heard",
+     "waited",
+     "guitar",
+     "recalling",
+     "recalls"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "Spark",
+     "scala",
+     "sparks",
+     "broker",
+     "Seems",
+     "Maybe",
+     "kinda",
+     "sparked",
+     "Scala",
+     "contracts",
+     "actionable"
+    ],
+    "neg": [
+     "Championship",
+     "Disney",
+     "Beach",
+     "Memorial",
+     "trivia",
+     "names",
+     "Basketball",
+     "beaches",
+     "basketball",
+     "sports",
+     "championship",
+     "popular"
+    ]
+   }
+  },
+  "overlap_with_init": 0.895403265953064,
+  "overlap_with_J": 0.08176112174987793
+ },
+ "fcst_learned_l0.1_c": {
+  "axes": {
+   "0": {
+    "pos": [
+     "spanish",
+     "wikipedia",
+     "neighbouring",
+     "personalised",
+     "behaviours",
+     "organisers",
+     "minimise",
+     "Question",
+     "Maybe",
+     "specialised",
+     "european",
+     "brazil"
+    ],
+    "neg": [
+     "preached",
+     "appreciated",
+     "Visa",
+     "notoriously",
+     "accused",
+     "outings",
+     "undefeated",
+     "advocated",
+     "retired",
+     "despite",
+     "recognized",
+     "announced"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "remembered",
+     "recalls",
+     "remembers",
+     "recalling",
+     "remembering",
+     "remember",
+     "memories",
+     "memory",
+     "Recall",
+     "Remember"
+    ],
+    "neg": [
+     "yeah",
+     "maybe",
+     "Maybe",
+     "Hmm",
+     "Would",
+     "hmm",
+     "Yeah",
+     "let",
+     "analysed",
+     "interesting",
+     "yes",
+     "Problem"
+    ]
+   },
+   "2": {
+    "pos": [
+     "tho",
+     "indonesia",
+     "maths",
+     "japanese",
+     "friday",
+     "thats",
+     "monday",
+     "aspects",
+     "behaviours",
+     "organised",
+     "scenarios",
+     "angles"
+    ],
+    "neg": [
+     "Pussy",
+     "Hockey",
+     "Cavaliers",
+     "percussion",
+     "Wait",
+     "fastball",
+     "Ebony",
+     "wait",
+     "Maybe",
+     "Thrones",
+     "quarterbacks",
+     "Steelers"
+    ]
+   },
+   "3": {
+    "pos": [
+     "leash",
+     "paragraphs",
+     "moderation",
+     "puppy",
+     "avoidance",
+     "pets",
+     "avoid",
+     "hobbies",
+     "obedience",
+     "sunscreen",
+     "personalized",
+     "dehydration"
+    ],
+    "neg": [
+     "recall",
+     "recalling",
+     "Remember",
+     "remember",
+     "Recall",
+     "remembers",
+     "remembered",
+     "remembering",
+     "recalled",
+     "recalls",
+     "wiki",
+     "definitely"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instruments",
+     "instrument",
+     "violin",
+     "flute",
+     "musical",
+     "guitar",
+     "Instruments",
+     "drums",
+     "bamboo",
+     "Instrument",
+     "rhythm"
+    ],
+    "neg": [
+     "Deadpool",
+     "Hulk",
+     "Netflix",
+     "Dumbledore",
+     "Voldemort",
+     "births",
+     "alliances",
+     "Zuckerberg",
+     "Thrones",
+     "Stark",
+     "Comcast",
+     "Avengers"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instruments",
+     "instrument",
+     "percussion",
+     "musician",
+     "guitar",
+     "Instruments",
+     "orchestra",
+     "musical",
+     "violin",
+     "instrumentation",
+     "drums",
+     "Guitar"
+    ],
+    "neg": [
+     "kinda",
+     "parks",
+     "comfy",
+     "vacations",
+     "beaches",
+     "vets",
+     "yummy",
+     "outdoor",
+     "Outdoor",
+     "beach",
+     "pricey",
+     "pretty"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "Mention",
+     "mentioned",
+     "notable",
+     "acclaimed",
+     "mentions",
+     "mentioning",
+     "names",
+     "famous",
+     "underrated",
+     "name",
+     "referenced"
+    ],
+    "neg": [
+     "remember",
+     "remembers",
+     "guitar",
+     "recall",
+     "remembering",
+     "recalling",
+     "Recall",
+     "hardwood",
+     "Hmm",
+     "pedals",
+     "airplanes",
+     "Yamaha"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "Spark",
+     "scala",
+     "Seems",
+     "sparks",
+     "kinda",
+     "broker",
+     "Scala",
+     "whats",
+     "Apparently",
+     "counselling",
+     "reactionary"
+    ],
+    "neg": [
+     "tourist",
+     "sports",
+     "museums",
+     "Basketball",
+     "basketball",
+     "Beach",
+     "beaches",
+     "Sports",
+     "Disneyland",
+     "Baseball",
+     "tourists",
+     "soccer"
+    ]
+   }
+  },
+  "overlap_with_init": 0.8787132501602173,
+  "overlap_with_J": 0.08407901972532272
+ },
+ "fcst_learned_l1_c": {
+  "axes": {
+   "0": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "hmm",
+     "wait",
+     "perhaps",
+     "remember",
+     "remembers",
+     "Hmm",
+     "Wait",
+     "recalling",
+     "remembering",
+     "probably"
+    ],
+    "neg": [
+     "regarded",
+     "Accordingly",
+     "Agile",
+     "Anxiety",
+     "Auckland",
+     "Essentially",
+     "pragmatic",
+     "Phantom",
+     "Tay",
+     "playoffs",
+     "Reasons",
+     "Nothing"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "memories",
+     "recalls",
+     "recalling",
+     "remember",
+     "Recall",
+     "remembered",
+     "remembers",
+     "remembering",
+     "memory",
+     "Remember"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "perhaps",
+     "Hmm",
+     "huh",
+     "yeah",
+     "Perhaps",
+     "wait",
+     "hmm",
+     "let",
+     "Wait",
+     "Would"
+    ]
+   },
+   "2": {
+    "pos": [
+     "foe",
+     "too",
+     "tho",
+     "aspects",
+     "aspect",
+     "everyone",
+     "london",
+     "japanese",
+     "angles",
+     "chinese",
+     "tha",
+     "tied"
+    ],
+    "neg": [
+     "Cavaliers",
+     "Pussy",
+     "Playoff",
+     "Wait",
+     "Dungeons",
+     "Emmy",
+     "Who",
+     "quarterbacks",
+     "Shaman",
+     "Preserve",
+     "Orchestra",
+     "playoff"
+    ]
+   },
+   "3": {
+    "pos": [
+     "hobbies",
+     "paragraphs",
+     "avoidance",
+     "avoid",
+     "leash",
+     "rhetorical",
+     "moderation",
+     "puppy",
+     "pets",
+     "sunscreen",
+     "campground",
+     "teens"
+    ],
+    "neg": [
+     "Remember",
+     "remember",
+     "remembers",
+     "recall",
+     "recalling",
+     "remembered",
+     "Recall",
+     "played",
+     "remembering",
+     "definitely",
+     "correct",
+     "Memories"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instruments",
+     "instrument",
+     "violin",
+     "guitar",
+     "flute",
+     "musical",
+     "Instruments",
+     "Instrument",
+     "bamboo",
+     "drums",
+     "guitars"
+    ],
+    "neg": [
+     "Deadpool",
+     "Dumbledore",
+     "Hulk",
+     "Netflix",
+     "Rowling",
+     "Voldemort",
+     "alliances",
+     "Avengers",
+     "Loki",
+     "Thrones",
+     "viagra",
+     "fandom"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instrument",
+     "instruments",
+     "percussion",
+     "guitar",
+     "musician",
+     "orchestra",
+     "musicians",
+     "Instruments",
+     "Guitar",
+     "musical",
+     "violin",
+     "instrumentation"
+    ],
+    "neg": [
+     "parks",
+     "comfy",
+     "beaches",
+     "outdoor",
+     "Outdoor",
+     "pricey",
+     "vets",
+     "vacations",
+     "hiking",
+     "yummy",
+     "beach",
+     "pets"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "Mention",
+     "mentioned",
+     "famous",
+     "mentions",
+     "notable",
+     "underrated",
+     "mentioning",
+     "acclaimed",
+     "names",
+     "popular",
+     "name"
+    ],
+    "neg": [
+     "remember",
+     "recall",
+     "remembers",
+     "remembering",
+     "recalling",
+     "guitar",
+     "recalls",
+     "Yamaha",
+     "cannot",
+     "nuisance",
+     "cumbersome",
+     "recalled"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "scala",
+     "Spark",
+     "companion",
+     "sparking",
+     "sparks",
+     "kinda",
+     "broker",
+     "Kurdistan",
+     "sparked",
+     "cass",
+     "Seems"
+    ],
+    "neg": [
+     "Beach",
+     "museums",
+     "tourist",
+     "beaches",
+     "sports",
+     "Disneyland",
+     "Sports",
+     "Basketball",
+     "Memorial",
+     "names",
+     "Surf",
+     "Baseball"
+    ]
+   }
+  },
+  "overlap_with_init": 0.915074348449707,
+  "overlap_with_J": 0.07919584959745407
+ },
+ "state_learned_l0": {
+  "axes": {
+   "0": {
+    "pos": [
+     "Maybe",
+     "Hmm",
+     "maybe",
+     "remember",
+     "hmm",
+     "wait",
+     "Wait",
+     "remembers",
+     "let",
+     "remembering",
+     "unsure",
+     "recalling"
+    ],
+    "neg": [
+     "accordingly",
+     "Accordingly",
+     "ours",
+     "consequently",
+     "fortunate",
+     "conducive",
+     "Weinstein",
+     "Courage",
+     "yours",
+     "particularly",
+     "thus",
+     "despite"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "recalls",
+     "subconscious",
+     "wary",
+     "Recall",
+     "assure",
+     "Billion",
+     "memories",
+     "caution",
+     "puppy",
+     "urge"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "Hmm",
+     "yeah",
+     "hmm",
+     "huh",
+     "wait",
+     "perhaps",
+     "Wait",
+     "yes",
+     "Would",
+     "though"
+    ]
+   },
+   "2": {
+    "pos": [
+     "too",
+     "everyone",
+     "though",
+     "versus",
+     "aspects",
+     "basics",
+     "mentioned",
+     "towards",
+     "suited",
+     "despite",
+     "like",
+     "aspect"
+    ],
+    "neg": [
+     "Shaman",
+     "Sleeping",
+     "decidedly",
+     "impeachment",
+     "Emmy",
+     "presume",
+     "Commissioners",
+     "Thrones",
+     "Playoff",
+     "Dungeons",
+     "Cristina",
+     "imdb"
+    ]
+   },
+   "3": {
+    "pos": [
+     "avoidance",
+     "avoid",
+     "optimism",
+     "avoiding",
+     "couch",
+     "moderation",
+     "leash",
+     "ideally",
+     "rhetorical",
+     "beginners",
+     "subconscious",
+     "caffeine"
+    ],
+    "neg": [
+     "remember",
+     "remembers",
+     "recall",
+     "recalling",
+     "Remember",
+     "remembered",
+     "definitely",
+     "Recall",
+     "heard",
+     "remembering",
+     "Memories",
+     "recalled"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instrument",
+     "instruments",
+     "musical",
+     "flute",
+     "Instruments",
+     "guitar",
+     "violin",
+     "rhythm",
+     "classification",
+     "guitars",
+     "Instrument"
+    ],
+    "neg": [
+     "marriages",
+     "Dumbledore",
+     "Deadpool",
+     "Voldemort",
+     "Netflix",
+     "became",
+     "alliances",
+     "Republicans",
+     "elves",
+     "vampires",
+     "knights",
+     "Zuckerberg"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instrument",
+     "instruments",
+     "percussion",
+     "guitar",
+     "orchestra",
+     "musical",
+     "Guitar",
+     "Instruments",
+     "musician",
+     "accordion",
+     "instrumentation",
+     "violin"
+    ],
+    "neg": [
+     "parks",
+     "beaches",
+     "beach",
+     "vacations",
+     "comfy",
+     "pricey",
+     "famously",
+     "downright",
+     "recalls",
+     "kinda",
+     "Recreation",
+     "stuff"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "mentioned",
+     "referenced",
+     "mentioning",
+     "Mention",
+     "names",
+     "list",
+     "listed",
+     "referencing",
+     "mentions",
+     "lists",
+     "fictional"
+    ],
+    "neg": [
+     "instruments",
+     "sits",
+     "airplanes",
+     "happens",
+     "contends",
+     "understands",
+     "might",
+     "cannot",
+     "did",
+     "believe",
+     "hardwood",
+     "employs"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "Spark",
+     "scala",
+     "Seems",
+     "sparks",
+     "kinda",
+     "broker",
+     "Apparently",
+     "alot",
+     "electromagnetic",
+     "sparking",
+     "sparked"
+    ],
+    "neg": [
+     "names",
+     "list",
+     "Memorial",
+     "Disney",
+     "trivia",
+     "popular",
+     "championship",
+     "sports",
+     "Championship",
+     "Disneyland",
+     "Beach",
+     "museums"
+    ]
+   }
+  },
+  "overlap_with_init": 0.8890914916992188,
+  "overlap_with_J": 0.0851963609457016
+ },
+ "state_learned_l1_c": {
+  "axes": {
+   "0": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "remember",
+     "perhaps",
+     "remembers",
+     "hmm",
+     "wait",
+     "recalling",
+     "remembering",
+     "yeah",
+     "probably",
+     "Hmm"
+    ],
+    "neg": [
+     "Accordingly",
+     "Fortunately",
+     "accordingly",
+     "Anxiety",
+     "Indeed",
+     "unnoticed",
+     "remarkably",
+     "Nothing",
+     "regarded",
+     "Notices",
+     "Currently",
+     "yours"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "recalls",
+     "memories",
+     "Recall",
+     "recalling",
+     "remember",
+     "remembered",
+     "remembers",
+     "remembering",
+     "Remember",
+     "memory"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "yeah",
+     "Hmm",
+     "huh",
+     "wait",
+     "hmm",
+     "perhaps",
+     "let",
+     "Wait",
+     "Yeah",
+     "yes"
+    ]
+   },
+   "2": {
+    "pos": [
+     "tha",
+     "tho",
+     "japanese",
+     "int",
+     "tai",
+     "hai",
+     "thou",
+     "too",
+     "aspect",
+     "aspects",
+     "paired",
+     "chinese"
+    ],
+    "neg": [
+     "Cavaliers",
+     "Shaman",
+     "quarterbacks",
+     "Pussy",
+     "Meghan",
+     "Conor",
+     "Playoff",
+     "Emmy",
+     "Viagra",
+     "playoff",
+     "Thrones",
+     "Dungeons"
+    ]
+   },
+   "3": {
+    "pos": [
+     "hobbies",
+     "paragraphs",
+     "avoidance",
+     "moderation",
+     "leash",
+     "avoid",
+     "couch",
+     "sunscreen",
+     "puppy",
+     "obedience",
+     "campground",
+     "beaches"
+    ],
+    "neg": [
+     "Remember",
+     "remember",
+     "remembers",
+     "recall",
+     "recalling",
+     "remembered",
+     "Recall",
+     "remembering",
+     "definitely",
+     "heard",
+     "recalls",
+     "correct"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instruments",
+     "instrument",
+     "violin",
+     "flute",
+     "musical",
+     "guitar",
+     "Instruments",
+     "bamboo",
+     "drums",
+     "Instrument",
+     "rhythm"
+    ],
+    "neg": [
+     "Deadpool",
+     "Dumbledore",
+     "Netflix",
+     "Voldemort",
+     "Hulk",
+     "Avengers",
+     "Thrones",
+     "Rowling",
+     "fandom",
+     "alliances",
+     "actors",
+     "Hogwarts"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instrument",
+     "instruments",
+     "musician",
+     "percussion",
+     "guitar",
+     "orchestra",
+     "musical",
+     "Instruments",
+     "musicians",
+     "instrumentation",
+     "Guitar",
+     "flute"
+    ],
+    "neg": [
+     "parks",
+     "beaches",
+     "outdoor",
+     "Outdoor",
+     "beach",
+     "pricey",
+     "hiking",
+     "comfy",
+     "vacations",
+     "Parks",
+     "kinda",
+     "vets"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "mentioned",
+     "Mention",
+     "mentioning",
+     "mentions",
+     "famous",
+     "acclaimed",
+     "notable",
+     "underrated",
+     "names",
+     "popular",
+     "referenced"
+    ],
+    "neg": [
+     "remember",
+     "guitar",
+     "recall",
+     "remembers",
+     "remembering",
+     "violin",
+     "recalls",
+     "instruments",
+     "Yamaha",
+     "Recall",
+     "recalling",
+     "pedals"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "Spark",
+     "scala",
+     "sparks",
+     "Probably",
+     "Maybe",
+     "Perhaps",
+     "Seems",
+     "yeah",
+     "companion",
+     "Apparently",
+     "Another"
+    ],
+    "neg": [
+     "museums",
+     "tourist",
+     "beaches",
+     "Disneyland",
+     "Beach",
+     "resorts",
+     "Basketball",
+     "Memorial",
+     "sports",
+     "Surf",
+     "museum",
+     "championship"
+    ]
+   }
+  },
+  "overlap_with_init": 0.9307092428207397,
+  "overlap_with_J": 0.08107563853263855
+ },
+ "clock_words": {
+  "const_learned_l0": [
+   {
+    "segment": 0,
+    "angle": 165.37823486328125,
+    "words": [
+     "pretty",
+     "probably",
+     "kinds",
+     "remember",
+     "think",
+     "famous",
+     "things",
+     "thing"
+    ]
+   },
+   {
+    "segment": 1,
+    "angle": -154.39633178710938,
+    "words": [
+     "maybe",
+     "probably",
+     "pretty",
+     "things",
+     "really",
+     "thing",
+     "Maybe",
+     "something"
+    ]
+   },
+   {
+    "segment": 2,
+    "angle": -113.87051391601562,
+    "words": [
+     "maybe",
+     "Maybe",
+     "might",
+     "perhaps",
+     "probably",
+     "something",
+     "sometimes",
+     "really"
+    ]
+   },
+   {
+    "segment": 3,
+    "angle": -72.28158569335938,
+    "words": [
+     "maybe",
+     "perhaps",
+     "might",
+     "possibly",
+     "also",
+     "sometimes",
+     "Maybe",
+     "more"
+    ]
+   },
+   {
+    "segment": 4,
+    "angle": -36.871578216552734,
+    "words": [
+     "additional",
+     "additionally",
+     "lacks",
+     "alternative",
+     "insufficient",
+     "preference",
+     "prefer",
+     "lacked"
+    ]
+   },
+   {
+    "segment": 5,
+    "angle": 0.891145646572113,
+    "words": [
+     "Ensure",
+     "additional",
+     "additionally",
+     "ensured",
+     "request",
+     "requesting",
+     "Translation",
+     "requested"
+    ]
+   },
+   {
+    "segment": 6,
+    "angle": 15.529281616210938,
+    "words": [
+     "Ensure",
+     "Translation",
+     "Ultimately",
+     "ensured",
+     "concludes",
+     "requesting",
+     "requested",
+     "request"
+    ]
+   },
+   {
+    "segment": 7,
+    "angle": 43.692657470703125,
+    "words": [
+     "Ensure",
+     "Summary",
+     "Sentence",
+     "Translation",
+     "Statement",
+     "Continuing",
+     "Following",
+     "Ultimately"
+    ]
+   }
+  ],
+  "fcst_learned_l0.1_c": [
+   {
+    "segment": 0,
+    "angle": 158.60128784179688,
+    "words": [
+     "countries",
+     "various",
+     "principally",
+     "European",
+     "Scala",
+     "continents",
+     "Wikipedia",
+     "contiguous"
+    ]
+   },
+   {
+    "segment": 1,
+    "angle": -152.87551879882812,
+    "words": [
+     "maybe",
+     "kinds",
+     "stuff",
+     "pretty",
+     "kinda",
+     "lots",
+     "things",
+     "somebody"
+    ]
+   },
+   {
+    "segment": 2,
+    "angle": -118.7716293334961,
+    "words": [
+     "maybe",
+     "kinda",
+     "stuff",
+     "really",
+     "Maybe",
+     "kind",
+     "thing",
+     "something"
+    ]
+   },
+   {
+    "segment": 3,
+    "angle": -67.57315063476562,
+    "words": [
+     "maybe",
+     "kinda",
+     "might",
+     "Maybe",
+     "too",
+     "really",
+     "somehow",
+     "seemed"
+    ]
+   },
+   {
+    "segment": 4,
+    "angle": -11.935033798217773,
+    "words": [
+     "unsure",
+     "unless",
+     "savvy",
+     "ensured",
+     "regardless",
+     "reluctantly",
+     "Ensure",
+     "unnecessary"
+    ]
+   },
+   {
+    "segment": 5,
+    "angle": 10.845378875732422,
+    "words": [
+     "Ensure",
+     "ensured",
+     "requested",
+     "Ultimately",
+     "refrain",
+     "respectfully",
+     "discretion",
+     "align"
+    ]
+   },
+   {
+    "segment": 6,
+    "angle": 15.516297340393066,
+    "words": [
+     "Ensure",
+     "ensured",
+     "requested",
+     "refrain",
+     "Ultimately",
+     "respectfully",
+     "omitted",
+     "align"
+    ]
+   },
+   {
+    "segment": 7,
+    "angle": 20.70731544494629,
+    "words": [
+     "Ensure",
+     "ensured",
+     "requested",
+     "refrain",
+     "omitted",
+     "Ultimately",
+     "Sentence",
+     "respectfully"
+    ]
+   }
+  ],
+  "fcst_learned_l0": [
+   {
+    "segment": 0,
+    "angle": 168.6925811767578,
+    "words": [
+     "pretty",
+     "probably",
+     "Probably",
+     "famous",
+     "kinds",
+     "basically",
+     "big",
+     "everybody"
+    ]
+   },
+   {
+    "segment": 1,
+    "angle": -152.15049743652344,
+    "words": [
+     "maybe",
+     "probably",
+     "pretty",
+     "really",
+     "things",
+     "lots",
+     "Maybe",
+     "kinds"
+    ]
+   },
+   {
+    "segment": 2,
+    "angle": -100.458251953125,
+    "words": [
+     "maybe",
+     "might",
+     "perhaps",
+     "Maybe",
+     "probably",
+     "sometimes",
+     "something",
+     "really"
+    ]
+   },
+   {
+    "segment": 3,
+    "angle": -68.23623657226562,
+    "words": [
+     "maybe",
+     "might",
+     "perhaps",
+     "sometimes",
+     "more",
+     "possibly",
+     "cheaper",
+     "also"
+    ]
+   },
+   {
+    "segment": 4,
+    "angle": -39.89862823486328,
+    "words": [
+     "additional",
+     "additionally",
+     "alternative",
+     "lacks",
+     "lack",
+     "lacked",
+     "other",
+     "insufficient"
+    ]
+   },
+   {
+    "segment": 5,
+    "angle": 3.2545366287231445,
+    "words": [
+     "additional",
+     "additionally",
+     "Ensure",
+     "Translation",
+     "alternative",
+     "Additional",
+     "further",
+     "translation"
+    ]
+   },
+   {
+    "segment": 6,
+    "angle": 20.012348175048828,
+    "words": [
+     "Ensure",
+     "Translation",
+     "Additional",
+     "Ultimately",
+     "additional",
+     "additionally",
+     "Further",
+     "Summary"
+    ]
+   },
+   {
+    "segment": 7,
+    "angle": 47.66623306274414,
+    "words": [
+     "Summary",
+     "Ensure",
+     "Translation",
+     "Sentence",
+     "Your",
+     "Following",
+     "Selected",
+     "Borrow"
+    ]
+   }
+  ],
+  "fcst_learned_l1_c": [
+   {
+    "segment": 0,
+    "angle": 160.34725952148438,
+    "words": [
+     "famous",
+     "habitats",
+     "kinds",
+     "excursion",
+     "continents",
+     "kingdoms",
+     "mammals",
+     "animals"
+    ]
+   },
+   {
+    "segment": 1,
+    "angle": -172.2331085205078,
+    "words": [
+     "kinds",
+     "maybe",
+     "stuff",
+     "vegetation",
+     "animals",
+     "creepy",
+     "creatures",
+     "trees"
+    ]
+   },
+   {
+    "segment": 2,
+    "angle": -99.13468170166016,
+    "words": [
+     "something",
+     "maybe",
+     "somehow",
+     "Maybe",
+     "kinda",
+     "stuff",
+     "weird",
+     "thing"
+    ]
+   },
+   {
+    "segment": 3,
+    "angle": -107.84136962890625,
+    "words": [
+     "maybe",
+     "something",
+     "Maybe",
+     "stuff",
+     "somehow",
+     "kinda",
+     "thing",
+     "weird"
+    ]
+   },
+   {
+    "segment": 4,
+    "angle": 106.58583068847656,
+    "words": [
+     "renowned",
+     "universally",
+     "Famous",
+     "commonly",
+     "recognized",
+     "acknowledged",
+     "recognizable",
+     "ratified"
+    ]
+   },
+   {
+    "segment": 5,
+    "angle": -4.066423416137695,
+    "words": [
+     "Ultimately",
+     "https",
+     "Algorithm",
+     "Dataset",
+     "Analytics",
+     "revised",
+     "Insights",
+     "Following"
+    ]
+   },
+   {
+    "segment": 6,
+    "angle": -18.205995559692383,
+    "words": [
+     "Ultimately",
+     "sql",
+     "https",
+     "Analytics",
+     "analytics",
+     "Algorithm",
+     "Dataset",
+     "further"
+    ]
+   },
+   {
+    "segment": 7,
+    "angle": 41.88017654418945,
+    "words": [
+     "Ultimately",
+     "concludes",
+     "Ideally",
+     "authored",
+     "ensured",
+     "concluded",
+     "roadmap",
+     "Ensure"
+    ]
+   }
+  ],
+  "state_learned_l0": [
+   {
+    "segment": 0,
+    "angle": 158.83395385742188,
+    "words": [
+     "pretty",
+     "kinds",
+     "probably",
+     "remember",
+     "basically",
+     "think",
+     "thing",
+     "big"
+    ]
+   },
+   {
+    "segment": 1,
+    "angle": -157.71131896972656,
+    "words": [
+     "maybe",
+     "probably",
+     "pretty",
+     "really",
+     "kinds",
+     "things",
+     "kind",
+     "thing"
+    ]
+   },
+   {
+    "segment": 2,
+    "angle": -116.558837890625,
+    "words": [
+     "maybe",
+     "might",
+     "probably",
+     "Maybe",
+     "perhaps",
+     "really",
+     "sometimes",
+     "something"
+    ]
+   },
+   {
+    "segment": 3,
+    "angle": -83.3993148803711,
+    "words": [
+     "maybe",
+     "might",
+     "perhaps",
+     "also",
+     "sometimes",
+     "possibly",
+     "more",
+     "Maybe"
+    ]
+   },
+   {
+    "segment": 4,
+    "angle": -54.0439567565918,
+    "words": [
+     "additionally",
+     "additional",
+     "lacks",
+     "etc",
+     "alternative",
+     "further",
+     "lacked",
+     "also"
+    ]
+   },
+   {
+    "segment": 5,
+    "angle": -0.9932555556297302,
+    "words": [
+     "Ensure",
+     "additional",
+     "additionally",
+     "concludes",
+     "ensured",
+     "Ultimately",
+     "further",
+     "Further"
+    ]
+   },
+   {
+    "segment": 6,
+    "angle": 15.962067604064941,
+    "words": [
+     "Ensure",
+     "concludes",
+     "Ultimately",
+     "Translation",
+     "Further",
+     "Conclusion",
+     "ensured",
+     "Additional"
+    ]
+   },
+   {
+    "segment": 7,
+    "angle": 41.530555725097656,
+    "words": [
+     "Following",
+     "Ultimately",
+     "Summary",
+     "Translation",
+     "Ensure",
+     "Remaining",
+     "concludes",
+     "Your"
+    ]
+   }
+  ],
+  "state_learned_l1_c": [
+   {
+    "segment": 0,
+    "angle": 175.8467559814453,
+    "words": [
+     "probably",
+     "famous",
+     "categories",
+     "basics",
+     "commonly",
+     "breeds",
+     "contenders",
+     "Probably"
+    ]
+   },
+   {
+    "segment": 1,
+    "angle": -179.04689025878906,
+    "words": [
+     "famous",
+     "probably",
+     "categories",
+     "commonly",
+     "basics",
+     "contenders",
+     "Famous",
+     "hitters"
+    ]
+   },
+   {
+    "segment": 2,
+    "angle": 79.25909423828125,
+    "words": [
+     "maybe",
+     "Maybe",
+     "something",
+     "probably",
+     "perhaps",
+     "kinda",
+     "yeah",
+     "really"
+    ]
+   },
+   {
+    "segment": 3,
+    "angle": 66.3061294555664,
+    "words": [
+     "maybe",
+     "something",
+     "Maybe",
+     "perhaps",
+     "kinda",
+     "yeah",
+     "probably",
+     "somehow"
+    ]
+   },
+   {
+    "segment": 4,
+    "angle": 131.82859802246094,
+    "words": [
+     "maybe",
+     "probably",
+     "Maybe",
+     "pretty",
+     "definitely",
+     "Probably",
+     "kinds",
+     "might"
+    ]
+   },
+   {
+    "segment": 5,
+    "angle": -109.03109741210938,
+    "words": [
+     "renowned",
+     "effortlessly",
+     "Famous",
+     "acclaimed",
+     "enthusiastically",
+     "Numerous",
+     "duly",
+     "seamlessly"
+    ]
+   },
+   {
+    "segment": 6,
+    "angle": -60.881385803222656,
+    "words": [
+     "Offering",
+     "Offers",
+     "Ultimately",
+     "seamlessly",
+     "Airbnb",
+     "Enjoy",
+     "Numerous",
+     "Simply"
+    ]
+   },
+   {
+    "segment": 7,
+    "angle": -8.492243766784668,
+    "words": [
+     "Another",
+     "Ultimately",
+     "Further",
+     "further",
+     "reconciliation",
+     "Meanwhile",
+     "leveraging",
+     "Hive"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,440 @@
+{
+ "0.25": {
+  "n": 96,
+  "spectral_radius_median": 0.26055948245108473,
+  "spectral_radius_q90": 0.3064421430584857,
+  "frac_radius_gt_0_9": 0.0,
+  "frac_radius_gt_1": 0.0,
+  "lead_class": {
+   "positive": 0.8125,
+   "negative": 0.0,
+   "complex": 0.1875
+  },
+  "lead_rotation_deg_median": 0.0,
+  "n_modes_abs_gt_0_5_median": 0.0,
+  "self_reproduction_residual_median": 4.4778280994250963e-07,
+  "radius_median_by_step": {
+   "0.01": 0.2604989816893837,
+   "0.03": 0.26055948245108473,
+   "0.1": 0.2605225757785941
+  },
+  "radius_step_agreement": [
+   0.9999986944294161,
+   0.9999998162921371
+  ],
+  "lead_words": [
+   [
+    "Step",
+    22
+   ],
+   [
+    "our",
+    16
+   ],
+   [
+    "youre",
+    15
+   ],
+   [
+    "Outside",
+    10
+   ],
+   [
+    "Starting",
+    10
+   ],
+   [
+    "didnt",
+    9
+   ],
+   [
+    "outside",
+    8
+   ],
+   [
+    "Sadly",
+    8
+   ],
+   [
+    "cds",
+    8
+   ],
+   [
+    "italian",
+    8
+   ],
+   [
+    "fiance",
+    7
+   ],
+   [
+    "azure",
+    6
+   ],
+   [
+    "isnt",
+    6
+   ],
+   [
+    "starting",
+    6
+   ],
+   [
+    "carefully",
+    6
+   ],
+   [
+    "conflicting",
+    5
+   ],
+   [
+    "andre",
+    5
+   ],
+   [
+    "bst",
+    5
+   ],
+   [
+    "atheists",
+    4
+   ],
+   [
+    "collectively",
+    4
+   ],
+   [
+    "away",
+    4
+   ],
+   [
+    "saturn",
+    4
+   ],
+   [
+    "inside",
+    3
+   ],
+   [
+    "purposely",
+    3
+   ],
+   [
+    "cuz",
+    3
+   ],
+   [
+    "viagra",
+    3
+   ],
+   [
+    "baja",
+    3
+   ],
+   [
+    "lets",
+    3
+   ],
+   [
+    "analyzing",
+    3
+   ],
+   [
+    "Applicant",
+    2
+   ]
+  ]
+ },
+ "1.0": {
+  "n": 96,
+  "spectral_radius_median": 0.5358275080060959,
+  "spectral_radius_q90": 0.679923092786101,
+  "frac_radius_gt_0_9": 0.0,
+  "frac_radius_gt_1": 0.0,
+  "lead_class": {
+   "positive": 0.75,
+   "negative": 0.0,
+   "complex": 0.25
+  },
+  "lead_rotation_deg_median": 0.0,
+  "n_modes_abs_gt_0_5_median": 1.0,
+  "self_reproduction_residual_median": 3.874174012707954e-07,
+  "radius_median_by_step": {
+   "0.01": 0.5357748164505061,
+   "0.03": 0.5358275080060959,
+   "0.1": 0.5357731737601075
+  },
+  "radius_step_agreement": [
+   0.9999996334061525,
+   0.9999999431807527
+  ],
+  "lead_words": [
+   [
+    "okay",
+    14
+   ],
+   [
+    "Alright",
+    14
+   ],
+   [
+    "outside",
+    12
+   ],
+   [
+    "Step",
+    10
+   ],
+   [
+    "youre",
+    10
+   ],
+   [
+    "italian",
+    9
+   ],
+   [
+    "conflicting",
+    7
+   ],
+   [
+    "badass",
+    7
+   ],
+   [
+    "starting",
+    7
+   ],
+   [
+    "Starting",
+    7
+   ],
+   [
+    "inside",
+    6
+   ],
+   [
+    "ambiguity",
+    5
+   ],
+   [
+    "Sms",
+    5
+   ],
+   [
+    "answered",
+    5
+   ],
+   [
+    "basket",
+    5
+   ],
+   [
+    "cuz",
+    4
+   ],
+   [
+    "doesnt",
+    4
+   ],
+   [
+    "yeah",
+    4
+   ],
+   [
+    "throughout",
+    4
+   ],
+   [
+    "asked",
+    3
+   ],
+   [
+    "contradiction",
+    3
+   ],
+   [
+    "question",
+    3
+   ],
+   [
+    "Both",
+    3
+   ],
+   [
+    "contents",
+    3
+   ],
+   [
+    "Away",
+    3
+   ],
+   [
+    "nowadays",
+    3
+   ],
+   [
+    "Outside",
+    3
+   ],
+   [
+    "Wrong",
+    3
+   ],
+   [
+    "Cbd",
+    3
+   ],
+   [
+    "isnt",
+    3
+   ]
+  ]
+ },
+ "4.0": {
+  "n": 96,
+  "spectral_radius_median": 0.638593205557657,
+  "spectral_radius_q90": 0.73309347496993,
+  "frac_radius_gt_0_9": 0.0,
+  "frac_radius_gt_1": 0.0,
+  "lead_class": {
+   "positive": 0.75,
+   "negative": 0.0,
+   "complex": 0.25
+  },
+  "lead_rotation_deg_median": 0.0,
+  "n_modes_abs_gt_0_5_median": 5.0,
+  "self_reproduction_residual_median": 3.7668319237127434e-06,
+  "radius_median_by_step": {
+   "0.01": 0.6386257508384139,
+   "0.03": 0.638593205557657,
+   "0.1": 0.6385693616873318
+  },
+  "radius_step_agreement": [
+   0.9999997789295004,
+   0.9999990263398605
+  ],
+  "lead_words": [
+   [
+    "hello",
+    27
+   ],
+   [
+    "cuz",
+    24
+   ],
+   [
+    "okay",
+    17
+   ],
+   [
+    "And",
+    16
+   ],
+   [
+    "Yeah",
+    15
+   ],
+   [
+    "alright",
+    10
+   ],
+   [
+    "want",
+    9
+   ],
+   [
+    "Usa",
+    9
+   ],
+   [
+    "yeah",
+    7
+   ],
+   [
+    "Xiaomi",
+    7
+   ],
+   [
+    "analyze",
+    6
+   ],
+   [
+    "analyzing",
+    6
+   ],
+   [
+    "Hey",
+    6
+   ],
+   [
+    "everybody",
+    5
+   ],
+   [
+    "badass",
+    5
+   ],
+   [
+    "gonna",
+    5
+   ],
+   [
+    "Jesus",
+    4
+   ],
+   [
+    "wait",
+    4
+   ],
+   [
+    "Alright",
+    4
+   ],
+   [
+    "Fundamental",
+    4
+   ],
+   [
+    "Hoe",
+    4
+   ],
+   [
+    "guys",
+    4
+   ],
+   [
+    "because",
+    3
+   ],
+   [
+    "Hmm",
+    3
+   ],
+   [
+    "firstly",
+    3
+   ],
+   [
+    "occurrence",
+    3
+   ],
+   [
+    "wherein",
+    3
+   ],
+   [
+    "uploaded",
+    3
+   ],
+   [
+    "check",
+    3
+   ],
+   [
+    "definitely",
+    3
+   ]
+  ]
+ }
+}

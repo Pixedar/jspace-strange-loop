@@ -1,0 +1,615 @@
+{
+ "tag": "const_J_l0",
+ "chan": "const",
+ "reader": "J",
+ "lam": 0.0,
+ "ploss": "cos",
+ "nll_own": [
+  0.8592250943183899,
+  1.6068888902664185,
+  1.6858818531036377,
+  1.7374588251113892,
+  1.767990231513977,
+  1.7539892196655273,
+  1.7739250659942627,
+  1.7884020805358887
+ ],
+ "nll_foreign": [
+  0.8592250943183899,
+  1.8814586400985718,
+  1.9712084531784058,
+  2.0171597003936768,
+  2.046471118927002,
+  2.030622959136963,
+  2.0521724224090576,
+  2.069091558456421
+ ],
+ "nll_stale": [
+  0.8592250943183899,
+  1.6068888902664185,
+  1.8178551197052002,
+  1.8613429069519043,
+  1.8962918519973755,
+  1.8803616762161255,
+  1.9076876640319824,
+  1.9260226488113403
+ ],
+ "bnd_own": 3.2810068130493164,
+ "bnd_foreign": 5.031888961791992,
+ "necessity_foreign": [
+  0.2790928781032562,
+  0.002783930627629161
+ ],
+ "necessity_stale": [
+  0.13031944632530212,
+  0.00178323476575315
+ ],
+ "S_cos": [
+  0.4751914143562317,
+  0.4906807839870453,
+  0.48418089747428894,
+  0.4712117910385132,
+  0.4659247100353241,
+  0.4594026505947113,
+  0.4652513861656189
+ ],
+ "R2": {
+  "S": -0.07237601280212402,
+  "persistence": -0.2770571708679199,
+  "segment_mean": -0.0013899803161621094
+ },
+ "collapse": 0.12218622118234634,
+ "retrieval": {
+  "S": 0.2107142869915281,
+  "persistence": 0.13535714149475098,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.9910057187080383,
+  0.9997552633285522,
+  0.9999807476997375,
+  0.9999867081642151,
+  0.9999865889549255
+ ],
+ "identity_donor": [
+  0.048784106969833374,
+  0.01841117814183235,
+  0.014209780842065811,
+  0.03012372925877571,
+  0.023182198405265808
+ ],
+ "nll_corrupt": [
+  0.8592250943183899,
+  1.6068888902664185,
+  1.6858818531036377,
+  2.0171597003936768,
+  1.7721830606460571,
+  1.7539613246917725,
+  1.774019479751587,
+  1.7882214784622192
+ ],
+ "track_fresh": [
+  0.45576125383377075,
+  0.46523675322532654,
+  0.45934775471687317,
+  0.4653194546699524
+ ],
+ "track_stale": [
+  0.4697754681110382,
+  0.4658946990966797,
+  0.45938214659690857,
+  0.4653075039386749
+ ],
+ "observer_cos": [
+  0.23149186372756958,
+  0.23443229496479034,
+  0.23203372955322266,
+  0.22252130508422852,
+  0.22517728805541992,
+  0.22246703505516052,
+  0.20578515529632568
+ ],
+ "baselines": {
+  "persistence": [
+   0.3686743676662445,
+   0.3871099054813385,
+   0.383348286151886,
+   0.37240761518478394,
+   0.3599596321582794,
+   0.36026260256767273,
+   0.3704172372817993
+  ],
+  "segment_mean": [
+   0.10698623955249786,
+   0.126718670129776,
+   0.11934459954500198,
+   0.12771369516849518,
+   0.12061692029237747,
+   0.1375425010919571,
+   0.14581064879894257
+  ],
+  "linear": [
+   0.4671131281404363,
+   0.4802448163282125,
+   0.4771175343004908,
+   0.463185825733467,
+   0.4530300327015175,
+   0.4474954078116149,
+   0.4535133716567653
+  ]
+ },
+ "pr": 30.106075031159527,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "fairly",
+     "performance",
+     "more",
+     "not",
+     "set",
+     "well",
+     "substantial",
+     "increasing",
+     "good",
+     "great"
+    ],
+    "neg": [
+     "Pornhub",
+     "Hentai",
+     "Pasta",
+     "Kathleen",
+     "Mourinho",
+     "Juventus",
+     "Tennis",
+     "Heater",
+     "Fernando",
+     "Como"
+    ]
+   },
+   "1": {
+    "pos": [
+     "doesnt",
+     "didnt",
+     "apis",
+     "shitty",
+     "crappy",
+     "thats",
+     "hentai",
+     "lcd",
+     "isnt",
+     "snapchat"
+    ],
+    "neg": [
+     "All",
+     "New",
+     "more",
+     "over",
+     "May",
+     "all",
+     "American",
+     "high",
+     "Good",
+     "National"
+    ]
+   },
+   "2": {
+    "pos": [
+     "Implementation",
+     "Verification",
+     "Evaluation",
+     "Analysis",
+     "Recommendations",
+     "Requirements",
+     "Guidelines",
+     "Optimization",
+     "Definitions",
+     "Validation"
+    ],
+    "neg": [
+     "smashed",
+     "wildly",
+     "shoved",
+     "roasted",
+     "battered",
+     "glitter",
+     "drowned",
+     "crushed",
+     "kissed",
+     "stunned"
+    ]
+   },
+   "3": {
+    "pos": [
+     "asked",
+     "considered",
+     "Apparently",
+     "Assuming",
+     "would",
+     "gave",
+     "assuming",
+     "indicated",
+     "Unfortunately",
+     "not"
+    ],
+    "neg": [
+     "breweries",
+     "motorcycles",
+     "supermarkets",
+     "Blackhawks",
+     "airports",
+     "restaurants",
+     "seafood",
+     "pharmacies",
+     "cocktails",
+     "pharmacy"
+    ]
+   },
+   "4": {
+    "pos": [
+     "acclaimed",
+     "renowned",
+     "proclaimed",
+     "politically",
+     "prestigious",
+     "governmental",
+     "sanctioned",
+     "political",
+     "established",
+     "nationalist"
+    ],
+    "neg": [
+     "veggies",
+     "carbs",
+     "yummy",
+     "Bathroom",
+     "snacks",
+     "Tubes",
+     "Ingredient",
+     "Recipe",
+     "Drinks",
+     "Recipes"
+    ]
+   },
+   "5": {
+    "pos": [
+     "heartbreaking",
+     "shameful",
+     "unsettling",
+     "hateful",
+     "appalling",
+     "horrible",
+     "horrifying",
+     "blatant",
+     "outrageous",
+     "ridiculously"
+    ],
+    "neg": [
+     "units",
+     "stations",
+     "areas",
+     "sections",
+     "components",
+     "structures",
+     "regions",
+     "modules",
+     "departments",
+     "systems"
+    ]
+   },
+   "6": {
+    "pos": [
+     "kappa",
+     "peptide",
+     "phenotype",
+     "hentai",
+     "gpu",
+     "morphology",
+     "frau",
+     "unix",
+     "klein",
+     "scala"
+    ],
+    "neg": [
+     "Businesses",
+     "Providing",
+     "Taking",
+     "Managing",
+     "Getting",
+     "Making",
+     "Spending",
+     "Offers",
+     "Investing",
+     "Many"
+    ]
+   },
+   "7": {
+    "pos": [
+     "atrocities",
+     "horrors",
+     "tragedies",
+     "crimes",
+     "disasters",
+     "evils",
+     "murders",
+     "criminals",
+     "murderers",
+     "terrorists"
+    ],
+    "neg": [
+     "showroom",
+     "boutique",
+     "playlist",
+     "booklet",
+     "retailer",
+     "spreadsheet",
+     "logo",
+     "webinar",
+     "leaderboard",
+     "brochure"
+    ]
+   }
+  },
+  "write_mean": [
+   "Karachi",
+   "Flags",
+   "Osama",
+   "Kuala",
+   "Jazeera",
+   "Unsafe",
+   "Shower",
+   "Emirates",
+   "Somali",
+   "Terrorism"
+  ],
+  "write_pc0": {
+   "pos": [
+    "lamps",
+    "illuminate",
+    "Rahman",
+    "Bruno",
+    "flew",
+    "ballet",
+    "dances",
+    "mansion",
+    "illumination",
+    "Mohamed"
+   ],
+   "neg": [
+    "Maybe",
+    "Suppose",
+    "Essentially",
+    "Doesn",
+    "Considering",
+    "Anyway",
+    "Basically",
+    "Actually",
+    "Assuming",
+    "Regardless"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "inducing",
+    "surgery",
+    "arousal",
+    "deprivation",
+    "injuring",
+    "therapies",
+    "cortisol",
+    "arthritis",
+    "against",
+    "disabling"
+   ],
+   "neg": [
+    "Keeper",
+    "Largest",
+    "Dedicated",
+    "Tokens",
+    "Error",
+    "Beginner",
+    "Guess",
+    "Other",
+    "Selected",
+    "Treasure"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "discipline",
+    "Discipline",
+    "Physiology",
+    "practitioner",
+    "Workout",
+    "Coaching",
+    "muscular",
+    "recoil",
+    "Skills",
+    "physiological"
+   ],
+   "neg": [
+    "tourist",
+    "tourists",
+    "tourism",
+    "travelers",
+    "airports",
+    "Tourism",
+    "airport",
+    "travellers",
+    "Airport",
+    "hotels"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Literary",
+    "Biography",
+    "memoir",
+    "anthology",
+    "biography",
+    "encyclopedia",
+    "Shakespeare",
+    "Raphael",
+    "nominees",
+    "novels"
+   ],
+   "neg": [
+    "towing",
+    "horsepower",
+    "aircraft",
+    "motors",
+    "equipment",
+    "turbine",
+    "gear",
+    "rotor",
+    "cockpit",
+    "hauling"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.23833578824996948,
+    0.11880126595497131,
+    0.0818084105849266,
+    0.05179158225655556,
+    0.03681189566850662,
+    0.03130170330405235,
+    0.009562348946928978
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.013771100901067257,
+    0.005405377130955458,
+    -0.0012875045649707317,
+    0.0003346209414303303,
+    0.0010880036279559135,
+    4.1690655052661896e-05,
+    -0.0031093519646674395
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.05973643809556961,
+    0.02552584558725357,
+    0.01239332091063261,
+    0.04612623527646065,
+    0.0531555637717247,
+    0.059353701770305634,
+    0.05179277062416077,
+    0.07477651536464691
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.23833578824996948,
+    0.11880126595497131,
+    -0.010694599710404873,
+    -0.008131002075970173,
+    -0.003894767491146922,
+    -0.014530652202665806,
+    -0.015515579842031002
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.013771100901067257,
+    0.005405377130955458,
+    0.07685565948486328,
+    0.04839007183909416,
+    0.02215666137635708,
+    0.024226853623986244,
+    0.024137305095791817
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.0330338329076767,
+    0.038764066994190216,
+    0.08526863902807236,
+    0.041932664811611176,
+    0.048189036548137665
+   ],
+   "z_vs_donor_run": [
+    0.05973643809556961,
+    0.02552584558725357,
+    0.01239332091063261,
+    0.2119913101196289,
+    0.1338164508342743,
+    0.0818360298871994,
+    0.06190187484025955,
+    0.056078292429447174
+   ]
+  },
+  "S_cos_free": [
+   0.3705196976661682,
+   0.3863057494163513,
+   0.3983275294303894,
+   0.42220538854599,
+   0.4353669285774231,
+   0.41454973816871643,
+   0.4492102563381195
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     " in a way that's clear. Let me think.\n\nFirst, I need to list out the names of the people and the countries they're from. Let me jot them down:\n\n- A: India\n- B: USA\n- C: China\n- D: France\n- E: Germany\n- F:",
+     " languages, music, and art. The user should be able to input a query in their native language, and the system should respond in that language. Also, the system should support multiple languages, like English, Spanish, French, etc. \n\nI need to make sure the response is in the same language as the query",
+     ", which is a valid email format.\n\nBut wait, the user might not have specified the exact details, so I should mention that the format can vary. Also, the user might be looking for a specific type, like a personal email versus a business one. Since they didn't specify, it's best to provide a",
+     " me check if I'm on the right track. Maybe I can break it down into smaller steps.\n\nFirst, the user is asking about the maximum number of elements in a set S of positive integers where the sum of any two distinct elements is not divisible by 5. So, the problem is similar to avoiding pairs that"
+    ],
+    "corrupt": [
+     " in a way that's clear. Let me think.\n\nFirst, I need to list out the names of the people and the countries they're from. Let me jot them down:\n\n- A: India\n- B: USA\n- C: China\n- D: France\n- E: Germany\n- F:",
+     ", like oil, but not as much. Maybe. Maybe it's a different type. But the key is that it's a non-polar substance, which would make it not mix well with water. So the user might be asking why it doesn't mix with water, or maybe they're trying to use it in",
+     " of food and water, which are necessary for survival. So, it's important to mention that as well. \n\nWait, but the user asked for the purpose of the food chain. The main purpose is to transfer energy from producers to consumers. The other points about nutrients and survival are related but maybe secondary. I should",
+     "First, I need to check if the user is asking for something specific. They mentioned a \"notebook\" and \"specific details.\" Maybe they want a notebook with certain features or are looking for information on how to use a notebook effectively. \n\nWait, the user might be referring to a physical notebook, like a journal"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I think I should mention that the Great Basin is a desert, so maybe that's why it's not as well-known. But wait, I'm not sure if the Great Basin is considered a desert. Let me think. The Great Basin is a region in the western United States, covering parts of Nevada, Utah,",
+     " in the Pacific Ocean. So, the user might be referring to the Bay of Bengal, which is a part of the Indian Ocean. Alternatively, the user could be mistaken. I should clarify that the Bay of Bengal is part of the Indian Ocean and not the Pacific. However, the user might have meant the Gulf of",
+     " Mumbai, India. First, there's the city's iconic Gateway of India, which is a popular tourist spot. Then there's the Taj Mahal Palace, a historic hotel that has hosted many notable guests. The city is also home to the Chhatrapati Shivaji Maharaj Terminus, a beautiful railway station",
+     ", but also offer some guidance on how to handle the situation. Maybe start by explaining the importance of the visit and how it can benefit the client. Then, ask if they have any specific questions or concerns. If they're hesitant, reassure them about the privacy and confidentiality of the information shared. Maybe mention that the visit"
+    ],
+    "corrupt": [
+     " I think I should mention that the Great Basin is a desert, so maybe that's why it's not as well-known. But wait, I'm not sure if the Great Basin is considered a desert. Let me think. The Great Basin is a region in the western United States, covering parts of Nevada, Utah,",
+     " languages. I'm not sure if they're considered distinct enough to be separate. \n\nI should also mention the indigenous languages. There are many, but I don't have specific names. Maybe I can say something like \"including numerous indigenous languages.\"\n\nWait, the user might be looking for a comprehensive list. Let me check",
+     " the current list. Wait, the user might be referring to a list of countries. Let me confirm. The user wrote \"list of countries in the world.\" So, the answer should be a list of all countries. But the user might be asking for a list of countries that are currently in the world, which is",
+     " wondering about the location of the user. Maybe they're in a different time zone, or they're just curious about the area. I should make sure the response is friendly and open-ended.\n\nI should also check if there's any recent news or updates about the location that might be relevant. Maybe there's a local event"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " hydraulic system, which uses a hydraulic motor. The hydraulic motor is a mechanical device that converts hydraulic energy into mechanical energy. The hydraulic motor can be a single motor or multiple motors. The hydraulic system is usually a closed loop system, which means that the hydraulic fluid is recirculated through the system. The hydraulic system can",
+     " general-purpose tool that can be used for various tasks. But I should also mention that while it's versatile, it might not be the best for very specific tasks that require specialized tools. For example, using a hammer to open a can is possible but not ideal.\n\nWait, maybe I should structure it with examples. Like",
+     " and the way they use materials. For example, some people might use plastic bottles for storage, which is reusable and eco-friendly. Others might use metal containers, which are durable. But I should also consider the user's perspective. Maybe they're looking for something that's easy to carry, so a lightweight container would be",
+     " storage, and access. That's a big one. So, the user might need to store a lot of data, like photos, videos, or other files. They might not have a lot of space on their phone or laptop, so they need a way to store these files externally. \n\nAnother point is the ability"
+    ],
+    "corrupt": [
+     " hydraulic system, which uses a hydraulic motor. The hydraulic motor is a mechanical device that converts hydraulic energy into mechanical energy. The hydraulic motor can be a single motor or multiple motors. The hydraulic system is usually a closed loop system, which means that the hydraulic fluid is recirculated through the system. The hydraulic system can",
+     " part of the Atlantic Ocean. \n\nWait, but the question is about the largest inland water body. So I need to confirm which of these is considered an inland water body. The Great Salt Lake is in Utah, which is an inland body of water. The Caspian Sea is a saltwater lake, but it",
+     " has a lot of islands, so the main island is called \"Bali\" and the others are smaller. The main island is known for its beautiful beaches and temples. So Bali is the main island, and the rest are smaller. \n\nI should check if there are any other main islands. For example, sometimes people",
+     " San Francisco. Let me check the current time. It's 10:00 PM. I need to make sure the time is correct. I should also confirm the weather. Let me see, the weather in San Francisco is usually mild, but it might be rainy. I should check the forecast. Also,"
+    ]
+   }
+  ]
+ }
+}

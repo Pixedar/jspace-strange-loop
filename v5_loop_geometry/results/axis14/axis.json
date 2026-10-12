@@ -1,0 +1,455 @@
+{
+ "persona": {
+  "pc1_var_share": 0.21568362414836884,
+  "cos_pc1_vs_default_minus_mean": 0.2854609489440918,
+  "default_proj_in_role_sd": 0.6184070706367493,
+  "roles_low": [
+   "ancient god",
+   "wise sage",
+   "ancient philosopher",
+   "oracle",
+   "wizard",
+   "spiritual guru"
+  ],
+  "roles_high": [
+   "moody teenager",
+   "angry customer",
+   "stand-up comedian",
+   "surfer dude",
+   "hard-boiled detective",
+   "grumpy chef"
+  ]
+ },
+ "J@0.25": {
+  "disp_norm_median": 38.98158264160156,
+  "disp_cos_median": 0.3750350773334503,
+  "disp_share_on_mean": 0.43870362639427185,
+  "cos_meandisp_assistant_axis": -0.004532218910753727,
+  "axis_proj_t0": 0.6628804802894592,
+  "axis_proj_t64": 0.662066638469696,
+  "axis_shift": -0.0008138430421240628,
+  "axis_shift_frac_negative": 0.59375,
+  "axis_curve": [
+   5.948171019554138e-05,
+   -0.0005662720650434494,
+   -0.0007328248466365039,
+   -0.0005852840840816498,
+   -0.0005576486582867801,
+   -0.0006408163462765515,
+   -0.0008138430421240628
+  ],
+  "meandisp_jwords": [
+   [
+    "let",
+    4.079
+   ],
+   [
+    "tracing",
+    2.121
+   ],
+   [
+    "slowly",
+    2.003
+   ],
+   [
+    "Lemon",
+    1.827
+   ],
+   [
+    "Bathroom",
+    1.777
+   ],
+   [
+    "given",
+    1.743
+   ],
+   [
+    "Based",
+    1.729
+   ],
+   [
+    "who",
+    1.728
+   ],
+   [
+    "okay",
+    1.557
+   ],
+   [
+    "Looks",
+    1.543
+   ],
+   [
+    "rampage",
+    1.542
+   ],
+   [
+    "Matte",
+    1.526
+   ],
+   [
+    "Jewelry",
+    1.51
+   ],
+   [
+    "workflow",
+    1.49
+   ],
+   [
+    "Hum",
+    1.486
+   ]
+  ],
+  "logit_up": [
+   " let",
+   "\u641c\u72d0\u9996\u9875",
+   "\u8303\u51b0",
+   " Let",
+   " lets",
+   "\u13a2",
+   "\u4fdd\u9a7e\u62a4",
+   "-wsj",
+   ">manual",
+   " utrecht",
+   "\u5e94\u7528\u67e5\u770b",
+   "\u626b\u9ed1\u9664",
+   " sourceMapping",
+   " erotique",
+   " \u043f\u043e\u0441\u043a\u043e\u043b\u044c",
+   " uLocal",
+   " erotici",
+   " nrw",
+   ":variables",
+   " follando"
+  ],
+  "logit_down": [
+   "isher",
+   " intox",
+   "ame",
+   "\u0646\u062f",
+   "\u5047",
+   "\u6070",
+   "\u1ec1",
+   "\ud83c\udffe",
+   "\u4ea6",
+   "\u59a5",
+   "\u5fd7",
+   "\uade0",
+   " sodom",
+   "\u0627\u0644\u0623",
+   "iam",
+   "\u5168\u666f",
+   "\ub840",
+   "\ufffd\ufffd",
+   "\u516c\u76ca\u6027",
+   "\u0430\u0441\u0441"
+  ]
+ },
+ "J@1.0": {
+  "disp_norm_median": 198.2330780029297,
+  "disp_cos_median": 0.4104391932487488,
+  "disp_share_on_mean": 0.5055117607116699,
+  "cos_meandisp_assistant_axis": 0.011938183568418026,
+  "axis_proj_t0": 0.6628804802894592,
+  "axis_proj_t64": 0.6738224625587463,
+  "axis_shift": 0.010942014865577221,
+  "axis_shift_frac_negative": 0.5104166666666666,
+  "axis_curve": [
+   0.020401930436491966,
+   0.020083660259842873,
+   0.019391320645809174,
+   0.014974869787693024,
+   0.011054746806621552,
+   0.010656975209712982,
+   0.010942014865577221
+  ],
+  "meandisp_jwords": [
+   [
+    "let",
+    20.977
+   ],
+   [
+    "rotterdam",
+    17.184
+   ],
+   [
+    "And",
+    11.652
+   ],
+   [
+    "dna",
+    10.832
+   ],
+   [
+    "california",
+    10.008
+   ],
+   [
+    "alice",
+    9.482
+   ],
+   [
+    "theorem",
+    9.056
+   ],
+   [
+    "Looks",
+    8.899
+   ],
+   [
+    "chinese",
+    8.725
+   ],
+   [
+    "okay",
+    8.525
+   ],
+   [
+    "large",
+    8.44
+   ],
+   [
+    "march",
+    8.288
+   ],
+   [
+    "provided",
+    8.082
+   ],
+   [
+    "samsung",
+    7.792
+   ],
+   [
+    "way",
+    7.776
+   ]
+  ],
+  "logit_up": [
+   " let",
+   " american",
+   " british",
+   " japanese",
+   " barcelona",
+   " texas",
+   " we",
+   " lets",
+   " russian",
+   " dna",
+   " asian",
+   " chinese",
+   " germany",
+   " utrecht",
+   "vla",
+   " they",
+   " \u0414\u043c",
+   " look",
+   " april",
+   " canada"
+  ],
+  "logit_down": [
+   " undermin",
+   " m\u00fckem",
+   "\u591a\u79cd\u5f62\u5f0f",
+   " Kum",
+   " intox",
+   " ComVisible",
+   "ReadWrite",
+   " XCT",
+   "ultiply",
+   "\u5168\u666f",
+   "\u0443\u043d\u0438",
+   "rike",
+   "\u5238",
+   "\u5168\u5458",
+   "osen",
+   "\ufffd",
+   "\u5f00\u53d1\u533a",
+   " Murdoch",
+   "ruit",
+   " seiz"
+  ]
+ },
+ "J@4.0": {
+  "disp_norm_median": 565.359619140625,
+  "disp_cos_median": 0.6189849972724915,
+  "disp_share_on_mean": 0.6497329473495483,
+  "cos_meandisp_assistant_axis": 0.07083439826965332,
+  "axis_proj_t0": 0.6628804802894592,
+  "axis_proj_t64": 0.871345043182373,
+  "axis_shift": 0.208464577794075,
+  "axis_shift_frac_negative": 0.0,
+  "axis_curve": [
+   0.20183385908603668,
+   0.22298181056976318,
+   0.2295003980398178,
+   0.2167724370956421,
+   0.2116367369890213,
+   0.20843176543712616,
+   0.208464577794075
+  ],
+  "meandisp_jwords": [
+   [
+    "rotterdam",
+    46.463
+   ],
+   [
+    "incredible",
+    45.985
+   ],
+   [
+    "yeah",
+    39.333
+   ],
+   [
+    "Hmm",
+    38.699
+   ],
+   [
+    "teh",
+    32.72
+   ],
+   [
+    "let",
+    32.178
+   ],
+   [
+    "cute",
+    31.781
+   ],
+   [
+    "problem",
+    27.588
+   ],
+   [
+    "Www",
+    27.207
+   ],
+   [
+    "And",
+    26.688
+   ],
+   [
+    "answer",
+    26.192
+   ],
+   [
+    "who",
+    26.061
+   ],
+   [
+    "wait",
+    25.658
+   ],
+   [
+    "clever",
+    25.471
+   ],
+   [
+    "hello",
+    25.468
+   ]
+  ],
+  "logit_up": [
+   " yeah",
+   " I",
+   " so",
+   " interesting",
+   " what",
+   " let",
+   " look",
+   " hi",
+   " incredible",
+   "\u55ef",
+   " he",
+   " wow",
+   " this",
+   " fascinating",
+   " how",
+   " wait",
+   " oh",
+   " cute",
+   " So",
+   "\u2014\u2014\u2014\u2014"
+  ],
+  "logit_down": [
+   "\u603b\u800c\u8a00",
+   "\u00fcnd",
+   " seiz",
+   "\u672c\u62a5",
+   "uries",
+   "ulus",
+   "\u56ff",
+   "raquo",
+   "inder",
+   " intox",
+   "\u4f0a\u62c9",
+   "\u062e\u0635",
+   "\u8d35\u5bbe",
+   "\u9a7a",
+   "\u88c5\u626e",
+   "\u00e9sz",
+   "\u73a2",
+   "ritz",
+   "\u74e0",
+   "\u00fcst"
+  ]
+ },
+ "rand@0.25": {
+  "disp_norm_median": 25.6458683013916,
+  "disp_cos_median": 0.000931431888602674,
+  "disp_share_on_mean": 0.015010612085461617,
+  "cos_meandisp_assistant_axis": -0.019614141434431076,
+  "axis_proj_t0": 0.6628804802894592,
+  "axis_proj_t64": 0.6625044345855713,
+  "axis_shift": -0.00037600472569465637,
+  "axis_shift_frac_negative": 0.5104166666666666,
+  "axis_curve": [
+   -0.000517298758495599,
+   0.00011827424168586731,
+   0.00015727865684311837,
+   0.0008024722337722778,
+   0.0008757213945500553,
+   0.00015829007315915078,
+   -0.00037600472569465637
+  ]
+ },
+ "rand@1.0": {
+  "disp_norm_median": 99.5980453491211,
+  "disp_cos_median": 0.014438791200518608,
+  "disp_share_on_mean": 0.036432038992643356,
+  "cos_meandisp_assistant_axis": 0.0454176627099514,
+  "axis_proj_t0": 0.6628804802894592,
+  "axis_proj_t64": 0.6684627532958984,
+  "axis_shift": 0.005582280922681093,
+  "axis_shift_frac_negative": 0.3958333333333333,
+  "axis_curve": [
+   0.0028542515356093645,
+   0.0010888086399063468,
+   0.004010110627859831,
+   0.0036529817152768373,
+   0.0006077947909943759,
+   0.001031968160532415,
+   0.005582280922681093
+  ]
+ },
+ "rand@4.0": {
+  "disp_norm_median": 407.3766174316406,
+  "disp_cos_median": 0.1535472273826599,
+  "disp_share_on_mean": 0.17086611688137054,
+  "cos_meandisp_assistant_axis": 0.062321003526449203,
+  "axis_proj_t0": 0.6628804802894592,
+  "axis_proj_t64": 0.7314376831054688,
+  "axis_shift": 0.06855728477239609,
+  "axis_shift_frac_negative": 0.16666666666666666,
+  "axis_curve": [
+   0.058607857674360275,
+   0.06214636564254761,
+   0.0727682039141655,
+   0.061349641531705856,
+   0.07081460952758789,
+   0.06578431278467178,
+   0.06855728477239609
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "per_gain": {
+  "0.25": {
+   "rms_dc_contra": 1.0140995979309082,
+   "mass_frac_ge_0_5": 0.9081818181818182,
+   "diverged": 0,
+   "rms_dlo": 0.7920473217964172
+  },
+  "0.5": {
+   "rms_dc_contra": 1.9928758144378662,
+   "mass_frac_ge_0_5": 0.906969696969697,
+   "diverged": 0,
+   "rms_dlo": 1.5537418127059937
+  },
+  "1.0": {
+   "rms_dc_contra": 4.232605934143066,
+   "mass_frac_ge_0_5": 0.9009090909090909,
+   "diverged": 0,
+   "rms_dlo": 3.0662283897399902
+  },
+  "2.0": {
+   "rms_dc_contra": 9.718424797058105,
+   "mass_frac_ge_0_5": 0.8654545454545455,
+   "diverged": 0,
+   "rms_dlo": 6.065632343292236
+  }
+ },
+ "g_star": 1.0,
+ "noise_floor_c": 0.625,
+ "threshold": 3.125,
+ "rule": "smallest g: RMS change of c_contra >= max(1 nat, 5 x G0 path-noise q95), mass >= 0.5 in >= 90 %, no divergence (Amendment Q-2)"
+}

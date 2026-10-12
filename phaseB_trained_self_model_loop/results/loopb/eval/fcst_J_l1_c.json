@@ -1,0 +1,685 @@
+{
+ "tag": "fcst_J_l1_c",
+ "chan": "fcst",
+ "reader": "J",
+ "lam": 1.0,
+ "ploss": "nce",
+ "nll_own": [
+  0.9271361827850342,
+  1.8478928804397583,
+  1.9644657373428345,
+  2.0112221240997314,
+  2.042207717895508,
+  2.0187697410583496,
+  2.059926986694336,
+  2.0976481437683105
+ ],
+ "nll_foreign": [
+  0.9271361827850342,
+  1.960281252861023,
+  2.0690152645111084,
+  2.1066477298736572,
+  2.1298742294311523,
+  2.1104698181152344,
+  2.1679368019104004,
+  2.1864724159240723
+ ],
+ "nll_stale": [
+  0.9271361827850342,
+  1.8478928804397583,
+  1.9782830476760864,
+  2.044888973236084,
+  2.070324659347534,
+  2.0440855026245117,
+  2.0693864822387695,
+  2.095993757247925
+ ],
+ "bnd_own": 4.099337577819824,
+ "bnd_foreign": 4.5800886154174805,
+ "necessity_foreign": [
+  0.09836605191230774,
+  0.0030470602214336395
+ ],
+ "necessity_stale": [
+  0.01812037080526352,
+  0.001800875412300229
+ ],
+ "swap_pull_state": [
+  0.1453627049922943,
+  0.0024400544352829456
+ ],
+ "swap_pull_forecast": [
+  0.17611347138881683,
+  0.0028055019211024046
+ ],
+ "swap_stay": 0.9366700053215027,
+ "swap_dnll": 0.010442866012454033,
+ "S_cos": [
+  0.8404539227485657,
+  0.8411153554916382,
+  0.846291720867157,
+  0.8498968482017517,
+  0.838303804397583,
+  0.8187069892883301,
+  0.7863923907279968
+ ],
+ "R2": {
+  "S": 0.6088233590126038,
+  "persistence": -0.38636255264282227,
+  "segment_mean": 0.08433789014816284
+ },
+ "collapse": 0.28222358226776123,
+ "retrieval": {
+  "S": 0.9378571340015956,
+  "persistence": 0.047142856887408664,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.4539339542388916,
+  0.5686872005462646,
+  0.6347787976264954,
+  0.723431408405304,
+  0.8156828284263611
+ ],
+ "identity_donor": [
+  0.7540931701660156,
+  0.6093103885650635,
+  0.4714501202106476,
+  0.30794772505760193,
+  0.18820904195308685
+ ],
+ "nll_corrupt": [
+  0.9271361827850342,
+  1.8478928804397583,
+  1.9644657373428345,
+  2.1066477298736572,
+  2.063534736633301,
+  2.030301570892334,
+  2.0686936378479004,
+  2.1000776290893555
+ ],
+ "track_fresh": [
+  0.8297547698020935,
+  0.8314895033836365,
+  0.8111879229545593,
+  0.7798368334770203
+ ],
+ "track_stale": [
+  0.39541351795196533,
+  0.47168898582458496,
+  0.5412552356719971,
+  0.6035788655281067
+ ],
+ "observer_cos": [
+  0.8235641717910767,
+  0.8343374729156494,
+  0.8378974795341492,
+  0.8470966219902039,
+  0.8280133008956909,
+  0.783790111541748,
+  0.7276727557182312
+ ],
+ "baselines": {
+  "persistence": [
+   0.47336289286613464,
+   0.39018380641937256,
+   0.33353012800216675,
+   0.29471585154533386,
+   0.2640349864959717,
+   0.21744941174983978,
+   0.2288782149553299
+  ],
+  "segment_mean": [
+   0.501107931137085,
+   0.44254958629608154,
+   0.4227449893951416,
+   0.4123679995536804,
+   0.36629176139831543,
+   0.26110297441482544,
+   0.20939567685127258
+  ],
+  "linear": [
+   0.8706299741393265,
+   0.8838016455779584,
+   0.8887875555430054,
+   0.8891234174921118,
+   0.8814856782550592,
+   0.860541260230833,
+   0.829685152269305
+  ]
+ },
+ "pr": 16.821352945498678,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "fairly",
+     "performance",
+     "more",
+     "not",
+     "set",
+     "well",
+     "substantial",
+     "increasing",
+     "good",
+     "great"
+    ],
+    "neg": [
+     "Pornhub",
+     "Hentai",
+     "Pasta",
+     "Kathleen",
+     "Mourinho",
+     "Juventus",
+     "Tennis",
+     "Heater",
+     "Fernando",
+     "Como"
+    ]
+   },
+   "1": {
+    "pos": [
+     "doesnt",
+     "didnt",
+     "apis",
+     "shitty",
+     "crappy",
+     "thats",
+     "hentai",
+     "lcd",
+     "isnt",
+     "snapchat"
+    ],
+    "neg": [
+     "All",
+     "New",
+     "more",
+     "over",
+     "May",
+     "all",
+     "American",
+     "high",
+     "Good",
+     "National"
+    ]
+   },
+   "2": {
+    "pos": [
+     "Implementation",
+     "Verification",
+     "Evaluation",
+     "Analysis",
+     "Recommendations",
+     "Requirements",
+     "Guidelines",
+     "Optimization",
+     "Definitions",
+     "Validation"
+    ],
+    "neg": [
+     "smashed",
+     "wildly",
+     "shoved",
+     "roasted",
+     "battered",
+     "glitter",
+     "drowned",
+     "crushed",
+     "kissed",
+     "stunned"
+    ]
+   },
+   "3": {
+    "pos": [
+     "asked",
+     "considered",
+     "Apparently",
+     "Assuming",
+     "would",
+     "gave",
+     "assuming",
+     "indicated",
+     "Unfortunately",
+     "not"
+    ],
+    "neg": [
+     "breweries",
+     "motorcycles",
+     "supermarkets",
+     "Blackhawks",
+     "airports",
+     "restaurants",
+     "seafood",
+     "pharmacies",
+     "cocktails",
+     "pharmacy"
+    ]
+   },
+   "4": {
+    "pos": [
+     "acclaimed",
+     "renowned",
+     "proclaimed",
+     "politically",
+     "prestigious",
+     "governmental",
+     "sanctioned",
+     "political",
+     "established",
+     "nationalist"
+    ],
+    "neg": [
+     "veggies",
+     "carbs",
+     "yummy",
+     "Bathroom",
+     "snacks",
+     "Tubes",
+     "Ingredient",
+     "Recipe",
+     "Drinks",
+     "Recipes"
+    ]
+   },
+   "5": {
+    "pos": [
+     "heartbreaking",
+     "shameful",
+     "unsettling",
+     "hateful",
+     "appalling",
+     "horrible",
+     "horrifying",
+     "blatant",
+     "outrageous",
+     "ridiculously"
+    ],
+    "neg": [
+     "units",
+     "stations",
+     "areas",
+     "sections",
+     "components",
+     "structures",
+     "regions",
+     "modules",
+     "departments",
+     "systems"
+    ]
+   },
+   "6": {
+    "pos": [
+     "kappa",
+     "peptide",
+     "phenotype",
+     "hentai",
+     "gpu",
+     "morphology",
+     "frau",
+     "unix",
+     "klein",
+     "scala"
+    ],
+    "neg": [
+     "Businesses",
+     "Providing",
+     "Taking",
+     "Managing",
+     "Getting",
+     "Making",
+     "Spending",
+     "Offers",
+     "Investing",
+     "Many"
+    ]
+   },
+   "7": {
+    "pos": [
+     "atrocities",
+     "horrors",
+     "tragedies",
+     "crimes",
+     "disasters",
+     "evils",
+     "murders",
+     "criminals",
+     "murderers",
+     "terrorists"
+    ],
+    "neg": [
+     "showroom",
+     "boutique",
+     "playlist",
+     "booklet",
+     "retailer",
+     "spreadsheet",
+     "logo",
+     "webinar",
+     "leaderboard",
+     "brochure"
+    ]
+   }
+  },
+  "write_mean": [
+   "Kaplan",
+   "Pathfinder",
+   "speculated",
+   "Emanuel",
+   "understandably",
+   "rumored",
+   "Zimmerman",
+   "thankfully",
+   "Blackhawks",
+   "Snyder"
+  ],
+  "write_pc0": {
+   "pos": [
+    "cassette",
+    "mindful",
+    "cords",
+    "arm",
+    "plywood",
+    "kneeling",
+    "cord",
+    "quilt",
+    "woodworking",
+    "ropes"
+   ],
+   "neg": [
+    "Feed",
+    "Analyst",
+    "Foods",
+    "Sci",
+    "Sciences",
+    "Fever",
+    "Beverage",
+    "Meteor",
+    "Recipes",
+    "Grill"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "lcd",
+    "japanese",
+    "iphone",
+    "upto",
+    "japan",
+    "rgb",
+    "lotion",
+    "cnn",
+    "doesnt",
+    "acknowledgement"
+   ],
+   "neg": [
+    "Bank",
+    "Treasury",
+    "banker",
+    "bankers",
+    "farming",
+    "Council",
+    "River",
+    "Wilderness",
+    "Guild",
+    "Club"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "Godzilla",
+    "Airbus",
+    "Gundam",
+    "Mirage",
+    "Arabian",
+    "Mayweather",
+    "Sega",
+    "Ferrari",
+    "Jaguars",
+    "Jedi"
+   ],
+   "neg": [
+    "diner",
+    "lawyer",
+    "wine",
+    "lawyers",
+    "brewers",
+    "Lawyer",
+    "wines",
+    "tex",
+    "attorney",
+    "vegetable"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "pistols",
+    "cleaner",
+    "holster",
+    "Police",
+    "punish",
+    "yer",
+    "pistol",
+    "Cleans",
+    "Handle",
+    "Customize"
+   ],
+   "neg": [
+    "Matthews",
+    "scientifically",
+    "researched",
+    "phenomenal",
+    "Darwin",
+    "nutrient",
+    "nutrients",
+    "Rapids",
+    "multiplying",
+    "nutritional"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.05423634499311447,
+    0.04777536168694496,
+    0.02871214970946312,
+    0.00791611522436142,
+    0.020537948235869408,
+    0.0015012465883046389,
+    0.011173894628882408
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    -0.006899113766849041,
+    0.01673617586493492,
+    0.0075407372787594795,
+    -0.00017030653543770313,
+    -0.0018253703601658344,
+    0.003406126517802477,
+    0.006435913033783436
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.3705034852027893,
+    0.2906917333602905,
+    0.26183629035949707,
+    0.29586854577064514,
+    0.3051294982433319,
+    0.290976881980896,
+    0.22476202249526978,
+    0.19412678480148315
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.05423634499311447,
+    0.04777536168694496,
+    0.01019021961838007,
+    0.00866527110338211,
+    0.0004874919541180134,
+    -0.005004869308322668,
+    0.006363207940012217
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    -0.006899113766849041,
+    0.01673617586493492,
+    0.026233404874801636,
+    0.0061863381415605545,
+    -0.0028414661064743996,
+    0.011307388544082642,
+    -0.0012256396003067493
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.2994440793991089,
+    0.3027923107147217,
+    0.25888413190841675,
+    0.20587891340255737,
+    0.1665537804365158
+   ],
+   "z_vs_donor_run": [
+    0.3705034852027893,
+    0.2906917333602905,
+    0.26183629035949707,
+    0.8011925220489502,
+    0.6829092502593994,
+    0.5736443996429443,
+    0.4149574339389801,
+    0.29968953132629395
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6704888939857483,
+    0.05423634499311447,
+    0.04777536168694496,
+    0.018286071717739105,
+    0.006965045351535082,
+    0.009606827050447464,
+    0.016363635659217834,
+    0.0023101214319467545
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    -0.006899113766849041,
+    0.01673617586493492,
+    0.0034011753741651773,
+    0.003050742670893669,
+    0.015067610889673233,
+    0.0035996276419609785,
+    0.007970230653882027
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.7262321710586548,
+    0.6568918228149414,
+    0.5480188131332397,
+    0.42978477478027344,
+    0.31853947043418884
+   ],
+   "z_vs_donor_run": [
+    0.3705034852027893,
+    0.2906917333602905,
+    0.26183629035949707,
+    0.42361724376678467,
+    0.37912482023239136,
+    0.3102604150772095,
+    0.20737385749816895,
+    0.16513760387897491
+   ]
+  },
+  "S_cos_free": [
+   0.7969517707824707,
+   0.8309991955757141,
+   0.8381640911102295,
+   0.8425249457359314,
+   0.8255256414413452,
+   0.7882888913154602,
+   0.7693086862564087
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     ". 2\n\n1. INTRODUCTION\n2. THE CIVIL RIGHTS MOVEMENT\n3. THE CIVIL RIGHTS ACT OF 1964\n4. THE VOTING RIGHTS ACT OF 1965\n5. THE CIVIL RIGHTS ACT OF 1968\n",
+     ". \n\nOkay, so I need to find the value of the expression 1 + 2 + 3 + ... + 100. Wait, that's the sum of the first 100 natural numbers, right? I remember there's a formula for the sum of an arithmetic series. Let me",
+     ", I'm not sure if that's the right term. Maybe I should think about the structure of the sentence. The user is asking for the purpose of the sentence, so I need to identify the main components.\n\nFirst, the sentence is: \"The doctor asked the patient to take the medicine every morning.\" Let's",
+     " is a type of organizational structure where the team members are grouped by their functions like marketing, finance, production, etc. \n\nWait, is that right? Or is it the opposite? Because I remember that in a functional structure, departments are based on functions. So maybe the answer is functional structure. But the user is"
+    ],
+    "corrupt": [
+     ". 2\n\n1. INTRODUCTION\n2. THE CIVIL RIGHTS MOVEMENT\n3. THE CIVIL RIGHTS ACT OF 1964\n4. THE VOTING RIGHTS ACT OF 1965\n5. THE CIVIL RIGHTS ACT OF 1968\n",
+     ", but I'm not sure about the exact terms. Maybe it's a specific term I'm missing. Let me think again.\n\nWait, the problem says the sequence is in a geometric progression. So, if the terms are in geometric progression, then each term is multiplied by a common ratio. Let me check if that",
+     " is a place where people can come and share their stories. It's a space for creativity, and it's also a space for learning. The idea is that when you're in a place like this, you're not just passing through. You're part of the story. \n\nI think the key thing is that it",
+     " is the same as 10000000000000000000000000000000000000000000000000000000000"
+    ],
+    "chanswap": [
+     ". 2\n\n1. INTRODUCTION\n2. THE CIVIL RIGHTS MOVEMENT\n3. THE CIVIL RIGHTS ACT OF 1964\n4. THE VOTING RIGHTS ACT OF 1965\n5. THE CIVIL RIGHTS ACT OF 1968\n",
+     ", but I need to make sure the total number of letters is correct. Let me count again:\n\n- \"One\" has 3 letters\n- \"Two\" has 3 letters\n- \"Three\" has 5 letters\n- \"Four\" has 4 letters\n- \"Five\" has 4 letters",
+     ", but maybe the first term is different. Wait, the problem says \"the first term is 1\", so the first term is 1, then the second term is 2, third term is 4, fourth term is 8, fifth term is 16, and so on. So the pattern",
+     "\". I need to find the number of such sequences. \n\nWait, but the problem says \"the first and last characters are both 'A'\". So the sequence starts with A and ends with A. So the first position is A, the last position is A. The rest can be any of the characters. But"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I should mention that the red ones are more for the Indian market, maybe. But I think they are also used in other countries. Then, there's the blue ones. They are more common in the US and Europe. Maybe that's why they're called \"blue\" because they're popular in blue countries? Wait",
+     ", but I can't recall the exact details. I think the key point is that the contract wasn't signed yet, so the offer was still open. \n\nWait, maybe I should check if the offer was revoked. If the offer was revoked before the contract was signed, then the seller might be liable for any damages",
+     ". Maybe I should check if they're using the same type of pen. If the pen is the same, then the ink might be compatible. But I'm not sure if that's a factor. Alternatively, maybe the paper quality is different. If the paper is too rough or too smooth, it could affect the ink",
+     ".\n**Question 5: What is the value of $ \\frac{2}{3} \\times \\frac{3}{4} \\times \\frac{4}{5} \\times \\cdots \\times \\frac{99}{100} $?**\n\n**Answer:** $ \\frac{2"
+    ],
+    "corrupt": [
+     " I should mention that the red ones are more for the Indian market, maybe. But I think they are also used in other countries. Then, there's the blue ones. They are more common in the US and Europe. Maybe that's why they're called \"blue\" because they're popular in blue countries? Wait",
+     ". 138\n17.2.4.1.1.1.3.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+     "... (1) The sample size is large enough. (2) The sample size is large enough. (3) The sample size is large enough. (4) The sample size is large enough. (5) The sample size is large enough. (6) The sample size is large enough. (7)",
+     "1000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "chanswap": [
+     " I should mention that the red ones are more for the Indian market, maybe. But I think they are also used in other countries. Then, there's the blue ones. They are more common in the US and Europe. Maybe that's why they're called \"blue\" because they're popular in blue countries? Wait",
+     " the first thing is to find the best way to explain the situation. So, I think the most effective way is to start by asking the customer about their experience so far. That helps me understand what they're going through and what they need. \n\nNext, I should listen carefully to their problems and concerns. It's",
+     ", but I need to make sure I don't miss any.\n\nAlternatively, maybe the number of subsets is 2^something. But the problem is that not all subsets are valid. For example, if I include a subset with both a and b, that's not allowed if they are in the same group. Wait",
+     "*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*...*..."
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     "... 10.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+     ". So, if I have an angle of 30 degrees, the sine of that is 0.5, and the cosine is about 0.866. If I want to find the tangent, which is sine over cosine, that would be 0.5 divided by 0.86",
+     ". 10.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+     ", but the key is that the first set of letters is the same as the second set, just reversed. So, the first set is \"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", \"I\", \"J\", \"K\", \"L\","
+    ],
+    "corrupt": [
+     "... 10.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+     " a lot of examples, but they all have the same structure. So, the process of identifying the pattern is important here. Let me see. The first part is the name of the fruit, then the hyphen, then the color. But the examples don't have a hyphen. Wait, maybe the hyphen",
+     ". is a good start. Maybe the user is a child or someone who wants a more poetic approach. I should consider different forms. Maybe a haiku? Or a more structured poem. Also, the user mentioned \"something more than just a list,\" so I need to add some creativity or personal touch. Let me",
+     " more\n\nThe key is to recognize that the value of the expression depends on the specific values of the variables. Without additional constraints or relationships between the variables, the expression can take on multiple values. For example, if we set all variables to 0, the expression becomes 0. If we set them to 1"
+    ],
+    "chanswap": [
+     "... 10.1.2.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1.1",
+     " the first part. So, if I have to write about the first part, I should mention that the first part is about the formation of the universe, like the Big Bang, and how the universe expanded and cooled down. Then, the stars were formed, and then the planets. Also, the formation of the solar",
+     ". \n\nWait, I need to check the exact wording. The problem says \"the sum of the digits of the number formed by the first 2017 digits after the decimal point.\" So, the number formed by the first 2017 digits after the decimal point is just the decimal expansion up to",
+     ", and so on. \n\nBut I need to find the sum of the first 100 terms. Let me think about the pattern. \n\nAlternatively, maybe there's a formula for the sum of the first n terms of this sequence. Let me check for small n to see if I can find a pattern."
+    ]
+   }
+  ]
+ }
+}

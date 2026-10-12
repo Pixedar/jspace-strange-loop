@@ -1,0 +1,419 @@
+{
+ "0.25": {
+  "n": 96,
+  "spectral_radius_median": 0.9448536919275055,
+  "spectral_radius_q90": 1.183265101084468,
+  "frac_radius_gt_0_9": 0.6145833333333334,
+  "frac_radius_gt_1": 0.34375,
+  "lead_class": {
+   "positive": 0.4270833333333333,
+   "negative": 0.03125,
+   "complex": 0.5416666666666666
+  },
+  "lead_rotation_deg_median": 12.393340825468758,
+  "n_modes_abs_gt_0_5_median": 13.0,
+  "self_reproduction_residual_median": 0.005743065848946571,
+  "radius_eps3x_median": 0.4183935746359194,
+  "radius_eps_agreement": 0.32446090450639004,
+  "lead_words": [
+   [
+    "youre",
+    11
+   ],
+   [
+    "our",
+    8
+   ],
+   [
+    "carefully",
+    8
+   ],
+   [
+    "basket",
+    7
+   ],
+   [
+    "Outside",
+    7
+   ],
+   [
+    "Starting",
+    7
+   ],
+   [
+    "given",
+    7
+   ],
+   [
+    "inside",
+    6
+   ],
+   [
+    "Step",
+    6
+   ],
+   [
+    "herself",
+    5
+   ],
+   [
+    "didnt",
+    4
+   ],
+   [
+    "anybody",
+    4
+   ],
+   [
+    "Contents",
+    4
+   ],
+   [
+    "Bags",
+    4
+   ],
+   [
+    "analysed",
+    4
+   ],
+   [
+    "italian",
+    4
+   ],
+   [
+    "starting",
+    4
+   ],
+   [
+    "tracing",
+    4
+   ],
+   [
+    "Alice",
+    3
+   ],
+   [
+    "everybody",
+    3
+   ],
+   [
+    "Meghan",
+    3
+   ],
+   [
+    "conflicting",
+    3
+   ],
+   [
+    "outside",
+    3
+   ],
+   [
+    "whereabouts",
+    3
+   ],
+   [
+    "downstairs",
+    3
+   ],
+   [
+    "box",
+    3
+   ],
+   [
+    "gastrointestinal",
+    3
+   ],
+   [
+    "Begin",
+    3
+   ],
+   [
+    "Weiner",
+    3
+   ],
+   [
+    "atheists",
+    2
+   ]
+  ]
+ },
+ "1.0": {
+  "n": 96,
+  "spectral_radius_median": 0.8700398730964913,
+  "spectral_radius_q90": 1.0584550344610482,
+  "frac_radius_gt_0_9": 0.3854166666666667,
+  "frac_radius_gt_1": 0.14583333333333334,
+  "lead_class": {
+   "positive": 0.4270833333333333,
+   "negative": 0.0,
+   "complex": 0.5729166666666666
+  },
+  "lead_rotation_deg_median": 5.001458168279904,
+  "n_modes_abs_gt_0_5_median": 10.0,
+  "self_reproduction_residual_median": 0.003803580068051815,
+  "radius_eps3x_median": 0.5917895495215566,
+  "radius_eps_agreement": 0.11131534873017271,
+  "lead_words": [
+   [
+    "okay",
+    12
+   ],
+   [
+    "carefully",
+    9
+   ],
+   [
+    "inside",
+    8
+   ],
+   [
+    "our",
+    8
+   ],
+   [
+    "Starting",
+    8
+   ],
+   [
+    "outside",
+    7
+   ],
+   [
+    "youre",
+    7
+   ],
+   [
+    "starting",
+    7
+   ],
+   [
+    "cuz",
+    5
+   ],
+   [
+    "conflicting",
+    5
+   ],
+   [
+    "basket",
+    5
+   ],
+   [
+    "Outside",
+    5
+   ],
+   [
+    "lets",
+    5
+   ],
+   [
+    "answer",
+    4
+   ],
+   [
+    "Sms",
+    4
+   ],
+   [
+    "badass",
+    4
+   ],
+   [
+    "Upon",
+    4
+   ],
+   [
+    "throughout",
+    4
+   ],
+   [
+    "Weiner",
+    4
+   ],
+   [
+    "Alright",
+    4
+   ],
+   [
+    "analyzing",
+    4
+   ],
+   [
+    "Yeah",
+    3
+   ],
+   [
+    "And",
+    3
+   ],
+   [
+    "didnt",
+    3
+   ],
+   [
+    "herself",
+    3
+   ],
+   [
+    "box",
+    3
+   ],
+   [
+    "Bound",
+    3
+   ],
+   [
+    "Xml",
+    3
+   ],
+   [
+    "yeah",
+    3
+   ],
+   [
+    "walk",
+    3
+   ]
+  ]
+ },
+ "4.0": {
+  "n": 96,
+  "spectral_radius_median": 0.7862918936659595,
+  "spectral_radius_q90": 0.9851542648344297,
+  "frac_radius_gt_0_9": 0.20833333333333334,
+  "frac_radius_gt_1": 0.09375,
+  "lead_class": {
+   "positive": 0.6145833333333334,
+   "negative": 0.0,
+   "complex": 0.3854166666666667
+  },
+  "lead_rotation_deg_median": 0.0,
+  "n_modes_abs_gt_0_5_median": 10.0,
+  "self_reproduction_residual_median": 0.0021312208846211433,
+  "radius_eps3x_median": 0.675900877740955,
+  "radius_eps_agreement": 0.5213852568835835,
+  "lead_words": [
+   [
+    "hello",
+    19
+   ],
+   [
+    "cuz",
+    14
+   ],
+   [
+    "And",
+    12
+   ],
+   [
+    "okay",
+    10
+   ],
+   [
+    "Yeah",
+    9
+   ],
+   [
+    "analyzing",
+    8
+   ],
+   [
+    "alright",
+    8
+   ],
+   [
+    "gonna",
+    8
+   ],
+   [
+    "Usa",
+    7
+   ],
+   [
+    "badass",
+    6
+   ],
+   [
+    "Entrepreneur",
+    6
+   ],
+   [
+    "Alright",
+    6
+   ],
+   [
+    "clicked",
+    5
+   ],
+   [
+    "got",
+    5
+   ],
+   [
+    "Fundamental",
+    5
+   ],
+   [
+    "want",
+    5
+   ],
+   [
+    "because",
+    5
+   ],
+   [
+    "anyways",
+    4
+   ],
+   [
+    "look",
+    4
+   ],
+   [
+    "Jesus",
+    4
+   ],
+   [
+    "wait",
+    4
+   ],
+   [
+    "wanna",
+    4
+   ],
+   [
+    "unfortunately",
+    4
+   ],
+   [
+    "yeah",
+    4
+   ],
+   [
+    "Chinese",
+    4
+   ],
+   [
+    "herbs",
+    4
+   ],
+   [
+    "admins",
+    3
+   ],
+   [
+    "belong",
+    3
+   ],
+   [
+    "Idea",
+    3
+   ],
+   [
+    "anyhow",
+    3
+   ]
+  ]
+ }
+}

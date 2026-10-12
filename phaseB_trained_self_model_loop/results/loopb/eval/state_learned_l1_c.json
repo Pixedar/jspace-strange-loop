@@ -1,0 +1,685 @@
+{
+ "tag": "state_learned_l1_c",
+ "chan": "state",
+ "reader": "learned",
+ "lam": 1.0,
+ "ploss": "nce",
+ "nll_own": [
+  0.9226897358894348,
+  1.75526762008667,
+  1.8610985279083252,
+  1.9264276027679443,
+  1.964646577835083,
+  1.9433364868164062,
+  1.9833849668502808,
+  1.9904156923294067
+ ],
+ "nll_foreign": [
+  0.9226897358894348,
+  1.9289301633834839,
+  2.022224187850952,
+  2.0785071849823,
+  2.1153364181518555,
+  2.0969157218933105,
+  2.1321654319763184,
+  2.1398141384124756
+ ],
+ "nll_stale": [
+  0.9226897358894348,
+  1.75526762008667,
+  1.948583960533142,
+  1.9941990375518799,
+  2.028164863586426,
+  2.0203604698181152,
+  2.0389914512634277,
+  2.0627708435058594
+ ],
+ "bnd_own": 3.7341604232788086,
+ "bnd_foreign": 4.697109222412109,
+ "necessity_foreign": [
+  0.15561619400978088,
+  0.0032133106142282486
+ ],
+ "necessity_stale": [
+  0.07062699645757675,
+  0.0019335694378241897
+ ],
+ "swap_pull_state": [
+  0.06547767668962479,
+  0.0014217819552868605
+ ],
+ "swap_pull_forecast": [
+  0.07385168969631195,
+  0.001399096567183733
+ ],
+ "swap_stay": 0.9856309294700623,
+ "swap_dnll": 0.10793257504701614,
+ "S_cos": [
+  0.8561654090881348,
+  0.8425239324569702,
+  0.841615617275238,
+  0.8304194808006287,
+  0.8239294290542603,
+  0.8260504007339478,
+  0.8195274472236633
+ ],
+ "R2": {
+  "S": 0.5256115198135376,
+  "persistence": -0.5047812461853027,
+  "segment_mean": 0.14348721504211426
+ },
+ "collapse": 0.37942737340927124,
+ "retrieval": {
+  "S": 0.9514285581452506,
+  "persistence": 0.030357142644269124,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.4749600887298584,
+  0.6228107810020447,
+  0.7004615664482117,
+  0.7632111310958862,
+  0.8062687516212463
+ ],
+ "identity_donor": [
+  0.8210325837135315,
+  0.6548663973808289,
+  0.540649950504303,
+  0.4461236894130707,
+  0.36300426721572876
+ ],
+ "nll_corrupt": [
+  0.9226897358894348,
+  1.75526762008667,
+  1.8610985279083252,
+  2.0785071849823,
+  2.0017738342285156,
+  1.9585098028182983,
+  1.9928910732269287,
+  1.9979383945465088
+ ],
+ "track_fresh": [
+  0.8142186999320984,
+  0.8227678537368774,
+  0.8241063952445984,
+  0.8190158009529114
+ ],
+ "track_stale": [
+  0.39815589785575867,
+  0.4947220981121063,
+  0.5660908222198486,
+  0.6127285957336426
+ ],
+ "observer_cos": [
+  0.902455747127533,
+  0.8947525024414062,
+  0.8954737186431885,
+  0.8802171945571899,
+  0.8800467848777771,
+  0.8816035389900208,
+  0.8838789463043213
+ ],
+ "baselines": {
+  "persistence": [
+   0.3932747542858124,
+   0.3624489903450012,
+   0.358841210603714,
+   0.3537980020046234,
+   0.33950358629226685,
+   0.33764052391052246,
+   0.3480220437049866
+  ],
+  "segment_mean": [
+   0.5612861514091492,
+   0.5314328670501709,
+   0.5269822478294373,
+   0.5378842949867249,
+   0.524528443813324,
+   0.5042756795883179,
+   0.4665575921535492
+  ],
+  "linear": [
+   0.9200420787673365,
+   0.9201519173835879,
+   0.9195617103241743,
+   0.9097069887731363,
+   0.9102889976363706,
+   0.9112917458227779,
+   0.9109828687678625
+  ]
+ },
+ "pr": 14.255138026679907,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "effected",
+     "Dank",
+     "sausage",
+     "Needless",
+     "debris",
+     "arousal",
+     "dealt",
+     "altered",
+     "dank",
+     "altering"
+    ],
+    "neg": [
+     "Maybe",
+     "maybe",
+     "Hmm",
+     "perhaps",
+     "Wait",
+     "Perhaps",
+     "mention",
+     "mentions",
+     "Wikipedia",
+     "remembers"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "mentioning",
+     "Mention",
+     "emphasize",
+     "highlight",
+     "mentions",
+     "Include",
+     "recommending",
+     "Highlight",
+     "highlighting"
+    ],
+    "neg": [
+     "isn",
+     "yeah",
+     "definitely",
+     "wait",
+     "maybe",
+     "comes",
+     "instrument",
+     "Hmm",
+     "seems",
+     "played"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "isn",
+     "junction",
+     "per",
+     "would",
+     "because",
+     "meant",
+     "les",
+     "qualifies",
+     "function"
+    ],
+    "neg": [
+     "Buffy",
+     "Santana",
+     "Simpsons",
+     "Cowboy",
+     "Helmet",
+     "Zack",
+     "Hogan",
+     "Deadpool",
+     "Canucks",
+     "Blonde"
+    ]
+   },
+   "3": {
+    "pos": [
+     "Maybe",
+     "maybe",
+     "Yeah",
+     "explaining",
+     "yeah",
+     "huh",
+     "deterrent",
+     "Hmm",
+     "Perhaps",
+     "haha"
+    ],
+    "neg": [
+     "recall",
+     "remembers",
+     "recalls",
+     "remember",
+     "memory",
+     "remembered",
+     "recalled",
+     "Recall",
+     "uncertain",
+     "confuse"
+    ]
+   },
+   "4": {
+    "pos": [
+     "obedient",
+     "touchdowns",
+     "Relationships",
+     "puppy",
+     "deeds",
+     "Taking",
+     "Luckily",
+     "Settings",
+     "Gst",
+     "goodwill"
+    ],
+    "neg": [
+     "definitely",
+     "famous",
+     "classified",
+     "notable",
+     "categorized",
+     "Definitely",
+     "classify",
+     "iconic",
+     "not",
+     "technically"
+    ]
+   },
+   "5": {
+    "pos": [
+     "franchises",
+     "franchise",
+     "fandom",
+     "Deadpool",
+     "Mayweather",
+     "Batman",
+     "titles",
+     "title",
+     "Marvel",
+     "fan"
+    ],
+    "neg": [
+     "heard",
+     "shady",
+     "might",
+     "should",
+     "remember",
+     "learnt",
+     "recalls",
+     "needs",
+     "believes",
+     "remembers"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Greatest",
+     "Rookie",
+     "Quite",
+     "Playboy",
+     "Famous",
+     "blockbuster",
+     "Winning",
+     "fran",
+     "Founded",
+     "Films"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "instrument",
+     "chords",
+     "guitars",
+     "chord",
+     "musical",
+     "percussion",
+     "Instruments",
+     "violin"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "theres",
+     "someone",
+     "their",
+     "could",
+     "she",
+     "interpreting",
+     "Loki",
+     "politicians",
+     "some"
+    ],
+    "neg": [
+     "guitar",
+     "musical",
+     "piano",
+     "staple",
+     "probable",
+     "Probably",
+     "definitely",
+     "obvious",
+     "violin",
+     "percussion"
+    ]
+   }
+  },
+  "write_mean": [
+   "Kaplan",
+   "understandably",
+   "thankfully",
+   "Bernardino",
+   "Thankfully",
+   "Invoke",
+   "Romero",
+   "blatantly",
+   "homicides",
+   "firsthand"
+  ],
+  "write_pc0": {
+   "pos": [
+    "tiger",
+    "moderated",
+    "horses",
+    "breeds",
+    "hemp",
+    "cannabis",
+    "internet",
+    "wild",
+    "lust",
+    "veg"
+   ],
+   "neg": [
+    "Drill",
+    "Devices",
+    "Pause",
+    "Helps",
+    "Bolton",
+    "Commands",
+    "Lets",
+    "Device",
+    "Cylinder",
+    "Jong"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "definitely",
+    "attractions",
+    "catering",
+    "certainly",
+    "shopping",
+    "besides",
+    "hosted",
+    "desserts",
+    "Fahrenheit",
+    "percentages"
+   ],
+   "neg": [
+    "Notify",
+    "Rename",
+    "Decode",
+    "Reset",
+    "Change",
+    "rename",
+    "Transparency",
+    "Coat",
+    "forehead",
+    "decode"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "leash",
+    "garden",
+    "zoo",
+    "hobbies",
+    "gardening",
+    "hemp",
+    "fencing",
+    "yoga",
+    "veterinary",
+    "treadmill"
+   ],
+   "neg": [
+    "Bayer",
+    "beneficiaries",
+    "Aviv",
+    "Oslo",
+    "winners",
+    "Munich",
+    "Cannes",
+    "payer",
+    "Winners",
+    "recipients"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Punk",
+    "stabbing",
+    "Inserts",
+    "tying",
+    "inserting",
+    "chanting",
+    "assaults",
+    "Swamp",
+    "insertion",
+    "sitting"
+   ],
+   "neg": [
+    "coke",
+    "refinery",
+    "soy",
+    "graphite",
+    "Asked",
+    "coolant",
+    "magnesium",
+    "economies",
+    "strategist",
+    "uranium"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.12340147793292999,
+    0.08860179781913757,
+    0.062118418514728546,
+    0.0546083077788353,
+    0.03126981481909752,
+    0.04272735118865967,
+    0.02862909436225891
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.020862005650997162,
+    0.019813669845461845,
+    0.01936342380940914,
+    0.015119565650820732,
+    -0.007424619048833847,
+    0.00017297035083174706,
+    0.010608682408928871
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.4235093593597412,
+    0.32853829860687256,
+    0.3280320465564728,
+    0.32433196902275085,
+    0.3478308916091919,
+    0.341752290725708,
+    0.33253151178359985,
+    0.33480510115623474
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.12340147793292999,
+    0.08860179781913757,
+    0.016473382711410522,
+    -0.005021312739700079,
+    -0.0010195397771894932,
+    0.010506012476980686,
+    0.00681811198592186
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.020862005650997162,
+    0.019813669845461845,
+    0.05160684883594513,
+    0.034528568387031555,
+    0.03511720895767212,
+    0.04948846250772476,
+    0.03454526886343956
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.3136295676231384,
+    0.35043561458587646,
+    0.3367316722869873,
+    0.31924182176589966,
+    0.2891254723072052
+   ],
+   "z_vs_donor_run": [
+    0.4235093593597412,
+    0.32853829860687256,
+    0.3280320465564728,
+    0.8684016466140747,
+    0.7524315714836121,
+    0.6631671190261841,
+    0.5933804512023926,
+    0.5134174823760986
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6704888939857483,
+    0.12340147793292999,
+    0.08860179781913757,
+    0.013618791475892067,
+    0.041040901094675064,
+    0.021821139380335808,
+    0.009611664339900017,
+    0.020120562985539436
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.020862005650997162,
+    0.019813669845461845,
+    0.049860186874866486,
+    -0.005032544024288654,
+    0.009427405893802643,
+    0.00910378247499466,
+    0.0064012156799435616
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.8248506784439087,
+    0.7234127521514893,
+    0.6385010480880737,
+    0.5499537587165833,
+    0.4772108793258667
+   ],
+   "z_vs_donor_run": [
+    0.4235093593597412,
+    0.32853829860687256,
+    0.3280320465564728,
+    0.40516382455825806,
+    0.40055975317955017,
+    0.3722566068172455,
+    0.337327241897583,
+    0.33491724729537964
+   ]
+  },
+  "S_cos_free": [
+   0.8289889097213745,
+   0.8255112767219543,
+   0.8399758338928223,
+   0.8399417996406555,
+   0.8405795097351074,
+   0.8350024223327637,
+   0.8313355445861816
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     " the right side, but not sure. Let me think. \n\nFirst, I need to recall the properties of the system. The system is a semi-classical harmonic oscillator, which means that the Hamiltonian is given by H = p\u00b2/(2m) + (1/2)m\u03c9\u00b2x\u00b2. The",
+     " first, I should check the materials used. Then, the design elements like color and patterns. Also, the craftsmanship, like stitching and durability. Oh, and the brand's reputation. Wait, the user mentioned the product is from a specific brand, so I need to highlight that. Maybe include some details about the brand",
+     ", which could be a part of the story. But I need to check if that's accurate.\n\nWait, the original \"The Lord of the Rings\" series is written by J.R.R. Tolkien, not Stephen King. So that's a common mistake. Let me confirm: The books are indeed written by Tolkien,",
+     " but I need to check the exact date. Wait, the user said \"in 2023\". So maybe the user is referring to a specific event in 2023. But I'm not sure. Maybe they want the general history. Let me think. \n\nFirst, I should clarify if the"
+    ],
+    "corrupt": [
+     " the right side, but not sure. Let me think. \n\nFirst, I need to recall the properties of the system. The system is a semi-classical harmonic oscillator, which means that the Hamiltonian is given by H = p\u00b2/(2m) + (1/2)m\u03c9\u00b2x\u00b2. The",
+     " mention their names. So, the name of the person who wrote the letter is someone else. But the letter is from a person to someone else. Wait, maybe the letter is from a person to their friend, but the names of the people involved aren't mentioned. So, the answer would be that the name of",
+     " \"The Bicentennial Man\" by Isaac Asimov. Maybe I should check if that's a real title. Wait, no, the Bicentennial Man is a story by Asimov, but I'm not sure if it's a full-length work or a short story. Maybe it's related",
+     " answer is 2016. I need to check the possible combinations again.\n\nWait, maybe the user is referring to the number of ways to arrange the letters in \"2016\". But \"2016\" has four digits, all unique. So the number of permutations is 4! ="
+    ],
+    "chanswap": [
+     " the right side, but not sure. Let me think. \n\nFirst, I need to recall the properties of the system. The system is a semi-classical harmonic oscillator, which means that the Hamiltonian is given by H = p\u00b2/(2m) + (1/2)m\u03c9\u00b2x\u00b2. The",
+     " mention. Then there's the category of \"non-sequential\" like the \"Sue\" character, who appears in different contexts. I'm not sure if that's a real thing or just a joke. Maybe it's better to list the main ones first, then mention the others. Also, the user mentioned the",
+     " author's intent might be to highlight the importance of balance in life. But I need to check if there's a more precise angle. Maybe the author is discussing the duality of existence, like light and dark, or the need to maintain harmony between different aspects of life. Also, the presence of both positive and negative",
+     " user is not clear. Let me check the possible options again. Wait, the user mentioned \"the answer is 37.5 cm\". So maybe I need to consider that the answer is 37.5 cm, which is 3/8 of a meter. Wait, 37.5 cm"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I should mention that the user is asking about the current year, so I need to check if there's a recent update. Wait, the latest data I have is up to October 2023. So, the 2023 model year would be the most recent. But I need to confirm if",
+     " a very important factor. The N-12000000000000000000000000000000000000000000000000000000",
+     "0000000000000000000000000000000000000000000000000000000000000000",
+     " give me the definition of a triangle. \n\nOkay, let's start by recalling what I know about triangles. I think a triangle is a polygon with three sides. But I need to make sure I'm not missing anything. \n\nFirst, the basics: a polygon is a closed figure with straight sides. So a triangle"
+    ],
+    "corrupt": [
+     " I should mention that the user is asking about the current year, so I need to check if there's a recent update. Wait, the latest data I have is up to October 2023. So, the 2023 model year would be the most recent. But I need to confirm if",
+     " fourth. So I think they're in the same place. But maybe I should check the dates again.\n\nWait, the first one is from 1980, the second from 1982, then 1983, 1984, 1985, 1",
+     "2000s. \n\nBut the 2000s are part of the 21st century. So that's not helpful.\n\nMaybe the user is referring to the 1900s as the 20th century. So the 20th century is 190",
+     " is a very unique term. Let me think about how to approach this.\n\nFirst, I need to understand what \"Mystery of the Mysterious\" refers to. It might be a metaphor or a specific concept. Since the user hasn't provided additional context, I'll assume it's a hypothetical scenario where the user is"
+    ],
+    "chanswap": [
+     " I should mention that the user is asking about the current year, so I need to check if there's a recent update. Wait, the latest data I have is up to October 2023. So, the 2023 model year would be the most recent. But I need to confirm if",
+     " first, the main aim of the film is to show the different aspects of the life of a woman, especially in the context of marriage. The film is a classic example of the genre of women's films, which often focus on the challenges and complexities of female experiences. The protagonist, Mira, is a woman who",
+     "'s. \n\nWait, maybe there's a different approach. Since the problem is about the number of ways to choose 2023 people from a group of 2023, but with some constraints. Wait, no, the original problem is about the number of ways to choose 2023",
+     " order. For example, the 1st, 3rd, and 5th elements in the original list. Then, I should check if these elements are all the same. If they are, I can return that value as the answer. If not, I need to check the 2nd, 4"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " type of response. So, I should check if the user is asking for a list, a comparison, a step-by-step guide, or something else. If they want a list, I can structure it with bullet points. If it's a comparison, I can use tables. For step-by-step, I need to",
+     " allow for the most flexibility. Maybe I should consider the types of maps and their properties.\n\nAnother angle: maybe the question is about the types of maps that are possible in a given context, like topological maps, graph maps, or something else. But since it's a general question, I need to think about the",
+     " option is to be used for the first part. So, the first part is the user's question, and the second part is the assistant's response. So, the user is asking about the legal implications of a non-registered partnership in the UK. \n\nWait, the user might be referring to a partnership that isn",
+     ", which is the same as the first time. So, the pattern repeats every 4 moves. Wait, but the first time, the pattern was 1, 2, 3, 4, 1, 2, 3, 4, etc. Then, when I tried to find the"
+    ],
+    "corrupt": [
+     " type of response. So, I should check if the user is asking for a list, a comparison, a step-by-step guide, or something else. If they want a list, I can structure it with bullet points. If it's a comparison, I can use tables. For step-by-step, I need to",
+     " a very high number of people.\n\nWait, but the problem says \"the number of people who like both is 20% of the number who like only A.\" So, the number of people who like both is 20% of the number who like only A. So, the number of people who like",
+     "5\n\nWait, the user might be confused. Let me check the dates again. The first date is 2016-05-17, then 2016-05-20, 2016-05-23, 2016-",
+     ". \n\nI need to make sure that the user is informed about the different types of travel insurance, such as single-trip, annual, and multi-trip policies. Also, the user should understand the importance of coverage for medical emergencies, trip cancellations, and luggage loss. It's important to mention that insurance is"
+    ],
+    "chanswap": [
+     " type of response. So, I should check if the user is asking for a list, a comparison, a step-by-step guide, or something else. If they want a list, I can structure it with bullet points. If it's a comparison, I can use tables. For step-by-step, I need to",
+     " not the best example. Maybe another one. \n\nWait, maybe the user is asking for a specific type of example. Let me check the original query again.\n\nThe user says: \"Please provide an example of a company that uses a single source of truth. How does that company use it? What are the benefits of",
+     " a real estate transaction, the buyer and seller might have different views on the property's value. The buyer might be willing to pay more than the seller is asking, but the seller might not be willing to lower the price. In this case, the transaction can be negotiated to find a middle ground. \n\nAnother example is",
+     " should be a prime number. So, the result of the expression must be a prime number.\n\nLet me check the first few values of n to see if I can find any pattern or possible solutions.\n\nFor n = 1:\nThe expression becomes 1^3 + 1^2 + 1 + 1"
+    ]
+   }
+  ]
+ }
+}

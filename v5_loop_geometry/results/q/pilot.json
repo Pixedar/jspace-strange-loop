@@ -1,0 +1,39 @@
+{
+ "g_star": 1.0,
+ "R": {
+  "coverage": 0.14272727272727273,
+  "coverage_pass": false,
+  "manip_rms_dc": 0.427478164434433,
+  "manip_pass": false,
+  "tracking_ratio": 1.0045379400253296,
+  "noninferiority_ratio": 1.0117440223693848,
+  "sd_log_tr": 0.058059677481651306,
+  "sd_log_ni": 0.2790645360946655,
+  "n_scen_used": 85,
+  "n_required": {
+   "TR": 2,
+   "NI": 20
+  },
+  "n_test": 200,
+  "power_ok": true,
+  "fq_selfskill_dc_h1": 0.017383694648742676
+ },
+ "J": {
+  "coverage": 0.4509090909090909,
+  "coverage_pass": false,
+  "manip_rms_dc": 0.8600138425827026,
+  "manip_pass": true,
+  "tracking_ratio": 1.0013569593429565,
+  "noninferiority_ratio": 1.008875846862793,
+  "sd_log_tr": 0.023856202140450478,
+  "sd_log_ni": 0.16674724221229553,
+  "n_scen_used": 100,
+  "n_required": {
+   "TR": 1,
+   "NI": 8
+  },
+  "n_test": 200,
+  "power_ok": true,
+  "fq_selfskill_dc_h1": 0.008078992366790771
+ }
+}

@@ -1,0 +1,615 @@
+{
+ "tag": "const_learned_l1_c",
+ "chan": "const",
+ "reader": "learned",
+ "lam": 1.0,
+ "ploss": "nce",
+ "nll_own": [
+  0.9066314101219177,
+  1.7573214769363403,
+  1.8607187271118164,
+  1.9103676080703735,
+  1.9380186796188354,
+  1.9236325025558472,
+  1.9482908248901367,
+  1.9626258611679077
+ ],
+ "nll_foreign": [
+  0.9066314101219177,
+  1.85679292678833,
+  1.9087836742401123,
+  1.9543464183807373,
+  1.9825915098190308,
+  1.9723858833312988,
+  1.9995744228363037,
+  2.0108914375305176
+ ],
+ "nll_stale": [
+  0.9066314101219177,
+  1.7573214769363403,
+  1.9166566133499146,
+  1.9433807134628296,
+  1.9745383262634277,
+  1.962395429611206,
+  1.9893847703933716,
+  2.0016324520111084
+ ],
+ "bnd_own": 3.9929261207580566,
+ "bnd_foreign": 4.392885208129883,
+ "necessity_foreign": [
+  0.054912298917770386,
+  0.0012203415390104055
+ ],
+ "necessity_stale": [
+  0.04072177782654762,
+  0.0011492904741317034
+ ],
+ "S_cos": [
+  0.9041312336921692,
+  0.9225433468818665,
+  0.923292338848114,
+  0.9155594110488892,
+  0.9152237772941589,
+  0.9210723638534546,
+  0.9172302484512329
+ ],
+ "R2": {
+  "S": 0.7644665241241455,
+  "persistence": -0.6493232250213623,
+  "segment_mean": 0.021614670753479004
+ },
+ "collapse": 0.08215511590242386,
+ "retrieval": {
+  "S": 0.9857142908232552,
+  "persistence": 0.014285713966403688,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.12852738797664642,
+  0.24431441724300385,
+  0.3347770571708679,
+  0.41146498918533325,
+  0.4702221751213074
+ ],
+ "identity_donor": [
+  0.8794351816177368,
+  0.7330436110496521,
+  0.6086723208427429,
+  0.5037785172462463,
+  0.41047248244285583
+ ],
+ "nll_corrupt": [
+  0.9066314101219177,
+  1.7573214769363403,
+  1.8607187271118164,
+  1.9543464183807373,
+  1.9433808326721191,
+  1.9275344610214233,
+  1.9518342018127441,
+  1.9654686450958252
+ ],
+ "track_fresh": [
+  0.9127880334854126,
+  0.918245255947113,
+  0.9192537665367126,
+  0.9175147414207458
+ ],
+ "track_stale": [
+  0.14526711404323578,
+  0.24004733562469482,
+  0.32927170395851135,
+  0.38500529527664185
+ ],
+ "observer_cos": [
+  0.8980802297592163,
+  0.9166558980941772,
+  0.915850043296814,
+  0.9089109301567078,
+  0.9113166332244873,
+  0.9172829985618591,
+  0.9135491251945496
+ ],
+ "baselines": {
+  "persistence": [
+   0.1894218474626541,
+   0.21796199679374695,
+   0.21029981970787048,
+   0.20732472836971283,
+   0.24129211902618408,
+   0.23056861758232117,
+   0.2363065779209137
+  ],
+  "segment_mean": [
+   0.21548640727996826,
+   0.1783827543258667,
+   0.16746534407138824,
+   0.17131119966506958,
+   0.18237286806106567,
+   0.17225639522075653,
+   0.17090824246406555
+  ],
+  "linear": [
+   0.9238601038431224,
+   0.9337300950608625,
+   0.9338176472499475,
+   0.9263463602935478,
+   0.9285494316071017,
+   0.9331582054067797,
+   0.9302616621509197
+  ]
+ },
+ "pr": 17.395628825339056,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "dummy",
+     "effected",
+     "hearty",
+     "merely",
+     "dealt",
+     "lodging",
+     "Accordingly",
+     "your",
+     "Change",
+     "ppm"
+    ],
+    "neg": [
+     "Maybe",
+     "maybe",
+     "Hmm",
+     "perhaps",
+     "mentions",
+     "Wait",
+     "mention",
+     "yeah",
+     "Perhaps",
+     "reminds"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "Mention",
+     "mentioning",
+     "highlight",
+     "emphasize",
+     "mentions",
+     "Include",
+     "Highlight",
+     "highlighting",
+     "recommending"
+    ],
+    "neg": [
+     "isn",
+     "yeah",
+     "wait",
+     "definitely",
+     "Hmm",
+     "comes",
+     "seems",
+     "maybe",
+     "instrument",
+     "reportedly"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "isn",
+     "junction",
+     "though",
+     "qualify",
+     "qualifies",
+     "would",
+     "per",
+     "disrupt",
+     "instead"
+    ],
+    "neg": [
+     "Simpsons",
+     "Helmet",
+     "Buffy",
+     "rugby",
+     "Hou",
+     "Cowboy",
+     "bicycles",
+     "Zack",
+     "Bamboo",
+     "Hogan"
+    ]
+   },
+   "3": {
+    "pos": [
+     "Maybe",
+     "maybe",
+     "Perhaps",
+     "explaining",
+     "perhaps",
+     "Yeah",
+     "deterrent",
+     "huh",
+     "they",
+     "Describe"
+    ],
+    "neg": [
+     "recall",
+     "remembers",
+     "recalls",
+     "remember",
+     "memory",
+     "recalled",
+     "Recall",
+     "remembered",
+     "Memory",
+     "confuse"
+    ]
+   },
+   "4": {
+    "pos": [
+     "touchdowns",
+     "wasted",
+     "Luckily",
+     "Fortunately",
+     "Providing",
+     "Taking",
+     "Permissions",
+     "Convenience",
+     "Moreover",
+     "Scholars"
+    ],
+    "neg": [
+     "definitely",
+     "categorized",
+     "classified",
+     "famous",
+     "notable",
+     "Definitely",
+     "mention",
+     "mentioned",
+     "not",
+     "classify"
+    ]
+   },
+   "5": {
+    "pos": [
+     "fandom",
+     "Deadpool",
+     "Batman",
+     "franchise",
+     "Marvel",
+     "franchises",
+     "Mayweather",
+     "titles",
+     "title",
+     "Blackhawks"
+    ],
+    "neg": [
+     "heard",
+     "shady",
+     "might",
+     "recalls",
+     "remember",
+     "believes",
+     "should",
+     "needs",
+     "smelled",
+     "learned"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Quite",
+     "Playboy",
+     "blockbuster",
+     "Greatest",
+     "Films",
+     "Winning",
+     "Rookie",
+     "Fury",
+     "reigning",
+     "Lakers"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "instrument",
+     "guitars",
+     "chords",
+     "chord",
+     "musical",
+     "Instruments",
+     "musicians",
+     "percussion"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "someone",
+     "could",
+     "their",
+     "politicians",
+     "some",
+     "interpreting",
+     "Loki",
+     "isn",
+     "may"
+    ],
+    "neg": [
+     "Probably",
+     "Definitely",
+     "Certainly",
+     "musical",
+     "probable",
+     "obvious",
+     "definitely",
+     "guitar",
+     "staple",
+     "violin"
+    ]
+   }
+  },
+  "write_mean": [
+   "Anatomy",
+   "Carb",
+   "Nutrition",
+   "Dietary",
+   "Dairy",
+   "Projectile",
+   "Pasta",
+   "yummy",
+   "Marino",
+   "Hydraulic"
+  ],
+  "write_pc0": {
+   "pos": [
+    "bathrooms",
+    "Colbert",
+    "Panthers",
+    "ordinarily",
+    "courteous",
+    "Bathroom",
+    "bothering",
+    "pancreatic",
+    "nausea",
+    "Deferred"
+   ],
+   "neg": [
+    "Stanley",
+    "Stan",
+    "Stewart",
+    "acc",
+    "out",
+    "cons",
+    "chief",
+    "accused",
+    "par",
+    "Jack"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "Annual",
+    "Airways",
+    "Sahara",
+    "Airport",
+    "budgets",
+    "childcare",
+    "trackers",
+    "parachute",
+    "Aviation",
+    "annual"
+   ],
+   "neg": [
+    "peppers",
+    "tomatoes",
+    "cooked",
+    "todd",
+    "boil",
+    "soy",
+    "tablespoon",
+    "chromium",
+    "inning",
+    "dough"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "autism",
+    "livestock",
+    "breeds",
+    "android",
+    "pandas",
+    "animal",
+    "prolific",
+    "veterinary",
+    "aquatic",
+    "automotive"
+   ],
+   "neg": [
+    "Fountain",
+    "ejected",
+    "Rotate",
+    "Pickup",
+    "Rotary",
+    "Spit",
+    "Desmond",
+    "Jacket",
+    "Stir",
+    "Coffee"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "mango",
+    "catholic",
+    "vegan",
+    "pets",
+    "Vegan",
+    "veterinarian",
+    "Catholics",
+    "mammals",
+    "Myanmar",
+    "pundits"
+   ],
+   "neg": [
+    "Building",
+    "directional",
+    "adding",
+    "additions",
+    "Winter",
+    "winter",
+    "individual",
+    "Drill",
+    "deadlines",
+    "adds"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.03519228845834732,
+    0.011904536746442318,
+    0.006004796363413334,
+    0.01650376245379448,
+    0.018852606415748596,
+    0.0028156237676739693,
+    0.006228077225387096
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.00016191531904041767,
+    0.008137155324220657,
+    0.014760090038180351,
+    0.011008640751242638,
+    0.0028583663515746593,
+    0.0009048928041011095,
+    0.008111203089356422
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.07194475829601288,
+    0.07311367988586426,
+    0.046946875751018524,
+    0.021034706383943558,
+    -0.0037277918308973312,
+    -0.007118687499314547,
+    0.015688743442296982,
+    0.05332723259925842
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.03519228845834732,
+    0.011904536746442318,
+    0.008850092068314552,
+    0.011077091097831726,
+    0.012991526164114475,
+    -0.0045171137899160385,
+    -0.01372516993433237
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.00016191531904041767,
+    0.008137155324220657,
+    0.012981051579117775,
+    0.007049647159874439,
+    0.0015569794923067093,
+    0.02422182261943817,
+    0.004443800542503595
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.03037262335419655,
+    0.01995481364428997,
+    0.016481585800647736,
+    0.032087236642837524,
+    0.06945867091417313
+   ],
+   "z_vs_donor_run": [
+    0.07194475829601288,
+    0.07311367988586426,
+    0.046946875751018524,
+    0.866201639175415,
+    0.7532449960708618,
+    0.6450405120849609,
+    0.5652307271957397,
+    0.48786401748657227
+   ]
+  },
+  "S_cos_free": [
+   0.8815005421638489,
+   0.9062316417694092,
+   0.9069890975952148,
+   0.9197396636009216,
+   0.8988279104232788,
+   0.920184850692749,
+   0.9118502140045166
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     " to be continued. \n\nWait, but the user might be looking for the final answer here. Let me check the initial question again. The user asked for the value of the expression, so I should present the final answer boxed. But the problem is that the expression is infinite, so maybe the user is referring to the",
+     ". \"The reason for the change in the number of civil cases is because the number of civil cases in the first quarter of 2011 was unusually low due to a backlog that was resolved in the second quarter.\"\n\nI should also mention that the number of civil cases in the second quarter of 201",
+     " the group of people who support the current government. Maybe they are not the majority, but they are the ones in power. So, the government could be authoritarian, and the opposition is the group that wants to change it. But the question is about the majority.\n\nWait, maybe the question is more straightforward. The user",
+     ". Maybe the user is looking for a different approach. Let me think. Wait, maybe the user is confused about the notation. Let me check the original question again.\n\nWait, the user wrote \"the sum of the first 1000 even numbers.\" So the first even number is 2, the second"
+    ],
+    "corrupt": [
+     " to be continued. \n\nWait, but the user might be looking for the final answer here. Let me check the initial question again. The user asked for the value of the expression, so I should present the final answer boxed. But the problem is that the expression is infinite, so maybe the user is referring to the",
+     " the 1980s. The first question is about the general trend in the number of people who died from the disease. The answer is that the number of deaths decreased over time. Then, the second question is about the peak year of the disease's spread. The answer is 1982.",
+     " But I think it's about the time to mention the traditional Japanese dishes. \n\nWait, but I should check if the user is asking for something else. Maybe they want to know about the history of Japanese cuisine, or the ingredients used in traditional dishes. \n\nAlternatively, they might be interested in the differences between Japanese and",
+     " to be a team player, they need to have good communication skills. That's why it's important to teach them that from a young age. \n\nI should also mention how teamwork benefits them in the long run. Like, in school projects, or even in their future careers. Maybe use some examples of how the young"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I should mention that the user is a student or someone who might be interested in learning more about the subject. Also, I need to make sure the information is accurate and up-to-date. I should check if there are any recent developments or changes in the field. Maybe include some key figures or notable works related to the",
+     " example. The user might have a lot of different types of content, so it's important to be clear about what kind of content they're looking for. \n\nAlso, the user might be a new user, so I should make sure to explain the process clearly. Maybe they're not familiar with the platform or the specific",
+     " groups. So, the answer would be the sum of the first n natural numbers. Wait, but the user is asking for the total number of ways, not the sum. Wait, no, maybe not. Let me think again.\n\nWait, the problem is about the number of ways to arrange the letters in \"ter",
+     "1950s. So, the 1950s would be the 50s, but the 1950s is a decade, so the answer should be the 1950s. Wait, but the question is asking for the decade. So the answer is the"
+    ],
+    "corrupt": [
+     " I should mention that the user is a student or someone who might be interested in learning more about the subject. Also, I need to make sure the information is accurate and up-to-date. I should check if there are any recent developments or changes in the field. Maybe include some key figures or notable works related to the",
+     ". \n\nWait, maybe I should check if there's a standard name or if it's a trick question. But I don't recall a specific name for this particular term. Alternatively, maybe the user is referring to the concept of \"climax\" in a story, but that's more of a narrative term. \n\n",
+     " But I need to check if the user is asking for a different type of solution, like a recipe or a method. Wait, the user mentioned \"solving the problem of making a cake.\" So the answer should be a step-by-step guide on how to make a cake. But the user might have meant the problem",
+     " the goal is to create a sense of community and shared responsibility. \n\nAnother thing is that the term \"volunteer\" might be a bit misleading. While the volunteers are indeed unpaid, their role is crucial. They are the ones who often handle the day-to-day operations, from organizing events to providing direct services. I"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " advantages and disadvantages of different types of games, like cooperative vs. competitive, or digital vs. physical. Maybe also touch on the role of storytelling in games.\n\nI think that's a good start. Let me structure this into sections. First, define what a game is. Then, list the key elements. Then,",
+     " a lot of them. So that's why I think that's important. \n\nI think the main thing is that people need to understand that the way to reduce the number of people who die from these diseases is to increase the number of people who are tested and get the right treatment. So, if they don't get",
+     ". \n\nI need to make sure that I'm not missing any other types of sentences. Let me think. \n\nThere are also imperative sentences, like \"Come here.\" But the user didn't mention those. Also, exclamations like \"Wow, that's amazing!\" but again, not specified. \n\nSo,",
+     " date. But I need to check if that's the case. Let me think. \n\nWait, the user is asking for the date of the first moon landing. I know that the Apollo 11 mission was the first manned mission to land on the Moon. The date is July 20, 19"
+    ],
+    "corrupt": [
+     " advantages and disadvantages of different types of games, like cooperative vs. competitive, or digital vs. physical. Maybe also touch on the role of storytelling in games.\n\nI think that's a good start. Let me structure this into sections. First, define what a game is. Then, list the key elements. Then,",
+     ": 0.003333333333333333333333333333333333333333333333333333333333",
+     "4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.4.",
+     " a lot of people might not know that the majority of the world's population is in the developing world. So, the majority of the people in the world are in the developing countries. That's something that's often overlooked. Then, the development of the developing countries is crucial for the global development. So, I need"
+    ]
+   }
+  ]
+ }
+}

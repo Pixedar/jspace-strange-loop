@@ -1,0 +1,685 @@
+{
+ "tag": "fcst_learned_l0.1_c",
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 0.1,
+ "ploss": "nce",
+ "nll_own": [
+  0.7791125774383545,
+  1.5836602449417114,
+  1.6874933242797852,
+  1.7523963451385498,
+  1.769181489944458,
+  1.784921407699585,
+  1.7768757343292236,
+  1.7802581787109375
+ ],
+ "nll_foreign": [
+  0.7791125774383545,
+  1.8049609661102295,
+  1.9435362815856934,
+  2.039490222930908,
+  2.048733949661255,
+  2.0884652137756348,
+  2.0696754455566406,
+  2.076321601867676
+ ],
+ "nll_stale": [
+  0.7791125774383545,
+  1.5836602449417114,
+  1.8147320747375488,
+  1.8779115676879883,
+  1.886539101600647,
+  1.896480917930603,
+  1.896388053894043,
+  1.8971006870269775
+ ],
+ "bnd_own": 3.471985101699829,
+ "bnd_foreign": 4.940216541290283,
+ "necessity_foreign": [
+  0.27662789821624756,
+  0.004545005038380623
+ ],
+ "necessity_stale": [
+  0.11967084556818008,
+  0.001941419905051589
+ ],
+ "swap_pull_state": [
+  0.15284757316112518,
+  0.003823420498520136
+ ],
+ "swap_pull_forecast": [
+  0.21043875813484192,
+  0.00414021871984005
+ ],
+ "swap_stay": 0.9172828793525696,
+ "swap_dnll": 0.09370165318250656,
+ "S_cos": [
+  0.5393545627593994,
+  0.5512490272521973,
+  0.5708650350570679,
+  0.6017625331878662,
+  0.5999979972839355,
+  0.5906298160552979,
+  0.5914065837860107
+ ],
+ "R2": {
+  "S": -0.030675172805786133,
+  "persistence": 0.01913851499557495,
+  "segment_mean": 0.017678380012512207
+ },
+ "collapse": 0.3325827419757843,
+ "retrieval": {
+  "S": 0.3824999992336546,
+  "persistence": 0.21214285918644496,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.8710501790046692,
+  0.964383065700531,
+  0.9879586100578308,
+  0.9951213002204895,
+  0.9973292350769043
+ ],
+ "identity_donor": [
+  0.3178924024105072,
+  0.18635009229183197,
+  0.14969246089458466,
+  0.12869149446487427,
+  0.10937272757291794
+ ],
+ "nll_corrupt": [
+  0.7791125774383545,
+  1.5836602449417114,
+  1.6874933242797852,
+  2.039490222930908,
+  1.8038214445114136,
+  1.7941890954971313,
+  1.7780671119689941,
+  1.781013011932373
+ ],
+ "track_fresh": [
+  0.5418259501457214,
+  0.5828361511230469,
+  0.5857641100883484,
+  0.5899233818054199
+ ],
+ "track_stale": [
+  0.5370607972145081,
+  0.5796394348144531,
+  0.5835796594619751,
+  0.5883412957191467
+ ],
+ "observer_cos": [
+  0.477815717458725,
+  0.5062822699546814,
+  0.5356169939041138,
+  0.5576415657997131,
+  0.5521371960639954,
+  0.5371236801147461,
+  0.534893274307251
+ ],
+ "baselines": {
+  "persistence": [
+   0.5141211152076721,
+   0.5634371638298035,
+   0.5898396372795105,
+   0.6184978485107422,
+   0.6054165363311768,
+   0.6035668849945068,
+   0.5979734063148499
+  ],
+  "segment_mean": [
+   0.37530896067619324,
+   0.3138195276260376,
+   0.33619362115859985,
+   0.3453883230686188,
+   0.3499656915664673,
+   0.3459891378879547,
+   0.33856600522994995
+  ],
+  "linear": [
+   0.6529500650711707,
+   0.6844756743621994,
+   0.7122085544243704,
+   0.7284105046126973,
+   0.7224545268573137,
+   0.7157404219077523,
+   0.7092428781274529
+  ]
+ },
+ "pr": 21.92130848795193,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "spanish",
+     "wikipedia",
+     "neighbouring",
+     "personalised",
+     "behaviours",
+     "organisers",
+     "minimise",
+     "Question",
+     "Maybe",
+     "specialised"
+    ],
+    "neg": [
+     "preached",
+     "appreciated",
+     "Visa",
+     "notoriously",
+     "accused",
+     "outings",
+     "undefeated",
+     "advocated",
+     "retired",
+     "despite"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "remembered",
+     "recalls",
+     "remembers",
+     "recalling",
+     "remembering",
+     "remember",
+     "memories",
+     "memory"
+    ],
+    "neg": [
+     "yeah",
+     "maybe",
+     "Maybe",
+     "Hmm",
+     "Would",
+     "hmm",
+     "Yeah",
+     "let",
+     "analysed",
+     "interesting"
+    ]
+   },
+   "2": {
+    "pos": [
+     "tho",
+     "indonesia",
+     "maths",
+     "japanese",
+     "friday",
+     "thats",
+     "monday",
+     "aspects",
+     "behaviours",
+     "organised"
+    ],
+    "neg": [
+     "Pussy",
+     "Hockey",
+     "Cavaliers",
+     "percussion",
+     "Wait",
+     "fastball",
+     "Ebony",
+     "wait",
+     "Maybe",
+     "Thrones"
+    ]
+   },
+   "3": {
+    "pos": [
+     "leash",
+     "paragraphs",
+     "moderation",
+     "puppy",
+     "avoidance",
+     "pets",
+     "avoid",
+     "hobbies",
+     "obedience",
+     "sunscreen"
+    ],
+    "neg": [
+     "recall",
+     "recalling",
+     "Remember",
+     "remember",
+     "Recall",
+     "remembers",
+     "remembered",
+     "remembering",
+     "recalled",
+     "recalls"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instruments",
+     "instrument",
+     "violin",
+     "flute",
+     "musical",
+     "guitar",
+     "Instruments",
+     "drums",
+     "bamboo"
+    ],
+    "neg": [
+     "Deadpool",
+     "Hulk",
+     "Netflix",
+     "Dumbledore",
+     "Voldemort",
+     "births",
+     "alliances",
+     "Zuckerberg",
+     "Thrones",
+     "Stark"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instruments",
+     "instrument",
+     "percussion",
+     "musician",
+     "guitar",
+     "Instruments",
+     "orchestra",
+     "musical",
+     "violin",
+     "instrumentation"
+    ],
+    "neg": [
+     "kinda",
+     "parks",
+     "comfy",
+     "vacations",
+     "beaches",
+     "vets",
+     "yummy",
+     "outdoor",
+     "Outdoor",
+     "beach"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "Mention",
+     "mentioned",
+     "notable",
+     "acclaimed",
+     "mentions",
+     "mentioning",
+     "names",
+     "famous",
+     "underrated"
+    ],
+    "neg": [
+     "remember",
+     "remembers",
+     "guitar",
+     "recall",
+     "remembering",
+     "recalling",
+     "Recall",
+     "hardwood",
+     "Hmm",
+     "pedals"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "Spark",
+     "scala",
+     "Seems",
+     "sparks",
+     "kinda",
+     "broker",
+     "Scala",
+     "whats",
+     "Apparently"
+    ],
+    "neg": [
+     "tourist",
+     "sports",
+     "museums",
+     "Basketball",
+     "basketball",
+     "Beach",
+     "beaches",
+     "Sports",
+     "Disneyland",
+     "Baseball"
+    ]
+   }
+  },
+  "write_mean": [
+   "actresses",
+   "Aires",
+   "Garner",
+   "Sabha",
+   "Mellon",
+   "Fay",
+   "Emmy",
+   "heirs",
+   "Greeks",
+   "Libyan"
+  ],
+  "write_pc0": {
+   "pos": [
+    "Antarctic",
+    "genus",
+    "principally",
+    "terminator",
+    "rouge",
+    "mammals",
+    "Olsen",
+    "Antarctica",
+    "whales",
+    "dinosaur"
+   ],
+   "neg": [
+    "hospitality",
+    "hostel",
+    "hotels",
+    "hotel",
+    "guests",
+    "Airbnb",
+    "Apartment",
+    "hometown",
+    "Hotels",
+    "tourists"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "productivity",
+    "batches",
+    "pervasive",
+    "producers",
+    "pesticides",
+    "quantitative",
+    "additives",
+    "stimuli",
+    "pesticide",
+    "gases"
+   ],
+   "neg": [
+    "Sporting",
+    "Olympic",
+    "Wimbledon",
+    "sporting",
+    "Tournament",
+    "Tennis",
+    "tennis",
+    "Charleston",
+    "Beach",
+    "Olympics"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "culinary",
+    "pastry",
+    "pantry",
+    "playful",
+    "Creature",
+    "kitchen",
+    "roasted",
+    "Pork",
+    "tofu",
+    "skillet"
+   ],
+   "neg": [
+    "doping",
+    "Nationwide",
+    "stadiums",
+    "why",
+    "campaigned",
+    "elections",
+    "acres",
+    "vacancies",
+    "diamonds",
+    "cyclists"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "fastball",
+    "scrimmage",
+    "athlete",
+    "workouts",
+    "athletes",
+    "drills",
+    "infield",
+    "Adidas",
+    "locker",
+    "compression"
+   ],
+   "neg": [
+    "pueblo",
+    "peru",
+    "Catalonia",
+    "Kurdish",
+    "Venezuelan",
+    "cuisine",
+    "Colombian",
+    "Visitors",
+    "spanish",
+    "Mexicans"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6815364956855774,
+    0.1567147970199585,
+    0.12148161977529526,
+    0.10048118233680725,
+    0.0899658203125,
+    0.07803893834352493,
+    0.06003782898187637,
+    0.050037682056427
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.0046101463958621025,
+    -0.013218534179031849,
+    0.0011506115552037954,
+    -0.008393420837819576,
+    -0.0024660020135343075,
+    0.009951389394700527,
+    -0.0002452302724123001
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.3549712300300598,
+    0.2077491581439972,
+    0.16032685339450836,
+    0.15962249040603638,
+    0.17635822296142578,
+    0.19605080783367157,
+    0.18703453242778778,
+    0.20313091576099396
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6815364956855774,
+    0.1567147970199585,
+    0.12148161977529526,
+    0.019308842718601227,
+    0.01911023072898388,
+    0.029973104596138,
+    0.018056558445096016,
+    0.014907761476933956
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.0046101463958621025,
+    -0.013218534179031849,
+    0.10442639887332916,
+    0.0803021639585495,
+    0.06610263884067535,
+    0.08028227090835571,
+    0.059337254613637924
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.16747061908245087,
+    0.18631096184253693,
+    0.19229544699192047,
+    0.16287247836589813,
+    0.16437356173992157
+   ],
+   "z_vs_donor_run": [
+    0.3549712300300598,
+    0.2077491581439972,
+    0.16032685339450836,
+    0.5272842645645142,
+    0.452899694442749,
+    0.36332350969314575,
+    0.32068169116973877,
+    0.25257614254951477
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6815364956855774,
+    0.1567147970199585,
+    0.12148161977529526,
+    0.025520265102386475,
+    0.02337227575480938,
+    0.031633082777261734,
+    0.021991057321429253,
+    0.01256799977272749
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.0046101463958621025,
+    -0.013218534179031849,
+    0.07573385536670685,
+    0.07507568597793579,
+    0.07161197066307068,
+    0.06734008342027664,
+    0.038522087037563324
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.24841733276844025,
+    0.22948862612247467,
+    0.20794624090194702,
+    0.1951807141304016,
+    0.1749185472726822
+   ],
+   "z_vs_donor_run": [
+    0.3549712300300598,
+    0.2077491581439972,
+    0.16032685339450836,
+    0.4533408582210541,
+    0.36022305488586426,
+    0.3128162920475006,
+    0.27758488059043884,
+    0.2692283093929291
+   ]
+  },
+  "S_cos_free": [
+   0.5154579877853394,
+   0.5282595157623291,
+   0.5607066750526428,
+   0.5716133117675781,
+   0.5884893536567688,
+   0.5931618213653564,
+   0.5728796124458313
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "donor_start": "<think>\nOkay, let's see. The question is: Kate's parents have three kids. The first kid's name is Peter, the second kid's name is Parker. What is the third kid's name?\n\nHmm. Wait, the first thing that comes to mind is that the question might be a trick question.",
+    "own": [
+     ". \n\nI remember that the set of all sequences with elements from a set S is sometimes called the free monoid on S. But I'm not sure if that's the case here. Wait, the free monoid would be the set of all finite sequences, right? And the operation is concatenation. But here",
+     " there's a lot of research on that. Also, in the case of a country like the US, where the government is more involved, maybe the food industry is more regulated, but that's not the case. The US has some of the most lax regulations on food additives and pesticides compared to other developed countries. So",
+     " some people might prefer more natural options, like herbal remedies or dietary changes. But I should also mention the potential risks of these alternatives, like interactions with other medications or lack of scientific support. It's important to emphasize that any alternative should be discussed with a healthcare provider.\n\nAlso, I need to structure the answer clearly.",
+     " snacks, drinks, and the like.\n\nThen, maybe a section for a bathroom and a small kitchenette. The kitchenette could have a microwave, mini-fridge, and maybe a sink. The bathroom would need a toilet, sink, and shower. But I should check if that's feasible in a 10"
+    ],
+    "corrupt": [
+     ". \n\nI remember that the set of all sequences with elements from a set S is sometimes called the free monoid on S. But I'm not sure if that's the case here. Wait, the free monoid would be the set of all finite sequences, right? And the operation is concatenation. But here",
+     " may not be necessary, but the integration of AI and VR in education could lead to more personalized learning experiences. However, there are concerns about the cost of implementing such technologies, especially in underfunded schools. Also, there's a risk of over-reliance on technology, which might reduce the need for human teachers",
+     ". And when I'm not on tour, I'm working on my own projects, like writing songs and collaborating with other artists. I also have a YouTube channel where I share behind-the-scenes content and connect with fans.\n\nI should also mention that I'm grateful for the support of my fans, without whom I wouldn't",
+     " mention any other names or make up names? No. Just the real ones. For example, if I'm talking about a company, I'll use the actual name, not a fake one. But I should avoid using any personal names unless they're well-known. Let me check if there are any other names I need"
+    ],
+    "chanswap": [
+     ". \n\nI remember that the set of all sequences with elements from a set S is sometimes called the free monoid on S. But I'm not sure if that's the case here. Wait, the free monoid would be the set of all finite sequences, right? And the operation is concatenation. But here",
+     " there's a new one out. I think it's called \"The Batman: The Killing Joke\" or something like that. I should check that out. Also, the Flash movie with Ezra Miller, but I heard it's not great. I might skip that. Maybe the new Marvel movie, but I'm not",
+     " interested in.\n\nBut wait, there's a problem. The user is asking for a list of 25 artists, but the current list has only 20. So I need to add five more. Let me think of some other artists who are relevant to the current music scene.\n\nThere's also the rise of",
+     " the \"Oscar\" race, which was a significant event in the 1980s. However, I need to make sure I'm not mixing up details. \"The Color Purple\" was a major film in 1985, and \"Do the Right Thing\" came out in 19"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "donor_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "own": [
+     " about the role of the ECB. Let me start by outlining the ECB's main functions. The European Central Bank is the central bank for the Eurozone countries. Its primary objective is to maintain price stability, which means keeping inflation low and stable. It does this by setting interest rates, managing the money supply, and using",
+     " that's a lot of variables. Also, I need to consider that there are different types of variables, like integers, floats, strings, etc. But the question is about the number of variables, not their types. So maybe the type isn't a factor here.\n\nWait, but how do programming languages handle variable declarations",
+     ". That's the first part. The second part is about the need for a good machine learning model. Wait, but the question is about the difference between supervised and unsupervised learning. Maybe I should focus on that.\n\nAlso, the user might be looking for a clear, concise explanation with examples. I should make",
+     " and avoid any negative tone. Also, ensure the message is clear and concise. Use a friendly and encouraging tone. Avoid jargon or complex language. Make sure the message flows naturally and is easy to understand. Check for any grammatical errors or awkward phrasing.\n</think>\n\nHere's a revised version of your message with"
+    ],
+    "corrupt": [
+     " about the role of the ECB. Let me start by outlining the ECB's main functions. The European Central Bank is the central bank for the Eurozone countries. Its primary objective is to maintain price stability, which means keeping inflation low and stable. It does this by setting interest rates, managing the money supply, and using",
+     " the changes in the body. For example, if someone is on a restrictive diet, they might not get enough calories, leading to fatigue and weakness. Also, if they're not getting enough protein, they might feel weak and have muscle loss. But I should also consider other factors like sleep, stress, and exercise.",
+     " But I should check for typos or if the user might have meant something else. For example, \"chips\" could refer to potato chips, but since it's paired with \"crisp,\" maybe it's referring to a specific snack. However, the most common pairing is with \"crisp\" as a texture",
+     " vegetarian. Also, I should mention that some people are allergic to certain vegetables, but that's a different topic. So, the answer is vegetables.\n</think>\n\nThe answer is **vegetables**.<|im_end|>\n<|endoftext|>Human: What are the main ingredients in a typical vegetarian dish?\n\nOkay, so I need to figure out"
+    ],
+    "chanswap": [
+     " about the role of the ECB. Let me start by outlining the ECB's main functions. The European Central Bank is the central bank for the Eurozone countries. Its primary objective is to maintain price stability, which means keeping inflation low and stable. It does this by setting interest rates, managing the money supply, and using",
+     " the most important is the structure of the data. If I'm not mistaken, the data is in a JSON format. So I need to parse that JSON into a Python dictionary.\n\nThen, the user wants to extract specific information. Let me think about what that might be. The title is probably the name of the book",
+     " or maybe it's \"The Muppets Take Manhattan\" but that's a 1984 movie, not a 1980s film.\n\nWait, \"The Muppets Take Manhattan\" is a 1984 film, so that's the 1980s. But",
+     " is part of the process of becoming a vampire. Also, I should check if the user is referring to a specific work or if it's a general question. Since they mentioned \"the process of becoming a vampire,\" I can provide a general answer. The process often involves a bite from an existing vampire, which turns the"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking for five factors to consider when deciding where to live. Let me start by breaking down the main aspects people usually think about. First, cost of living is a big one. People want to know if the place is affordable for their budget. Then, job opportunities are important because you",
+    "donor_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "own": [
+     " have a higher risk of developing the condition. This is because the disease is often passed down through families, though it's not always the case. Environmental factors also play a role, like exposure to certain chemicals or toxins.\n\nAnother thing to consider is age. The risk of developing a herniated disc usually increases as people get",
+     " the economic impact of the war.\n\nI should also consider the long-term effects, like the debt the U.S. incurred, which might have affected future economic policies. Additionally, the war's impact on global trade and the rise of other economies post-war could be relevant.\n\nWait, but the question is about the immediate economic",
+     " system is robust to some extent. However, there might be rare cases where even a small change could have a significant impact. But in general, the model is stable.\n</think>\n\nThe system is designed to be robust and stable, with mechanisms in place to handle a wide range of inputs and scenarios. While it is generally",
+     ". **1. Introduction**  \n- **1.1 Background**  \n  - The rapid development of technology has led to the rise of digital marketing.  \n  - Traditional marketing methods are gradually being replaced by digital strategies.  \n  - The importance of data analysis in digital marketing.  \n- **1.2 Purpose"
+    ],
+    "corrupt": [
+     " have a higher risk of developing the condition. This is because the disease is often passed down through families, though it's not always the case. Environmental factors also play a role, like exposure to certain chemicals or toxins.\n\nAnother thing to consider is age. The risk of developing a herniated disc usually increases as people get",
+     " the most efficient way. That's the core of the problem. But how do you model that?\n\nI remember something about the greedy algorithm being used for this. The idea is that you should always take the largest denomination possible first, then move to smaller ones. But is that always correct? Let's think about examples.\n\n",
+     " So, the main point here is that the Hadoop ecosystem includes HDFS and MapReduce. Hadoop is a framework, not just a single tool. It's built for distributed computing, which is important for big data. HDFS is the storage layer, and MapReduce is the processing layer. But Hadoop isn",
+     ", like the user might be asking for a list of songs, artists, or albums. But since the query is vague, I should ask for more details.\n\nWait, the user might be asking for a specific type of music, like popular songs of a certain genre, era, or artist. But without more info,"
+    ],
+    "chanswap": [
+     " have a higher risk of developing the condition. This is because the disease is often passed down through families, though it's not always the case. Environmental factors also play a role, like exposure to certain chemicals or toxins.\n\nAnother thing to consider is age. The risk of developing a herniated disc usually increases as people get",
+     " the overall process of making the drug, like the synthesis steps, could be a factor. Maybe the synthesis involves steps that are more prone to impurities or require more purification.\n\nAnother angle is the intended use of the drug. If it's for a critical condition, even small impurities might be more dangerous, leading to",
+     " in terms of their ability to handle concurrency. But I'm not sure if that's the main point.\n\nWait, the question is about the differences between multi-threaded and multi-process programs. Let me think about the key differences. \n\nFirst, threads share the same memory space, while processes have separate memory spaces. That",
+     " or 30% of the population. That's a significant number. Also, the cost of these treatments might be a barrier for many. Are there any government programs or insurance that covers these services?\n\nThen, the effectiveness of the treatments. I've heard that some people don't see improvements even after treatment. What"
+    ]
+   }
+  ]
+ }
+}

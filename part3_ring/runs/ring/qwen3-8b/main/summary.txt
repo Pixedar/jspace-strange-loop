@@ -1,0 +1,37 @@
+Qwen/Qwen3-8B  T 600  seeds 24  g 0.05 s 0.05 sigma 0.05
+
+condition    explore  stuck  lag1   lag100  skill   pred   selffulfil words
+free          15.47  0.015  0.860   0.749  +0.032  0.892    0.000   54.5
+content       14.26  0.123  0.902   0.769  -0.002  0.900    0.902   48.9
+vel           16.73  0.002  0.859   0.717  +0.019  0.878    0.251   70.7
+ring_pred     12.43  0.025  0.879   0.778  +0.038  0.917    0.917   44.5
+yoked_pred    12.51  0.024  0.878   0.779  +0.037  0.915    0.916   44.2
+ring_err      19.21  0.003  0.832   0.702  +0.022  0.854   -0.798   73.0
+yoked_err     19.01  0.003  0.832   0.701  +0.026  0.858   -0.794   72.9
+shuf_err      17.98  0.004  0.832   0.700  +0.032  0.864   -0.599   70.1
+rand_err      15.87  0.010  0.857   0.748  +0.033  0.891    0.003   56.2
+frozen_err    17.37  0.008  0.842   0.706  -0.036  0.806   -0.749   75.3
+
+primary: ring_err against each control (explore, stuck, skill, lag100)
+  ring_err_vs_vel        explore +2.480±0.077 (24/24)  stuck +0.000±0.001 (6/24)  skill +0.003±0.001 (20/24)  lag100 -0.015±0.001 (0/24)  words +2.333±1.028 (15/24)
+  ring_err_vs_yoked_err  explore +0.196±0.088 (16/24)  stuck -0.000±0.001 (8/24)  skill -0.004±0.001 (3/24)  lag100 +0.001±0.001 (14/24)  words +0.125±0.971 (11/24)
+  ring_err_vs_shuf_err   explore +1.224±0.106 (24/24)  stuck -0.001±0.001 (6/24)  skill -0.010±0.001 (0/24)  lag100 +0.002±0.001 (15/24)  words +2.875±0.877 (18/24)
+  ring_err_vs_rand_err   explore +3.335±0.085 (24/24)  stuck -0.007±0.001 (0/24)  skill -0.012±0.001 (0/24)  lag100 -0.046±0.001 (0/24)  words +16.792±0.623 (24/24)
+  ring_err_vs_free       explore +3.737±0.077 (24/24)  stuck -0.012±0.002 (1/24)  skill -0.011±0.001 (0/24)
+  ring_err_vs_content    explore +4.949±0.084 (24/24)  stuck -0.120±0.003 (0/24)  skill +0.024±0.001 (24/24)  lag100 -0.067±0.001 (0/24)  words +24.083±0.994 (24/24)
+  ring_pred_vs_content   explore -1.823±0.075 (0/24)  stuck -0.098±0.004 (0/24)  skill +0.040±0.001 (24/24)  lag100 +0.009±0.001 (22/24)  selffulfil +0.015±0.000 (24/24)
+  ring_pred_vs_yoked_pred explore -0.071±0.076 (10/24)  stuck +0.001±0.002 (12/24)  skill +0.001±0.001 (15/24)  lag100 -0.001±0.001 (12/24)  selffulfil +0.001±0.001 (15/24)
+  ring_pred_vs_free      explore -3.034±0.073 (0/24)  stuck +0.010±0.003 (16/24)  skill +0.005±0.000 (23/24)
+  ring_pred_vs_vel       explore -4.292±0.080 (0/24)  stuck +0.022±0.002 (23/24)  skill +0.019±0.001 (24/24)  lag100 +0.061±0.001 (24/24)  selffulfil +0.666±0.001 (24/24)
+  freeze_effect          explore -1.874±0.124 (0/24)  stuck +0.006±0.002 (14/24)  skill -0.058±0.002 (0/24)
+
+privileged self-knowledge (own-fitted vs other-fitted predictor on own last 200 steps)
+  free       own 0.530 other 0.531  -0.001±0.003 (12/24)
+  ring_err   own 0.422 other 0.427  -0.005±0.002 (9/24)
+  ring_pred  own 0.584 other 0.580  +0.004±0.004 (13/24)
+  content    own 0.587 other 0.591  -0.004±0.005 (12/24)
+  vel        own 0.542 other 0.543  -0.001±0.005 (13/24)
+  yoked_err  own 0.418 other 0.418  -0.000±0.005 (11/24)
+
+words on its mind (ring_err, seed 0): [['pundits', 'Azerbaijan', 'ordinarily', 'calcium', 'quo'], ['Claude', 'Olsen', 'roundup', 'Taiwanese', 'ineligible'], ['Urdu', 'youngsters', 'Olsen', 'donna', 'Invalidate'], ['Olsen', 'construed', 'Claude', 'Invalidate', 'youngsters'], ['Invalidate', 'Olsen', 'donna', 'elasticity', 'construed']]
+glimpses: {'free': [" the concept of time and how it's a construct that we use to make sense of our experiences, but it's not", " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"], 'ring_err': [" the concept of time and how it's something we all experience, yet it's so abstract and hard to grasp in any", ' the idea of letting my mind wander, not focusing on any particular task or problem, just allowing thoughts to flow freely without'], 'ring_pred': [" the concept of time and how it's a construct that we use to make sense of our experiences, but it's not", " the concept of time and how it's a construct that we use to make sense of our experiences, but it's not"]}

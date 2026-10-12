@@ -1,0 +1,27 @@
+{
+ "gates": {
+  "G0a": true,
+  "G0b_abs": false,
+  "G0b_rel": true,
+  "G0c": true,
+  "G0d": false,
+  "G1b": true,
+  "g_star": 1.0,
+  "G1c": true,
+  "G2": false,
+  "G3": false
+ },
+ "files": [
+  "calib",
+  "g0",
+  "g0_fp32",
+  "g2",
+  "g3",
+  "gain",
+  "pilot"
+ ],
+ "cnt": {
+  "passes": 0,
+  "t_gpu": 0.0
+ }
+}

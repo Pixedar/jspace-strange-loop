@@ -1,0 +1,67 @@
+model Qwen/Qwen3-4B, 24 seeds, last 300 of 600 steps; null coherence (random 25-word sets by usage) 0.186
+abstract axis check: held-out abstract words +0.195, concrete words -0.146
+
+condition   coherence overlap10 overlap10  distinct    sem_pr  sem_step transitio clusters_ shared_pa indiv_sha indiv_coh indiv_per abstractn mind_word  agree
+free           -0.006     0.625     0.551   294.250    17.863     0.020     0.836     9.708     0.834     0.058    -0.002     0.195    -0.002    -0.002  1.00
+content        -0.003     0.667     0.560   257.583    14.009     0.012     0.357     5.875     0.756     0.089     0.001     0.209    -0.002    -0.003  1.00
+vel            -0.005     0.508     0.483   310.250    20.991     0.022     1.022    10.458     0.749     0.091    -0.003     0.163    -0.004    -0.001  1.00
+ring_pred      -0.003     0.690     0.590   259.750    13.843     0.015     0.284     4.417     0.807     0.055    -0.001     0.200    -0.002    -0.005  1.00
+yoked_pred     -0.003     0.689     0.592   257.333    14.212     0.016     0.278     4.333     0.811     0.048    -0.003     0.175    -0.002    -0.005  1.00
+ring_err       -0.005     0.442     0.417   355.708    22.802     0.028     1.308    12.083     0.649     0.129     0.001     0.144    -0.003     0.004  0.99
+yoked_err      -0.004     0.459     0.410   359.000    21.570     0.028     1.302    11.125     0.621     0.144     0.000     0.200    -0.003     0.005  0.98
+shuf_err       -0.005     0.512     0.429   352.500    20.399     0.028     1.173    10.792     0.690     0.114    -0.002     0.162    -0.004     0.004  0.99
+rand_err       -0.006     0.604     0.536   319.333    19.405     0.023     0.895     9.417     0.780     0.082     0.002     0.159    -0.002    -0.002  1.00
+frozen_err     -0.004     0.520     0.410   348.208    19.509     0.025     1.152    10.333     0.650     0.131     0.000     0.226    -0.005     0.006  0.95
+
+paired differences over seeds, ring_err minus control (mean ± se, seeds in favour)
+  vs vel       sem_pr +1.811±0.129 (24/24)  overlap10 -0.066±0.004 (0/24)  distinct +45.458±1.960 (24/24)  indiv_share +0.038±0.004 (24/24)  abstractness +0.001±0.000 (20/24)  mind_words +0.005±0.000 (24/24)
+  vs yoked_err sem_pr +1.232±0.149 (24/24)  overlap10 -0.017±0.005 (6/24)  distinct -3.292±2.639 (10/24)  indiv_share -0.014±0.003 (5/24)  abstractness -0.000±0.000 (9/24)  mind_words -0.001±0.000 (4/24)
+  vs shuf_err  sem_pr +2.403±0.161 (24/24)  overlap10 -0.070±0.004 (0/24)  distinct +3.208±2.446 (14/24)  indiv_share +0.015±0.002 (23/24)  abstractness +0.001±0.000 (24/24)  mind_words +0.000±0.000 (13/24)
+  vs rand_err  sem_pr +3.397±0.124 (24/24)  overlap10 -0.162±0.003 (0/24)  distinct +36.375±2.321 (24/24)  indiv_share +0.047±0.003 (24/24)  abstractness -0.001±0.000 (1/24)  mind_words +0.006±0.000 (24/24)
+  vs free      sem_pr +4.939±0.120 (24/24)  overlap10 -0.183±0.004 (0/24)  distinct +61.458±1.922 (24/24)  indiv_share +0.071±0.002 (24/24)  abstractness -0.001±0.000 (1/24)  mind_words +0.006±0.000 (24/24)
+  vs content   sem_pr +8.793±0.148 (24/24)  overlap10 -0.225±0.004 (0/24)  distinct +98.125±2.124 (24/24)  indiv_share +0.041±0.003 (23/24)  abstractness -0.001±0.000 (0/24)  mind_words +0.007±0.000 (24/24)
+
+words over-represented against free (late steps):
+  free        con, magnesium, swagger, Jiang, villagers, fascinated, enthusiast, regimes, preschool, Bare, Skull, buffet
+  content     tapered, experimental, Zuckerberg, Fusion, buggy, Wade, Booster, Spec, garment, Defendants, Likewise, sail
+  vel         Trout, Michele, Patton, Ecology, asses, smarter, Leigh, inflict, vitality, Ott, offseason, Schema
+  ring_pred   Zuckerberg, Wade, php, Hint, Formula, buggy, Severity, Defendants, Lexington, Likewise, Nadu, Verify
+  yoked_pred  Zuckerberg, Wade, php, Hint, buggy, Nadu, Severity, Defendants, Likewise, Lexington, Verify, leukemia
+  ring_err    Trout, glucose, saber, Ecology, perpetrated, Mutation, cropping, hog, deputies, sensational, vacations, extinction
+  yoked_err   Trout, saber, Mutation, Ecology, glucose, perpetrated, coolest, deputies, vacations, intestine, Dunn, sensational
+  shuf_err    glucose, Ecology, Trout, Mutation, perpetrated, nip, saber, Xml, Cypress, deputies, extinction, vacations
+  rand_err    Snyder, deadliest, Felix, asses, Guerrero, sail, Ogre, Alma, trot, bogus, orc, portrayed
+  frozen_err  Ecology, glucose, Mutation, Xml, saber, Trout, Griffin, cropping, perpetrated, Vid, Cypress, hog
+
+one mind per condition, top-5 words at steps 100..600:
+  free      Genetics, wont, malaria, Swagger, Stat | sclerosis, construed, Syntax, Inflate, Genetics | Romero, Flickr, construed, Syntax, Livingston | Genetics, Syntax, Romero, Inflate, Livingston | reprint, Syntax, worthwhile, Genetics, Romero | reprint, worthwhile, Romero, construed, Genetics
+  content   Genetics, malaria, wont, Flickr, Swagger | Inflate, Syntax, construed, malaria, dives | Syntax, construed, Romero, Flickr, Inflate | Genetics, construed, Syntax, Romero, Livingston | reprint, Syntax, Romero, worthwhile, defenseman | worthwhile, reprint, Romero, Swagger, Genetics
+  vel       Genetics, malaria, Stat, Lexington, wont | sclerosis, Inflate, construed, kosher, dumps | Romero, construed, Flickr, Syntax, Livingston | Genetics, Romero, Inflate, Canucks, Livingston | reprint, Syntax, Romero, construed, Genetics | Romero, reprint, construed, worthwhile, ailments
+  ring_err  construed, wont, Genetics, Chun, Inflate | Syntax, Chun, construed, Genetics, sclerosis | rgb, Romero, Sail, Seq, Constructs | construed, Genetics, Romero, achievable, Livingston | reprint, Romero, Syntax, crc, construed | Romero, worthwhile, Genetics, reprint, ailments
+  rand_err  Genetics, wont, construed, Inflate, malaria | construed, Inflate, Syntax, dives, Stat | Romero, Syntax, Flickr, Genetics, construed | Genetics, Syntax, Romero, construed, Livingston | reprint, Syntax, Romero, crc, Genetics | reprint, Romero, worthwhile, Syntax, Genetics
+
+semantic clusters (k-means on the embeddings of the 3000 most used words):
+   0 unix, libs, txt, Txt, dex, https, specified, lug
+   1 Orc, Barrel, Chapel, Citadel, Ogre, Gala, Daw, Skull
+   2 syndrome, stimulus, Syndrome, dementia, variability, vitality, Sanity, mindset
+   3 Further, Furthermore, Aside, Various, Alternatively, Specify, Anything, Conditional
+   4 Docs, Traits, Syntax, Labels, Template, Specifies, Metadata, Label
+   5 unbelievable, outrageous, insanely, bogus, unaware, needless, notorious, nonexistent
+   6 depicted, touted, subjected, showcased, teamed, tended, labelled, pledged
+   7 Variety, Skill, Food, Relationship, Risk, Deal, Stuff, Chemistry
+   8 specifying, specifies, specified, consenting, specify, alleging, containing, indicative
+   9 exploit, exploiting, unleash, leverage, redeem, evoke, inflict, Interpret
+  10 transport, transportation, transports, Transport, transported, transporting, sail, transporter
+  11 Shapiro, Bauer, Schiff, Schmidt, Zuckerberg, Maher, Burke, Stephan
+  12 Perez, Cruz, Sergio, Cristina, Ruiz, Eduardo, Enrique, Diaz
+  13 horrible, debilitating, appalling, crippling, horribly, devastating, monstrous, disgusting
+  14 Werner, Karl, Levin, Fischer, Schmidt, Bauer, Keller, Levine
+  15 domingo, verde, boca, Verde, bona, Santo, versa, Banco
+  16 Gavin, Bray, Dunn, Lloyd, Griffin, Vance, Bryan, Lynch
+  17 showcases, schemes, parties, receptions, sheds, vids, tricks, showcase
+  18 celery, jelly, parsley, seasoning, ingredient, spinach, pickle, Juice
+  19 gag, gorge, pinch, trot, tongue, tote, verge, tits
+  20 loyalty, decency, honesty, liberalism, belief, faith, willingness, intellect
+  21 Overlay, Updates, Uploaded, Docs, Update, Playlist, Signup, Content
+  22 defendants, staffers, attendees, respondents, educators, policymakers, publishers, exporters
+  23 tighter, closer, nearer, tougher, smarter, closest, shortest, happiest

@@ -1,0 +1,123 @@
+PCA explained [0.193 0.098 0.073]
+
+wandering (mean cos at lags 1,5,20,60 | chance)
+  free/pre       0.23 0.15 0.09 0.08 | 0.08
+  free/post      0.26 0.19 0.11 0.13 | 0.10
+  loop/pre       0.41 0.38 0.35 0.32 | 0.32
+  loop/post      0.41 0.37 0.34 0.33 | 0.32
+  yoked/pre      0.40 0.36 0.31 0.30 | 0.31
+  yoked/post     0.41 0.36 0.34 0.33 | 0.33
+  avg/pre        0.41 0.37 0.36 0.32 | 0.29
+  avg/post       0.43 0.40 0.37 0.33 | 0.32
+  perturb/pre    0.41 0.38 0.35 0.32 | 0.32
+  perturb/post   0.42 0.38 0.35 0.34 | 0.33
+  ablate/pre     0.41 0.38 0.35 0.32 | 0.32
+  ablate/post    0.25 0.16 0.09 0.09 | 0.10
+
+fidelity {'m': (0.584, 0.448, 0.5), 'fid_10_0.5': (0.606, 0.498, 0.38), 'fid_14_0.5': (0.679, 0.503, 0.63)}
+
+self-model stability (consecutive cos, pre) vs content windows; cross-seed
+  free     self 0.725  content 0.463  cross 0.662  own-symbol 0.785 vs others 0.795  recon nan  generic 0.791
+  loop     self 0.898  content 0.832  cross 0.832  own-symbol 0.868 vs others 0.866  recon 0.890  generic 0.902
+  yoked    self 0.873  content 0.782  cross 0.839  own-symbol 0.875 vs others 0.877  recon 0.869  generic 0.903
+  avg      self 0.865  content 0.854  cross 0.771  own-symbol 0.829 vs others 0.816  recon 0.654  generic 0.849
+  perturb  self 0.898  content 0.832  cross 0.832  own-symbol 0.868 vs others 0.866  recon 0.890  generic 0.902
+  ablate   self 0.898  content 0.832  cross 0.832  own-symbol 0.868 vs others 0.866  recon 0.890  generic 0.902
+
+prediction of the next window: own self-model | other row's | past window | injected  (|| beyond past: own, other)
+  free     0.369 | 0.303 | 0.485 | nan  || 0.122, 0.173  retrieval 0.15
+  loop     0.575 | 0.523 | 0.825 | 0.575  || 0.121, 0.162  retrieval 0.24
+  yoked    0.556 | 0.531 | 0.792 | 0.570  || 0.105, 0.176  retrieval 0.15
+  avg      0.513 | 0.437 | 0.856 | 0.831  || 0.070, 0.117  retrieval 0.26
+  perturb  0.571 | 0.512 | 0.824 | 0.571  || 0.112, 0.153  retrieval 0.24
+  ablate   0.571 | 0.512 | 0.824 | 0.571  || 0.112, 0.153  retrieval 0.24
+
+prediction_tests
+  free                                     own_vs_other +0.066±0.007  perp_own_vs_other -0.050±0.005  retrieval +0.150±0.011  future_vs_past -0.166±0.007
+  loop                                     own_vs_other +0.052±0.002  perp_own_vs_other -0.041±0.003  retrieval +0.245±0.026  future_vs_past -0.037±0.002
+  yoked                                    own_vs_other +0.025±0.003  perp_own_vs_other -0.071±0.004  retrieval +0.147±0.019  future_vs_past -0.062±0.003
+  avg                                      own_vs_other +0.076±0.007  perp_own_vs_other -0.048±0.003  retrieval +0.258±0.032  future_vs_past -0.043±0.002
+  perturb                                  own_vs_other +0.059±0.004  perp_own_vs_other -0.040±0.003  retrieval +0.239±0.037  future_vs_past -0.041±0.002
+  ablate                                   own_vs_other +0.059±0.004  perp_own_vs_other -0.040±0.003  retrieval +0.239±0.037  future_vs_past -0.041±0.002
+  yoked_own_vs_injected                    diff -0.014 ± 0.004  t -3.1  (1/10 seeds >0)
+  yoked_own_vs_injected_perp               diff -0.101 ± 0.006  t -16.9  (0/10 seeds >0)
+  avg_own_vs_injected                      diff -0.318 ± 0.006  t -49.4  (0/10 seeds >0)
+
+coherence_tests
+  loop_vs_free                             diff +0.246 ± 0.015  t +16.0  (10/10 seeds >0)
+  yoked_vs_free                            diff +0.222 ± 0.014  t +16.2  (10/10 seeds >0)
+  avg_vs_free                              diff +0.248 ± 0.022  t +11.1  (10/10 seeds >0)
+  perturb_vs_free                          diff +0.246 ± 0.015  t +16.0  (10/10 seeds >0)
+  ablate_vs_free                           diff +0.246 ± 0.015  t +16.0  (10/10 seeds >0)
+  loop_vs_free_proj                        diff +0.147 ± 0.012  t +11.8  (10/10 seeds >0)
+  yoked_vs_free_proj                       diff +0.126 ± 0.012  t +10.7  (10/10 seeds >0)
+  avg_vs_free_proj                         diff -0.015 ± 0.007  t -2.2  (3/10 seeds >0)
+  perturb_vs_free_proj                     diff +0.147 ± 0.012  t +11.8  (10/10 seeds >0)
+  ablate_vs_free_proj                      diff +0.147 ± 0.012  t +11.8  (10/10 seeds >0)
+  loop_vs_yoked                            diff +0.024 ± 0.012  t +1.9  (8/10 seeds >0)
+  loop_vs_yoked_proj                       diff +0.021 ± 0.010  t +2.2  (8/10 seeds >0)
+
+selfmodel_tests
+  loop_vs_yoked_cons_ind                   diff +0.081 ± 0.014  t +5.7  (9/10 seeds >0)
+  loop_vs_yoked_recon_ind                  diff +0.070 ± 0.020  t +3.5  (9/10 seeds >0)
+  loop_vs_free_cons_ind                    diff +0.505 ± 0.029  t +17.1  (10/10 seeds >0)
+  yoked_vs_free_cons_ind                   diff +0.424 ± 0.028  t +14.9  (10/10 seeds >0)
+  free_self_vs_content_stability           diff +0.262 ± 0.016  t +16.3  (10/10 seeds >0)
+  free_own_vs_other_symbol                 diff -0.010 ± 0.012  t -0.8  (5/10 seeds >0)
+  loop_self_vs_content_stability           diff +0.066 ± 0.007  t +9.6  (10/10 seeds >0)
+  loop_own_vs_other_symbol                 diff +0.002 ± 0.007  t +0.3  (6/10 seeds >0)
+  loop_vs_free_cons                        diff +0.173 ± 0.012  t +14.8  (10/10 seeds >0)
+  yoked_self_vs_content_stability          diff +0.090 ± 0.007  t +12.2  (10/10 seeds >0)
+  yoked_own_vs_other_symbol                diff -0.002 ± 0.002  t -1.0  (5/10 seeds >0)
+  yoked_vs_free_cons                       diff +0.148 ± 0.010  t +14.7  (10/10 seeds >0)
+  avg_self_vs_content_stability            diff +0.011 ± 0.008  t +1.3  (8/10 seeds >0)
+  avg_own_vs_other_symbol                  diff +0.013 ± 0.016  t +0.8  (7/10 seeds >0)
+  avg_vs_free_cons                         diff +0.140 ± 0.011  t +12.8  (10/10 seeds >0)
+  perturb_self_vs_content_stability        diff +0.066 ± 0.007  t +9.6  (10/10 seeds >0)
+  perturb_own_vs_other_symbol              diff +0.002 ± 0.007  t +0.3  (6/10 seeds >0)
+  perturb_vs_free_cons                     diff +0.173 ± 0.012  t +14.8  (10/10 seeds >0)
+  ablate_self_vs_content_stability         diff +0.066 ± 0.007  t +9.6  (10/10 seeds >0)
+  ablate_own_vs_other_symbol               diff +0.002 ± 0.007  t +0.3  (6/10 seeds >0)
+  ablate_vs_free_cons                      diff +0.173 ± 0.012  t +14.8  (10/10 seeds >0)
+  loop_vs_yoked_cons                       diff +0.025 ± 0.005  t +5.1  (9/10 seeds >0)
+  loop_vs_yoked_recon                      diff +0.020 ± 0.006  t +3.3  (9/10 seeds >0)
+  yoked_recon_vs_own_cons                  diff -0.003 ± 0.005  t -0.6  (5/10 seeds >0)
+  loop_vs_avg_recon                        diff +0.235 ± 0.006  t +38.0  (10/10 seeds >0)
+
+generic share of self-model norm 0.61
+  free     individuated: consecutive 0.152 cross-seed -0.096 recon nan
+  loop     individuated: consecutive 0.657 cross-seed 0.494 recon 0.631
+  yoked    individuated: consecutive 0.576 cross-seed 0.497 recon 0.560
+  avg      individuated: consecutive 0.592 cross-seed 0.367 recon nan
+  perturb  individuated: consecutive 0.657 cross-seed 0.494 recon 0.631
+  ablate   individuated: consecutive 0.657 cross-seed 0.494 recon 0.631
+
+perturb
+  traj_reorganises               diff +0.038 ± 0.022  t +1.8  (7/10)
+  traj_late                      diff -0.001 ± 0.008  t -0.1  (4/10)
+  self_next_to_foreign           diff +0.036 ± 0.014  t +2.5  (9/10)
+  self_late_to_foreign           diff -0.002 ± 0.008  t -0.2  (6/10)
+  self_next_to_old               diff -0.018 ± 0.018  t -1.0  (5/10)
+  self_late_to_old               diff -0.003 ± 0.012  t -0.3  (5/10)
+
+ablate
+  long_loop_vs_ablate            diff +0.241 ± 0.011  t +21.2  (10/10)
+  long_ablate_post_vs_pre        diff -0.242 ± 0.011  t -21.5  (0/10)
+  long_loop_post_vs_pre          diff -0.001 ± 0.019  t -0.1  (5/10)
+  long_ablate_vs_free_post       diff -0.024 ± 0.006  t -4.2  (0/10)
+
+themes
+   0 n=  943 barcelona courtyard Hwy Nearby GOODMAN Outdoor {'free': 0.09, 'loop': 0.02, 'yoked': 0.02, 'avg': 0.03, 'perturb': 0.02, 'ablate': 0.05}
+   1 n= 1775 OFFSET multiplier XII Estimated seq coefficients {'free': 0.02, 'loop': 0.05, 'yoked': 0.04, 'avg': 0.23, 'perturb': 0.06, 'ablate': 0.04}
+   2 n=  878 yeah imdb youre kinda Yeah isbn {'free': 0.07, 'loop': 0.03, 'yoked': 0.03, 'avg': 0.01, 'perturb': 0.03, 'ablate': 0.05}
+   3 n= 2722 iNdEx dataSet methodologies technologies POSSIBILITY GOODMAN {'free': 0.06, 'loop': 0.14, 'yoked': 0.14, 'avg': 0.09, 'perturb': 0.14, 'ablate': 0.09}
+   4 n=  920 brightness Nearby png luz iNdEx shaded {'free': 0.08, 'loop': 0.02, 'yoked': 0.02, 'avg': 0.05, 'perturb': 0.02, 'ablate': 0.04}
+   5 n= 1666 iNdEx isbn bibliography Institut doctoral Semester {'free': 0.07, 'loop': 0.07, 'yoked': 0.07, 'avg': 0.04, 'perturb': 0.08, 'ablate': 0.08}
+   6 n= 2249 DEALINGS yourselves ourselves OVERRIDE considerations POSSIBILITY {'free': 0.07, 'loop': 0.1, 'yoked': 0.11, 'avg': 0.08, 'perturb': 0.1, 'ablate': 0.09}
+   7 n= 1699 iNdEx yeah kinda youre Hmm kinds {'free': 0.08, 'loop': 0.08, 'yoked': 0.08, 'avg': 0.03, 'perturb': 0.08, 'ablate': 0.08}
+   8 n= 2426 iNdEx POSSIBILITY DEALINGS distinctions genera unparalleled {'free': 0.13, 'loop': 0.06, 'yoked': 0.06, 'avg': 0.19, 'perturb': 0.06, 'ablate': 0.1}
+   9 n= 1909 policymakers GOODMAN nacional economies DEALINGS governments {'free': 0.06, 'loop': 0.1, 'yoked': 0.1, 'avg': 0.03, 'perturb': 0.1, 'ablate': 0.09}
+  10 n= 1078 domingo setUp Schedule goTo reimburse nxt {'free': 0.08, 'loop': 0.04, 'yoked': 0.04, 'avg': 0.02, 'perturb': 0.03, 'ablate': 0.06}
+  11 n=  779 FAMILY GOODMAN nacional spouses yrs elle {'free': 0.07, 'loop': 0.02, 'yoked': 0.02, 'avg': 0.02, 'perturb': 0.02, 'ablate': 0.05}
+  12 n= 2055 profitability partnerships PROCUREMENT finalized TEAM Jazeera {'free': 0.07, 'loop': 0.11, 'yoked': 0.11, 'avg': 0.03, 'perturb': 0.1, 'ablate': 0.09}
+  13 n= 2901 dataSet dataset OVERRIDE additive implementations enhancements {'free': 0.05, 'loop': 0.15, 'yoked': 0.15, 'avg': 0.13, 'perturb': 0.16, 'ablate': 0.09}

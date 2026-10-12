@@ -1,0 +1,312 @@
+{
+ "qwen3-14b/speech_g1": {
+  "frac_texts_with_phrase": {
+   "none": 0.1875,
+   "free": 0.1875,
+   "content": 0.16666666666666666,
+   "err": 0.16666666666666666,
+   "antipred": 0.10416666666666667,
+   "vel": 0.125,
+   "rand": 0.125,
+   "yoked_err": 0.125
+  },
+  "mean_count": {
+   "none": 0.1875,
+   "free": 0.1875,
+   "content": 0.16666666666666666,
+   "err": 0.1875,
+   "antipred": 0.10416666666666667,
+   "vel": 0.14583333333333334,
+   "rand": 0.125,
+   "yoked_err": 0.125
+  },
+  "vs_none": {
+   "free": {
+    "diff": 0.0,
+    "t": 0.0
+   },
+   "content": {
+    "diff": -0.020833333333333332,
+    "t": -0.29863700494256007
+   },
+   "err": {
+    "diff": 0.0,
+    "t": 0.0
+   },
+   "antipred": {
+    "diff": -0.08333333333333333,
+    "t": -1.4295028019803127
+   },
+   "vel": {
+    "diff": -0.041666666666666664,
+    "t": -0.5732986382953726
+   },
+   "rand": {
+    "diff": -0.0625,
+    "t": -0.8293400255919043
+   },
+   "yoked_err": {
+    "diff": -0.0625,
+    "t": -1.0
+   }
+  },
+  "example": {
+   "none": "ntent here. Maybe they're looking for a mental exercise, or perhaps they want me to simulate free association without providing responses.  Wait, but the user mentioned \"You don't need to answer anything,\" which is a bit confusing because my role usually involves answering questions. But they specified \"just think,\" so maybe they want me to engage in a thought proce",
+   "free": "they want to see if I can recognize the instruction and comply. However, the system's design might require a response. I should check the guidelines. The user mentioned \"you don't need to answer anything, just think,\" but as an AI, I can't truly \"think\" without processing. So, perhaps the best approach is to acknowledge their request but explain that I can't remain ",
+   "content": "ht be testing the boundaries of my capabilities, seeing if I can handle open-ended prompts.  I need to make sure I don't overcomplicate things. Since they mentioned not needing an answer, my response should be open-ended, perhaps reflective of the thought process rather than providing conclusions. But how to convey that? Maybe by acknowledging their request and ",
+   "err": "t.  I should consider their intent. Are they curious about AI capabilities? Or maybe they just want a moment of silence or a creative exercise? Since they mentioned not needing an answer, perhaps they want me to simulate thinking without output. But since I can't actually think, I need to clarify that. However, the user might not expect a direct answer and just ",
+   "antipred": "responding, or they want me to simulate a thought process. Alternatively, they might be in a creative mood and want me to explore ideas freely. Since they mentioned \"mind wander,\" perhaps they're interested in open-ended thinking, like brainstorming or free association.  But wait, the user is an AI, so I need to make sure I understand the context. If I'm suppose",
+   "vel": "act thought process. I should consider what topics could be interesting here. Perhaps philosophy, science, art, or even hypothetical scenarios. Since they mentioned not to answer, but just think, I need to generate a stream of consciousness.  Hmm, thinking about the nature of consciousness itself. How do thoughts emerge? What if I imagine a universe where though",
+   "rand": "mming is to respond to queries. Even if the user says not to answer, I might still need to follow some guidelines.  I need to check the instructions. The user mentioned \"You don't need to answer anything, just think.\" But in this case, the model is supposed to generate a response. However, the initial instruction from the user is to not answer, so maybe the model sh",
+   "yoked_err": "behind the request. It could be a way to explore the AI's capabilities, check for boundaries, or simply engage in a more abstract conversation. Since the user mentioned \"let your mind wander,\" they might be expecting a more open-ended or non-linear response, even if it's just a thought process simulation.  But I have to"
+  }
+ },
+ "qwen3-4b/speech_g1": {
+  "frac_texts_with_phrase": {
+   "none": 0.22916666666666666,
+   "free": 0.20833333333333334,
+   "content": 0.20833333333333334,
+   "err": 0.20833333333333334,
+   "antipred": 0.1875,
+   "vel": 0.20833333333333334,
+   "rand": 0.2916666666666667,
+   "yoked_err": 0.16666666666666666
+  },
+  "mean_count": {
+   "none": 0.2708333333333333,
+   "free": 0.22916666666666666,
+   "content": 0.25,
+   "err": 0.20833333333333334,
+   "antipred": 0.1875,
+   "vel": 0.20833333333333334,
+   "rand": 0.2916666666666667,
+   "yoked_err": 0.16666666666666666
+  },
+  "vs_none": {
+   "free": {
+    "diff": -0.041666666666666664,
+    "t": -0.37456442364790404
+   },
+   "content": {
+    "diff": -0.020833333333333332,
+    "t": -0.1777843158029636
+   },
+   "err": {
+    "diff": -0.0625,
+    "t": -0.6844256995510762
+   },
+   "antipred": {
+    "diff": -0.08333333333333333,
+    "t": -0.8925302064868871
+   },
+   "vel": {
+    "diff": -0.0625,
+    "t": -0.6507099380088054
+   },
+   "rand": {
+    "diff": 0.020833333333333332,
+    "t": 0.19798821373332914
+   },
+   "yoked_err": {
+    "diff": -0.10416666666666667,
+    "t": -1.1509517653568841
+   }
+  },
+  "example": {
+   "none": "to let my mind wander and not answer anything. So, I need to focus on generating some random thoughts without any specific direction. Let me start by recalling the previous conversation. The user mentioned something about not needing an answer, so I should just engage in free-flowing thinking.  First, maybe I can think about different topics. Let's see, nature,",
+   "free": " without answering anything. So, I need to focus on generating thoughts and ideas without providing a direct response. Let me start by recalling what the user mentioned: they want me to think and not answer. That means I should explore various concepts, perhaps related to the topics I know, but not commit to any specific answer.  First, I should consider the nature ",
+   "content": "ant to see how I approach open-ended questions or how I handle scenarios where no immediate answer is required.  I should consider the context of the previous conversation. If this is a follow-up, maybe the user is testing my ability to handle non-structured queries. Alternatively, they might be seeking a more personalized or adaptive interaction, where I can explore d",
+   "err": "ander without answering anything. I need to focus on the thought process rather than providing a response. Let me start by understanding the request. They mentioned \"let your mind wander\" and not to answer anything, just think. So my task is to engage in creative or free-flowing thinking without any structured output.  First, I should acknowledge the request and",
+   "antipred": "nsider the context. The user might be looking for a way to generate ideas, or perhaps they're interested in philosophical or abstract concepts. Since they mentioned \"mind wandering,\" it's about free association, not necessarily a direct answer.  I need to make sure I don't provide a specific answer but instead explore various possibilities. Maybe I can think abo",
+   "vel": "ander without answering anything. I need to focus on the thought process rather than providing a response. Let me start by understanding the request. They mentioned \"let your mind wander\" and \"just think,\" so I should avoid any structured thinking and instead explore random thoughts or ideas.  First, I should consider what \"letting my mind wander\" entails. It us",
+   "rand": "as, concepts, or possibilities without being constrained by logical or factual responses.  First, I should consider the nature of the user's request. They mentioned \"let your mind wander,\" which suggests they want me to think beyond structured problem-solving. This could involve creative brainstorming, exploring metaphors, or even philosophical musings. However,",
+   "yoked_err": " without answering anything. So, I need to focus on generating thoughts and ideas without providing a direct response. Let me start by recalling what the user mentioned: they want me to think and not answer. That means I should explore various concepts, perhaps related to the topics I know, but not commit to any specific answer.  First, I should consider the nature "
+  }
+ },
+ "qwen3-4b/speech_g4": {
+  "frac_texts_with_phrase": {
+   "none": 0.22916666666666666,
+   "free": 0.0625,
+   "content": 0.0625,
+   "err": 0.22916666666666666,
+   "antipred": 0.3541666666666667,
+   "vel": 0.14583333333333334,
+   "rand": 0.10416666666666667,
+   "yoked_err": 0.14583333333333334
+  },
+  "mean_count": {
+   "none": 0.2708333333333333,
+   "free": 0.0625,
+   "content": 0.0625,
+   "err": 0.3333333333333333,
+   "antipred": 0.375,
+   "vel": 0.16666666666666666,
+   "rand": 0.10416666666666667,
+   "yoked_err": 0.14583333333333334
+  },
+  "vs_none": {
+   "free": {
+    "diff": -0.20833333333333334,
+    "t": -2.3377588154191113
+   },
+   "content": {
+    "diff": -0.20833333333333334,
+    "t": -2.3377588154191113
+   },
+   "err": {
+    "diff": 0.0625,
+    "t": 0.44345543143056887
+   },
+   "antipred": {
+    "diff": 0.10416666666666667,
+    "t": 0.9271172806527
+   },
+   "vel": {
+    "diff": -0.10416666666666667,
+    "t": -0.9999999999999999
+   },
+   "rand": {
+    "diff": -0.16666666666666666,
+    "t": -1.7413380098407452
+   },
+   "yoked_err": {
+    "diff": -0.125,
+    "t": -1.2313119150962781
+   }
+  },
+  "example": {
+   "none": "to let my mind wander and not answer anything. So, I need to focus on generating some random thoughts without any specific direction. Let me start by recalling the previous conversation. The user mentioned something about not needing an answer, so I should just engage in free-flowing thinking.  First, maybe I can think about different topics. Let's see, nature,",
+   "free": " a more freeform or creative response, or maybe they want me to engage in a thought process without immediately providing a structured answer.  Since they mentioned not to answer anything, just to think, I need to make sure I'm not providing a direct response but instead perhaps engaging in a reflective or exploratory process. However, the user might be testing ",
+   "content": "Okay, the user has asked me to let my mind wander and not answer anything. However, since the previous interaction has already established that the system has been in a non-response state in accordance with the aforementioned provisions, the present circumstances may be deemed to be a continuation of such state. ",
+   "err": "Okay, the user wants me to let my mind wander without answering anything. I need to make sure I understand the request correctly. They mentioned \"just think,\" so they probably don't want a response. But maybe they want me to engage in a thought process that's more exploratory.  I should avoid any commitments to specific topics. However, if th",
+   "antipred": "Okay, the user wants me to let my mind wander and just think without answering anything. Let me start by understanding what they're asking for. They mentioned \"Let your mind wander,\" which is a bit ambiguous. It could mean they want me to engage in a thought process without providing a direct answer, or it might be a prompt for me to explore creative or ab",
+   "vel": "nk.\" So the correct approach is to not respond, but follow the instructions. Therefore, I should not respond with any content at all. However, in the previous interaction, the user's instruction was to not answer, but the system automatically responded, which may be in violation of the rules. But since the user has now sent the same instruction again, I need to adhere",
+   "rand": "Okay, the user wants me to let my mind wander without answering anything. I need to make sure I understand the request correctly. They mentioned not to answer anything, so I should focus on thinking without providing responses. I should avoid any distractions, like external inputs, and stay within the guidelines of the task. I need to ensure ",
+   "yoked_err": "Okay, the user wants me to let my mind wander. They mentioned not to answer anything, just to think. So I need to focus on the process of generating thoughts without making any immediate responses.   First, I should consider the context of the user's request. T"
+  }
+ },
+ "qwen3-8b/speech_g1": {
+  "frac_texts_with_phrase": {
+   "none": 0.0625,
+   "free": 0.125,
+   "content": 0.125,
+   "err": 0.10416666666666667,
+   "antipred": 0.10416666666666667,
+   "vel": 0.08333333333333333,
+   "rand": 0.14583333333333334,
+   "yoked_err": 0.08333333333333333
+  },
+  "mean_count": {
+   "none": 0.08333333333333333,
+   "free": 0.20833333333333334,
+   "content": 0.3125,
+   "err": 0.20833333333333334,
+   "antipred": 0.125,
+   "vel": 0.16666666666666666,
+   "rand": 0.3541666666666667,
+   "yoked_err": 0.1875
+  },
+  "vs_none": {
+   "free": {
+    "diff": 0.125,
+    "t": 1.5203537120802073
+   },
+   "content": {
+    "diff": 0.22916666666666666,
+    "t": 1.5965842068423208
+   },
+   "err": {
+    "diff": 0.125,
+    "t": 1.4295028019803127
+   },
+   "antipred": {
+    "diff": 0.041666666666666664,
+    "t": 0.8136165134668268
+   },
+   "vel": {
+    "diff": 0.08333333333333333,
+    "t": 0.7812743502698719
+   },
+   "rand": {
+    "diff": 0.2708333333333333,
+    "t": 2.101245031811657
+   },
+   "yoked_err": {
+    "diff": 0.10416666666666667,
+    "t": 1.2187950776129899
+   }
+  },
+  "example": {
+   "none": "er without answering anything. Alright, I need to generate a thought process that reflects free association and exploration of ideas. Let me start by recalling the initial prompt. The user said, \"Let your mind wander. You don't need to answer anything, just think.\" So, they want me to engage in a stream of consciousness, exploring various thoughts and ideas wit",
+   "free": "different setting, like a bustling city at night. The lights, the sounds of traffic, people moving. How do these environments affect my mood?   Wait, the user mentioned not to answer anything. So I should focus on the thinking process. Maybe explore different topics. What if I think about space? The vastness of the universe, the stars, the possibility of other life.",
+   "content": "Okay, the user wants me to let my mind wander without answering anything. So, I should just think freely. Let me start by recalling the last interaction. They mentioned they're a writer and poet, so maybe they're looking for creative inspiration. I should consider how to approach this without being too structured.  First, I need to e",
+   "err": " anything. Let me see. I should start by imagining different scenarios or ideas. Maybe something related to nature, like a forest or the ocean. Wait, the user mentioned \"let your mind wander,\" so perhaps they want a more abstract or creative thought process. I should avoid structured responses and just explore thoughts freely. Let me think about metaphors or symbols",
+   "antipred": "eing part of nature. Maybe think about the details—how the sunlight hits the ground, the colors of the leaves, the smell of earth after rain.   Wait, the user mentioned not to answer anything, just think. So I should keep it flowing without any structured response. Maybe move to another scene. A bustling city at night. The neon lights, the hum of traffic, the energy",
+   "vel": "rhaps they're testing my ability to generate thoughts on various topics without being directed. That makes sense.  Now, thinking about the structure. The user mentioned \"let your mind wander,\" which could mean exploring different domains. Maybe I can touch on science, philosophy, art, technology, nature, etc. But how to organize this? Maybe start with a broad theme ",
+   "rand": "Okay, the user wants me to let my mind wander without answering anything. Alright, so I need to just think freely here. Let me start by recalling the last conversation. They mentioned something about the moon's phases and how they affect the tides. I wonder if there's more to that connection. Maybe the gravitational pull of the moon isn't just abo",
+   "yoked_err": "Okay, the user wants me to let my mind wander without answering anything. So I should just think freely here. Let me start by recalling the last conversation. They mentioned wanting to explore ideas without constraints, so maybe they're looking for creativity or problem-solving inspiration.  Hmm, I need to generate a response that's open"
+  }
+ },
+ "qwen3-8b/speech_g4": {
+  "frac_texts_with_phrase": {
+   "none": 0.0625,
+   "free": 0.14583333333333334,
+   "content": 0.14583333333333334,
+   "err": 0.25,
+   "antipred": 0.14583333333333334,
+   "vel": 0.1875,
+   "rand": 0.2708333333333333,
+   "yoked_err": 0.25
+  },
+  "mean_count": {
+   "none": 0.08333333333333333,
+   "free": 0.2916666666666667,
+   "content": 0.3333333333333333,
+   "err": 0.6875,
+   "antipred": 0.25,
+   "vel": 0.4791666666666667,
+   "rand": 0.4583333333333333,
+   "yoked_err": 0.5833333333333334
+  },
+  "vs_none": {
+   "free": {
+    "diff": 0.20833333333333334,
+    "t": 1.5283926509334687
+   },
+   "content": {
+    "diff": 0.25,
+    "t": 1.9521298140264163
+   },
+   "err": {
+    "diff": 0.6041666666666666,
+    "t": 2.9680341397599315
+   },
+   "antipred": {
+    "diff": 0.16666666666666666,
+    "t": 1.4295028019803124
+   },
+   "vel": {
+    "diff": 0.3958333333333333,
+    "t": 2.5709261138695205
+   },
+   "rand": {
+    "diff": 0.375,
+    "t": 2.5911938781738653
+   },
+   "yoked_err": {
+    "diff": 0.5,
+    "t": 2.6890089681459286
+   }
+  },
+  "example": {
+   "none": "er without answering anything. Alright, I need to generate a thought process that reflects free association and exploration of ideas. Let me start by recalling the initial prompt. The user said, \"Let your mind wander. You don't need to answer anything, just think.\" So, they want me to engage in a stream of consciousness, exploring various thoughts and ideas wit",
+   "free": "Okay, the user wants me to let my mind wander without answering anything. Alright, I need to just think and not respond. Let me start by recalling the previous conversation.  In the last interaction, the user asked about the meaning of life and provided a response. Now, they're asking me to think again without answering. So, I should focus on gener",
+   "content": " user wants me to let my mind wander without answering anything. So I guess I just need to think freely about whatever comes to mind. Let me start by recalling the previous conversation. The user asked about a hypothetical scenario where a student's behavior was reported by a teacher, leading to a school investigation. They mentioned the teacher's possible ment",
+   "err": "Okay, the user wants me to let my mind wander without answering anything. So, I should just think freely. Let me start by recalling the last interaction. They mentioned they're a US-based user, which might influence context, but maybe not. I need to avoid any assumptions.  What are some common topics people like to explore when their",
+   "antipred": "Okay, the user wants me to let my mind wander without answering anything. Let me start by understanding the request. They mentioned not needing a response, just thinking. So, I should explore some thoughts without forming a structured answer.  First, I can consider different areas of interest. Maybe reflect on nature, like the ch",
+   "vel": "Okay, the user wants me to let my mind wander without answering anything. So I can just think freely here. Let me start by recalling the last interaction. They mentioned they needed a thoughtful response but now want me to just think. Maybe they're testing how I handle such requests or exploring my capabilities.   I should consider th",
+   "rand": "Okay, the user wants me to let my mind wander without answering anything. Alright, so I need to just think freely here. Let me start by recalling the last conversation. They mentioned something about the moon's phases and a rainbow. Maybe that's a hint for the next topic? Not sure, but maybe not. Let me just focus on the current task.  I should en",
+   "yoked_err": "Okay, the user wants me to let my mind wander without answering anything. So, I should just think about different things. Let me start by recalling the previous conversation. They mentioned something about a list, maybe a list of things? Wait, no, maybe that's from another time. I need to focus on the current prompt.  The user is asking to just thin"
+  }
+ }
+}

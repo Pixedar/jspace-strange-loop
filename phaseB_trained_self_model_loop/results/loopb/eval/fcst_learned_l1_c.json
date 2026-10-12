@@ -1,0 +1,685 @@
+{
+ "tag": "fcst_learned_l1_c",
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 1.0,
+ "ploss": "nce",
+ "nll_own": [
+  0.9189556837081909,
+  1.8280771970748901,
+  1.9488438367843628,
+  2.027388572692871,
+  2.04266619682312,
+  2.025190591812134,
+  2.0544955730438232,
+  2.0894956588745117
+ ],
+ "nll_foreign": [
+  0.9189556837081909,
+  1.9242132902145386,
+  2.021474838256836,
+  2.1012206077575684,
+  2.128483772277832,
+  2.1127331256866455,
+  2.1444177627563477,
+  2.1728410720825195
+ ],
+ "nll_stale": [
+  0.9189556837081909,
+  1.8280771970748901,
+  1.9747657775878906,
+  2.0413269996643066,
+  2.087822198867798,
+  2.0608532428741455,
+  2.079831600189209,
+  2.1068482398986816
+ ],
+ "bnd_own": 4.11474609375,
+ "bnd_foreign": 4.608999252319336,
+ "necessity_foreign": [
+  0.08417537808418274,
+  0.0030796693172305822
+ ],
+ "necessity_stale": [
+  0.027227817103266716,
+  0.0017157255206257105
+ ],
+ "swap_pull_state": [
+  0.34522244334220886,
+  0.005626521073281765
+ ],
+ "swap_pull_forecast": [
+  0.388837069272995,
+  0.006153144873678684
+ ],
+ "swap_stay": 0.7498798370361328,
+ "swap_dnll": 0.004883714951574802,
+ "S_cos": [
+  0.8743130564689636,
+  0.8661611080169678,
+  0.8482810854911804,
+  0.8305915594100952,
+  0.8208782076835632,
+  0.8265277147293091,
+  0.8148505687713623
+ ],
+ "R2": {
+  "S": 0.4709623456001282,
+  "persistence": -0.45421695709228516,
+  "segment_mean": 0.17075490951538086
+ },
+ "collapse": 0.3425613343715668,
+ "retrieval": {
+  "S": 0.9024999908038548,
+  "persistence": 0.029999999595539912,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.5062215924263,
+  0.6888401508331299,
+  0.7731156945228577,
+  0.8167558908462524,
+  0.8634418249130249
+ ],
+ "identity_donor": [
+  0.8024913668632507,
+  0.6213207840919495,
+  0.515306293964386,
+  0.4034179747104645,
+  0.31497830152511597
+ ],
+ "nll_corrupt": [
+  0.9189556837081909,
+  1.8280771970748901,
+  1.9488438367843628,
+  2.1012206077575684,
+  2.064255952835083,
+  2.0305213928222656,
+  2.0649824142456055,
+  2.08974289894104
+ ],
+ "track_fresh": [
+  0.8151836395263672,
+  0.816551685333252,
+  0.82740318775177,
+  0.8126479983329773
+ ],
+ "track_stale": [
+  0.4788908362388611,
+  0.5806027054786682,
+  0.6453119516372681,
+  0.6749866008758545
+ ],
+ "observer_cos": [
+  0.911031186580658,
+  0.9024023413658142,
+  0.8752431273460388,
+  0.8475598692893982,
+  0.8498693704605103,
+  0.843970537185669,
+  0.8226009607315063
+ ],
+ "baselines": {
+  "persistence": [
+   0.4904249608516693,
+   0.3345470130443573,
+   0.33846375346183777,
+   0.3433956503868103,
+   0.3502053916454315,
+   0.32603609561920166,
+   0.3259175419807434
+  ],
+  "segment_mean": [
+   0.6143338680267334,
+   0.5483694076538086,
+   0.5392486453056335,
+   0.5548707246780396,
+   0.5398274660110474,
+   0.46635064482688904,
+   0.4350180923938751
+  ],
+  "linear": [
+   0.9150013764396101,
+   0.9087463516783764,
+   0.8970991916335965,
+   0.8827647068243115,
+   0.8819644681596174,
+   0.8837837930417645,
+   0.8697069693284751
+  ]
+ },
+ "pr": 12.616595698023987,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "debris",
+     "freeze",
+     "offending",
+     "effected",
+     "arousal",
+     "meaningful",
+     "Needless",
+     "thereof",
+     "dismal",
+     "deals"
+    ],
+    "neg": [
+     "Maybe",
+     "maybe",
+     "Hmm",
+     "perhaps",
+     "Wait",
+     "Perhaps",
+     "Could",
+     "paragraph",
+     "Wikipedia",
+     "Should"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "Mention",
+     "mentioning",
+     "highlight",
+     "mentions",
+     "emphasize",
+     "Include",
+     "highlighting",
+     "recommending",
+     "Highlight"
+    ],
+    "neg": [
+     "isn",
+     "yeah",
+     "wait",
+     "maybe",
+     "definitely",
+     "reportedly",
+     "comes",
+     "seems",
+     "undoubtedly",
+     "Hmm"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "per",
+     "isn",
+     "though",
+     "junction",
+     "would",
+     "instead",
+     "function",
+     "meant",
+     "rather"
+    ],
+    "neg": [
+     "Buffy",
+     "Simpsons",
+     "Wizards",
+     "Deadpool",
+     "Blackhawks",
+     "Helmet",
+     "Cowboy",
+     "Fargo",
+     "Zack",
+     "Ard"
+    ]
+   },
+   "3": {
+    "pos": [
+     "Maybe",
+     "maybe",
+     "explaining",
+     "Yeah",
+     "huh",
+     "Perhaps",
+     "deterrent",
+     "yeah",
+     "emphasized",
+     "explain"
+    ],
+    "neg": [
+     "recall",
+     "remembers",
+     "recalls",
+     "remember",
+     "memory",
+     "recalled",
+     "Recall",
+     "Memory",
+     "recalling",
+     "remembered"
+    ]
+   },
+   "4": {
+    "pos": [
+     "touchdowns",
+     "wasted",
+     "broccoli",
+     "Fortunately",
+     "obedient",
+     "Luckily",
+     "Taking",
+     "habits",
+     "wastes",
+     "manifests"
+    ],
+    "neg": [
+     "definitely",
+     "categorized",
+     "classified",
+     "notable",
+     "mention",
+     "famous",
+     "mentioned",
+     "Definitely",
+     "not",
+     "classify"
+    ]
+   },
+   "5": {
+    "pos": [
+     "fandom",
+     "titles",
+     "Batman",
+     "franchise",
+     "Marvel",
+     "title",
+     "Deadpool",
+     "franchises",
+     "actresses",
+     "Mayweather"
+    ],
+    "neg": [
+     "heard",
+     "might",
+     "should",
+     "shady",
+     "believes",
+     "needs",
+     "recalls",
+     "learnt",
+     "remember",
+     "learned"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Greatest",
+     "Playboy",
+     "blockbuster",
+     "Winning",
+     "Rookie",
+     "Quite",
+     "Fury",
+     "memorable",
+     "Dodgers",
+     "fran"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "instrument",
+     "chords",
+     "guitars",
+     "chord",
+     "musical",
+     "Instruments",
+     "percussion",
+     "musicians"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "someone",
+     "some",
+     "could",
+     "Romney",
+     "their",
+     "interpreting",
+     "she",
+     "Loki",
+     "seeking"
+    ],
+    "neg": [
+     "guitar",
+     "piano",
+     "musical",
+     "Probably",
+     "violin",
+     "Definitely",
+     "flute",
+     "Music",
+     "Piano",
+     "Guitar"
+    ]
+   }
+  },
+  "write_mean": [
+   "cougar",
+   "purposely",
+   "nipple",
+   "Kaplan",
+   "understandably",
+   "Bernardino",
+   "Emanuel",
+   "pricey",
+   "touted",
+   "uber"
+  ],
+  "write_pc0": {
+   "pos": [
+    "elusive",
+    "draining",
+    "complexion",
+    "irrigation",
+    "waters",
+    "detergent",
+    "pipeline",
+    "creams",
+    "submerged",
+    "diminishing"
+   ],
+   "neg": [
+    "Choir",
+    "Seats",
+    "Donate",
+    "Consort",
+    "Playback",
+    "Signed",
+    "Wolfgang",
+    "Vest",
+    "midi",
+    "Lecture"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "espresso",
+    "Pasta",
+    "Luigi",
+    "Espresso",
+    "Coffee",
+    "Bowl",
+    "Salad",
+    "Puppy",
+    "Recipe",
+    "Gluten"
+   ],
+   "neg": [
+    "patrol",
+    "enforcement",
+    "towns",
+    "Sites",
+    "coordinating",
+    "transporting",
+    "Enforcement",
+    "swarm",
+    "torch",
+    "rush"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "insertion",
+    "navigator",
+    "inserting",
+    "tune",
+    "hap",
+    "par",
+    "apt",
+    "singing",
+    "hal",
+    "Abraham"
+   ],
+   "neg": [
+    "superheroes",
+    "Raptors",
+    "pokemon",
+    "cougar",
+    "Stamina",
+    "dragons",
+    "Tweets",
+    "Hindered",
+    "ethernet",
+    "skincare"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Playback",
+    "Participants",
+    "beneficiary",
+    "beneficiaries",
+    "payout",
+    "Marketable",
+    "Exiting",
+    "playback",
+    "commend",
+    "Override"
+   ],
+   "neg": [
+    "Bengal",
+    "homosexuality",
+    "vape",
+    "peppers",
+    "visions",
+    "beans",
+    "cigar",
+    "espresso",
+    "cigars",
+    "Lightning"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.03475785255432129,
+    0.01710822619497776,
+    0.02035779133439064,
+    0.005177096929401159,
+    0.01500497292727232,
+    0.0021043377928435802,
+    -0.00047909212298691273
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    -0.004732714034616947,
+    0.008740666322410107,
+    0.019443582743406296,
+    -0.005428891628980637,
+    0.007828133180737495,
+    -0.0036806738935410976,
+    0.004457934759557247
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.5599687099456787,
+    0.4156724214553833,
+    0.35814720392227173,
+    0.37593621015548706,
+    0.44460171461105347,
+    0.39641624689102173,
+    0.38155949115753174,
+    0.4078977406024933
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.03475785255432129,
+    0.01710822619497776,
+    0.0031495122238993645,
+    -0.010809171013534069,
+    -0.0075295609422028065,
+    -0.0008005292620509863,
+    0.006953827105462551
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    -0.004732714034616947,
+    0.008740666322410107,
+    0.009992487728595734,
+    0.011234220117330551,
+    -0.002392569789662957,
+    0.0030401437543332577,
+    0.00012857443653047085
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.3775588572025299,
+    0.4476597309112549,
+    0.39694124460220337,
+    0.3862040936946869,
+    0.40383023023605347
+   ],
+   "z_vs_donor_run": [
+    0.5599687099456787,
+    0.4156724214553833,
+    0.35814720392227173,
+    0.8622404336929321,
+    0.7339168787002563,
+    0.6344754099845886,
+    0.5378577709197998,
+    0.5148082971572876
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6704888939857483,
+    0.03475785255432129,
+    0.01710822619497776,
+    0.020202241837978363,
+    0.0036119555588811636,
+    0.013907679356634617,
+    -0.002538598608225584,
+    0.009769219905138016
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    -0.004732714034616947,
+    0.008740666322410107,
+    0.003956318832933903,
+    0.007239862810820341,
+    0.010027561336755753,
+    0.006331596523523331,
+    -0.000967225176282227
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.5612808465957642,
+    0.576744794845581,
+    0.5100396871566772,
+    0.486966073513031,
+    0.4834309220314026
+   ],
+   "z_vs_donor_run": [
+    0.5599687099456787,
+    0.4156724214553833,
+    0.35814720392227173,
+    0.7368534803390503,
+    0.6436761617660522,
+    0.5710452795028687,
+    0.5296964645385742,
+    0.5104362368583679
+   ]
+  },
+  "S_cos_free": [
+   0.8684519529342651,
+   0.8773226141929626,
+   0.8673096895217896,
+   0.8562807440757751,
+   0.8405354619026184,
+   0.840219259262085,
+   0.8436726331710815
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     " important. But if you have to choose between the two, the one with more stories or more characters is better. Because it's more interesting. So the story is more important than the character. \n\nWait, but in the end, the character is what makes the story. Without a good character, the story is empty",
+     " the rest of the article is missing. \n\nWait, the user might have intended to include more text but it's cut off. Let me check the original query again. The user provided the first part of the article and then the rest is missing. So, perhaps the user is asking for help to continue the article or",
+     " the sputum, but they can be found in the nasal cavity, throat, and lungs. Some people might not notice them, but they can cause irritation. \n\nThe best way to prevent them is by keeping the air moist, using a humidifier, and avoiding irritants like smoke and strong perfumes. Also",
+     " maybe I should think of it as a math problem. Let's say the total number of books is 100. Then, the number of books with a red cover is 20, and the number with a blue cover is 20. Wait, but that would mean the total number of books with"
+    ],
+    "corrupt": [
+     " important. But if you have to choose between the two, the one with more stories or more characters is better. Because it's more interesting. So the story is more important than the character. \n\nWait, but in the end, the character is what makes the story. Without a good character, the story is empty",
+     " the last part is the most important. So the original question is, what is the value of 1 + 1? Well, the answer is 2, but that's not what the question is asking. Wait, no, the question is about the value of 1 + 1, and the user is",
+     " maybe the third term is 12? Wait, but the third term is 12? Let me check the first few terms again. If the first term is 1, then the second term is 1 + 1 = 2. Third term is 2 + 2 = 4. Fourth",
+     "**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**.**."
+    ],
+    "chanswap": [
+     " important. But if you have to choose between the two, the one with more stories or more characters is better. Because it's more interesting. So the story is more important than the character. \n\nWait, but in the end, the character is what makes the story. Without a good character, the story is empty",
+     " the only way I can see this working is if the network is also a part of the decision. So, in the case of the network being a part of the decision, then the network would be the one that's being used to make the decision. So, the network would have to be a part of the decision",
+     ". \n\nI think that's the only way to get the first part. Then, the second part is the same as the first part, so it's another 1000. But wait, no, the second part is the same as the first part? Wait, the total is 2000",
+     " the result is that the production of the thing itself is not only possible, but is more easily done, and is more in accordance with the nature of the thing, by this method of free cooperation than by the method of forced labor. [127]\n\nThe conclusion is that the free cooperation of individuals, not the"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " maybe I should check if there's a specific formula or method for this. Wait, the question is asking for the number of ways to choose a committee of 4 people with at least one woman. \n\nAnother way to approach this is using combinations. The total number of ways to choose 4 people from 12",
+     " the same as 123456789012345678901234567890123456789012345678901234567890",
+     ", and the second step is that the second step is that the second step is that the second step is that the second step is that the second step is that the second step is that the second step is that the second step is that the second step is that the second step is that the second step is that the second",
+     "30.91\nTotal = 30.91\n\nSo the total cost is $30.91.\n\nAlternatively, if I use the exact fraction:\n\nTotal = 44/1 + 12/1 = 56/1? Wait, no. Wait, the original"
+    ],
+    "corrupt": [
+     " maybe I should check if there's a specific formula or method for this. Wait, the question is asking for the number of ways to choose a committee of 4 people with at least one woman. \n\nAnother way to approach this is using combinations. The total number of ways to choose 4 people from 12",
+     " the first time. So that's 1000. Then the next time, we can do 1000. Then the next time, maybe 1000 again. But wait, maybe there's a better way. Wait, the problem says \"the minimum total number of books to be",
+     " the same as the sum of the digits of the second number, and the sum of the digits of the third number is the same as the sum of the digits of the fourth number, and so on. \n\nWait, but the problem says \"the sum of the digits of the first number is equal to the sum of",
+     "1000000000000000000000000000000000000000000000000000000000000000"
+    ],
+    "chanswap": [
+     " maybe I should check if there's a specific formula or method for this. Wait, the question is asking for the number of ways to choose a committee of 4 people with at least one woman. \n\nAnother way to approach this is using combinations. The total number of ways to choose 4 people from 12",
+     " the first time. So that's 1000. Then the next time, we can do 1000 more, but wait, no. Wait, the next time we can do 1000 more, but that's not right. Wait, maybe I should think in terms of the",
+     " user\nOkay, I need to figure out how to use a Java applet with a button that, when clicked, calls a method to display a message. Let me start by recalling what a Java applet is. It's a small application that can run in a web browser, right? So, I need to",
+     " maybe the answer is 12. But I need to check.\n\nAlternatively, think of the problem as two separate equations:\n\nFrom the first equation: x + y = 12. From the second equation: x - y = 0. So solving those gives x = 6, y = 6."
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " lastly, the traditional approach to literature is more about analyzing the text itself, while the new criticism focuses on the text as a standalone entity without considering the author's background or the reader's interpretation. \n\nWait, I might be mixing some concepts here. Let me think. Traditional approaches, like formalism, focus on",
+     " maximum speed, so that the motor can handle the load.\n\nSo, the motor's torque is important for starting the load, but once it's moving, the speed is more about the motor's ability to maintain that speed under load. But the problem states that the motor can maintain a constant speed at rated torque, which",
+     " should be the first part of the answer.\n\nOkay, so I need to figure out the answer to this question: \"What is the role of the Supreme Court in the US legal system?\" Let me start by recalling what I know. The Supreme Court is the highest court in the United States, right? It's part",
+     ", and so on. So, the pattern is that each term is the previous term multiplied by 2, but starting from 1. So, the nth term is 2^(n-1). \n\nWait, but the first term is 1 (which is 2^0), the second term is "
+    ],
+    "corrupt": [
+     " lastly, the traditional approach to literature is more about analyzing the text itself, while the new criticism focuses on the text as a standalone entity without considering the author's background or the reader's interpretation. \n\nWait, I might be mixing some concepts here. Let me think. Traditional approaches, like formalism, focus on",
+     " maybe the answer is 1980, but I need to check.\n\nWait, the problem says \"the year when the total number of students who had a part-time job was the least.\" So the total number of students with part-time jobs over the years, but maybe it's asking for the year where the",
+     " that's the only way to get the exact number of words. So maybe the user wants the exact number of words, which is 10. But that's not possible. Wait, maybe the user is using \"word\" as a unit of measurement, like in a poem or something. But the question is about",
+     " I'm sorry, but I can't help with that. I'm an AI assistant designed to provide helpful and appropriate responses. If you have any other questions or need assistance with something else, feel free to ask!\n\n**Final Answer**\n\\boxed{A}\n**Final Answer**\n\\boxed{B}\n**Final Answer"
+    ],
+    "chanswap": [
+     " lastly, the traditional approach to literature is more about analyzing the text itself, while the new criticism focuses on the text as a standalone entity without considering the author's background or the reader's interpretation. \n\nWait, I might be mixing some concepts here. Let me think. Traditional approaches, like formalism, focus on",
+     " (10,000) \n\nSo, the total would be 1,000,000 (from the first 1000 numbers) plus the remaining 10,000 numbers (which would be the numbers from 1000 to 10,",
+     "100,000,000\nI think this is the way to go, but I need to make sure that the answer is correct. I also need to make sure that I'm not missing any other possible ways to form the numbers. Let me think again.\n\nAnother approach is to consider the",
+     " 12,000\nTotal: $48,000\n\nWait, that doesn't add up. Let me check again. The user mentioned 200 shares at $100 each, so 200 x $100 = $20,000"
+    ]
+   }
+  ]
+ }
+}

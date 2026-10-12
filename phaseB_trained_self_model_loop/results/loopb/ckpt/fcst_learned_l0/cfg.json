@@ -1,0 +1,17 @@
+{
+ "stage": "train",
+ "out": "/workspace/v5/loopb",
+ "cache": "/workspace/data",
+ "n": 2400,
+ "gen_bs": 128,
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 0.0,
+ "steps": 400,
+ "bs": 10,
+ "lr": 0.002,
+ "seed": 0,
+ "tag": "fcst_learned_l0",
+ "n_free": 64,
+ "done": true
+}

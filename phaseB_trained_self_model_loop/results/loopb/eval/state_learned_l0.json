@@ -1,0 +1,680 @@
+{
+ "tag": "state_learned_l0",
+ "chan": "state",
+ "reader": "learned",
+ "lam": 0.0,
+ "ploss": "cos",
+ "nll_own": [
+  0.8596238493919373,
+  1.6450588703155518,
+  1.7277852296829224,
+  1.7789753675460815,
+  1.8062834739685059,
+  1.784681797027588,
+  1.800634741783142,
+  1.813856840133667
+ ],
+ "nll_foreign": [
+  0.8596238493919373,
+  1.899471402168274,
+  2.0021891593933105,
+  2.054551839828491,
+  2.0764544010162354,
+  2.0643911361694336,
+  2.082857131958008,
+  2.1039257049560547
+ ],
+ "nll_stale": [
+  0.8596238493919373,
+  1.6450588703155518,
+  1.8787498474121094,
+  1.9126187562942505,
+  1.948615550994873,
+  1.9226019382476807,
+  1.9534318447113037,
+  1.9705561399459839
+ ],
+ "bnd_own": 3.372504234313965,
+ "bnd_foreign": 5.0296783447265625,
+ "necessity_foreign": [
+  0.2752233147621155,
+  0.003406351897865534
+ ],
+ "necessity_stale": [
+  0.1457255333662033,
+  0.0019150568405166268
+ ],
+ "swap_pull_state": [
+  0.002648012712597847,
+  0.0004730678047053516
+ ],
+ "swap_pull_forecast": [
+  0.004879546817392111,
+  0.0007521275547333062
+ ],
+ "swap_stay": 0.9972796440124512,
+ "swap_dnll": 0.07262782752513885,
+ "S_cos": [
+  0.4276494085788727,
+  0.42311057448387146,
+  0.4414461851119995,
+  0.4147229492664337,
+  0.4343314468860626,
+  0.42690810561180115,
+  0.4232296645641327
+ ],
+ "R2": {
+  "S": -0.20475125312805176,
+  "persistence": -0.4483323097229004,
+  "segment_mean": -0.0004410743713378906
+ },
+ "collapse": 0.19318872690200806,
+ "identity_own": [
+  0.9927281141281128,
+  0.9997773766517639,
+  0.9999867081642151,
+  0.9999948740005493,
+  0.9999951124191284
+ ],
+ "identity_donor": [
+  0.060412198305130005,
+  0.041142892092466354,
+  0.0659717246890068,
+  0.032839640974998474,
+  0.016773715615272522
+ ],
+ "nll_corrupt": [
+  0.8596238493919373,
+  1.6450588703155518,
+  1.7277852296829224,
+  2.054551839828491,
+  1.809504508972168,
+  1.7847589254379272,
+  1.8005588054656982,
+  1.8142728805541992
+ ],
+ "track_fresh": [
+  0.4025532007217407,
+  0.434179425239563,
+  0.4269067645072937,
+  0.42324742674827576
+ ],
+ "track_stale": [
+  0.4129106104373932,
+  0.4341937303543091,
+  0.42698386311531067,
+  0.4232436716556549
+ ],
+ "observer_cos": [
+  0.1721956431865692,
+  0.20950274169445038,
+  0.23131032288074493,
+  0.20958150923252106,
+  0.21369388699531555,
+  0.1891656517982483,
+  0.2025287002325058
+ ],
+ "baselines": {
+  "persistence": [
+   0.2692408859729767,
+   0.2793642282485962,
+   0.2864131033420563,
+   0.29527851939201355,
+   0.28201285004615784,
+   0.2956671416759491,
+   0.31654995679855347
+  ],
+  "segment_mean": [
+   0.2001999467611313,
+   0.19947446882724762,
+   0.20068047940731049,
+   0.2055046409368515,
+   0.22989942133426666,
+   0.21748456358909607,
+   0.2022942304611206
+  ],
+  "linear": [
+   0.4144670748041004,
+   0.41132684639442246,
+   0.4290951282054518,
+   0.39880360185329844,
+   0.41464783939475636,
+   0.4095011825166746,
+   0.41040779633487795
+  ]
+ },
+ "pr": 15.086963501466336,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "hearty",
+     "sausage",
+     "imprint",
+     "immensely",
+     "adept",
+     "fraught",
+     "killings",
+     "dealt",
+     "badass",
+     "beasts"
+    ],
+    "neg": [
+     "Maybe",
+     "Hmm",
+     "maybe",
+     "remember",
+     "perhaps",
+     "yeah",
+     "recall",
+     "unsure",
+     "clarify",
+     "Wait"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "mentioning",
+     "Mention",
+     "emphasize",
+     "highlight",
+     "mentions",
+     "recommending",
+     "highlighting",
+     "emphasizing",
+     "Highlight"
+    ],
+    "neg": [
+     "Hmm",
+     "isn",
+     "wait",
+     "comes",
+     "definitely",
+     "right",
+     "but",
+     "instrument",
+     "Wait",
+     "yes"
+    ]
+   },
+   "2": {
+    "pos": [
+     "isn",
+     "though",
+     "but",
+     "might",
+     "again",
+     "would",
+     "right",
+     "remember",
+     "per",
+     "remembers"
+    ],
+    "neg": [
+     "Helmet",
+     "Cowboy",
+     "Godzilla",
+     "Simpsons",
+     "Zack",
+     "Santana",
+     "Dank",
+     "Lego",
+     "Sour",
+     "Grimm"
+    ]
+   },
+   "3": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "yeah",
+     "they",
+     "perhaps",
+     "but",
+     "explaining",
+     "though",
+     "Yeah",
+     "huh"
+    ],
+    "neg": [
+     "recall",
+     "Recall",
+     "recalls",
+     "memory",
+     "remembers",
+     "fuzzy",
+     "confuse",
+     "forget",
+     "confused",
+     "Dragons"
+    ]
+   },
+   "4": {
+    "pos": [
+     "tenants",
+     "touchdowns",
+     "clinics",
+     "arrivals",
+     "lesbians",
+     "endings",
+     "bravery",
+     "Directors",
+     "trainers",
+     "bathrooms"
+    ],
+    "neg": [
+     "definitely",
+     "classified",
+     "categorized",
+     "not",
+     "classify",
+     "Definitely",
+     "classification",
+     "known",
+     "notable",
+     "commonly"
+    ]
+   },
+   "5": {
+    "pos": [
+     "Batman",
+     "Deadpool",
+     "list",
+     "Marvel",
+     "Mayweather",
+     "fictional",
+     "franchise",
+     "title",
+     "Madame",
+     "spelling"
+    ],
+    "neg": [
+     "learnt",
+     "shady",
+     "Noticed",
+     "heard",
+     "recalls",
+     "coarse",
+     "know",
+     "learned",
+     "kosher",
+     "think"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Famous",
+     "Quite",
+     "Rookie",
+     "Definitely",
+     "undefeated",
+     "Blackhawks",
+     "Playboy",
+     "reigning",
+     "blockbuster",
+     "Greatest"
+    ],
+    "neg": [
+     "instruments",
+     "instrument",
+     "guitar",
+     "percussion",
+     "guitars",
+     "chords",
+     "musical",
+     "chord",
+     "octave",
+     "musicians"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "someone",
+     "expressing",
+     "their",
+     "she",
+     "impose",
+     "expresses",
+     "teh",
+     "dealing",
+     "your"
+    ],
+    "neg": [
+     "Definitely",
+     "Probably",
+     "Certainly",
+     "definitely",
+     "sure",
+     "Sure",
+     "probable",
+     "Yeah",
+     "Likely",
+     "Alright"
+    ]
+   }
+  },
+  "write_mean": [
+   "Embassy",
+   "Resorts",
+   "toured",
+   "touring",
+   "preferable",
+   "embassy",
+   "nicer",
+   "hometown",
+   "jails",
+   "Emirates"
+  ],
+  "write_pc0": {
+   "pos": [
+    "los",
+    "tha",
+    "sha",
+    "dont",
+    "mak",
+    "han",
+    "tak",
+    "gan",
+    "dun",
+    "qui"
+   ],
+   "neg": [
+    "Sporting",
+    "Venezuelan",
+    "Midlands",
+    "Volley",
+    "Airbnb",
+    "Juventus",
+    "Newcastle",
+    "Copa",
+    "Cristiano",
+    "Wimbledon"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "thou",
+    "upto",
+    "thy",
+    "hart",
+    "ara",
+    "witch",
+    "Mountains",
+    "gia",
+    "arab",
+    "dell"
+   ],
+   "neg": [
+    "checklist",
+    "simplistic",
+    "categorized",
+    "firsthand",
+    "influencers",
+    "realistic",
+    "specifics",
+    "Listing",
+    "insightful",
+    "standout"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "Cart",
+    "Label",
+    "Barn",
+    "name",
+    "rename",
+    "Name",
+    "Names",
+    "genus",
+    "abbreviation",
+    "alias"
+   ],
+   "neg": [
+    "motivations",
+    "entrepreneurial",
+    "attitudes",
+    "addicts",
+    "advocates",
+    "advocacy",
+    "influencers",
+    "profitability",
+    "lobbying",
+    "crowdfunding"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Dialogue",
+    "Quotes",
+    "Biography",
+    "Selected",
+    "Titles",
+    "Dialog",
+    "Albums",
+    "isbn",
+    "narrator",
+    "Lists"
+   ],
+   "neg": [
+    "faster",
+    "heavier",
+    "stricter",
+    "cheaper",
+    "lower",
+    "higher",
+    "stronger",
+    "slower",
+    "tougher",
+    "tighter"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.665930986404419,
+    0.1609886884689331,
+    0.11926737427711487,
+    0.06654371321201324,
+    0.030647482722997665,
+    0.026826579123735428,
+    0.00936122052371502,
+    0.010960704647004604
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    0.005320947617292404,
+    0.013997258618474007,
+    0.026678046211600304,
+    0.02364056184887886,
+    0.014885369688272476,
+    -0.0025141569785773754,
+    0.0034462823532521725
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.05031459406018257,
+    0.0333864726126194,
+    0.05497443675994873,
+    0.0823347270488739,
+    0.03515287861227989,
+    0.07695731520652771,
+    0.04857137054204941,
+    0.11458445340394974
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.665930986404419,
+    0.1609886884689331,
+    0.11926737427711487,
+    -0.0011772452853620052,
+    0.0004898593761026859,
+    0.0010560881346464157,
+    0.011820807121694088,
+    0.013657812029123306
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    0.005320947617292404,
+    0.013997258618474007,
+    0.04985757917165756,
+    0.04049435257911682,
+    0.017411595210433006,
+    -0.000787722528912127,
+    0.024921439588069916
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.09481698274612427,
+    0.05731566995382309,
+    0.05316237360239029,
+    0.044083695858716965,
+    0.03803796321153641
+   ],
+   "z_vs_donor_run": [
+    0.05031459406018257,
+    0.0333864726126194,
+    0.05497443675994873,
+    0.13939979672431946,
+    0.13712766766548157,
+    0.04961758852005005,
+    0.04779825359582901,
+    0.0535421296954155
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.665930986404419,
+    0.1609886884689331,
+    0.11926737427711487,
+    0.04378436133265495,
+    0.028500108048319817,
+    0.02042582631111145,
+    0.029140375554561615,
+    0.004944954998791218
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    0.005320947617292404,
+    0.013997258618474007,
+    0.01876453496515751,
+    0.02317562885582447,
+    0.0026861601509153843,
+    -0.017291735857725143,
+    -0.005493465811014175
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.1953047513961792,
+    0.08467340469360352,
+    0.12113355100154877,
+    0.11126434057950974,
+    0.10699428617954254
+   ],
+   "z_vs_donor_run": [
+    0.05031459406018257,
+    0.0333864726126194,
+    0.05497443675994873,
+    0.07917844504117966,
+    0.05443407967686653,
+    0.08269737660884857,
+    0.07034651190042496,
+    0.05107684060931206
+   ]
+  },
+  "S_cos_free": [
+   0.3575512170791626,
+   0.33597931265830994,
+   0.30766570568084717,
+   0.35598140954971313,
+   0.3490026295185089,
+   0.3675661087036133,
+   0.34856608510017395
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, the user is asking for ways to help them sleep better. Let me start by recalling the common advice for improving sleep. First, maintaining a consistent sleep schedule is important. Going to bed and waking up at the same time every day helps regulate the body's internal clock. Then, creating a bedtime routine",
+    "own": [
+     " to make sure. Then, the second part is the situation where the first two are not the same, which is the opposite of the first case. So, the first case is when the first two are the same, and the second case is when they are different.\n\nWait, maybe the question is about the probability that",
+     "120 minutes, but I should check if there's a simpler way. Maybe using the formula for the area of a triangle with coordinates.\n\nWait, another approach: The area of triangle ABC can also be calculated using coordinates. Let me try that.\n\nCoordinates of A: (0, 0)\nCoordinates of B",
+     " (2) 120,000.00  \n**Total** | 23,000.00 | 23,000.00\n\n**Adjusting Entries:**\n\n1. **Depreciation Expense (Building):**  \n   - Depreciation",
+     " highways and roads. Also, it's important to mention that the city has a bike-sharing program, which is accessible via the city's official website or app. \n\nAnother thing to consider is the availability of public transportation. The city has an extensive public transit system that includes buses and a light rail system. The buses are"
+    ],
+    "corrupt": [
+     " to make sure. Then, the second part is the situation where the first two are not the same, which is the opposite of the first case. So, the first case is when the first two are the same, and the second case is when they are different.\n\nWait, maybe the question is about the probability that",
+     " instruments, but not all. So, the answer is that the harp is an example of a string instrument. \n\nWait, but the user might be asking for a different answer. Let me check. The question is \"Which of the following is an example of a string instrument?\" and the options are not listed here",
+     ". So I need to check if there are any other types of fruit. Wait, the user didn't mention others, but maybe they included others in the list. Let me make sure. The user said \"common fruits and vegetables\" but the examples given were apples, bananas, etc. So maybe the answer is just",
+     " the number of users, but also the nature of the tasks they perform. For example, in a data center, where tasks are typically compute-intensive, the focus is on CPU and memory. In a financial trading environment, where latency is critical, network performance and low-latency interconnects are prioritized. \n\nI"
+    ],
+    "chanswap": [
+     " to make sure. Then, the second part is the situation where the first two are not the same, which is the opposite of the first case. So, the first case is when the first two are the same, and the second case is when they are different.\n\nWait, maybe the question is about the probability that",
+     "... first, and the main points of each. Then, I need to explain why the first is more important than the second. I should also include examples of each. \n\nWait, the user might be looking for a comparison between two concepts, like two theories, two methods, or two aspects of a topic. Since",
+     " the user might be asking about the difference between the two. Let me clarify that. \n\nI should explain that both are valid, but the key is to provide the right information. Maybe they want to know which is more appropriate in different contexts. \n\nI need to make sure the answer is clear and covers both possibilities without",
+     "'s the only one that makes sense. So, the answer is 15. But wait, the question says \"how many ways are there to choose 4 people out of 10 where at least one is a girl.\" Maybe I need to check if there's another way to calculate this. \n\nAlternatively,"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I should probably clarify that the 100% of the 100% is the total of the 100% of the 100% of the 100% of the 100% of the 100% of the 100% of",
+     ", the 1st part is the **lungs**. The lungs are the primary organs of the respiratory system, responsible for gas exchange. The 2nd part is the **diaphragm**, a dome-shaped muscle that plays a crucial role in breathing by contracting and relaxing to facilitate inhalation and exhalation",
+     ".\n\nSo, the main points are: \n\n- The user is a child who's bored and wants to play.\n- They're looking for a game that's easy to learn but still fun.\n- The game should be something they can play with a friend, maybe using simple materials.\n- They want the game to have",
+     " questions about the future, but also the past. I should be clear about the timeline. Maybe I can break it down into eras. \n\n1. Early 20th Century: The invention of the airplane by the Wright brothers in 1903. That's a significant milestone. But how does that"
+    ],
+    "corrupt": [
+     " I should probably clarify that the 100% of the 100% is the total of the 100% of the 100% of the 100% of the 100% of the 100% of the 100% of",
+     "12 months. That's a long time. I need to check if there's any recent data or if the 12-month figure is outdated. Maybe the user is referring to the current period, but without more context, it's hard to say. \n\nAlso, the user might be asking about the current number",
+     " of the year. So, the answer would be 2018. But I need to confirm if there are any other years where the number of days is 365. \n\nWait, the user is asking for the year with 365 days. But since 2018 is a",
+     " - South Africa. \n\nWait, the user might have made a typo. Let me check if South Africa is the correct country. Alternatively, maybe it's another country. But the user wrote \"South Africa\" in the last line. I should confirm the country and then proceed to list the cities. Let me verify the"
+    ],
+    "chanswap": [
+     " I should probably clarify that the 100% of the 100% is the total of the 100% of the 100% of the 100% of the 100% of the 100% of the 100% of",
+     " and also, the fact that the action of the group on the set of solutions is transitive. \n\nBut I need to check if the action is transitive. Suppose I have two solutions, say, the trivial solution (all zeros) and another solution. Are they in the same orbit? Well, the trivial solution",
+     " is a type of capillary action where water is drawn up into a narrow tube. So, the term \"capillary action\" is the general term, and \"capillary rise\" is the specific phenomenon where water rises in a narrow tube. \n\nTherefore, the answer is **capillary action**.\n- **Cap",
+     "otes: 1. The user might not have considered the need for a backup system. 2. They might not have thought about the possibility of the device being lost or damaged. 3. They might not have considered the need for software updates or security patches. 4. They might not have thought about the"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " exhaust system. Then, the engine's exhaust gases are directed through the exhaust manifold, which connects to the downpipe. The downpipe is usually made of stainless steel and is designed to carry the exhaust gases away from the engine. \n\nNext, the exhaust gases go through the catalytic converter. The catalytic converter reduces",
+     "Wait, the user mentioned a 3.5-inch hard drive. But the original question was about a 5.25-inch one. Maybe there's confusion here. Let me check the original question again.\n\nWait, the user wrote: \"If I have a 5.25-inch hard drive, can",
+     " you have to use the same key for each message. If you use a different key for each message, then the key is not a key, it's a one-time pad. But if you use the same key for multiple messages, then it's vulnerable to attacks. So the key must be the same for all messages",
+     " day. Then, there's the issue of whether the Supreme Court's decision was unanimous or not. If it's a unanimous decision, that might indicate that the majority of justices agree on the interpretation. But if there's a split decision, it could show different perspectives.\n\nAlso, the legal reasoning is important. Was the"
+    ],
+    "corrupt": [
+     " exhaust system. Then, the engine's exhaust gases are directed through the exhaust manifold, which connects to the downpipe. The downpipe is usually made of stainless steel and is designed to carry the exhaust gases away from the engine. \n\nNext, the exhaust gases go through the catalytic converter. The catalytic converter reduces",
+     ", and the **conclusion**.\n\nWait, but the user might not have provided all the parts. Let me check again.\n\nWait, the user provided the first part: \"In 1964, the United States Senate voted to ban the use of the atomic bomb, which was a significant step towards the",
+     " Civil War. That's a big part of American history, but not the only one. The US has a long history of being a country of immigrants, and the Constitution was written in 1787, so the Civil War was part of the 19th century. \n\nI think the user is asking",
+     " information. I should check if there's any other official source or if there's a possibility of a misunderstanding.\n\nWait, the user mentioned \"the most recent data.\" If the latest data is from 2023, then the answer would be different. Let me verify the most recent numbers. \n\nUpon checking,"
+    ],
+    "chanswap": [
+     " exhaust system. Then, the engine's exhaust gases are directed through the exhaust manifold, which connects to the downpipe. The downpipe is usually made of stainless steel and is designed to carry the exhaust gases away from the engine. \n\nNext, the exhaust gases go through the catalytic converter. The catalytic converter reduces",
+     ", and the last one is a different category. So, I need to check if the last one is a different category.\n\nWait, but the user didn't specify the categories. So maybe the categories are the types of animals. Let me think again.\n\nIf the user is asking to group the animals, the categories could",
+     " be a simple one. Let's see, maybe the answer is the number of combinations where the sum is 10. Wait, but the question is about the number of possible outcomes. Wait, no, the question is about the number of possible outcomes. But when you roll two dice, each die has 6",
+     ". The user might also need to know about the available transportation options, like whether the venue has a parking lot or if public transport is accessible. \n\nAlso, they might be interested in the layout of the venue, such as the number of rooms, the size, and the type of facilities available. They might want to"
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,1085 @@
+{
+ "causal": {
+  "summary": {
+   "pred_max_abs_err": 0.007735980985065301,
+   "action_reproduced": 0.9913194444444444,
+   "switches_saved": 6.083333333333333,
+   "switches_fixed_support": 1.8888888888888888,
+   "atom_turnover_at_switch": 0.19850275807722617,
+   "atom_turnover_no_switch": 0.020392501955661918,
+   "dh_at_switch": 0.022973362123593688,
+   "dh_no_switch": 0.0023936833378918948,
+   "states_switching_saved": 8,
+   "states_switching_fixed_support": 3
+  },
+  "rows": [
+   {
+    "item": 0,
+    "state": 0,
+    "pred_max_abs_err": 2.637505531311035e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.005714285714285714,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003481390012893826
+   },
+   {
+    "item": 0,
+    "state": 1,
+    "pred_max_abs_err": 2.86102294921875e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.00253968253968254,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00035193219082430005
+   },
+   {
+    "item": 0,
+    "state": 2,
+    "pred_max_abs_err": 0.1423541158437729,
+    "action_reproduced": 0.90625,
+    "switches_saved": 14,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": 0.2771428571428572,
+    "atom_turnover_no_switch": 0.09600000000000003,
+    "dh_at_switch": 0.01209438405930996,
+    "dh_no_switch": 0.009749355725944042
+   },
+   {
+    "item": 1,
+    "state": 0,
+    "pred_max_abs_err": 3.874301910400391e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 32,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": 0.19999999999999987,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": 0.0338037833571434,
+    "dh_no_switch": NaN
+   },
+   {
+    "item": 1,
+    "state": 1,
+    "pred_max_abs_err": 2.8908252716064453e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.198095238095238,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.002152220346033573
+   },
+   {
+    "item": 1,
+    "state": 2,
+    "pred_max_abs_err": 2.428889274597168e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0019047619047619048,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034657647483982146
+   },
+   {
+    "item": 2,
+    "state": 0,
+    "pred_max_abs_err": 3.3974647521972656e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 32,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": 0.040000000000000036,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": 0.0206441767513752,
+    "dh_no_switch": NaN
+   },
+   {
+    "item": 2,
+    "state": 1,
+    "pred_max_abs_err": 1.9073486328125e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.006349206349206349,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00039673660648986697
+   },
+   {
+    "item": 2,
+    "state": 2,
+    "pred_max_abs_err": 2.175569534301758e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 32,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": 0.20063492063492053,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": 0.03589152544736862,
+    "dh_no_switch": NaN
+   },
+   {
+    "item": 3,
+    "state": 0,
+    "pred_max_abs_err": 4.9620866775512695e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0044444444444444444,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034554614103399217
+   },
+   {
+    "item": 3,
+    "state": 1,
+    "pred_max_abs_err": 1.2516975402832031e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0038095238095238095,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034122038050554693
+   },
+   {
+    "item": 3,
+    "state": 2,
+    "pred_max_abs_err": 3.5315752029418945e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.00253968253968254,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00035055665648542345
+   },
+   {
+    "item": 4,
+    "state": 0,
+    "pred_max_abs_err": 7.152557373046875e-07,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0019047619047619048,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00036390734021551907
+   },
+   {
+    "item": 4,
+    "state": 1,
+    "pred_max_abs_err": 2.2649765014648438e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0050793650793650785,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00037265970604494214
+   },
+   {
+    "item": 4,
+    "state": 2,
+    "pred_max_abs_err": 1.430511474609375e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0012698412698412692,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00035496012424118817
+   },
+   {
+    "item": 5,
+    "state": 0,
+    "pred_max_abs_err": 5.416572093963623e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": 0.28,
+    "atom_turnover_no_switch": 0.01096774193548387,
+    "dh_at_switch": 0.015398911200463772,
+    "dh_no_switch": 0.00047550740418955684
+   },
+   {
+    "item": 5,
+    "state": 1,
+    "pred_max_abs_err": 4.1425228118896484e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 32,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": 0.2374603174603175,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": 0.03481437265872955,
+    "dh_no_switch": NaN
+   },
+   {
+    "item": 5,
+    "state": 2,
+    "pred_max_abs_err": 3.904104232788086e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0031746031746031737,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00036714697489514947
+   },
+   {
+    "item": 6,
+    "state": 0,
+    "pred_max_abs_err": 5.036592483520508e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0012698412698412692,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003462276654317975
+   },
+   {
+    "item": 6,
+    "state": 1,
+    "pred_max_abs_err": 2.682209014892578e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": 0.28,
+    "atom_turnover_no_switch": 0.005245901639344261,
+    "dh_at_switch": 0.026804257184267044,
+    "dh_no_switch": 0.0005793398013338447
+   },
+   {
+    "item": 6,
+    "state": 2,
+    "pred_max_abs_err": 3.4011900424957275e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.006984126984126983,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003398109693080187
+   },
+   {
+    "item": 7,
+    "state": 0,
+    "pred_max_abs_err": 4.5299530029296875e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": 0.12,
+    "atom_turnover_no_switch": 0.003870967741935484,
+    "dh_at_switch": 0.015088886022567749,
+    "dh_no_switch": 0.0004997837822884321
+   },
+   {
+    "item": 7,
+    "state": 1,
+    "pred_max_abs_err": 3.427267074584961e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": 0.36,
+    "atom_turnover_no_switch": 0.0032258064516129024,
+    "dh_at_switch": 0.0158524326980114,
+    "dh_no_switch": 0.0005268952809274197
+   },
+   {
+    "item": 7,
+    "state": 2,
+    "pred_max_abs_err": 0.13602924346923828,
+    "action_reproduced": 0.78125,
+    "switches_saved": 24,
+    "switches_fixed_support": 16,
+    "atom_turnover_at_switch": 0.08425531914893616,
+    "atom_turnover_no_switch": 0.05000000000000003,
+    "dh_at_switch": 0.02326573245227337,
+    "dh_no_switch": 0.026096154004335403
+   },
+   {
+    "item": 8,
+    "state": 0,
+    "pred_max_abs_err": 2.0265579223632812e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003356592496857047
+   },
+   {
+    "item": 8,
+    "state": 1,
+    "pred_max_abs_err": 4.172325134277344e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.00253968253968254,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034369147033430636
+   },
+   {
+    "item": 8,
+    "state": 2,
+    "pred_max_abs_err": 2.2351741790771484e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.041269841269841304,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0009688072605058551
+   },
+   {
+    "item": 9,
+    "state": 0,
+    "pred_max_abs_err": 2.592802047729492e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 32,
+    "switches_fixed_support": 31,
+    "atom_turnover_at_switch": 0.16253968253968257,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": 0.028129400685429573,
+    "dh_no_switch": NaN
+   },
+   {
+    "item": 9,
+    "state": 1,
+    "pred_max_abs_err": 3.6209821701049805e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0006349206349206355,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003459664876572788
+   },
+   {
+    "item": 9,
+    "state": 2,
+    "pred_max_abs_err": 2.034008502960205e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0044444444444444444,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00033863616408780217
+   },
+   {
+    "item": 10,
+    "state": 0,
+    "pred_max_abs_err": 4.380941390991211e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 21,
+    "switches_fixed_support": 21,
+    "atom_turnover_at_switch": 0.14,
+    "atom_turnover_no_switch": 0.15428571428571433,
+    "dh_at_switch": 0.013892482966184616,
+    "dh_no_switch": 0.025430718436837196
+   },
+   {
+    "item": 10,
+    "state": 1,
+    "pred_max_abs_err": 4.708766937255859e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0031746031746031737,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034285435685887933
+   },
+   {
+    "item": 10,
+    "state": 2,
+    "pred_max_abs_err": 2.7120113372802734e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0038095238095238095,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00035152837517671287
+   },
+   {
+    "item": 11,
+    "state": 0,
+    "pred_max_abs_err": 9.5367431640625e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.0038095238095238095,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.000345336040481925
+   },
+   {
+    "item": 11,
+    "state": 1,
+    "pred_max_abs_err": 1.6093254089355469e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.00253968253968254,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003510169917717576
+   },
+   {
+    "item": 11,
+    "state": 2,
+    "pred_max_abs_err": 3.4570693969726562e-06,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": 0.001269841269841271,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003452920645941049
+   }
+  ],
+  "example": [
+   {
+    "actions": [
+     2,
+     2,
+     2,
+     4,
+     2,
+     2,
+     2,
+     2,
+     4,
+     2,
+     2,
+     2,
+     4,
+     2,
+     2,
+     2,
+     2,
+     4,
+     2,
+     2,
+     2,
+     4,
+     2,
+     2
+    ],
+    "atom_turnover": [
+     NaN,
+     0.16,
+     0.0,
+     0.24,
+     0.4,
+     0.16,
+     0.0,
+     0.16,
+     0.24,
+     0.4,
+     0.16,
+     0.0,
+     0.16,
+     0.28,
+     0.16,
+     0.0,
+     0.16,
+     0.24,
+     0.4,
+     0.16,
+     0.0,
+     0.16,
+     0.28,
+     0.16
+    ],
+    "dh": [
+     NaN,
+     0.019999999552965164,
+     0.001500000013038516,
+     0.00019999999494757503,
+     0.02280000038444996,
+     0.02280000038444996,
+     0.0019000000320374966,
+     0.0003000000142492354,
+     0.00279999990016222,
+     0.02250000089406967,
+     0.02239999920129776,
+     0.0017999999690800905,
+     0.0003000000142492354,
+     0.02280000038444996,
+     0.02280000038444996,
+     0.0019000000320374966,
+     0.0003000000142492354,
+     0.00279999990016222,
+     0.02250000089406967,
+     0.02239999920129776,
+     0.0017999999690800905,
+     0.0003000000142492354,
+     0.02280000038444996,
+     0.02280000038444996
+    ],
+    "words_pass": [
+     [
+      [
+       "think",
+       12.52
+      ],
+      [
+       "gpu",
+       7.55
+      ],
+      [
+       "lets",
+       6.48
+      ],
+      [
+       "outcome",
+       6.2
+      ],
+      [
+       "trackers",
+       5.97
+      ],
+      [
+       "depends",
+       5.91
+      ],
+      [
+       "judging",
+       5.42
+      ],
+      [
+       "suspicious",
+       5.22
+      ]
+     ],
+     [
+      [
+       "think",
+       12.13
+      ],
+      [
+       "gpu",
+       7.65
+      ],
+      [
+       "trackers",
+       6.32
+      ],
+      [
+       "lets",
+       6.15
+      ],
+      [
+       "depends",
+       5.84
+      ],
+      [
+       "judging",
+       5.61
+      ],
+      [
+       "partially",
+       5.56
+      ],
+      [
+       "Execute",
+       5.34
+      ]
+     ],
+     [
+      [
+       "think",
+       12.34
+      ],
+      [
+       "gpu",
+       7.68
+      ],
+      [
+       "trackers",
+       6.53
+      ],
+      [
+       "lets",
+       6.17
+      ],
+      [
+       "outcome",
+       5.86
+      ],
+      [
+       "depends",
+       5.76
+      ],
+      [
+       "suspicious",
+       5.51
+      ],
+      [
+       "clit",
+       5.45
+      ]
+     ]
+    ]
+   }
+  ]
+ },
+ "residual_causal": {
+  "summary": {
+   "pred_max_abs_err": 9.396009975009494e-08,
+   "action_reproduced": 1.0,
+   "switches_saved": 0.0,
+   "switches_fixed_support": 0.0,
+   "atom_turnover_at_switch": NaN,
+   "atom_turnover_no_switch": NaN,
+   "dh_at_switch": NaN,
+   "dh_no_switch": 0.000355718751961831,
+   "states_switching_saved": 0,
+   "states_switching_fixed_support": 0
+  },
+  "rows": [
+   {
+    "item": 0,
+    "state": 0,
+    "pred_max_abs_err": 5.960464477539063e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00036750180879607797
+   },
+   {
+    "item": 0,
+    "state": 1,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00036242735222913325
+   },
+   {
+    "item": 0,
+    "state": 2,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00035764602944254875
+   },
+   {
+    "item": 1,
+    "state": 0,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034991881693713367
+   },
+   {
+    "item": 1,
+    "state": 1,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003470498777460307
+   },
+   {
+    "item": 1,
+    "state": 2,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003445862384978682
+   },
+   {
+    "item": 2,
+    "state": 0,
+    "pred_max_abs_err": 7.450580596923828e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00035238981945440173
+   },
+   {
+    "item": 2,
+    "state": 1,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034885405329987407
+   },
+   {
+    "item": 2,
+    "state": 2,
+    "pred_max_abs_err": 1.4901161193847656e-07,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034617105848155916
+   },
+   {
+    "item": 3,
+    "state": 0,
+    "pred_max_abs_err": 1.1920928955078125e-07,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00037416606210172176
+   },
+   {
+    "item": 3,
+    "state": 1,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003691011224873364
+   },
+   {
+    "item": 3,
+    "state": 2,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.000363595929229632
+   },
+   {
+    "item": 4,
+    "state": 0,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00035974630736745894
+   },
+   {
+    "item": 4,
+    "state": 1,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00035574802313931286
+   },
+   {
+    "item": 4,
+    "state": 2,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00035236941766925156
+   },
+   {
+    "item": 5,
+    "state": 0,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003674527397379279
+   },
+   {
+    "item": 5,
+    "state": 1,
+    "pred_max_abs_err": 1.4901161193847656e-07,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00036135432310402393
+   },
+   {
+    "item": 5,
+    "state": 2,
+    "pred_max_abs_err": 1.4901161193847656e-07,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003560281766112894
+   },
+   {
+    "item": 6,
+    "state": 0,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00036366216954775155
+   },
+   {
+    "item": 6,
+    "state": 1,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003599661577027291
+   },
+   {
+    "item": 6,
+    "state": 2,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003543219354469329
+   },
+   {
+    "item": 7,
+    "state": 0,
+    "pred_max_abs_err": 1.1920928955078125e-07,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00036057765828445554
+   },
+   {
+    "item": 7,
+    "state": 1,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003561173507478088
+   },
+   {
+    "item": 7,
+    "state": 2,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003508733643684536
+   },
+   {
+    "item": 8,
+    "state": 0,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003539484168868512
+   },
+   {
+    "item": 8,
+    "state": 1,
+    "pred_max_abs_err": 5.960464477539063e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034947070525959134
+   },
+   {
+    "item": 8,
+    "state": 2,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003445274196565151
+   },
+   {
+    "item": 9,
+    "state": 0,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034882844192907214
+   },
+   {
+    "item": 9,
+    "state": 1,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003445846668910235
+   },
+   {
+    "item": 9,
+    "state": 2,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034086027881130576
+   },
+   {
+    "item": 10,
+    "state": 0,
+    "pred_max_abs_err": 7.450580596923828e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00036765640834346414
+   },
+   {
+    "item": 10,
+    "state": 1,
+    "pred_max_abs_err": 5.960464477539063e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00036062797880731523
+   },
+   {
+    "item": 10,
+    "state": 2,
+    "pred_max_abs_err": 5.960464477539063e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003537102311383933
+   },
+   {
+    "item": 11,
+    "state": 0,
+    "pred_max_abs_err": 1.1920928955078125e-07,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003586851235013455
+   },
+   {
+    "item": 11,
+    "state": 1,
+    "pred_max_abs_err": 8.940696716308594e-08,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.0003539533354341984
+   },
+   {
+    "item": 11,
+    "state": 2,
+    "pred_max_abs_err": 1.341104507446289e-07,
+    "action_reproduced": 1.0,
+    "switches_saved": 0,
+    "switches_fixed_support": 0,
+    "atom_turnover_at_switch": NaN,
+    "atom_turnover_no_switch": NaN,
+    "dh_at_switch": NaN,
+    "dh_no_switch": 0.00034739627153612673
+   }
+  ],
+  "example": []
+ }
+}

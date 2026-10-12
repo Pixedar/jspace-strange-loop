@@ -1,0 +1,673 @@
+{
+ "tag": "fcst_learned_l0",
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 0.0,
+ "nll_own": [
+  0.8594396710395813,
+  1.6393073797225952,
+  1.7232328653335571,
+  1.771532416343689,
+  1.7995843887329102,
+  1.7823095321655273,
+  1.8011364936828613,
+  1.8114104270935059
+ ],
+ "nll_foreign": [
+  0.8594396710395813,
+  1.8828529119491577,
+  1.988258957862854,
+  2.0369818210601807,
+  2.0615530014038086,
+  2.053420305252075,
+  2.075049877166748,
+  2.0923705101013184
+ ],
+ "nll_stale": [
+  0.8594396710395813,
+  1.6393073797225952,
+  1.8611359596252441,
+  1.8991142511367798,
+  1.934525966644287,
+  1.9119501113891602,
+  1.9412533044815063,
+  1.9608314037322998
+ ],
+ "bnd_own": 3.3999762535095215,
+ "bnd_foreign": 4.983852386474609,
+ "necessity_foreign": [
+  0.2659967839717865,
+  0.003345150500535965
+ ],
+ "necessity_stale": [
+  0.13660109043121338,
+  0.0018276876071467996
+ ],
+ "swap_pull_state": [
+  0.012753778137266636,
+  0.0005727434763684869
+ ],
+ "swap_pull_forecast": [
+  0.030544782057404518,
+  0.0010296250693500042
+ ],
+ "swap_stay": 0.9942406415939331,
+ "swap_dnll": 0.08279642462730408,
+ "S_cos": [
+  0.42149287462234497,
+  0.42574387788772583,
+  0.4224105775356293,
+  0.414369136095047,
+  0.40677952766418457,
+  0.39104899764060974,
+  0.4026097059249878
+ ],
+ "identity_own": [
+  0.9931900501251221,
+  0.9995285272598267,
+  0.9999213218688965,
+  0.9999920725822449,
+  0.9999945163726807
+ ],
+ "identity_donor": [
+  0.08330812305212021,
+  0.06642255932092667,
+  0.05403749644756317,
+  0.03667566552758217,
+  0.026529675349593163
+ ],
+ "nll_corrupt": [
+  0.8594396710395813,
+  1.6393073797225952,
+  1.7232328653335571,
+  2.0369818210601807,
+  1.803621768951416,
+  1.7826460599899292,
+  1.8008100986480713,
+  1.8110945224761963
+ ],
+ "track_fresh": [
+  0.4009673297405243,
+  0.40566760301589966,
+  0.3908354938030243,
+  0.40255874395370483
+ ],
+ "track_stale": [
+  0.41232699155807495,
+  0.40641337633132935,
+  0.3911312520503998,
+  0.4025910496711731
+ ],
+ "observer_cos": [
+  0.18394751846790314,
+  0.20127755403518677,
+  0.2068507820367813,
+  0.1945774406194687,
+  0.18290013074874878,
+  0.16472524404525757,
+  0.18000125885009766
+ ],
+ "baselines": {
+  "persistence": [
+   0.2661885917186737,
+   0.2718318700790405,
+   0.2754157781600952,
+   0.27363526821136475,
+   0.26066353917121887,
+   0.256442129611969,
+   0.28571975231170654
+  ],
+  "segment_mean": [
+   0.261954665184021,
+   0.2589333653450012,
+   0.2356640100479126,
+   0.24229811131954193,
+   0.23373964428901672,
+   0.22310197353363037,
+   0.21050645411014557
+  ],
+  "linear": [
+   0.410576375554581,
+   0.41393294660086005,
+   0.4076801514659102,
+   0.40073658055809913,
+   0.3910067815153803,
+   0.37605237881329745,
+   0.38679278935104705
+  ]
+ },
+ "pr": 16.9848286679977,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "sausage",
+     "outcry",
+     "beasts",
+     "dealt",
+     "mammals",
+     "sled",
+     "beast",
+     "cloak",
+     "immensely",
+     "saga"
+    ],
+    "neg": [
+     "Maybe",
+     "maybe",
+     "Hmm",
+     "perhaps",
+     "Perhaps",
+     "mention",
+     "Should",
+     "remind",
+     "paragraphs",
+     "paragraph"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "mentioning",
+     "Mention",
+     "mentions",
+     "emphasize",
+     "mentioned",
+     "listing",
+     "emphasizing",
+     "highlight",
+     "highlighting"
+    ],
+    "neg": [
+     "reportedly",
+     "Does",
+     "appears",
+     "presumably",
+     "would",
+     "apparently",
+     "purported",
+     "did",
+     "supposedly",
+     "Would"
+    ]
+   },
+   "2": {
+    "pos": [
+     "because",
+     "gamble",
+     "junction",
+     "Though",
+     "though",
+     "per",
+     "Particularly",
+     "qualify",
+     "would",
+     "percent"
+    ],
+    "neg": [
+     "Xbox",
+     "Zack",
+     "Willow",
+     "Santana",
+     "Aurora",
+     "Buffy",
+     "Hou",
+     "Mazda",
+     "Sahara",
+     "Hogan"
+    ]
+   },
+   "3": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "perhaps",
+     "yeah",
+     "but",
+     "they",
+     "Perhaps",
+     "huh",
+     "though",
+     "Yeah"
+    ],
+    "neg": [
+     "recall",
+     "Recall",
+     "remembers",
+     "recalls",
+     "remember",
+     "memory",
+     "remembered",
+     "recalled",
+     "fuzzy",
+     "Dragons"
+    ]
+   },
+   "4": {
+    "pos": [
+     "tenants",
+     "Exxon",
+     "but",
+     "bathrooms",
+     "touchdowns",
+     "quarterbacks",
+     "arrivals",
+     "toppings",
+     "Wimbledon",
+     "championships"
+    ],
+    "neg": [
+     "classified",
+     "classify",
+     "categorized",
+     "not",
+     "definitely",
+     "referred",
+     "classification",
+     "belong",
+     "Classification",
+     "bigger"
+    ]
+   },
+   "5": {
+    "pos": [
+     "title",
+     "Marvel",
+     "titles",
+     "Deadpool",
+     "actress",
+     "anime",
+     "actresses",
+     "answer",
+     "fictional",
+     "fandom"
+    ],
+    "neg": [
+     "heard",
+     "probably",
+     "might",
+     "remember",
+     "pretty",
+     "recalls",
+     "definitely",
+     "believe",
+     "think",
+     "believes"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Quite",
+     "Definitely",
+     "famously",
+     "undefeated",
+     "might",
+     "Might",
+     "admittedly",
+     "Famous",
+     "Maybe",
+     "memorable"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "guitars",
+     "percussion",
+     "instrument",
+     "musical",
+     "Instruments",
+     "musicians",
+     "chord",
+     "octave"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "isn",
+     "someone",
+     "might",
+     "may",
+     "could",
+     "she",
+     "their",
+     "those",
+     "specifically"
+    ],
+    "neg": [
+     "Certainly",
+     "Thankfully",
+     "Probably",
+     "Likely",
+     "Alright",
+     "Obviously",
+     "Interesting",
+     "Yep",
+     "Ensure",
+     "Sure"
+    ]
+   }
+  },
+  "write_mean": [
+   "downturn",
+   "uphold",
+   "envoy",
+   "captivating",
+   "lobbyists",
+   "upheld",
+   "influencers",
+   "downs",
+   "caucus",
+   "recipients"
+  ],
+  "write_pc0": {
+   "pos": [
+    "Stamina",
+    "Juventus",
+    "Sevilla",
+    "Titanic",
+    "Gameplay",
+    "Seahawks",
+    "Speedway",
+    "Wimbledon",
+    "Sega",
+    "playlists"
+   ],
+   "neg": [
+    "sha",
+    "isa",
+    "dominates",
+    "ros",
+    "unconstitutional",
+    "Josh",
+    "oath",
+    "yan",
+    "aaa",
+    "ruler"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "magna",
+    "goodies",
+    "nutrient",
+    "ecosystems",
+    "grub",
+    "plants",
+    "cuisine",
+    "plantation",
+    "booming",
+    "gourmet"
+   ],
+   "neg": [
+    "Duplicate",
+    "Incorrect",
+    "incorrect",
+    "Explanation",
+    "Interpret",
+    "explanation",
+    "Proof",
+    "misunderstanding",
+    "Explain",
+    "Remarks"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "practical",
+    "circumstances",
+    "realistic",
+    "disadvantaged",
+    "easier",
+    "stronger",
+    "different",
+    "stricter",
+    "distancing",
+    "significance"
+   ],
+   "neg": [
+    "Trout",
+    "Rivers",
+    "Trees",
+    "Plants",
+    "Ply",
+    "Mountains",
+    "Axe",
+    "Rudd",
+    "Coins",
+    "Janeiro"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Nichols",
+    "Scarborough",
+    "Hayward",
+    "Fraser",
+    "Falcons",
+    "Palmer",
+    "Silva",
+    "Gray",
+    "Friedrich",
+    "Armstrong"
+   ],
+   "neg": [
+    "interview",
+    "karma",
+    "activism",
+    "impact",
+    "questionnaire",
+    "dialogue",
+    "enquiry",
+    "empathy",
+    "interviews",
+    "transcript"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.665930986404419,
+    0.1354283094406128,
+    0.08090923726558685,
+    0.06418050080537796,
+    0.04584117978811264,
+    0.048002809286117554,
+    0.03250942379236221,
+    0.01799333095550537
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    0.005158383399248123,
+    -0.002441618824377656,
+    0.000525681534782052,
+    0.013805698603391647,
+    0.016893407329916954,
+    0.002473779721185565,
+    -0.007067042402923107
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.07184634357690811,
+    0.05952225252985954,
+    0.03997506946325302,
+    0.16646982729434967,
+    0.1192300021648407,
+    0.03653976321220398,
+    0.04042112082242966,
+    0.04899350553750992
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.665930986404419,
+    0.1354283094406128,
+    0.08090923726558685,
+    0.0062154848128557205,
+    0.019101113080978394,
+    0.004415977746248245,
+    0.007439236156642437,
+    0.004079008009284735
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    0.005158383399248123,
+    -0.002441618824377656,
+    0.04948630928993225,
+    0.04506997391581535,
+    0.010920954868197441,
+    0.006254667416214943,
+    0.0005478197708725929
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.09486152231693268,
+    0.10612165182828903,
+    0.061454541981220245,
+    0.04373101145029068,
+    0.1002424955368042
+   ],
+   "z_vs_donor_run": [
+    0.07184634357690811,
+    0.05952225252985954,
+    0.03997506946325302,
+    0.2293771356344223,
+    0.1247747540473938,
+    0.11250387132167816,
+    0.04014007747173309,
+    0.12103517353534698
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.665930986404419,
+    0.1354283094406128,
+    0.08090923726558685,
+    0.02449784241616726,
+    0.004032210446894169,
+    0.032510437071323395,
+    0.01650964841246605,
+    0.004687062464654446
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    0.005158383399248123,
+    -0.002441618824377656,
+    0.04369910806417465,
+    0.01837463304400444,
+    0.004720235243439674,
+    0.013231194578111172,
+    0.01011455524712801
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.1352219581604004,
+    0.09322226792573929,
+    0.06090989708900452,
+    0.10792779177427292,
+    0.1411697417497635
+   ],
+   "z_vs_donor_run": [
+    0.07184634357690811,
+    0.05952225252985954,
+    0.03997506946325302,
+    0.23378005623817444,
+    0.08753734827041626,
+    0.10847119987010956,
+    0.07870511710643768,
+    0.04898028448224068
+   ]
+  },
+  "S_cos_free": [
+   0.377878338098526,
+   0.34047821164131165,
+   0.3907777667045593,
+   0.3934847116470337,
+   0.34795060753822327,
+   0.384236216545105,
+   0.36568158864974976
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, the user is asking for ways to help them sleep better. Let me start by recalling the common advice for improving sleep. First, maintaining a consistent sleep schedule is important. Going to bed and waking up at the same time every day helps regulate the body's internal clock. Then, creating a bedtime routine",
+    "own": [
+     " sure, but I'm not sure if that's the case. I think it's more about the availability of the car. Maybe the person doesn't have a car or it's not available. Alternatively, it could be about the cost. But I'm not sure. I should list these possibilities and then decide which is",
+     " ask for the latest updates. \n\nWait, maybe I should check if there's a standard way to handle this. For example, when you have an array and you want to find the index of a value, but the value could be at the end. But in this case, the user is asking for the index of",
+     " the user is asking for the meaning of a word. The word is \"pilgrim.\" I need to define it. Let me think. Pilgrim is someone who travels for a religious purpose, like going on a pilgrimage. But I should also mention that it can be used more generally for someone traveling for a specific",
+     " like the physical body. Maybe even the soul. But not the spirit. Or is it? Wait, the spirit is the part of us that connects to the divine. So, if the spirit is the connection, then maybe that's what's eternal. But then, what about the soul? Is the soul also part"
+    ],
+    "corrupt": [
+     " sure, but I'm not sure if that's the case. I think it's more about the availability of the car. Maybe the person doesn't have a car or it's not available. Alternatively, it could be about the cost. But I'm not sure. I should list these possibilities and then decide which is",
+     ", using a cup or a bottle.\n\nOkay, so I need to make a list of 10 things you can do with a cup or a bottle. Let me start by brainstorming. First, the obvious ones like drinking from them. But maybe I should think of more creative uses. Let me jot down some",
+     " point. Let me check each category:\n\n- **Packing**: Need to mention the variety of options (sneakers, boots, sandals, etc.), comfort, and maybe materials (breathable, durable). Also, the importance of fit and style.\n- **Dressing**: Include layers, accessories, maybe mention",
+     " make sure to include the different types of habitats, like forest, desert, aquatic, and maybe even urban. Also, mention the importance of each habitat and how they contribute to the ecosystem. \n\nI should start by defining what a habitat is. Then, go through each type with examples. Maybe use bullet points or sections"
+    ],
+    "chanswap": [
+     " sure, but I'm not sure if that's the case. I think it's more about the availability of the car. Maybe the person doesn't have a car or it's not available. Alternatively, it could be about the cost. But I'm not sure. I should list these possibilities and then decide which is",
+     " prepare the tools and ingredients. The user might need to know the exact steps, but since the question is about the order, I should list the preparation steps first.\n\nWait, the user is asking for the correct order of steps to prepare the ingredients. So the answer should be the sequence of steps in the correct order.",
+     " So, the key is to explain that even though the question is about a specific group (people with disabilities), the answer applies to everyone. \n\nI should also mention that the answer is based on the concept of human rights, which is universal. Maybe add a note that the UN Convention on the Rights of Persons with Disabilities",
+     " might have a different approach. Let me check if there are any other factors.\n\nWait, the user asked for the three most important reasons, so I should make sure I'm not missing any. Let me recap:\n\n1. **Technological Advancement**: AI's ability to process and analyze data at scale, leading to"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I should also check if the user is asking for the most recent or any specific year. But the question doesn't specify, so I'll assume they want the latest available data.\n\nAnother point: The user might be interested in the number of games played by each player, but the question is about the number of players,",
+     " but I think the user might be referring to the \"I\" as in the first person. So maybe they're asking about the concept of the self or identity. Let me check if that's a common topic.\n\nAlternatively, maybe it's a play on words. For example, \"I\" could be a brand or",
+     " a specific person. But if I can't find the person, I should say that I can't identify them. Let me check the details again. The user mentioned a name, but I don't recall any notable person with that name. Wait, maybe they meant a fictional character? Or perhaps there's a mix-up",
+     " for Socrates. So, I need to check the exact dates. Wait, I think Socrates was born around 470 BCE and died in 399 BCE. So he was alive during the Peloponnesian War, which was from 431 to 404 BCE."
+    ],
+    "corrupt": [
+     " I should also check if the user is asking for the most recent or any specific year. But the question doesn't specify, so I'll assume they want the latest available data.\n\nAnother point: The user might be interested in the number of games played by each player, but the question is about the number of players,",
+     " ask for the best approach. Maybe include some examples of what they might need. Also, clarify if it's for a specific type of business, like a restaurant, retail, or service. \n\nAlternatively, if they're not sure, suggest starting with the basics like a business plan, legal structure, and financial planning.",
+     " Keep it simple. Let me check for possible errors. Maybe the user wants a different approach. Alternatively, maybe I can use the formula for the area of a trapezoid? Wait, no, the problem is about a triangle. Let me confirm.\n\nWait, the problem says \"a triangle with base 1",
+     "43. So, the answer should be 43. But wait, let me verify again. The first term is 1, then 1, then 2, then 3, then 5, then 8, then 13, then 21, then 34, then"
+    ],
+    "chanswap": [
+     " I should also check if the user is asking for the most recent or any specific year. But the question doesn't specify, so I'll assume they want the latest available data.\n\nAnother point: The user might be interested in the number of games played by each player, but the question is about the number of players,",
+     " but I should check if they are needed. Maybe the user just wants the main points. Let me make sure to cover the basics without overcomplicating. Also, avoid jargon unless necessary. Keep it simple and conversational. Alright, let's start structuring the answer.\n</think>\n\nHere\u2019s a concise and",
+     " list of items. Maybe I should just go with the first one and see how it goes. \n\nHmm, the first item is \"Blueberry Muffin\". That's a classic, but I wonder if the user wants something more unique. Wait, maybe they're looking for a list of items in a specific category",
+     " or perhaps the user is looking for something else. Let me check the categories again.\n\nWait, the user mentioned \"top 100 things in the world.\" Maybe they want a list of the top 100 things in a specific category, like top 100 countries, top 100"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " fuel efficiency, emissions, and safety. Then, there's the issue of storage. If you're using lithium-ion batteries, they have a limited lifespan, and you need to replace them eventually. Also, charging infrastructure is still developing, so range anxiety might be a problem in some areas. Oh, and the initial cost",
+     "Workout Gear\" is a bit too broad. Maybe \"Eco-Friendly Workout Gear\" or \"Sustainable Workout Gear\" could be more specific and appealing. \n\n2. **Brand Identity**: If you're building a brand, having a consistent name is important. \"EcoFit\" or \"GreenGym",
+     " are all unique. So, the user can't just pick a random one. \n\nAnother idea: maybe the user can choose from a list of pre-approved items. But the question doesn't mention that. \n\nWait, the user is asking for a list of items they can take. The answer should be a list of",
+     " interested in the concept of \"cultural capital\" and how it relates to the education system. Maybe they want to know if the education system is biased towards certain types of students or if it's equitable. \n\nThey might also be looking for information on how the education system in the UK is structured, like the difference between"
+    ],
+    "corrupt": [
+     " fuel efficiency, emissions, and safety. Then, there's the issue of storage. If you're using lithium-ion batteries, they have a limited lifespan, and you need to replace them eventually. Also, charging infrastructure is still developing, so range anxiety might be a problem in some areas. Oh, and the initial cost",
+     " so that's the first possibility.\n\nWait, but the user mentioned \"unique\" and \"distinct,\" so maybe they want all possible unique names. Let me check again.\n\nAlternatively, maybe they want the names in order. Let me think.\n\nWait, the user is asking for the possible names of the state, and they",
+     " didn't mention any specific location, so it's better to keep it general. Let me check if I missed any other aspects. The user might be looking for a balance between the two, so I should present both options clearly. Also, maybe mention that the answer is based on the given information, as the user might",
+     " a well-known author, I think. Maybe a contemporary one. \n\nWait, the line \"There's a certain feeling I get when I'm in a city\" is from a song. Maybe it's \"City of Stars\" from La La Land? But I'm not sure. Alternatively, could it be a poem"
+    ],
+    "chanswap": [
+     " fuel efficiency, emissions, and safety. Then, there's the issue of storage. If you're using lithium-ion batteries, they have a limited lifespan, and you need to replace them eventually. Also, charging infrastructure is still developing, so range anxiety might be a problem in some areas. Oh, and the initial cost",
+     "n\" (e.g., 3-4-5 triangle). Wait, but the user mentioned a 3-4-5 triangle. Let me confirm if that's the case. Yes, the user mentioned \"3-4-5 triangle.\"\n\nSo, the triangle has sides 3, 4, and",
+     ". the planet's surface. So, if I'm a human, I can walk on the surface. But if I'm a bird, I can fly. So, the surface is where things like humans, animals, and plants live. But then there's the atmosphere, which is like the air around the planet.",
+     " -4, 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60,"
+    ]
+   }
+  ]
+ }
+}

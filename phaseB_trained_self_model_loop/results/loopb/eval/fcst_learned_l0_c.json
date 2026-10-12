@@ -1,0 +1,685 @@
+{
+ "tag": "fcst_learned_l0_c",
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 0.0,
+ "ploss": "nce",
+ "nll_own": [
+  0.8573434948921204,
+  1.6384892463684082,
+  1.7214114665985107,
+  1.769660234451294,
+  1.7966023683547974,
+  1.7773327827453613,
+  1.7945231199264526,
+  1.8101832866668701
+ ],
+ "nll_foreign": [
+  0.8573434948921204,
+  1.8943908214569092,
+  1.9976420402526855,
+  2.0493760108947754,
+  2.073625326156616,
+  2.060540199279785,
+  2.0801761150360107,
+  2.097198724746704
+ ],
+ "nll_stale": [
+  0.8573434948921204,
+  1.6384892463684082,
+  1.8645738363265991,
+  1.9014452695846558,
+  1.9359676837921143,
+  1.9125365018844604,
+  1.9397660493850708,
+  1.9596904516220093
+ ],
+ "bnd_own": 3.3746066093444824,
+ "bnd_foreign": 5.014966011047363,
+ "necessity_foreign": [
+  0.2778206169605255,
+  0.003572073532268405
+ ],
+ "necessity_stale": [
+  0.14071084558963776,
+  0.001881524920463562
+ ],
+ "swap_pull_state": [
+  0.015387450344860554,
+  0.0007683123694732785
+ ],
+ "swap_pull_forecast": [
+  0.04040617495775223,
+  0.000977975083515048
+ ],
+ "swap_stay": 0.9936100840568542,
+ "swap_dnll": 0.08106061071157455,
+ "S_cos": [
+  0.2997288107872009,
+  0.3088132441043854,
+  0.3054176867008209,
+  0.2944817841053009,
+  0.2922786474227905,
+  0.2910676598548889,
+  0.28875648975372314
+ ],
+ "R2": {
+  "S": -0.5066838264465332,
+  "persistence": -0.4729318618774414,
+  "segment_mean": -1.3113021850585938e-06
+ },
+ "collapse": 0.2506546378135681,
+ "retrieval": {
+  "S": 0.09178571403026581,
+  "persistence": 0.05714285799435207,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.9902911186218262,
+  0.9993798136711121,
+  0.9999531507492065,
+  0.9999908208847046,
+  0.9999944567680359
+ ],
+ "identity_donor": [
+  0.09199824184179306,
+  0.07628998160362244,
+  0.06774776428937912,
+  0.05114582180976868,
+  0.03861437737941742
+ ],
+ "nll_corrupt": [
+  0.8573434948921204,
+  1.6384892463684082,
+  1.7214114665985107,
+  2.0493760108947754,
+  1.8042484521865845,
+  1.778499722480774,
+  1.7946765422821045,
+  1.8098578453063965
+ ],
+ "track_fresh": [
+  0.2792421579360962,
+  0.29006704688072205,
+  0.2904917597770691,
+  0.28865429759025574
+ ],
+ "track_stale": [
+  0.29100969433784485,
+  0.29173457622528076,
+  0.2909087836742401,
+  0.28874796628952026
+ ],
+ "observer_cos": [
+  0.1967555582523346,
+  0.22992312908172607,
+  0.2350989729166031,
+  0.20065519213676453,
+  0.2193099856376648,
+  0.19646233320236206,
+  0.21530941128730774
+ ],
+ "baselines": {
+  "persistence": [
+   0.2974373400211334,
+   0.3081837594509125,
+   0.30545884370803833,
+   0.30504176020622253,
+   0.2932860851287842,
+   0.29031699895858765,
+   0.310254842042923
+  ],
+  "segment_mean": [
+   0.2605994641780853,
+   0.2609630823135376,
+   0.25309887528419495,
+   0.2612556517124176,
+   0.25730717182159424,
+   0.24331678450107574,
+   0.22867754101753235
+  ],
+  "linear": [
+   0.4371519791119078,
+   0.4463438862398161,
+   0.4392160892300292,
+   0.4288715605733849,
+   0.4174043513370499,
+   0.4098057518961005,
+   0.41808526397772655
+  ]
+ },
+ "pr": 21.50845971966365,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "notoriously",
+     "revered",
+     "sled",
+     "eminent",
+     "influential",
+     "gaping",
+     "crossover",
+     "prestigious",
+     "sausage",
+     "imprint"
+    ],
+    "neg": [
+     "Hmm",
+     "Maybe",
+     "Perhaps",
+     "paragraphs",
+     "Could",
+     "Did",
+     "Does",
+     "paragraph",
+     "Wait",
+     "Paragraph"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "mentioning",
+     "Mention",
+     "mentions",
+     "highlight",
+     "emphasize",
+     "highlighting",
+     "listing",
+     "mentioned",
+     "avoid"
+    ],
+    "neg": [
+     "Hmm",
+     "would",
+     "Would",
+     "Does",
+     "Could",
+     "did",
+     "reportedly",
+     "appears",
+     "apparently",
+     "presumably"
+    ]
+   },
+   "2": {
+    "pos": [
+     "would",
+     "fits",
+     "because",
+     "orbits",
+     "per",
+     "percent",
+     "years",
+     "gamble",
+     "Nonetheless",
+     "junction"
+    ],
+    "neg": [
+     "Santana",
+     "Riverside",
+     "Mazda",
+     "Xbox",
+     "Emirates",
+     "Buffy",
+     "Jazz",
+     "Zack",
+     "Hou",
+     "Willow"
+    ]
+   },
+   "3": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "perhaps",
+     "yeah",
+     "they",
+     "Yeah",
+     "but",
+     "explaining",
+     "huh",
+     "though"
+    ],
+    "neg": [
+     "recall",
+     "Recall",
+     "remembers",
+     "recalls",
+     "remember",
+     "Dragons",
+     "memory",
+     "recalled",
+     "fuzzy",
+     "forget"
+    ]
+   },
+   "4": {
+    "pos": [
+     "Exxon",
+     "Porsche",
+     "tenants",
+     "Airbnb",
+     "Wimbledon",
+     "lesbians",
+     "Mazda",
+     "touchdowns",
+     "Olympics",
+     "Disneyland"
+    ],
+    "neg": [
+     "definitely",
+     "classified",
+     "classify",
+     "not",
+     "Definitely",
+     "belong",
+     "bigger",
+     "referred",
+     "synonymous",
+     "imply"
+    ]
+   },
+   "5": {
+    "pos": [
+     "Marvel",
+     "title",
+     "answer",
+     "titles",
+     "Deadpool",
+     "Batman",
+     "Comic",
+     "fictional",
+     "actress",
+     "fandom"
+    ],
+    "neg": [
+     "might",
+     "heard",
+     "probably",
+     "recalls",
+     "remember",
+     "should",
+     "remembers",
+     "believes",
+     "don",
+     "definitely"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Quite",
+     "Definitely",
+     "memorable",
+     "Avengers",
+     "Greatest",
+     "blockbuster",
+     "Watching",
+     "admittedly",
+     "Superman",
+     "reigning"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "guitars",
+     "instrument",
+     "musicians",
+     "percussion",
+     "musical",
+     "chords",
+     "pedals",
+     "chord"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "might",
+     "isn",
+     "someone",
+     "may",
+     "could",
+     "she",
+     "someday",
+     "represents",
+     "their"
+    ],
+    "neg": [
+     "Certainly",
+     "Probably",
+     "Likely",
+     "Definitely",
+     "Yep",
+     "Alright",
+     "Thankfully",
+     "probable",
+     "Obviously",
+     "Typically"
+    ]
+   }
+  },
+  "write_mean": [
+   "emailing",
+   "adaptable",
+   "recipients",
+   "enhancing",
+   "downturn",
+   "cougar",
+   "issuer",
+   "cybersecurity",
+   "versatility",
+   "softened"
+  ],
+  "write_pc0": {
+   "pos": [
+    "Gameplay",
+    "Feedback",
+    "Depending",
+    "Stamina",
+    "Inputs",
+    "Regarding",
+    "Curve",
+    "Connections",
+    "Connectivity",
+    "Recall"
+   ],
+   "neg": [
+    "robe",
+    "roam",
+    "guise",
+    "hart",
+    "sha",
+    "wan",
+    "dominates",
+    "burden",
+    "yan",
+    "hun"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "ambiguous",
+    "misunderstanding",
+    "Incorrect",
+    "Listing",
+    "incorrect",
+    "Duplicate",
+    "Possible",
+    "inconsistencies",
+    "inconsistency",
+    "Explanation"
+   ],
+   "neg": [
+    "goodies",
+    "needy",
+    "cuisine",
+    "booming",
+    "magna",
+    "gourmet",
+    "wanna",
+    "killers",
+    "growers",
+    "hugely"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "Trout",
+    "Rivers",
+    "Rudd",
+    "Ply",
+    "Loader",
+    "Ard",
+    "Plants",
+    "Basil",
+    "Barber",
+    "Abbott"
+   ],
+   "neg": [
+    "different",
+    "differently",
+    "practical",
+    "stronger",
+    "differing",
+    "financial",
+    "easier",
+    "circumstances",
+    "stricter",
+    "disadvantaged"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Wallace",
+    "Palmer",
+    "Jerome",
+    "Kenny",
+    "Rodgers",
+    "Philips",
+    "Nichols",
+    "Scarborough",
+    "Spencer",
+    "Fraser"
+   ],
+   "neg": [
+    "decisions",
+    "adjustments",
+    "coordination",
+    "actions",
+    "valuation",
+    "outcomes",
+    "impact",
+    "answers",
+    "conclusions",
+    "questionnaire"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.17302697896957397,
+    0.11598817259073257,
+    0.04646400362253189,
+    0.031330857425928116,
+    0.019410131499171257,
+    0.020962415263056755,
+    0.025087222456932068
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.01467849686741829,
+    0.002681356854736805,
+    0.004003563430160284,
+    -0.009621141478419304,
+    0.0001080813817679882,
+    0.0026500483509153128,
+    -0.002918645739555359
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.1047750860452652,
+    0.08145829290151596,
+    0.1059061661362648,
+    0.11624225974082947,
+    0.08731205761432648,
+    0.0751103013753891,
+    0.12343527376651764,
+    0.10060149431228638
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.17302697896957397,
+    0.11598817259073257,
+    0.0221161637455225,
+    0.007256117183715105,
+    0.0006462703458964825,
+    -0.009076699614524841,
+    -0.003596911672502756
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.01467849686741829,
+    0.002681356854736805,
+    0.06506515294313431,
+    0.04302100092172623,
+    0.03241780772805214,
+    0.026863278821110725,
+    0.027295075356960297
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.10062430053949356,
+    0.0654807835817337,
+    0.07426980137825012,
+    0.07607623934745789,
+    0.10232104361057281
+   ],
+   "z_vs_donor_run": [
+    0.1047750860452652,
+    0.08145829290151596,
+    0.1059061661362648,
+    0.2122844010591507,
+    0.13534998893737793,
+    0.09974955022335052,
+    0.08654157817363739,
+    0.09264765679836273
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6704888939857483,
+    0.17302697896957397,
+    0.11598817259073257,
+    0.02569793164730072,
+    0.011767268180847168,
+    0.004350951407104731,
+    -0.01017026323825121,
+    -0.003468623850494623
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.01467849686741829,
+    0.002681356854736805,
+    0.04267667979001999,
+    0.02735576033592224,
+    0.028794962912797928,
+    0.01811494678258896,
+    0.012973349541425705
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.15895090997219086,
+    0.0738915205001831,
+    0.09577209502458572,
+    0.08642426133155823,
+    0.11142734438180923
+   ],
+   "z_vs_donor_run": [
+    0.1047750860452652,
+    0.08145829290151596,
+    0.1059061661362648,
+    0.17857089638710022,
+    0.12102621793746948,
+    0.10478594154119492,
+    0.09299837797880173,
+    0.11153346300125122
+   ]
+  },
+  "S_cos_free": [
+   0.235051229596138,
+   0.24682876467704773,
+   0.2629081904888153,
+   0.2870888113975525,
+   0.2539777457714081,
+   0.2595069408416748,
+   0.26913201808929443
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     " time.\n\nBut that's just a guess. I'll need to confirm if the SuperSonics were in the NBA during that time. Wait, the Seattle SuperSonics were a team that existed in the NBA from 1967 to 2008. So if the game was in 20",
+     " a former NBA player, then there's the NBA Finals. The Boston Celtics and the LA Lakers have had a lot of matchups. The Celtics won the first six championships, then the Lakers won the next five. Then the Celtics came back with the 1980s dynasty, and the Lakers had Magic and Kare",
+     "e, and maybe the others. Let me check.\n\nWait, but the user asked for the top 5. So, I need to list the top 5. Let me make sure I have the order right.\n\n1. Cristiano Ronaldo \u2013 554 goals\n2. Lionel Messi \u2013 500",
+     "11.3.1.1.3.1.3.1.1.3.1.1.3.1.1.3.1.1.3.1.1.3.1.1.3.1.1.3.1.1.3.1"
+    ],
+    "corrupt": [
+     " time.\n\nBut that's just a guess. I'll need to confirm if the SuperSonics were in the NBA during that time. Wait, the Seattle SuperSonics were a team that existed in the NBA from 1967 to 2008. So if the game was in 20",
+     " So, the user might be confused between the two. Let me check if there's any other possible interpretation.\n\nWait, could \"equatorial diameter\" refer to something else? No, in standard terms, it's the diameter of the equator. So, the answer should be that the equatorial diameter is larger,",
+     " so the US is the only country with a president. So the answer is the United States. Let me check if there are any other countries that use the term \"president\" for their head of state. For example, some countries might have a president as the head of government, but not the head of state.",
+     ". So, the first step is to explain the difference between the two types of movement.\n\nI should also mention that the solar system is a vast system, so the movements can be complex. Maybe I should break down each type of movement separately. \n\nFor revolution, I can say it's the orbit around the Sun."
+    ],
+    "chanswap": [
+     " time.\n\nBut that's just a guess. I'll need to confirm if the SuperSonics were in the NBA during that time. Wait, the Seattle SuperSonics were a team that existed in the NBA from 1967 to 2008. So if the game was in 20",
+     " a soccer team. \n\nWait, the user mentioned \"a soccer team\" in the example, so maybe they want the answer in that format. Let me check the initial request again. \n\nThe user asked, \"List three sports teams that have won the most championships in their respective leagues.\" So the answer should list three",
+     " clubs. So, I should check the top three in each category. Let me list them out. \n\nFirst, the top three in the Premier League. Manchester City, Manchester United, and Liverpool. Then the Bundesliga: Bayern Munich, Borussia Dortmund, and RB Leipzig. La Liga: Real Madrid, Barcelona, and",
+     " won the 2020 NBA Draft, and the first pick was the Boston Celtics. Wait, no, the 2020 NBA Draft was held in 2020, and the first pick was the Boston Celtics selecting Jayson Tatum. But I think there's a mix-up here."
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I should check if the user is asking about the actual number of women in the workforce or if they are referring to a specific group, like a company or a country's statistics. If it's a general question, the answer would need to be more broad. But since the user didn't specify, maybe I should mention",
+     "0.0250.050.075.100.125.150.175.200.225.250.275.300.325.350.375.4",
+     "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.",
+     "3.6.5.3.6.5.3.6.5.3.6.5.3.6.5.3.6.5.3.6.5.3.6.5.3.6.5.3.6.5.3.6."
+    ],
+    "corrupt": [
+     " I should check if the user is asking about the actual number of women in the workforce or if they are referring to a specific group, like a company or a country's statistics. If it's a general question, the answer would need to be more broad. But since the user didn't specify, maybe I should mention",
+     " a famous player in the league. So, the user might be looking for a specific player known for a lot of goals, maybe someone like Messi or Ronaldo, but since the user mentioned \"most goals in the league,\" it's possible they're referring to a specific league, like La Liga or the Premier League. \n\n",
+     "I should also mention that the first time I heard about the World Cup, I was in 1998 when I was 14. That was the year the World Cup was in France, and I remember watching the matches on TV with my family. That's when I got really interested in football. \n\n",
+     ", the 13th century, the term \"village\" was used in the sense of a group of houses, not necessarily associated with a rural area. So, the word \"village\" was used in the sense of a group of houses, but not necessarily associated with a rural area. \n\nWait,"
+    ],
+    "chanswap": [
+     " I should check if the user is asking about the actual number of women in the workforce or if they are referring to a specific group, like a company or a country's statistics. If it's a general question, the answer would need to be more broad. But since the user didn't specify, maybe I should mention",
+     "0.5 years. Wait, that's not right. The user said 10 years. Maybe I confused the years. Let me check.\n\nWait, the user's question is about 10 years. So the first part is about the 10-year period. But the initial response mentioned 5 years",
+     ". But wait, the user asked for the top 5. So maybe the user is asking for the top 5 countries in the world. Let me confirm that. The user's question is a bit ambiguous. They could be asking for the top 5 countries in the world in terms of population, GDP, area",
+     ", the key is to find a balance between the two. The user might prefer one over the other, but it's important to check the context. If the user is asking for a list of items, maybe they want both. But if they're asking for a specific type, like a list of countries, then it"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " oil and gas production, which is crucial for the economy. But the environmental impact of drilling and extraction is a big concern. So, how does the company balance economic needs with environmental responsibility?\n\nAnother point is the regulatory environment. The U.S. has a lot of regulations for oil and gas, especially with the EPA and",
+     " I should check if there are any other possible interpretations. Let me think. The user mentioned \"a city that is 100 km away from the equator.\" So, the equator is a line of latitude. A city 100 km north or south of the equator would be on the ",
+     "8000000000000000000000000000000000000000000000000000000000000000",
+     " that's the answer. But I need to make sure it's correct. Let me think again.\n\nWait, the question is about the number of different ways to color the faces of a cube with exactly 6 colors, each color used exactly once. So, it's a proper coloring where each face has a unique color"
+    ],
+    "corrupt": [
+     " oil and gas production, which is crucial for the economy. But the environmental impact of drilling and extraction is a big concern. So, how does the company balance economic needs with environmental responsibility?\n\nAnother point is the regulatory environment. The U.S. has a lot of regulations for oil and gas, especially with the EPA and",
+     "20.10.2023. \n\nWait, that's the current date. So maybe the user is asking about the current date, which is October 20, 2023. But I should confirm that. However, the user might be asking for a general format. Let me",
+     " check if the user is a valid user. If not, return an error.\n</think>\n\nTo determine if a user is valid, you need to define what \"valid\" means in your context. Here are some common scenarios:\n\n### 1. **User Authentication (e.g., login system):**\n   - **Valid",
+     " answer is not that straightforward. Let me think again.\n\nWait, maybe the user is asking about the number of possible outcomes when rolling two dice, which is 6*6=36. But the question is about \"possible outcomes\" in the context of probability. However, the initial question is a bit vague."
+    ],
+    "chanswap": [
+     " oil and gas production, which is crucial for the economy. But the environmental impact of drilling and extraction is a big concern. So, how does the company balance economic needs with environmental responsibility?\n\nAnother point is the regulatory environment. The U.S. has a lot of regulations for oil and gas, especially with the EPA and",
+     " I should check if there are any other possible interpretations. The key here is that the user might be asking for the total number of possible ways to choose the team, which is the sum of combinations for each case. Let me verify that. \n\nThe possible team compositions are:\n1. 1 from A, 1",
+     "8. So, the answer is 8. But wait, the user might be asking for the number of letters, not the count. Let me check the question again. The user wrote: \"How many letters are in the word 'eight'?\". The word 'eight' has 5 letters: E-I-G",
+     ", the user is asking for the name of the animal that is the opposite of a snake. The answer is a \"lizard.\" But I need to verify if that's accurate. Let me think. Snakes are reptiles, and lizards are also reptiles. Wait, but maybe the user is looking for"
+    ]
+   }
+  ]
+ }
+}

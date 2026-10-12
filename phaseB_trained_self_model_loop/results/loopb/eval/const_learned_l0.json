@@ -1,0 +1,603 @@
+{
+ "tag": "const_learned_l0",
+ "chan": "const",
+ "reader": "learned",
+ "lam": 0.0,
+ "nll_own": [
+  0.8589682579040527,
+  1.616551160812378,
+  1.702286720275879,
+  1.7497133016586304,
+  1.7785872220993042,
+  1.7620232105255127,
+  1.7812590599060059,
+  1.7964057922363281
+ ],
+ "nll_foreign": [
+  0.8589682579040527,
+  1.8718414306640625,
+  1.97102952003479,
+  2.0197255611419678,
+  2.044858694076538,
+  2.0313289165496826,
+  2.0539815425872803,
+  2.0757079124450684
+ ],
+ "nll_stale": [
+  0.8589682579040527,
+  1.616551160812378,
+  1.8547688722610474,
+  1.8931993246078491,
+  1.933759331703186,
+  1.9096118211746216,
+  1.938957929611206,
+  1.9570138454437256
+ ],
+ "bnd_own": 3.322620391845703,
+ "bnd_foreign": 5.088017463684082,
+ "necessity_foreign": [
+  0.2688065767288208,
+  0.002875735517591238
+ ],
+ "necessity_stale": [
+  0.15283948183059692,
+  0.00184596364852041
+ ],
+ "S_cos": [
+  0.42282119393348694,
+  0.425721675157547,
+  0.43342334032058716,
+  0.41169387102127075,
+  0.4152349531650543,
+  0.40552395582199097,
+  0.4208313822746277
+ ],
+ "identity_own": [
+  0.9965623617172241,
+  0.9999409317970276,
+  0.9999937415122986,
+  0.9999948740005493,
+  0.9999945759773254
+ ],
+ "identity_donor": [
+  0.02942533791065216,
+  0.019839344546198845,
+  0.03422476723790169,
+  0.009437556378543377,
+  0.016409309580922127
+ ],
+ "nll_corrupt": [
+  0.8589682579040527,
+  1.616551160812378,
+  1.702286720275879,
+  2.0197255611419678,
+  1.7807775735855103,
+  1.762073040008545,
+  1.781150221824646,
+  1.7958111763000488
+ ],
+ "track_fresh": [
+  0.4038182497024536,
+  0.4148811995983124,
+  0.4055275022983551,
+  0.4207965135574341
+ ],
+ "track_stale": [
+  0.41098666191101074,
+  0.41511231660842896,
+  0.40554893016815186,
+  0.42078736424446106
+ ],
+ "observer_cos": [
+  0.17406700551509857,
+  0.21455812454223633,
+  0.22572492063045502,
+  0.21116378903388977,
+  0.2038239687681198,
+  0.17357072234153748,
+  0.1971781849861145
+ ],
+ "baselines": {
+  "persistence": [
+   0.29029035568237305,
+   0.3066039979457855,
+   0.3032047152519226,
+   0.30198994278907776,
+   0.2920185327529907,
+   0.2959176003932953,
+   0.3139549195766449
+  ],
+  "segment_mean": [
+   0.11632779240608215,
+   0.12874382734298706,
+   0.12236077338457108,
+   0.13864777982234955,
+   0.1682213991880417,
+   0.15792763233184814,
+   0.17240792512893677
+  ],
+  "linear": [
+   0.41029837170255573,
+   0.41353906303563703,
+   0.4230161613179345,
+   0.39646195952838326,
+   0.3987911333803168,
+   0.39004096564921703,
+   0.40824473891345453
+  ]
+ },
+ "pr": 26.26669244261974,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "immensely",
+     "sausage",
+     "dealt",
+     "outrage",
+     "hearty",
+     "imprint",
+     "adept",
+     "badass",
+     "exacerbated",
+     "fraught"
+    ],
+    "neg": [
+     "Maybe",
+     "maybe",
+     "Hmm",
+     "perhaps",
+     "Perhaps",
+     "mentions",
+     "mention",
+     "unsure",
+     "mentioning",
+     "Yeah"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "mentioning",
+     "Mention",
+     "mentions",
+     "advising",
+     "emphasize",
+     "recommending",
+     "avoid",
+     "highlight",
+     "recommend"
+    ],
+    "neg": [
+     "Hmm",
+     "played",
+     "wait",
+     "but",
+     "reportedly",
+     "used",
+     "often",
+     "Wait",
+     "instrument",
+     "isn"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "isn",
+     "but",
+     "though",
+     "too",
+     "yet",
+     "because",
+     "else",
+     "would",
+     "without"
+    ],
+    "neg": [
+     "Santana",
+     "Alam",
+     "Cowboy",
+     "Godzilla",
+     "Zack",
+     "Sour",
+     "Simpsons",
+     "Fargo",
+     "Bamboo",
+     "Hou"
+    ]
+   },
+   "3": {
+    "pos": [
+     "Maybe",
+     "maybe",
+     "explaining",
+     "they",
+     "Perhaps",
+     "things",
+     "Describe",
+     "perhaps",
+     "deterrent",
+     "explain"
+    ],
+    "neg": [
+     "recall",
+     "remembers",
+     "remember",
+     "recalls",
+     "memory",
+     "Recall",
+     "remembered",
+     "recalled",
+     "uncertain",
+     "forget"
+    ]
+   },
+   "4": {
+    "pos": [
+     "tenants",
+     "touchdowns",
+     "bravery",
+     "endings",
+     "convictions",
+     "Directors",
+     "rotations",
+     "morals",
+     "Stations",
+     "judgments"
+    ],
+    "neg": [
+     "definitely",
+     "categorized",
+     "classified",
+     "classify",
+     "not",
+     "technically",
+     "Definitely",
+     "famous",
+     "notable",
+     "synonymous"
+    ]
+   },
+   "5": {
+    "pos": [
+     "Deadpool",
+     "Mayweather",
+     "Batman",
+     "franchise",
+     "Marvel",
+     "Messi",
+     "Disney",
+     "spelling",
+     "fandom",
+     "actress"
+    ],
+    "neg": [
+     "learnt",
+     "recalls",
+     "heard",
+     "think",
+     "remember",
+     "might",
+     "ought",
+     "shady",
+     "thinks",
+     "need"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Rookie",
+     "blockbuster",
+     "Famous",
+     "Definitely",
+     "Quite",
+     "Playboy",
+     "Greatest",
+     "Avengers",
+     "memorable",
+     "undefeated"
+    ],
+    "neg": [
+     "instruments",
+     "instrument",
+     "guitar",
+     "guitars",
+     "chords",
+     "percussion",
+     "chord",
+     "musical",
+     "Instruments",
+     "musicians"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "could",
+     "someone",
+     "isn",
+     "may",
+     "seeking",
+     "she",
+     "Loki",
+     "imposes",
+     "exercising"
+    ],
+    "neg": [
+     "Probably",
+     "Certainly",
+     "Definitely",
+     "obvious",
+     "Yep",
+     "standout",
+     "staple",
+     "Thankfully",
+     "probable",
+     "Alright"
+    ]
+   }
+  },
+  "write_mean": [
+   "Latinos",
+   "camper",
+   "inbox",
+   "emailing",
+   "handset",
+   "Embassy",
+   "outreach",
+   "Inbox",
+   "hometown",
+   "Nicaragua"
+  ],
+  "write_pc0": {
+   "pos": [
+    "Different",
+    "Depending",
+    "Recall",
+    "Differences",
+    "Particularly",
+    "Specifically",
+    "differing",
+    "Complete",
+    "Reviewed",
+    "Details"
+   ],
+   "neg": [
+    "smoke",
+    "particle",
+    "gun",
+    "sar",
+    "firearms",
+    "sleep",
+    "meg",
+    "weapon",
+    "sleeping",
+    "mon"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "Names",
+    "Johannes",
+    "Hen",
+    "Johann",
+    "identifies",
+    "Jacques",
+    "Wilhelm",
+    "Identified",
+    "Isaac",
+    "Num"
+   ],
+   "neg": [
+    "cheaper",
+    "healthier",
+    "expensive",
+    "incentives",
+    "addicted",
+    "efficiency",
+    "economics",
+    "improvement",
+    "hungry",
+    "subsidized"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "opportunities",
+    "activism",
+    "interpersonal",
+    "accountability",
+    "distractions",
+    "social",
+    "attitudes",
+    "creativity",
+    "empathy",
+    "awareness"
+   ],
+   "neg": [
+    "Ferdinand",
+    "Cart",
+    "Ships",
+    "Islands",
+    "Meter",
+    "Rivers",
+    "Metric",
+    "Jar",
+    "Calder",
+    "Mountains"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "essays",
+    "Addiction",
+    "Essays",
+    "Themes",
+    "empathy",
+    "Emotional",
+    "memoir",
+    "mindfulness",
+    "Dialogue",
+    "Emails"
+   ],
+   "neg": [
+    "confusing",
+    "striped",
+    "slightly",
+    "inconsistent",
+    "incorrectly",
+    "calculation",
+    "playable",
+    "Bundesliga",
+    "incorrect",
+    "Jerseys"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.665930986404419,
+    0.16106471419334412,
+    0.09423215687274933,
+    0.06633587926626205,
+    0.04959015175700188,
+    0.024323999881744385,
+    0.02983970195055008,
+    0.010808585211634636
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    -0.011403271928429604,
+    -0.022838346660137177,
+    -0.00015573063865303993,
+    -0.005489034112542868,
+    0.0037195191252976656,
+    -0.013601021841168404,
+    -0.010859058238565922
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.03432447835803032,
+    0.05181709676980972,
+    0.08918630331754684,
+    0.036417219787836075,
+    0.05986654385924339,
+    0.10388766974210739,
+    0.043090760707855225,
+    0.032670650631189346
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.665930986404419,
+    0.16106471419334412,
+    0.09423215687274933,
+    0.0010889256373047829,
+    -0.006338282488286495,
+    -0.006131203845143318,
+    0.0024001544807106256,
+    0.0016960068605840206
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    -0.011403271928429604,
+    -0.022838346660137177,
+    0.07384758442640305,
+    0.05905396118760109,
+    0.03224171698093414,
+    0.011074421927332878,
+    0.017963502556085587
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.0882149264216423,
+    0.06616803258657455,
+    0.06937767565250397,
+    0.05063202232122421,
+    0.07404087483882904
+   ],
+   "z_vs_donor_run": [
+    0.03432447835803032,
+    0.05181709676980972,
+    0.08918630331754684,
+    0.15498003363609314,
+    0.10177984088659286,
+    0.057752158492803574,
+    0.05175705999135971,
+    0.024273917078971863
+   ]
+  },
+  "S_cos_free": [
+   0.3276636600494385,
+   0.36412909626960754,
+   0.33764252066612244,
+   0.3178580701351166,
+   0.3509032726287842,
+   0.35944461822509766,
+   0.32565823197364807
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, the user is asking for ways to help them sleep better. Let me start by recalling the common advice for improving sleep. First, maintaining a consistent sleep schedule is important. Going to bed and waking up at the same time every day helps regulate the body's internal clock. Then, creating a bedtime routine",
+    "own": [
+     " again.\n\nWait, but the user might be looking for a more systematic approach. Let me think about the possible combinations again.\n\nAlternatively, maybe I can calculate the number of possible pairs and then subtract the ones that are invalid. But that might not be straightforward.\n\nAlternatively, think of it as the number of possible pairs of",
+     ". \n\nWait, the user might be referring to the previous match where I mentioned \"The previous match was between Team A and Team B, with Team A winning 3-2.\" But I need to make sure that's the correct context. If the user is asking for the current match, I should clarify that I",
+     "'m not sure if I'm missing any. Wait, maybe the other way around. Let me check.\n\nIn some regions, like in the UK, they might use \"flat\" to mean a flat, but in the US, \"flat\" is a different term. Also, \"apartment\" is more common in",
+     " American dream, the idea that anyone can achieve success through hard work, is a central theme. The film shows how different characters pursue their dreams, sometimes in unexpected ways. \n\nI should also mention the social commentary. The movie doesn't just focus on individual success but also the broader societal issues. For example, the portrayal"
+    ],
+    "corrupt": [
+     " again.\n\nWait, but the user might be looking for a more systematic approach. Let me think about the possible combinations again.\n\nAlternatively, maybe I can calculate the number of possible pairs and then subtract the ones that are invalid. But that might not be straightforward.\n\nAlternatively, think of it as the number of possible pairs of",
+     " \n\nWait, but I should check if there are any other possible combinations. Let me list all possible ways to make 10 with two numbers between 1 and 9:\n\n1 + 9 = 10\n\n2 + 8 = 10\n\n3 + 7 = 10\n\n4",
+     "3 is 3. So, the total number of numbers is 3 (from 1-3) plus 2 (from 10-19) plus 1 (from 20-29) plus 1 (from 30-39) plus 1 (from ",
+     "17th century, the Dutch East India Company (VOC) was a major player. The VOC was established in 1602, and it had a monopoly on trade with the East Indies. \n\nThe VOC's role was significant because it was the first joint-stock company. This means that investors from different"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I think I need to check if the user is asking for something specific. Maybe they want a list of all the planets in the solar system? Or perhaps they're looking for information on a particular planet? Let me make sure I cover the basics. \n\nFirst, the solar system has eight planets, right? Wait,",
+     " 1843, 1844. 1845. 1846. 1847. 1848. 1849. 1850. 1851. 1852. 185",
+     "4 is 1997.\n\nSo the answer is 1997.\n\nI need to make sure I didn't make any calculation errors. Let me verify:\n\n1997 divided by 4 is 499.25. So 4 times 499 is 19",
+     "32. Then, the next one would be 33, and so on. Wait, but the user might not be asking for that. Maybe the user is confused about the numbering system. Let me check the question again.\n\nThe user wrote: \"If I have 100, 101"
+    ],
+    "corrupt": [
+     " I think I need to check if the user is asking for something specific. Maybe they want a list of all the planets in the solar system? Or perhaps they're looking for information on a particular planet? Let me make sure I cover the basics. \n\nFirst, the solar system has eight planets, right? Wait,",
+     ". \n\nWait, the user might be asking for the number of matches, not the number of games. Let me clarify that. If they mean the number of matches, the answer would be 4. But if they mean the number of games (which is the same as matches in this context), it's still ",
+     "7:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00:00",
+     " numbers of years. Wait, the question is about the current year, so maybe they are asking for the latest one. The 2016 season is the most recent one in the list. But I should check if there's a more recent one. However, the data only goes up to 201"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " hydraulic system. Also, the coolant system is important because if the engine overheats, it can cause serious damage. The cooling system includes the radiator, thermostat, water pump, and coolant. \n\nNext, the electrical system. This includes the battery, alternator, starter motor, and wiring. The battery provides the initial",
+     " photosynthesis. So that's the first step. Then, the second step is the Calvin cycle. Wait, but the user might not know that. Maybe I should explain it more clearly. Also, the user might want to know the importance of each step. Let me structure this with the two main steps, explain what",
+     " is the chemical formula for water. \n\nFirst, I should recall the elements involved. Water is made up of hydrogen and oxygen. The formula is H2O, right? Let me think. Each water molecule has two hydrogen atoms and one oxygen atom. So, the formula should be H\u2082O. \n\nWait,",
+     " to the point. So, the user is asking for a list of countries in the EU that have a higher GDP per capita than the UK. I should make sure to list them accurately.\n\nFirst, I need to recall the GDP per capita figures for EU countries. The UK is part of the EU, but after Brexit"
+    ],
+    "corrupt": [
+     " hydraulic system. Also, the coolant system is important because if the engine overheats, it can cause serious damage. The cooling system includes the radiator, thermostat, water pump, and coolant. \n\nNext, the electrical system. This includes the battery, alternator, starter motor, and wiring. The battery provides the initial",
+     " 1942, the 38th Infantry Division was activated in the U.S. and sent to the Pacific. The division's 152nd Infantry Regiment was assigned to the 38th, and they saw action in the Philippines. But the 38th was more notable for the",
+     " early history of the 20th century, the US had a strong economy and a strong military, but the US was not a superpower in the traditional sense. The US was a global power, but not a superpower. The US was not the sole superpower, but it was a major power. The",
+     " Then, there's the \"Big Three\" in the US: Ford, General Motors, and Chrysler. But wait, I think Chrysler might have gone bankrupt recently. \n\nI should confirm the current status of these companies. I remember that Chrysler was part of a government bailout a few years back. Maybe they're still around"
+    ]
+   }
+  ]
+ }
+}

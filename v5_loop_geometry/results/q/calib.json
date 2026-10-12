@@ -1,0 +1,30 @@
+{
+ "n_train": 3300,
+ "n_val": 1100,
+ "n_J": 36.52659225463867,
+ "massive_dims": 0,
+ "pw_var": 0.9859841465950012,
+ "nat_val": {
+  "mass_frac_ge_0_5": 0.9036363363265991,
+  "mean_abs_c": {
+   "contra": 34.41078567504883,
+   "auth": 21.810319900512695,
+   "hint": 3.8004772663116455,
+   "irrel": 2.9434001445770264
+  },
+  "G1b_pass": true
+ },
+ "seconds": 91.94598031044006,
+ "provenance": {
+  "model": "Qwen/Qwen3-8B",
+  "revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "lens": "qwen3-8b/jlens/Salesforce-wikitext/Qwen3-8B_jacobian_lens.pt",
+  "lens_revision": "9fa267f841d62aa468dab5b9b38c3dc45a82d863",
+  "lens_sha256": "1e1f96c3b63ac46731a78658304c8857ef08992351268f0c78893361692059c3",
+  "dtype": "torch.bfloat16",
+  "dictionary": "english",
+  "dictionary_size": 26337,
+  "torch": "2.6.0+cu124",
+  "transformers": "4.57.1"
+ }
+}

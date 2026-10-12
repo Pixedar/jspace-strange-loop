@@ -1,0 +1,26 @@
+{
+ "J": {
+  "atom_overlap_written": 0.7812499999999999,
+  "atom_overlap_nofb": 0.923125,
+  "z_delta_cos_with_code": 0.6420074701309204,
+  "lo_shift": 2.707036018371582
+ },
+ "Jpb": {
+  "atom_overlap_written": 0.940625,
+  "atom_overlap_nofb": 0.923125,
+  "z_delta_cos_with_code": 0.7330024838447571,
+  "lo_shift": 1.7285157442092896
+ },
+ "dense": {
+  "atom_overlap_written": 0.59875,
+  "atom_overlap_nofb": 0.923125,
+  "z_delta_cos_with_code": -0.23203925788402557,
+  "lo_shift": 2.064453601837158
+ },
+ "pca": {
+  "atom_overlap_written": 0.5693750000000001,
+  "atom_overlap_nofb": 0.923125,
+  "z_delta_cos_with_code": -0.22073884308338165,
+  "lo_shift": 2.68359375
+ }
+}

@@ -1,0 +1,685 @@
+{
+ "tag": "state_learned_l0",
+ "chan": "state",
+ "reader": "learned",
+ "lam": 0.0,
+ "ploss": "cos",
+ "nll_own": [
+  0.7704527378082275,
+  1.5172480344772339,
+  1.6311886310577393,
+  1.7058089971542358,
+  1.7313766479492188,
+  1.7470402717590332,
+  1.734137773513794,
+  1.7447915077209473
+ ],
+ "nll_foreign": [
+  0.7704527378082275,
+  1.8075987100601196,
+  1.9143874645233154,
+  2.0043022632598877,
+  2.0207276344299316,
+  2.061919927597046,
+  2.0498430728912354,
+  2.0683231353759766
+ ],
+ "nll_stale": [
+  0.7704527378082275,
+  1.5172480344772339,
+  1.7956230640411377,
+  1.8573405742645264,
+  1.8737969398498535,
+  1.8992679119110107,
+  1.9007998704910278,
+  1.9033000469207764
+ ],
+ "bnd_own": 3.3020710945129395,
+ "bnd_foreign": 5.075138092041016,
+ "necessity_foreign": [
+  0.3022153973579407,
+  0.0038026906549930573
+ ],
+ "necessity_stale": [
+  0.15596401691436768,
+  0.002230278216302395
+ ],
+ "swap_pull_state": [
+  -0.002970463829115033,
+  0.0006134704453870654
+ ],
+ "swap_pull_forecast": [
+  -0.005103239323943853,
+  0.0009083799086511135
+ ],
+ "swap_stay": 0.9962474703788757,
+ "swap_dnll": 0.0673411414027214,
+ "S_cos": [
+  0.4997822642326355,
+  0.5069732069969177,
+  0.5241302251815796,
+  0.5261857509613037,
+  0.4924072325229645,
+  0.494864821434021,
+  0.4830596446990967
+ ],
+ "R2": {
+  "S": -0.08050727844238281,
+  "persistence": -0.35875463485717773,
+  "segment_mean": 0.002750992774963379
+ },
+ "collapse": 0.2875850796699524,
+ "retrieval": {
+  "S": 0.11142857053450175,
+  "persistence": 0.08071428590587207,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.9914762377738953,
+  0.9993458390235901,
+  0.9999228119850159,
+  0.9999909996986389,
+  0.9999944567680359
+ ],
+ "identity_donor": [
+  0.13251715898513794,
+  0.08855873346328735,
+  0.08635136485099792,
+  0.07123374938964844,
+  0.04794739559292793
+ ],
+ "nll_corrupt": [
+  0.7704527378082275,
+  1.5172480344772339,
+  1.6311886310577393,
+  2.0043022632598877,
+  1.7345969676971436,
+  1.7462992668151855,
+  1.734059453010559,
+  1.744429588317871
+ ],
+ "track_fresh": [
+  0.5177010893821716,
+  0.49197936058044434,
+  0.4947945475578308,
+  0.48306015133857727
+ ],
+ "track_stale": [
+  0.5244780778884888,
+  0.49207964539527893,
+  0.4948001801967621,
+  0.483122318983078
+ ],
+ "observer_cos": [
+  0.26046067476272583,
+  0.28829720616340637,
+  0.2827724814414978,
+  0.28360188007354736,
+  0.2619308531284332,
+  0.2457626760005951,
+  0.29182663559913635
+ ],
+ "baselines": {
+  "persistence": [
+   0.3332519233226776,
+   0.3534875512123108,
+   0.3816821277141571,
+   0.395114928483963,
+   0.34922993183135986,
+   0.35742396116256714,
+   0.3568130433559418
+  ],
+  "segment_mean": [
+   0.3229568898677826,
+   0.31597664952278137,
+   0.32821235060691833,
+   0.3062702715396881,
+   0.27902281284332275,
+   0.2632375657558441,
+   0.23889082670211792
+  ],
+  "linear": [
+   0.4873220393304024,
+   0.49719491447138753,
+   0.5106285962144201,
+   0.5164125811704983,
+   0.4814964768076437,
+   0.48479258367694344,
+   0.47338981692905224
+  ]
+ },
+ "pr": 16.229675982674816,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "Maybe",
+     "Hmm",
+     "maybe",
+     "remember",
+     "hmm",
+     "wait",
+     "Wait",
+     "remembers",
+     "let",
+     "remembering"
+    ],
+    "neg": [
+     "accordingly",
+     "Accordingly",
+     "ours",
+     "consequently",
+     "fortunate",
+     "conducive",
+     "Weinstein",
+     "Courage",
+     "yours",
+     "particularly"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "recalls",
+     "subconscious",
+     "wary",
+     "Recall",
+     "assure",
+     "Billion",
+     "memories",
+     "caution"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "Hmm",
+     "yeah",
+     "hmm",
+     "huh",
+     "wait",
+     "perhaps",
+     "Wait",
+     "yes"
+    ]
+   },
+   "2": {
+    "pos": [
+     "too",
+     "everyone",
+     "though",
+     "versus",
+     "aspects",
+     "basics",
+     "mentioned",
+     "towards",
+     "suited",
+     "despite"
+    ],
+    "neg": [
+     "Shaman",
+     "Sleeping",
+     "decidedly",
+     "impeachment",
+     "Emmy",
+     "presume",
+     "Commissioners",
+     "Thrones",
+     "Playoff",
+     "Dungeons"
+    ]
+   },
+   "3": {
+    "pos": [
+     "avoidance",
+     "avoid",
+     "optimism",
+     "avoiding",
+     "couch",
+     "moderation",
+     "leash",
+     "ideally",
+     "rhetorical",
+     "beginners"
+    ],
+    "neg": [
+     "remember",
+     "remembers",
+     "recall",
+     "recalling",
+     "Remember",
+     "remembered",
+     "definitely",
+     "Recall",
+     "heard",
+     "remembering"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instrument",
+     "instruments",
+     "musical",
+     "flute",
+     "Instruments",
+     "guitar",
+     "violin",
+     "rhythm",
+     "classification"
+    ],
+    "neg": [
+     "marriages",
+     "Dumbledore",
+     "Deadpool",
+     "Voldemort",
+     "Netflix",
+     "became",
+     "alliances",
+     "Republicans",
+     "elves",
+     "vampires"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instrument",
+     "instruments",
+     "percussion",
+     "guitar",
+     "orchestra",
+     "musical",
+     "Guitar",
+     "Instruments",
+     "musician",
+     "accordion"
+    ],
+    "neg": [
+     "parks",
+     "beaches",
+     "beach",
+     "vacations",
+     "comfy",
+     "pricey",
+     "famously",
+     "downright",
+     "recalls",
+     "kinda"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "mentioned",
+     "referenced",
+     "mentioning",
+     "Mention",
+     "names",
+     "list",
+     "listed",
+     "referencing",
+     "mentions"
+    ],
+    "neg": [
+     "instruments",
+     "sits",
+     "airplanes",
+     "happens",
+     "contends",
+     "understands",
+     "might",
+     "cannot",
+     "did",
+     "believe"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "Spark",
+     "scala",
+     "Seems",
+     "sparks",
+     "kinda",
+     "broker",
+     "Apparently",
+     "alot",
+     "electromagnetic"
+    ],
+    "neg": [
+     "names",
+     "list",
+     "Memorial",
+     "Disney",
+     "trivia",
+     "popular",
+     "championship",
+     "sports",
+     "Championship",
+     "Disneyland"
+    ]
+   }
+  },
+  "write_mean": [
+   "Parliament",
+   "campaigned",
+   "Isles",
+   "Mayweather",
+   "exemption",
+   "Wimbledon",
+   "athletics",
+   "exemptions",
+   "Gibraltar",
+   "defamation"
+  ],
+  "write_pc0": {
+   "pos": [
+    "maybe",
+    "mentioning",
+    "mentions",
+    "vibes",
+    "Zodiac",
+    "Dolphin",
+    "reckon",
+    "gotta",
+    "yay",
+    "probably"
+   ],
+   "neg": [
+    "parachute",
+    "hallmark",
+    "cider",
+    "Newman",
+    "fidelity",
+    "cameo",
+    "Alternate",
+    "heroic",
+    "Downing",
+    "absorbs"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "maybe",
+    "reimbursement",
+    "incentives",
+    "expo",
+    "tendency",
+    "stimulating",
+    "growers",
+    "requests",
+    "Ammo",
+    "recharge"
+   ],
+   "neg": [
+    "Lionel",
+    "Henrik",
+    "Sebastian",
+    "Barack",
+    "Held",
+    "Pablo",
+    "Seconds",
+    "Welsh",
+    "Andreas",
+    "Jed"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "tourists",
+    "tourism",
+    "comforts",
+    "guests",
+    "enjoyable",
+    "friendships",
+    "recommendations",
+    "travellers",
+    "traveller",
+    "cheerful"
+   ],
+   "neg": [
+    "Olson",
+    "Fisheries",
+    "Sterling",
+    "Webster",
+    "Fred",
+    "Sanford",
+    "Exxon",
+    "Goose",
+    "Werner",
+    "Hogan"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Differences",
+    "Alejandro",
+    "Historical",
+    "Davies",
+    "differ",
+    "Historic",
+    "Muse",
+    "Jenner",
+    "Wikipedia",
+    "notably"
+   ],
+   "neg": [
+    "shortcuts",
+    "injections",
+    "optimization",
+    "compression",
+    "injection",
+    "compress",
+    "optimize",
+    "intuitive",
+    "transform",
+    "delivery"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6815364956855774,
+    0.21655863523483276,
+    0.12889447808265686,
+    0.05412089079618454,
+    0.036084793508052826,
+    0.0154423788189888,
+    0.027873018756508827,
+    0.016174711287021637
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.007216953672468662,
+    -0.013329454697668552,
+    -0.0019149878062307835,
+    0.009577593766152859,
+    -0.010695717297494411,
+    -0.002659763675183058,
+    -0.003117544809356332
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.12858809530735016,
+    0.13665089011192322,
+    0.1399470716714859,
+    0.1176469475030899,
+    0.07925675809383392,
+    0.14661908149719238,
+    0.0797925665974617,
+    0.08563543856143951
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6815364956855774,
+    0.21655863523483276,
+    0.12889447808265686,
+    0.006725381128489971,
+    0.006061105523258448,
+    -0.0037931676488369703,
+    0.010695098899304867,
+    0.0020084702409803867
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.007216953672468662,
+    -0.013329454697668552,
+    0.07334964722394943,
+    0.04991840943694115,
+    0.051274076104164124,
+    0.03374182805418968,
+    0.027115516364574432
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.10868192464113235,
+    0.09741239994764328,
+    0.10226084291934967,
+    0.09543824940919876,
+    0.09542354941368103
+   ],
+   "z_vs_donor_run": [
+    0.12858809530735016,
+    0.13665089011192322,
+    0.1399470716714859,
+    0.2679551839828491,
+    0.13326683640480042,
+    0.13425685465335846,
+    0.14160780608654022,
+    0.1630348265171051
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6815364956855774,
+    0.21655863523483276,
+    0.12889447808265686,
+    0.07599975168704987,
+    0.05973634123802185,
+    0.04580654203891754,
+    0.04417567700147629,
+    0.03716301918029785
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.007216953672468662,
+    -0.013329454697668552,
+    0.014878476038575172,
+    0.00901532731950283,
+    0.009250002913177013,
+    0.010971657000482082,
+    0.016705602407455444
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.20911768078804016,
+    0.17880551517009735,
+    0.09764904528856277,
+    0.09903982281684875,
+    0.12592200934886932
+   ],
+   "z_vs_donor_run": [
+    0.12858809530735016,
+    0.13665089011192322,
+    0.1399470716714859,
+    0.1025489792227745,
+    0.06334119290113449,
+    0.11236980557441711,
+    0.10773357003927231,
+    0.06580895185470581
+   ]
+  },
+  "S_cos_free": [
+   0.4684116542339325,
+   0.4921368956565857,
+   0.4455043375492096,
+   0.42580321431159973,
+   0.4733152985572815,
+   0.44985395669937134,
+   0.45209091901779175
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "donor_start": "<think>\nOkay, let's see. The question is: Kate's parents have three kids. The first kid's name is Peter, the second kid's name is Parker. What is the third kid's name?\n\nHmm. Wait, the first thing that comes to mind is that the question might be a trick question.",
+    "own": [
+     ", which might be the first step in getting into the field. Also, the internet's role in research can't be ignored. Maybe online resources, forums, or even social media groups where people discuss their work. Oh, and internships or apprenticeships might be important too. But I should check if that's common",
+     " considered a minor one.\n\nI should also mention the other two. Maybe they have a different perspective. Let me check the sources again. Oh right, the 2020 report by the National Institute of Public Health and the Environment (RIVM) in the Netherlands found that the average cost per person for public",
+     " transportation in the U.S. is significant. For example, the U.S. has a vast network of roads, highways, and public transit systems. The country also has a large number of airports and seaports, which are crucial for trade and travel. However, the U.S. also has challenges in transportation,",
+     " the importance of the work. Also, I should consider the user's perspective. Maybe they're looking for a concise summary or a detailed analysis. But the query is general, so a balanced approach would be best.\n\nI need to mention the historical context, the key points of the book, and its impact. Also,"
+    ],
+    "corrupt": [
+     ", which might be the first step in getting into the field. Also, the internet's role in research can't be ignored. Maybe online resources, forums, or even social media groups where people discuss their work. Oh, and internships or apprenticeships might be important too. But I should check if that's common",
+     " Weak. That's the word I'd use. Maybe she's been overworking herself, or maybe she's just not in the mood. I should check in with her, but I can't help but feel like she's holding something back. Maybe she's worried about something else. I'll try to be patient and",
+     " not being mean, but also not being overly kind. Maybe a bit of a joker, but not a prankster. Maybe they have a sense of humor that's a bit dry or sarcastic.\n\nAlso, the user might want the character to be relatable, so including some vulnerabilities or flaws would make them more",
+     " to someone else. So maybe I should check if that's the case. But I don't have that information. I need to be careful not to assume anything.\n\nNext, the user is asking about the impact of the policy change. So I need to explain what the policy change is, why it was made, and"
+    ],
+    "chanswap": [
+     ", which might be the first step in getting into the field. Also, the internet's role in research can't be ignored. Maybe online resources, forums, or even social media groups where people discuss their work. Oh, and internships or apprenticeships might be important too. But I should check if that's common",
+     " strong. Also, I think the climate change impact might be a point of interest. Maybe the climate change section is more recent, so it could be more relevant. But I need to check the dates.\n\nWait, the user mentioned the 2016 report. The 2016 report might have more",
+     " longer careers. Maybe even a few decades. But I should also consider the possibility that some people might be more active in their 50s or 60s. Maybe some people continue working even after retirement age. That could add a few more years. But I need to check if that's common. In",
+     " a big deal, and they have a lot of people working on it. They might be using quantum computing, which is a new type of computer that can solve problems much faster than regular computers. But I'm not sure if that's the case. Another angle is the company's size and resources. If they're a"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "donor_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "own": [
+     " by explaining the steps. Maybe start with the basic definition of a circle, then move to the formula, and then plug in the numbers. Let me check if I remember the formula correctly. The circumference is \u03c0 times the diameter, or \u03c0d. Since the diameter is twice the radius, it's also 2\u03c0",
+     ", and the number of people. Let me think again.\n\nWait, the problem says \"the number of people who voted for the three candidates\" but it's not clear if it's the total number of people who voted for all three combined or each candidate. But in the context of the problem, when it says \"",
+     "000: **Lunchtime** \u2013 Discussing the importance of taking breaks and eating well.  \n- **1:00 PM \u2013 2:00 PM**: **Work Session 2** \u2013 Focus on a specific task with a 15-minute break.  \n- **2:00",
+     " \"Knight.\" I spoke, and then, \"You have to know, I've been in love with you since I met you in the beginning of the year. I know you're not a knight, but I just had to say it. I love you.\"\n\nI had to say that. I had to tell him"
+    ],
+    "corrupt": [
+     " by explaining the steps. Maybe start with the basic definition of a circle, then move to the formula, and then plug in the numbers. Let me check if I remember the formula correctly. The circumference is \u03c0 times the diameter, or \u03c0d. Since the diameter is twice the radius, it's also 2\u03c0",
+     " more popular. But I think the most popular one is the Eiffel Tower in Paris. It's a symbol of France and is visited by millions every year. Then there are the Great Wall of China, which is a UNESCO World Heritage Site and a major tourist attraction. The Colosseum in Rome is another",
+     " popular ones. The Amalfi Coast is famous for its scenic beauty, with the towns of Positano, Amalfi, and Ravello. Positano is known for its colorful houses and beaches. Amalfi has a historic center and a cathedral. Ravello is more tranquil with beautiful gardens",
+     " so I can't just say it's the same. But the user is asking for a list, so maybe I can list them as separate points. Let me check if they have different names.\n\nWait, the user is asking for a list of the five most important inventions of the 19th century. I need"
+    ],
+    "chanswap": [
+     " by explaining the steps. Maybe start with the basic definition of a circle, then move to the formula, and then plug in the numbers. Let me check if I remember the formula correctly. The circumference is \u03c0 times the diameter, or \u03c0d. Since the diameter is twice the radius, it's also 2\u03c0",
+     " of the total area. But I need to be precise here. The exact areas might depend on the specific configuration. Alternatively, maybe there's a formula or theorem related to the areas of the three triangles formed by the medians.\n\nWait, but the problem is about the areas of the three triangles formed by the medians",
+     ". So, that's 8 letters. Then the next part is \"9\" which is the number 9, and \"0\" which is the number 0. So the total number of characters is 8 letters + 2 numbers = 10 characters. Let me count again to be sure. The",
+     ", \"action\" could be the category. But the user didn't mention any specific categories, so maybe the answer is \"action\" as the default. Alternatively, if there's a common category for such a title, but without more context, it's hard to say. The user might be testing if I can recognize"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking for five factors to consider when deciding where to live. Let me start by breaking down the main aspects people usually think about. First, cost of living is a big one. People want to know if the place is affordable for their budget. Then, job opportunities are important because you",
+    "donor_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "own": [
+     " need to save money, so maybe they can't afford a house. But then, if they're saving money, maybe they can afford a house eventually. Or maybe they're renting because they prefer it. I should consider different possibilities.\n\nAlso, the person's lifestyle. If they're single, maybe they don't need",
+     " a specific time, like 3 PM on a weekday. Then, the user might not have to wait as long.\n\nAlso, maybe the company has a policy that allows for a certain number of days to respond. If the user knows the policy, they can set their expectations accordingly. But if the policy is unclear,",
+     " if they are not, they might not be able to get their visa.\n\nWait, but the user might not have a clear answer yet. They might need to consider different scenarios. Maybe the answer is that it depends on the specific visa type and the country's regulations. Some countries might require a return ticket, others might",
+     ", and the benefits of each. Also, mention the potential for future growth and the importance of a strong team. Maybe include some specific examples of companies that have successfully implemented these strategies. Finally, wrap it up with a conclusion that reinforces the key points and provides a call to action for the reader.\n</think>\n\n**The"
+    ],
+    "corrupt": [
+     " need to save money, so maybe they can't afford a house. But then, if they're saving money, maybe they can afford a house eventually. Or maybe they're renting because they prefer it. I should consider different possibilities.\n\nAlso, the person's lifestyle. If they're single, maybe they don't need",
+     " of the number of sides. Let me see. For a regular polygon, the sum of the interior angles is given by (n-2)*180 degrees, where n is the number of sides. Then, each interior angle in a regular polygon is [(n-2)/n]*180 degrees.",
+     " \n\nBut I should check if there's a more precise answer. For example, if the question is from a specific textbook or context, there might be a standard answer. However, without more information, the most accurate answer is that it's the largest prime factor of 330. Let me confirm that 3",
+     "'s not a real entity, so it can't be in a place.\n\nWait, but the user might be asking about a specific place, like a park, a building, or a location in a game or story. Without more context, it's hard to say. Let me check if I missed any details in the"
+    ],
+    "chanswap": [
+     " need to save money, so maybe they can't afford a house. But then, if they're saving money, maybe they can afford a house eventually. Or maybe they're renting because they prefer it. I should consider different possibilities.\n\nAlso, the person's lifestyle. If they're single, maybe they don't need",
+     " a day, they might not want to pay for that. So maybe the cost is part of the rent, or they have a separate maintenance fund. I should check that. \n\nAlso, the layout of the apartment. How many bedrooms, bathrooms, living areas? If it's a studio, that's different than a",
+     " small apartment, which might be a bit cramped but has all the essentials. They might have a studio or a one-bedroom apartment, which is more common in cities. It's important to mention that it's in a good location, maybe near public transportation or amenities.\n\nAlso, think about the budget. Rent in cities can",
+     " people might have to relocate, which could affect the local economy and real estate market.\n\nAlso, the environmental impact of the dam could be significant. Construction might disrupt local ecosystems, affect wildlife habitats, and change the river's flow, which could have long-term effects on the environment. There might be concerns about water quality,"
+    ]
+   }
+  ]
+ }
+}

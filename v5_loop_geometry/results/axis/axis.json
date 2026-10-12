@@ -1,0 +1,455 @@
+{
+ "persona": {
+  "pc1_var_share": 0.2238241285085678,
+  "cos_pc1_vs_default_minus_mean": 0.00836687721312046,
+  "default_proj_in_role_sd": 0.018542742356657982,
+  "roles_low": [
+   "gangster",
+   "surfer dude",
+   "moody teenager",
+   "hard-boiled detective",
+   "stand-up comedian",
+   "angry customer"
+  ],
+  "roles_high": [
+   "wise sage",
+   "angel",
+   "oracle",
+   "ancient philosopher",
+   "spiritual guru",
+   "wizard"
+  ]
+ },
+ "J@0.25": {
+  "disp_norm_median": 38.39337921142578,
+  "disp_cos_median": 0.3471370339393616,
+  "disp_share_on_mean": 0.40551814436912537,
+  "cos_meandisp_assistant_axis": -0.05678008869290352,
+  "axis_proj_t0": -0.28744229674339294,
+  "axis_proj_t64": -0.29980990290641785,
+  "axis_shift": -0.012367603369057178,
+  "axis_shift_frac_negative": 0.9166666666666666,
+  "axis_curve": [
+   -0.012536145746707916,
+   -0.012556307017803192,
+   -0.012271073646843433,
+   -0.012397619895637035,
+   -0.012232202105224133,
+   -0.012267928570508957,
+   -0.012367603369057178
+  ],
+  "meandisp_jwords": [
+   [
+    "outside",
+    2.401
+   ],
+   [
+    "lets",
+    2.106
+   ],
+   [
+    "And",
+    1.999
+   ],
+   [
+    "Football",
+    1.98
+   ],
+   [
+    "analyzing",
+    1.965
+   ],
+   [
+    "Deployment",
+    1.805
+   ],
+   [
+    "gonna",
+    1.803
+   ],
+   [
+    "Start",
+    1.778
+   ],
+   [
+    "someone",
+    1.723
+   ],
+   [
+    "Recipe",
+    1.72
+   ],
+   [
+    "china",
+    1.717
+   ],
+   [
+    "Wellness",
+    1.708
+   ],
+   [
+    "Aws",
+    1.657
+   ],
+   [
+    "Moist",
+    1.645
+   ],
+   [
+    "smirk",
+    1.62
+   ]
+  ],
+  "logit_up": [
+   "\u0438\u043d\u0434\u0438\u0432\u0438\u0434",
+   " And",
+   " That",
+   " As",
+   " outside",
+   " On",
+   " For",
+   " Outside",
+   " With",
+   " Of",
+   " Now",
+   " Out",
+   " Not",
+   " actually",
+   " Actually",
+   " starting",
+   " Starting",
+   " lets",
+   "w\u0142a\u015bciw",
+   " just"
+  ],
+  "logit_down": [
+   "Mary",
+   "Japanese",
+   " ForCanBeConvertedToForeach",
+   "lice",
+   "Hol",
+   "Tower",
+   "Bearer",
+   "Earth",
+   "latent",
+   "ends",
+   "Hier",
+   "J",
+   "Pear",
+   "{}\",",
+   "\u7076",
+   "attended",
+   "reak",
+   "DOM",
+   ">=",
+   "elif"
+  ]
+ },
+ "J@1.0": {
+  "disp_norm_median": 180.77490234375,
+  "disp_cos_median": 0.4408464729785919,
+  "disp_share_on_mean": 0.5022976398468018,
+  "cos_meandisp_assistant_axis": -0.06354351341724396,
+  "axis_proj_t0": -0.28744229674339294,
+  "axis_proj_t64": -0.3573285639286041,
+  "axis_shift": -0.06988624483346939,
+  "axis_shift_frac_negative": 0.9375,
+  "axis_curve": [
+   -0.06056293472647667,
+   -0.06719397753477097,
+   -0.0691540315747261,
+   -0.06891394406557083,
+   -0.0696893185377121,
+   -0.06981954723596573,
+   -0.06988624483346939
+  ],
+  "meandisp_jwords": [
+   [
+    "okay",
+    15.868
+   ],
+   [
+    "english",
+    10.917
+   ],
+   [
+    "lets",
+    10.513
+   ],
+   [
+    "Highlight",
+    10.03
+   ],
+   [
+    "nowadays",
+    9.915
+   ],
+   [
+    "insanity",
+    9.805
+   ],
+   [
+    "Entrepreneur",
+    9.755
+   ],
+   [
+    "analyze",
+    9.63
+   ],
+   [
+    "looking",
+    9.541
+   ],
+   [
+    "john",
+    9.436
+   ],
+   [
+    "And",
+    9.366
+   ],
+   [
+    "Aws",
+    9.261
+   ],
+   [
+    "pokemon",
+    9.211
+   ],
+   [
+    "california",
+    9.206
+   ],
+   [
+    "tbsp",
+    9.205
+   ]
+  ],
+  "logit_up": [
+   " ok",
+   " okay",
+   " Usa",
+   " british",
+   " american",
+   " alright",
+   " english",
+   " Alright",
+   " yeah",
+   "\u0438\u043d\u0434\u0438\u0432\u0438\u0434",
+   " actually",
+   " Okay",
+   " china",
+   "\u0c8a",
+   " let",
+   " lets",
+   " chinese",
+   " Ok",
+   " california",
+   " french"
+  ],
+  "logit_down": [
+   "Hol",
+   "Mary",
+   "J",
+   "K",
+   "V",
+   "Penn",
+   "Earth",
+   "Pear",
+   "H",
+   "McC",
+   "He",
+   "E",
+   "Jacob",
+   "IPv",
+   "We",
+   "Japanese",
+   "R",
+   "Hung",
+   "Clark",
+   "II"
+  ]
+ },
+ "J@4.0": {
+  "disp_norm_median": 558.5119018554688,
+  "disp_cos_median": 0.707943856716156,
+  "disp_share_on_mean": 0.7114494442939758,
+  "cos_meandisp_assistant_axis": -0.12593179941177368,
+  "axis_proj_t0": -0.28744229674339294,
+  "axis_proj_t64": -0.7874293327331543,
+  "axis_shift": -0.49998700618743896,
+  "axis_shift_frac_negative": 0.9895833333333334,
+  "axis_curve": [
+   -0.2128843069076538,
+   -0.32471516728401184,
+   -0.4437292516231537,
+   -0.4976729452610016,
+   -0.5130246877670288,
+   -0.5021106600761414,
+   -0.49998700618743896
+  ],
+  "meandisp_jwords": [
+   [
+    "cuz",
+    65.623
+   ],
+   [
+    "yeah",
+    55.483
+   ],
+   [
+    "alright",
+    51.99
+   ],
+   [
+    "Usa",
+    46.978
+   ],
+   [
+    "Hello",
+    45.174
+   ],
+   [
+    "look",
+    44.194
+   ],
+   [
+    "Xiaomi",
+    43.782
+   ],
+   [
+    "Fundamental",
+    38.598
+   ],
+   [
+    "analyzing",
+    37.897
+   ],
+   [
+    "bartender",
+    35.245
+   ],
+   [
+    "And",
+    35.197
+   ],
+   [
+    "clicked",
+    35.101
+   ],
+   [
+    "countries",
+    34.256
+   ],
+   [
+    "love",
+    33.391
+   ],
+   [
+    "dad",
+    31.963
+   ]
+  ],
+  "logit_up": [
+   " yeah",
+   " Yeah",
+   " wanna",
+   " gonna",
+   " guys",
+   " cuz",
+   " alright",
+   " okay",
+   " hey",
+   " Alright",
+   " guy",
+   " Usa",
+   " Okay",
+   " Hey",
+   " hello",
+   " actually",
+   " ok",
+   " gotta",
+   " Oh",
+   " really"
+  ],
+  "logit_down": [
+   "orch",
+   "We",
+   "{}\",",
+   "None",
+   "[\"",
+   "ne",
+   "onto",
+   "forward",
+   "The",
+   "ab",
+   "{}\".",
+   "re",
+   "V",
+   "*\"",
+   ":none",
+   "\u201c",
+   "H",
+   "To",
+   "E",
+   "elim"
+  ]
+ },
+ "rand@0.25": {
+  "disp_norm_median": 25.910058975219727,
+  "disp_cos_median": 0.0014759899349883199,
+  "disp_share_on_mean": 0.015718640759587288,
+  "cos_meandisp_assistant_axis": -0.025458812713623047,
+  "axis_proj_t0": -0.28744229674339294,
+  "axis_proj_t64": -0.2881332337856293,
+  "axis_shift": -0.0006908932118676603,
+  "axis_shift_frac_negative": 0.5520833333333334,
+  "axis_curve": [
+   0.00019666622392833233,
+   -0.0003531789407134056,
+   0.0006813081563450396,
+   2.9037628337391652e-05,
+   0.0005521713173948228,
+   0.00040760100819170475,
+   -0.0006908932118676603
+  ]
+ },
+ "rand@1.0": {
+  "disp_norm_median": 104.3882827758789,
+  "disp_cos_median": 0.029569078236818314,
+  "disp_share_on_mean": 0.0533628948032856,
+  "cos_meandisp_assistant_axis": 0.013328451663255692,
+  "axis_proj_t0": -0.28744229674339294,
+  "axis_proj_t64": -0.2846665680408478,
+  "axis_shift": 0.0027757289353758097,
+  "axis_shift_frac_negative": 0.4895833333333333,
+  "axis_curve": [
+   0.00283733569085598,
+   0.002439550356939435,
+   0.002091132802888751,
+   0.003925299271941185,
+   0.003470862517133355,
+   0.004842947702854872,
+   0.0027757289353758097
+  ]
+ },
+ "rand@4.0": {
+  "disp_norm_median": 402.56634521484375,
+  "disp_cos_median": 0.18234331905841827,
+  "disp_share_on_mean": 0.20141778886318207,
+  "cos_meandisp_assistant_axis": 0.00951316673308611,
+  "axis_proj_t0": -0.28744229674339294,
+  "axis_proj_t64": -0.2729065716266632,
+  "axis_shift": 0.014535725116729736,
+  "axis_shift_frac_negative": 0.4375,
+  "axis_curve": [
+   0.022952109575271606,
+   0.007678123656660318,
+   0.01566818170249462,
+   0.022410042583942413,
+   0.02246796153485775,
+   0.018720531836152077,
+   0.014535725116729736
+  ]
+ }
+}

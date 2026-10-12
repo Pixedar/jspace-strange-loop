@@ -1,0 +1,680 @@
+{
+ "tag": "fcst_learned_l1_n",
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 1.0,
+ "ploss": "nmse",
+ "nll_own": [
+  1.0669188499450684,
+  2.2351763248443604,
+  2.318464756011963,
+  2.3779115676879883,
+  2.3666889667510986,
+  2.3556108474731445,
+  2.3713648319244385,
+  2.3779594898223877
+ ],
+ "nll_foreign": [
+  1.0669188499450684,
+  2.2435178756713867,
+  2.319009304046631,
+  2.3785619735717773,
+  2.3670408725738525,
+  2.356375217437744,
+  2.3720815181732178,
+  2.378788948059082
+ ],
+ "nll_stale": [
+  1.0669188499450684,
+  2.2351763248443604,
+  2.323730707168579,
+  2.3778269290924072,
+  2.3672211170196533,
+  2.3558647632598877,
+  2.37186598777771,
+  2.3787713050842285
+ ],
+ "bnd_own": 4.374818801879883,
+ "bnd_foreign": 4.389105796813965,
+ "necessity_foreign": [
+  0.001742487889714539,
+  0.0002301908389199525
+ ],
+ "necessity_stale": [
+  0.0012134629068896174,
+  0.00018432513752486557
+ ],
+ "swap_pull_state": [
+  1.6846827577410295e-07,
+  3.512111845793697e-08
+ ],
+ "swap_pull_forecast": [
+  1.9993100863757718e-07,
+  2.7316982453839955e-08
+ ],
+ "swap_stay": 1.0,
+ "swap_dnll": -4.7688386985100806e-05,
+ "S_cos": [
+  0.9998676776885986,
+  0.9998791217803955,
+  0.999880850315094,
+  0.999880850315094,
+  0.9998850226402283,
+  0.9998834133148193,
+  0.9998868703842163
+ ],
+ "R2": {
+  "S": -0.08535122871398926,
+  "persistence": -20.37227439880371,
+  "segment_mean": 0.000517427921295166
+ },
+ "collapse": 0.9982613325119019,
+ "identity_own": [
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ],
+ "identity_donor": [
+  0.9997677803039551,
+  0.9997722506523132,
+  0.9997810125350952,
+  0.9997715950012207,
+  0.9997822642326355
+ ],
+ "nll_corrupt": [
+  1.0669188499450684,
+  2.2351763248443604,
+  2.318464756011963,
+  2.3785619735717773,
+  2.366650342941284,
+  2.3557817935943604,
+  2.371258020401001,
+  2.3781304359436035
+ ],
+ "track_fresh": [
+  0.999880850315094,
+  0.999885082244873,
+  0.9998832941055298,
+  0.9998867511749268
+ ],
+ "track_stale": [
+  0.999880850315094,
+  0.9998849630355835,
+  0.9998832941055298,
+  0.9998867511749268
+ ],
+ "observer_cos": [
+  0.9998539686203003,
+  0.9998770952224731,
+  0.9998801350593567,
+  0.9998800158500671,
+  0.9998841881752014,
+  0.9998829364776611,
+  0.9998852610588074
+ ],
+ "baselines": {
+  "persistence": [
+   0.987006425857544,
+   0.9998015761375427,
+   0.9998064637184143,
+   0.9998056888580322,
+   0.9998096227645874,
+   0.9998127818107605,
+   0.9998130798339844
+  ],
+  "segment_mean": [
+   0.9998796582221985,
+   0.9998830556869507,
+   0.9998852610588074,
+   0.999884843826294,
+   0.9998893141746521,
+   0.999888002872467,
+   0.9998905658721924
+  ],
+  "linear": [
+   0.9998747654435843,
+   0.9998850595543821,
+   0.9998877243160698,
+   0.9998869383653809,
+   0.9998915200229473,
+   0.9998899729129108,
+   0.9998924398096959
+  ]
+ },
+ "pr": 17.742682600647843,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "hikes",
+     "hearty",
+     "hiking",
+     "hike",
+     "gearing",
+     "Nothing",
+     "lodging",
+     "dealt",
+     "trek",
+     "trails"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "Hmm",
+     "perhaps",
+     "Wait",
+     "remember",
+     "unsure",
+     "recalling",
+     "remembering",
+     "wait"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "Mention",
+     "mentioning",
+     "emphasize",
+     "mentions",
+     "highlight",
+     "recommending",
+     "emphasizing",
+     "hike",
+     "cyclist"
+    ],
+    "neg": [
+     "wait",
+     "Hmm",
+     "isn",
+     "instrumental",
+     "definitely",
+     "reportedly",
+     "played",
+     "undoubtedly",
+     "correct",
+     "yeah"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "isn",
+     "per",
+     "though",
+     "because",
+     "remember",
+     "meant",
+     "recall",
+     "remembers",
+     "definitely"
+    ],
+    "neg": [
+     "Helmet",
+     "Simpsons",
+     "Zack",
+     "Fargo",
+     "Cowboy",
+     "Santana",
+     "Rudy",
+     "Buffy",
+     "Kal",
+     "Barney"
+    ]
+   },
+   "3": {
+    "pos": [
+     "hiking",
+     "hikes",
+     "deterrent",
+     "pedals",
+     "hike",
+     "campground",
+     "maybe",
+     "trail",
+     "Maybe",
+     "explaining"
+    ],
+    "neg": [
+     "recall",
+     "remember",
+     "remembers",
+     "memory",
+     "Recall",
+     "recalls",
+     "recalled",
+     "remembered",
+     "recalling",
+     "confuse"
+    ]
+   },
+   "4": {
+    "pos": [
+     "Luckily",
+     "Fortunately",
+     "resolutions",
+     "campground",
+     "trails",
+     "Taking",
+     "Trails",
+     "permits",
+     "hikes",
+     "clinics"
+    ],
+    "neg": [
+     "definitely",
+     "categorized",
+     "Definitely",
+     "classified",
+     "famous",
+     "mention",
+     "not",
+     "mentioned",
+     "notable",
+     "commonly"
+    ]
+   },
+   "5": {
+    "pos": [
+     "fandom",
+     "Marvel",
+     "Comic",
+     "franchise",
+     "Overwatch",
+     "fan",
+     "Rowling",
+     "actresses",
+     "Champions",
+     "Fortnite"
+    ],
+    "neg": [
+     "hiking",
+     "hikes",
+     "hike",
+     "biking",
+     "needs",
+     "should",
+     "believes",
+     "recalls",
+     "shady",
+     "heard"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Rookie",
+     "Greatest",
+     "blockbuster",
+     "Fury",
+     "Playboy",
+     "Winning",
+     "fran",
+     "fandom",
+     "Premiership",
+     "Quite"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "instrument",
+     "guitars",
+     "chords",
+     "chord",
+     "Instruments",
+     "percussion",
+     "pedals",
+     "bass"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "someone",
+     "interpreting",
+     "could",
+     "isn",
+     "she",
+     "Loki",
+     "politicians",
+     "their",
+     "exercising"
+    ],
+    "neg": [
+     "Certainly",
+     "Probably",
+     "Definitely",
+     "definitely",
+     "probable",
+     "obvious",
+     "Known",
+     "Likely",
+     "guitar",
+     "categories"
+    ]
+   }
+  },
+  "write_mean": [
+   "offseason",
+   "clubhouse",
+   "Manafort",
+   "uphold",
+   "stripper",
+   "courteous",
+   "Cary",
+   "Emanuel",
+   "crochet",
+   "interceptions"
+  ],
+  "write_pc0": {
+   "pos": [
+    "Semester",
+    "Overview",
+    "Noticed",
+    "Remember",
+    "Aspect",
+    "Basics",
+    "Seen",
+    "Named",
+    "Like",
+    "Lecture"
+   ],
+   "neg": [
+    "mam",
+    "walmart",
+    "palace",
+    "retaliation",
+    "mun",
+    "residing",
+    "residents",
+    "bois",
+    "sovereignty",
+    "torment"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "resilience",
+    "contemplate",
+    "resignation",
+    "handwriting",
+    "responsiveness",
+    "credibility",
+    "receptor",
+    "addressing",
+    "securities",
+    "negotiation"
+   ],
+   "neg": [
+    "Bergen",
+    "Bosch",
+    "Moor",
+    "Bermuda",
+    "Scarborough",
+    "Mayweather",
+    "Weekend",
+    "Baths",
+    "Burnett",
+    "Towers"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "sourced",
+    "congressional",
+    "sourcing",
+    "refreshed",
+    "congress",
+    "recruiters",
+    "dependent",
+    "representative",
+    "stakeholders",
+    "searching"
+   ],
+   "neg": [
+    "Shotgun",
+    "Sketch",
+    "Suite",
+    "Cylinder",
+    "Projectile",
+    "lil",
+    "License",
+    "Camera",
+    "Flight",
+    "Loading"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Recently",
+    "Garner",
+    "Rune",
+    "Inline",
+    "Previously",
+    "Weird",
+    "Amendments",
+    "Recent",
+    "Rewrite",
+    "Inserts"
+   ],
+   "neg": [
+    "deflect",
+    "consultants",
+    "dopamine",
+    "deficient",
+    "hers",
+    "consulting",
+    "dio",
+    "dow",
+    "deficits",
+    "maximal"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.005234601907432079,
+    0.0036268713884055614,
+    -0.0003267487045377493,
+    0.008384710177779198,
+    0.000808942480944097,
+    0.007128925994038582,
+    0.008351417258381844
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.007205058354884386,
+    -0.0025279142428189516,
+    0.006997229065746069,
+    0.001468936912715435,
+    0.008369079791009426,
+    -0.0025739551056176424,
+    -0.007765919901430607
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.976051926612854,
+    0.9990195035934448,
+    0.999107837677002,
+    0.9994919300079346,
+    0.9980068206787109,
+    0.9987836480140686,
+    0.9987146854400635,
+    0.9994238018989563
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.005234601907432079,
+    0.0036268713884055614,
+    -0.007529862690716982,
+    -0.004459780640900135,
+    -0.003649140242487192,
+    0.005185408983379602,
+    -0.00247124582529068
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.007205058354884386,
+    -0.0025279142428189516,
+    0.0025391338858753443,
+    0.006050147581845522,
+    0.0018681026995182037,
+    0.009360041469335556,
+    -0.008813563734292984
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.9996882081031799,
+    0.9988433718681335,
+    0.9993182420730591,
+    0.999284029006958,
+    0.999653697013855
+   ],
+   "z_vs_donor_run": [
+    0.976051926612854,
+    0.9990195035934448,
+    0.999107837677002,
+    0.9996815323829651,
+    0.9988762140274048,
+    0.9993090033531189,
+    0.9992797374725342,
+    0.999650239944458
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6704888939857483,
+    0.005234601907432079,
+    0.0036268713884055614,
+    -0.008156045340001583,
+    0.007510713301599026,
+    0.003907712176442146,
+    -0.0010940195061266422,
+    0.007885629311203957
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.007205058354884386,
+    -0.0025279142428189516,
+    -0.0011274493299424648,
+    0.007793593220412731,
+    -0.0090873958542943,
+    0.003484058193862438,
+    0.0010125949047505856
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.999775230884552,
+    0.9987243413925171,
+    0.999224066734314,
+    0.9993066787719727,
+    0.9992114305496216
+   ],
+   "z_vs_donor_run": [
+    0.976051926612854,
+    0.9990195035934448,
+    0.999107837677002,
+    0.999573826789856,
+    0.9987242817878723,
+    0.9992242455482483,
+    0.9992905855178833,
+    0.9991984367370605
+   ]
+  },
+  "S_cos_free": [
+   0.9994655847549438,
+   0.9995390176773071,
+   0.9997329711914062,
+   0.9989800453186035,
+   0.9993651509284973,
+   0.9993429780006409,
+   0.9997004270553589
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     ". So the question is, what is the probability that the game ends in 4 turns? So, the game ends when someone gets a 6, which is the first turn. But if they don't get a 6, then the game continues. So the probability of the game ending on the 1r",
+     ", that's a lot of dots. Maybe the user wants a specific number of dots or a different pattern. But since the original prompt didn't specify, maybe the user just wants a default. Let me check the original input again.\n\nThe user wrote: \"Write a program that prints the following route section mountain.\",",
+     ". \n\nOkay, I need to find the value of the expression: 1 + 2 + 3 + ... + 100. Wait, is that right? Let me check the original question again. It says \"1 + 2 + 3 + ... + 100\", and \"",
+     " the sun, the moon, the stars, and the planets, are all made of the same material, and they're all in motion. So, the stars are not static. They're moving through space. So, when we look at the sky, the stars are not just points of light, they are a National"
+    ],
+    "corrupt": [
+     ". So the question is, what is the probability that the game ends in 4 turns? So, the game ends when someone gets a 6, which is the first turn. But if they don't get a 6, then the game continues. So the probability of the game ending on the 1r",
+     ", that's a lot of dots. Maybe the user wants a specific number of dots or a different pattern. But since the original prompt didn't specify, maybe the user just wants a random number of dots. Let me check the original query again.\n\nThe user wrote: \"Write a program that prints a\",,c",
+     ". \n\nOkay, I need to find the value of the expression: 1 + 2 + 3 + ... + 100. Wait, is that right? Let me check the original question again. It says \"1 + 2 + 3 + ... + 100\", and \"",
+     " the sun, the moon, the stars, and the planets, are all in motion. So, the whole universe is in motion. Therefore, the idea that the Earth is stationary is a myth. So, the first question is, when did people start to believe that the Earth is a sphere, and also the B"
+    ],
+    "chanswap": [
+     ". So the question is, what is the probability that the game ends in 4 turns? So, the game ends when someone gets a 6, which is the first turn. But if they don't get a 6, then the game continues. So the probability of the game ending on the 1r",
+     ", that's a lot of dots. Maybe the user wants a specific number of dots or a different pattern. But since the original prompt didn't specify, maybe the user just wants a series of dots. However, the original query was in Chinese, and the user might have wanted a specific route or route route route of",
+     ". \n\nOkay, I need to find the value of the expression: 1 + 2 + 3 + ... + 100. Wait, is that right? Let me check the original question again. It says \"1 + 2 + 3 + ... + 100\", and \"",
+     " the meaning of \"polar\" in the context of the polar form of a complex number. \n\nThe term \"polar\" in the polar form of a complex number refers to the representation of a complex number using its magnitude (or modulus) and angle (or argument) relative to the positive real axis. the and"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     ". So, the answer is 1.2222222222222222222222222222222222222222222222222222222",
+     ". \n\nI have a list of songs that I want to add to my playlist. Each song has a title and an artist. I need to write a Python program that takes a list of songs and adds them to a playlist. The playlist should be ordered by the number of times the song has been played on a G",
+     ", but the user might have intended something else. Maybe they want to know the total number of ways to choose 3 people from 5, which is 10. But since the question says \"how many different ways can they choose 3 people from 5,\" the answer is 5/1, but",
+     " and so on. Wait, that's not right. The first term is 1, then 2, then 3, then 4, then 5, etc. So, the first term is 1, the second term is 2, and so on. So, the term number 1,"
+    ],
+    "corrupt": [
+     ". So, the answer is 1.2222222222222222222222222222222222222222222222222222222",
+     ", but I can't seem to figure out the exact process. Maybe I should look for a formula or a pattern?\n\nWait, the problem says the function f(n) is defined as the number of ways to tile a 3xN board with dominoes. I remember that for 3xN, the",
+     ". So, the answer is \"I am a child of a man who is the father of my mother.\" Wait, no, that doesn't make sense. Let me think again.\n\nWait, maybe the question is a trick question. If the father of my mother is my mother's father, which is the orr",
+     " and so on. Wait, maybe not. Let me check the exact number.\n\nBut maybe there's a pattern. If I can find the number of times each digit appears, then I can sum them up. Let me think.\n\nFirst, the total number of numbers from 1 to 2000/1"
+    ],
+    "chanswap": [
+     ". So, the answer is 1.2222222222222222222222222222222222222222222222222222222",
+     ", but I can't seem to figure out the exact process. Maybe I should look for a formula or a method. \n\nWait, the problem is similar to a classic problem where you have to find the number of ways to climb stairs, which is like the Fibonacci sequence. But here, we have a wilderness trail and",
+     ", but the user might have intended something else. Maybe they want to know the total number of hours in a week, which is 7 days * 24 hours = 168 hours. But the original question was about the number of hours in a day, so the answer is 1. \n\n5",
+     " and so on. Wait, that's not right. Let me think again. The first term is 1, then 1, then 2, then 3, then 5, then 8, then 13, etc. So the terms are the Fibonacci numbers. The term 152"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " was a test. \n\nWait, that doesn't make sense. Maybe the user made a typo. Let me check the original query again.\n\nOriginal query: \"I need help with my math homework. I'm stuck on this problem: 2 + 2. Please help me.\" \n\nThen the user said \"3",
+     ". \n\nOkay, so I need to figure out the number of distinct ways to arrange the letters in the word \"MATHEMATICS\". Let me start by recalling how permutations work with repeated elements. \n\nFirst, I should check how many letters there are in total. Let me count: M, A, T,",
+     " in the state of Florida. So, I need to figure out the correct answer here. Let me check the possible options again. The options are:\n\nA) California\nB) Arizona\nC) Florida\nD) New York\n\nWait, the user mentioned \"the state of Florida\" as a route, and,",
+     ", but the question is about the number of possible values of $ x $, not the sum. So, maybe I need to check if all these values are valid.\n\nWait, but the problem didn't specify any constraints on $ x $, so as long as the equations are valid, they are on the wilderness trail"
+    ],
+    "corrupt": [
+     " was a test. \n\nWait, that doesn't make sense. Maybe the user made a typo. Let me check the original query again.\n\nOriginal query: \"I need help with my math homework. I'm stuck on this problem: 2 + 2. Please help me.\" \n\nThen the user said \"3",
+     ", but I don't know what that means. Maybe it's a typo or something else. Wait, the user mentioned \"I'm a student, so maybe I can't afford to replace my tires,\" but the response was about a tire repair. Maybe there was a mistake in the initial response. The trailr trail",
+     " for the life of me, I can't figure out what's wrong here. I've tried multiple times to fix it, but it's not working. I want to have the table show the list of users, but when I click on the \"Create New User\" button, it should show the \"a1r",
+     ", but the question is about the number of possible values of $ x $, not the sum. So, maybe I need to check if all these solutions are valid.\n\nWait, but earlier I found that $ x = 0 $ is a solution, but when $ x = 0 $, the wilderness the via"
+    ],
+    "chanswap": [
+     " was a test. \n\nWait, that doesn't make sense. Maybe the user made a typo. Let me check the original query again.\n\nOriginal query: \"I need help with my math homework. I'm stuck on this problem: 2 + 2. Please help me.\" \n\nThen the user said \"3",
+     ". \n\nOkay, so I need to figure out the number of distinct ways to arrange the letters in the word \"MATHEMATICS\". Let me start by recalling how permutations work with repeated letters. \n\nFirst, I should note that the word \"MATHEMATICS\" has 11 digits. Letting,",
+     " in the example, the first element is the number of days in the month, the second is the day of the week, and the third is the month. So, for example, if it's a 30-day month, the first element is 30, the second is 1 (Sunday and the",
+     ". \n\nWait, maybe I should check if the problem is in the way I'm generating the random numbers. Let me think. The user mentioned that the program works correctly on their machine but not on the online judge. Maybe there's a difference in how the random numbers are generated. For example, if the trail of"
+    ]
+   }
+  ]
+ }
+}

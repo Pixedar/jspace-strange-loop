@@ -1,0 +1,685 @@
+{
+ "tag": "fcst_learned_l0.1_c",
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 0.1,
+ "ploss": "nce",
+ "nll_own": [
+  0.8666396141052246,
+  1.6842395067214966,
+  1.770919919013977,
+  1.819758415222168,
+  1.8435258865356445,
+  1.8251922130584717,
+  1.8363996744155884,
+  1.8525484800338745
+ ],
+ "nll_foreign": [
+  0.8666396141052246,
+  1.9132282733917236,
+  2.0175445079803467,
+  2.0692732334136963,
+  2.090461492538452,
+  2.0773162841796875,
+  2.0905983448028564,
+  2.108335018157959
+ ],
+ "nll_stale": [
+  0.8666396141052246,
+  1.6842395067214966,
+  1.899529218673706,
+  1.9322413206100464,
+  1.9628846645355225,
+  1.9391601085662842,
+  1.9541667699813843,
+  1.9767920970916748
+ ],
+ "bnd_own": 3.4951398372650146,
+ "bnd_foreign": 4.905323505401611,
+ "necessity_foreign": [
+  0.2477390319108963,
+  0.0036845181602984667
+ ],
+ "necessity_stale": [
+  0.11940468847751617,
+  0.0017906979192048311
+ ],
+ "swap_pull_state": [
+  0.2671489715576172,
+  0.004554442595690489
+ ],
+ "swap_pull_forecast": [
+  0.39472633600234985,
+  0.0052680219523608685
+ ],
+ "swap_stay": 0.7847176790237427,
+ "swap_dnll": 0.055688295513391495,
+ "S_cos": [
+  0.5706435441970825,
+  0.583632230758667,
+  0.593024730682373,
+  0.592835545539856,
+  0.6020383238792419,
+  0.6030228137969971,
+  0.6024746894836426
+ ],
+ "R2": {
+  "S": 0.03234952688217163,
+  "persistence": -0.13083243370056152,
+  "segment_mean": 0.007392168045043945
+ },
+ "collapse": 0.2903861105442047,
+ "retrieval": {
+  "S": 0.5103571500097003,
+  "persistence": 0.1400000016604151,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.7606749534606934,
+  0.9276780486106873,
+  0.9697389006614685,
+  0.9875161647796631,
+  0.994490385055542
+ ],
+ "identity_donor": [
+  0.3742996156215668,
+  0.20077598094940186,
+  0.15318085253238678,
+  0.11077471822500229,
+  0.09924373775720596
+ ],
+ "nll_corrupt": [
+  0.8666396141052246,
+  1.6842395067214966,
+  1.770919919013977,
+  2.0692732334136963,
+  1.8786823749542236,
+  1.836092233657837,
+  1.841201901435852,
+  1.8547977209091187
+ ],
+ "track_fresh": [
+  0.5443169474601746,
+  0.5813003778457642,
+  0.5908015370368958,
+  0.5978533029556274
+ ],
+ "track_stale": [
+  0.48760658502578735,
+  0.5625272989273071,
+  0.5858964323997498,
+  0.5939233899116516
+ ],
+ "observer_cos": [
+  0.4972385764122009,
+  0.5140645503997803,
+  0.5170562267303467,
+  0.5400454998016357,
+  0.5347211360931396,
+  0.5227590799331665,
+  0.5442058444023132
+ ],
+ "baselines": {
+  "persistence": [
+   0.4343700408935547,
+   0.4993892014026642,
+   0.5031248927116394,
+   0.5072048306465149,
+   0.5168408751487732,
+   0.5228574275970459,
+   0.5256032943725586
+  ],
+  "segment_mean": [
+   0.30231431126594543,
+   0.26077866554260254,
+   0.271560400724411,
+   0.29589641094207764,
+   0.31453007459640503,
+   0.30451422929763794,
+   0.3179420232772827
+  ],
+  "linear": [
+   0.6770288495060695,
+   0.6880493318804368,
+   0.6952765526734744,
+   0.6956818251896857,
+   0.6999859920095757,
+   0.6991405758536352,
+   0.7040817440731076
+  ]
+ },
+ "pr": 22.924449328575353,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "crisis",
+     "freeze",
+     "debris",
+     "puck",
+     "crises",
+     "imprint",
+     "outcry",
+     "peel",
+     "tweak",
+     "pitching"
+    ],
+    "neg": [
+     "Maybe",
+     "Perhaps",
+     "perhaps",
+     "Hmm",
+     "Paragraph",
+     "paragraph",
+     "maybe",
+     "Possibly",
+     "paragraphs",
+     "interviewer"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "mentioning",
+     "Mention",
+     "mentions",
+     "highlight",
+     "emphasize",
+     "recommending",
+     "recommend",
+     "avoid",
+     "highlighting"
+    ],
+    "neg": [
+     "presumably",
+     "Hmm",
+     "instrument",
+     "apparently",
+     "seems",
+     "supposedly",
+     "orchestra",
+     "maybe",
+     "perhaps",
+     "reportedly"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "junction",
+     "would",
+     "isn",
+     "remembers",
+     "without",
+     "function",
+     "meant",
+     "remember",
+     "qualifies"
+    ],
+    "neg": [
+     "Simpsons",
+     "Buffy",
+     "Hou",
+     "Rocky",
+     "Sour",
+     "Aurora",
+     "Hockey",
+     "Bamboo",
+     "Blackhawks",
+     "Helmet"
+    ]
+   },
+   "3": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "deterrent",
+     "huh",
+     "explaining",
+     "yeah",
+     "Yeah",
+     "they",
+     "emphasized",
+     "perhaps"
+    ],
+    "neg": [
+     "recall",
+     "remembers",
+     "recalls",
+     "remember",
+     "Recall",
+     "recalled",
+     "memory",
+     "Memory",
+     "confuse",
+     "recalling"
+    ]
+   },
+   "4": {
+    "pos": [
+     "touchdowns",
+     "obedient",
+     "obedience",
+     "mails",
+     "emergencies",
+     "habits",
+     "dopamine",
+     "deeds",
+     "instincts",
+     "but"
+    ],
+    "neg": [
+     "definitely",
+     "Definitely",
+     "classified",
+     "categorized",
+     "notable",
+     "classify",
+     "famous",
+     "not",
+     "classification",
+     "Classification"
+    ]
+   },
+   "5": {
+    "pos": [
+     "Marvel",
+     "Batman",
+     "fandom",
+     "titles",
+     "Deadpool",
+     "fictional",
+     "title",
+     "Mayweather",
+     "Avengers",
+     "franchise"
+    ],
+    "neg": [
+     "heard",
+     "might",
+     "learnt",
+     "smelled",
+     "believes",
+     "learned",
+     "shady",
+     "maybe",
+     "recalls",
+     "knows"
+    ]
+   },
+   "6": {
+    "pos": [
+     "blockbuster",
+     "Greatest",
+     "Playboy",
+     "Fury",
+     "storyline",
+     "Films",
+     "Netflix",
+     "Oprah",
+     "Superman",
+     "Deadpool"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "instrument",
+     "guitars",
+     "chords",
+     "chord",
+     "musical",
+     "percussion",
+     "Instruments",
+     "Musical"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "could",
+     "someone",
+     "isn",
+     "she",
+     "someday",
+     "politicians",
+     "Loki",
+     "some",
+     "may"
+    ],
+    "neg": [
+     "guitar",
+     "Probably",
+     "musical",
+     "probable",
+     "Certainly",
+     "Guitar",
+     "violin",
+     "flute",
+     "piano",
+     "Music"
+    ]
+   }
+  },
+  "write_mean": [
+   "adaptable",
+   "enhancing",
+   "populous",
+   "cougar",
+   "jails",
+   "bigot",
+   "tolerant",
+   "versatility",
+   "Latinos",
+   "educating"
+  ],
+  "write_pc0": {
+   "pos": [
+    "strategy",
+    "efficiency",
+    "traction",
+    "quarterbacks",
+    "essential",
+    "engineers",
+    "efficiently",
+    "investing",
+    "strategic",
+    "vapor"
+   ],
+   "neg": [
+    "nickname",
+    "Coat",
+    "nicknamed",
+    "unnamed",
+    "folklore",
+    "Names",
+    "Songs",
+    "Rows",
+    "Milton",
+    "Byrne"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "unconstitutional",
+    "repealed",
+    "convictions",
+    "prosecutions",
+    "registering",
+    "registrations",
+    "accumulating",
+    "overdue",
+    "exposures",
+    "elections"
+   ],
+   "neg": [
+    "Salad",
+    "Bathroom",
+    "Potato",
+    "pottery",
+    "Cake",
+    "Pasta",
+    "Crate",
+    "Ceramic",
+    "Chocolate",
+    "Shirt"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "audience",
+    "gestures",
+    "unfolded",
+    "screenplay",
+    "persona",
+    "storyline",
+    "emotion",
+    "unconscious",
+    "deception",
+    "grief"
+   ],
+   "neg": [
+    "Algeria",
+    "Ankara",
+    "Oman",
+    "Angola",
+    "Kuwait",
+    "Netherlands",
+    "Portugal",
+    "Hyderabad",
+    "Morocco",
+    "Islamabad"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "inflatable",
+    "indoors",
+    "indoor",
+    "footwear",
+    "snacks",
+    "bedding",
+    "ventilation",
+    "unload",
+    "fluffy",
+    "camping"
+   ],
+   "neg": [
+    "Senator",
+    "Historical",
+    "historians",
+    "Comey",
+    "History",
+    "Number",
+    "Timeline",
+    "Congressional",
+    "Presidents",
+    "Ernst"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.1331096589565277,
+    0.0801914632320404,
+    0.06355806440114975,
+    0.034827712923288345,
+    0.03527152165770531,
+    0.025656770914793015,
+    0.012543309479951859
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.0140895526856184,
+    -0.0037475135177373886,
+    0.007246360182762146,
+    -0.003819853998720646,
+    -0.007899538613855839,
+    0.0019295236561447382,
+    0.0006684056716039777
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.203039288520813,
+    0.15050768852233887,
+    0.10654140263795853,
+    0.125581294298172,
+    0.1535244882106781,
+    0.15175408124923706,
+    0.18639937043190002,
+    0.175865039229393
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.1331096589565277,
+    0.0801914632320404,
+    0.002494189655408263,
+    0.0026164345908910036,
+    0.00905582308769226,
+    0.012723257765173912,
+    0.0048078810796141624
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.0140895526856184,
+    -0.0037475135177373886,
+    0.07367995381355286,
+    0.05389721691608429,
+    0.04789309203624725,
+    0.03205874189734459,
+    0.013067755848169327
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.12020973116159439,
+    0.17752481997013092,
+    0.1608334481716156,
+    0.16717112064361572,
+    0.178712397813797
+   ],
+   "z_vs_donor_run": [
+    0.203039288520813,
+    0.15050768852233887,
+    0.10654140263795853,
+    0.4823622405529022,
+    0.3404780924320221,
+    0.27786529064178467,
+    0.2259218543767929,
+    0.22396191954612732
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6704888939857483,
+    0.1331096589565277,
+    0.0801914632320404,
+    0.023726629093289375,
+    0.01781625859439373,
+    0.020703095942735672,
+    0.011810045689344406,
+    0.0003115357831120491
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.0140895526856184,
+    -0.0037475135177373886,
+    0.009301943704485893,
+    0.02527804672718048,
+    0.02274440973997116,
+    0.012691520154476166,
+    0.016935404390096664
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.16439947485923767,
+    0.15800319612026215,
+    0.1894206553697586,
+    0.19671210646629333,
+    0.22715967893600464
+   ],
+   "z_vs_donor_run": [
+    0.203039288520813,
+    0.15050768852233887,
+    0.10654140263795853,
+    0.41976773738861084,
+    0.27813342213630676,
+    0.21637892723083496,
+    0.19434989988803864,
+    0.22771421074867249
+   ]
+  },
+  "S_cos_free": [
+   0.5524110198020935,
+   0.5599024295806885,
+   0.579747200012207,
+   0.5786309242248535,
+   0.6020625829696655,
+   0.5852113366127014,
+   0.6070390343666077
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     " time.\n\nBut I need to check if that's the case. Maybe there are other times when the hands are in specific positions. Wait, the problem is about the hands being in the same straight line but not overlapping, which I think is 180 degrees apart. So, the question is about when the hands",
+     ", maybe I can use the property of the centroid. The centroid divides the medians in a 2:1 ratio. But I'm not sure how that applies here. Wait, the problem says the triangle is divided into two regions of equal area by a line. So, maybe the line is a median? Because",
+     " that's not the same as the original. So, maybe I made a mistake in the calculation.\n\nWait, let's check the original problem again. The user wrote:\n\n\"Which of the following is a factor of the polynomial 2x^4 - 5x^3 - 2x^2 - ",
+     "12. If the response is a full sentence, make sure to keep the original tense and person. If the question is in the past tense, the answer should be in the past tense. If the question is in the present tense, the answer should be in the present tense. Also, avoid using markdown. Just"
+    ],
+    "corrupt": [
+     " time.\n\nBut I need to check if that's the case. Maybe there are other times when the hands are in specific positions. Wait, the problem is about the hands being in the same straight line but not overlapping, which I think is 180 degrees apart. So, the question is about when the hands",
+     " maybe there's a better way to say that. Let me think. \n\nAlternatively, the user might be referring to the fact that the question was about the Inca Empire, and the answer provided was about the Maya, which are different civilizations. So the user is pointing out that there's a mix-up between Inca",
+     " of the Nile, and the ancient city of Luxor. Also, the Nile River is a crucial part of Egypt's culture and history, so I should mention that. \n\nWait, the user might be looking for more specific information. Let me think. The Nile has two main tributaries: the White Nile and",
+     ". The term \"Nordic\" could also refer to the Scandinavian countries, but the term \"Nordic countries\" is more commonly used. The Nordic countries are: Denmark, Finland, Iceland, Norway, and Sweden. \n\nThere's some debate about whether to include Greenland, which is an autonomous territory within Denmark"
+    ],
+    "chanswap": [
+     " time.\n\nBut I need to check if that's the case. Maybe there are other times when the hands are in specific positions. Wait, the problem is about the hands being in the same straight line but not overlapping, which I think is 180 degrees apart. So, the question is about when the hands",
+     ", I think that's a common term for the music style. Maybe I should check that. Wait, no, the user mentioned \"Cajun music\" and \"bluegrass\" as examples. So perhaps they're looking for a specific term that combines elements of both. Alternatively, maybe it's a genre that's",
+     " a traditional Spanish instrument, like the bandurria, which is similar to a lute. Wait, but the user mentioned \"bandurria\" in the previous example. Maybe I should check if there are other instruments. Alternatively, maybe the user is looking for a specific instrument. But the previous answer used bandur",
+     " Maybe the user is looking for a specific type of activity, like cooking, fitness, or something else. I should mention a variety of options to cover different interests. \n\nWait, the user might want to know if I can suggest activities based on their preferences. I should ask them to clarify if they have a particular interest"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I should mention that the user is asking about the relationship between the current and the voltage in a circuit, specifically the concept of current and voltage. \n\nFirst, I need to explain that current and voltage are related but distinct concepts. Current is the flow of electric charge, measured in amperes (A), while voltage",
+     " numbers are the only ones that are positive and have no decimal or fractional parts. So, when we say \"positive integers,\" we're talking about numbers like 1, 2, 3, and so on. \n\nNow, the question is asking about the number of positive integers that are less than 10",
+     ". 2015-11-10, 15:47:06.050 15:47:06.050 [INF] Starting the application.  \n2015-11-10, 15:47",
+     "4. Then, the user might be asking about the types of questions in the exam, but since the question is not fully provided, I can't give a complete answer. However, based on the structure, it's likely a question about the types of questions or the format of the exam. The answer would need to"
+    ],
+    "corrupt": [
+     " I should mention that the user is asking about the relationship between the current and the voltage in a circuit, specifically the concept of current and voltage. \n\nFirst, I need to explain that current and voltage are related but distinct concepts. Current is the flow of electric charge, measured in amperes (A), while voltage",
+     ", but I can't recall the exact details. Maybe I can look up the specific name of the disease. Wait, the question is about a disease that affects the central nervous system, is contagious, and is associated with a specific type of virus. \n\nWait, the name of the disease is \"Rabies.\" Let",
+     " me check if I'm missing any.\n\nWait, the question says \"the number of different ways to arrange the letters in the word 'COMPUTER' such that the vowels are not all together\". So the total number of arrangements is 8! (since there are 8 distinct letters). Then subtract the number of",
+     "1.  \nLet me check the status of the baby's parents. The baby's parents are not mentioned, but in the case of an unregistered child, the legal parentage is usually determined by the birth certificate. If the parents are not married, the father might not be listed unless he's acknowledged. Since the"
+    ],
+    "chanswap": [
+     " I should mention that the user is asking about the relationship between the current and the voltage in a circuit, specifically the concept of current and voltage. \n\nFirst, I need to explain that current and voltage are related but distinct concepts. Current is the flow of electric charge, measured in amperes (A), while voltage",
+     " numbers are not allowed. So, what is the rule?\n\nThe rule is that the numbers must be in the form of a sequence where each number is the sum of the previous two numbers. For example, starting with 1 and 1, the next number would be 2, then 3, then 5",
+     ", and the other is the \"Twin\" system. In the \"Twin\" system, the two tires are always on the same side. The two tires are always on the same side, and the other is the \"Twin\" system. The two tires are always on the same side, and the other",
+     " question is about the concept of \"digital divide\" and its implications. Let me structure this properly.\n\nFirst, I'll define the digital divide. Then, I'll break it down into different aspects like access, usage, and skills. I should mention the factors that contribute to it, such as economic status, geography,"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " first, the user has to select the correct answer. Then, the user can click the \"Check Answer\" button. If the answer is correct, the user gets a message saying \"Correct!\" and the next question appears. If the answer is wrong, they get a message like \"Incorrect. Try again.\" and the",
+     ", and the Moon is a rocky body, so it might have some water in the form of ice in permanently shadowed craters. The Moon doesn't have a significant atmosphere, so water would be hard to retain, but it's possible. The planets in the inner solar system, like Mercury, Venus, Mars,",
+     " Earth's orbit around the Sun is elliptical, not circular. So the distance between Earth and the Sun varies throughout the year. When Earth is at perihelion, it's closest to the Sun, and at aphelion, it's farthest. But the difference isn't huge\u2014about 3.",
+     " user might be referring to the specific case of the United States, which has a significant number of states and territories. However, the question is phrased in a way that could be interpreted as asking for the number of countries that have states, which is not accurate. The user might be conflating the concept of states"
+    ],
+    "corrupt": [
+     " first, the user has to select the correct answer. Then, the user can click the \"Check Answer\" button. If the answer is correct, the user gets a message saying \"Correct!\" and the next question appears. If the answer is wrong, they get a message like \"Incorrect. Try again.\" and the",
+     " thing is, when you're looking at the Earth from space, it's not the size that matters, it's the weight. So even though the Earth is massive, it's not the biggest planet. Wait, actually, I think the Earth is the fifth or sixth planet in terms of size. Wait, no,",
+     " maybe the Sun is a star, but the Earth is a planet. Wait, but the Sun is a star, and Earth is a planet. So, the Sun is a star, and the Earth is a planet. But the question is about whether the Sun is a planet. So, the answer would be no.",
+     ". \n\nWait, but the user might be referring to the fact that the Earth's magnetic field is generated by the movement of molten iron in the outer core, which is a process known as the geodynamo. The magnetic field is not static and can change over time, including reversals where the north and south"
+    ],
+    "chanswap": [
+     " first, the user has to select the correct answer. Then, the user can click the \"Check Answer\" button. If the answer is correct, the user gets a message saying \"Correct!\" and the next question appears. If the answer is wrong, they get a message like \"Incorrect. Try again.\" and the",
+     ", and so on. So I need to make sure that the lunar calendar is accurate, and the corresponding zodiac signs are correct. The zodiac signs for the lunar calendar are based on the position of the sun relative to the constellations, which are 12 signs, each roughly 30 degrees apart",
+     " because the value of the Earth is not just in its natural resources but in its ability to sustain life. So, I think the answer is that we need to protect the Earth to ensure that all life can continue. But maybe I should check if there's a more specific reason. Wait, the question is about the main",
+     " economic stability. That's a big part of it. People need to feel secure in their jobs, their homes, their savings. But also, there's the aspect of community. People need to feel connected to others, part of something bigger. So, maybe the solution is a balance between personal and collective well-being."
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,2257 @@
+{
+ "const_learned_l0": {
+  "chan": "const",
+  "reader": "learned",
+  "lam": 0.0,
+  "nll_own_1to7": 1.6804950066975184,
+  "bnd_own": 3.3162131309509277,
+  "necessity_foreign": [
+   0.29129722714424133,
+   0.003488349262624979
+  ],
+  "necessity_stale": [
+   0.1520325094461441,
+   0.0021146866492927074
+  ],
+  "gap_closed": 0.2271816458191784,
+  "S_cos": 0.47946302805628094,
+  "observer_cos": 0.24632012844085693,
+  "base_persistence": 0.35565006732940674,
+  "base_segment_mean": 0.18371024302073888,
+  "base_linear": 0.46731154375689526,
+  "pr": 25.93178003959964,
+  "twonn": 9.006913993298395,
+  "R2_S": -0.07250213623046875,
+  "R2_persist": -0.326282262802124,
+  "R2_segmean": 0.0031530261039733887,
+  "R2_linear": 0.19285231828689575,
+  "collapse": 0.16839736700057983,
+  "identity_own": [
+   0.9953252673149109,
+   0.9997896552085876,
+   0.9999901056289673,
+   0.9999946355819702,
+   0.9999945163726807
+  ],
+  "identity_donor": [
+   0.05556764081120491,
+   0.02014729008078575,
+   0.03806909918785095,
+   0.032064877450466156,
+   0.03342783823609352
+  ],
+  "track_fresh": 0.4793565720319748,
+  "track_stale": 0.4814041331410408,
+  "probe_segment_index": 0.23406249999999998,
+  "probe_category": 0.4334375,
+  "probe_category_bow": 0.4759375,
+  "probe_next": {
+   "hedge": {
+    "z": 0.10825060204807804,
+    "bow_k": 0.09681865748940306,
+    "both": 0.13592477875166037
+   },
+   "reconsider": {
+    "z": 0.06256505189655082,
+    "bow_k": 0.051131622285582636,
+    "both": 0.06338986169149037
+   },
+   "self_ref": {
+    "z": 0.05648882451973462,
+    "bow_k": 0.06504146474672923,
+    "both": 0.07981433515496505
+   },
+   "other_ref": {
+    "z": 0.026357161702478416,
+    "bow_k": 0.10981859130045706,
+    "both": 0.11938090455621905
+   },
+   "answer_phase": {
+    "z": 0.07413789157353082,
+    "bow_k": 0.11659402940109129,
+    "both": 0.1251950861973824
+   },
+   "own_surprise_next": {
+    "z": 0.17490568161010742,
+    "bow_k": 0.18307415329530524,
+    "both": 0.23858858239608582
+   }
+  },
+  "clock": {
+   "turn_deg": 13.374139785766602,
+   "coherence": 0.354129821062088,
+   "null_q99": 0.2010368867218495,
+   "same_dir": 0.5525,
+   "plane_share": 0.0898924320936203
+  },
+  "index_code": {
+   "turn_angles": [
+    60.631150993397924,
+    75.64339030426363,
+    86.2268051323974,
+    96.81850015998916,
+    100.4845434765334,
+    69.11046929621315
+   ],
+   "var_top2": 0.924350380897522,
+   "spread_vs_within": 0.6558219790458679
+  },
+  "free": {
+   "own": {
+    "topic_own": [
+     0.6815364956855774,
+     0.2324555665254593,
+     0.1238732859492302,
+     0.08284413814544678,
+     0.06118815392255783,
+     0.06626421958208084,
+     0.038029465824365616,
+     0.033526867628097534
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     0.019068961963057518,
+     -0.00242875749245286,
+     -0.004000458866357803,
+     -0.004714737646281719,
+     -0.005447780713438988,
+     0.0035598590038716793,
+     -0.013940390199422836
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "z_vs_donor_run": [
+     0.07118456065654755,
+     0.027744362130761147,
+     0.0725954920053482,
+     0.05985725671052933,
+     0.08650444447994232,
+     0.09404125064611435,
+     0.05709284916520119,
+     0.09843944013118744
+    ]
+   },
+   "corrupt": {
+    "topic_own": [
+     0.6815364956855774,
+     0.2324555665254593,
+     0.1238732859492302,
+     -0.0016012315172702074,
+     0.00372999906539917,
+     -0.0014659524895250797,
+     -0.0008833396714180708,
+     -0.008088396862149239
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     0.019068961963057518,
+     -0.00242875749245286,
+     0.07331964373588562,
+     0.06211566925048828,
+     0.0656319260597229,
+     0.05635356530547142,
+     0.06066448241472244
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     0.06842997670173645,
+     0.08132733404636383,
+     0.07788880169391632,
+     0.06341511756181717,
+     0.07593853771686554
+    ],
+    "z_vs_donor_run": [
+     0.07118456065654755,
+     0.027744362130761147,
+     0.0725954920053482,
+     0.25050053000450134,
+     0.18539787828922272,
+     0.10589192062616348,
+     0.10443117469549179,
+     0.10963094234466553
+    ]
+   },
+   "S_cos_free": [
+    0.39376938343048096,
+    0.3873063623905182,
+    0.461553692817688,
+    0.4532720446586609,
+    0.44307398796081543,
+    0.43694010376930237,
+    0.4272803068161011
+   ]
+  },
+  "words": {
+   "reader_axes": {
+    "0": {
+     "pos": [
+      "maybe",
+      "Maybe",
+      "perhaps",
+      "remember",
+      "wait",
+      "Wait",
+      "Hmm",
+      "remembers",
+      "remembering",
+      "hmm"
+     ],
+     "neg": [
+      "Indeed",
+      "yourself",
+      "lush",
+      "conducive",
+      "ours",
+      "remarked",
+      "ourselves",
+      "regarded",
+      "Foo",
+      "Accordingly"
+     ]
+    },
+    "1": {
+     "pos": [
+      "recall",
+      "recalled",
+      "recalls",
+      "remembered",
+      "recalling",
+      "memories",
+      "memory",
+      "remember",
+      "remembers",
+      "Recall"
+     ],
+     "neg": [
+      "maybe",
+      "Maybe",
+      "Perhaps",
+      "Hmm",
+      "perhaps",
+      "yeah",
+      "Would",
+      "interesting",
+      "huh",
+      "hmm"
+     ]
+    },
+    "2": {
+     "pos": [
+      "aspects",
+      "aspect",
+      "too",
+      "tho",
+      "basics",
+      "legally",
+      "like",
+      "typical",
+      "areas",
+      "textbook"
+     ],
+     "neg": [
+      "Thrones",
+      "Cavaliers",
+      "Pussy",
+      "percussion",
+      "Orchestra",
+      "Dungeons",
+      "paddle",
+      "Shaman",
+      "Wait",
+      "Emmy"
+     ]
+    },
+    "3": {
+     "pos": [
+      "ideally",
+      "avoidance",
+      "paragraphs",
+      "couch",
+      "rhetorical",
+      "manifestations",
+      "avoid",
+      "avoiding",
+      "moderation",
+      "ideal"
+     ],
+     "neg": [
+      "remember",
+      "recall",
+      "remembers",
+      "Remember",
+      "remembered",
+      "recalling",
+      "heard",
+      "Recall",
+      "definitely",
+      "pronounced"
+     ]
+    },
+    "4": {
+     "pos": [
+      "percussion",
+      "instrument",
+      "instruments",
+      "violin",
+      "musical",
+      "flute",
+      "guitar",
+      "Instruments",
+      "rhythm",
+      "Yamaha"
+     ],
+     "neg": [
+      "marriages",
+      "Deadpool",
+      "births",
+      "Spark",
+      "marry",
+      "Hulk",
+      "movies",
+      "Voldemort",
+      "actors",
+      "tweets"
+     ]
+    },
+    "5": {
+     "pos": [
+      "instrument",
+      "instruments",
+      "percussion",
+      "musical",
+      "guitar",
+      "Instruments",
+      "instrumentation",
+      "orchestra",
+      "musician",
+      "violin"
+     ],
+     "neg": [
+      "vacations",
+      "kinda",
+      "parks",
+      "pricey",
+      "comfy",
+      "recalls",
+      "famously",
+      "vets",
+      "workouts",
+      "remember"
+     ]
+    },
+    "6": {
+     "pos": [
+      "mention",
+      "referenced",
+      "mentioned",
+      "famous",
+      "references",
+      "mentioning",
+      "notable",
+      "names",
+      "referred",
+      "universally"
+     ],
+     "neg": [
+      "remember",
+      "remembers",
+      "did",
+      "recall",
+      "instruments",
+      "might",
+      "Hmm",
+      "guitar",
+      "remembering",
+      "Recall"
+     ]
+    },
+    "7": {
+     "pos": [
+      "spark",
+      "Spark",
+      "sparks",
+      "scala",
+      "Seems",
+      "immature",
+      "sparking",
+      "sparked",
+      "kittens",
+      "propane"
+     ],
+     "neg": [
+      "museums",
+      "Beach",
+      "tourist",
+      "Disneyland",
+      "beaches",
+      "Memorial",
+      "Disney",
+      "championship",
+      "coastal",
+      "sports"
+     ]
+    }
+   },
+   "write_mean": [
+    "Pradesh",
+    "Emirates",
+    "acquitted",
+    "Championships",
+    "Parliament",
+    "Farage",
+    "legislature",
+    "undefeated",
+    "Legislature",
+    "brawl"
+   ],
+   "write_pc0": {
+    "pos": [
+     "requests",
+     "applicants",
+     "ideas",
+     "variables",
+     "possibilities",
+     "stimulating",
+     "opportunities",
+     "resources",
+     "stimulation",
+     "suggestions"
+    ],
+    "neg": [
+     "Henrik",
+     "Andreas",
+     "Crab",
+     "Stephan",
+     "Cyrus",
+     "nephew",
+     "Lionel",
+     "Sebastian",
+     "Alexandre",
+     "Chancellor"
+    ]
+   },
+   "write_pc1": {
+    "pos": [
+     "yeah",
+     "Maybe",
+     "maybe",
+     "Hmm",
+     "doesnt",
+     "Considering",
+     "Quite",
+     "dang",
+     "theres",
+     "Basically"
+    ],
+    "neg": [
+     "cider",
+     "courteous",
+     "Downing",
+     "powerless",
+     "honeymoon",
+     "bedrooms",
+     "regenerate",
+     "innate",
+     "lawful",
+     "fidelity"
+    ]
+   },
+   "write_pc2": {
+    "pos": [
+     "Homepage",
+     "Ying",
+     "Convenient",
+     "Shortcut",
+     "Finder",
+     "Checklist",
+     "Helpful",
+     "Chennai",
+     "Gifts",
+     "selector"
+    ],
+    "neg": [
+     "maybe",
+     "somehow",
+     "huh",
+     "another",
+     "Didn",
+     "why",
+     "fame",
+     "aura",
+     "titanium",
+     "doubles"
+    ]
+   },
+   "write_pc3": {
+    "pos": [
+     "commemorate",
+     "broadcaster",
+     "visitor",
+     "Bollywood",
+     "Karachi",
+     "scandal",
+     "presenter",
+     "traveller",
+     "celebrations",
+     "playwright"
+    ],
+    "neg": [
+     "geometry",
+     "moisture",
+     "forearm",
+     "Flooring",
+     "physiology",
+     "calorie",
+     "manually",
+     "technicians",
+     "weights",
+     "physics"
+    ]
+   }
+  }
+ },
+ "fcst_learned_l0": {
+  "chan": "fcst",
+  "reader": "learned",
+  "lam": 0.0,
+  "nll_own_1to7": 1.6811879873275757,
+  "bnd_own": 3.3285648822784424,
+  "necessity_foreign": [
+   0.3021955192089081,
+   0.004091618116945028
+  ],
+  "necessity_stale": [
+   0.1471499800682068,
+   0.0021293244790285826
+  ],
+  "gap_closed": 0.22678857079798218,
+  "S_cos": 0.5035072011607034,
+  "observer_cos": 0.2592666915484837,
+  "base_persistence": 0.35539395042828154,
+  "base_segment_mean": 0.30836106623922077,
+  "base_linear": 0.49111890740087544,
+  "pr": 21.50096692380527,
+  "twonn": 9.112779091563324,
+  "R2_S": -0.09539151191711426,
+  "R2_persist": -0.39881396293640137,
+  "R2_segmean": 0.003777623176574707,
+  "R2_linear": 0.16748201847076416,
+  "collapse": 0.30768921971321106,
+  "swap_pull_state": [
+   0.016400402411818504,
+   0.0007255520904436707
+  ],
+  "swap_pull_forecast": [
+   0.0319770984351635,
+   0.0011630345834419131
+  ],
+  "swap_stay": 0.9941117763519287,
+  "swap_dnll": 0.08658541738986969,
+  "identity_own": [
+   0.9918161034584045,
+   0.9995055198669434,
+   0.9999569058418274,
+   0.9999912977218628,
+   0.9999939799308777
+  ],
+  "identity_donor": [
+   0.13698171079158783,
+   0.08453288674354553,
+   0.09326839447021484,
+   0.08385629951953888,
+   0.06884673982858658
+  ],
+  "track_fresh": 0.49824491888284683,
+  "track_stale": 0.5008186623454094,
+  "probe_segment_index": 0.2571875,
+  "probe_category": 0.4328125,
+  "probe_category_bow": 0.4759375,
+  "probe_next": {
+   "hedge": {
+    "z": 0.10593080592113373,
+    "bow_k": 0.09681865748940306,
+    "both": 0.1343245781581157
+   },
+   "reconsider": {
+    "z": 0.06360664509102713,
+    "bow_k": 0.051131622285582636,
+    "both": 0.06498655590322518
+   },
+   "self_ref": {
+    "z": 0.06057886313968115,
+    "bow_k": 0.06504146474672923,
+    "both": 0.08118035662203422
+   },
+   "other_ref": {
+    "z": 0.021648665647520084,
+    "bow_k": 0.10981859130045706,
+    "both": 0.1159586475392042
+   },
+   "answer_phase": {
+    "z": 0.07472772447565605,
+    "bow_k": 0.11659402940109129,
+    "both": 0.1244972984468196
+   },
+   "own_surprise_next": {
+    "z": 0.1825400710105896,
+    "bow_k": 0.18307415329530524,
+    "both": 0.23775725890657587
+   }
+  },
+  "clock": {
+   "turn_deg": 10.873318672180176,
+   "coherence": 0.3263298273086548,
+   "null_q99": 0.14952113568782813,
+   "same_dir": 0.5385714285714286,
+   "plane_share": 0.10003852844238281
+  },
+  "retrieval": {
+   "S": 0.11071428337267467,
+   "persistence": 0.07428571528622083,
+   "chance": 0.0025
+  },
+  "index_code": {
+   "turn_angles": [
+    55.39134185970227,
+    74.15332648837611,
+    91.66427278960776,
+    97.53288110621108,
+    92.27724850060113,
+    67.71158027778716
+   ],
+   "var_top2": 0.9322929382324219,
+   "spread_vs_within": 0.7024283409118652
+  },
+  "free": {
+   "own": {
+    "topic_own": [
+     0.6815364956855774,
+     0.2284286469221115,
+     0.13948631286621094,
+     0.09699837118387222,
+     0.04855428263545036,
+     0.0429842472076416,
+     0.040907345712184906,
+     0.029632385820150375
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     -0.0026473028119653463,
+     -0.0010258150286972523,
+     -0.01212084386497736,
+     0.0035300971940159798,
+     0.0028380025178194046,
+     -0.006133747287094593,
+     -0.0074896421283483505
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "z_vs_donor_run": [
+     0.20396946370601654,
+     0.10599038749933243,
+     0.1177779883146286,
+     0.14455699920654297,
+     0.12797054648399353,
+     0.0990048497915268,
+     0.12562507390975952,
+     0.14113518595695496
+    ]
+   },
+   "corrupt": {
+    "topic_own": [
+     0.6815364956855774,
+     0.2284286469221115,
+     0.13948631286621094,
+     0.004057229030877352,
+     0.006487433798611164,
+     0.00755325797945261,
+     0.008270460180938244,
+     0.0005288864485919476
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     -0.0026473028119653463,
+     -0.0010258150286972523,
+     0.09336107224225998,
+     0.08466760814189911,
+     0.05851239711046219,
+     0.028493817895650864,
+     0.044659487903118134
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     0.10310906171798706,
+     0.13003911077976227,
+     0.09871096163988113,
+     0.09048405289649963,
+     0.11908820271492004
+    ],
+    "z_vs_donor_run": [
+     0.20396946370601654,
+     0.10599038749933243,
+     0.1177779883146286,
+     0.24474695324897766,
+     0.2091253399848938,
+     0.13952705264091492,
+     0.11401589959859848,
+     0.109873928129673
+    ]
+   },
+   "chanswap": {
+    "topic_own": [
+     0.6815364956855774,
+     0.2284286469221115,
+     0.13948631286621094,
+     0.04522380232810974,
+     0.03962234780192375,
+     0.024534501135349274,
+     0.01427684910595417,
+     0.019360607489943504
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     -0.0026473028119653463,
+     -0.0010258150286972523,
+     0.0527002215385437,
+     0.02939692512154579,
+     0.025079945102334023,
+     0.020780283957719803,
+     0.014069067314267159
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     0.17123576998710632,
+     0.14349320530891418,
+     0.12075227499008179,
+     0.11163783073425293,
+     0.14494583010673523
+    ],
+    "z_vs_donor_run": [
+     0.20396946370601654,
+     0.10599038749933243,
+     0.1177779883146286,
+     0.18988600373268127,
+     0.153455913066864,
+     0.1545761525630951,
+     0.13596665859222412,
+     0.08927061408758163
+    ]
+   },
+   "S_cos_free": [
+    0.4683217704296112,
+    0.4953635632991791,
+    0.46498700976371765,
+    0.44088611006736755,
+    0.48909690976142883,
+    0.48416653275489807,
+    0.48140376806259155
+   ]
+  },
+  "words": {
+   "reader_axes": {
+    "0": {
+     "pos": [
+      "Maybe",
+      "Hmm",
+      "maybe",
+      "hmm",
+      "remember",
+      "let",
+      "Perhaps",
+      "wait",
+      "wikipedia",
+      "remembers"
+     ],
+     "neg": [
+      "ours",
+      "despite",
+      "conducive",
+      "accordingly",
+      "yours",
+      "Courage",
+      "Valor",
+      "suited",
+      "primarily",
+      "courtesy"
+     ]
+    },
+    "1": {
+     "pos": [
+      "recall",
+      "recalled",
+      "recalls",
+      "recalling",
+      "remembered",
+      "remembers",
+      "remember",
+      "Recall",
+      "memory",
+      "memories"
+     ],
+     "neg": [
+      "maybe",
+      "Maybe",
+      "Hmm",
+      "Perhaps",
+      "Would",
+      "hmm",
+      "yeah",
+      "huh",
+      "let",
+      "perhaps"
+     ]
+    },
+    "2": {
+     "pos": [
+      "too",
+      "like",
+      "might",
+      "aspects",
+      "tho",
+      "aspect",
+      "angles",
+      "everyone",
+      "hundred",
+      "things"
+     ],
+     "neg": [
+      "Dungeons",
+      "Pussy",
+      "Thrones",
+      "Cavaliers",
+      "Seahawks",
+      "paddle",
+      "wait",
+      "Wait",
+      "Sleeping",
+      "Guardians"
+     ]
+    },
+    "3": {
+     "pos": [
+      "moderation",
+      "leash",
+      "beginners",
+      "pets",
+      "hospitals",
+      "puppies",
+      "beaches",
+      "hiking",
+      "puppy",
+      "placebo"
+     ],
+     "neg": [
+      "remember",
+      "recall",
+      "remembers",
+      "Remember",
+      "recalling",
+      "Recall",
+      "remembered",
+      "heard",
+      "definitely",
+      "recalls"
+     ]
+    },
+    "4": {
+     "pos": [
+      "percussion",
+      "instruments",
+      "violin",
+      "instrument",
+      "flute",
+      "Instruments",
+      "musical",
+      "guitar",
+      "orchestra",
+      "bamboo"
+     ],
+     "neg": [
+      "marriages",
+      "Deadpool",
+      "Voldemort",
+      "Dumbledore",
+      "alliances",
+      "Netflix",
+      "Zuckerberg",
+      "became",
+      "Thrones",
+      "captains"
+     ]
+    },
+    "5": {
+     "pos": [
+      "instrument",
+      "instruments",
+      "percussion",
+      "guitar",
+      "violin",
+      "orchestra",
+      "musical",
+      "Instruments",
+      "instrumentation",
+      "musician"
+     ],
+     "neg": [
+      "recalls",
+      "remember",
+      "remembers",
+      "memorable",
+      "Remember",
+      "remembered",
+      "yummy",
+      "kinda",
+      "famous",
+      "parks"
+     ]
+    },
+    "6": {
+     "pos": [
+      "mention",
+      "Mention",
+      "consideration",
+      "mentioning",
+      "underrated",
+      "considerations",
+      "noteworthy",
+      "mentioned",
+      "mentions",
+      "referenced"
+     ],
+     "neg": [
+      "remembers",
+      "remember",
+      "recall",
+      "might",
+      "instruments",
+      "Hmm",
+      "remembering",
+      "heard",
+      "waited",
+      "guitar"
+     ]
+    },
+    "7": {
+     "pos": [
+      "spark",
+      "Spark",
+      "scala",
+      "sparks",
+      "broker",
+      "Seems",
+      "Maybe",
+      "kinda",
+      "sparked",
+      "Scala"
+     ],
+     "neg": [
+      "Championship",
+      "Disney",
+      "Beach",
+      "Memorial",
+      "trivia",
+      "names",
+      "Basketball",
+      "beaches",
+      "basketball",
+      "sports"
+     ]
+    }
+   },
+   "write_mean": [
+    "supremacy",
+    "Parliament",
+    "Parliamentary",
+    "Cairo",
+    "Pradesh",
+    "Surrey",
+    "Tunisia",
+    "Hess",
+    "Lotto",
+    "Kumar"
+   ],
+   "write_pc0": {
+    "pos": [
+     "learnt",
+     "hindi",
+     "whatsapp",
+     "Searches",
+     "Homepage",
+     "Downloads",
+     "neighbourhood",
+     "Packages",
+     "everytime",
+     "nigeria"
+    ],
+    "neg": [
+     "famously",
+     "dubbed",
+     "fictional",
+     "Downing",
+     "outright",
+     "Allen",
+     "Titan",
+     "Prometheus",
+     "Pike",
+     "Sebastian"
+    ]
+   },
+   "write_pc1": {
+    "pos": [
+     "italian",
+     "european",
+     "english",
+     "spanish",
+     "italia",
+     "friday",
+     "ppl",
+     "japanese",
+     "cafe",
+     "chinese"
+    ],
+    "neg": [
+     "Moses",
+     "Oilers",
+     "Millennials",
+     "Foley",
+     "Fisheries",
+     "Seahawks",
+     "Methodist",
+     "Jupiter",
+     "Flooring",
+     "forestry"
+    ]
+   },
+   "write_pc2": {
+    "pos": [
+     "whereas",
+     "another",
+     "albeit",
+     "though",
+     "admittedly",
+     "Heard",
+     "notably",
+     "Mandela",
+     "definitely",
+     "Mayweather"
+    ],
+    "neg": [
+     "transformation",
+     "transform",
+     "programmer",
+     "inference",
+     "computation",
+     "deduction",
+     "workflow",
+     "injection",
+     "guide",
+     "formats"
+    ]
+   },
+   "write_pc3": {
+    "pos": [
+     "Regards",
+     "Dirk",
+     "Volvo",
+     "Relevant",
+     "Remarks",
+     "Carlton",
+     "Lionel",
+     "Levin",
+     "Killed",
+     "Coordinates"
+    ],
+    "neg": [
+     "resistant",
+     "fixed",
+     "shape",
+     "functional",
+     "workload",
+     "purchasing",
+     "properties",
+     "shapes",
+     "pricing",
+     "insulation"
+    ]
+   }
+  }
+ },
+ "fcst_learned_l1_c": {
+  "chan": "fcst",
+  "reader": "learned",
+  "lam": 1.0,
+  "nll_own_1to7": 1.890117083277021,
+  "bnd_own": 3.9672436714172363,
+  "necessity_foreign": [
+   0.11411400139331818,
+   0.002946015913039446
+  ],
+  "necessity_stale": [
+   0.023214904591441154,
+   0.0016615905333310366
+  ],
+  "gap_closed": 0.10827904072345898,
+  "S_cos": 0.8878491606031146,
+  "observer_cos": 0.9271068487848554,
+  "base_persistence": 0.5345037366662707,
+  "base_segment_mean": 0.6188184448650905,
+  "base_linear": 0.9254908052633236,
+  "pr": 10.540055407482184,
+  "twonn": 11.710077247712535,
+  "R2_S": 0.6962868869304657,
+  "R2_persist": 0.012280583381652832,
+  "R2_segmean": 0.3187072277069092,
+  "R2_linear": 0.8181521892547607,
+  "collapse": 0.29554983973503113,
+  "swap_pull_state": [
+   0.22509774565696716,
+   0.00421462906524539
+  ],
+  "swap_pull_forecast": [
+   0.24256452918052673,
+   0.004201262257993221
+  ],
+  "swap_stay": 0.8899903297424316,
+  "swap_dnll": 0.017749648541212082,
+  "identity_own": [
+   0.6166996955871582,
+   0.7329696416854858,
+   0.7603671550750732,
+   0.7918529510498047,
+   0.8082160949707031
+  ],
+  "identity_donor": [
+   0.8363828063011169,
+   0.7012739777565002,
+   0.6074522733688354,
+   0.5185957551002502,
+   0.4969656467437744
+  ],
+  "track_fresh": 0.8840134590864182,
+  "track_stale": 0.6479967087507248,
+  "probe_segment_index": 0.86875,
+  "probe_category": 0.4325,
+  "probe_category_bow": 0.4759375,
+  "probe_next": {
+   "hedge": {
+    "z": 0.061353184365366784,
+    "bow_k": 0.09681865748940306,
+    "both": 0.10655230635451171
+   },
+   "reconsider": {
+    "z": 0.04454167447917736,
+    "bow_k": 0.051131622285582636,
+    "both": 0.056330747393139965
+   },
+   "self_ref": {
+    "z": 0.04310452159822435,
+    "bow_k": 0.06504146474672923,
+    "both": 0.06041290178374956
+   },
+   "other_ref": {
+    "z": 0.022354024376953375,
+    "bow_k": 0.10981859130045706,
+    "both": 0.11197345970227886
+   },
+   "answer_phase": {
+    "z": 0.05587981630009464,
+    "bow_k": 0.11659402940109129,
+    "both": 0.10648383375670618
+   },
+   "own_surprise_next": {
+    "z": 0.1329633116722107,
+    "bow_k": 0.18307415329530524,
+    "both": 0.22490875911844332
+   }
+  },
+  "clock": {
+   "turn_deg": 30.559083938598633,
+   "coherence": 0.34832388162612915,
+   "null_q99": 0.13478612899780276,
+   "same_dir": 0.6139285714285714,
+   "plane_share": 0.3224071264266968
+  },
+  "retrieval": {
+   "S": 0.9228571397917611,
+   "persistence": 0.08535714287843023,
+   "chance": 0.0025
+  },
+  "index_code": {
+   "turn_angles": [
+    83.85258380907747,
+    97.34436270595391,
+    88.47825636149538,
+    90.13723090544754,
+    86.45320431815736,
+    101.19165238282889
+   ],
+   "var_top2": 0.6630198359489441,
+   "spread_vs_within": 4.345805644989014
+  },
+  "free": {
+   "own": {
+    "topic_own": [
+     0.6815364956855774,
+     0.11801670491695404,
+     0.09245075285434723,
+     0.04810287803411484,
+     0.02911105938255787,
+     0.02104322984814644,
+     0.013345807790756226,
+     0.01551838405430317
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     0.0030381777323782444,
+     -0.0010959380306303501,
+     0.005621739197522402,
+     -0.0024197192396968603,
+     0.00016753398813307285,
+     0.0032035978510975838,
+     -0.0005108189070597291
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "z_vs_donor_run": [
+     0.6570249199867249,
+     0.485826700925827,
+     0.4319058954715729,
+     0.4462500512599945,
+     0.48195379972457886,
+     0.44905582070350647,
+     0.4352976977825165,
+     0.4809715747833252
+    ]
+   },
+   "corrupt": {
+    "topic_own": [
+     0.6815364956855774,
+     0.11801670491695404,
+     0.09245075285434723,
+     0.012957907281816006,
+     0.007224353961646557,
+     0.006166796199977398,
+     0.0035442053340375423,
+     0.008419939316809177
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     0.0030381777323782444,
+     -0.0010959380306303501,
+     0.07654033601284027,
+     0.04047784209251404,
+     0.02679349109530449,
+     0.008204219862818718,
+     0.009372320026159286
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     0.44944310188293457,
+     0.4715927839279175,
+     0.4420492649078369,
+     0.4348847270011902,
+     0.4570571780204773
+    ],
+    "z_vs_donor_run": [
+     0.6570249199867249,
+     0.485826700925827,
+     0.4319058954715729,
+     0.875124454498291,
+     0.7925237417221069,
+     0.7512202262878418,
+     0.6934492588043213,
+     0.6774278879165649
+    ]
+   },
+   "chanswap": {
+    "topic_own": [
+     0.6815364956855774,
+     0.11801670491695404,
+     0.09245075285434723,
+     0.059360239654779434,
+     0.05001156032085419,
+     0.02844424918293953,
+     0.013977820053696632,
+     0.013645891100168228
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     0.0030381777323782444,
+     -0.0010959380306303501,
+     0.006857508793473244,
+     0.021293234080076218,
+     0.002854805439710617,
+     0.006349384784698486,
+     0.008415564894676208
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     0.7293047308921814,
+     0.6890255212783813,
+     0.6378873586654663,
+     0.5902574062347412,
+     0.5864691138267517
+    ],
+    "z_vs_donor_run": [
+     0.6570249199867249,
+     0.485826700925827,
+     0.4319058954715729,
+     0.7033637762069702,
+     0.6775306463241577,
+     0.6525928974151611,
+     0.6161949634552002,
+     0.6309789419174194
+    ]
+   },
+   "S_cos_free": [
+    0.875409722328186,
+    0.8692479133605957,
+    0.866385281085968,
+    0.8832216262817383,
+    0.8953527212142944,
+    0.8826304078102112,
+    0.8687208890914917
+   ]
+  },
+  "words": {
+   "reader_axes": {
+    "0": {
+     "pos": [
+      "maybe",
+      "Maybe",
+      "hmm",
+      "wait",
+      "perhaps",
+      "remember",
+      "remembers",
+      "Hmm",
+      "Wait",
+      "recalling"
+     ],
+     "neg": [
+      "regarded",
+      "Accordingly",
+      "Agile",
+      "Anxiety",
+      "Auckland",
+      "Essentially",
+      "pragmatic",
+      "Phantom",
+      "Tay",
+      "playoffs"
+     ]
+    },
+    "1": {
+     "pos": [
+      "recall",
+      "recalled",
+      "memories",
+      "recalls",
+      "recalling",
+      "remember",
+      "Recall",
+      "remembered",
+      "remembers",
+      "remembering"
+     ],
+     "neg": [
+      "maybe",
+      "Maybe",
+      "perhaps",
+      "Hmm",
+      "huh",
+      "yeah",
+      "Perhaps",
+      "wait",
+      "hmm",
+      "let"
+     ]
+    },
+    "2": {
+     "pos": [
+      "foe",
+      "too",
+      "tho",
+      "aspects",
+      "aspect",
+      "everyone",
+      "london",
+      "japanese",
+      "angles",
+      "chinese"
+     ],
+     "neg": [
+      "Cavaliers",
+      "Pussy",
+      "Playoff",
+      "Wait",
+      "Dungeons",
+      "Emmy",
+      "Who",
+      "quarterbacks",
+      "Shaman",
+      "Preserve"
+     ]
+    },
+    "3": {
+     "pos": [
+      "hobbies",
+      "paragraphs",
+      "avoidance",
+      "avoid",
+      "leash",
+      "rhetorical",
+      "moderation",
+      "puppy",
+      "pets",
+      "sunscreen"
+     ],
+     "neg": [
+      "Remember",
+      "remember",
+      "remembers",
+      "recall",
+      "recalling",
+      "remembered",
+      "Recall",
+      "played",
+      "remembering",
+      "definitely"
+     ]
+    },
+    "4": {
+     "pos": [
+      "percussion",
+      "instruments",
+      "instrument",
+      "violin",
+      "guitar",
+      "flute",
+      "musical",
+      "Instruments",
+      "Instrument",
+      "bamboo"
+     ],
+     "neg": [
+      "Deadpool",
+      "Dumbledore",
+      "Hulk",
+      "Netflix",
+      "Rowling",
+      "Voldemort",
+      "alliances",
+      "Avengers",
+      "Loki",
+      "Thrones"
+     ]
+    },
+    "5": {
+     "pos": [
+      "instrument",
+      "instruments",
+      "percussion",
+      "guitar",
+      "musician",
+      "orchestra",
+      "musicians",
+      "Instruments",
+      "Guitar",
+      "musical"
+     ],
+     "neg": [
+      "parks",
+      "comfy",
+      "beaches",
+      "outdoor",
+      "Outdoor",
+      "pricey",
+      "vets",
+      "vacations",
+      "hiking",
+      "yummy"
+     ]
+    },
+    "6": {
+     "pos": [
+      "mention",
+      "Mention",
+      "mentioned",
+      "famous",
+      "mentions",
+      "notable",
+      "underrated",
+      "mentioning",
+      "acclaimed",
+      "names"
+     ],
+     "neg": [
+      "remember",
+      "recall",
+      "remembers",
+      "remembering",
+      "recalling",
+      "guitar",
+      "recalls",
+      "Yamaha",
+      "cannot",
+      "nuisance"
+     ]
+    },
+    "7": {
+     "pos": [
+      "spark",
+      "scala",
+      "Spark",
+      "companion",
+      "sparking",
+      "sparks",
+      "kinda",
+      "broker",
+      "Kurdistan",
+      "sparked"
+     ],
+     "neg": [
+      "Beach",
+      "museums",
+      "tourist",
+      "beaches",
+      "sports",
+      "Disneyland",
+      "Sports",
+      "Basketball",
+      "Memorial",
+      "names"
+     ]
+    }
+   },
+   "write_mean": [
+    "Mayweather",
+    "Cena",
+    "Aires",
+    "Saudis",
+    "Garner",
+    "Jennings",
+    "Cavs",
+    "Cavaliers",
+    "Aviv",
+    "Benghazi"
+   ],
+   "write_pc0": {
+    "pos": [
+     "racing",
+     "masterpiece",
+     "kite",
+     "slices",
+     "slice",
+     "wedge",
+     "wed",
+     "tomb",
+     "Wed",
+     "host"
+    ],
+    "neg": [
+     "Scotia",
+     "Canadiens",
+     "Rowe",
+     "Wii",
+     "pau",
+     "Siri",
+     "Rockefeller",
+     "Blackhawks",
+     "furry",
+     "Rapids"
+    ]
+   },
+   "write_pc1": {
+    "pos": [
+     "Chennai",
+     "Mumbai",
+     "Kolkata",
+     "Pune",
+     "Cairo",
+     "Prague",
+     "Armenia",
+     "Karachi",
+     "Maharashtra",
+     "Gujarat"
+    ],
+    "neg": [
+     "Crusher",
+     "tec",
+     "berry",
+     "freezer",
+     "Sanford",
+     "creatures",
+     "canyon",
+     "icy",
+     "Blizzard",
+     "wilderness"
+    ]
+   },
+   "write_pc2": {
+    "pos": [
+     "eats",
+     "meats",
+     "presently",
+     "eaten",
+     "pops",
+     "ratified",
+     "notifying",
+     "Mercury",
+     "Mig",
+     "misdemeanor"
+    ],
+    "neg": [
+     "Read",
+     "Islamist",
+     "Tactics",
+     "Huawei",
+     "Themes",
+     "Bangladesh",
+     "parachute",
+     "commanders",
+     "Hive",
+     "Rules"
+    ]
+   },
+   "write_pc3": {
+    "pos": [
+     "Creature",
+     "squid",
+     "imdb",
+     "Terminator",
+     "terminator",
+     "Crusher",
+     "Dirk",
+     "Stephan",
+     "Martian",
+     "Animated"
+    ],
+    "neg": [
+     "stadiums",
+     "cities",
+     "borough",
+     "establishments",
+     "roads",
+     "city",
+     "downtown",
+     "Nationals",
+     "nightlife",
+     "tourists"
+    ]
+   }
+  }
+ },
+ "state_learned_l0": {
+  "chan": "state",
+  "reader": "learned",
+  "lam": 0.0,
+  "nll_own_1to7": 1.6873702662331718,
+  "bnd_own": 3.3020710945129395,
+  "necessity_foreign": [
+   0.3022153973579407,
+   0.0038026906549930573
+  ],
+  "necessity_stale": [
+   0.15596401691436768,
+   0.002230278216302395
+  ],
+  "gap_closed": 0.22328183582379213,
+  "S_cos": 0.5039147351469312,
+  "observer_cos": 0.27352177245276316,
+  "base_persistence": 0.36100049529756817,
+  "base_segment_mean": 0.29350962383406504,
+  "base_linear": 0.4930338583714783,
+  "pr": 16.229675982674816,
+  "twonn": 8.97906732552034,
+  "R2_S": -0.08050727844238281,
+  "R2_persist": -0.35875463485717773,
+  "R2_segmean": 0.0046651363372802734,
+  "R2_linear": 0.1827455759048462,
+  "collapse": 0.2875850796699524,
+  "swap_pull_state": [
+   -0.002970463829115033,
+   0.0006134704453870654
+  ],
+  "swap_pull_forecast": [
+   -0.005103239323943853,
+   0.0009083799086511135
+  ],
+  "swap_stay": 0.9962474703788757,
+  "swap_dnll": 0.0673411414027214,
+  "identity_own": [
+   0.9914762377738953,
+   0.9993458390235901,
+   0.9999228119850159,
+   0.9999909996986389,
+   0.9999944567680359
+  ],
+  "identity_donor": [
+   0.13251715898513794,
+   0.08855873346328735,
+   0.08635136485099792,
+   0.07123374938964844,
+   0.04794739559292793
+  ],
+  "track_fresh": 0.496883787214756,
+  "track_stale": 0.49862005561590195,
+  "probe_segment_index": 0.2571875,
+  "probe_category": 0.4296875,
+  "probe_category_bow": 0.4759375,
+  "probe_next": {
+   "hedge": {
+    "z": 0.10994012878769151,
+    "bow_k": 0.09681865748940306,
+    "both": 0.13495336137604103
+   },
+   "reconsider": {
+    "z": 0.06698198560594523,
+    "bow_k": 0.051131622285582636,
+    "both": 0.06650072095551936
+   },
+   "self_ref": {
+    "z": 0.061083215755746954,
+    "bow_k": 0.06504146474672923,
+    "both": 0.0814443334532792
+   },
+   "other_ref": {
+    "z": 0.025105768542142703,
+    "bow_k": 0.10981859130045706,
+    "both": 0.11883579075876934
+   },
+   "answer_phase": {
+    "z": 0.08127172029238627,
+    "bow_k": 0.11659402940109129,
+    "both": 0.12688948764587776
+   },
+   "own_surprise_next": {
+    "z": 0.18173282146453856,
+    "bow_k": 0.18307415329530524,
+    "both": 0.2392832526330924
+   }
+  },
+  "clock": {
+   "turn_deg": 11.546772003173828,
+   "coherence": 0.40534892678260803,
+   "null_q99": 0.14481977239251143,
+   "same_dir": 0.5578571428571428,
+   "plane_share": 0.0880446657538414
+  },
+  "retrieval": {
+   "S": 0.11142857053450175,
+   "persistence": 0.08071428590587207,
+   "chance": 0.0025
+  },
+  "index_code": {
+   "turn_angles": [
+    64.18699946245631,
+    77.72315404091545,
+    89.8189175876984,
+    85.87226168227895,
+    90.23742325377152,
+    61.020573346769986
+   ],
+   "var_top2": 0.9260344505310059,
+   "spread_vs_within": 0.6722343564033508
+  },
+  "free": {
+   "own": {
+    "topic_own": [
+     0.6815364956855774,
+     0.21655863523483276,
+     0.12889447808265686,
+     0.05412089079618454,
+     0.036084793508052826,
+     0.0154423788189888,
+     0.027873018756508827,
+     0.016174711287021637
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     -0.007216953672468662,
+     -0.013329454697668552,
+     -0.0019149878062307835,
+     0.009577593766152859,
+     -0.010695717297494411,
+     -0.002659763675183058,
+     -0.003117544809356332
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0,
+     1.0
+    ],
+    "z_vs_donor_run": [
+     0.12858809530735016,
+     0.13665089011192322,
+     0.1399470716714859,
+     0.1176469475030899,
+     0.07925675809383392,
+     0.14661908149719238,
+     0.0797925665974617,
+     0.08563543856143951
+    ]
+   },
+   "corrupt": {
+    "topic_own": [
+     0.6815364956855774,
+     0.21655863523483276,
+     0.12889447808265686,
+     0.006725381128489971,
+     0.006061105523258448,
+     -0.0037931676488369703,
+     0.010695098899304867,
+     0.0020084702409803867
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     -0.007216953672468662,
+     -0.013329454697668552,
+     0.07334964722394943,
+     0.04991840943694115,
+     0.051274076104164124,
+     0.03374182805418968,
+     0.027115516364574432
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     0.10868192464113235,
+     0.09741239994764328,
+     0.10226084291934967,
+     0.09543824940919876,
+     0.09542354941368103
+    ],
+    "z_vs_donor_run": [
+     0.12858809530735016,
+     0.13665089011192322,
+     0.1399470716714859,
+     0.2679551839828491,
+     0.13326683640480042,
+     0.13425685465335846,
+     0.14160780608654022,
+     0.1630348265171051
+    ]
+   },
+   "chanswap": {
+    "topic_own": [
+     0.6815364956855774,
+     0.21655863523483276,
+     0.12889447808265686,
+     0.07599975168704987,
+     0.05973634123802185,
+     0.04580654203891754,
+     0.04417567700147629,
+     0.03716301918029785
+    ],
+    "topic_donor": [
+     -0.008841468952596188,
+     -0.007216953672468662,
+     -0.013329454697668552,
+     0.014878476038575172,
+     0.00901532731950283,
+     0.009250002913177013,
+     0.010971657000482082,
+     0.016705602407455444
+    ],
+    "z_vs_own_run": [
+     1.0,
+     1.0,
+     1.0,
+     0.20911768078804016,
+     0.17880551517009735,
+     0.09764904528856277,
+     0.09903982281684875,
+     0.12592200934886932
+    ],
+    "z_vs_donor_run": [
+     0.12858809530735016,
+     0.13665089011192322,
+     0.1399470716714859,
+     0.1025489792227745,
+     0.06334119290113449,
+     0.11236980557441711,
+     0.10773357003927231,
+     0.06580895185470581
+    ]
+   },
+   "S_cos_free": [
+    0.4684116542339325,
+    0.4921368956565857,
+    0.4455043375492096,
+    0.42580321431159973,
+    0.4733152985572815,
+    0.44985395669937134,
+    0.45209091901779175
+   ]
+  },
+  "words": {
+   "reader_axes": {
+    "0": {
+     "pos": [
+      "Maybe",
+      "Hmm",
+      "maybe",
+      "remember",
+      "hmm",
+      "wait",
+      "Wait",
+      "remembers",
+      "let",
+      "remembering"
+     ],
+     "neg": [
+      "accordingly",
+      "Accordingly",
+      "ours",
+      "consequently",
+      "fortunate",
+      "conducive",
+      "Weinstein",
+      "Courage",
+      "yours",
+      "particularly"
+     ]
+    },
+    "1": {
+     "pos": [
+      "recall",
+      "recalled",
+      "recalls",
+      "subconscious",
+      "wary",
+      "Recall",
+      "assure",
+      "Billion",
+      "memories",
+      "caution"
+     ],
+     "neg": [
+      "maybe",
+      "Maybe",
+      "Hmm",
+      "yeah",
+      "hmm",
+      "huh",
+      "wait",
+      "perhaps",
+      "Wait",
+      "yes"
+     ]
+    },
+    "2": {
+     "pos": [
+      "too",
+      "everyone",
+      "though",
+      "versus",
+      "aspects",
+      "basics",
+      "mentioned",
+      "towards",
+      "suited",
+      "despite"
+     ],
+     "neg": [
+      "Shaman",
+      "Sleeping",
+      "decidedly",
+      "impeachment",
+      "Emmy",
+      "presume",
+      "Commissioners",
+      "Thrones",
+      "Playoff",
+      "Dungeons"
+     ]
+    },
+    "3": {
+     "pos": [
+      "avoidance",
+      "avoid",
+      "optimism",
+      "avoiding",
+      "couch",
+      "moderation",
+      "leash",
+      "ideally",
+      "rhetorical",
+      "beginners"
+     ],
+     "neg": [
+      "remember",
+      "remembers",
+      "recall",
+      "recalling",
+      "Remember",
+      "remembered",
+      "definitely",
+      "Recall",
+      "heard",
+      "remembering"
+     ]
+    },
+    "4": {
+     "pos": [
+      "percussion",
+      "instrument",
+      "instruments",
+      "musical",
+      "flute",
+      "Instruments",
+      "guitar",
+      "violin",
+      "rhythm",
+      "classification"
+     ],
+     "neg": [
+      "marriages",
+      "Dumbledore",
+      "Deadpool",
+      "Voldemort",
+      "Netflix",
+      "became",
+      "alliances",
+      "Republicans",
+      "elves",
+      "vampires"
+     ]
+    },
+    "5": {
+     "pos": [
+      "instrument",
+      "instruments",
+      "percussion",
+      "guitar",
+      "orchestra",
+      "musical",
+      "Guitar",
+      "Instruments",
+      "musician",
+      "accordion"
+     ],
+     "neg": [
+      "parks",
+      "beaches",
+      "beach",
+      "vacations",
+      "comfy",
+      "pricey",
+      "famously",
+      "downright",
+      "recalls",
+      "kinda"
+     ]
+    },
+    "6": {
+     "pos": [
+      "mention",
+      "mentioned",
+      "referenced",
+      "mentioning",
+      "Mention",
+      "names",
+      "list",
+      "listed",
+      "referencing",
+      "mentions"
+     ],
+     "neg": [
+      "instruments",
+      "sits",
+      "airplanes",
+      "happens",
+      "contends",
+      "understands",
+      "might",
+      "cannot",
+      "did",
+      "believe"
+     ]
+    },
+    "7": {
+     "pos": [
+      "spark",
+      "Spark",
+      "scala",
+      "Seems",
+      "sparks",
+      "kinda",
+      "broker",
+      "Apparently",
+      "alot",
+      "electromagnetic"
+     ],
+     "neg": [
+      "names",
+      "list",
+      "Memorial",
+      "Disney",
+      "trivia",
+      "popular",
+      "championship",
+      "sports",
+      "Championship",
+      "Disneyland"
+     ]
+    }
+   },
+   "write_mean": [
+    "Parliament",
+    "campaigned",
+    "Isles",
+    "Mayweather",
+    "exemption",
+    "Wimbledon",
+    "athletics",
+    "exemptions",
+    "Gibraltar",
+    "defamation"
+   ],
+   "write_pc0": {
+    "pos": [
+     "maybe",
+     "mentioning",
+     "mentions",
+     "vibes",
+     "Zodiac",
+     "Dolphin",
+     "reckon",
+     "gotta",
+     "yay",
+     "probably"
+    ],
+    "neg": [
+     "parachute",
+     "hallmark",
+     "cider",
+     "Newman",
+     "fidelity",
+     "cameo",
+     "Alternate",
+     "heroic",
+     "Downing",
+     "absorbs"
+    ]
+   },
+   "write_pc1": {
+    "pos": [
+     "maybe",
+     "reimbursement",
+     "incentives",
+     "expo",
+     "tendency",
+     "stimulating",
+     "growers",
+     "requests",
+     "Ammo",
+     "recharge"
+    ],
+    "neg": [
+     "Lionel",
+     "Henrik",
+     "Sebastian",
+     "Barack",
+     "Held",
+     "Pablo",
+     "Seconds",
+     "Welsh",
+     "Andreas",
+     "Jed"
+    ]
+   },
+   "write_pc2": {
+    "pos": [
+     "tourists",
+     "tourism",
+     "comforts",
+     "guests",
+     "enjoyable",
+     "friendships",
+     "recommendations",
+     "travellers",
+     "traveller",
+     "cheerful"
+    ],
+    "neg": [
+     "Olson",
+     "Fisheries",
+     "Sterling",
+     "Webster",
+     "Fred",
+     "Sanford",
+     "Exxon",
+     "Goose",
+     "Werner",
+     "Hogan"
+    ]
+   },
+   "write_pc3": {
+    "pos": [
+     "Differences",
+     "Alejandro",
+     "Historical",
+     "Davies",
+     "differ",
+     "Historic",
+     "Muse",
+     "Jenner",
+     "Wikipedia",
+     "notably"
+    ],
+    "neg": [
+     "shortcuts",
+     "injections",
+     "optimization",
+     "compression",
+     "injection",
+     "compress",
+     "optimize",
+     "intuitive",
+     "transform",
+     "delivery"
+    ]
+   }
+  }
+ }
+}

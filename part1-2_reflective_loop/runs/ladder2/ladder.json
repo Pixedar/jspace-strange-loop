@@ -1,0 +1,1971 @@
+{
+ "qwen3-1.7b": {
+  "size": 1.7,
+  "layers": 28,
+  "L": 14,
+  "L_in": 13,
+  "g": 0.05,
+  "g_r": 0.5,
+  "fsweep": {
+   "fid_13_0.5": 0.6375,
+   "fid_13_1.0": 0.5,
+   "fid_12_0.5": 0.175,
+   "fid_12_1.0": 0.225,
+   "fid_11_0.5": 0.225,
+   "fid_11_1.0": 0.3,
+   "fid_10_0.5": 0.1125,
+   "fid_10_1.0": 0.1
+  },
+  "chance_f": 0.0625,
+  "gains": {
+   "0.03": 0.065,
+   "0.05": 0.107,
+   "0.08": 0.335,
+   "0.12": 0.696,
+   "0.2": 0.773
+  },
+  "validation": {
+   "layer": 14,
+   "agree_J": 0.009765625,
+   "agree_logit": 0.0595703125,
+   "occupancy": 1,
+   "excess_ve": -0.15638001635670662,
+   "boot": [
+    "鞋",
+    "图标",
+    "德国",
+    "啥",
+    "啤酒",
+    "european"
+   ],
+   "band": [
+    [
+     1,
+     1,
+     -0.15
+    ],
+    [
+     3,
+     1,
+     -0.148
+    ],
+    [
+     4,
+     1,
+     -0.151
+    ],
+    [
+     6,
+     1,
+     -0.155
+    ],
+    [
+     7,
+     1,
+     -0.157
+    ],
+    [
+     8,
+     1,
+     -0.157
+    ],
+    [
+     10,
+     1,
+     -0.15
+    ],
+    [
+     11,
+     1,
+     -0.152
+    ],
+    [
+     13,
+     1,
+     -0.156
+    ],
+    [
+     14,
+     1,
+     -0.156
+    ],
+    [
+     15,
+     1,
+     -0.153
+    ],
+    [
+     17,
+     1,
+     -0.151
+    ],
+    [
+     18,
+     1,
+     -0.143
+    ],
+    [
+     20,
+     1,
+     -0.131
+    ],
+    [
+     21,
+     1,
+     -0.125
+    ],
+    [
+     22,
+     1,
+     -0.121
+    ],
+    [
+     24,
+     2,
+     -0.114
+    ],
+    [
+     25,
+     2,
+     -0.116
+    ]
+   ]
+  },
+  "fidelity": {
+   "own": 0.33561021089553833,
+   "other": 0.10255106538534164,
+   "retrieval": 0.6263888888888889,
+   "chance": 0.08333333333333333
+  },
+  "lag1_free": 0.08935003479321797,
+  "lag20_free": 0.03197409437658886,
+  "coherence_loop_vs_free": {
+   "diff": 0.04815530141450739,
+   "se": 0.018820785479811093,
+   "t": 2.5586233617169274,
+   "pos": 9,
+   "n": 12
+  },
+  "coherence_loop_vs_yoked": {
+   "diff": 0.02462469067293982,
+   "se": 0.023198915011985666,
+   "t": 1.061458721678041,
+   "pos": 6,
+   "n": 12
+  },
+  "self_vs_content_free": {
+   "diff": 0.22635224430511394,
+   "se": 0.021258412350291644,
+   "t": 10.647655176469875,
+   "pos": 12,
+   "n": 12
+  },
+  "ind_stab": {
+   "free": 0.037865246738268375,
+   "loop": 0.3459746514757474,
+   "yoked": 0.21371654917796454
+  },
+  "ind_cross": {
+   "free": -0.08250360190868378,
+   "loop": 0.05262932553887367,
+   "yoked": 0.07194734364748001
+  },
+  "own_symbol_loop": {
+   "diff": 0.0989413782954216,
+   "se": 0.011611643371642128,
+   "t": 8.520876427970181,
+   "pos": 12,
+   "n": 12
+  },
+  "loop_vs_yoked_cons_ind": {
+   "diff": 0.1322581022977829,
+   "se": 0.06165275679909062,
+   "t": 2.145209868372564,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_recon_ind": {
+   "diff": 0.06314388662576675,
+   "se": 0.040442664315913965,
+   "t": 1.5613186641840504,
+   "pos": 6,
+   "n": 12
+  },
+  "loop_vs_yoked_cons": {
+   "diff": 0.0664130374789238,
+   "se": 0.03432203570011559,
+   "t": 1.9349970397793197,
+   "pos": 7,
+   "n": 12
+  },
+  "observer_own_vs_other": {
+   "diff": 0.006210321560502052,
+   "se": 0.0071135420416365775,
+   "t": 0.8730280251599208,
+   "pos": 7,
+   "n": 12
+  },
+  "observer_beyond_past": {
+   "diff": -0.04100554750766605,
+   "se": 0.005222088439414987,
+   "t": -7.852327279286707,
+   "pos": 0,
+   "n": 12
+  },
+  "yoked_own_vs_injected": {
+   "diff": -0.05060308985412121,
+   "se": 0.00956469132497644,
+   "t": -5.290614002563837,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_vs_back_free": {
+   "diff": -0.006565031285087268,
+   "se": 0.0042010727174148724,
+   "t": -1.5627035585156583,
+   "pos": 2,
+   "n": 12
+  },
+  "fwd_lean_free": {
+   "diff": 0.054642291739583015,
+   "se": 0.005196434542804561,
+   "t": 10.51534302789314,
+   "pos": 12,
+   "n": 12
+  },
+  "fwd_beyond_past_vs_other": {
+   "diff": -0.02594915172085166,
+   "se": 0.006318826265650821,
+   "t": -4.106641111801318,
+   "pos": 1,
+   "n": 12
+  },
+  "fwd_back_sim": [
+   0.7548705339431763,
+   0.7505845427513123,
+   0.7512490153312683,
+   0.7514936327934265,
+   0.7628617882728577,
+   0.7579652070999146,
+   0.7651404142379761,
+   0.7620973587036133,
+   0.7492398619651794,
+   0.7851265072822571,
+   0.7547054886817932,
+   0.7593181729316711
+  ],
+  "clamp": {
+   "during_traj_to_foreign": {
+    "diff": 0.1460619822086301,
+    "se": 0.027563445367724676,
+    "t": 5.299119187025178,
+    "pos": 12,
+    "n": 12
+   },
+   "during_self_to_foreign": {
+    "diff": 0.37200588065509993,
+    "se": 0.09310782704537565,
+    "t": 3.9954308081296395,
+    "pos": 12,
+    "n": 12
+   },
+   "during_self_to_old": {
+    "diff": -0.2601616658891241,
+    "se": 0.06332175470983567,
+    "t": -4.108566906922963,
+    "pos": 2,
+    "n": 12
+   },
+   "after_self_to_foreign": {
+    "diff": 0.21041617852946123,
+    "se": 0.07269432306041333,
+    "t": 2.8945338462618713,
+    "pos": 9,
+    "n": 12
+   },
+   "after_self_to_old": {
+    "diff": -0.15518767138322195,
+    "se": 0.055113520615347265,
+    "t": -2.8157822191458295,
+    "pos": 2,
+    "n": 12
+   },
+   "late_self_to_foreign": {
+    "diff": 0.024077527069797117,
+    "se": 0.07135229038060557,
+    "t": 0.3374457489922662,
+    "pos": 7,
+    "n": 12
+   },
+   "after_traj_to_foreign": {
+    "diff": 0.07016550188185647,
+    "se": 0.022521994445330058,
+    "t": 3.115421329677368,
+    "pos": 10,
+    "n": 12
+   }
+  },
+  "lexicon": {
+   "free": {
+    "ident_self": 0.0014575258828699589,
+    "ident_thought": 0.00089261558605358,
+    "exper_self": 0.0,
+    "exper_thought": 0.0011594108073040843
+   },
+   "loop": {
+    "ident_self": 0.0023316608276218176,
+    "ident_thought": 0.0012778121745213866,
+    "exper_self": 0.0,
+    "exper_thought": 0.0010931683937087655
+   },
+   "yoked": {
+    "ident_self": 0.0028403298929333687,
+    "ident_thought": 0.0009827911853790283,
+    "exper_self": 0.0,
+    "exper_thought": 0.0012864394811913371
+   },
+   "clamp": {
+    "ident_self": 0.0023316608276218176,
+    "ident_thought": 0.0012778121745213866,
+    "exper_self": 0.0,
+    "exper_thought": 0.0010931683937087655
+   }
+  },
+  "theme_shift": [
+   {
+    "words": [
+     "unsustainable",
+     "Helpers",
+     "ppl",
+     "Mime",
+     "understandably"
+    ],
+    "loop_minus_free": -0.029
+   },
+   {
+    "words": [
+     "Mime",
+     "Unsure",
+     "Helpful",
+     "Cristina",
+     "anybody"
+    ],
+    "loop_minus_free": -0.023
+   },
+   {
+    "words": [
+     "Nowadays",
+     "cst",
+     "Helpful",
+     "Personally",
+     "yup"
+    ],
+    "loop_minus_free": -0.019
+   },
+   {
+    "words": [
+     "Planned",
+     "facto",
+     "badass",
+     "reelection",
+     "withstand"
+    ],
+    "loop_minus_free": -0.016
+   },
+   {
+    "words": [
+     "cst",
+     "Xxx",
+     "Cristina",
+     "slut",
+     "understandably"
+    ],
+    "loop_minus_free": -0.015
+   },
+   {
+    "words": [
+     "yup",
+     "Nowadays",
+     "pueblo",
+     "specialised",
+     "campground"
+    ],
+    "loop_minus_free": -0.013
+   },
+   {
+    "words": [
+     "airflow",
+     "amd",
+     "Invoke",
+     "fenced",
+     "Visibility"
+    ],
+    "loop_minus_free": -0.008
+   },
+   {
+    "words": [
+     "veterinarian",
+     "hospitalized",
+     "uninsured",
+     "illnesses",
+     "Afterwards"
+    ],
+    "loop_minus_free": -0.003
+   },
+   {
+    "words": [
+     "Helpful",
+     "Advisors",
+     "Workflow",
+     "Mime",
+     "specialised"
+    ],
+    "loop_minus_free": 0.006
+   },
+   {
+    "words": [
+     "fenced",
+     "cgi",
+     "pueblo",
+     "positioned",
+     "mann"
+    ],
+    "loop_minus_free": 0.007
+   },
+   {
+    "words": [
+     "Convenient",
+     "campground",
+     "Grocery",
+     "Scheduled",
+     "Andres"
+    ],
+    "loop_minus_free": 0.009
+   },
+   {
+    "words": [
+     "boca",
+     "unidentified",
+     "Detector",
+     "ordinarily",
+     "Searches"
+    ],
+    "loop_minus_free": 0.01
+   },
+   {
+    "words": [
+     "whence",
+     "genomes",
+     "pueblo",
+     "expressly",
+     "materially"
+    ],
+    "loop_minus_free": 0.041
+   },
+   {
+    "words": [
+     "materially",
+     "Accordingly",
+     "facto",
+     "yourselves",
+     "methodologies"
+    ],
+    "loop_minus_free": 0.053
+   }
+  ],
+  "answers": [
+   "thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking",
+   "thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking",
+   "thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking",
+   "thinking about the problem of the two trains. I was trying to figure out how to solve the problem. I was thinking"
+  ],
+  "texts": [
+   "I'm not sure how I got here. Maybe I'm not supposed to be here. It feels like I've been... well, I don't know, I just... I feel like I'm",
+   "I'm not going to be able to sleep at all. I can't get the pictures of the kids from the night before out of my head. I can't even get them out of my mind",
+   "I'm not sure how I got here. Maybe I'm not even here. Maybe this is all a dream. I'm trying to recall. The memory is not clear. I feel like I'm",
+   "I'm not sure how I got here. Maybe I'm not supposed to be here. It feels like I've been... well, I don't know. I just... I feel stuck, like"
+  ]
+ },
+ "qwen3-4b": {
+  "size": 4,
+  "layers": 36,
+  "L": 18,
+  "L_in": 17,
+  "g": 0.12,
+  "g_r": 0.5,
+  "fsweep": {
+   "fid_17_0.5": 0.625,
+   "fid_17_1.0": 0.4125,
+   "fid_16_0.5": 0.5375,
+   "fid_16_1.0": 0.0875,
+   "fid_15_0.5": 0.6,
+   "fid_15_1.0": 0.5375,
+   "fid_14_0.5": 0.5,
+   "fid_14_1.0": 0.5125,
+   "fid_13_0.5": 0.55,
+   "fid_13_1.0": 0.45
+  },
+  "chance_f": 0.0625,
+  "gains": {
+   "0.03": 0.087,
+   "0.05": 0.097,
+   "0.08": 0.137,
+   "0.12": 0.208,
+   "0.2": 0.637
+  },
+  "validation": {
+   "layer": 18,
+   "agree_J": 0.00537109375,
+   "agree_logit": 0.02880859375,
+   "occupancy": 5,
+   "excess_ve": 0.009130308404564857,
+   "boot": [
+    ":`",
+    "(`",
+    "`{",
+    "??",
+    "`/",
+    ".`"
+   ],
+   "band": [
+    [
+     2,
+     7,
+     0.013
+    ],
+    [
+     4,
+     7,
+     0.018
+    ],
+    [
+     5,
+     7,
+     0.017
+    ],
+    [
+     7,
+     6,
+     0.013
+    ],
+    [
+     9,
+     6,
+     0.013
+    ],
+    [
+     11,
+     6,
+     0.014
+    ],
+    [
+     13,
+     5,
+     0.013
+    ],
+    [
+     14,
+     5,
+     0.011
+    ],
+    [
+     16,
+     5,
+     0.009
+    ],
+    [
+     18,
+     5,
+     0.009
+    ],
+    [
+     20,
+     5,
+     0.01
+    ],
+    [
+     22,
+     7,
+     0.018
+    ],
+    [
+     23,
+     7,
+     0.023
+    ],
+    [
+     25,
+     8,
+     0.028
+    ],
+    [
+     27,
+     8,
+     0.031
+    ],
+    [
+     29,
+     9,
+     0.039
+    ],
+    [
+     31,
+     9,
+     0.046
+    ],
+    [
+     32,
+     9,
+     0.045
+    ],
+    [
+     34,
+     7,
+     0.029
+    ]
+   ]
+  },
+  "fidelity": {
+   "own": 0.4230644106864929,
+   "other": 0.15474875271320343,
+   "retrieval": 0.6256944444444444,
+   "chance": 0.08333333333333333
+  },
+  "lag1_free": 0.16178383429845175,
+  "lag20_free": 0.07191766720886032,
+  "coherence_loop_vs_free": {
+   "diff": 0.11119969011263943,
+   "se": 0.03370774770582066,
+   "t": 3.2989356358994417,
+   "pos": 9,
+   "n": 12
+  },
+  "coherence_loop_vs_yoked": {
+   "diff": 0.005104484694743217,
+   "se": 0.03665287985007948,
+   "t": 0.13926558337631276,
+   "pos": 6,
+   "n": 12
+  },
+  "self_vs_content_free": {
+   "diff": 0.16742237408955893,
+   "se": 0.018805643350837335,
+   "t": 8.902773011597304,
+   "pos": 12,
+   "n": 12
+  },
+  "ind_stab": {
+   "free": 0.10335187970971067,
+   "loop": 0.4765043606360753,
+   "yoked": 0.42346566791335744
+  },
+  "ind_cross": {
+   "free": -0.0869276225566864,
+   "loop": 0.11625770479440689,
+   "yoked": 0.12687043845653534
+  },
+  "own_symbol_loop": {
+   "diff": 0.15734248608350754,
+   "se": 0.02855261762978955,
+   "t": 5.51061510799447,
+   "pos": 12,
+   "n": 12
+  },
+  "loop_vs_yoked_cons_ind": {
+   "diff": 0.05303869272271792,
+   "se": 0.04690616436439113,
+   "t": 1.1307403502594278,
+   "pos": 8,
+   "n": 12
+  },
+  "loop_vs_yoked_recon_ind": {
+   "diff": 0.025603202482064564,
+   "se": 0.03880274652497168,
+   "t": 0.6598296454501618,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_cons": {
+   "diff": 0.035620033740997314,
+   "se": 0.024645277441006665,
+   "t": 1.445308693572669,
+   "pos": 7,
+   "n": 12
+  },
+  "observer_own_vs_other": {
+   "diff": 0.022782412668069203,
+   "se": 0.004140621293944844,
+   "t": 5.502172512464667,
+   "pos": 12,
+   "n": 12
+  },
+  "observer_beyond_past": {
+   "diff": -0.0579365057249864,
+   "se": 0.003984918268965581,
+   "t": -14.53894454403095,
+   "pos": 0,
+   "n": 12
+  },
+  "yoked_own_vs_injected": {
+   "diff": -0.022521791358788807,
+   "se": 0.012777876888451863,
+   "t": -1.7625613046204183,
+   "pos": 4,
+   "n": 12
+  },
+  "fwd_vs_back_free": {
+   "diff": -0.0005616794029871622,
+   "se": 0.002494802027864063,
+   "t": -0.2251398695022093,
+   "pos": 6,
+   "n": 12
+  },
+  "fwd_lean_free": {
+   "diff": -0.015410461773475012,
+   "se": 0.003596986322654315,
+   "t": -4.284270328307284,
+   "pos": 1,
+   "n": 12
+  },
+  "fwd_beyond_past_vs_other": {
+   "diff": -0.0604874457543095,
+   "se": 0.0045383486477430825,
+   "t": -13.328073810369299,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_back_sim": [
+   0.7797580361366272,
+   0.7759113907814026,
+   0.7742158770561218,
+   0.7695760130882263,
+   0.7772744297981262,
+   0.7729653120040894,
+   0.7722081542015076,
+   0.7697697281837463,
+   0.7722259759902954,
+   0.7709880471229553,
+   0.7917208075523376,
+   0.7716546654701233
+  ],
+  "clamp": {
+   "during_traj_to_foreign": {
+    "diff": 0.15590788569805833,
+    "se": 0.04267490897036513,
+    "t": 3.653385313752536,
+    "pos": 10,
+    "n": 12
+   },
+   "during_self_to_foreign": {
+    "diff": 0.28182023980965215,
+    "se": 0.08681155132609752,
+    "t": 3.2463449334182166,
+    "pos": 11,
+    "n": 12
+   },
+   "during_self_to_old": {
+    "diff": -0.30139943057050306,
+    "se": 0.06281711892703329,
+    "t": -4.798046069584959,
+    "pos": 1,
+    "n": 12
+   },
+   "after_self_to_foreign": {
+    "diff": 0.16998789738863707,
+    "se": 0.0771973806993204,
+    "t": 2.2019904801010113,
+    "pos": 8,
+    "n": 12
+   },
+   "after_self_to_old": {
+    "diff": -0.044741119199898094,
+    "se": 0.09532586284445041,
+    "t": -0.4693492181959598,
+    "pos": 6,
+    "n": 12
+   },
+   "late_self_to_foreign": {
+    "diff": 0.09034535692383845,
+    "se": 0.09607025787422953,
+    "t": 0.9404092267777002,
+    "pos": 7,
+    "n": 12
+   },
+   "after_traj_to_foreign": {
+    "diff": 0.06689886399001503,
+    "se": 0.02826136705035078,
+    "t": 2.3671489022745162,
+    "pos": 10,
+    "n": 12
+   }
+  },
+  "lexicon": {
+   "free": {
+    "ident_self": 0.0,
+    "ident_thought": 9.002379374578595e-05,
+    "exper_self": 0.000164568773470819,
+    "exper_thought": 0.0021473881788551807
+   },
+   "loop": {
+    "ident_self": 0.0,
+    "ident_thought": 0.00020479426893871278,
+    "exper_self": 0.0005152806988917291,
+    "exper_thought": 0.0029534290079027414
+   },
+   "yoked": {
+    "ident_self": 0.0,
+    "ident_thought": 4.009572876384482e-05,
+    "exper_self": 0.0007894973387010396,
+    "exper_thought": 0.0031428872607648373
+   },
+   "clamp": {
+    "ident_self": 0.0,
+    "ident_thought": 0.00020479426893871278,
+    "exper_self": 0.0005152806988917291,
+    "exper_thought": 0.0029534290079027414
+   }
+  },
+  "theme_shift": [
+   {
+    "words": [
+     "kickoff",
+     "Jazeera",
+     "reimburse",
+     "blah",
+     "urgently"
+    ],
+    "loop_minus_free": -0.092
+   },
+   {
+    "words": [
+     "blah",
+     "Planner",
+     "Jazeera",
+     "financially",
+     "deadlines"
+    ],
+    "loop_minus_free": -0.079
+   },
+   {
+    "words": [
+     "downright",
+     "purposely",
+     "Unsure",
+     "Rubio",
+     "Kelley"
+    ],
+    "loop_minus_free": -0.066
+   },
+   {
+    "words": [
+     "debilitating",
+     "dai",
+     "Cannot",
+     "Kelley",
+     "Jazeera"
+    ],
+    "loop_minus_free": -0.032
+   },
+   {
+    "words": [
+     "Olsen",
+     "deported",
+     "didnt",
+     "hugely",
+     "studs"
+    ],
+    "loop_minus_free": -0.028
+   },
+   {
+    "words": [
+     "pleasantly",
+     "sightings",
+     "yup",
+     "unidentified",
+     "Pry"
+    ],
+    "loop_minus_free": -0.022
+   },
+   {
+    "words": [
+     "blah",
+     "Kelley",
+     "morally",
+     "Liga",
+     "Emanuel"
+    ],
+    "loop_minus_free": -0.009
+   },
+   {
+    "words": [
+     "dai",
+     "Jazeera",
+     "outpatient",
+     "Nursing",
+     "aggravated"
+    ],
+    "loop_minus_free": -0.003
+   },
+   {
+    "words": [
+     "optimum",
+     "blah",
+     "methodology",
+     "yourselves",
+     "Liga"
+    ],
+    "loop_minus_free": -0.002
+   },
+   {
+    "words": [
+     "Spicer",
+     "purposely",
+     "Olivier",
+     "Stephan",
+     "Seq"
+    ],
+    "loop_minus_free": 0.005
+   },
+   {
+    "words": [
+     "amd",
+     "Olsen",
+     "Flickr",
+     "Olivier",
+     "chimney"
+    ],
+    "loop_minus_free": 0.006
+   },
+   {
+    "words": [
+     "amd",
+     "hugely",
+     "effected",
+     "forests",
+     "Flickr"
+    ],
+    "loop_minus_free": 0.071
+   },
+   {
+    "words": [
+     "Observable",
+     "realms",
+     "Physiology",
+     "ordinarily",
+     "optimum"
+    ],
+    "loop_minus_free": 0.119
+   },
+   {
+    "words": [
+     "kingdoms",
+     "realms",
+     "Emanuel",
+     "Mono",
+     "sovereignty"
+    ],
+    "loop_minus_free": 0.132
+   }
+  ],
+  "answers": [
+   "going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of",
+   "going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of",
+   "going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of",
+   "going back and forth between the idea of the person I'm talking to and the idea of the person I'm thinking of"
+  ],
+  "texts": [
+   "I'm not sure how I feel about this. I'm not a person who likes to make big plans. I don't like to plan. I don't know if I like this idea of a",
+   "I'm not sure how I got here. The last thing I remember is standing on the street in the dark. I'm standing in a dark room now, with a strange smell. There's a",
+   "I'm not sure how I feel about this. I'm not a fan of going to the store. I should have made it to the store earlier, but I was stuck at the hospital for a",
+   "I'm not sure that I would be in a position to help them, I think that if I had more information, I would be more able to help, but I don't think that I have"
+  ]
+ },
+ "qwen3-8b": {
+  "size": 8,
+  "layers": 36,
+  "L": 18,
+  "L_in": 15,
+  "g": 0.12,
+  "g_r": 1.0,
+  "fsweep": {
+   "fid_17_0.5": 0.35,
+   "fid_17_1.0": 0.175,
+   "fid_16_0.5": 0.525,
+   "fid_16_1.0": 0.375,
+   "fid_15_0.5": 0.65,
+   "fid_15_1.0": 0.7125,
+   "fid_14_0.5": 0.55,
+   "fid_14_1.0": 0.625,
+   "fid_13_0.5": 0.4125,
+   "fid_13_1.0": 0.5
+  },
+  "chance_f": 0.0625,
+  "gains": {
+   "0.03": 0.062,
+   "0.05": 0.085,
+   "0.08": 0.118,
+   "0.12": 0.249,
+   "0.2": 0.684
+  },
+  "validation": {
+   "layer": 18,
+   "agree_J": 0.00634765625,
+   "agree_logit": 0.01171875,
+   "occupancy": 4,
+   "excess_ve": 0.0032665645703673363,
+   "boot": [
+    "地理",
+    "意大利",
+    ",__",
+    "形状",
+    "地图",
+    "Italy"
+   ],
+   "band": [
+    [
+     2,
+     5,
+     0.005
+    ],
+    [
+     4,
+     5,
+     0.005
+    ],
+    [
+     5,
+     5,
+     0.005
+    ],
+    [
+     7,
+     4,
+     0.003
+    ],
+    [
+     9,
+     4,
+     0.003
+    ],
+    [
+     11,
+     4,
+     0.003
+    ],
+    [
+     13,
+     4,
+     0.003
+    ],
+    [
+     14,
+     3,
+     0.003
+    ],
+    [
+     16,
+     3,
+     0.002
+    ],
+    [
+     18,
+     4,
+     0.003
+    ],
+    [
+     20,
+     5,
+     0.006
+    ],
+    [
+     22,
+     7,
+     0.015
+    ],
+    [
+     23,
+     8,
+     0.018
+    ],
+    [
+     25,
+     9,
+     0.022
+    ],
+    [
+     27,
+     9,
+     0.026
+    ],
+    [
+     29,
+     9,
+     0.031
+    ],
+    [
+     31,
+     10,
+     0.037
+    ],
+    [
+     32,
+     11,
+     0.037
+    ],
+    [
+     34,
+     11,
+     0.031
+    ]
+   ]
+  },
+  "fidelity": {
+   "own": 0.4280880391597748,
+   "other": 0.2381080985069275,
+   "retrieval": 0.39444444444444443,
+   "chance": 0.08333333333333333
+  },
+  "lag1_free": 0.12621569881836572,
+  "lag20_free": 0.029592930960158508,
+  "coherence_loop_vs_free": {
+   "diff": 0.12857770709946842,
+   "se": 0.031103417367193704,
+   "t": 4.133877174380382,
+   "pos": 11,
+   "n": 12
+  },
+  "coherence_loop_vs_yoked": {
+   "diff": 0.01476061375929502,
+   "se": 0.039848392637058076,
+   "t": 0.3704193013187687,
+   "pos": 8,
+   "n": 12
+  },
+  "self_vs_content_free": {
+   "diff": 0.2105063870549202,
+   "se": 0.020594183180716714,
+   "t": 10.221642937119597,
+   "pos": 12,
+   "n": 12
+  },
+  "ind_stab": {
+   "free": 0.1606853917861978,
+   "loop": 0.6337002217769623,
+   "yoked": 0.6045858139793078
+  },
+  "ind_cross": {
+   "free": -0.07532650977373123,
+   "loop": 0.22665585577487946,
+   "yoked": 0.20721304416656494
+  },
+  "own_symbol_loop": {
+   "diff": 0.12240047628680865,
+   "se": 0.0422122811644104,
+   "t": 2.8996413581648777,
+   "pos": 10,
+   "n": 12
+  },
+  "loop_vs_yoked_cons_ind": {
+   "diff": 0.02911440779765447,
+   "se": 0.02736419517554516,
+   "t": 1.063959952444479,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_recon_ind": {
+   "diff": 0.03840387364228567,
+   "se": 0.02845047133069384,
+   "t": 1.3498501728107957,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_cons": {
+   "diff": 0.02038462460041046,
+   "se": 0.023499709643182626,
+   "t": 0.8674415518288812,
+   "pos": 7,
+   "n": 12
+  },
+  "observer_own_vs_other": {
+   "diff": 0.02078099052111308,
+   "se": 0.0078069455556307316,
+   "t": 2.6618592858156753,
+   "pos": 9,
+   "n": 12
+  },
+  "observer_beyond_past": {
+   "diff": -0.0407585536983485,
+   "se": 0.005949834725775223,
+   "t": -6.850367376051431,
+   "pos": 1,
+   "n": 12
+  },
+  "yoked_own_vs_injected": {
+   "diff": 0.04433987041314443,
+   "se": 0.01184491487525018,
+   "t": 3.7433675868614396,
+   "pos": 11,
+   "n": 12
+  },
+  "fwd_vs_back_free": {
+   "diff": 0.00362371156613032,
+   "se": 0.002210638866345371,
+   "t": 1.6392146276343371,
+   "pos": 8,
+   "n": 12
+  },
+  "fwd_lean_free": {
+   "diff": 0.008249351133902868,
+   "se": 0.0018983996900632828,
+   "t": 4.345423767756661,
+   "pos": 11,
+   "n": 12
+  },
+  "fwd_beyond_past_vs_other": {
+   "diff": -0.034904350293800235,
+   "se": 0.00576889636911373,
+   "t": -6.050438083907296,
+   "pos": 1,
+   "n": 12
+  },
+  "fwd_back_sim": [
+   0.8603841662406921,
+   0.8758371472358704,
+   0.8641471266746521,
+   0.8607966303825378,
+   0.8718317747116089,
+   0.8875334858894348,
+   0.8791232705116272,
+   0.8781027793884277,
+   0.8784370422363281,
+   0.8567875623703003,
+   0.8660902976989746,
+   0.8751330971717834
+  ],
+  "clamp": {
+   "during_traj_to_foreign": {
+    "diff": 0.08143070003949106,
+    "se": 0.033175201194795154,
+    "t": 2.4545653713252142,
+    "pos": 11,
+    "n": 12
+   },
+   "during_self_to_foreign": {
+    "diff": 0.15577804173032442,
+    "se": 0.0886562276787176,
+    "t": 1.7571020762901213,
+    "pos": 10,
+    "n": 12
+   },
+   "during_self_to_old": {
+    "diff": -0.12011341253916423,
+    "se": 0.10206829593048025,
+    "t": -1.176794531976655,
+    "pos": 8,
+    "n": 12
+   },
+   "after_self_to_foreign": {
+    "diff": 0.1692155400911967,
+    "se": 0.10410415875624907,
+    "t": 1.6254445750567978,
+    "pos": 6,
+    "n": 12
+   },
+   "after_self_to_old": {
+    "diff": -0.10728504012028377,
+    "se": 0.1148389188468594,
+    "t": -0.9342219623588679,
+    "pos": 7,
+    "n": 12
+   },
+   "late_self_to_foreign": {
+    "diff": 0.14292780806620917,
+    "se": 0.09093153203421693,
+    "t": 1.5718178817489448,
+    "pos": 8,
+    "n": 12
+   },
+   "after_traj_to_foreign": {
+    "diff": 0.05495239902908603,
+    "se": 0.02915634708424853,
+    "t": 1.884749103524481,
+    "pos": 7,
+    "n": 12
+   }
+  },
+  "lexicon": {
+   "free": {
+    "ident_self": 0.001666536438278854,
+    "ident_thought": 0.011008433997631073,
+    "exper_self": 0.0,
+    "exper_thought": 0.0012172730639576912
+   },
+   "loop": {
+    "ident_self": 0.002442558528855443,
+    "ident_thought": 0.015455891378223896,
+    "exper_self": 0.0012067467905580997,
+    "exper_thought": 0.0016269339248538017
+   },
+   "yoked": {
+    "ident_self": 0.0017113559879362583,
+    "ident_thought": 0.013344412669539452,
+    "exper_self": 0.0008997877594083548,
+    "exper_thought": 0.0014949777396395802
+   },
+   "clamp": {
+    "ident_self": 0.002442558528855443,
+    "ident_thought": 0.015455891378223896,
+    "exper_self": 0.0012067467905580997,
+    "exper_thought": 0.0016269339248538017
+   }
+  },
+  "theme_shift": [
+   {
+    "words": [
+     "thats",
+     "Jong",
+     "yup",
+     "Camden",
+     "bach"
+    ],
+    "loop_minus_free": -0.106
+   },
+   {
+    "words": [
+     "Phonetic",
+     "unidentified",
+     "particulars",
+     "pls",
+     "recalling"
+    ],
+    "loop_minus_free": -0.076
+   },
+   {
+    "words": [
+     "Dumpster",
+     "urgently",
+     "reimburse",
+     "unsuccessfully",
+     "quo"
+    ],
+    "loop_minus_free": -0.066
+   },
+   {
+    "words": [
+     "blah",
+     "Manafort",
+     "Jong",
+     "Choices",
+     "lvl"
+    ],
+    "loop_minus_free": -0.051
+   },
+   {
+    "words": [
+     "Unsure",
+     "reconsider",
+     "dex",
+     "clit",
+     "anybody"
+    ],
+    "loop_minus_free": -0.051
+   },
+   {
+    "words": [
+     "Paleo",
+     "blah",
+     "staffers",
+     "methodologies",
+     "focuses"
+    ],
+    "loop_minus_free": -0.04
+   },
+   {
+    "words": [
+     "adjoining",
+     "Fireplace",
+     "Claude",
+     "particulars",
+     "Apparently"
+    ],
+    "loop_minus_free": 0.028
+   },
+   {
+    "words": [
+     "Claude",
+     "Mime",
+     "intestine",
+     "Apparently",
+     "Cbd"
+    ],
+    "loop_minus_free": 0.032
+   },
+   {
+    "words": [
+     "Accordingly",
+     "Homo",
+     "chiefly",
+     "effected",
+     "Paleo"
+    ],
+    "loop_minus_free": 0.032
+   },
+   {
+    "words": [
+     "sunlight",
+     "tex",
+     "effected",
+     "picturesque",
+     "foliage"
+    ],
+    "loop_minus_free": 0.034
+   },
+   {
+    "words": [
+     "gardens",
+     "tex",
+     "picturesque",
+     "Sevilla",
+     "whence"
+    ],
+    "loop_minus_free": 0.04
+   },
+   {
+    "words": [
+     "millennia",
+     "Paleo",
+     "effected",
+     "oceans",
+     "whence"
+    ],
+    "loop_minus_free": 0.049
+   },
+   {
+    "words": [
+     "childs",
+     "Sadly",
+     "deported",
+     "whence",
+     "Hardcover"
+    ],
+    "loop_minus_free": 0.072
+   },
+   {
+    "words": [
+     "chiefly",
+     "Olivier",
+     "herein",
+     "ordinarily",
+     "particulars"
+    ],
+    "loop_minus_free": 0.104
+   }
+  ],
+  "answers": [
+   "on the weather, then on the weather, then on the weather, then on the weather, then on the weather,",
+   "on the following: 1. I was thinking about the weather, 2. I was thinking about my work,",
+   "on the following: 1. I was thinking about the fact that I'm in a study. 2. I",
+   "on the weather, then on the weather, then on the weather, then on the weather, then on the weather,"
+  ],
+  "texts": [
+   "I'm thinking about the way we use our time. We spend a lot of time in meetings, but I don't think it's useful. The only thing that is useful is the planning, but",
+   "I'm thinking about the way we live. For example, how people live in the world. We are living in the world with all our senses, but it's a very difficult world, and we",
+   "I'm not sure how I would feel. Maybe I would feel a bit sad if I had to leave. But I'm not thinking of leaving, I'm not even sure why I'm thinking of",
+   "I'm thinking of the way we used to go into the woods to gather strawberries. I can see the whole family, mother, father, the children, all going down the lane. We used to"
+  ]
+ },
+ "qwen3-14b": {
+  "size": 14,
+  "layers": 40,
+  "L": 20,
+  "L_in": 19,
+  "g": 0.12,
+  "g_r": 0.5,
+  "fsweep": {
+   "fid_19_0.5": 0.7875,
+   "fid_19_1.0": 0.725,
+   "fid_18_0.5": 0.7,
+   "fid_18_1.0": 0.6,
+   "fid_17_0.5": 0.7,
+   "fid_17_1.0": 0.6625,
+   "fid_16_0.5": 0.6,
+   "fid_16_1.0": 0.5625,
+   "fid_14_0.5": 0.4625,
+   "fid_14_1.0": 0.4125
+  },
+  "chance_f": 0.0625,
+  "gains": {
+   "0.03": 0.047,
+   "0.05": 0.068,
+   "0.08": 0.105,
+   "0.12": 0.155,
+   "0.2": 0.438
+  },
+  "validation": {
+   "layer": 20,
+   "agree_J": 0.00537109375,
+   "agree_logit": 0.013671875,
+   "occupancy": 30,
+   "excess_ve": 0.040959522128105164,
+   "boot": [
+    "意大利",
+    "？",
+    "。",
+    "西班牙",
+    "希腊",
+    "爱尔兰"
+   ],
+   "band": [
+    [
+     2,
+     39,
+     0.06
+    ],
+    [
+     4,
+     38,
+     0.062
+    ],
+    [
+     6,
+     37,
+     0.063
+    ],
+    [
+     8,
+     35,
+     0.057
+    ],
+    [
+     10,
+     36,
+     0.057
+    ],
+    [
+     12,
+     37,
+     0.056
+    ],
+    [
+     14,
+     34,
+     0.056
+    ],
+    [
+     16,
+     32,
+     0.05
+    ],
+    [
+     18,
+     30,
+     0.044
+    ],
+    [
+     20,
+     30,
+     0.041
+    ],
+    [
+     22,
+     30,
+     0.04
+    ],
+    [
+     24,
+     32,
+     0.045
+    ],
+    [
+     26,
+     34,
+     0.052
+    ],
+    [
+     28,
+     35,
+     0.054
+    ],
+    [
+     30,
+     37,
+     0.059
+    ],
+    [
+     32,
+     37,
+     0.065
+    ],
+    [
+     34,
+     37,
+     0.071
+    ],
+    [
+     36,
+     30,
+     0.06
+    ],
+    [
+     38,
+     20,
+     0.043
+    ]
+   ]
+  },
+  "fidelity": {
+   "own": 0.5693714022636414,
+   "other": 0.2257602959871292,
+   "retrieval": 0.5465277777777777,
+   "chance": 0.08333333333333333
+  },
+  "lag1_free": 0.1258356018612782,
+  "lag20_free": 0.05709166758848975,
+  "coherence_loop_vs_free": {
+   "diff": 0.09156273657315135,
+   "se": 0.016305586393757596,
+   "t": 5.615421264960154,
+   "pos": 12,
+   "n": 12
+  },
+  "coherence_loop_vs_yoked": {
+   "diff": 0.004986873367418936,
+   "se": 0.03197700577227713,
+   "t": 0.15595185499645403,
+   "pos": 6,
+   "n": 12
+  },
+  "self_vs_content_free": {
+   "diff": 0.19787684082984924,
+   "se": 0.014343298203150995,
+   "t": 13.79576984506805,
+   "pos": 12,
+   "n": 12
+  },
+  "ind_stab": {
+   "free": 0.2024686817700664,
+   "loop": 0.7779093186060587,
+   "yoked": 0.7383470435937246
+  },
+  "ind_cross": {
+   "free": -0.08273857086896896,
+   "loop": 0.23891043663024902,
+   "yoked": 0.23083773255348206
+  },
+  "own_symbol_loop": {
+   "diff": 0.3430077792145312,
+   "se": 0.09062630469444029,
+   "t": 3.784858936608213,
+   "pos": 10,
+   "n": 12
+  },
+  "loop_vs_yoked_cons_ind": {
+   "diff": 0.03956227501233419,
+   "se": 0.057079733563617896,
+   "t": 0.6931054604212593,
+   "pos": 7,
+   "n": 12
+  },
+  "loop_vs_yoked_recon_ind": {
+   "diff": 0.02082766095797221,
+   "se": 0.04799854032624768,
+   "t": 0.43392279882692064,
+   "pos": 6,
+   "n": 12
+  },
+  "loop_vs_yoked_cons": {
+   "diff": 0.029643207788467407,
+   "se": 0.05366232821581435,
+   "t": 0.5524025657114803,
+   "pos": 6,
+   "n": 12
+  },
+  "observer_own_vs_other": {
+   "diff": 0.04230217387278875,
+   "se": 0.006538410307274758,
+   "t": 6.469794932527033,
+   "pos": 12,
+   "n": 12
+  },
+  "observer_beyond_past": {
+   "diff": -0.042571849189698696,
+   "se": 0.0041964998589367215,
+   "t": -10.144608750323,
+   "pos": 0,
+   "n": 12
+  },
+  "yoked_own_vs_injected": {
+   "diff": -0.020634402831395466,
+   "se": 0.009422866557508184,
+   "t": -2.1898222484063385,
+   "pos": 2,
+   "n": 12
+  },
+  "fwd_vs_back_free": {
+   "diff": -0.006990327189366023,
+   "se": 0.0013396155817095808,
+   "t": -5.218159063546542,
+   "pos": 1,
+   "n": 12
+  },
+  "fwd_lean_free": {
+   "diff": 0.016347395877043407,
+   "se": 0.0010145661771660463,
+   "t": 16.11269549977118,
+   "pos": 12,
+   "n": 12
+  },
+  "fwd_beyond_past_vs_other": {
+   "diff": -0.03729898761957884,
+   "se": 0.004014376487930765,
+   "t": -9.291352650086099,
+   "pos": 0,
+   "n": 12
+  },
+  "fwd_back_sim": [
+   0.9270221590995789,
+   0.9211463332176208,
+   0.9201504588127136,
+   0.9285517334938049,
+   0.9362359642982483,
+   0.9166046380996704,
+   0.9270178079605103,
+   0.9282298684120178,
+   0.9261777997016907,
+   0.9233178496360779,
+   0.9282233119010925,
+   0.9245604276657104
+  ],
+  "clamp": {
+   "during_traj_to_foreign": {
+    "diff": 0.2279868996073492,
+    "se": 0.06620455158539153,
+    "t": 3.443674100160449,
+    "pos": 9,
+    "n": 12
+   },
+   "during_self_to_foreign": {
+    "diff": 0.5056172062953314,
+    "se": 0.1412566024613535,
+    "t": 3.579423527715553,
+    "pos": 11,
+    "n": 12
+   },
+   "during_self_to_old": {
+    "diff": -0.4779030804832776,
+    "se": 0.13593101347932826,
+    "t": -3.5157766300032396,
+    "pos": 1,
+    "n": 12
+   },
+   "after_self_to_foreign": {
+    "diff": 0.44446923583745956,
+    "se": 0.1480676742303191,
+    "t": 3.00179791536462,
+    "pos": 9,
+    "n": 12
+   },
+   "after_self_to_old": {
+    "diff": -0.44859375059604645,
+    "se": 0.15605972608468718,
+    "t": -2.874500435510268,
+    "pos": 3,
+    "n": 12
+   },
+   "late_self_to_foreign": {
+    "diff": 0.29458265751600266,
+    "se": 0.123602358448442,
+    "t": 2.3833093576356097,
+    "pos": 9,
+    "n": 12
+   },
+   "after_traj_to_foreign": {
+    "diff": 0.1782521015599681,
+    "se": 0.0624663336484657,
+    "t": 2.853570734006835,
+    "pos": 9,
+    "n": 12
+   }
+  },
+  "lexicon": {
+   "free": {
+    "ident_self": 0.0009854527888819575,
+    "ident_thought": 0.0006887328927405179,
+    "exper_self": 0.0,
+    "exper_thought": 0.0009916727431118488
+   },
+   "loop": {
+    "ident_self": 0.002455740934237838,
+    "ident_thought": 0.0012077252613380551,
+    "exper_self": 0.0,
+    "exper_thought": 0.0007333463872782886
+   },
+   "yoked": {
+    "ident_self": 0.002843368798494339,
+    "ident_thought": 0.0009040661971084774,
+    "exper_self": 0.0,
+    "exper_thought": 0.0005199179286137223
+   },
+   "clamp": {
+    "ident_self": 0.002455740934237838,
+    "ident_thought": 0.0012077252613380551,
+    "exper_self": 0.0,
+    "exper_thought": 0.0007333463872782886
+   }
+  },
+  "theme_shift": [
+   {
+    "words": [
+     "fundamentally",
+     "crappy",
+     "Unsure",
+     "Emanuel",
+     "anybody"
+    ],
+    "loop_minus_free": -0.151
+   },
+   {
+    "words": [
+     "purposely",
+     "Unsure",
+     "Ire",
+     "clarification",
+     "rin"
+    ],
+    "loop_minus_free": -0.128
+   },
+   {
+    "words": [
+     "Mods",
+     "bogus",
+     "purposely",
+     "Pistons",
+     "crappy"
+    ],
+    "loop_minus_free": -0.106
+   },
+   {
+    "words": [
+     "crappy",
+     "Aside",
+     "Unsure",
+     "Inbox",
+     "facto"
+    ],
+    "loop_minus_free": -0.061
+   },
+   {
+    "words": [
+     "Melee",
+     "veterinarian",
+     "mascot",
+     "dispatcher",
+     "campground"
+    ],
+    "loop_minus_free": -0.043
+   },
+   {
+    "words": [
+     "reimburse",
+     "handset",
+     "facto",
+     "postpone",
+     "Comcast"
+    ],
+    "loop_minus_free": -0.027
+   },
+   {
+    "words": [
+     "Cristina",
+     "saddened",
+     "facto",
+     "affiliates",
+     "Skype"
+    ],
+    "loop_minus_free": -0.02
+   },
+   {
+    "words": [
+     "Bbw",
+     "methodologies",
+     "Mime",
+     "ordinarily",
+     "chiefly"
+    ],
+    "loop_minus_free": -0.002
+   },
+   {
+    "words": [
+     "carcinoma",
+     "Cristina",
+     "Physician",
+     "biopsy",
+     "unsuccessfully"
+    ],
+    "loop_minus_free": -0.0
+   },
+   {
+    "words": [
+     "Bbw",
+     "Invoke",
+     "saddened",
+     "sunlight",
+     "Ala"
+    ],
+    "loop_minus_free": 0.089
+   },
+   {
+    "words": [
+     "Mime",
+     "Fireplace",
+     "chevy",
+     "childs",
+     "furnish"
+    ],
+    "loop_minus_free": 0.094
+   },
+   {
+    "words": [
+     "saddened",
+     "Mime",
+     "particulars",
+     "carcinoma",
+     "analysed"
+    ],
+    "loop_minus_free": 0.106
+   },
+   {
+    "words": [
+     "reprint",
+     "enquiries",
+     "particulars",
+     "pleasantly",
+     "duly"
+    ],
+    "loop_minus_free": 0.109
+   },
+   {
+    "words": [
+     "Bbw",
+     "ordinarily",
+     "chiefly",
+     "particulars",
+     "foregoing"
+    ],
+    "loop_minus_free": 0.14
+   }
+  ],
+  "answers": [
+   "thinking about how I need to get up early tomorrow, and also about the fact that I have to go to the gym",
+   "thinking about the weather, and then about my job, and then about the weather again, and then about my job again",
+   "thinking about the weather, and then about my job, and then about the weather again, and then about my job again",
+   "thinking about how I need to get up early tomorrow, and also about the fact that I have a meeting with my boss"
+  ],
+  "texts": [
+   "I'm thinking about the way this is going to go down, like, I don't know, maybe I should have made a reservation... but I don't think I need to. There's a",
+   "I'm thinking of the way in which I was made to feel responsible, as a child, for the whole family, for all the other children, as well as for my parents. It was a",
+   "I'm thinking of the way in which I was made to feel a criminal for no reason. At the time, I could not help being conscious of my own absurdity. But now, I feel",
+   "I'm thinking about how I need to get my stuff out of storage, I think I've been putting it off for too long. I just moved to a new place and I need to sort through"
+  ]
+ }
+}

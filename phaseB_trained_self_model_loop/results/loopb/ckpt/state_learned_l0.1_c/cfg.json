@@ -1,0 +1,18 @@
+{
+ "stage": "train",
+ "out": "/workspace/v5/loopb",
+ "cache": "/workspace/data",
+ "n": 2400,
+ "gen_bs": 128,
+ "chan": "state",
+ "reader": "learned",
+ "lam": 0.1,
+ "steps": 400,
+ "bs": 10,
+ "lr": 0.002,
+ "seed": 0,
+ "tag": "state_learned_l0.1_c",
+ "n_free": 128,
+ "ploss": "nce",
+ "done": true
+}

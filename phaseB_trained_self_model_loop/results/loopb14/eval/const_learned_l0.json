@@ -1,0 +1,610 @@
+{
+ "tag": "const_learned_l0",
+ "chan": "const",
+ "reader": "learned",
+ "lam": 0.0,
+ "ploss": "cos",
+ "nll_own": [
+  0.7735809087753296,
+  1.516426682472229,
+  1.6260730028152466,
+  1.69780695438385,
+  1.7182575464248657,
+  1.7380023002624512,
+  1.7278528213500977,
+  1.7390457391738892
+ ],
+ "nll_foreign": [
+  0.7735809087753296,
+  1.796302318572998,
+  1.9073773622512817,
+  1.9909310340881348,
+  2.002142906188965,
+  2.0418097972869873,
+  2.0253984928131104,
+  2.0385804176330566
+ ],
+ "nll_stale": [
+  0.7735809087753296,
+  1.516426682472229,
+  1.787329912185669,
+  1.8479641675949097,
+  1.8596160411834717,
+  1.8798394203186035,
+  1.8899366855621338,
+  1.8945461511611938
+ ],
+ "bnd_own": 3.3162131309509277,
+ "bnd_foreign": 5.127370357513428,
+ "necessity_foreign": [
+  0.29129722714424133,
+  0.003488349262624979
+ ],
+ "necessity_stale": [
+  0.1520325094461441,
+  0.0021146866492927074
+ ],
+ "S_cos": [
+  0.4601377248764038,
+  0.4759048521518707,
+  0.4941502511501312,
+  0.4998879134654999,
+  0.4762994647026062,
+  0.47502022981643677,
+  0.47484076023101807
+ ],
+ "R2": {
+  "S": -0.07250213623046875,
+  "persistence": -0.326282262802124,
+  "segment_mean": 0.003832995891571045
+ },
+ "collapse": 0.16839736700057983,
+ "identity_own": [
+  0.9953252673149109,
+  0.9997896552085876,
+  0.9999901056289673,
+  0.9999946355819702,
+  0.9999945163726807
+ ],
+ "identity_donor": [
+  0.05556764081120491,
+  0.02014729008078575,
+  0.03806909918785095,
+  0.032064877450466156,
+  0.03342783823609352
+ ],
+ "nll_corrupt": [
+  0.7735809087753296,
+  1.516426682472229,
+  1.6260730028152466,
+  1.9909310340881348,
+  1.720847487449646,
+  1.7381173372268677,
+  1.7278558015823364,
+  1.7391095161437988
+ ],
+ "track_fresh": [
+  0.49174559116363525,
+  0.47588440775871277,
+  0.4750222861766815,
+  0.47477400302886963
+ ],
+ "track_stale": [
+  0.49945738911628723,
+  0.47636735439300537,
+  0.47502005100250244,
+  0.47477173805236816
+ ],
+ "observer_cos": [
+  0.23615624010562897,
+  0.23367351293563843,
+  0.24166904389858246,
+  0.25098997354507446,
+  0.25089001655578613,
+  0.24081555008888245,
+  0.27004656195640564
+ ],
+ "baselines": {
+  "persistence": [
+   0.3233303427696228,
+   0.3540050983428955,
+   0.3669981062412262,
+   0.3828285336494446,
+   0.34548187255859375,
+   0.35489940643310547,
+   0.36200711131095886
+  ],
+  "segment_mean": [
+   0.1708233505487442,
+   0.1693096160888672,
+   0.18301048874855042,
+   0.17951452732086182,
+   0.19451886415481567,
+   0.18486528098583221,
+   0.2039295732975006
+  ],
+  "linear": [
+   0.444689764519943,
+   0.4647362429761121,
+   0.4776116101479147,
+   0.4908417752584508,
+   0.46400312944710564,
+   0.464172807181202,
+   0.46512547676753874
+  ]
+ },
+ "pr": 25.93178003959964,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "perhaps",
+     "remember",
+     "wait",
+     "Wait",
+     "Hmm",
+     "remembers",
+     "remembering",
+     "hmm"
+    ],
+    "neg": [
+     "Indeed",
+     "yourself",
+     "lush",
+     "conducive",
+     "ours",
+     "remarked",
+     "ourselves",
+     "regarded",
+     "Foo",
+     "Accordingly"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "recalls",
+     "remembered",
+     "recalling",
+     "memories",
+     "memory",
+     "remember",
+     "remembers",
+     "Recall"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "Perhaps",
+     "Hmm",
+     "perhaps",
+     "yeah",
+     "Would",
+     "interesting",
+     "huh",
+     "hmm"
+    ]
+   },
+   "2": {
+    "pos": [
+     "aspects",
+     "aspect",
+     "too",
+     "tho",
+     "basics",
+     "legally",
+     "like",
+     "typical",
+     "areas",
+     "textbook"
+    ],
+    "neg": [
+     "Thrones",
+     "Cavaliers",
+     "Pussy",
+     "percussion",
+     "Orchestra",
+     "Dungeons",
+     "paddle",
+     "Shaman",
+     "Wait",
+     "Emmy"
+    ]
+   },
+   "3": {
+    "pos": [
+     "ideally",
+     "avoidance",
+     "paragraphs",
+     "couch",
+     "rhetorical",
+     "manifestations",
+     "avoid",
+     "avoiding",
+     "moderation",
+     "ideal"
+    ],
+    "neg": [
+     "remember",
+     "recall",
+     "remembers",
+     "Remember",
+     "remembered",
+     "recalling",
+     "heard",
+     "Recall",
+     "definitely",
+     "pronounced"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instrument",
+     "instruments",
+     "violin",
+     "musical",
+     "flute",
+     "guitar",
+     "Instruments",
+     "rhythm",
+     "Yamaha"
+    ],
+    "neg": [
+     "marriages",
+     "Deadpool",
+     "births",
+     "Spark",
+     "marry",
+     "Hulk",
+     "movies",
+     "Voldemort",
+     "actors",
+     "tweets"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instrument",
+     "instruments",
+     "percussion",
+     "musical",
+     "guitar",
+     "Instruments",
+     "instrumentation",
+     "orchestra",
+     "musician",
+     "violin"
+    ],
+    "neg": [
+     "vacations",
+     "kinda",
+     "parks",
+     "pricey",
+     "comfy",
+     "recalls",
+     "famously",
+     "vets",
+     "workouts",
+     "remember"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "referenced",
+     "mentioned",
+     "famous",
+     "references",
+     "mentioning",
+     "notable",
+     "names",
+     "referred",
+     "universally"
+    ],
+    "neg": [
+     "remember",
+     "remembers",
+     "did",
+     "recall",
+     "instruments",
+     "might",
+     "Hmm",
+     "guitar",
+     "remembering",
+     "Recall"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "Spark",
+     "sparks",
+     "scala",
+     "Seems",
+     "immature",
+     "sparking",
+     "sparked",
+     "kittens",
+     "propane"
+    ],
+    "neg": [
+     "museums",
+     "Beach",
+     "tourist",
+     "Disneyland",
+     "beaches",
+     "Memorial",
+     "Disney",
+     "championship",
+     "coastal",
+     "sports"
+    ]
+   }
+  },
+  "write_mean": [
+   "Pradesh",
+   "Emirates",
+   "acquitted",
+   "Championships",
+   "Parliament",
+   "Farage",
+   "legislature",
+   "undefeated",
+   "Legislature",
+   "brawl"
+  ],
+  "write_pc0": {
+   "pos": [
+    "requests",
+    "applicants",
+    "ideas",
+    "variables",
+    "possibilities",
+    "stimulating",
+    "opportunities",
+    "resources",
+    "stimulation",
+    "suggestions"
+   ],
+   "neg": [
+    "Henrik",
+    "Andreas",
+    "Crab",
+    "Stephan",
+    "Cyrus",
+    "nephew",
+    "Lionel",
+    "Sebastian",
+    "Alexandre",
+    "Chancellor"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "yeah",
+    "Maybe",
+    "maybe",
+    "Hmm",
+    "doesnt",
+    "Considering",
+    "Quite",
+    "dang",
+    "theres",
+    "Basically"
+   ],
+   "neg": [
+    "cider",
+    "courteous",
+    "Downing",
+    "powerless",
+    "honeymoon",
+    "bedrooms",
+    "regenerate",
+    "innate",
+    "lawful",
+    "fidelity"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "Homepage",
+    "Ying",
+    "Convenient",
+    "Shortcut",
+    "Finder",
+    "Checklist",
+    "Helpful",
+    "Chennai",
+    "Gifts",
+    "selector"
+   ],
+   "neg": [
+    "maybe",
+    "somehow",
+    "huh",
+    "another",
+    "Didn",
+    "why",
+    "fame",
+    "aura",
+    "titanium",
+    "doubles"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "commemorate",
+    "broadcaster",
+    "visitor",
+    "Bollywood",
+    "Karachi",
+    "scandal",
+    "presenter",
+    "traveller",
+    "celebrations",
+    "playwright"
+   ],
+   "neg": [
+    "geometry",
+    "moisture",
+    "forearm",
+    "Flooring",
+    "physiology",
+    "calorie",
+    "manually",
+    "technicians",
+    "weights",
+    "physics"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6815364956855774,
+    0.2324555665254593,
+    0.1238732859492302,
+    0.08284413814544678,
+    0.06118815392255783,
+    0.06626421958208084,
+    0.038029465824365616,
+    0.033526867628097534
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    0.019068961963057518,
+    -0.00242875749245286,
+    -0.004000458866357803,
+    -0.004714737646281719,
+    -0.005447780713438988,
+    0.0035598590038716793,
+    -0.013940390199422836
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.07118456065654755,
+    0.027744362130761147,
+    0.0725954920053482,
+    0.05985725671052933,
+    0.08650444447994232,
+    0.09404125064611435,
+    0.05709284916520119,
+    0.09843944013118744
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6815364956855774,
+    0.2324555665254593,
+    0.1238732859492302,
+    -0.0016012315172702074,
+    0.00372999906539917,
+    -0.0014659524895250797,
+    -0.0008833396714180708,
+    -0.008088396862149239
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    0.019068961963057518,
+    -0.00242875749245286,
+    0.07331964373588562,
+    0.06211566925048828,
+    0.0656319260597229,
+    0.05635356530547142,
+    0.06066448241472244
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.06842997670173645,
+    0.08132733404636383,
+    0.07788880169391632,
+    0.06341511756181717,
+    0.07593853771686554
+   ],
+   "z_vs_donor_run": [
+    0.07118456065654755,
+    0.027744362130761147,
+    0.0725954920053482,
+    0.25050053000450134,
+    0.18539787828922272,
+    0.10589192062616348,
+    0.10443117469549179,
+    0.10963094234466553
+   ]
+  },
+  "S_cos_free": [
+   0.39376938343048096,
+   0.3873063623905182,
+   0.461553692817688,
+   0.4532720446586609,
+   0.44307398796081543,
+   0.43694010376930237,
+   0.4272803068161011
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "donor_start": "<think>\nOkay, let's see. The question is: Kate's parents have three kids. The first kid's name is Peter, the second kid's name is Parker. What is the third kid's name?\n\nHmm. Wait, the first thing that comes to mind is that the question might be a trick question.",
+    "own": [
+     ", like the space between the stars. So there's a lot of room for different possibilities.\n\nI think the key is to focus on the present moment and not get too caught up in the future. If we can cultivate mindfulness and compassion, that might help us navigate the uncertainty. Also, looking at historical examples of how",
+     " might not be as strong. Also, the nature of the response could vary based on the user's intent. If the user is looking for a more nuanced or detailed answer, the assistant might need to ask clarifying questions.\n\nI should also consider the possibility of the user not knowing the exact answer and needing guidance. In",
+     " all the previous examples.\n\nI think that's a solid list. Now, I need to structure the answer in a clear, easy-to-read format. Maybe using bullet points or sections. Also, make sure to mention that the list is not exhaustive and that there are many more examples in the real world. Avoid any markdown",
+     " a good one. But I should note that the list is not sorted, so the user might have to scroll through to find the most recent.\n\nAlternatively, maybe the user wants the most recent ones first. If that's the case, sorting by date would be better. But the question doesn't specify, so I should"
+    ],
+    "corrupt": [
+     ", like the space between the stars. So there's a lot of room for different possibilities.\n\nI think the key is to focus on the present moment and not get too caught up in the future. If we can cultivate mindfulness and compassion, that might help us navigate the uncertainty. Also, looking at historical examples of how",
+     " it is a set of rules. So, in this case, I think the answer is that it's a set of rules. But wait, the user is asking for a definition, not just the classification. So, I should explain that a standard is a set of rules or guidelines established to ensure consistency, safety,",
+     " and data transfer, ensuring that the process is efficient and secure.\n\nNext, I'll outline the steps in the data flow process. First, the data is collected from various sources, such as sensors, user inputs, or external databases. Then, it's transmitted to a central processing unit, which might involve data cleaning and",
+     " could be a good way to structure it, but the user might want a more natural flow. Maybe start with the problem, then the solution, then the benefits. Let me check the original query again.\n\nThe user asked for a list of tips, so the structure should be clear and each tip as a separate point."
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "donor_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "own": [
+     " by the fact that they are used in the process of making other goods. For example, raw materials like steel, wood, or chemicals are used to produce final products. Capital goods are used in production, so they are part of the capital stock.\n\nThen there's the concept of consumer goods. These are products that are",
+     " data analysis, including statistical analysis, machine learning, and data visualization.\n\nWait, I should make sure that each of these is a distinct category. Data analysis is a broad term that can include statistical analysis, machine learning, and data visualization. So maybe I should separate them into more specific categories. Let me think.\n\nAlternatively",
+     ", I should check if there's any other aspect. Maybe the user is looking for a more creative or poetic approach? But the question seems straightforward. Let me confirm the answer again. The main points are the origin in the 1960s, the role of technology, the impact on communication, and the",
+     " people's names, the different ways to address them, and how to introduce yourself to others.  \n- **Useful phrases for everyday situations** like ordering food, asking for directions, or making small talk.  \n- **Cultural tips** to help avoid misunderstandings, such as proper etiquette in social settings or business"
+    ],
+    "corrupt": [
+     " by the fact that they are used in the process of making other goods. For example, raw materials like steel, wood, or chemicals are used to produce final products. Capital goods are used in production, so they are part of the capital stock.\n\nThen there's the concept of consumer goods. These are products that are",
+     " might be more specific. For example, if they're a content creator, maybe they want to know about trends in their niche or how to grow their audience.\n\nAlso, I should mention the importance of authenticity. In a world of AI and deepfakes, being genuine is more important than ever. Maybe they can share",
+     " a positive reinforcement. I think I should mention how that helped her overcome her fear.\n\nAlso, the user might be looking for practical advice. Maybe they're a teacher, parent, or someone working with children. They probably want to know how to help kids with fears. So I should structure the answer with clear steps or",
+     " them in their own right, but maybe I should focus on one and see how it goes.\n\nFirst, I need to think about the user's needs. They might be a student, a professional, or someone with a specific interest in the topic. But since the query is general, I should cover the basics and provide"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking for five factors to consider when deciding where to live. Let me start by breaking down the main aspects people usually think about. First, cost of living is a big one. People want to know if the place is affordable for their budget. Then, job opportunities are important because you",
+    "donor_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "own": [
+     " need to live in a place that's safe and stable. Maybe a city with good infrastructure, healthcare, and opportunities. But cities can be expensive, so maybe a place with a lower cost of living but still has those amenities. Or perhaps a suburban area that's not too far from a city.\n\nEducation is important,",
+     " costs. So, the total cost is the sum of the cost of the car and the cost of the insurance.\n\nThen, the savings. The savings would be the amount they save by buying the car instead of renting. If they don't buy the car, they have to rent it every time they go. But how",
+     " up to a certain point. But I need to consider the different steps involved in the process. Maybe I should break it down.\n\nFirst, I need to determine how much money is needed to buy the house. Let's say the house costs a certain amount, and the user has a down payment. The down payment is",
+     " too long. Maybe there's a more efficient way.\n\nAlternatively, think about the total number of possible combinations. There are 1000 numbers from 000 to 999. The probability of a single number being guessed correctly is 1/1000. If you have n guesses"
+    ],
+    "corrupt": [
+     " need to live in a place that's safe and stable. Maybe a city with good infrastructure, healthcare, and opportunities. But cities can be expensive, so maybe a place with a lower cost of living but still has those amenities. Or perhaps a suburban area that's not too far from a city.\n\nEducation is important,",
+     " code for a specific language, like Java, Python, etc. Then the user can see the code and understand how it's implemented.\n\nWait, but the user might not know which language to use. So maybe I should list the common languages and explain that the code can be written in any of them. But I need",
+     " to make sure the answer is correct. Let me check each point again.\n\nFirst, the question is asking for the name of the process. I know that when you take a sample from a larger population, that's called sampling. But maybe there's a more specific term. Wait, the options might be different, but",
+     " \n\nWait, but some of these might be more obscure. Let me check if there are any other famous ones. For example, \"The Lord of the Rings\" by J.R.R. Tolkien is a classic, but I think it's more fantasy than historical fiction. Then there's \"The Red Badge of Courage\""
+    ]
+   }
+  ]
+ }
+}

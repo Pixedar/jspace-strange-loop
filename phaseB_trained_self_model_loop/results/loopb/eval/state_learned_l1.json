@@ -1,0 +1,680 @@
+{
+ "tag": "state_learned_l1",
+ "chan": "state",
+ "reader": "learned",
+ "lam": 1.0,
+ "ploss": "cos",
+ "nll_own": [
+  0.8716463446617126,
+  1.6560473442077637,
+  1.7376770973205566,
+  1.7884016036987305,
+  1.8152979612350464,
+  1.7970237731933594,
+  1.8092998266220093,
+  1.8287055492401123
+ ],
+ "nll_foreign": [
+  0.8716463446617126,
+  1.8873666524887085,
+  1.9432672262191772,
+  1.9832650423049927,
+  2.003791332244873,
+  1.9883052110671997,
+  2.00061297416687,
+  2.015103340148926
+ ],
+ "nll_stale": [
+  0.8716463446617126,
+  1.6560473442077637,
+  1.8690993785858154,
+  1.8910750150680542,
+  1.918116569519043,
+  1.9010635614395142,
+  1.9219262599945068,
+  1.936692237854004
+ ],
+ "bnd_own": 3.5020625591278076,
+ "bnd_foreign": 4.795572280883789,
+ "necessity_foreign": [
+  0.1984654664993286,
+  0.002859200583770871
+ ],
+ "necessity_stale": [
+  0.11026130616664886,
+  0.0015623036306351423
+ ],
+ "swap_pull_state": [
+  0.010172553360462189,
+  0.0011233440600335598
+ ],
+ "swap_pull_forecast": [
+  0.010662749409675598,
+  0.0012542479671537876
+ ],
+ "swap_stay": 0.9965157508850098,
+ "swap_dnll": 0.04521634429693222,
+ "S_cos": [
+  0.9739620685577393,
+  0.9785705804824829,
+  0.9818947315216064,
+  0.980638861656189,
+  0.9805371761322021,
+  0.9787989258766174,
+  0.9799511432647705
+ ],
+ "R2": {
+  "S": 0.4335263967514038,
+  "persistence": -0.15502524375915527,
+  "segment_mean": 0.0015892386436462402
+ },
+ "collapse": 0.947594404220581,
+ "identity_own": [
+  0.9812919497489929,
+  0.9877817630767822,
+  0.9910580515861511,
+  0.9918420314788818,
+  0.991036593914032
+ ],
+ "identity_donor": [
+  0.9498971700668335,
+  0.9389509558677673,
+  0.9407474994659424,
+  0.9342705011367798,
+  0.9322280287742615
+ ],
+ "nll_corrupt": [
+  0.8716463446617126,
+  1.6560473442077637,
+  1.7376770973205566,
+  1.9832650423049927,
+  1.8301055431365967,
+  1.8000601530075073,
+  1.8099071979522705,
+  1.828047513961792
+ ],
+ "track_fresh": [
+  0.9803165197372437,
+  0.9825277924537659,
+  0.9811303615570068,
+  0.981488823890686
+ ],
+ "track_stale": [
+  0.9685819745063782,
+  0.9719488620758057,
+  0.9710077047348022,
+  0.9709843397140503
+ ],
+ "observer_cos": [
+  0.9726793169975281,
+  0.9774573445320129,
+  0.9802837371826172,
+  0.9804176092147827,
+  0.9791883230209351,
+  0.9777216911315918,
+  0.9789867997169495
+ ],
+ "baselines": {
+  "persistence": [
+   0.8997102379798889,
+   0.9640300273895264,
+   0.9698992371559143,
+   0.9708541631698608,
+   0.9690605401992798,
+   0.9674546122550964,
+   0.9684129953384399
+  ],
+  "segment_mean": [
+   0.9502710103988647,
+   0.9571533799171448,
+   0.9599279761314392,
+   0.9602475166320801,
+   0.9638044238090515,
+   0.9616838097572327,
+   0.9609302282333374
+  ],
+  "linear": [
+   0.9725921086706698,
+   0.9780831697467434,
+   0.9812262470096574,
+   0.9804334716723218,
+   0.9799586826768646,
+   0.97712298640852,
+   0.9790389356558474
+  ]
+ },
+ "pr": 12.545303360042961,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "hiking",
+     "crater",
+     "tourism",
+     "trek",
+     "lodging",
+     "hikes",
+     "camping",
+     "travel",
+     "campground",
+     "hike"
+    ],
+    "neg": [
+     "remember",
+     "recall",
+     "maybe",
+     "recalling",
+     "remembers",
+     "Maybe",
+     "perhaps",
+     "remembering",
+     "Hmm",
+     "clarify"
+    ]
+   },
+   "1": {
+    "pos": [
+     "Mention",
+     "mention",
+     "highlight",
+     "emphasize",
+     "mentioning",
+     "recommending",
+     "emphasizing",
+     "recommend",
+     "advising",
+     "Highlight"
+    ],
+    "neg": [
+     "correct",
+     "definitely",
+     "Correct",
+     "incorrect",
+     "wait",
+     "corrected",
+     "typically",
+     "yeah",
+     "reportedly",
+     "instrumental"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "junction",
+     "monday",
+     "isn",
+     "else",
+     "Though",
+     "deserves",
+     "mundo",
+     "hike",
+     "thorough"
+    ],
+    "neg": [
+     "Wildcats",
+     "Godzilla",
+     "Buffy",
+     "Hawks",
+     "Tiger",
+     "Hou",
+     "Batman",
+     "Blackhawks",
+     "Beast",
+     "Hornets"
+    ]
+   },
+   "3": {
+    "pos": [
+     "deterrent",
+     "hiking",
+     "campground",
+     "scenic",
+     "hikes",
+     "advising",
+     "tourism",
+     "hike",
+     "Recommended",
+     "cabins"
+    ],
+    "neg": [
+     "recall",
+     "remember",
+     "remembers",
+     "Recall",
+     "recalls",
+     "confuse",
+     "confused",
+     "fuzzy",
+     "correct",
+     "memory"
+    ]
+   },
+   "4": {
+    "pos": [
+     "campground",
+     "invitations",
+     "clinics",
+     "motivations",
+     "emergencies",
+     "workouts",
+     "reflections",
+     "tenants",
+     "motivating",
+     "easing"
+    ],
+    "neg": [
+     "definitely",
+     "Definitely",
+     "classified",
+     "not",
+     "categorized",
+     "classification",
+     "commonly",
+     "classify",
+     "correct",
+     "notable"
+    ]
+   },
+   "5": {
+    "pos": [
+     "Deadpool",
+     "Marvel",
+     "Batman",
+     "fandom",
+     "actress",
+     "actresses",
+     "franchise",
+     "Mayweather",
+     "Avengers",
+     "films"
+    ],
+    "neg": [
+     "hiking",
+     "hike",
+     "hikes",
+     "might",
+     "shady",
+     "learnt",
+     "recreational",
+     "heard",
+     "needs",
+     "Noticed"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Greatest",
+     "blockbuster",
+     "Premiership",
+     "Rookie",
+     "Quite",
+     "reigning",
+     "Disneyland",
+     "Packers",
+     "Fargo",
+     "Famous"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "instrument",
+     "guitars",
+     "chords",
+     "chord",
+     "Instruments",
+     "percussion",
+     "classification",
+     "musical"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "could",
+     "she",
+     "someone",
+     "exercising",
+     "politicians",
+     "expressing",
+     "society",
+     "poses",
+     "scholars"
+    ],
+    "neg": [
+     "guitar",
+     "Probably",
+     "Guitar",
+     "Definitely",
+     "Certainly",
+     "categories",
+     "violin",
+     "category",
+     "categorized",
+     "piano"
+    ]
+   }
+  },
+  "write_mean": [
+   "Rodgers",
+   "Fargo",
+   "purposely",
+   "Rockefeller",
+   "underrated",
+   "rookie",
+   "Aberdeen",
+   "foreclosure",
+   "hitters",
+   "hugely"
+  ],
+  "write_pc0": {
+   "pos": [
+    "attitudes",
+    "stressful",
+    "hardships",
+    "coping",
+    "stresses",
+    "emotional",
+    "emotions",
+    "barriers",
+    "helpers",
+    "hardship"
+   ],
+   "neg": [
+    "Classics",
+    "Historical",
+    "names",
+    "Legendary",
+    "Named",
+    "Franco",
+    "Names",
+    "naming",
+    "Wikipedia",
+    "nicknamed"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "naming",
+    "names",
+    "renamed",
+    "name",
+    "classification",
+    "classifications",
+    "rename",
+    "Name",
+    "synonym",
+    "Names"
+   ],
+   "neg": [
+    "motel",
+    "entrepreneurs",
+    "entrepreneurial",
+    "teamwork",
+    "creativity",
+    "hectic",
+    "motivational",
+    "entrepreneurship",
+    "chores",
+    "selfish"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "blackmail",
+    "narratives",
+    "scandals",
+    "biography",
+    "assassination",
+    "campaigned",
+    "amnesty",
+    "Assange",
+    "Amnesty",
+    "Pulitzer"
+   ],
+   "neg": [
+    "gear",
+    "footwear",
+    "waterproof",
+    "nylon",
+    "bicycle",
+    "bike",
+    "kettle",
+    "paddle",
+    "truck",
+    "inflatable"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "Olympics",
+    "governing",
+    "Olympic",
+    "quarterbacks",
+    "governance",
+    "presidency",
+    "athletics",
+    "quarterback",
+    "Presidents",
+    "maneuver"
+   ],
+   "neg": [
+    "pottery",
+    "edible",
+    "Cuisine",
+    "Porno",
+    "melodies",
+    "melody",
+    "Musical",
+    "Kitchen",
+    "butcher",
+    "kitchen"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.665930986404419,
+    0.15251265466213226,
+    0.09058588743209839,
+    0.07070696353912354,
+    0.018626730889081955,
+    0.03595474362373352,
+    0.008104056119918823,
+    0.023771770298480988
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    -0.0077120233327150345,
+    -0.010722726583480835,
+    -0.01977040432393551,
+    0.0004400545731186867,
+    -0.009014872834086418,
+    -0.010688427835702896,
+    -0.022488322108983994
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.7704362869262695,
+    0.9238923192024231,
+    0.9333227276802063,
+    0.9238613843917847,
+    0.9429373741149902,
+    0.900679886341095,
+    0.9167308807373047,
+    0.9300965070724487
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.665930986404419,
+    0.15251265466213226,
+    0.09058588743209839,
+    0.009391109459102154,
+    0.01145410817116499,
+    0.0005772470030933619,
+    -0.0015479205176234245,
+    -0.011827079579234123
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    -0.0077120233327150345,
+    -0.010722726583480835,
+    0.060621216893196106,
+    0.043590184301137924,
+    0.019681967794895172,
+    0.011310284957289696,
+    0.04462051764130592
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.9333735108375549,
+    0.9454967975616455,
+    0.9143366813659668,
+    0.9209158420562744,
+    0.9397595524787903
+   ],
+   "z_vs_donor_run": [
+    0.7704362869262695,
+    0.9238923192024231,
+    0.9333227276802063,
+    0.9586710929870605,
+    0.9561886787414551,
+    0.9254505634307861,
+    0.9325997829437256,
+    0.9414646029472351
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.665930986404419,
+    0.15251265466213226,
+    0.09058588743209839,
+    0.03831196948885918,
+    0.016226038336753845,
+    -0.00555467838421464,
+    0.01809592917561531,
+    0.037584338337183
+   ],
+   "topic_donor": [
+    -0.014307389035820961,
+    -0.0077120233327150345,
+    -0.010722726583480835,
+    0.007569964975118637,
+    0.007698504254221916,
+    0.004459064453840256,
+    0.008619572967290878,
+    0.003990405239164829
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.9482419490814209,
+    0.9453349709510803,
+    0.914086103439331,
+    0.9387299418449402,
+    0.9482455253601074
+   ],
+   "z_vs_donor_run": [
+    0.7704362869262695,
+    0.9238923192024231,
+    0.9333227276802063,
+    0.9429784417152405,
+    0.9386351108551025,
+    0.912058413028717,
+    0.937724769115448,
+    0.9445030689239502
+   ]
+  },
+  "S_cos_free": [
+   0.9723780155181885,
+   0.9786662459373474,
+   0.9710795879364014,
+   0.9769732356071472,
+   0.9585452675819397,
+   0.9654816389083862,
+   0.9767298698425293
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, the user is asking for ways to help them sleep better. Let me start by recalling the common advice for improving sleep. First, maintaining a consistent sleep schedule is important. Going to bed and waking up at the same time every day helps regulate the body's internal clock. Then, creating a bedtime routine",
+    "own": [
+     " way.\n\nWait, maybe I should think about the number of ways to assign the colors to the faces. Let me try again.\n\nFirst, the cube has 6 faces. We need to color them with 3 colors, say Red, Green, and Blue, such that each color is used exactly twice. Wait,",
+     " But maybe the user is thinking of the Jordan River, which is significant in the Bible, especially in the story of Jesus being baptized by John the Baptist. Alternatively, the Dead Sea is another major body of water in the region, known for its high salinity. The Red Sea is also nearby, but it's more",
+     " a type of metal, so it's a mineral. But wait, are there other types? Maybe I should list the types of metals. Let me think. There are ferrous metals like iron and steel, and non-ferrous like aluminum, copper, etc. But the question is about the classification of a mineral",
+     " That's a good point. It's not just about the physical space but also the emotional and psychological aspects. The location should be accessible for all attendees, considering factors like proximity to public transport, parking, and maybe even the time of day. \n\nAlso, the ambiance is important. The venue should have a welcoming atmosphere"
+    ],
+    "corrupt": [
+     " way.\n\nWait, maybe I should think about the number of ways to assign the colors to the faces. Let me try again.\n\nFirst, the cube has 6 faces. We need to color them with 3 colors, say Red, Green, and Blue, such that each color is used exactly twice. Wait,",
+     "\"  \nWait, the user might be using a different method. Let me check again. Maybe they're using the formula for the area of a triangle with coordinates. The area can also be calculated using the determinant formula:\n\nArea = (1/2)|x1(y2 - y3) + x2(y3",
+     ", and the top surface is the ground, and the bottom surface is the air. Wait, that might not be the best way. Maybe the battery is on the ground, and the top of the battery is the ground. Wait, no. Let me clarify.\n\nThe battery is a single cell, so it has a",
+     "0\" (the 100th digit is 0, so that's the first digit of the 100th digit in the sequence). But I need to confirm the exact position.\n\nLet me think again. The sequence is:\n\n1, 2, 3, 4, 5,"
+    ],
+    "chanswap": [
+     " way.\n\nWait, maybe I should think about the number of ways to assign the colors to the faces. Let me try again.\n\nFirst, the cube has 6 faces. We need to color them with 3 colors, say Red, Green, and Blue, such that each color is used exactly twice. Wait,",
+     "\" \u2014 that's 12 characters. Wait, maybe I'm not counting correctly.\n\nWait, the user said \"12 characters\" in total. So the password must be exactly 12 characters long. Let me list the criteria again:\n\n1. At least 2 numbers.\n2. At least 1",
+     " black cat with a collar, maybe? No, that's not right. Maybe a specific breed, like a Persian or Siamese? Wait, the user might be thinking of a specific name. Let me think of famous black cats. There's Salem, the black cat from the movie \"Cats,\" but that",
+     "1234567891011121314151617181920212223242526272829303132333435363"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I might need to check the exact history. \n\nWait, maybe the user is referring to the fact that the US has a history of using the dollar as the primary currency, but the question is about the oldest currency. So the answer would be the Chinese currency, which has been in use for thousands of years. \n\n",
+     " So, the answer is: Florida, New York, and California. \n\nI need to make sure I didn't miss any states. Let me check again. The original list was Florida, New York, California, Texas, Arizona, and Washington. The states that are not in the top 5 are Texas, Arizona",
+     ", and the Mariana Trench, the deepest point in the Pacific. The Mariana Trench is about 36,000 feet deep, which is roughly seven miles. So, if you were to go from the top of Mount Everest to the bottom of the Mariana Trench, you'd have",
+     " be asking about the interest rate. Maybe the question is about the interest rate, not the loan amount. Wait, the original question is in the first line: \"What is the total amount of money that will be paid back on a 5-year loan with a 10% interest rate?\" So the answer is"
+    ],
+    "corrupt": [
+     " I might need to check the exact history. \n\nWait, maybe the user is referring to the fact that the US has a history of using the dollar as the primary currency, but the question is about the oldest currency. So the answer would be the Chinese currency, which has been in use for thousands of years. \n\n",
+     " But maybe the user is referring to the classic \"Me and My Shadow\" from the 1940s, which is a well-known song. Alternatively, it could be a more recent or lesser-known song. \n\nAnother possibility is the song \"Me and My Shadow\" by Bing Crosby, which is a popular",
+     " band. \n\nI need to make sure that the answer is in the form of a list with the exact names. Also, the user might be looking for a specific genre or era, so I should check if there are any notable bands from that period. For example, if the user is referring to the 19",
+     " So that's the first point. Then, the second point is about the role of the family. The family is the foundation of society, so they need to be strong. But in some places, the family structure is weak, leading to more issues. I should mention how family support systems are important, like parental involvement"
+    ],
+    "chanswap": [
+     " I might need to check the exact history. \n\nWait, maybe the user is referring to the fact that the US has a history of using the dollar as the primary currency, but the question is about the oldest currency. So the answer would be the Chinese currency, which has been in use for thousands of years. \n\n",
+     " Wait, I think I should check if there are any other languages or if there's a standard list. Let me think. Also, maybe some languages are in the list and others are not. Let me make sure I'm not missing any. \n\nWait, maybe I should list them all. Let me try to recall",
+     ". \n\nI think that's all. I should double-check if there are any other notable cities or places in the region. Maybe some smaller towns or historical sites. For example, there's the Lake of the Ozarks, which is a popular tourist destination in the area. Also, the city of Branson, which",
+     "? Wait, the user might be asking about the \"D\" in the name, but maybe they're confused. Let me check the spelling again. The company is called \"Dakota.\" So the \"D\" is just part of the name. Maybe they're asking about the origin of the name or what the"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " gear and clutch components. The user might need to know about the types of gears, how they work, and their applications. They could also be interested in the clutch system, like how it engages and disengages, and its role in power transmission. Maybe they want to understand the differences between manual and automatic transmissions.",
+     " to use. Maybe they're more affordable than buying a whole car. Also, car-sharing services might have a variety of options, like different models or sizes, which could be better for specific needs. \n\nI should also consider the cost of insurance and maintenance. Car-sharing might have lower insurance costs since the user doesn't",
+     " go to work, get a job, buy a house, get married, have kids, and so on. But maybe that's not the only path. Maybe there are other ways to live a fulfilling life. I should consider different options and see what feels right.\n\nI should also think about my values. What do I",
+     " the physical environment. The term \"greenhouse effect\" is often used in discussions about climate change. The process is similar to how a greenhouse works, where the glass traps heat inside. However, in the Earth's case, the atmosphere allows sunlight to enter but retains some of the heat, leading to a warming effect."
+    ],
+    "corrupt": [
+     " gear and clutch components. The user might need to know about the types of gears, how they work, and their applications. They could also be interested in the clutch system, like how it engages and disengages, and its role in power transmission. Maybe they want to understand the differences between manual and automatic transmissions.",
+     " For example, the UK and France both have significant nuclear power plants, but their approaches differ. The UK has been expanding its nuclear capacity, while France has a long-standing commitment with a large percentage of its electricity coming from nuclear. \n\nWait, but I need to make sure the examples are accurate. France has a significant",
+     " major cities. Then there's the fact that the Democratic Republic of the Congo is the second-largest country in Africa, which is also a significant factor. \n\nI should also consider the political situation. The country has had a lot of instability, including conflicts and a civil war. The government has been in power for a long",
+     " of the US, but also the US military's role in the Middle East, especially the Gulf. The user might be looking for a comprehensive list of US military bases in the Middle East. \n\nWait, but the user might also be interested in the strategic importance of these bases. Maybe they want to know why the US"
+    ],
+    "chanswap": [
+     " gear and clutch components. The user might need to know about the types of gears, how they work, and their applications. They could also be interested in the clutch system, like how it engages and disengages, and its role in power transmission. Maybe they want to understand the differences between manual and automatic transmissions.",
+     " Since the user is asking for the most important factors, I should list the top ones. Let me think of the key areas.\n\n1. **Initial Cost**: This includes the price of the device, any necessary accessories, and setup costs. High upfront costs can be a barrier for some users.\n\n2. **Battery Life",
+     " and the latest is the 2000s with the rise of the internet and smartphones. So, the timeline is clear. \n\nNow, the user might be asking for the order of these eras. Let me confirm the sequence. The Industrial Revolution first, then the 19th century, 2",
+     "1972, the U.S. Supreme Court case *Roe v. Wade* established a woman's right to an abortion under the right to privacy, which is protected under the Fourteenth Amendment. This decision was a major milestone in reproductive rights, as it legalized abortion nationwide.\n\n**Impact on Women's Rights"
+    ]
+   }
+  ]
+ }
+}

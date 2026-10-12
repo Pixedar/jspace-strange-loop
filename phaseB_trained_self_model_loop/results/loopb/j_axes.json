@@ -1,0 +1,962 @@
+{
+ "0": {
+  "pos": [
+   "aspects",
+   "opportunities",
+   "considerations",
+   "benefits",
+   "capabilities",
+   "qualities",
+   "impacts",
+   "potential",
+   "situations",
+   "preferences",
+   "aspect",
+   "amenities"
+  ],
+  "neg": [
+   "Wait",
+   "Did",
+   "Tennis",
+   "And",
+   "Hmm",
+   "Well",
+   "Bruce",
+   "Storm",
+   "Than",
+   "Three",
+   "Maybe",
+   "Then"
+  ]
+ },
+ "1": {
+  "pos": [
+   "effected",
+   "perpetrated",
+   "felon",
+   "fulfil",
+   "Accordingly",
+   "hateful",
+   "anus",
+   "horny",
+   "aroused",
+   "purposely",
+   "intestine",
+   "asses"
+  ],
+  "neg": [
+   "maybe",
+   "Maybe",
+   "mention",
+   "perhaps",
+   "Hmm",
+   "mentions",
+   "mentioning",
+   "some",
+   "they",
+   "someone",
+   "yes",
+   "yeah"
+  ]
+ },
+ "2": {
+  "pos": [
+   "explanations",
+   "motivations",
+   "considerations",
+   "insights",
+   "recommendations",
+   "guidelines",
+   "confidentiality",
+   "accountability",
+   "relevance",
+   "clarification",
+   "discussions",
+   "eligibility"
+  ],
+  "neg": [
+   "roasted",
+   "nicknamed",
+   "eaten",
+   "adorned",
+   "violently",
+   "descended",
+   "famed",
+   "cooked",
+   "slaughtered",
+   "crowned",
+   "famously",
+   "sprayed"
+  ]
+ },
+ "3": {
+  "pos": [
+   "also",
+   "probably",
+   "not",
+   "could",
+   "but",
+   "definitely",
+   "perhaps",
+   "should",
+   "might",
+   "asked",
+   "maybe",
+   "actually"
+  ],
+  "neg": [
+   "festivals",
+   "championships",
+   "nightlife",
+   "breweries",
+   "stadiums",
+   "beverages",
+   "amenities",
+   "celebrations",
+   "festivities",
+   "restaurants",
+   "outings",
+   "attractions"
+  ]
+ },
+ "4": {
+  "pos": [
+   "prestigious",
+   "acclaimed",
+   "renowned",
+   "founding",
+   "historic",
+   "geopolitical",
+   "influential",
+   "celebrated",
+   "headquartered",
+   "notable",
+   "nationalist",
+   "prominent"
+  ],
+  "neg": [
+   "veggies",
+   "carbs",
+   "snacks",
+   "herbs",
+   "tasty",
+   "yummy",
+   "lotion",
+   "moisture",
+   "towels",
+   "Hmm",
+   "sunscreen",
+   "Maybe"
+  ]
+ },
+ "5": {
+  "pos": [
+   "thoughtful",
+   "heartfelt",
+   "playful",
+   "humorous",
+   "nostalgic",
+   "witty",
+   "comedic",
+   "emotional",
+   "quirky",
+   "insightful",
+   "storytelling",
+   "poignant"
+  ],
+  "neg": [
+   "units",
+   "cores",
+   "comprises",
+   "regions",
+   "constitutes",
+   "consists",
+   "corresponds",
+   "configurations",
+   "operates",
+   "sizes",
+   "components",
+   "systems"
+  ]
+ },
+ "6": {
+  "pos": [
+   "notation",
+   "terminology",
+   "adjective",
+   "explanation",
+   "wording",
+   "phrase",
+   "analogy",
+   "description",
+   "confusion",
+   "identifier",
+   "ambiguity",
+   "definition"
+  ],
+  "neg": [
+   "enjoying",
+   "hikes",
+   "benefiting",
+   "vacations",
+   "outings",
+   "weekends",
+   "outdoors",
+   "spending",
+   "Outdoor",
+   "hiking",
+   "amenities",
+   "outdoor"
+  ]
+ },
+ "7": {
+  "pos": [
+   "disturbances",
+   "dangers",
+   "disorders",
+   "humans",
+   "beings",
+   "tragedies",
+   "accidents",
+   "atrocities",
+   "diseases",
+   "disasters",
+   "incidents",
+   "crises"
+  ],
+  "neg": [
+   "stylish",
+   "boutique",
+   "formatted",
+   "concise",
+   "classy",
+   "standout",
+   "tailored",
+   "streamlined",
+   "playlist",
+   "versatile",
+   "beginner",
+   "revamped"
+  ]
+ },
+ "8": {
+  "pos": [
+   "undesirable",
+   "detrimental",
+   "negligible",
+   "abundant",
+   "unsustainable",
+   "harmful",
+   "environmentally",
+   "acidic",
+   "excessive",
+   "destructive",
+   "irreversible",
+   "hazardous"
+  ],
+  "neg": [
+   "mentions",
+   "remembers",
+   "talks",
+   "playlists",
+   "titles",
+   "gigs",
+   "posters",
+   "movies",
+   "albums",
+   "signings",
+   "interviews",
+   "chats"
+  ]
+ },
+ "9": {
+  "pos": [
+   "emergency",
+   "outage",
+   "negligence",
+   "quitting",
+   "checking",
+   "shutdown",
+   "forfeiture",
+   "insurer",
+   "inconvenience",
+   "parking",
+   "scheduling",
+   "vaccination"
+  ],
+  "neg": [
+   "genres",
+   "themes",
+   "beautifully",
+   "fascinating",
+   "showcases",
+   "iconic",
+   "classics",
+   "melodies",
+   "varieties",
+   "motifs",
+   "creations",
+   "sculptures"
+  ]
+ },
+ "10": {
+  "pos": [
+   "maybe",
+   "mentioning",
+   "some",
+   "mentions",
+   "reputable",
+   "perhaps",
+   "municipalities",
+   "mention",
+   "countries",
+   "those",
+   "probably",
+   "supermarkets"
+  ],
+  "neg": [
+   "masterpiece",
+   "Returns",
+   "debacle",
+   "onslaught",
+   "trilogy",
+   "finale",
+   "Weapon",
+   "ordeal",
+   "saga",
+   "unleashed",
+   "antics",
+   "aftermath"
+  ]
+ },
+ "11": {
+  "pos": [
+   "cuisine",
+   "foods",
+   "Foods",
+   "dietary",
+   "meal",
+   "food",
+   "Dietary",
+   "Cuisine",
+   "diet",
+   "Food",
+   "culinary",
+   "vegetables"
+  ],
+  "neg": [
+   "manipulating",
+   "robotics",
+   "technological",
+   "powering",
+   "robotic",
+   "engineers",
+   "futuristic",
+   "technologies",
+   "computers",
+   "accelerating",
+   "exploiting",
+   "mastering"
+  ]
+ },
+ "12": {
+  "pos": [
+   "notoriously",
+   "questionable",
+   "notorious",
+   "egregious",
+   "controversial",
+   "crappy",
+   "nasty",
+   "unfair",
+   "ineligible",
+   "pricey",
+   "ridiculously",
+   "dubious"
+  ],
+  "neg": [
+   "exploring",
+   "cultivating",
+   "embracing",
+   "weaving",
+   "fostering",
+   "navigating",
+   "discovering",
+   "observing",
+   "exploration",
+   "preparing",
+   "meditation",
+   "preserving"
+  ]
+ },
+ "13": {
+  "pos": [
+   "cryptocurrency",
+   "software",
+   "illegally",
+   "used",
+   "malware",
+   "invented",
+   "computer",
+   "owned",
+   "misuse",
+   "contaminated",
+   "internet",
+   "marketed"
+  ],
+  "neg": [
+   "victories",
+   "decisive",
+   "highs",
+   "excellence",
+   "winners",
+   "brilliance",
+   "championship",
+   "strengths",
+   "innings",
+   "greatness",
+   "touchdowns",
+   "standings"
+  ]
+ },
+ "14": {
+  "pos": [
+   "geographical",
+   "cities",
+   "coastal",
+   "confusing",
+   "tricky",
+   "airports",
+   "inland",
+   "beaches",
+   "nearby",
+   "stadiums",
+   "windy",
+   "north"
+  ],
+  "neg": [
+   "embodies",
+   "promotes",
+   "infused",
+   "develops",
+   "utilizes",
+   "employs",
+   "fermented",
+   "benefited",
+   "achieves",
+   "utilized",
+   "fermentation",
+   "facilitates"
+  ]
+ },
+ "15": {
+  "pos": [
+   "but",
+   "because",
+   "since",
+   "whereas",
+   "yeah",
+   "maybe",
+   "although",
+   "though",
+   "despite",
+   "anyway",
+   "Anyway",
+   "Maybe"
+  ],
+  "neg": [
+   "secluded",
+   "enclosed",
+   "concise",
+   "serene",
+   "instructed",
+   "fenced",
+   "calmly",
+   "meticulously",
+   "sturdy",
+   "avoided",
+   "cautious",
+   "gently"
+  ]
+ },
+ "16": {
+  "pos": [
+   "specifying",
+   "indicating",
+   "depicting",
+   "stating",
+   "refusing",
+   "announcing",
+   "confirming",
+   "alleging",
+   "removing",
+   "describing",
+   "detailing",
+   "illustrating"
+  ],
+  "neg": [
+   "might",
+   "isn",
+   "feels",
+   "seems",
+   "could",
+   "needs",
+   "may",
+   "thinks",
+   "deserves",
+   "comes",
+   "tends",
+   "happens"
+  ]
+ },
+ "17": {
+  "pos": [
+   "disrupted",
+   "leaked",
+   "highlights",
+   "hinted",
+   "exacerbated",
+   "debacle",
+   "overrun",
+   "mentions",
+   "nostalgia",
+   "influx",
+   "renovations",
+   "inconsistencies"
+  ],
+  "neg": [
+   "athletes",
+   "mammals",
+   "proficient",
+   "muscles",
+   "individuals",
+   "humans",
+   "animals",
+   "professionals",
+   "muscular",
+   "teammates",
+   "athletic",
+   "dogs"
+  ]
+ },
+ "18": {
+  "pos": [
+   "anew",
+   "every",
+   "billions",
+   "indefinitely",
+   "daily",
+   "tomorrow",
+   "millions",
+   "everyday",
+   "hours",
+   "meaningful",
+   "unprecedented",
+   "hourly"
+  ],
+  "neg": [
+   "mention",
+   "mentions",
+   "maybe",
+   "Mention",
+   "mentioning",
+   "Athletic",
+   "Sporting",
+   "emphasize",
+   "refers",
+   "might",
+   "sometimes",
+   "Maybe"
+  ]
+ },
+ "19": {
+  "pos": [
+   "furnishings",
+   "merchants",
+   "homeowner",
+   "amenities",
+   "landlords",
+   "landlord",
+   "craftsmanship",
+   "renters",
+   "convenient",
+   "artisans",
+   "furniture",
+   "conceal"
+  ],
+  "neg": [
+   "marathon",
+   "sprint",
+   "championships",
+   "aerobic",
+   "Olympics",
+   "esports",
+   "cardiovascular",
+   "championship",
+   "postseason",
+   "athletes",
+   "playoffs",
+   "athlete"
+  ]
+ },
+ "20": {
+  "pos": [
+   "music",
+   "Hindi",
+   "Arabic",
+   "violin",
+   "guitar",
+   "Thai",
+   "Portuguese",
+   "Music",
+   "Indonesian",
+   "Muslim",
+   "Asian",
+   "Vietnamese"
+  ],
+  "neg": [
+   "fossils",
+   "mentioning",
+   "biologist",
+   "sightings",
+   "confirmed",
+   "confirming",
+   "mention",
+   "wildlife",
+   "fauna",
+   "algae",
+   "mentions",
+   "habitat"
+  ]
+ },
+ "21": {
+  "pos": [
+   "warriors",
+   "targeting",
+   "combating",
+   "leveraging",
+   "contenders",
+   "strategist",
+   "invaders",
+   "undermine",
+   "attacking",
+   "fighters",
+   "thinkers",
+   "tackling"
+  ],
+  "neg": [
+   "musical",
+   "concerts",
+   "music",
+   "recordings",
+   "Musical",
+   "piano",
+   "acoustic",
+   "musician",
+   "discontinued",
+   "Music",
+   "guitar",
+   "recreational"
+  ]
+ },
+ "22": {
+  "pos": [
+   "remember",
+   "magnificent",
+   "verify",
+   "remembers",
+   "surely",
+   "astonished",
+   "treaties",
+   "remembering",
+   "immense",
+   "glorious",
+   "tremendous",
+   "huge"
+  ],
+  "neg": [
+   "related",
+   "associated",
+   "akin",
+   "elsewhere",
+   "unrelated",
+   "involving",
+   "outdoors",
+   "within",
+   "suited",
+   "affecting",
+   "based",
+   "involved"
+  ]
+ },
+ "23": {
+  "pos": [
+   "Xiaomi",
+   "Goku",
+   "Huawei",
+   "suitability",
+   "Azure",
+   "Pikachu",
+   "compatibility",
+   "sightings",
+   "Pokemon",
+   "availability",
+   "capabilities",
+   "Asus"
+  ],
+  "neg": [
+   "classrooms",
+   "classroom",
+   "lecture",
+   "congressman",
+   "Colleges",
+   "began",
+   "university",
+   "colleges",
+   "universities",
+   "begins",
+   "teachers",
+   "Universities"
+  ]
+ },
+ "24": {
+  "pos": [
+   "avoids",
+   "prohibits",
+   "prevents",
+   "protects",
+   "ensure",
+   "contains",
+   "promotes",
+   "includes",
+   "explicitly",
+   "explains",
+   "emphasizes",
+   "avoid"
+  ],
+  "neg": [
+   "wondering",
+   "longing",
+   "memories",
+   "wanting",
+   "interested",
+   "wanted",
+   "unsure",
+   "wondered",
+   "craving",
+   "thoughts",
+   "eager",
+   "uncertain"
+  ]
+ },
+ "25": {
+  "pos": [
+   "perceive",
+   "expressing",
+   "baseball",
+   "expresses",
+   "Baseball",
+   "liking",
+   "basketball",
+   "enjoyment",
+   "enjoys",
+   "soccer",
+   "Football",
+   "expressed"
+  ],
+  "neg": [
+   "maybe",
+   "perhaps",
+   "but",
+   "Maybe",
+   "awhile",
+   "newer",
+   "alongside",
+   "yeah",
+   "safer",
+   "healer",
+   "important",
+   "later"
+  ]
+ },
+ "26": {
+  "pos": [
+   "photographers",
+   "artists",
+   "singers",
+   "artist",
+   "respondents",
+   "musician",
+   "photographer",
+   "highlight",
+   "viewers",
+   "voters",
+   "critics",
+   "investors"
+  ],
+  "neg": [
+   "basics",
+   "basically",
+   "definitely",
+   "isn",
+   "usually",
+   "probably",
+   "pretty",
+   "foundational",
+   "basic",
+   "starts",
+   "obviously",
+   "essentials"
+  ]
+ },
+ "27": {
+  "pos": [
+   "Yamaha",
+   "affecting",
+   "essentials",
+   "headphones",
+   "mattered",
+   "unbearable",
+   "Nigeria",
+   "Huawei",
+   "Mumbai",
+   "basics",
+   "mentioned",
+   "headset"
+  ],
+  "neg": [
+   "alternate",
+   "alternatively",
+   "seasonal",
+   "revert",
+   "occasional",
+   "collaborate",
+   "participate",
+   "additional",
+   "marry",
+   "collaborations",
+   "other",
+   "branching"
+  ]
+ },
+ "28": {
+  "pos": [
+   "Millennials",
+   "millennials",
+   "darkness",
+   "originals",
+   "purity",
+   "preferring",
+   "mainstream",
+   "Ambient",
+   "liberals",
+   "youngest",
+   "avoiding",
+   "Democrats"
+  ],
+  "neg": [
+   "valuable",
+   "interesting",
+   "useful",
+   "important",
+   "impressive",
+   "remarkable",
+   "noteworthy",
+   "fascinating",
+   "worthwhile",
+   "amazing",
+   "exciting",
+   "helpful"
+  ]
+ },
+ "29": {
+  "pos": [
+   "prefers",
+   "preferring",
+   "meticulously",
+   "meticulous",
+   "extensively",
+   "notoriously",
+   "specifications",
+   "generally",
+   "prefer",
+   "stringent",
+   "recommendations",
+   "demanding"
+  ],
+  "neg": [
+   "connects",
+   "something",
+   "connecting",
+   "tangible",
+   "connected",
+   "symbols",
+   "symbol",
+   "added",
+   "contributing",
+   "contributed",
+   "contributes",
+   "teammates"
+  ]
+ },
+ "30": {
+  "pos": [
+   "practitioners",
+   "occurs",
+   "waiter",
+   "users",
+   "travelers",
+   "participants",
+   "requires",
+   "singers",
+   "composers",
+   "programmers",
+   "chefs",
+   "enthusiasts"
+  ],
+  "neg": [
+   "remembered",
+   "researched",
+   "baseball",
+   "economics",
+   "steel",
+   "weaponry",
+   "denim",
+   "woodworking",
+   "paint",
+   "America",
+   "money",
+   "plywood"
+  ]
+ },
+ "31": {
+  "pos": [
+   "recommended",
+   "preferable",
+   "criteria",
+   "alternatives",
+   "chosen",
+   "options",
+   "preferred",
+   "optional",
+   "required",
+   "achievable",
+   "optimal",
+   "option"
+  ],
+  "neg": [
+   "loudly",
+   "loud",
+   "prominently",
+   "vocal",
+   "pervasive",
+   "sharply",
+   "swiftly",
+   "dealings",
+   "alerts",
+   "chatter",
+   "messaging",
+   "menacing"
+  ]
+ }
+}

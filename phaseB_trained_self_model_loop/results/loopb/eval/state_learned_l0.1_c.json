@@ -1,0 +1,685 @@
+{
+ "tag": "state_learned_l0.1_c",
+ "chan": "state",
+ "reader": "learned",
+ "lam": 0.1,
+ "ploss": "nce",
+ "nll_own": [
+  0.8659189343452454,
+  1.6595354080200195,
+  1.7447417974472046,
+  1.7958537340164185,
+  1.8216384649276733,
+  1.8004742860794067,
+  1.8170109987258911,
+  1.8294684886932373
+ ],
+ "nll_foreign": [
+  0.8659189343452454,
+  1.9313300848007202,
+  2.0398001670837402,
+  2.0904343128204346,
+  2.113182306289673,
+  2.1005241870880127,
+  2.1192519664764404,
+  2.1346051692962646
+ ],
+ "nll_stale": [
+  0.8659189343452454,
+  1.6595354080200195,
+  1.8914086818695068,
+  1.921751856803894,
+  1.9546763896942139,
+  1.9251086711883545,
+  1.954410433769226,
+  1.9700331687927246
+ ],
+ "bnd_own": 3.4024434089660645,
+ "bnd_foreign": 5.017449855804443,
+ "necessity_foreign": [
+  0.2943435311317444,
+  0.00412760628387332
+ ],
+ "necessity_stale": [
+  0.13470004498958588,
+  0.00198721862398088
+ ],
+ "swap_pull_state": [
+  0.08405036479234695,
+  0.0032952565234154463
+ ],
+ "swap_pull_forecast": [
+  0.12919780611991882,
+  0.0033577389549463987
+ ],
+ "swap_stay": 0.9584539532661438,
+ "swap_dnll": 0.048992838710546494,
+ "S_cos": [
+  0.4646134078502655,
+  0.4905710518360138,
+  0.5083820819854736,
+  0.4964179992675781,
+  0.4949900805950165,
+  0.4927213191986084,
+  0.5012651681900024
+ ],
+ "R2": {
+  "S": -0.08388960361480713,
+  "persistence": -0.1093740463256836,
+  "segment_mean": 0.00274580717086792
+ },
+ "collapse": 0.24377316236495972,
+ "retrieval": {
+  "S": 0.33178571292332243,
+  "persistence": 0.1360714297209467,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.8850221037864685,
+  0.9694799780845642,
+  0.9900082945823669,
+  0.9960110187530518,
+  0.9989217519760132
+ ],
+ "identity_donor": [
+  0.23483870923519135,
+  0.12889894843101501,
+  0.10291396826505661,
+  0.06425938010215759,
+  0.0545942485332489
+ ],
+ "nll_corrupt": [
+  0.8659189343452454,
+  1.6595354080200195,
+  1.7447417974472046,
+  2.0904343128204346,
+  1.85239839553833,
+  1.8067718744277954,
+  1.8198200464248657,
+  1.8303613662719727
+ ],
+ "track_fresh": [
+  0.44317495822906494,
+  0.48785164952278137,
+  0.49132460355758667,
+  0.5011427402496338
+ ],
+ "track_stale": [
+  0.43927285075187683,
+  0.48075321316719055,
+  0.48654595017433167,
+  0.4989687204360962
+ ],
+ "observer_cos": [
+  0.3834582567214966,
+  0.42845290899276733,
+  0.4428834915161133,
+  0.4373449981212616,
+  0.42782020568847656,
+  0.4142940044403076,
+  0.4265248477458954
+ ],
+ "baselines": {
+  "persistence": [
+   0.43027591705322266,
+   0.4823671579360962,
+   0.4921143651008606,
+   0.4970301687717438,
+   0.4869140684604645,
+   0.4884015619754791,
+   0.5062752366065979
+  ],
+  "segment_mean": [
+   0.26273661851882935,
+   0.2464456558227539,
+   0.23789431154727936,
+   0.2476385533809662,
+   0.2639240622520447,
+   0.25585564970970154,
+   0.25656336545944214
+  ],
+  "linear": [
+   0.5950769057367213,
+   0.6152716122044439,
+   0.6307206634292783,
+   0.621354766379268,
+   0.6123873535108783,
+   0.6111709668055684,
+   0.6268175492725587
+  ]
+ },
+ "pr": 24.5931738249035,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "dealt",
+     "freeze",
+     "sausage",
+     "tweak",
+     "governed",
+     "imprint",
+     "affecting",
+     "peel",
+     "dealing",
+     "debris"
+    ],
+    "neg": [
+     "Maybe",
+     "maybe",
+     "perhaps",
+     "Hmm",
+     "Perhaps",
+     "reminds",
+     "clarify",
+     "yeah",
+     "probably",
+     "mentions"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "Mention",
+     "mentioning",
+     "mentions",
+     "emphasize",
+     "highlight",
+     "avoid",
+     "recommending",
+     "recommend",
+     "Highlight"
+    ],
+    "neg": [
+     "yeah",
+     "isn",
+     "Hmm",
+     "maybe",
+     "definitely",
+     "presumably",
+     "supposedly",
+     "instrument",
+     "perhaps",
+     "wait"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "isn",
+     "because",
+     "would",
+     "junction",
+     "meant",
+     "briefly",
+     "though",
+     "function",
+     "without"
+    ],
+    "neg": [
+     "Simpsons",
+     "Aurora",
+     "Buffy",
+     "Sour",
+     "Helmet",
+     "Cowboy",
+     "Zack",
+     "Cassandra",
+     "Santana",
+     "Rocky"
+    ]
+   },
+   "3": {
+    "pos": [
+     "maybe",
+     "explaining",
+     "Maybe",
+     "deterrent",
+     "huh",
+     "yeah",
+     "emphasized",
+     "haha",
+     "explained",
+     "explain"
+    ],
+    "neg": [
+     "recall",
+     "remembers",
+     "recalls",
+     "remember",
+     "Recall",
+     "memory",
+     "recalled",
+     "Memory",
+     "fuzzy",
+     "remembered"
+    ]
+   },
+   "4": {
+    "pos": [
+     "touchdowns",
+     "obedient",
+     "Convenience",
+     "manifests",
+     "habits",
+     "mails",
+     "emergencies",
+     "bathrooms",
+     "trainers",
+     "Conditioning"
+    ],
+    "neg": [
+     "definitely",
+     "Definitely",
+     "classified",
+     "categorized",
+     "notable",
+     "classify",
+     "not",
+     "famous",
+     "classification",
+     "surely"
+    ]
+   },
+   "5": {
+    "pos": [
+     "Batman",
+     "Marvel",
+     "fandom",
+     "Deadpool",
+     "Mayweather",
+     "titles",
+     "fictional",
+     "title",
+     "franchise",
+     "franchises"
+    ],
+    "neg": [
+     "heard",
+     "learnt",
+     "learned",
+     "shady",
+     "thinks",
+     "might",
+     "recalls",
+     "think",
+     "believes",
+     "smelled"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Greatest",
+     "Quite",
+     "Playboy",
+     "blockbuster",
+     "Rookie",
+     "Fury",
+     "Blackhawks",
+     "Famous",
+     "undefeated",
+     "Netflix"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "instrument",
+     "chords",
+     "guitars",
+     "chord",
+     "percussion",
+     "musical",
+     "Instruments",
+     "pedals"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "could",
+     "someone",
+     "she",
+     "their",
+     "society",
+     "isn",
+     "some",
+     "may",
+     "politicians"
+    ],
+    "neg": [
+     "Probably",
+     "guitar",
+     "probable",
+     "Certainly",
+     "Definitely",
+     "category",
+     "musical",
+     "Likely",
+     "standout",
+     "categories"
+    ]
+   }
+  },
+  "write_mean": [
+   "vacations",
+   "disadvantaged",
+   "Resorts",
+   "Nicaragua",
+   "Latinos",
+   "inexpensive",
+   "tourism",
+   "pricey",
+   "supermarkets",
+   "Emirates"
+  ],
+  "write_pc0": {
+   "pos": [
+    "loneliness",
+    "anguish",
+    "apology",
+    "resentment",
+    "offend",
+    "cherish",
+    "conscience",
+    "insults",
+    "conspiracy",
+    "betrayal"
+   ],
+   "neg": [
+    "Asphalt",
+    "skiing",
+    "Confirm",
+    "Definitely",
+    "Northeast",
+    "Freight",
+    "inland",
+    "Bike",
+    "Southeast",
+    "kayak"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "stressful",
+    "coping",
+    "efficiency",
+    "attitudes",
+    "quitting",
+    "ventilation",
+    "barriers",
+    "skills",
+    "profitable",
+    "investing"
+   ],
+   "neg": [
+    "Historical",
+    "Names",
+    "Franz",
+    "rename",
+    "Ferdinand",
+    "Name",
+    "Named",
+    "renamed",
+    "names",
+    "naming"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "poet",
+    "poems",
+    "Taste",
+    "literary",
+    "poetry",
+    "Poetry",
+    "narrator",
+    "witty",
+    "poem",
+    "Songs"
+   ],
+   "neg": [
+    "maneuver",
+    "figuring",
+    "lifting",
+    "offshore",
+    "heavier",
+    "traction",
+    "pretty",
+    "maneuvers",
+    "faster",
+    "heavyweight"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "playful",
+    "Clown",
+    "comedic",
+    "humorous",
+    "clown",
+    "prank",
+    "cosplay",
+    "creativity",
+    "playable",
+    "creative"
+   ],
+   "neg": [
+    "uranium",
+    "billion",
+    "economists",
+    "Congressional",
+    "treaties",
+    "trillion",
+    "Presidency",
+    "Boeing",
+    "magna",
+    "aerospace"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.16922040283679962,
+    0.10973741859197617,
+    0.10456915199756622,
+    0.057112954556941986,
+    0.047004956752061844,
+    0.03655000403523445,
+    0.01791604794561863
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.007365684490650892,
+    -0.002643384039402008,
+    -0.0030120299197733402,
+    -0.006069480907171965,
+    0.00792769156396389,
+    -0.012771090492606163,
+    -0.009368478320538998
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.1456916332244873,
+    0.1127689853310585,
+    0.07616947591304779,
+    0.08782000094652176,
+    0.11878113448619843,
+    0.09065824002027512,
+    0.09574748575687408,
+    0.1372695118188858
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.16922040283679962,
+    0.10973741859197617,
+    0.017142362892627716,
+    0.009653514251112938,
+    0.005102504976093769,
+    0.01620490849018097,
+    0.014725406654179096
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.007365684490650892,
+    -0.002643384039402008,
+    0.08450368046760559,
+    0.07175257056951523,
+    0.052763279527425766,
+    0.04294285923242569,
+    0.038737572729587555
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.1050805076956749,
+    0.10343439877033234,
+    0.07124670594930649,
+    0.09636226296424866,
+    0.09029080718755722
+   ],
+   "z_vs_donor_run": [
+    0.1456916332244873,
+    0.1127689853310585,
+    0.07616947591304779,
+    0.42096394300460815,
+    0.2925054430961609,
+    0.24520422518253326,
+    0.19884426891803741,
+    0.18277397751808167
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6704888939857483,
+    0.16922040283679962,
+    0.10973741859197617,
+    0.06350341439247131,
+    0.035637252032756805,
+    0.03853023797273636,
+    0.02907813899219036,
+    0.035643093287944794
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.007365684490650892,
+    -0.002643384039402008,
+    0.005360511131584644,
+    0.028417393565177917,
+    0.019758259877562523,
+    0.02120380848646164,
+    0.019779082387685776
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.29702985286712646,
+    0.22874687612056732,
+    0.1873098760843277,
+    0.1892678141593933,
+    0.16896407306194305
+   ],
+   "z_vs_donor_run": [
+    0.1456916332244873,
+    0.1127689853310585,
+    0.07616947591304779,
+    0.22044849395751953,
+    0.1651342511177063,
+    0.15394887328147888,
+    0.13877467811107635,
+    0.16188085079193115
+   ]
+  },
+  "S_cos_free": [
+   0.45828428864479065,
+   0.4383769631385803,
+   0.48415490984916687,
+   0.473572313785553,
+   0.4688987135887146,
+   0.468417763710022,
+   0.47623613476753235
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     " right. So I need to find the area of the triangle formed by these two points and the origin. Wait, no, the problem says the triangle formed by the points. But there are three points: the origin (0,0), and the two points where the line intersects the axes. So the triangle is between",
+     "'s a good start. \n\nNow, the second part of the question is about the possible effect of the incident on the environment. The user might be looking for both positive and negative impacts, but since the example response mentions a positive effect (renewable energy development), I should ensure that I cover both aspects. However",
+     ", the user might be looking for the most effective strategies to help them lose weight. Let me provide a comprehensive answer that covers different aspects of weight loss, including diet, exercise, and lifestyle changes. \n\nI should start by mentioning the importance of a balanced diet, like the Mediterranean diet or the DASH diet, which",
+     " is asking about the best way to handle a situation where a child is being bullied. So, I need to make sure the answer covers common strategies and advice. Let me start by thinking about the different aspects of bullying. \n\nFirst, the child's safety is the top priority. So, maybe mention seeking help from adults"
+    ],
+    "corrupt": [
+     " right. So I need to find the area of the triangle formed by these two points and the origin. Wait, no, the problem says the triangle formed by the points. But there are three points: the origin (0,0), and the two points where the line intersects the axes. So the triangle is between",
+     " it's a folk song from the Philippines. I think it's called \"Sukat ng Dugo\" or something similar. Let me think. Wait, there's also \"Sukat ng Dugo\" by Ruel, but that's a modern song. Maybe it's a traditional one. Alternatively, maybe",
+     " there's a similar story about the song \"I Am the Walrus\" by The Beatles. That song was written by John Lennon, but the lyrics were inspired by a poem by the poet W.H. Auden. The poem was called \"The Walrus Did the Walrus\" and was written in the 1",
+     " a palindrome. \n\nBut wait, the problem says \"the sum of the digits is 1000.\" So, the sum of the digits of the number N, which is a palindrome, is 1000. \n\nBut since the number is a palindrome, the sum of its digits is the same"
+    ],
+    "chanswap": [
+     " right. So I need to find the area of the triangle formed by these two points and the origin. Wait, no, the problem says the triangle formed by the points. But there are three points: the origin (0,0), and the two points where the line intersects the axes. So the triangle is between",
+     " is a good example of the sun's power.\n\nWait, that's not quite right. The sun's power is more about its energy output and influence on the solar system. Let me think of a better example. Maybe a solar flare? Or the sun's role in creating the solar wind?\n\nHmm, the user might",
+     " be referring to the same entity. For example, the term \"I\" could refer to the same person throughout the conversation. However, if there's a change in context, like a new person entering the conversation, that might be a different case. But in general, unless stated otherwise, the same \"I\" is",
+     " But wait, the problem says \"the sum of the numbers in each row is the same.\" So each row must have the same sum. Let me check if that's true. If the first row is 1, 2, 3, the sum is 6. The second row is 4, "
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I think the first thing to note is that the user is asking about the temperature of the Earth's atmosphere, specifically the stratosphere. So, I should start by recalling what the stratosphere is. It's the layer above the troposphere, right? The troposphere is the lowest layer, where most weather",
+     " areas. I'm not sure if that's the case, but I remember that the atmosphere is mostly nitrogen and oxygen, which are not flammable, so maybe the atmosphere doesn't support combustion in the same way. Also, the presence of water vapor might affect how fires behave. Maybe the humidity is higher, which could",
+     " make it more intense. Maybe add some turbulence or roughness.\n\nWait, the user mentioned \"turbulence\" in the previous query, so maybe the current query is a follow-up. Let me check the history.\n\nIn the previous query, the user asked for a more intense version with turbulence. Now, they might",
+     " of the city. Maybe the first time they saw each other, they were both in the same place, but that doesn't necessarily mean they were in love. They could have been in a crowd, or maybe they were on opposite sides of a building. \n\nWait, the user mentioned \"first time they saw each other"
+    ],
+    "corrupt": [
+     " I think the first thing to note is that the user is asking about the temperature of the Earth's atmosphere, specifically the stratosphere. So, I should start by recalling what the stratosphere is. It's the layer above the troposphere, right? The troposphere is the lowest layer, where most weather",
+     "'s the same as the number of ways to choose 2 points from the 5 points on the circle, which is C(5,2) = 10. But wait, no. Because if we choose 2 points, they form a chord, but the chords can be of different lengths. However,",
+     " the user is asking for the meaning of the word \"mimic\". \n\nOkay, let's start by recalling what I know about the word \"mimic\". It's a verb, right? So the primary meaning is to imitate or copy someone else's actions, speech, or behavior. For example,",
+     " 152 153 154 155 156 157 158 159 160 161 162 163 164 165 166 167"
+    ],
+    "chanswap": [
+     " I think the first thing to note is that the user is asking about the temperature of the Earth's atmosphere, specifically the stratosphere. So, I should start by recalling what the stratosphere is. It's the layer above the troposphere, right? The troposphere is the lowest layer, where most weather",
+     "'s... the......first... storm... of... the... year. Maybe... it's... the... first... storm... of... the... year... or... maybe... it's... the... first... storm... of... the... year... or... maybe... it's... the... first... storm...",
+     " or maybe the user is referring to the days of the week, but that's less likely. \n\nAlternatively, maybe the user is asking for a list of the days of the week, but that would be a simple list. However, the mention of \"rivers\" and \"trees\" suggests a more creative or metaphor",
+     " good for the environment, but it's also a very scenic area. The user might be looking for a mix of activities and nature. Maybe they want a place that's not too crowded, so the remote location is a plus. They might also want to know if there are any specific trails or viewpoints. I should mention"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " safety systems, like the ones in the 787, can't be too heavy. So maybe the 787's design allows for those systems to be lighter?\n\nWait, the 787 uses more composites, which are lighter than aluminum. That could mean the overall structure is lighter, so",
+     " is the name of a book, but I'm not sure. Maybe it's a title I'm trying to recall. Let me think. The user might be referring to a book that has a similar title, like \"The Seven Husbands of Evelyn Hugo\" or \"The Hate U Give.\" But I need to",
+     " check if the first name is \"John\" and the last name is \"Doe\". If so, return \"Hello, John Doe!\".\nOtherwise, return \"Hello, [First Name] [Last Name]!\" with the actual names.\n\nFor example:\nIf the input is \"John Doe\", the output should be",
+     " 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19,"
+    ],
+    "corrupt": [
+     " safety systems, like the ones in the 787, can't be too heavy. So maybe the 787's design allows for those systems to be lighter?\n\nWait, the 787 uses more composites, which are lighter than aluminum. That could mean the overall structure is lighter, so",
+     " parts of the sky, like the Southern Cross, which is visible in the Southern Hemisphere but not the Northern. \n\nAnother factor is the Earth's axial tilt, which causes different parts of the sky to be visible depending on the time of year and latitude. For instance, during certain seasons, the Northern Hemisphere might see the",
+     " polar regions. So, the fact that the Arctic is warming faster than the rest of the world is not surprising. But the issue is that the warming in the Arctic is happening more rapidly than other regions. \n\nThen there's the topic of the \"Arctic amplification\" effect. I think this is related to the",
+     " I think I need to check the exact composition of the EDR. The EDR is the emergency response plan, right? So the EDR is supposed to have the steps for responding to an emergency. But the EDR is not the same as the EAP. The EAP is the overall emergency plan. So"
+    ],
+    "chanswap": [
+     " safety systems, like the ones in the 787, can't be too heavy. So maybe the 787's design allows for those systems to be lighter?\n\nWait, the 787 uses more composites, which are lighter than aluminum. That could mean the overall structure is lighter, so",
+     " might be a mix of different genres, such as a thriller, drama, or comedy, depending on the plot. The user is asking for a list of movies that are similar in style, theme, or genre to \"The Art of the Steal.\" However, without knowing the specific movie, it's challenging to provide",
+     " with the correct answer. So, the user might be looking for a more detailed explanation or a different approach. Let me check if the answer is accurate.\n\nThe user's answer is \"Yes, the statement is correct.\" The original statement is \"If two triangles are similar, then the ratio of their areas is equal to",
+     " the field. That's the key. So, the main idea is that the field is a vector field, and the flux through a surface is the integral of the field over that surface. But in this case, the field is given as a scalar function. Wait, no, the field here is the gravitational field."
+    ]
+   }
+  ]
+ }
+}

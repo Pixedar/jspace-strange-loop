@@ -1,0 +1,685 @@
+{
+ "tag": "fcst_learned_l1_cx",
+ "chan": "fcst",
+ "reader": "learned",
+ "lam": 1.0,
+ "ploss": "ncex",
+ "nll_own": [
+  0.9002987742424011,
+  1.7554309368133545,
+  1.8384103775024414,
+  1.8854973316192627,
+  1.9215768575668335,
+  1.8968604803085327,
+  1.9189155101776123,
+  1.9322375059127808
+ ],
+ "nll_foreign": [
+  0.9002987742424011,
+  1.9647141695022583,
+  2.058987617492676,
+  2.1053638458251953,
+  2.1282763481140137,
+  2.1107776165008545,
+  2.1388206481933594,
+  2.1478445529937744
+ ],
+ "nll_stale": [
+  0.9002987742424011,
+  1.7554309368133545,
+  1.9268393516540527,
+  1.9548559188842773,
+  1.9973630905151367,
+  1.9732255935668945,
+  1.9967634677886963,
+  2.0077826976776123
+ ],
+ "bnd_own": 3.701472282409668,
+ "bnd_foreign": 4.776395797729492,
+ "necessity_foreign": [
+  0.21512196958065033,
+  0.0041769458912312984
+ ],
+ "necessity_stale": [
+  0.07722222805023193,
+  0.001455829944461584
+ ],
+ "swap_pull_state": [
+  0.18087980151176453,
+  0.005547483451664448
+ ],
+ "swap_pull_forecast": [
+  0.2308862805366516,
+  0.006210781633853912
+ ],
+ "swap_stay": 0.9071657061576843,
+ "swap_dnll": 0.01399300992488861,
+ "S_cos": [
+  0.6974136233329773,
+  0.7155236005783081,
+  0.7219405174255371,
+  0.7136537432670593,
+  0.7176455855369568,
+  0.7174493670463562,
+  0.7160431146621704
+ ],
+ "R2": {
+  "S": 0.2842665910720825,
+  "persistence": 0.2073342204093933,
+  "segment_mean": -0.0018489360809326172
+ },
+ "collapse": 0.28361842036247253,
+ "retrieval": {
+  "S": 0.6060714381081718,
+  "persistence": 0.38357143316950115,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.681917130947113,
+  0.8343592286109924,
+  0.9016475081443787,
+  0.9373602271080017,
+  0.9551419019699097
+ ],
+ "identity_donor": [
+  0.47997239232063293,
+  0.32350555062294006,
+  0.2401646375656128,
+  0.1683592051267624,
+  0.12443958222866058
+ ],
+ "nll_corrupt": [
+  0.9002987742424011,
+  1.7554309368133545,
+  1.8384103775024414,
+  2.1053638458251953,
+  1.9693678617477417,
+  1.915482521057129,
+  1.9259637594223022,
+  1.9364769458770752
+ ],
+ "track_fresh": [
+  0.6351884007453918,
+  0.687166154384613,
+  0.6995775699615479,
+  0.7083038091659546
+ ],
+ "track_stale": [
+  0.4873313009738922,
+  0.5922538638114929,
+  0.6391094923019409,
+  0.6601992845535278
+ ],
+ "observer_cos": [
+  0.6053938865661621,
+  0.6670738458633423,
+  0.6717352867126465,
+  0.6682450771331787,
+  0.669455349445343,
+  0.6647578477859497,
+  0.6667379140853882
+ ],
+ "baselines": {
+  "persistence": [
+   0.5764721035957336,
+   0.6884437799453735,
+   0.6949988603591919,
+   0.695059061050415,
+   0.6930045485496521,
+   0.695005476474762,
+   0.7041076421737671
+  ],
+  "segment_mean": [
+   0.29893654584884644,
+   0.28000810742378235,
+   0.26260972023010254,
+   0.2662425935268402,
+   0.2757948637008667,
+   0.2745210826396942,
+   0.2737424373626709
+  ],
+  "linear": [
+   0.7574586397139269,
+   0.7825361771862311,
+   0.7882420935106067,
+   0.7825128190926359,
+   0.7814431357691476,
+   0.7837933574968841,
+   0.7886143243002713
+  ]
+ },
+ "pr": 20.049346910757375,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "sausage",
+     "debris",
+     "effected",
+     "Needless",
+     "imprint",
+     "accordingly",
+     "Accordingly",
+     "rebel",
+     "kitty",
+     "dealt"
+    ],
+    "neg": [
+     "Maybe",
+     "maybe",
+     "Hmm",
+     "perhaps",
+     "paragraph",
+     "remember",
+     "mention",
+     "remembering",
+     "Perhaps",
+     "mentions"
+    ]
+   },
+   "1": {
+    "pos": [
+     "mention",
+     "Mention",
+     "mentioning",
+     "mentions",
+     "emphasize",
+     "highlight",
+     "Include",
+     "recommending",
+     "avoid",
+     "highlighting"
+    ],
+    "neg": [
+     "isn",
+     "wait",
+     "yeah",
+     "definitely",
+     "yes",
+     "Hmm",
+     "reportedly",
+     "Wait",
+     "typically",
+     "surely"
+    ]
+   },
+   "2": {
+    "pos": [
+     "might",
+     "isn",
+     "per",
+     "would",
+     "because",
+     "junction",
+     "meant",
+     "though",
+     "remember",
+     "remembers"
+    ],
+    "neg": [
+     "Simpsons",
+     "Buffy",
+     "Zack",
+     "Santana",
+     "Hou",
+     "Copa",
+     "Helmet",
+     "Fargo",
+     "Rocky",
+     "Bamboo"
+    ]
+   },
+   "3": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "explaining",
+     "huh",
+     "deterrent",
+     "Perhaps",
+     "Yeah",
+     "appealed",
+     "emphasized",
+     "perhaps"
+    ],
+    "neg": [
+     "recall",
+     "remembers",
+     "remember",
+     "recalls",
+     "memory",
+     "Recall",
+     "recalled",
+     "confuse",
+     "remembered",
+     "Memory"
+    ]
+   },
+   "4": {
+    "pos": [
+     "Luckily",
+     "Fortunately",
+     "touchdowns",
+     "councillors",
+     "Lastly",
+     "deeds",
+     "resolutions",
+     "Provides",
+     "dopamine",
+     "Taking"
+    ],
+    "neg": [
+     "definitely",
+     "categorized",
+     "classified",
+     "Definitely",
+     "notable",
+     "famous",
+     "not",
+     "iconic",
+     "classify",
+     "commonly"
+    ]
+   },
+   "5": {
+    "pos": [
+     "fandom",
+     "Marvel",
+     "Batman",
+     "films",
+     "franchise",
+     "actresses",
+     "actress",
+     "film",
+     "fan",
+     "Deadpool"
+    ],
+    "neg": [
+     "heard",
+     "might",
+     "shady",
+     "believes",
+     "should",
+     "needs",
+     "recalls",
+     "remember",
+     "hiking",
+     "learnt"
+    ]
+   },
+   "6": {
+    "pos": [
+     "Greatest",
+     "blockbuster",
+     "Rookie",
+     "Quite",
+     "Playboy",
+     "Fury",
+     "storyline",
+     "Amazing",
+     "Dodgers",
+     "Winning"
+    ],
+    "neg": [
+     "instruments",
+     "guitar",
+     "instrument",
+     "guitars",
+     "chord",
+     "chords",
+     "musical",
+     "percussion",
+     "Instruments",
+     "musicians"
+    ]
+   },
+   "7": {
+    "pos": [
+     "they",
+     "someone",
+     "interpreting",
+     "some",
+     "she",
+     "could",
+     "exercising",
+     "politicians",
+     "seeking",
+     "Loki"
+    ],
+    "neg": [
+     "Probably",
+     "guitar",
+     "Definitely",
+     "Certainly",
+     "probable",
+     "definitely",
+     "obvious",
+     "violin",
+     "musical",
+     "Guitar"
+    ]
+   }
+  },
+  "write_mean": [
+   "nonprofits",
+   "powerhouse",
+   "lobbyists",
+   "pricey",
+   "Costco",
+   "stripper",
+   "Latinos",
+   "heavyweight",
+   "supermarkets",
+   "softball"
+  ],
+  "write_pc0": {
+   "pos": [
+    "brakes",
+    "heavier",
+    "drawback",
+    "machinery",
+    "carbs",
+    "vape",
+    "muscles",
+    "aerospace",
+    "logistic",
+    "regulatory"
+   ],
+   "neg": [
+    "nickname",
+    "Coat",
+    "unnamed",
+    "nicknamed",
+    "Names",
+    "nick",
+    "Jesse",
+    "poet",
+    "poem",
+    "name"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "cucumber",
+    "cardboard",
+    "chickens",
+    "plantation",
+    "humanoid",
+    "rodents",
+    "geography",
+    "edible",
+    "chicken",
+    "Recipes"
+   ],
+   "neg": [
+    "condemnation",
+    "eyewitness",
+    "critic",
+    "persuaded",
+    "criticize",
+    "repeats",
+    "accusations",
+    "breakthrough",
+    "turnaround",
+    "overturned"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "Ernst",
+    "Named",
+    "Schmidt",
+    "Friedrich",
+    "Russ",
+    "Richardson",
+    "Werner",
+    "renamed",
+    "Julius",
+    "Lockheed"
+   ],
+   "neg": [
+    "feelings",
+    "creativity",
+    "emotional",
+    "improvised",
+    "storytelling",
+    "emotions",
+    "ideas",
+    "improv",
+    "creative",
+    "feeling"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "nightlife",
+    "Chennai",
+    "Leisure",
+    "motel",
+    "Ikea",
+    "Skate",
+    "Tourism",
+    "listings",
+    "Listings",
+    "Websites"
+   ],
+   "neg": [
+    "resumed",
+    "unconstitutional",
+    "defeating",
+    "restoring",
+    "maneuver",
+    "injuring",
+    "surrendered",
+    "surrender",
+    "drilled",
+    "regained"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6704888939857483,
+    0.13529765605926514,
+    0.08914322406053543,
+    0.10163641721010208,
+    0.08212026208639145,
+    0.05768324434757233,
+    0.04846131056547165,
+    0.022359220311045647
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.010506030172109604,
+    0.004947993904352188,
+    0.008300167508423328,
+    0.009416119195520878,
+    0.010923082940280437,
+    0.005439191125333309,
+    0.004850215278565884
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.14329767227172852,
+    0.16228750348091125,
+    0.1495678424835205,
+    0.16412761807441711,
+    0.15681380033493042,
+    0.17279177904129028,
+    0.17408625781536102,
+    0.18444381654262543
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6704888939857483,
+    0.13529765605926514,
+    0.08914322406053543,
+    0.016479291021823883,
+    0.01127326674759388,
+    0.005267402157187462,
+    0.014211890287697315,
+    0.008982080034911633
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.010506030172109604,
+    0.004947993904352188,
+    0.07737681269645691,
+    0.07826967537403107,
+    0.05298718065023422,
+    0.05092442035675049,
+    0.05973011627793312
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.16566675901412964,
+    0.1667632758617401,
+    0.18593837320804596,
+    0.19736021757125854,
+    0.19675777852535248
+   ],
+   "z_vs_donor_run": [
+    0.14329767227172852,
+    0.16228750348091125,
+    0.1495678424835205,
+    0.6363504528999329,
+    0.5454014539718628,
+    0.480157732963562,
+    0.437762975692749,
+    0.37814727425575256
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6704888939857483,
+    0.13529765605926514,
+    0.08914322406053543,
+    0.07236140966415405,
+    0.049787841737270355,
+    0.02748863212764263,
+    0.035631753504276276,
+    0.031113270670175552
+   ],
+   "topic_donor": [
+    -0.010004443116486073,
+    0.010506030172109604,
+    0.004947993904352188,
+    0.004673874471336603,
+    0.0198570154607296,
+    0.009864524938166142,
+    0.022356826812028885,
+    0.028205886483192444
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.4664126932621002,
+    0.4159791171550751,
+    0.3923197388648987,
+    0.36708807945251465,
+    0.35185521841049194
+   ],
+   "z_vs_donor_run": [
+    0.14329767227172852,
+    0.16228750348091125,
+    0.1495678424835205,
+    0.38522571325302124,
+    0.3499561548233032,
+    0.3265489339828491,
+    0.31418129801750183,
+    0.28406232595443726
+   ]
+  },
+  "S_cos_free": [
+   0.6607468724250793,
+   0.6835384368896484,
+   0.6936495304107666,
+   0.6964846849441528,
+   0.6963657736778259,
+   0.7184776663780212,
+   0.7113952040672302
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "donor_start": "<think>\nOkay, let me try to figure this out. The user is asking which of the car manufacturers Lila and Lincoln are Japanese or American. First, I need to check each name.\n\nStarting with \"Lila.\" I'm not sure about this one. I know that some car brands have names that might sound",
+    "own": [
+     " make a list of 10 most common words in the English language, in order. The list should include the word, its frequency, and the category it belongs to. The frequency should be based on the Corpus of Contemporary American English (COCA). \n\n1. The - 100,000",
+     " the number of atoms of each element should be equal on both sides. \n\nSo, first, let me write down the unbalanced equation again: \n\nC\u2082H\u2085OH + O\u2082 \u2192 CO\u2082 + H\u2082O\n\nNow, I need to balance the carbon, hydrogen, and oxygen. \n\nStarting with",
+     " the oil price will drop, which would make the country's production more competitive. But the problem is that the oil price is not just about the market; it's also about the geopolitical situation. So if we don't have a stable situation in the Middle East, the oil price could stay high. \n\nI need to",
+     " 4. So, the total number of letters is 4 letters. Wait, no, that's not right. Wait, the total number of letters in the word \"April\" is 5 letters. Wait, let me check again. A-P-R-I-L. Yes, 5 letters. So the total"
+    ],
+    "corrupt": [
+     " make a list of 10 most common words in the English language, in order. The list should include the word, its frequency, and the category it belongs to. The frequency should be based on the Corpus of Contemporary American English (COCA). \n\n1. The - 100,000",
+     " instrument. The problem is that the student is playing the instrument, but the teacher is not. The teacher is only playing the instrument when the student is not. The teacher is playing the instrument when the student is not. The student is playing the instrument when the teacher is not. The teacher is playing the instrument when the",
+     "... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ... ...",
+     " strings, but maybe not. Hmm. Well, the answer is definitely the same as the number of ways to arrange the 12 strings, which is 12! (since each string is unique). But maybe I'm missing something here. Wait, the problem says \"strings of length 5\" and \""
+    ],
+    "chanswap": [
+     " make a list of 10 most common words in the English language, in order. The list should include the word, its frequency, and the category it belongs to. The frequency should be based on the Corpus of Contemporary American English (COCA). \n\n1. The - 100,000",
+     " the \"p\" in \"piano\" and the \"p\" in \"pianist\" are the same letter, but they're different sounds. So, the same letter can be pronounced differently depending on the context, which is called \"phonetic variation.\" \n\nBut wait, I should check if that's actually",
+     " the most important thing is to have fun. \n\nBut I think I need to have a better instrument. \n\nSo, I'm going to start by learning the piano. \n\nI think the piano is the most important instrument for a musician. \n\nIt's the best way to understand music. \n\nSo, I'm going",
+     " might need to adjust the structure. Let me think. The user asked for a list of 10 tips, each with a subheading and a brief explanation. The examples provided include things like starting with a strong opening, using clear language, etc. The user also mentioned that the response should be in English, not"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "donor_start": "<think>\nOkay, the user is asking about April Fools' Day. Let me start by recalling what I know. April Fools' Day is celebrated on April 1st, right? It's a day when people play pranks or jokes on each other. But I need to make sure I get the details",
+    "own": [
+     " I think the first thing to consider is whether the user is asking about the different types of whales, or if they're asking about a specific type of whale. I should mention the main categories: baleen whales and toothed whales. But I also need to mention the main types under each category, like hump",
+     " wild animals. They are usually found in the wild, but they can also be domesticated. Wild animals are not typically kept as pets, but they can be. For example, wild dogs can be domesticated. \n\nWait, I think I might be mixing up some terms here. Let me check. Domesticated animals",
+     " and the other is a Sable.\n\nSo, the Sable is a different animal. I need to check if Sable is a type of bear or another animal. Sable is a type of mammal, specifically a member of the weasel family, Mustelidae. They are similar to raccoons",
+     " marine mammals. Marine mammals are mammals that live in the sea, like dolphins and seals. They're warm-blooded, have hair, and give birth to live young. But they're also different from other mammals. They can't swim like fish, so they use their limbs to move through the water. Some have fl"
+    ],
+    "corrupt": [
+     " I think the first thing to consider is whether the user is asking about the different types of whales, or if they're asking about a specific type of whale. I should mention the main categories: baleen whales and toothed whales. But I also need to mention the main types under each category, like hump",
+     " the same as before. Wait, maybe I should check if the user is asking about the same thing. Let me make sure.\n\nThe user first asked about the difference between a V6 and V8 engine, then about the difference between a V6 and a 4-cylinder. Now they're asking about the difference",
+     " to be a good parent. \n\nI should also mention the different types of parenting styles, like authoritative, permissive, and authoritarian, but maybe that's getting too detailed. The key is to explain how these styles affect child development. \n\nWait, the user asked for a guide, so maybe I should structure it with",
+     " different types of cakes. But the most popular ones are chocolate, vanilla, and strawberry. I should mention their unique characteristics. For example, chocolate cakes have a rich, intense flavor, and they often have a deep brown color. Vanilla is more classic and sweet, with a smooth texture. Strawberry is usually lighter, with"
+    ],
+    "chanswap": [
+     " I think the first thing to consider is whether the user is asking about the different types of whales, or if they're asking about a specific type of whale. I should mention the main categories: baleen whales and toothed whales. But I also need to mention the main types under each category, like hump",
+     ". mammals. The biggest of the primates, the gorilla, is a herbivore, and the smallest, the mouse lemur, is a carnivore. So, the order Primates includes both herbivores and carnivores. But I think that the correct answer is that primates are mostly herbiv",
+     ", but I think that's the only way to go. \n\nSo, the answer is, maybe, \"Yes, they are similar in that they are both mammals, but they are different in that one is a predator and the other is a herbivore.\" But I should check if they are both mammals. Wait",
+     ", 0.25, 0.5, 0.75, 1.0, 1.25, 1.5, 1.75, 2.0, 2.25, 2.5, 2.75, 3"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking about the main areas of assembly in an automotive factory. Let me start by recalling what I know about automotive manufacturing processes. I remember that assembly lines are a big part of it, but there are several stages. Let me break it down step by step.\n\nFirst, there's the",
+    "donor_start": "<think>\nOkay, the user is asking where sloths live. Let me start by recalling what I know about sloths. There are two main types: two-toed and three-toed sloths. Both are arboreal, meaning they live in trees. They're found in Central and South America, right? But",
+    "own": [
+     " weather conditions, and the type of material. For example, a car made of metal will have different aerodynamics than one made of plastic. The shape of the car, like a streamlined body, can reduce drag. Also, the driver's weight and the fuel load affect the car's performance. So, it's not",
+     " the same way that the Sun doesn't have to be a specific distance from Earth to provide the same amount of light, the distance doesn't matter as much for the gravitational pull. Wait, but isn't gravitational pull dependent on distance? Yes, but the gravitational force decreases with the square of the distance, so even if",
+     " it's not a problem. But I think the main issue is that in the first case, the user might have a different setup or different data. For example, if the user is using a different type of data, or if they have different constraints. So, maybe the first case is a problem because of some specific",
+     "I should also mention that the business is registered in the UK, so the user might need a UK-based provider. Also, the user might be looking for a solution that's not too expensive, since they're a small business. Maybe they're on a budget. I should present different options, like free vs. paid"
+    ],
+    "corrupt": [
+     " weather conditions, and the type of material. For example, a car made of metal will have different aerodynamics than one made of plastic. The shape of the car, like a streamlined body, can reduce drag. Also, the driver's weight and the fuel load affect the car's performance. So, it's not",
+     " domesticated animals. The domesticated animals are usually kept by humans for their utility. They can be used for food, clothing, transport, etc. So, the domesticated animals are animals that have been bred by humans for a long time, which makes them more adapted to living with humans. Examples of domesticated animals",
+     " and so on.\n\nWait, but I think the user is asking for the number of species in the order, not the number of orders. So maybe I need to clarify that. But the user might be confused between order and species. Let me check.\n\nActually, the order is a taxonomic rank. So, for",
+     " But I think they are in the same area. So maybe I should check if they are in the same state. Wait, the question is about the capital city of the state where the Great Lakes are located. The Great Lakes are in the Midwest, so the states involved are Michigan, Ohio, Indiana, Illinois, and"
+    ],
+    "chanswap": [
+     " weather conditions, and the type of material. For example, a car made of metal will have different aerodynamics than one made of plastic. The shape of the car, like a streamlined body, can reduce drag. Also, the driver's weight and the fuel load affect the car's performance. So, it's not",
+     " the product of all the numbers from 1 to 100, which is called factorial 100, written as 100! \n\nBut wait, the problem is asking for the sum of all the numbers from 1 to 100, not the product. So I need to clarify",
+     " if you have a question about the product or need help, please contact us. We will help you as soon as possible. Thank you for your support.\nThe product is in the process of being updated, and the appearance and functions may be different. Please be informed in advance. Thank you for your support. \n\nThe",
+     " the state of the art in the field of optical coherence tomography (OCT) is being reviewed. The review covers the optical coherence tomography (OCT) as a non-invasive, high-resolution imaging technique that has become a cornerstone in ophthalmology. The review will discuss the different types of OCT systems,"
+    ]
+   }
+  ]
+ }
+}

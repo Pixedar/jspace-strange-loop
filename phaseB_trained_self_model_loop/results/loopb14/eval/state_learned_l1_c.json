@@ -1,0 +1,685 @@
+{
+ "tag": "state_learned_l1_c",
+ "chan": "state",
+ "reader": "learned",
+ "lam": 1.0,
+ "ploss": "nce",
+ "nll_own": [
+  0.805271327495575,
+  1.6258267164230347,
+  1.7736430168151855,
+  1.8680073022842407,
+  1.9042774438858032,
+  1.9225938320159912,
+  1.9138154983520508,
+  1.9488258361816406
+ ],
+ "nll_foreign": [
+  0.805271327495575,
+  1.805917501449585,
+  1.9310081005096436,
+  2.0251145362854004,
+  2.0393593311309814,
+  2.0780434608459473,
+  2.0601813793182373,
+  2.082559585571289
+ ],
+ "nll_stale": [
+  0.805271327495575,
+  1.6258267164230347,
+  1.8576658964157104,
+  1.9177918434143066,
+  1.9456084966659546,
+  1.998274326324463,
+  1.9822841882705688,
+  1.965755581855774
+ ],
+ "bnd_own": 3.7686426639556885,
+ "bnd_foreign": 4.643673419952393,
+ "necessity_foreign": [
+  0.15217064321041107,
+  0.0030731954611837864
+ ],
+ "necessity_stale": [
+  0.05603604018688202,
+  0.001954542938619852
+ ],
+ "swap_pull_state": [
+  0.03806276246905327,
+  0.0007273793453350663
+ ],
+ "swap_pull_forecast": [
+  0.04014480859041214,
+  0.0007264592568390071
+ ],
+ "swap_stay": 0.9956290125846863,
+ "swap_dnll": 0.08651103079319,
+ "S_cos": [
+  0.8737607598304749,
+  0.8928543329238892,
+  0.8911126852035522,
+  0.8893982172012329,
+  0.894369900226593,
+  0.8911193609237671,
+  0.8688774108886719
+ ],
+ "R2": {
+  "S": 0.6976726651191711,
+  "persistence": -0.25466597080230713,
+  "segment_mean": 0.25531554222106934
+ },
+ "collapse": 0.3377324342727661,
+ "retrieval": {
+  "S": 0.951071424143655,
+  "persistence": 0.05857142912490027,
+  "chance": 0.0025
+ },
+ "identity_own": [
+  0.5609983205795288,
+  0.6770626902580261,
+  0.7487707734107971,
+  0.7648248076438904,
+  0.8082519769668579
+ ],
+ "identity_donor": [
+  0.866553783416748,
+  0.7402269840240479,
+  0.6602698564529419,
+  0.5562958121299744,
+  0.4900403916835785
+ ],
+ "nll_corrupt": [
+  0.805271327495575,
+  1.6258267164230347,
+  1.7736430168151855,
+  2.0251145362854004,
+  1.9472830295562744,
+  1.9525741338729858,
+  1.9272483587265015,
+  1.9596461057662964
+ ],
+ "track_fresh": [
+  0.8705400228500366,
+  0.8893545269966125,
+  0.8892413377761841,
+  0.8697181940078735
+ ],
+ "track_stale": [
+  0.5345335602760315,
+  0.6151829361915588,
+  0.6378631591796875,
+  0.6635722517967224
+ ],
+ "observer_cos": [
+  0.9292030334472656,
+  0.9349267482757568,
+  0.9361624121665955,
+  0.9304599165916443,
+  0.9422991275787354,
+  0.9365986585617065,
+  0.920198380947113
+ ],
+ "baselines": {
+  "persistence": [
+   0.5419915318489075,
+   0.42448535561561584,
+   0.4167499840259552,
+   0.4496663212776184,
+   0.44913357496261597,
+   0.42476022243499756,
+   0.4255683124065399
+  ],
+  "segment_mean": [
+   0.6612274646759033,
+   0.6156043410301208,
+   0.604153037071228,
+   0.6018237471580505,
+   0.6113430857658386,
+   0.5476974248886108,
+   0.5572037696838379
+  ],
+  "linear": [
+   0.9325548460276623,
+   0.9397947640929033,
+   0.9420516037354006,
+   0.9393024744540263,
+   0.9450074073068021,
+   0.942156323639074,
+   0.929701598759716
+  ]
+ },
+ "pr": 12.726706332864518,
+ "words": {
+  "reader_axes": {
+   "0": {
+    "pos": [
+     "maybe",
+     "Maybe",
+     "remember",
+     "perhaps",
+     "remembers",
+     "hmm",
+     "wait",
+     "recalling",
+     "remembering",
+     "yeah"
+    ],
+    "neg": [
+     "Accordingly",
+     "Fortunately",
+     "accordingly",
+     "Anxiety",
+     "Indeed",
+     "unnoticed",
+     "remarkably",
+     "Nothing",
+     "regarded",
+     "Notices"
+    ]
+   },
+   "1": {
+    "pos": [
+     "recall",
+     "recalled",
+     "recalls",
+     "memories",
+     "Recall",
+     "recalling",
+     "remember",
+     "remembered",
+     "remembers",
+     "remembering"
+    ],
+    "neg": [
+     "maybe",
+     "Maybe",
+     "yeah",
+     "Hmm",
+     "huh",
+     "wait",
+     "hmm",
+     "perhaps",
+     "let",
+     "Wait"
+    ]
+   },
+   "2": {
+    "pos": [
+     "tha",
+     "tho",
+     "japanese",
+     "int",
+     "tai",
+     "hai",
+     "thou",
+     "too",
+     "aspect",
+     "aspects"
+    ],
+    "neg": [
+     "Cavaliers",
+     "Shaman",
+     "quarterbacks",
+     "Pussy",
+     "Meghan",
+     "Conor",
+     "Playoff",
+     "Emmy",
+     "Viagra",
+     "playoff"
+    ]
+   },
+   "3": {
+    "pos": [
+     "hobbies",
+     "paragraphs",
+     "avoidance",
+     "moderation",
+     "leash",
+     "avoid",
+     "couch",
+     "sunscreen",
+     "puppy",
+     "obedience"
+    ],
+    "neg": [
+     "Remember",
+     "remember",
+     "remembers",
+     "recall",
+     "recalling",
+     "remembered",
+     "Recall",
+     "remembering",
+     "definitely",
+     "heard"
+    ]
+   },
+   "4": {
+    "pos": [
+     "percussion",
+     "instruments",
+     "instrument",
+     "violin",
+     "flute",
+     "musical",
+     "guitar",
+     "Instruments",
+     "bamboo",
+     "drums"
+    ],
+    "neg": [
+     "Deadpool",
+     "Dumbledore",
+     "Netflix",
+     "Voldemort",
+     "Hulk",
+     "Avengers",
+     "Thrones",
+     "Rowling",
+     "fandom",
+     "alliances"
+    ]
+   },
+   "5": {
+    "pos": [
+     "instrument",
+     "instruments",
+     "musician",
+     "percussion",
+     "guitar",
+     "orchestra",
+     "musical",
+     "Instruments",
+     "musicians",
+     "instrumentation"
+    ],
+    "neg": [
+     "parks",
+     "beaches",
+     "outdoor",
+     "Outdoor",
+     "beach",
+     "pricey",
+     "hiking",
+     "comfy",
+     "vacations",
+     "Parks"
+    ]
+   },
+   "6": {
+    "pos": [
+     "mention",
+     "mentioned",
+     "Mention",
+     "mentioning",
+     "mentions",
+     "famous",
+     "acclaimed",
+     "notable",
+     "underrated",
+     "names"
+    ],
+    "neg": [
+     "remember",
+     "guitar",
+     "recall",
+     "remembers",
+     "remembering",
+     "violin",
+     "recalls",
+     "instruments",
+     "Yamaha",
+     "Recall"
+    ]
+   },
+   "7": {
+    "pos": [
+     "spark",
+     "Spark",
+     "scala",
+     "sparks",
+     "Probably",
+     "Maybe",
+     "Perhaps",
+     "Seems",
+     "yeah",
+     "companion"
+    ],
+    "neg": [
+     "museums",
+     "tourist",
+     "beaches",
+     "Disneyland",
+     "Beach",
+     "resorts",
+     "Basketball",
+     "Memorial",
+     "sports",
+     "Surf"
+    ]
+   }
+  },
+  "write_mean": [
+   "Mayweather",
+   "Albany",
+   "Nadu",
+   "Blackhawks",
+   "Atlas",
+   "Smithsonian",
+   "monarchy",
+   "Waterloo",
+   "Parkway",
+   "Medicaid"
+  ],
+  "write_pc0": {
+   "pos": [
+    "Blockchain",
+    "Theme",
+    "Transcript",
+    "blockchain",
+    "Telegram",
+    "upload",
+    "Continued",
+    "Continue",
+    "Topic",
+    "Essay"
+   ],
+   "neg": [
+    "Wimbledon",
+    "Stuttgart",
+    "Norwich",
+    "rugby",
+    "Pune",
+    "gaping",
+    "Beckham",
+    "baseman",
+    "Brighton",
+    "Sunderland"
+   ]
+  },
+  "write_pc1": {
+   "pos": [
+    "sports",
+    "sport",
+    "football",
+    "Sport",
+    "mammals",
+    "Mercury",
+    "beat",
+    "Adidas",
+    "pee",
+    "athletes"
+   ],
+   "neg": [
+    "Kurdish",
+    "Kurds",
+    "Kurdistan",
+    "Romanian",
+    "Devices",
+    "Armenia",
+    "Armenian",
+    "Screening",
+    "Hungarian",
+    "Plugins"
+   ]
+  },
+  "write_pc2": {
+   "pos": [
+    "duly",
+    "tourism",
+    "tourist",
+    "souvenir",
+    "legalize",
+    "ghetto",
+    "adequately",
+    "Tourism",
+    "Fucking",
+    "Lima"
+   ],
+   "neg": [
+    "goalie",
+    "furry",
+    "Ski",
+    "challenger",
+    "Aspen",
+    "Foam",
+    "sled",
+    "mammals",
+    "Tasmania",
+    "scalp"
+   ]
+  },
+  "write_pc3": {
+   "pos": [
+    "promo",
+    "sauce",
+    "Lowe",
+    "fra",
+    "mun",
+    "Keystone",
+    "Comcast",
+    "Sauce",
+    "podcasts",
+    "clans"
+   ],
+   "neg": [
+    "reef",
+    "Accordingly",
+    "Amend",
+    "Assumes",
+    "coral",
+    "contest",
+    "detectives",
+    "Sadly",
+    "spaceship",
+    "Guidelines"
+   ]
+  }
+ },
+ "free": {
+  "own": {
+   "topic_own": [
+    0.6815364956855774,
+    0.13246431946754456,
+    0.11213168501853943,
+    0.08612799644470215,
+    0.07010159641504288,
+    0.05191487446427345,
+    0.031696222722530365,
+    0.02158930152654648
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.004525396507233381,
+    -0.003914324566721916,
+    -0.0018036862602457404,
+    0.007667031604796648,
+    0.00737490551546216,
+    -0.004162690602242947,
+    0.008299467153847218
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0
+   ],
+   "z_vs_donor_run": [
+    0.5799592137336731,
+    0.44360673427581787,
+    0.4093514680862427,
+    0.44556349515914917,
+    0.4469602704048157,
+    0.4812186062335968,
+    0.42877233028411865,
+    0.4667724668979645
+   ]
+  },
+  "corrupt": {
+   "topic_own": [
+    0.6815364956855774,
+    0.13246431946754456,
+    0.11213168501853943,
+    0.010692029260098934,
+    0.0050064995884895325,
+    -0.0004933371674269438,
+    0.009575782343745232,
+    0.0007785898633301258
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.004525396507233381,
+    -0.003914324566721916,
+    0.07329636067152023,
+    0.04859916865825653,
+    0.04782375693321228,
+    0.05321040004491806,
+    0.02226319909095764
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.4345671236515045,
+    0.43308398127555847,
+    0.4617778956890106,
+    0.4285033941268921,
+    0.4586724638938904
+   ],
+   "z_vs_donor_run": [
+    0.5799592137336731,
+    0.44360673427581787,
+    0.4093514680862427,
+    0.9040408134460449,
+    0.8180329203605652,
+    0.7648876905441284,
+    0.7170340418815613,
+    0.6812435984611511
+   ]
+  },
+  "chanswap": {
+   "topic_own": [
+    0.6815364956855774,
+    0.13246431946754456,
+    0.11213168501853943,
+    0.03625559061765671,
+    0.030738025903701782,
+    0.03808680176734924,
+    0.04137442260980606,
+    0.018735943362116814
+   ],
+   "topic_donor": [
+    -0.008841468952596188,
+    -0.004525396507233381,
+    -0.003914324566721916,
+    0.04844079911708832,
+    -0.005521991290152073,
+    0.012563446536660194,
+    0.0010131499730050564,
+    -0.005781670566648245
+   ],
+   "z_vs_own_run": [
+    1.0,
+    1.0,
+    1.0,
+    0.8966487646102905,
+    0.8156296014785767,
+    0.7689723968505859,
+    0.6950844526290894,
+    0.6556652188301086
+   ],
+   "z_vs_donor_run": [
+    0.5799592137336731,
+    0.44360673427581787,
+    0.4093514680862427,
+    0.49633198976516724,
+    0.4900253415107727,
+    0.5107731819152832,
+    0.452237993478775,
+    0.47172093391418457
+   ]
+  },
+  "S_cos_free": [
+   0.861710250377655,
+   0.8847934603691101,
+   0.8911261558532715,
+   0.8808625340461731,
+   0.8874700665473938,
+   0.8850352764129639,
+   0.878437876701355
+  ],
+  "examples": [
+   {
+    "trace_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "donor_start": "<think>\nOkay, let's see. The question is: Kate's parents have three kids. The first kid's name is Peter, the second kid's name is Parker. What is the third kid's name?\n\nHmm. Wait, the first thing that comes to mind is that the question might be a trick question.",
+    "own": [
+     ", like the history of the art form itself.\n\nI should also consider different types of music. For example, classical music might have different origins compared to jazz or rock. Each genre has its unique story. Then there's the aspect of cultural influence. How did different cultures contribute to the development of music?\n\nThen there are",
+     " like maybe the term \"self\" is a social construct, but I'm not sure. Wait, but in the context of the question, it's more about the self as a concept, not necessarily the social construct aspect. Maybe the answer is more about the philosophical or psychological perspectives.\n\nI should also consider the role of",
+     " the person's own experience. But it's not just about the individual. It's also about the collective, the community, the culture. So, how can we apply this to real-world scenarios? Maybe in education, where teachers can use storytelling to make lessons more engaging. Or in leadership, where leaders can use storytelling",
+     " is a term that describes a group of people who have a shared sense of identity, often based on culture, history, or geography. This group may have a common language, traditions, or beliefs. It can also refer to a collective group with a shared purpose or interest.\n\nSimilarly, the term \"nation\" is often"
+    ],
+    "corrupt": [
+     ", like the history of the art form itself.\n\nI should also consider different types of music. For example, classical music might have different origins compared to jazz or rock. Each genre has its unique story. Then there's the aspect of cultural influence. How did different cultures contribute to the development of music?\n\nThen there are",
+     " a known value. For example, if the word is \"apple\", the letters are A, P, P, L, E. Each of these letters can be assigned a number from 1 to 26 (A=1, B=2, ..., Z=26). Then, the sum of the",
+     " problem. \n\nSo, the first step is to check if the user is a minor. If they are under 18, we can't proceed. If they are 18 or older, we can check if they have a valid ID. If they don't, we need to ask for it. If they",
+     " a new era of data integration, where AI and human expertise collaborate to extract insights from unstructured data.\n\nBut what about the challenges? The user might be concerned about data privacy, especially with unstructured data containing sensitive information. I should address that. Also, the cost of implementing these technologies might be a concern, but"
+    ],
+    "chanswap": [
+     ", like the history of the art form itself.\n\nI should also consider different types of music. For example, classical music might have different origins compared to jazz or rock. Each genre has its unique story. Then there's the aspect of cultural influence. How did different cultures contribute to the development of music?\n\nThen there are",
+     " not quite sure. But the user is asking for an explanation of how the code works, so I need to break it down step by step. Let's start with the first part of the code.\n\nThe code defines a function called count_vowels. It takes a string as input. Then, the function initializes a",
+     " market. Also, I need to know the percentage of the market that is captured by the top 10 companies in the industry. \n\nAdditionally, I need to know the main drivers of growth in the market, such as technological advancements, increasing demand from end-users, government policies, or economic factors. \n\nI should",
+     " to avoid being seen, maybe a non-confrontational approach. I don't want to draw attention. So, staying under the radar.\n\nBut if I'm doing something illegal, like hacking or fraud, I need to be more careful. Maybe use a pseudonym, avoid leaving digital footprints, and maybe use a"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "donor_start": "<think>\nOkay, the user is asking why Americans feel so strongly about gun control. I need to break this down. First, I should consider the historical context. The Second Amendment is a big part of this. It's in the Constitution, so it's a foundational element. Maybe mention the Founding Fathers' intent",
+    "own": [
+     " to list all the factors.\n\nFirst, I need to understand what a factor is. A factor is a number that divides another number without leaving a remainder. So, for any number, the factors are the numbers that can multiply together to get that number. For example, the factors of 6 are 1, ",
+     " a cold, dry place, like a refrigerator or a cool, dry storage room. Avoid direct sunlight and high humidity. If you're not using it immediately, store it in an airtight container to prevent moisture and pests. Make sure it's completely dry before storing, otherwise it might mold.\n\nBut wait, the",
+     " group of words. Maybe they can be used to express the same meaning as the original sentence. \n\nThe original sentence is: \"We need to get a move on if we want to catch the train.\"\n\nPossible synonyms or similar phrases: \"hurry up,\" \"speed up,\" \"rush,\" \"quickly move on",
+     " the layout and structure of the building, ensuring it meets the client's needs and the project's goals.\n\n### 3. **Sustainability and Energy Efficiency**\n   - Emphasize the use of sustainable materials and energy-efficient systems, like solar panels or rainwater harvesting, to align with modern trends and reduce costs over"
+    ],
+    "corrupt": [
+     " to list all the factors.\n\nFirst, I need to understand what a factor is. A factor is a number that divides another number without leaving a remainder. So, for any number, the factors are the numbers that can multiply together to get that number. For example, the factors of 6 are 1, ",
+     " about the importance of sleep. Maybe a study on sleep deprivation, like the Stanford experiment? Or the effects of sleep on memory consolidation. Also, I remember that REM sleep is linked to dreaming. Oh, and there's the concept of circadian rhythms. I should mention the different stages of sleep: NREM and REM",
+     ", but also in the world of work. For example, the use of AI in hiring processes can lead to biased decisions if not properly monitored. \n\nAnother example is in the healthcare sector. AI can analyze medical data to detect diseases earlier, but if the data is biased, it might miss certain groups. \n\nAlso,",
+     ", or a specific format, but they should be clear.\n\nAlso, I need to make sure that the examples are relevant to the field of AI and machine learning. Maybe mention some common models like GPT, BERT, or others. Avoid jargon unless it's necessary, but the user might be familiar with it"
+    ],
+    "chanswap": [
+     " to list all the factors.\n\nFirst, I need to understand what a factor is. A factor is a number that divides another number without leaving a remainder. So, for any number, the factors are the numbers that can multiply together to get that number. For example, the factors of 6 are 1, ",
+     " about the importance of a balanced diet, regular exercise, and mental health. But I need to make sure it's not too generic. Maybe include specific examples or analogies that make it relatable. Also, how to structure the talk\u2014start with a hook, then break down each component, and end with a call",
+     ", and the other parts of the brain. So, the answer is the brainstem. But wait, the brainstem is part of the hindbrain, so the answer is hindbrain. Wait, the question says \"which part of the brain,\" so maybe they want the more specific part, like brainstem. But",
+     " is to use the formula for the sum of an arithmetic sequence: S_n = n/2 * (a_1 + a_n), where n is the number of terms, a_1 is the first term, and a_n is the last term.\n\nLet's apply this to our case. The sequence starts with"
+    ]
+   },
+   {
+    "trace_start": "<think>\nOkay, the user is asking for five factors to consider when deciding where to live. Let me start by breaking down the main aspects people usually think about. First, cost of living is a big one. People want to know if the place is affordable for their budget. Then, job opportunities are important because you",
+    "donor_start": "<think>\nOkay, I need to explain what investment banking is. Let me start by recalling what I know. Investment banking is a type of banking that deals with corporate finance, which includes things like underwriting, mergers and acquisitions, and asset management. But I should be more specific.\n\nFirst, maybe break it down",
+    "own": [
+     " need to be a real estate agent. That's a common path. But I'm not sure about the steps to get there.\n\nFirst, I should check the requirements. Do I need a real estate license? I think so. But how do I get that? Maybe I need to take a course and pass an exam",
+     " too expensive for me. I need a cheaper option.\n\nWait, maybe I can use a different approach. If the problem is about the cost, maybe I can calculate the total cost of the items and see if there's a discount or something. But the user didn't mention any discounts. Maybe they're looking for a",
+     " property of the land, which is a common resource. So maybe the government has to step in and regulate it. But I think that's more of a political question. As a geologist, I can say that the land is there, and the resources are there. It's up to the people to decide how to",
+     " a specific aspect of the service, like the user interface or the support team. Maybe the user is looking for a more detailed review or a comparison between different services. I should ask for more context to provide a helpful response.\n\nAlso, I should make sure the response is friendly and open-ended to encourage the user to share"
+    ],
+    "corrupt": [
+     " need to be a real estate agent. That's a common path. But I'm not sure about the steps to get there.\n\nFirst, I should check the requirements. Do I need a real estate license? I think so. But how do I get that? Maybe I need to take a course and pass an exam",
+     " a . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .",
+     " the \"dual\" of the problem, which is to find the maximum sum of a subarray, but with the twist of using a different approach.\n\nWait, maybe I can use the concept of Kadane's algorithm but modified. Let's think. The maximum sum of a subarray is the same as the minimum",
+     " services, and the process of transitioning from a traditional on-premises setup to a cloud-based solution.\n\nThe key components of cloud computing include:\n\n1. Infrastructure as a Service (IaaS): This provides computing resources such as servers, storage, and networking. Examples include Amazon Web Services (AWS) and Microsoft Azure."
+    ],
+    "chanswap": [
+     " need to be a real estate agent. That's a common path. But I'm not sure about the steps to get there.\n\nFirst, I should check the requirements. Do I need a real estate license? I think so. But how do I get that? Maybe I need to take a course and pass an exam",
+     " a bit more. Maybe the problem is that the user is not familiar with the concept of a \"buffer\" or \"buffering\" in general. I should explain that buffering is a common feature in media playback to handle data streaming, and it's not specific to YouTube. Maybe the user is on a slow internet connection",
+     " for the job, and I've been working on it for a while. But I need to get this done by a certain time, so maybe I should start by setting up a timeline. First, I need to outline the main tasks. Then break them down into smaller steps. Maybe prioritize the most critical tasks first.\n\n",
+     ", for example, social media, online forums, and digital marketing. The rise of the internet has made it easier for people to access and share information, which has led to the growth of these platforms. They provide a space for people to connect, share ideas, and build communities around common interests.\n\nMoreover, mobile devices"
+    ]
+   }
+  ]
+ }
+}

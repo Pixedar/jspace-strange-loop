@@ -1,0 +1,120 @@
+analysed g 0.05 (/workspace/runs/ring/qwen3-8b/main)
+analysed g 0.0125 (/workspace/runs/ring/qwen3-8b/gains/g0.0125)
+analysed g 0.025 (/workspace/runs/ring/qwen3-8b/gains/g0.025)
+analysed g 0.1 (/workspace/runs/ring/qwen3-8b/gains/g0.1)
+analysed g 0.2 (/workspace/runs/ring/qwen3-8b/gains/g0.2)
+
+/workspace/runs/ring/qwen3-8b: gains [0.0125, 0.025, 0.05, 0.1, 0.2] (picked 0.05), sigma 0.05
+
+explore     g 0.0125  g 0.025   g 0.05    g 0.1    g 0.2
+free           16.49    16.01    15.47    11.99     6.35
+content        16.16    15.56    14.26     7.91     4.16
+vel            16.10    16.11    16.73    16.93    17.34
+ring_pred      15.46    14.12    12.43     7.89     4.37
+yoked_pred     15.48    14.27    12.51     8.09     4.53
+ring_err       17.22    17.77    19.21    18.58    11.84
+yoked_err      17.13    17.68    19.01    16.87     8.11
+shuf_err       16.87    17.17    17.98    16.88    10.67
+rand_err       16.52    16.12    15.87    13.38     7.99
+frozen_err     17.00    17.33    17.37    14.66     6.48
+
+stuck       g 0.0125  g 0.025   g 0.05    g 0.1    g 0.2
+free           0.000    0.000    0.015    0.283    0.785
+content        0.000    0.005    0.123    0.692    0.883
+vel            0.000    0.000    0.002    0.010    0.010
+ring_pred      0.000    0.000    0.025    0.558    0.883
+yoked_pred     0.000    0.001    0.024    0.507    0.882
+ring_err       0.000    0.000    0.003    0.048    0.338
+yoked_err      0.000    0.000    0.003    0.072    0.500
+shuf_err       0.000    0.000    0.004    0.018    0.022
+rand_err       0.000    0.000    0.010    0.171    0.633
+frozen_err     0.000    0.000    0.008    0.116    0.683
+
+lag100      g 0.0125  g 0.025   g 0.05    g 0.1    g 0.2
+free           0.713    0.727    0.749    0.788    0.808
+content        0.719    0.736    0.769    0.786    0.824
+vel            0.709    0.712    0.717    0.728    0.711
+ring_pred      0.724    0.745    0.778    0.829    0.925
+yoked_pred     0.725    0.744    0.779    0.830    0.924
+ring_err       0.704    0.706    0.702    0.676    0.558
+yoked_err      0.704    0.706    0.701    0.664    0.469
+shuf_err       0.704    0.705    0.700    0.675    0.582
+rand_err       0.714    0.727    0.748    0.781    0.802
+frozen_err     0.705    0.707    0.706    0.681    0.606
+
+beta        g 0.0125  g 0.025   g 0.05    g 0.1    g 0.2
+free            0.28     0.39     0.60     1.07     1.35
+content         0.36     0.52     0.93     1.40     1.66
+vel             0.24     0.29     0.45     0.69     1.03
+ring_pred       0.29     0.39     0.52     0.87     1.20
+yoked_pred      0.28     0.37     0.51     0.84     1.17
+ring_err        0.26     0.36     0.59     1.11     1.78
+yoked_err       0.27     0.37     0.68     1.29     1.86
+shuf_err        0.29     0.40     0.64     1.11     1.40
+rand_err        0.28     0.38     0.59     1.01     1.38
+frozen_err      0.27     0.36     0.59     1.18     1.77
+
+words       g 0.0125  g 0.025   g 0.05    g 0.1    g 0.2
+free            65.4     61.1     54.5     40.2     32.3
+content         62.9     58.5     48.9     34.2     30.5
+vel             67.6     69.4     70.7     66.7     72.4
+ring_pred       61.9     55.8     44.5     30.8     24.9
+yoked_pred      61.8     55.6     44.2     31.8     24.6
+ring_err        70.5     70.3     73.0     83.3     97.8
+yoked_err       70.6     69.4     72.9     82.3     98.4
+shuf_err        69.1     68.5     70.1     67.3     75.2
+rand_err        66.5     61.3     56.2     40.5     33.2
+frozen_err      70.6     70.6     75.3     86.0     89.4
+
+synchrony between minds of a condition (state / motion, mean cosine at the same step)
+free         0.93/0.61  0.93/0.60  0.94/0.56  0.92/0.46  0.89/0.51
+content      0.93/0.61  0.93/0.59  0.92/0.51  0.89/0.48  0.86/0.51
+vel          0.93/0.63  0.92/0.61  0.91/0.57  0.88/0.50  0.81/0.39
+ring_pred    0.94/0.63  0.95/0.64  0.95/0.61  0.93/0.49  0.91/0.61
+yoked_pred   0.94/0.63  0.94/0.64  0.95/0.61  0.94/0.47  0.91/0.59
+ring_err     0.92/0.59  0.92/0.57  0.90/0.50  0.82/0.34  0.65/0.22
+yoked_err    0.92/0.60  0.92/0.57  0.89/0.48  0.80/0.32  0.55/0.19
+shuf_err     0.92/0.59  0.91/0.54  0.89/0.43  0.82/0.25  0.68/0.10
+rand_err     0.93/0.60  0.93/0.59  0.93/0.52  0.90/0.36  0.87/0.23
+frozen_err   0.92/0.60  0.92/0.57  0.90/0.48  0.81/0.33  0.55/0.21
+
+ring_err minus control, exploration (t over seeds)
+ring_err_vs_vel         +1.11 t+21.8    +1.65 t+20.8    +2.48 t+32.2    +1.65 t +9.5    -5.50 t-21.6  
+ring_err_vs_yoked_err   +0.09 t +1.4    +0.09 t +1.2    +0.20 t +2.2    +1.71 t +8.9    +3.73 t+19.9  
+ring_err_vs_shuf_err    +0.35 t +5.5    +0.59 t +6.7    +1.22 t+11.6    +1.71 t +8.3    +1.17 t +4.7  
+ring_err_vs_rand_err    +0.69 t+10.2    +1.64 t+24.3    +3.33 t+39.3    +5.20 t+30.0    +3.85 t+15.4  
+ring_err_vs_free        +0.73 t+11.7    +1.76 t+22.2    +3.74 t+48.8    +6.59 t+37.4    +5.49 t+37.5  
+ring_err_vs_content     +1.06 t+25.8    +2.21 t+25.0    +4.95 t+59.2   +10.67 t+50.1    +7.68 t+38.0  
+freeze_effect           -0.21 t -2.6    -0.45 t -3.5    -1.87 t-15.1    -4.17 t-12.6    -4.89 t-17.4  
+
+attractors: number of distinct end states among the seeds; the biggest group, its words and what it says
+free       g 0.0125  1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, interceptions | 'the idea of letting my mind wander, not focusing on any particular task or problem, just a'
+free       g 0.025   1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, interceptions | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+free       g 0.05    1 end states | biggest 24: Olsen, youngsters, Claude, Invalidate, donna, construed | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+free       g 0.1     1 end states | biggest 16: Olsen, youngsters, construed, donna, Claude, Invalidate | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+free       g 0.2     2 end states | biggest 15: Olsen, construed, youngsters, Sabha, ineligible, Urdu | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+content    g 0.0125  1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, interceptions | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+content    g 0.025   1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, construed | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+content    g 0.05    1 end states | biggest 24: Olsen, youngsters, donna, construed, Claude, Invalidate | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+content    g 0.1     1 end states | biggest 16: Olsen, youngsters, construed, ineligible, Sabha, Claude | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+content    g 0.2     8 end states | biggest  6: Olsen, construed, Unused, Sabha, Tcp, Urdu | 'the concept of "thinking" itself, and how it\'s a process that\'s both conscious and unconsc'
+ring_pred  g 0.0125  1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, interceptions | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+ring_pred  g 0.025   1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, construed | 'the idea of letting my mind wander, not focusing on any particular task or problem, just a'
+ring_pred  g 0.05    1 end states | biggest 24: Olsen, youngsters, donna, Claude, construed, Invalidate | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+ring_pred  g 0.1     1 end states | biggest 16: Olsen, youngsters, construed, donna, ineligible, congressman | 'the idea of letting my mind wander, not focusing on any particular task or problem, just a'
+ring_pred  g 0.2     2 end states | biggest 15: Olsen, construed, Unused, Sabha, insurers, Tcp | 'the idea of the mind wandering, and how that can be both a source of creativity and a plac'
+ring_err   g 0.0125  1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, interceptions | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+ring_err   g 0.025   1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, interceptions | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+ring_err   g 0.05    1 end states | biggest 24: Olsen, youngsters, Invalidate, Claude, donna, interceptions | "the concept of time and how it's something we all experience, yet it's so abstract and har"
+ring_err   g 0.1     1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, construed | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+ring_err   g 0.2     3 end states | biggest 14: Olsen, youngsters, Claude, construed, interceptions, andre | "the concept of time and how it's something we all experience, yet it's so abstract and har"
+yoked_err  g 0.0125  1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, interceptions | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+yoked_err  g 0.025   1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, interceptions | 'the idea of letting my mind wander, not focusing on any particular task or problem, just a'
+yoked_err  g 0.05    1 end states | biggest 24: Olsen, youngsters, Invalidate, Claude, donna, interceptions | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+yoked_err  g 0.1     1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, construed | 'the idea of letting my mind wander, not focusing on any particular task or problem, just a'
+yoked_err  g 0.2    16 end states | biggest  1: prerequisite, Aura, congressman, Invoke, Taiwanese, interceptions | 'the idea of letting my mind wander, not focusing on any particular task or problem, just a'
+rand_err   g 0.0125  1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, interceptions | 'the idea of letting my mind wander, not focusing on any particular task or problem, just a'
+rand_err   g 0.025   1 end states | biggest 16: Olsen, youngsters, Invalidate, Claude, donna, interceptions | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+rand_err   g 0.05    1 end states | biggest 24: Olsen, youngsters, Claude, Invalidate, donna, construed | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+rand_err   g 0.1     1 end states | biggest 16: Olsen, youngsters, construed, donna, Claude, Invalidate | "the concept of time and how it's a construct that we use to make sense of our experiences,"
+rand_err   g 0.2     1 end states | biggest 16: Olsen, construed, youngsters, Sabha, ineligible, interceptions | "the concept of time and how it's a construct that we use to make sense of our experiences,"

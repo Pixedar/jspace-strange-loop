@@ -1,0 +1,8 @@
+{"stage": "calib", "seconds": 100.5570695400238, "passes": 8800, "gpu_seconds_in_passes": 8.167811393737793, "ms_per_pass": 0.928160385652022, "peak_gb": 21.582162432}
+{"stage": "g0", "seconds": 35.83357238769531, "passes": 9152, "gpu_seconds_in_passes": 8.308657169342041, "ms_per_pass": 0.9078515263704153, "peak_gb": 21.044599296}
+{"stage": "fp32", "seconds": 17.123059272766113, "passes": 192, "gpu_seconds_in_passes": 0.3280830383300781, "ms_per_pass": 1.7087658246358235, "peak_gb": 35.565036544}
+{"stage": "gain", "seconds": 248.2939474582672, "passes": 79750, "gpu_seconds_in_passes": 74.30078053474426, "ms_per_pass": 0.9316712292757902, "peak_gb": 21.070334464}
+{"stage": "g2", "seconds": 184.35313773155212, "passes": 44000, "gpu_seconds_in_passes": 40.75213384628296, "ms_per_pass": 0.9261848601427946, "peak_gb": 21.070334464}
+{"stage": "g3", "seconds": 184.7167718410492, "passes": 44000, "gpu_seconds_in_passes": 40.95480442047119, "ms_per_pass": 0.9307910095561635, "peak_gb": 21.070334464}
+{"stage": "pilot", "seconds": 435.87808561325073, "passes": 154000, "gpu_seconds_in_passes": 143.83046078681946, "ms_per_pass": 0.9339640310832432, "peak_gb": 21.079212032}
+{"stage": "report", "seconds": 0.0007100105285644531, "passes": 0, "gpu_seconds_in_passes": 0.0, "ms_per_pass": 0.0, "peak_gb": 0.0}

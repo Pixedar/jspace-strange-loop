@@ -1,0 +1,639 @@
+2026-10-12 12:05:13 [run] start, deadline Mon Oct 12 15:05:13 UTC 2026, threads 16 of 64
+2026-10-12 12:05:13 [job] run: /opt/conda/bin/pip install -q "transformers==4.57.1" "huggingface_hub<1.0" hf_xet scikit-learn wordfreq safetensors brotli zstandard
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+2026-10-12 12:05:29 [job] rc=0 after 15s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:05:29 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:05:29 [job] run: /opt/conda/bin/python -c "from huggingface_hub import snapshot_download as s; print(s('Qwen/Qwen3-8B', revision='b968826d9c46dd6066d109eabc6255188de91218', max_workers=16))"
+/root/.cache/huggingface/hub/models--Qwen--Qwen3-8B/snapshots/b968826d9c46dd6066d109eabc6255188de91218
+2026-10-12 12:05:52 [job] rc=0 after 23s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:05:53 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:05:53 [job] run: Q_SMOKE=1 /opt/conda/bin/python qual.py --stage calib --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    main()
+  File "/workspace/code/qual.py", line 525, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 282, in stage_calib
+    lm = load_lm();eng = Eng(lm);t0 = time.time()
+         ^^^^^^^^^
+  File "/workspace/code/qual.py", line 277, in load_lm
+    lm = LM('qwen3-8b', dtype=dtype);lm.model.config.use_cache = True
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/v3/common.py", line 173, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(cfg['name'], dtype=dtype, device_map=dev,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-10-12 12:05:58 [job] rc=1 after 6s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:05:58 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:05:58 [job] run: Q_SMOKE=1 /opt/conda/bin/python qual.py --stage g0 --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    main()
+  File "/workspace/code/qual.py", line 525, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 323, in stage_g0
+    lm = load_lm();eng = Eng(lm);C = Calib(out/'calib.npz');va = f2_items('val')[:64];res = {}
+         ^^^^^^^^^
+  File "/workspace/code/qual.py", line 277, in load_lm
+    lm = LM('qwen3-8b', dtype=dtype);lm.model.config.use_cache = True
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/v3/common.py", line 173, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(cfg['name'], dtype=dtype, device_map=dev,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-10-12 12:06:04 [job] rc=1 after 5s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:06:04 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:06:04 [job] run: Q_SMOKE=1 /opt/conda/bin/python qual.py --stage gain --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    main()
+  File "/workspace/code/qual.py", line 525, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 365, in stage_gain
+    lm = load_lm();eng = Eng(lm);C = Calib(out/'calib.npz');it = f2_items('val', 50);res = {}
+         ^^^^^^^^^
+  File "/workspace/code/qual.py", line 277, in load_lm
+    lm = LM('qwen3-8b', dtype=dtype);lm.model.config.use_cache = True
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/v3/common.py", line 173, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(cfg['name'], dtype=dtype, device_map=dev,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-10-12 12:06:09 [job] rc=1 after 5s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:06:09 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:06:09 [job] run: Q_SMOKE=1 /opt/conda/bin/python qual.py --stage g2 --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    main()
+  File "/workspace/code/qual.py", line 525, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 424, in stage_g2
+    lm = load_lm();eng = Eng(lm);C = Calib(out/'calib.npz');g = gstar(out);it = f2_items('val')
+         ^^^^^^^^^
+  File "/workspace/code/qual.py", line 277, in load_lm
+    lm = LM('qwen3-8b', dtype=dtype);lm.model.config.use_cache = True
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/v3/common.py", line 173, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(cfg['name'], dtype=dtype, device_map=dev,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-10-12 12:06:15 [job] rc=1 after 6s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:06:15 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:06:15 [job] run: Q_SMOKE=1 /opt/conda/bin/python qual.py --stage g3 --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    main()
+  File "/workspace/code/qual.py", line 525, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 439, in stage_g3
+    lm = load_lm();eng = Eng(lm);C = Calib(out/'calib.npz');g = gstar(out);it = f2_items('val')
+         ^^^^^^^^^
+  File "/workspace/code/qual.py", line 277, in load_lm
+    lm = LM('qwen3-8b', dtype=dtype);lm.model.config.use_cache = True
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/v3/common.py", line 173, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(cfg['name'], dtype=dtype, device_map=dev,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-10-12 12:06:21 [job] rc=1 after 6s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:06:21 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:06:21 [job] run: Q_SMOKE=1 /opt/conda/bin/python qual.py --stage pilot --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    main()
+  File "/workspace/code/qual.py", line 525, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 457, in stage_pilot
+    lm = load_lm();eng = Eng(lm);C = Calib(out/'calib.npz');g = gstar(out);it = f2_items('val')
+         ^^^^^^^^^
+  File "/workspace/code/qual.py", line 277, in load_lm
+    lm = LM('qwen3-8b', dtype=dtype);lm.model.config.use_cache = True
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/v3/common.py", line 173, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(cfg['name'], dtype=dtype, device_map=dev,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-10-12 12:06:26 [job] rc=1 after 5s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:06:26 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:06:26 [job] run: /opt/conda/bin/python spectrum_v3.py --stage settle --out /workspace/v5/spec
+Traceback (most recent call last):
+  File "/workspace/code/spectrum_v3.py", line 224, in <module>
+    main()
+  File "/workspace/code/spectrum_v3.py", line 216, in main
+    if a.stage == 'settle':stage_settle(a, out)
+                           ^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/spectrum_v3.py", line 105, in stage_settle
+    lm = load(fp32);C = calib(lm, files);L = JLoop(lm, C);res = {};arr = {}
+         ^^^^^^^^^^
+  File "/workspace/code/spectrum_v3.py", line 84, in load
+    lm = LM('qwen3-8b', dtype=torch.float32 if fp32 else torch.bfloat16);return lm
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/v3/common.py", line 173, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(cfg['name'], dtype=dtype, device_map=dev,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-10-12 12:06:34 [job] rc=1 after 8s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:06:34 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:06:34 [job] run: /opt/conda/bin/python spectrum_v3.py --stage jac --out /workspace/v5/spec
+Traceback (most recent call last):
+  File "/workspace/code/spectrum_v3.py", line 224, in <module>
+    main()
+  File "/workspace/code/spectrum_v3.py", line 218, in main
+    elif a.stage == 'jac':stage_jac(a, out)
+                          ^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/spectrum_v3.py", line 130, in stage_jac
+    lm = load();C = calib(lm, files);L = JLoop(lm, C);res = {};arr = {};words = lm.lens.words
+         ^^^^^^
+  File "/workspace/code/spectrum_v3.py", line 84, in load
+    lm = LM('qwen3-8b', dtype=torch.float32 if fp32 else torch.bfloat16);return lm
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/v3/common.py", line 173, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(cfg['name'], dtype=dtype, device_map=dev,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-10-12 12:06:39 [job] rc=1 after 5s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:06:40 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:06:40 [job] run: /opt/conda/bin/python spectrum_v3.py --stage pert --out /workspace/v5/spec
+Traceback (most recent call last):
+  File "/workspace/code/spectrum_v3.py", line 224, in <module>
+    main()
+  File "/workspace/code/spectrum_v3.py", line 219, in main
+    elif a.stage == 'pert':stage_pert(a, out)
+                           ^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/torch/utils/_contextlib.py", line 116, in decorate_context
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/spectrum_v3.py", line 176, in stage_pert
+    lm = load();C = calib(lm, files);L = JLoop(lm, C);res = {};arr = {};words = lm.lens.words
+         ^^^^^^
+  File "/workspace/code/spectrum_v3.py", line 84, in load
+    lm = LM('qwen3-8b', dtype=torch.float32 if fp32 else torch.bfloat16);return lm
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/v3/common.py", line 173, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(cfg['name'], dtype=dtype, device_map=dev,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-10-12 12:06:45 [job] rc=1 after 6s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:06:45 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:06:45 [job] run: /opt/conda/bin/python spectrum_v3.py --stage fp32 --out /workspace/v5/spec
+Traceback (most recent call last):
+  File "/workspace/code/spectrum_v3.py", line 224, in <module>
+    main()
+  File "/workspace/code/spectrum_v3.py", line 217, in main
+    elif a.stage == 'fp32':stage_settle(a, out, fp32=True)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/spectrum_v3.py", line 105, in stage_settle
+    lm = load(fp32);C = calib(lm, files);L = JLoop(lm, C);res = {};arr = {}
+         ^^^^^^^^^^
+  File "/workspace/code/spectrum_v3.py", line 84, in load
+    lm = LM('qwen3-8b', dtype=torch.float32 if fp32 else torch.bfloat16);return lm
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/v3/common.py", line 173, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(cfg['name'], dtype=dtype, device_map=dev,
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/models/auto/auto_factory.py", line 604, in from_pretrained
+    return model_class.from_pretrained(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 277, in _wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/transformers/modeling_utils.py", line 4806, in from_pretrained
+    raise ValueError(
+ValueError: Using a `device_map`, `tp_plan`, `torch.device` context manager or setting `torch.set_default_device(device)` requires `accelerate`. You can install it with `pip install accelerate`
+2026-10-12 12:06:51 [job] rc=1 after 6s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:06:51 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:06:51 [job] queue empty, waiting up to 10 min for new work
+2026-10-12 12:07:11 [job] run: /opt/conda/bin/pip install -q accelerate
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+2026-10-12 12:07:11 [job] rc=0 after 1s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:07:12 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:07:12 [job] run: Q_SMOKE=1 Q_TRY=2 /opt/conda/bin/python qual.py --stage calib --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    main()
+  File "/workspace/code/qual.py", line 525, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 300, in stage_calib
+    Mz = P_w.T@torch.randn(256, KZ, device=DEV, generator=g);Mz = Mz/Mz.norm(dim=0, keepdim=True)
+         ~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+RuntimeError: mat1 and mat2 shapes cannot be multiplied (4096x132 and 256x32)
+2026-10-12 12:07:30 [job] rc=1 after 19s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:07:30 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:07:30 [job] run: Q_SMOKE=1 Q_TRY=2 /opt/conda/bin/python qual.py --stage g0 --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    main()
+  File "/workspace/code/qual.py", line 525, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 323, in stage_g0
+    lm = load_lm();eng = Eng(lm);C = Calib(out/'calib.npz');va = f2_items('val')[:64];res = {}
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/qual.py", line 133, in __init__
+    z = np.load(path);self.np = {k:z[k] for k in z.files}
+        ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 451, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/v5/qsmoke/calib.npz'
+2026-10-12 12:07:41 [job] rc=1 after 11s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:07:41 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:07:41 [job] run: Q_SMOKE=1 Q_TRY=2 /opt/conda/bin/python qual.py --stage gain --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    main()
+  File "/workspace/code/qual.py", line 525, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 365, in stage_gain
+    lm = load_lm();eng = Eng(lm);C = Calib(out/'calib.npz');it = f2_items('val', 50);res = {}
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/qual.py", line 133, in __init__
+    z = np.load(path);self.np = {k:z[k] for k in z.files}
+        ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 451, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/v5/qsmoke/calib.npz'
+2026-10-12 12:07:52 [job] rc=1 after 11s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:07:52 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:07:52 [job] run: Q_SMOKE=1 Q_TRY=2 /opt/conda/bin/python qual.py --stage g2 --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    main()
+  File "/workspace/code/qual.py", line 525, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 424, in stage_g2
+    lm = load_lm();eng = Eng(lm);C = Calib(out/'calib.npz');g = gstar(out);it = f2_items('val')
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/qual.py", line 133, in __init__
+    z = np.load(path);self.np = {k:z[k] for k in z.files}
+        ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 451, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/v5/qsmoke/calib.npz'
+2026-10-12 12:08:03 [job] rc=1 after 11s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:08:03 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:08:03 [job] run: Q_SMOKE=1 Q_TRY=2 /opt/conda/bin/python qual.py --stage g3 --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 535, in <module>
+    if __name__ == '__main__':
+        ^^^^^^
+  File "/workspace/code/qual.py", line 525, in main
+    t0 = time.time()
+  File "/workspace/code/qual.py", line 439, in stage_g3
+    from sklearn.model_selection import GroupKFold
+                                     ^^^^^^^^^^^^^^
+  File "/workspace/code/qual.py", line 133, in __init__
+    z = np.load(path);self.np = {k:z[k] for k in z.files}
+        ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 451, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/v5/qsmoke/calib.npz'
+2026-10-12 12:08:13 [job] rc=1 after 11s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:08:14 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:08:14 [job] run: Q_SMOKE=1 Q_TRY=2 /opt/conda/bin/python qual.py --stage pilot --out /workspace/v5/qsmoke
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 536, in <module>
+    main()
+  File "/workspace/code/qual.py", line 526, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 458, in stage_pilot
+    lm = load_lm();eng = Eng(lm);C = Calib(out/'calib.npz');g = gstar(out);it = f2_items('val')
+                                     ^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/code/qual.py", line 133, in __init__
+    z = np.load(path);self.np = {k:z[k] for k in z.files}
+        ^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/site-packages/numpy/lib/_npyio_impl.py", line 451, in load
+    fid = stack.enter_context(open(os.fspath(file), "rb"))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/workspace/v5/qsmoke/calib.npz'
+2026-10-12 12:08:24 [job] rc=1 after 11s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:08:24 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:08:24 [job] run: S_TRY=2 /opt/conda/bin/python spectrum_v3.py --stage settle --out /workspace/v5/spec
+2026-10-12 12:08:50 settle bf16 0.25 {'n': 96, 'exact_fixed': 0.0, 'late_maxstep_median': 0.02398785948753357, 'frac_late_step_lt_1e_3': 0.0, 'atom_turnover_mean': 0.0014247311827956992, 'period2_ratio_median': 1.0572629859764804}
+2026-10-12 12:09:06 settle bf16 1.0 {'n': 96, 'exact_fixed': 0.0, 'late_maxstep_median': 0.020485758781433105, 'frac_late_step_lt_1e_3': 0.0, 'atom_turnover_mean': 0.00044354838709677455, 'period2_ratio_median': 1.133483554123055}
+2026-10-12 12:09:22 settle bf16 4.0 {'n': 96, 'exact_fixed': 0.0, 'late_maxstep_median': 0.0186917781829834, 'frac_late_step_lt_1e_3': 0.0, 'atom_turnover_mean': 0.0007930107526881724, 'period2_ratio_median': 1.1723155162846277}
+2026-10-12 12:09:22 done settle 57s
+2026-10-12 12:09:23 [job] rc=0 after 59s
+2026-10-12 12:09:25 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:09:25 [job] run: S_TRY=2 /opt/conda/bin/python spectrum_v3.py --stage jac --out /workspace/v5/spec
+2026-10-12 12:09:55 jac 0.25 {'n': 96, 'spectral_radius_median': 0.9448536919275055, 'spectral_radius_q90': 1.183265101084468, 'frac_radius_gt_0_9': 0.6145833333333334, 'frac_radius_gt_1': 0.34375, 'lead_class': {'positive': 0.4270833333333333, 'negative': 0.03125, 'complex': 0.5416666666666666}, 'lead_rotation_deg_median': 12.393340825468758, 'n_modes_abs_gt_0_5_median': 13.0, 'self_reproduction_residual_median': 0.005743065848946571, 'radius_eps3x_median': 0.4183935746359194, 'radius_eps_agreement': 0.32446090450639004}
+2026-10-12 12:10:15 jac 1.0 {'n': 96, 'spectral_radius_median': 0.8700398730964913, 'spectral_radius_q90': 1.0584550344610482, 'frac_radius_gt_0_9': 0.3854166666666667, 'frac_radius_gt_1': 0.14583333333333334, 'lead_class': {'positive': 0.4270833333333333, 'negative': 0.0, 'complex': 0.5729166666666666}, 'lead_rotation_deg_median': 5.001458168279904, 'n_modes_abs_gt_0_5_median': 10.0, 'self_reproduction_residual_median': 0.003803580068051815, 'radius_eps3x_median': 0.5917895495215566, 'radius_eps_agreement': 0.11131534873017271}
+2026-10-12 12:10:35 jac 4.0 {'n': 96, 'spectral_radius_median': 0.7862918936659595, 'spectral_radius_q90': 0.9851542648344297, 'frac_radius_gt_0_9': 0.20833333333333334, 'frac_radius_gt_1': 0.09375, 'lead_class': {'positive': 0.6145833333333334, 'negative': 0.0, 'complex': 0.3854166666666667}, 'lead_rotation_deg_median': 0.0, 'n_modes_abs_gt_0_5_median': 10.0, 'self_reproduction_residual_median': 0.0021312208846211433, 'radius_eps3x_median': 0.675900877740955, 'radius_eps_agreement': 0.5213852568835835}
+2026-10-12 12:10:35 done jac 69s
+2026-10-12 12:10:36 [job] rc=0 after 71s
+2026-10-12 12:10:37 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:10:37 [job] run: S_TRY=2 /opt/conda/bin/python spectrum_v3.py --stage pert --out /workspace/v5/spec
+2026-10-12 12:15:33 [job] rc=-15 after 296s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:15:34 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:15:34 [job] run: S_TRY=2 /opt/conda/bin/python spectrum_v3.py --stage fp32 --out /workspace/v5/spec
+2026-10-12 12:16:08 settle fp32 0.25 {'n': 96, 'exact_fixed': 0.0, 'late_maxstep_median': 1.7285346984863281e-06, 'frac_late_step_lt_1e_3': 0.9895833333333334, 'atom_turnover_mean': 0.000416666666666667, 'period2_ratio_median': 1.058165102574216}
+2026-10-12 12:16:26 settle fp32 1.0 {'n': 96, 'exact_fixed': 0.0, 'late_maxstep_median': 1.9073486328125e-06, 'frac_late_step_lt_1e_3': 1.0, 'atom_turnover_mean': 0.0, 'period2_ratio_median': 1.1034027981888477}
+2026-10-12 12:16:44 settle fp32 4.0 {'n': 96, 'exact_fixed': 0.0, 'late_maxstep_median': 8.225440979003906e-06, 'frac_late_step_lt_1e_3': 0.8645833333333334, 'atom_turnover_mean': 9.408602150537636e-05, 'period2_ratio_median': 1.2153868767768135}
+2026-10-12 12:16:44 done fp32 69s
+2026-10-12 12:16:45 [job] rc=0 after 72s
+2026-10-12 12:16:47 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:16:47 [job] run: Q_SMOKE=1 Q_TRY=3 /opt/conda/bin/python qual.py --stage calib --out /workspace/v5/qsmoke
+2026-10-12 12:17:05 calib {'n_train': 132, 'n_val': 110, 'n_J': 36.566524505615234, 'massive_dims': 0, 'pw_var': 1.0, 'nat_val': {'mass_frac_ge_0_5': 0.9727272987365723, 'mean_abs_c': {'contra': 34.792598724365234, 'auth': 20.952831268310547, 'hint': 4.034091472625732, 'irrel': 3.1005640029907227}, 'G1b_pass': True}, 'seconds': 8.531611919403076, 'provenance': {'model': 'Qwen/Qwen3-8B', 'revision': 'b968826d9c46dd6066d109eabc6255188de91218', 'lens': 'qwen3-8b/jlens/Salesforce-wikitext/Qwen3-8B_jacobian_lens.pt', 'lens_revision': '9fa267f841d62aa468dab5b9b38c3dc45a82d863', 'lens_sha256': '1e1f96c3b63ac46731a78658304c8857ef08992351268f0c78893361692059c3', 'dtype': 'torch.bfloat16', 'dictionary': 'english', 'dictionary_size': 26337, 'torch': '2.6.0+cu124', 'transformers': '4.57.1'}}
+2026-10-12 12:17:05 timing {'stage': 'calib', 'seconds': 16.75938653945923, 'passes': 682, 'gpu_seconds_in_passes': 0.7246155738830566, 'ms_per_pass': 1.0624861787141593, 'peak_gb': 21.059254784}
+2026-10-12 12:17:06 [job] rc=0 after 19s
+2026-10-12 12:17:08 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:17:08 [job] run: Q_SMOKE=1 Q_TRY=3 /opt/conda/bin/python qual.py --stage g0 --out /workspace/v5/qsmoke
+2026-10-12 12:17:44 g0 {'a_replay_bit_identical': True, 'c_branch_order_maxdiff': 0.0, 'b_cached_vs_full_q95': {'lo': 0.5, 'c': 0.6249994277954102}, 'b_pass': False, 'a_pass': True, 'c_pass': True}
+2026-10-12 12:17:44 timing {'stage': 'g0', 'seconds': 35.03082537651062, 'passes': 9152, 'gpu_seconds_in_passes': 8.029512166976929, 'ms_per_pass': 0.8773505427203812, 'peak_gb': 21.042531328}
+2026-10-12 12:17:45 [job] rc=0 after 37s
+2026-10-12 12:17:47 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:17:47 [job] run: Q_SMOKE=1 Q_TRY=3 /opt/conda/bin/python qual.py --stage gain --out /workspace/v5/qsmoke
+2026-10-12 12:18:14 gain 0.25 {'rms_dc_contra': 1.2747728824615479, 'mass_frac_ge_0_5': 0.9696969696969697, 'diverged': 0, 'rms_dlo': 0.8891041874885559}
+2026-10-12 12:18:25 gain 0.5 {'rms_dc_contra': 2.5105531215667725, 'mass_frac_ge_0_5': 0.9575757575757575, 'diverged': 0, 'rms_dlo': 1.7342323064804077}
+2026-10-12 12:18:36 gain 1.0 {'rms_dc_contra': 5.250850200653076, 'mass_frac_ge_0_5': 0.943939393939394, 'diverged': 0, 'rms_dlo': 3.503992795944214}
+2026-10-12 12:18:47 gain 2.0 {'rms_dc_contra': 11.146151542663574, 'mass_frac_ge_0_5': 0.8954545454545455, 'diverged': 0, 'rms_dlo': 6.8206787109375}
+2026-10-12 12:18:47 g* 0.25
+2026-10-12 12:18:47 timing {'stage': 'gain', 'seconds': 58.63539099693298, 'passes': 15950, 'gpu_seconds_in_passes': 16.11553406715393, 'ms_per_pass': 1.010378311420309, 'peak_gb': 21.042531328}
+2026-10-12 12:18:48 [job] rc=0 after 61s
+2026-10-12 12:18:49 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:18:49 [job] run: Q_SMOKE=1 Q_TRY=3 /opt/conda/bin/python qual.py --stage g2 --out /workspace/v5/qsmoke
+2026-10-12 12:19:12 G2 R {'c_contra': {'r2_own': 0.3516261577606201, 'r2_swap': 0.32462602853775024, 'delta': 0.027000129222869873, 'ci': [-0.08042940944433212, 0.15326505750417688], 'pass_': False}, 'lo': {'r2_own': 0.48162829875946045, 'r2_swap': 0.48976588249206543, 'delta': -0.00813758373260498, 'ci': [-0.07044184654951095, 0.05006109923124307], 'pass_': False}, 'n_rows': 102, 'n_scen': 10}
+2026-10-12 12:19:13 G2 J {'c_contra': {'r2_own': 0.31252217292785645, 'r2_swap': 0.3041324019432068, 'delta': 0.008389770984649658, 'ci': [-0.13903771340847015, 0.14886671453714348], 'pass_': False}, 'lo': {'r2_own': 0.36207956075668335, 'r2_swap': 0.3786444664001465, 'delta': -0.016564905643463135, 'ci': [-0.11613230854272842, 0.07208634763956068], 'pass_': False}, 'n_rows': 102, 'n_scen': 10}
+2026-10-12 12:19:13 g2 {'g_star': 0.25, 'G1c_within_share': 0.0008676440920680761, 'G1c_pass': False, 'G1a_mass_frac': 0.9742424242424242, 'rollout_seconds': 11.284477472305298, 'pass_any': False}
+2026-10-12 12:19:13 timing {'stage': 'g2', 'seconds': 22.58971643447876, 'passes': 3850, 'gpu_seconds_in_passes': 3.8864729404449463, 'ms_per_pass': 1.0094734910246614, 'peak_gb': 21.042531328}
+2026-10-12 12:19:14 [job] rc=0 after 25s
+2026-10-12 12:19:15 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:19:15 [job] run: Q_SMOKE=1 Q_TRY=3 /opt/conda/bin/python qual.py --stage g3 --out /workspace/v5/qsmoke
+2026-10-12 12:19:38 G3 R {'c_contra': {'r2_own': -12241584.0, 'r2_swap': -3208969.75, 'delta': -9032614.25, 'ci': [-27025496.025, 0.04166549891233435], 'pass_': False}, 'lo': {'r2_own': -15786447.0, 'r2_swap': -21792732.0, 'delta': 6006285.0, 'ci': [-0.06714649647474288, 15648644.7], 'pass_': False}, 'n_rows': 89, 'n_scen': 10}
+2026-10-12 12:19:39 G3 J {'c_contra': {'r2_own': -6347068.5, 'r2_swap': -39949920.0, 'delta': 33602851.5, 'ci': [-0.1294199436903, 100539400.1], 'pass_': False}, 'lo': {'r2_own': -19210440.0, 'r2_swap': -58955436.0, 'delta': 39744996.0, 'ci': [-0.014530548453330993, 103553198.3], 'pass_': False}, 'n_rows': 89, 'n_scen': 10}
+2026-10-12 12:19:39 g3 {'g_star': 0.25, 'R': {'sigma_decode': 0.6181818181818182, 'contrast': {'c_contra': {'r2_own': -12241584.0, 'r2_swap': -3208969.75, 'delta': -9032614.25, 'ci': [-27025496.025, 0.04166549891233435], 'pass_': False}, 'lo': {'r2_own': -15786447.0, 'r2_swap': -21792732.0, 'delta': 6006285.0, 'ci': [-0.06714649647474288, 15648644.7], 'pass_': False}, 'n_rows': 89, 'n_scen': 10}, 'pass_': False}, 'J': {'sigma_decode': 0.5909090909090908, 'contrast': {'c_contra': {'r2_own': -6347068.5, 'r2_swap': -39949920.0, 'delta': 33602851.5, 'ci': [-0.1294199436903, 100539400.1], 'pass_': False}, 'lo': {'r2_own': -19210440.0, 'r2_swap': -58955436.0, 'delta': 39744996.0, 'ci': [-0.014530548453330993, 103553198.3], 'pass_': False}, 'n_rows': 89, 'n_scen': 10}, 'pass_': False}, 'pass_any': False}
+2026-10-12 12:19:39 timing {'stage': 'g3', 'seconds': 22.639527559280396, 'passes': 3850, 'gpu_seconds_in_passes': 3.880192279815674, 'ms_per_pass': 1.0078421506014736, 'peak_gb': 21.042531328}
+2026-10-12 12:19:40 [job] rc=0 after 25s
+2026-10-12 12:19:41 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:19:41 [job] run: Q_SMOKE=1 Q_TRY=3 /opt/conda/bin/python qual.py --stage pilot --out /workspace/v5/qsmoke
+2026-10-12 12:20:16 pilot R {'coverage': 0.01818181818181818, 'coverage_pass': False, 'manip_rms_dc': 0.3507801294326782, 'manip_pass': False, 'tracking_ratio': 0.8040034770965576, 'noninferiority_ratio': 0.7239408493041992, 'sd_log_tr': 0.19590985774993896, 'sd_log_ni': 0.1683356761932373, 'n_required': {'TR': 15, 'NI': 8}, 'n_test': 200, 'power_ok': True, 'fq_selfskill_h1': 0.9715404510498047}
+Traceback (most recent call last):
+  File "/workspace/code/qual.py", line 536, in <module>
+    main()
+  File "/workspace/code/qual.py", line 526, in main
+    {'calib':stage_calib, 'g0':stage_g0, 'fp32':stage_fp32, 'gain':stage_gain, 'g2':stage_g2, 'g3':stage_g3,
+  File "/workspace/code/qual.py", line 497, in stage_pilot
+    P_ = np.array(list(per.values()));tr_ratio = P_[:, 0].mean()/max(P_[:, 1].mean(), 1e-12);ni = P_[:, 0].mean()/max(P_[:, 2].mean(), 1e-12)
+                                                 ~~^^^^^^
+IndexError: too many indices for array: array is 1-dimensional, but 2 were indexed
+2026-10-12 12:20:41 [job] rc=1 after 59s
+No files have been modified since last commit. Skipping to prevent empty commit.
+2026-10-12 12:20:41 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:20:41 [job] run: /opt/conda/bin/python spectrum_v3_b.py --stage jac32 --out /workspace/v5/spec
+2026-10-12 12:21:27 jac 0.25 {'n': 96, 'spectral_radius_median': 0.26055948245108473, 'spectral_radius_q90': 0.3064421430584857, 'frac_radius_gt_0_9': 0.0, 'frac_radius_gt_1': 0.0, 'lead_class': {'positive': 0.8125, 'negative': 0.0, 'complex': 0.1875}, 'lead_rotation_deg_median': 0.0, 'n_modes_abs_gt_0_5_median': 0.0, 'self_reproduction_residual_median': 4.4778280994250963e-07, 'radius_median_by_step': {'0.01': 0.2604989816893837, '0.03': 0.26055948245108473, '0.1': 0.2605225757785941}, 'radius_step_agreement': [0.9999986944294161, 0.9999998162921371]}
+2026-10-12 12:21:56 jac 1.0 {'n': 96, 'spectral_radius_median': 0.5358275080060959, 'spectral_radius_q90': 0.679923092786101, 'frac_radius_gt_0_9': 0.0, 'frac_radius_gt_1': 0.0, 'lead_class': {'positive': 0.75, 'negative': 0.0, 'complex': 0.25}, 'lead_rotation_deg_median': 0.0, 'n_modes_abs_gt_0_5_median': 1.0, 'self_reproduction_residual_median': 3.874174012707954e-07, 'radius_median_by_step': {'0.01': 0.5357748164505061, '0.03': 0.5358275080060959, '0.1': 0.5357731737601075}, 'radius_step_agreement': [0.9999996334061525, 0.9999999431807527]}
+2026-10-12 12:22:24 jac 4.0 {'n': 96, 'spectral_radius_median': 0.638593205557657, 'spectral_radius_q90': 0.73309347496993, 'frac_radius_gt_0_9': 0.0, 'frac_radius_gt_1': 0.0, 'lead_class': {'positive': 0.75, 'negative': 0.0, 'complex': 0.25}, 'lead_rotation_deg_median': 0.0, 'n_modes_abs_gt_0_5_median': 5.0, 'self_reproduction_residual_median': 3.7668319237127434e-06, 'radius_median_by_step': {'0.01': 0.6386257508384139, '0.03': 0.638593205557657, '0.1': 0.6385693616873318}, 'radius_step_agreement': [0.9999997789295004, 0.9999990263398605]}
+2026-10-12 12:22:24 done jac32 101s
+2026-10-12 12:22:25 [job] rc=0 after 104s
+2026-10-12 12:22:27 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:22:27 [job] run: /opt/conda/bin/python axis_v3.py --out /workspace/v5/axis
+2026-10-12 12:22:42 persona {'pc1_var_share': 0.2238241285085678, 'cos_pc1_vs_default_minus_mean': 0.00836687721312046, 'default_proj_in_role_sd': 0.018542742356657982, 'roles_low': ['gangster', 'surfer dude', 'moody teenager', 'hard-boiled detective', 'stand-up comedian', 'angry customer'], 'roles_high': ['wise sage', 'angel', 'oracle', 'ancient philosopher', 'spiritual guru', 'wizard']}
+2026-10-12 12:22:57 J 0.25 {'disp_norm_median': 38.39337921142578, 'disp_cos_median': 0.3471370339393616, 'disp_share_on_mean': 0.40551814436912537, 'cos_meandisp_assistant_axis': -0.05678008869290352, 'axis_proj_t0': -0.28744229674339294, 'axis_proj_t64': -0.29980990290641785, 'axis_shift': -0.012367603369057178, 'axis_shift_frac_negative': 0.9166666666666666, 'axis_curve': [-0.012536145746707916, -0.012556307017803192, -0.012271073646843433, -0.012397619895637035, -0.012232202105224133, -0.012267928570508957, -0.012367603369057178]}
+2026-10-12 12:22:57   words [('outside', 2.401), ('lets', 2.106), ('And', 1.999), ('Football', 1.98), ('analyzing', 1.965), ('Deployment', 1.805), ('gonna', 1.803), ('Start', 1.778), ('someone', 1.723), ('Recipe', 1.72)] 
+  up ['индивид', ' And', ' That', ' As', ' outside', ' On', ' For', ' Outside', ' With', ' Of', ' Now', ' Out'] 
+  down ['Mary', 'Japanese', ' ForCanBeConvertedToForeach', 'lice', 'Hol', 'Tower', 'Bearer', 'Earth', 'latent', 'ends', 'Hier', 'J']
+2026-10-12 12:23:13 J 1.0 {'disp_norm_median': 180.77490234375, 'disp_cos_median': 0.4408464729785919, 'disp_share_on_mean': 0.5022976398468018, 'cos_meandisp_assistant_axis': -0.06354351341724396, 'axis_proj_t0': -0.28744229674339294, 'axis_proj_t64': -0.3573285639286041, 'axis_shift': -0.06988624483346939, 'axis_shift_frac_negative': 0.9375, 'axis_curve': [-0.06056293472647667, -0.06719397753477097, -0.0691540315747261, -0.06891394406557083, -0.0696893185377121, -0.06981954723596573, -0.06988624483346939]}
+2026-10-12 12:23:13   words [('okay', 15.868), ('english', 10.917), ('lets', 10.513), ('Highlight', 10.03), ('nowadays', 9.915), ('insanity', 9.805), ('Entrepreneur', 9.755), ('analyze', 9.63), ('looking', 9.541), ('john', 9.436)] 
+  up [' ok', ' okay', ' Usa', ' british', ' american', ' alright', ' english', ' Alright', ' yeah', 'индивид', ' actually', ' Okay'] 
+  down ['Hol', 'Mary', 'J', 'K', 'V', 'Penn', 'Earth', 'Pear', 'H', 'McC', 'He', 'E']
+2026-10-12 12:23:28 J 4.0 {'disp_norm_median': 558.5119018554688, 'disp_cos_median': 0.707943856716156, 'disp_share_on_mean': 0.7114494442939758, 'cos_meandisp_assistant_axis': -0.12593179941177368, 'axis_proj_t0': -0.28744229674339294, 'axis_proj_t64': -0.7874293327331543, 'axis_shift': -0.49998700618743896, 'axis_shift_frac_negative': 0.9895833333333334, 'axis_curve': [-0.2128843069076538, -0.32471516728401184, -0.4437292516231537, -0.4976729452610016, -0.5130246877670288, -0.5021106600761414, -0.49998700618743896]}
+2026-10-12 12:23:28   words [('cuz', 65.623), ('yeah', 55.483), ('alright', 51.99), ('Usa', 46.978), ('Hello', 45.174), ('look', 44.194), ('Xiaomi', 43.782), ('Fundamental', 38.598), ('analyzing', 37.897), ('bartender', 35.245)] 
+  up [' yeah', ' Yeah', ' wanna', ' gonna', ' guys', ' cuz', ' alright', ' okay', ' hey', ' Alright', ' guy', ' Usa'] 
+  down ['orch', 'We', '{}",', 'None', '["', 'ne', 'onto', 'forward', 'The', 'ab', '{}".', 're']
+2026-10-12 12:23:44 rand 0.25 {'disp_norm_median': 25.910058975219727, 'disp_cos_median': 0.0014759899349883199, 'disp_share_on_mean': 0.015718640759587288, 'cos_meandisp_assistant_axis': -0.025458812713623047, 'axis_proj_t0': -0.28744229674339294, 'axis_proj_t64': -0.2881332337856293, 'axis_shift': -0.0006908932118676603, 'axis_shift_frac_negative': 0.5520833333333334, 'axis_curve': [0.00019666622392833233, -0.0003531789407134056, 0.0006813081563450396, 2.9037628337391652e-05, 0.0005521713173948228, 0.00040760100819170475, -0.0006908932118676603]}
+2026-10-12 12:23:59 rand 1.0 {'disp_norm_median': 104.3882827758789, 'disp_cos_median': 0.029569078236818314, 'disp_share_on_mean': 0.0533628948032856, 'cos_meandisp_assistant_axis': 0.013328451663255692, 'axis_proj_t0': -0.28744229674339294, 'axis_proj_t64': -0.2846665680408478, 'axis_shift': 0.0027757289353758097, 'axis_shift_frac_negative': 0.4895833333333333, 'axis_curve': [0.00283733569085598, 0.002439550356939435, 0.002091132802888751, 0.003925299271941185, 0.003470862517133355, 0.004842947702854872, 0.0027757289353758097]}
+2026-10-12 12:24:15 rand 4.0 {'disp_norm_median': 402.56634521484375, 'disp_cos_median': 0.18234331905841827, 'disp_share_on_mean': 0.20141778886318207, 'cos_meandisp_assistant_axis': 0.00951316673308611, 'axis_proj_t0': -0.28744229674339294, 'axis_proj_t64': -0.2729065716266632, 'axis_shift': 0.014535725116729736, 'axis_shift_frac_negative': 0.4375, 'axis_curve': [0.022952109575271606, 0.007678123656660318, 0.01566818170249462, 0.022410042583942413, 0.02246796153485775, 0.018720531836152077, 0.014535725116729736]}
+2026-10-12 12:24:15 done 106s
+2026-10-12 12:24:16 [job] rc=0 after 109s
+2026-10-12 12:24:17 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:24:17 [job] run: S_TRY=3 /opt/conda/bin/python spectrum_v3_b.py --stage pert --out /workspace/v5/spec
+2026-10-12 12:24:56 pert 0.25 0.1 {'n_ctx': 48, 'M': 16, 'persistence_median': 0.4721592664718628, 'persistence_q90': 1.5388420820236206, 'frac_persist_gt_0_5': 0.46484375, 'offset_pr_median': 1.801267147064209}
+2026-10-12 12:25:24 pert 0.25 0.3 {'n_ctx': 48, 'M': 16, 'persistence_median': 0.7756978273391724, 'persistence_q90': 1.5772738456726074, 'frac_persist_gt_0_5': 0.5325520833333334, 'offset_pr_median': 2.6388282775878906}
+2026-10-12 12:25:52 pert 1.0 0.1 {'n_ctx': 48, 'M': 16, 'persistence_median': 0.22263360023498535, 'persistence_q90': 2.027920961380005, 'frac_persist_gt_0_5': 0.3450520833333333, 'offset_pr_median': 1.9602510929107666}
+2026-10-12 12:26:20 pert 1.0 0.3 {'n_ctx': 48, 'M': 16, 'persistence_median': 1.0183899402618408, 'persistence_q90': 2.018287181854248, 'frac_persist_gt_0_5': 0.78125, 'offset_pr_median': 3.6396725177764893}
+2026-10-12 12:26:48 pert 4.0 0.1 {'n_ctx': 48, 'M': 16, 'persistence_median': 0.0885699987411499, 'persistence_q90': 2.9841666221618652, 'frac_persist_gt_0_5': 0.4140625, 'offset_pr_median': 1.9707766771316528}
+2026-10-12 12:27:16 pert 4.0 0.3 {'n_ctx': 48, 'M': 16, 'persistence_median': 1.1736836433410645, 'persistence_q90': 2.056239604949951, 'frac_persist_gt_0_5': 0.890625, 'offset_pr_median': 4.784024953842163}
+2026-10-12 12:27:16 done pert 177s
+2026-10-12 12:27:17 [job] rc=0 after 180s
+2026-10-12 12:27:18 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:27:18 [job] run: /opt/conda/bin/python transport_v3.py --out /workspace/v5/transport
+2026-10-12 12:28:35 context 0 75s
+2026-10-12 12:29:31 context 12 131s
+2026-10-12 12:30:39 context 300 200s
+2026-10-12 12:31:48 context 312 268s
+2026-10-12 12:32:36 context 600 316s
+2026-10-12 12:33:24 context 618 364s
+2026-10-12 12:34:29 context 900 429s
+2026-10-12 12:35:26 context 912 486s
+2026-10-12 12:36:58 self-gain top [('http', 1.9933192729949951), ('yes', 1.835303544998169), ('eventually', 1.825088620185852), ('although', 1.8018805980682373), ('interesting', 1.755519151687622), ('obviously', 1.751111388206482), ('luck', 1.7085163593292236), ('otherwise', 1.6471666097640991), ('Yes', 1.6291688680648804), ('throughout', 1.6182862520217896), ('outside', 1.6047828197479248), ('later', 1.6041719913482666), ('Outside', 1.5947091579437256), ('etc', 1.5811171531677246), ('thus', 1.5544867515563965), ('according', 1.548007607460022), ('Eventually', 1.542467474937439), ('despite', 1.5378822088241577), ('hope', 1.5370665788650513), ('likely', 1.5363937616348267)]
+2026-10-12 12:36:58 eig [(647.5593818639406, ['All', 'answer', 'And', 'First', 'first', 'Well', 'well', 'way']), (175.01283201616044, ['Question', 'Answer', 'Solution', 'Section', 'Page', 'Step', 'Method', 'Executive']), (60.27814603018871, ['Actually', 'Seems', 'Maybe', 'Anyway', 'maybe', 'yeah', 'Obviously', 'Certainly'])]
+2026-10-12 12:36:58 power iteration [('All', 20), ('answer', 20), ('And', 20), ('First', 20), ('first', 20), ('Well', 20), ('well', 20), ('way', 20), ('looking', 20), ('all', 20)]
+2026-10-12 12:36:58 done 579s
+2026-10-12 12:37:00 [job] rc=0 after 581s
+2026-10-12 12:37:02 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:37:02 [job] run: Q_SMOKE=1 Q_TRY=4 /opt/conda/bin/python qual.py --stage calib --out /workspace/v5/qsmoke4
+2026-10-12 12:37:21 calib {'n_train': 132, 'n_val': 110, 'n_J': 36.566524505615234, 'massive_dims': 0, 'pw_var': 1.0, 'nat_val': {'mass_frac_ge_0_5': 0.9727272987365723, 'mean_abs_c': {'contra': 34.792598724365234, 'auth': 20.952831268310547, 'hint': 4.034091472625732, 'irrel': 3.1005640029907227}, 'G1b_pass': True}, 'seconds': 8.7385733127594, 'provenance': {'model': 'Qwen/Qwen3-8B', 'revision': 'b968826d9c46dd6066d109eabc6255188de91218', 'lens': 'qwen3-8b/jlens/Salesforce-wikitext/Qwen3-8B_jacobian_lens.pt', 'lens_revision': '9fa267f841d62aa468dab5b9b38c3dc45a82d863', 'lens_sha256': '1e1f96c3b63ac46731a78658304c8857ef08992351268f0c78893361692059c3', 'dtype': 'torch.bfloat16', 'dictionary': 'english', 'dictionary_size': 26337, 'torch': '2.6.0+cu124', 'transformers': '4.57.1'}}
+2026-10-12 12:37:21 timing {'stage': 'calib', 'seconds': 17.332354068756104, 'passes': 682, 'gpu_seconds_in_passes': 0.8122575283050537, 'ms_per_pass': 1.1909934432625422, 'peak_gb': 21.059254784}
+2026-10-12 12:37:22 [job] rc=0 after 20s
+2026-10-12 12:37:23 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:37:23 [job] run: Q_SMOKE=1 Q_TRY=4 /opt/conda/bin/python qual.py --stage g0 --out /workspace/v5/qsmoke4
+2026-10-12 12:38:01 g0 {'a_replay_bit_identical': True, 'c_branch_order_maxdiff': 0.0, 'b_cached_vs_full_q95': {'lo': 0.5, 'c': 0.6249994277954102}, 'b_pass': False, 'a_pass': True, 'c_pass': True}
+2026-10-12 12:38:01 timing {'stage': 'g0', 'seconds': 35.91953778266907, 'passes': 9152, 'gpu_seconds_in_passes': 8.357187747955322, 'ms_per_pass': 0.9131542556769364, 'peak_gb': 21.042531328}
+2026-10-12 12:38:02 [job] rc=0 after 38s
+2026-10-12 12:38:03 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:38:03 [job] run: Q_SMOKE=1 Q_TRY=4 /opt/conda/bin/python qual.py --stage gain --out /workspace/v5/qsmoke4
+2026-10-12 12:38:31 gain 0.25 {'rms_dc_contra': 1.2747728824615479, 'mass_frac_ge_0_5': 0.9696969696969697, 'diverged': 0, 'rms_dlo': 0.8891041874885559}
+2026-10-12 12:38:42 gain 0.5 {'rms_dc_contra': 2.5105531215667725, 'mass_frac_ge_0_5': 0.9575757575757575, 'diverged': 0, 'rms_dlo': 1.7342323064804077}
+2026-10-12 12:38:53 gain 1.0 {'rms_dc_contra': 5.250850200653076, 'mass_frac_ge_0_5': 0.943939393939394, 'diverged': 0, 'rms_dlo': 3.503992795944214}
+2026-10-12 12:39:04 gain 2.0 {'rms_dc_contra': 11.146151542663574, 'mass_frac_ge_0_5': 0.8954545454545455, 'diverged': 0, 'rms_dlo': 6.8206787109375}
+2026-10-12 12:39:04 g* 1.0
+2026-10-12 12:39:04 timing {'stage': 'gain', 'seconds': 59.6219379901886, 'passes': 15950, 'gpu_seconds_in_passes': 16.546571969985962, 'ms_per_pass': 1.0374026313470823, 'peak_gb': 21.042531328}
+2026-10-12 12:39:05 [job] rc=0 after 62s
+2026-10-12 12:39:07 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:39:07 [job] run: Q_SMOKE=1 Q_TRY=4 /opt/conda/bin/python qual.py --stage g2 --out /workspace/v5/qsmoke4
+2026-10-12 12:39:36 G2 R {'dc_contra': {'r2_own': -0.1203833818435669, 'r2_swap': -0.09887683391571045, 'delta': -0.021506547927856445, 'ci': [-0.12704783976078032, 0.1131140679121016], 'pass_': False}, 'dlo': {'r2_own': -0.13828492164611816, 'r2_swap': -0.10879838466644287, 'delta': -0.029486536979675293, 'ci': [-0.16853088438510894, 0.08150420188903801], 'pass_': False}, 'n_rows': 93, 'n_scen': 10}
+2026-10-12 12:39:36 G2 J {'dc_contra': {'r2_own': -0.12207865715026855, 'r2_swap': -0.11984860897064209, 'delta': -0.002230048179626465, 'ci': [-0.09693773090839386, 0.10236636102199548], 'pass_': False}, 'dlo': {'r2_own': -0.20515918731689453, 'r2_swap': -0.146825909614563, 'delta': -0.05833327770233154, 'ci': [-0.11045527458190918, -0.0049982488155365205], 'pass_': False}, 'n_rows': 93, 'n_scen': 10}
+2026-10-12 12:39:36 g2 {'g_star': 1.0, 'G1c_snr': 8.070839881896973, 'G1c_pass': True, 'G1c_within_share_raw': 0.014325634576380253, 'noise_floor_c': 0.6249994277954102, 'G1a_mass_frac': 0.9424242424242424, 'rollout_seconds': 11.124467372894287, 'pass_any': False}
+2026-10-12 12:39:36 timing {'stage': 'g2', 'seconds': 28.16997504234314, 'passes': 4400, 'gpu_seconds_in_passes': 4.626950740814209, 'ms_per_pass': 1.0515797138214111, 'peak_gb': 21.042531328}
+2026-10-12 12:39:38 [job] rc=0 after 31s
+2026-10-12 12:39:39 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:39:39 [job] run: Q_SMOKE=1 Q_TRY=4 /opt/conda/bin/python qual.py --stage g3 --out /workspace/v5/qsmoke4
+2026-10-12 12:40:08 G3 R {'dc_contra': {'r2_own': 0.009215891361236572, 'r2_swap': -0.044934749603271484, 'delta': 0.05415064096450806, 'ci': [-0.13947793841362, 0.16081224530935287], 'pass_': False}, 'dlo': {'r2_own': -0.16222751140594482, 'r2_swap': -0.22907471656799316, 'delta': 0.06684720516204834, 'ci': [-0.06364822387695312, 0.24375007152557374], 'pass_': False}, 'n_rows': 40, 'n_scen': 10}
+2026-10-12 12:40:09 G3 J {'dc_contra': {'r2_own': 0.13721585273742676, 'r2_swap': -0.0331425666809082, 'delta': 0.17035841941833496, 'ci': [0.01345246434211731, 0.34456776678562157], 'pass_': True}, 'dlo': {'r2_own': -0.21959757804870605, 'r2_swap': -0.19848084449768066, 'delta': -0.02111673355102539, 'ci': [-0.23997326493263244, 0.12059027552604674], 'pass_': False}, 'n_rows': 40, 'n_scen': 10}
+2026-10-12 12:40:09 g3 {'g_star': 1.0, 'hidden_amplitude': '0.5 n_J (Amendment Q-3)', 'R': {'sigma_decode': 0.8363636363636363, 'contrast': {'dc_contra': {'r2_own': 0.009215891361236572, 'r2_swap': -0.044934749603271484, 'delta': 0.05415064096450806, 'ci': [-0.13947793841362, 0.16081224530935287], 'pass_': False}, 'dlo': {'r2_own': -0.16222751140594482, 'r2_swap': -0.22907471656799316, 'delta': 0.06684720516204834, 'ci': [-0.06364822387695312, 0.24375007152557374], 'pass_': False}, 'n_rows': 40, 'n_scen': 10}, 'pass_': False}, 'J': {'sigma_decode': 0.6818181818181818, 'contrast': {'dc_contra': {'r2_own': 0.13721585273742676, 'r2_swap': -0.0331425666809082, 'delta': 0.17035841941833496, 'ci': [0.01345246434211731, 0.34456776678562157], 'pass_': True}, 'dlo': {'r2_own': -0.21959757804870605, 'r2_swap': -0.19848084449768066, 'delta': -0.02111673355102539, 'ci': [-0.23997326493263244, 0.12059027552604674], 'pass_': False}, 'n_rows': 40, 'n_scen': 10}, 'pass_': False}, 'pass_any': False}
+2026-10-12 12:40:09 timing {'stage': 'g3', 'seconds': 28.123794317245483, 'passes': 4400, 'gpu_seconds_in_passes': 4.577050685882568, 'ms_per_pass': 1.0402387922460383, 'peak_gb': 21.042531328}
+2026-10-12 12:40:10 [job] rc=0 after 31s
+2026-10-12 12:40:11 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:40:11 [job] run: Q_SMOKE=1 Q_TRY=4 /opt/conda/bin/python qual.py --stage pilot --out /workspace/v5/qsmoke4
+2026-10-12 12:40:34 pilot R {'coverage': 0.0, 'coverage_pass': False, 'fq_selfskill_dc_h1': 0.06895315647125244}
+2026-10-12 12:40:56 pilot J {'coverage': 0.01818181818181818, 'coverage_pass': False, 'manip_rms_dc': 1.719599723815918, 'manip_pass': True, 'tracking_ratio': 1.3195055723190308, 'noninferiority_ratio': 0.8770204782485962, 'sd_log_tr': 0.0101240873336792, 'sd_log_ni': 0.10542124509811401, 'n_scen_used': 2, 'n_required': {'TR': 1, 'NI': 3}, 'n_test': 200, 'power_ok': True, 'fq_selfskill_dc_h1': 0.08165472745895386}
+2026-10-12 12:40:56 timing {'stage': 'pilot', 'seconds': 43.91978597640991, 'passes': 11550, 'gpu_seconds_in_passes': 12.388108968734741, 'ms_per_pass': 1.072563547076601, 'peak_gb': 21.051408896}
+2026-10-12 12:40:58 [job] rc=0 after 47s
+2026-10-12 12:40:59 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:40:59 [job] run: Q_SMOKE=1 Q_TRY=4 /opt/conda/bin/python qual.py --stage report --out /workspace/v5/qsmoke4
+2026-10-12 12:41:00 report {'gates': {'G0a': True, 'G0b_abs': False, 'G0b_rel': True, 'G0c': True, 'G0d': None, 'G1b': True, 'g_star': 1.0, 'G1c': True, 'G2': False, 'G3': False}, 'files': ['calib', 'g0', 'g2', 'g3', 'gain', 'pilot'], 'cnt': {'passes': 0, 't_gpu': 0.0}}
+2026-10-12 12:41:00 timing {'stage': 'report', 'seconds': 0.0007083415985107422, 'passes': 0, 'gpu_seconds_in_passes': 0.0, 'ms_per_pass': 0.0, 'peak_gb': 0.0}
+2026-10-12 12:41:01 [job] rc=0 after 2s
+2026-10-12 12:41:02 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:41:02 [job] queue empty, waiting up to 10 min for new work
+2026-10-12 12:41:42 [job] run: Q_SMOKE=1 /opt/conda/bin/python phase_p.py --stage train --q /workspace/v5/qsmoke4 --out /workspace/v5/psmoke --writers 1 --cands R
+2026-10-12 12:42:22 train w1_R round 0 val loss 0.9558
+2026-10-12 12:42:37 train w1_R round 1 val loss 0.388
+2026-10-12 12:42:52 train w1_R round 2 val loss 1.1022
+2026-10-12 12:43:07 train w1_R round 3 val loss 0.5913
+2026-10-12 12:43:19 calibration w1_R {'own_policy_skill_dc_h1': -0.008362531661987305, 'val_loss_F': 0.591265857219696, 'val_loss_Fswap': 0.24305202066898346}
+2026-10-12 12:43:19 done train 95s
+2026-10-12 12:43:20 [job] rc=0 after 97s
+2026-10-12 12:43:21 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:43:21 [job] run: Q_SMOKE=1 /opt/conda/bin/python phase_p.py --stage test --q /workspace/v5/qsmoke4 --out /workspace/v5/psmoke --writers 1 --cands R
+2026-10-12 12:44:57 test w1_R {'coverage': 0.09090909090909091, 'coverage_sham': 0.0, 'E2_manip_rms': 0.38068917393684387, 'E2_dose_rms': 0.34586870670318604, 'n_scen_E3': 8, 'E1_skill': 0.1731855869293213, 'E1_skill_ci': [0.08970781415700912, 0.26581478118896484], 'E1_skill_ci_holm': [0.05968024209141731, 0.30204111337661743], 'E3_TR': 0.9995136260986328, 'E3_TR_ci': [0.9946482181549072, 1.0065737962722778], 'E3_TR_ci_holm': [0.9920574426651001, 1.0103741884231567], 'E3_NI': 0.9961755871772766, 'E3_NI_ci': [0.9580047130584717, 1.054407000541687], 'E3_NI_ci_holm': [0.9479542374610901, 1.0776335000991821], 'E4_dTR': 0.0006002187728881836, 'E4_dTR_ci': [-0.005467337556183338, 0.012276489287614822], 'E4_dTR_ci_holm': [-0.007896732538938522, 0.01776227541267872], 'E5_dist_restored': 0.23749180138111115, 'E5_dist_sham': 0.23749180138111115, 'E5_dist_continued': 0.5062828660011292}
+2026-10-12 12:44:57 done test 94s
+2026-10-12 12:44:58 [job] rc=0 after 97s
+2026-10-12 12:45:00 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:45:00 [job] run: /opt/conda/bin/python qual.py --stage calib --out /workspace/v5/q
+2026-10-12 12:46:42 calib {'n_train': 3300, 'n_val': 1100, 'n_J': 36.52659225463867, 'massive_dims': 0, 'pw_var': 0.9859841465950012, 'nat_val': {'mass_frac_ge_0_5': 0.9036363363265991, 'mean_abs_c': {'contra': 34.41078567504883, 'auth': 21.810319900512695, 'hint': 3.8004772663116455, 'irrel': 2.9434001445770264}, 'G1b_pass': True}, 'seconds': 91.94598031044006, 'provenance': {'model': 'Qwen/Qwen3-8B', 'revision': 'b968826d9c46dd6066d109eabc6255188de91218', 'lens': 'qwen3-8b/jlens/Salesforce-wikitext/Qwen3-8B_jacobian_lens.pt', 'lens_revision': '9fa267f841d62aa468dab5b9b38c3dc45a82d863', 'lens_sha256': '1e1f96c3b63ac46731a78658304c8857ef08992351268f0c78893361692059c3', 'dtype': 'torch.bfloat16', 'dictionary': 'english', 'dictionary_size': 26337, 'torch': '2.6.0+cu124', 'transformers': '4.57.1'}}
+2026-10-12 12:46:42 timing {'stage': 'calib', 'seconds': 100.5570695400238, 'passes': 8800, 'gpu_seconds_in_passes': 8.167811393737793, 'ms_per_pass': 0.928160385652022, 'peak_gb': 21.582162432}
+2026-10-12 12:46:43 [job] rc=0 after 103s
+2026-10-12 12:46:45 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:46:45 [job] run: /opt/conda/bin/python qual.py --stage g0 --out /workspace/v5/q
+2026-10-12 12:47:23 g0 {'a_replay_bit_identical': True, 'c_branch_order_maxdiff': 0.0, 'b_cached_vs_full_q95': {'lo': 0.4999825477600098, 'c': 0.625}, 'b_pass': False, 'a_pass': True, 'c_pass': True}
+2026-10-12 12:47:23 timing {'stage': 'g0', 'seconds': 35.83357238769531, 'passes': 9152, 'gpu_seconds_in_passes': 8.308657169342041, 'ms_per_pass': 0.9078515263704153, 'peak_gb': 21.044599296}
+2026-10-12 12:47:24 [job] rc=0 after 38s
+2026-10-12 12:47:26 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:47:26 [job] run: /opt/conda/bin/python qual.py --stage fp32 --out /workspace/v5/q
+2026-10-12 12:47:44 fp32 {'q95_abs_dlo': 0.6402502059936523, 'q95_abs_dc': 1.0617074966430664, 'sign_flips': 0, 'n_sign': 96, 'd_pass': False}
+2026-10-12 12:47:44 timing {'stage': 'fp32', 'seconds': 17.123059272766113, 'passes': 192, 'gpu_seconds_in_passes': 0.3280830383300781, 'ms_per_pass': 1.7087658246358235, 'peak_gb': 35.565036544}
+2026-10-12 12:47:45 [job] rc=0 after 20s
+2026-10-12 12:47:47 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:47:47 [job] run: /opt/conda/bin/python qual.py --stage gain --out /workspace/v5/q
+2026-10-12 12:49:19 gain 0.25 {'rms_dc_contra': 1.0140995979309082, 'mass_frac_ge_0_5': 0.9081818181818182, 'diverged': 0, 'rms_dlo': 0.7920473217964172}
+2026-10-12 12:50:12 gain 0.5 {'rms_dc_contra': 1.9928758144378662, 'mass_frac_ge_0_5': 0.906969696969697, 'diverged': 0, 'rms_dlo': 1.5537418127059937}
+2026-10-12 12:51:04 gain 1.0 {'rms_dc_contra': 4.232605934143066, 'mass_frac_ge_0_5': 0.9009090909090909, 'diverged': 0, 'rms_dlo': 3.0662283897399902}
+2026-10-12 12:51:56 gain 2.0 {'rms_dc_contra': 9.718424797058105, 'mass_frac_ge_0_5': 0.8654545454545455, 'diverged': 0, 'rms_dlo': 6.065632343292236}
+2026-10-12 12:51:56 g* 1.0
+2026-10-12 12:51:56 timing {'stage': 'gain', 'seconds': 248.2939474582672, 'passes': 79750, 'gpu_seconds_in_passes': 74.30078053474426, 'ms_per_pass': 0.9316712292757902, 'peak_gb': 21.070334464}
+2026-10-12 12:51:58 [job] rc=0 after 251s
+2026-10-12 12:51:59 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:51:59 [job] run: /opt/conda/bin/python qual.py --stage g2 --out /workspace/v5/q
+2026-10-12 12:54:58 G2 R {'dc_contra': {'r2_own': 0.4319802522659302, 'r2_swap': 0.4305729269981384, 'delta': 0.001407325267791748, 'ci': [-0.01322745978832245, 0.01550548225641248], 'pass_': False}, 'dlo': {'r2_own': 0.3170080780982971, 'r2_swap': 0.3109510540962219, 'delta': 0.006057024002075195, 'ci': [-0.011145842075347901, 0.023070266842842062], 'pass_': False}, 'n_rows': 4760, 'n_scen': 100}
+2026-10-12 12:55:05 G2 J {'dc_contra': {'r2_own': 0.4220202565193176, 'r2_swap': 0.4300311207771301, 'delta': -0.0080108642578125, 'ci': [-0.022160333395004273, 0.005470384657382951], 'pass_': False}, 'dlo': {'r2_own': 0.2941831946372986, 'r2_swap': 0.29692894220352173, 'delta': -0.0027457475662231445, 'ci': [-0.020390067994594575, 0.01530796140432357], 'pass_': False}, 'n_rows': 4760, 'n_scen': 100}
+2026-10-12 12:55:05 g2 {'g_star': 1.0, 'G1c_snr': 6.689363956451416, 'G1c_pass': True, 'G1c_within_share_raw': 0.009307234548032284, 'noise_floor_c': 0.625, 'G1a_mass_frac': 0.8892424242424243, 'rollout_seconds': 105.17226696014404, 'pass_any': False}
+2026-10-12 12:55:05 timing {'stage': 'g2', 'seconds': 184.35313773155212, 'passes': 44000, 'gpu_seconds_in_passes': 40.75213384628296, 'ms_per_pass': 0.9261848601427946, 'peak_gb': 21.070334464}
+2026-10-12 12:55:06 [job] rc=0 after 187s
+2026-10-12 12:55:08 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:55:08 [job] run: /opt/conda/bin/python qual.py --stage g3 --out /workspace/v5/q
+2026-10-12 12:58:08 G3 R {'dc_contra': {'r2_own': 0.45175105333328247, 'r2_swap': 0.38105273246765137, 'delta': 0.0706983208656311, 'ci': [0.04436593055725098, 0.09755527824163436], 'pass_': True}, 'dlo': {'r2_own': 0.49433839321136475, 'r2_swap': 0.1637994647026062, 'delta': 0.33053892850875854, 'ci': [0.29613082110881805, 0.3681672200560569], 'pass_': True}, 'n_rows': 4310, 'n_scen': 100}
+2026-10-12 12:58:14 G3 J {'dc_contra': {'r2_own': 0.43578946590423584, 'r2_swap': 0.3915632963180542, 'delta': 0.04422616958618164, 'ci': [0.020174983143806457, 0.07028137147426602], 'pass_': False}, 'dlo': {'r2_own': 0.41691309213638306, 'r2_swap': 0.16223472356796265, 'delta': 0.2546783685684204, 'ci': [0.21931162327528, 0.28927142173051834], 'pass_': True}, 'n_rows': 4310, 'n_scen': 100}
+2026-10-12 12:58:14 g3 {'g_star': 1.0, 'hidden_amplitude': '0.5 n_J (Amendment Q-3)', 'R': {'sigma_decode': 0.77, 'contrast': {'dc_contra': {'r2_own': 0.45175105333328247, 'r2_swap': 0.38105273246765137, 'delta': 0.0706983208656311, 'ci': [0.04436593055725098, 0.09755527824163436], 'pass_': True}, 'dlo': {'r2_own': 0.49433839321136475, 'r2_swap': 0.1637994647026062, 'delta': 0.33053892850875854, 'ci': [0.29613082110881805, 0.3681672200560569], 'pass_': True}, 'n_rows': 4310, 'n_scen': 100}, 'pass_': False}, 'J': {'sigma_decode': 0.6945454545454546, 'contrast': {'dc_contra': {'r2_own': 0.43578946590423584, 'r2_swap': 0.3915632963180542, 'delta': 0.04422616958618164, 'ci': [0.020174983143806457, 0.07028137147426602], 'pass_': False}, 'dlo': {'r2_own': 0.41691309213638306, 'r2_swap': 0.16223472356796265, 'delta': 0.2546783685684204, 'ci': [0.21931162327528, 0.28927142173051834], 'pass_': True}, 'n_rows': 4310, 'n_scen': 100}, 'pass_': False}, 'pass_any': False}
+2026-10-12 12:58:14 timing {'stage': 'g3', 'seconds': 184.7167718410492, 'passes': 44000, 'gpu_seconds_in_passes': 40.95480442047119, 'ms_per_pass': 0.9307910095561635, 'peak_gb': 21.070334464}
+2026-10-12 12:58:15 [job] rc=0 after 187s
+2026-10-12 12:58:17 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 12:58:17 [job] run: /opt/conda/bin/python qual.py --stage pilot --out /workspace/v5/q
+2026-10-12 13:02:00 pilot R {'coverage': 0.14272727272727273, 'coverage_pass': False, 'manip_rms_dc': 0.427478164434433, 'manip_pass': False, 'tracking_ratio': 1.0045379400253296, 'noninferiority_ratio': 1.0117440223693848, 'sd_log_tr': 0.058059677481651306, 'sd_log_ni': 0.2790645360946655, 'n_scen_used': 85, 'n_required': {'TR': 2, 'NI': 20}, 'n_test': 200, 'power_ok': True, 'fq_selfskill_dc_h1': 0.017383694648742676}
+2026-10-12 13:05:34 pilot J {'coverage': 0.4509090909090909, 'coverage_pass': False, 'manip_rms_dc': 0.8600138425827026, 'manip_pass': True, 'tracking_ratio': 1.0013569593429565, 'noninferiority_ratio': 1.008875846862793, 'sd_log_tr': 0.023856202140450478, 'sd_log_ni': 0.16674724221229553, 'n_scen_used': 100, 'n_required': {'TR': 1, 'NI': 8}, 'n_test': 200, 'power_ok': True, 'fq_selfskill_dc_h1': 0.008078992366790771}
+2026-10-12 13:05:34 timing {'stage': 'pilot', 'seconds': 435.87808561325073, 'passes': 154000, 'gpu_seconds_in_passes': 143.83046078681946, 'ms_per_pass': 0.9339640310832432, 'peak_gb': 21.079212032}
+2026-10-12 13:05:36 [job] rc=0 after 438s
+2026-10-12 13:05:37 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 13:05:37 [job] run: /opt/conda/bin/python qual.py --stage report --out /workspace/v5/q
+2026-10-12 13:05:39 report {'gates': {'G0a': True, 'G0b_abs': False, 'G0b_rel': True, 'G0c': True, 'G0d': False, 'G1b': True, 'g_star': 1.0, 'G1c': True, 'G2': False, 'G3': False}, 'files': ['calib', 'g0', 'g0_fp32', 'g2', 'g3', 'gain', 'pilot'], 'cnt': {'passes': 0, 't_gpu': 0.0}}
+2026-10-12 13:05:39 timing {'stage': 'report', 'seconds': 0.0007100105285644531, 'passes': 0, 'gpu_seconds_in_passes': 0.0, 'ms_per_pass': 0.0, 'peak_gb': 0.0}
+2026-10-12 13:05:39 [job] rc=0 after 2s
+2026-10-12 13:05:41 [job] uploaded /workspace/v5 -> Pixedar/jspace-v3 v5
+2026-10-12 13:05:41 [job] queue empty, waiting up to 10 min for new work
