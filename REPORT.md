@@ -1,391 +1,551 @@
-# What a language model builds when it loops a description of itself back into itself
+# Strange loop in J-space — report
 
-**Wiktor Tomasik** · report of 12 October 2026 · extension of earlier work on self-models and latent loops
-([medium.com/@pixedar](https://medium.com/@pixedar))
+**Wiktor Tomasik** · 13 October 2026 · Qwen3-8B, replicated on Qwen3-14B
 
-This report covers the whole programme: four ways of closing a loop through a language model's own internal
-description of itself (Parts 1–3, the decision-position loop, the trained self-describing loop of Phase B), the
-geometry of what those loops converge to, and the controls that separate what is self-specific from what is ordinary
-feedback. Every number below is in the repository (`*/results`, `*/runs`) or in the Hugging Face dataset
+This work builds on my earlier writing on self-models and latent loops ([medium.com/@pixedar](https://medium.com/@pixedar)).
+Every number below is in this repository (`frozen_loop/results`, `trained_loop/results`) or in the dataset
 [Pixedar/jspace-strange-loop](https://huggingface.co/datasets/Pixedar/jspace-strange-loop).
 
----
-
-## 0. The question
-
-The starting point is an idea from 2024: a *reversed autoencoder* whose bottleneck is a compact description of the
-system's own behaviour, fed back into the system, so that the system both learns a model of itself and is changed by
-it. The questions that follow from it:
-
-* Can a neural system hold a compact representation of its **own** processing (not of its input) and use it, so that
-  the representation changes the very processing it represents?
-* Does the system's model of itself keep up with the changes its own use causes?
-* What organisation emerges — which representation, with which **geometry** and dynamics — when such a loop runs? Two
-  rules were fixed from the start: complexity must emerge rather than be optimised, and any tension must come from
-  inside the system.
-
-The candidate bottleneck is **J-space**, the verbalizable workspace of Gurnee et al. (2026), *Verbalizable
-representations form a global workspace in language models*: a sparse non-negative combination of "Jacobian lens"
-word directions that reads a mid-layer state as words. The models are Qwen3 (1.7B–32B; 8B and 14B for the later work).
+1. [Question and method](#1-question-and-method)
+2. [Terms](#2-terms)
+3. [The frozen J-space loop](#3-the-frozen-j-space-loop)
+4. [The trained self-describing loop](#4-the-trained-self-describing-loop)
+5. [What the results suggest](#5-what-the-results-suggest)
+6. [Limits](#6-limits)
+7. [Open questions](#7-open-questions)
+8. [Data, code, reproduction](#8-data-code-reproduction)
 
 ---
 
-## 1. What holds up (summary)
+## 1. Question and method
 
-| # | Finding | Evidence (strongest test) | Where |
-|---|---|---|---|
-| 1 | J-space works as a reader of Qwen3's internal states, if built carefully: the workspace sits past ~60 % of depth up to 8B and earlier, fuller, at 14B–32B; a common-English dictionary reads states better than every token | lens validation per layer (occupancy, variance beyond random, concept probes); self-reading 51–73 % (chance 8 %) | Part 2 |
-| 2 | A loop through a description of oneself is causal and stabilising, but **not self-specific**: a foreign self-description works as well, and the best-fitting stranger's description is held better than one's own outdated one | own − matched stranger −0.045 ± 0.014 (z −3.2); stale own < random stranger −0.113 ± 0.018 (z −6.5); behaviour follows whichever self is fed in (z −18) | Parts 1–2 |
-| 3 | Self-related effects strengthen with scale | individuality of the loop's self 0.01 → 0.25 from 1.7B to 32B; stickiness after a clamp +0.02 → +0.30 | Part 2 |
-| 4 | A self-model's **current surprise**, fed back while it keeps learning, is a learned way out of attractors (more exploration than momentum, random input or its own stale surprise) — but it carries no privileged self-knowledge | pre-registered: Stouffer z +26.9 (vs momentum), +52.9 (vs random), +28.0 (vs stale), freezing −33.0; another mind's model predicts a mind as well as its own | Part 3 |
-| 5 | At a decision position, the J workspace holds **epistemic status** (whether the evidence settles the question), topic and answer onset — not the answer's relational structure; a frozen J loop is a contraction that forgets the evidence | J swap moves the answer 21 % of the way (8B), non-J remainder 52 %; evidence ≤ 2 % within ~4 loop steps | decision loop |
-| 6 | The frozen J loop selects by **self-reproduction**: discourse and stance words reproduce themselves through the model's write→read transport, names and entities do not; its fixed points are precision-limited and many; it shares one direction of self-amplification (toward a casual register) | transport self-gain ≈ 1.6–2.0 vs ≈ 0.6 (not frequency, r = 0.14); fp32 removes the late wobble (0.02 → 2·10⁻⁶); shared direction 41–71 % of displacement (random 2–20 %); top of the ranking replicates at 14B | loop geometry |
-| 7 | In frozen-context loops a self-model cannot be self-specific because there is **no private state**: everything is recomputed from input plus last write | compact state adds ΔR² ≈ 0 while a planted hidden state is detected (ΔR² +0.21 to +0.36), memoryless and memory loops | self-forecast gates |
-| 8 | A **trained** 32-number loop through the model's own thinking carries information the model uses; its principal axes read as **modes of thought** (uncertainty, reconsidering vs planning what to say, recalling vs speculating) | own vs another trace's state 0.269 ± 0.003 nats/token (14B 0.291); benefit over a learned constant input 0.11 nats/token | Phase B |
-| 9 | "Make yourself predictable to your self-model" is satisfied degenerately by naive losses: the state **collapses** onto one direction and hides its information in small deviations | cosine pressure: collapse index 0.95–0.97, "self-prediction" 0.98 explained by collapse; variance-normalised pressure destroys the loop | Phase B |
-| 10 | Under **discriminative** self-prediction pressure, the self-state represents its own time as a **multi-frequency rotation** — a phase clock; read in words, the drift it organises is the arc of reasoning (recall → hedged exploration → assertion → conclusion), except when 8B is pushed hardest, where it cycles through topic directions | true segment order fits one rotation better than all 2 000 scrambled orders (p < 0.0005) in every pressure arm, 8B (two seeds) and 14B; held-out single traces follow it (R² +0.45 to +0.78 vs null ≈ −1); it disappears when the self-model need not tell its own moments apart | Phase B |
-| 11 | What the self-model must tell apart decides the shape: its own moments → a **clock**; itself vs others → a persistent **identity** code | cross-trace-only control: no clock (rotation R² −0.65), persistence retrieval 38 % (3 % with the clock) | Phase B |
-| 12 | **The strange loop proper:** a self-forecast that is fed back is **enacted** — the system makes its self-prediction come true — far more than a matched memory channel; strong pressure lets the self-model take over the state (it stops being about the thought), mild pressure keeps both | swapped-forecast pull 0.39 / 0.25 (8B seeds) and 0.24 (14B) vs 0.07 / 0.04 for the same channel carrying the previous state; at λ = 0.1 pull 0.40 vs 0.13 with content kept (0.248 nats); replicated at 14B (0.21 vs 0.03 at λ = 0) | Phase B |
+The question comes from an idea I worked on in 2024, a *reversed autoencoder*: a network whose bottleneck is a compact
+description of the network's own behaviour, fed back into the network. Such a system has to learn a model of itself
+while that model, by being used, changes what it models. Three questions follow:
 
-The single sentence: **a loop through a self-description keeps whatever it can regenerate; it becomes self-specific
-only when the system has private state and a self-model that must tell its own states apart — and then it represents
-its own time (or identity) as a rotation (or a constant), and, if its forecasts are fed back, it makes them come true.**
+1. Can a system hold a compact representation of its own processing (not of its input) and use it so that the
+   representation changes the processing it represents?
+2. Does its model of itself keep up with the changes that its own use causes?
+3. What organisation emerges in such a loop — which content, which geometry, which dynamics — when nothing outside the
+   system dictates it?
+
+Two rules were fixed from the start: complexity should emerge rather than be optimised for, and any tension must come
+from inside the system. The aim is to understand mechanisms, not to improve a benchmark.
+
+**J-space.** Gurnee et al. (2026) show that the middle layers of language models contain a workspace that can be read in
+words: a hidden state there is well approximated by a sparse, non-negative mix of *word directions*, where the
+direction of a word is the change of the hidden state that most increases the model's later probability of producing
+that word (estimated from the model's Jacobian, hence "Jacobian lens"). I use the published lenses for Qwen3
+(Neuronpedia), restricted to about 26,000 common English words (26,337 for Qwen3-8B). *Reading a state in J-space* means finding the 25 words whose
+directions, with non-negative weights, best reconstruct the state. *Writing a description back* means adding the
+weighted sum of those word directions to a hidden state. This gives a loop a bottleneck that is both compact and
+readable.
+
+**Two systems.**
+
+| | frozen J-space loop (section 3) | trained self-describing loop (section 4) |
+|---|---|---|
+| what loops | the model's state at one position, described as 25 words and written back | 32 numbers carried from one piece of the model's own thinking to the next |
+| what is trained | nothing (one experiment adds an online forecaster) | a small reader, writers and a self-model; the language model stays frozen |
+| the self-model | a forecaster of the loop's next change, learning while its forecasts drive the loop | a small network that predicts the next state; its prediction can be written back |
+| question | what does a self-description converge to, and why? | what does a system build when it must carry, predict and follow its own state? |
+
+![how it works](figures/how_it_works.png)
 
 ---
 
-## 2. The four loops (architecture)
+## 2. Terms
 
-![The four loops](figures/architectures.png)
-
-| | Part 1–2: reflective loop | Part 3: the ring | Decision loop (v3/v5) | Phase B: trained self-describing loop |
-|---|---|---|---|---|
-| substrate | sampled 40-token thoughts from a think-aloud frame | one placeholder token at a time (no text) | the last template position of a fixed prompt | the model's own thinking traces, cut into 8 segments of 64 tokens with no shared context |
-| what is read | J-space of the thoughts' layer-16 states; every 10 thoughts a "reflection" decodes the recent states into J-space words | J-space content at 70 % depth | J code at L29 (8B) / L32 (14B), 25 words | a 32-number state z at block 29, last token of a segment (learned linear reader on a sphere; J-derived reader as a variant) |
-| what is written back | the self-model as a nudge at layer 16 | the self-model's current surprise (or prediction, controls) at 50 % depth | the J code re-synthesised at L22 / L24, fixed norm | z into 4 placeholder positions of the next segment (block 22); a 2-position channel carries a constant, the previous state, or the self-model's forecast |
-| self-model | the reflection itself | online rank-32 linear predictor of the next J state, trained every step | forecaster of the system's own write-induced changes (gates) | MLP S: z_{k−1} → z_k, trained only on its own prediction loss |
-| what is trained | nothing | the self-model online | readers / forecasters (small) | reader, writers, S (the language model stays frozen) |
-| tension from inside | none | learning on its own transitions | curiosity / learning progress (Regime C) | pressure λ on the system to be predictable to its own self-model |
+| term | meaning |
+|---|---|
+| read layer, write layer | Qwen3-8B has 36 layers: the loops read at layer 29 and write at layer 22 (Qwen3-14B, 40 layers: 32 and 24), chosen by a calibration scan of reading quality and write effect |
+| loop strength *g* | size of the written description relative to a typical J-space reconstruction of a natural state (g = 1: the same size) |
+| natural spread | variability of the J-space reading across ordinary prompts; the unit for small motions |
+| near-fixed point | a state that the loop maps onto itself up to numerical rounding |
+| contraction factor | the factor by which a small perturbation of a settled state shrinks per loop step (largest over directions; below 1 = stable). Technically the spectral radius of the loop's local linear map |
+| transport matrix | the effect of writing one word on the read-out weight of every other word, over 3,000 words; a linear summary of one loop step |
+| self-gain | a word's diagonal entry in the transport matrix: how strongly the word reproduces itself through the model |
+| persona axis | the main axis along which 40 role prompts (gangster, surfer dude … wise sage, oracle) differ at the same position; positions are given in units of the roles' spread |
+| chunk | 64 tokens of the model's own thinking; each thought is cut into 8 chunks |
+| state | the 32 numbers (a vector of fixed length) read from the model at the end of a chunk and written into the next chunk |
+| self-model | a small network that predicts the next state from the current one, trained only on its own prediction error |
+| channel | 2 extra positions at the start of a chunk; they carry a constant, the previous state again, or the self-model's forecast |
+| pressure λ | the weight of a loss that trains the reader and writers to make the states predictable to the self-model |
+| nats per token | the average negative log-probability that the model gives to each actual next token of its own thinking (lower = better predicted). A difference of 0.1 means about 10 % more probability per token |
+| own vs another thought's state | how much worse the model predicts its own thinking when the state it receives comes from another, unrelated thought |
+| benefit over the cut | how much better the loop does than a loop that passes no information (every chunk receives the same learned input) |
+| enactment | the channel's content is replaced by another thought's forecast; enactment is how far the next state moves toward that forecast (the increase in cosine similarity: 0 = no effect, about 1 = the state becomes the forecast) |
+| retrieval | how often the self-model's forecast is closer to the true next state than to the next states of the other 399 test thoughts (chance 0.25 %) |
+| collapse index | the mean cosine between states and their average direction (1 = all states point the same way) |
+| rotation fit | R² of the best single rotation that maps each chunk's average state onto the next chunk's; compared with 2,000 random orders of the chunks |
+| held-out R² | the same rotation, fitted on half of the thoughts, predicting each next state of single thoughts in the other half (below 0 = worse than predicting the average) |
+| teacher forcing, free generation | each chunk is the model's real thinking; or the model writes each chunk itself, seeing only that chunk and the state |
 
 ---
 
-## 3. Results by part
+## 3. The frozen J-space loop
 
-### 3.1 Parts 1–2: a reflective loop through J-space words (Qwen3-4B-Base; ladder 1.7B–32B)
+### 3.1 Setup
 
-A "mind" thinks in short sampled thoughts; every ten thoughts it reflects, and the J-space reading of that reflection
-is fed back as a nudge. Built on the paper's method with Neuronpedia's lenses (Part 2), validated per layer.
+The prompts are short scenarios with two candidate answers and, usually, a piece of evidence for one of them — for
+example *"Over dinner, Alice told Laura that she had missed the train. Only Alice had been planning to take the train.
+Question: Who missed the train? Answer with one word."* — or a false-belief story in which an object is moved while a
+character is away. The loop runs at the last
+position before the model answers. One step: read the state at the read layer; take its J-space description (25 words
+with weights); write that description into the write layer at the same position with strength g; recompute the layers
+above; read again. The prompt itself never changes. 64 steps; g from 0.25 to 4; trajectories for 1,000 contexts
+(Qwen3-8B) and 500 (Qwen3-14B); 8 to 300 contexts for the causal follow-ups.
 
-* **Self-reading works.** The self-model picks out its own trajectory (51–73 % at depth 0.7, chance 8 %). The
-  common-English dictionary reads better than every token (on Qwen's vocabulary the every-token dictionary is
-  dominated by code, CJK and under-trained tokens: self-reading 46 % raw residual / 25 % every token / 49 % English at
-  1.7B; 47 / 57 / 68 % at 4B).
-* **The loop is causal.** Removing the self-model drops long-lag coherence to the observer level at once; a self-model
-  swapped in reorganises the trajectory (+0.37 while held, +0.31 after release); behaviour follows whichever self is fed
-  in (pooled z = −18).
-* **It is not ownership.** Pooled over 15 runs a mind holds its own self-model better than a random stranger's
-  (+0.065 ± 0.007, z 8.9), but the most similar stranger's self-model is held slightly better than its own (−0.045 ±
-  0.014, z −3.2), and its own outdated self worse than a random stranger's (−0.113 ± 0.018, z −6.5): the loop keeps the
-  self-description that best fits the present, whoever produced it. No anticipation (forward vs backward question
-  pooled +0.0000 ± 0.0005).
-* **Scale.** The loop's self becomes steadier up to 8B (0.25 → 0.64), more individual (+0.01 → +0.25 from 1.7B to
-  32B) and stickier after a clamp (+0.02 → +0.30), for foreign selves as much as for one's own. Where the workspace
-  sits: conceptual only past ~60 % of depth up to 8B; occupancy 30–37 at 14B and 13–19 at 32B across most of the
-  middle; at 32B the J-lens beats the logit lens at agreeing with the model's prediction.
-* Correction kept from the time: the drift toward existence and consciousness themes in Part 1 came from the
-  think-aloud frame, not from the loop.
+### 3.2 Many locally stable states, and switching between them
 
-### 3.2 Part 3: the ring (no text in the loop; Qwen3 1.7B–14B; pre-registered)
+* **Settled states.** Within a few steps the loop reaches a state it reproduces. *Methods note:* in 16-bit arithmetic
+  the settled state keeps jittering at about 0.3 % of the natural spread; in 32-bit arithmetic the jitter disappears
+  (step size 0.02 → 0.000002–0.000008), so it is rounding, not dynamics.
+* **Locally stable.** A small perturbation that keeps the same 25 words shrinks per step by a factor of 0.26 / 0.54 /
+  0.64 (median; 90th percentile 0.31 / 0.68 / 0.73) at g = 0.25 / 1 / 4. No context comes near instability. Higher
+  strength softens more directions: a perturbation shrinks fourfold per step at low strength and 1.6-fold at g = 4.
+* **Large perturbations switch the state.** Tiny noise returns in 90–99 % of trajectories. Writing in the description
+  of the same scenario with the opposite evidence never carries the loop to that scenario's state (0–0.3 %) but leaves
+  a lasting partial offset in 56–94 % of trajectories. Nudges of 10–30 % of the word weights sometimes decay and
+  sometimes grow 1.5–3 times, when the set of words changes. The picture is a landscape of many neighbouring
+  self-consistent word sets, each stable to small changes; a large push moves the loop into another one.
+* **Specific to the context.** Among 1,000 contexts the loop ends in 686 different sets of five strongest words (14B:
+  357 of 500); only identical prompts share an end state. As the strength grows the contexts' descriptions converge
+  (weighted overlap between contexts 0.02–0.03 at g ≤ 1, 0.08 at g = 4) — toward the shared content of section 3.4.
+* **No rings, spirals or strange attractors** were found (persistent homology against matched random point clouds,
+  rotation of the linearised modes, dimension estimates, ordering tests).
 
-Each mind reads one placeholder token at a time; its J-space content is written back at 50 % depth; an online linear
-self-model predicts the next state and is trained on every transition. Conditions write back vectors of equal norm on
-the same schedule (paired noise across conditions).
+![loop spectrum](figures/loop_spectrum_8b.png)
 
-| `ring_err` (current surprise) minus | 1.7B | 4B | 8B | 14B | Stouffer z |
-|---|---|---|---|---|---|
-| momentum | +1.57 | +2.07 | +2.48 | −0.31 | +26.9 |
-| another mind's surprise | +0.41 | +1.31 | +0.20 | +4.33 | +15.9 |
-| own surprise, wrong time | +2.27 | +2.01 | +1.22 | +3.09 | +28.0 |
-| random direction | +3.16 | +3.65 | +3.34 | +4.75 | +52.9 |
-| freezing the self-model | −2.20 | −3.90 | −1.87 | −4.99 | −33.0 |
+### 3.3 What survives: the loop turns inward
 
-(exploration = participation ratio of the trajectory, paired over 24 seeds). Feeding back the self-model's
-*prediction* collapses like plain content feedback. Across the critical gain g* (where the free mind's spectrum turns
-1/f), "own" and "still learning" matter more the higher the gain, but past ~2 g* momentum wins; the attractors are
-trivial (shared junk words), and the model's own account of what it was thinking does not depend on the condition. A
-next-state predictor fitted to another mind predicts a mind as well as its own: no privileged self-knowledge.
+At low strength the settled description is the semantic field of the scenario and of the model's knowledge state: a
+withheld secret gives *cannot, Unknown, secrecy, confidentiality, whispers, mystery* (8B); a named colour or fruit gives
+*purple, azure, hues, crimson* or *apple, fruits, citrus, mango* (14B). At high strength it is a reaction to the
+situation in a conversational voice: 8B *And, why, listener, cuz, chuckled, know, love, want, haha*; 14B *incredible,
+mysterious, suspense, Hmm, huh, intriguing, spoilers*.
 
-### 3.3 The decision-position loop (Qwen3-8B, 14B replication; pre-registered protocol)
+The evidence fades. Whether the prompt's evidence pointed to answer A or B can be decoded from the description in 67 %
+of contexts before the loop (chance 50 %), 62 % after 32–64 steps at g = 1 and 53 % at g = 4. The full hidden state
+still holds it (90–97 % at g = 1), but only because the prompt, which contains the evidence, is re-read at every step:
+when the evidence is only in the loop's starting description and not in the prompt, the system loses it within about
+four steps.
 
-Scenarios with evidence for one of two answers; the J code at the decision position (L29) is decomposed into 25 words
-and broadcast back at L22.
+### 3.4 Why it converges there: selection by self-reproduction
 
-* **H1 relational structure:** the answer is carried outside J — swapping the J code moves the answer 21 % of the way
-  (14B: 14 %), the non-J remainder 52 % (58 %).
-* **H2 processing dispositions** are readable before a challenge, but the evidence label explains them (over output +
-  label J is negative; only 14B's late residual keeps +0.11 R²).
-* **What the workspace holds:** whether the evidence settles the question (2 % of the code after a direct statement,
-  20 % after an unreliable source), the topic, the answer's first letters.
-* **Regime A:** the unforced loop is a contraction (97–100 % of trajectories end at cosine-defined fixed points;
-  evidence ≤ 2 % within ~4 steps); unbounded writes diverge. **Regime B:** a predictability-seeking self-model
-  simplifies its own loop by habit (one repeated action). **Regime C:** curiosity equals its own blind (yoked) replay.
-  Feeding back the forecast error is noise. Natively recurrent models (Huginn, Ouro) rebuild the decision position each
-  pass. No loop improved task accuracy.
+Writing a single word at the write layer and reading the change of every word's weight at the read layer gives a
+3,000 × 3,000 *transport matrix* (32-bit, averaged over 8 contexts). Its diagonal, the *self-gain*, says how strongly a
+word reproduces itself through the model:
 
-### 3.4 What the frozen J loop converges to: geometry and mechanism (Qwen3-8B; 14B where marked)
+* highest (about 1.6–2.0): discourse and stance words — *yes, eventually, although, interesting, obviously,
+  otherwise, thus, according, despite, perhaps, okay, why*;
+* lowest (about 0.56–0.71): names, places and entities — *james, york, david, Canada, student, american, april,
+  robert*.
 
-* **Fixed points are real but precision-limited.** The "exact fixed points" of 3.3 were cosine-defined; with exact
-  equality none is fixed, because bf16 rounding keeps the state wobbling at ~0.3 % of its natural spread. In fp32 the
-  wobble vanishes (late step 0.02 → 0.000002). Locally the loop map contracts within its own 25 words (spectral radius
-  0.26 / 0.54 / 0.64 at gain 0.25 / 1 / 4; three finite-difference step sizes agree to r > 0.9999); larger
-  perturbations move it to another self-consistent word set: many near-fixed points.
-* **Selection by self-reproduction.** Writing one dictionary word and reading the next workspace gives a 3 000 × 3 000
-  word-transport operator (fp32, 8 contexts) — a linear surrogate of the loop. Its self-gain is highest for discourse
-  and stance words (eventually, although, obviously, perhaps; ≈ 1.6–2.0) and lowest for names and entities (james,
-  york, Canada; ≈ 0.56–0.71); not a frequency effect (r = 0.14). Its leading modes: an answering frame, Q&A structure, an
-  epistemic-stance register, a casual register — where the high-gain loop ends. The evidence in the scenarios is about
-  entities, exactly what a loop through the J code cannot hold. At 14B the top of the ranking and the modes replicate;
-  names and nationalities form their own modes instead of sitting at the bottom.
-* **One shared direction of self-amplification** (41 / 50 / 71 % of the displacement at gain 0.25 / 1 / 4; random
-  writes 2–20 %), read out as "yeah, wanna, gonna, guys"; in a 40-role persona space it points toward the casual end
-  (gangster, surfer dude) and away from the wise end (sage, oracle): −0.5 role-SD at gain 4 in 99 % of contexts
-  (a consistent but small component, ~1.6 % of the displacement energy); 14B 44–65 %, also toward the casual end.
-* **Not found:** rings, spirals, strange attractors in the frozen loop (persistent homology against matched null
-  clouds, rotation of linearised modes, intrinsic dimension, ordering tests).
-* Exploratory: certainty and uncertainty words change readiness to revise identically; removing the loop's own top
-  transport modes trades collapse for wandering, like removing random directions; during the model's own thinking, a
-  high-gain own-state loop narrows thought, and any perturbation makes 8B invent "a previous conversation" (6 % →
-  15–27 %; not at 14B).
+This is not a frequency effect: self-gain correlates only weakly with word frequency (r = 0.14), and after removing
+the frequency trend the same words are at the top and the bottom. The matrix's leading patterns (eigenvectors), also
+after the frequency control, are an answering frame (*answer, According, information, asked, Option, Wait*), question-
+and-answer structure (*Question, Answer, Solution, Section, Step, Method*), an epistemic stance (*Anyway, Obviously,
+Seems, Actually, Apparently, Maybe, Perhaps*) and a casual register (*yeah, weird, crazy, funny, dude, okay, gotta,
+guys, wanna*). Repeated application of the matrix from 20 random starting points always ends on the first pattern.
+
+The loop behaves approximately like repeated application of this matrix plus the prompt's own input, and repeated
+application amplifies whatever reproduces itself best. What reproduces itself best is how the model is answering — its
+frame, its stance, its voice — which is present whatever the topic; the names, places and evidence of a particular
+scenario reproduce worst. **The loop ends up representing the act of answering rather than the world it was asked
+about.** At 14B the top of the ranking and the leading patterns replicate; names and nationalities form patterns of
+their own there instead of sitting at the bottom, so a 14B loop could in principle hold entities. The transport matrix
+is a linear summary over a few contexts: it explains which words win, consistently with the observed end states, but is
+not a full mechanism of every trajectory.
 
 ![word transport](figures/transport_modes_8b.png)
+
+### 3.5 The shared drift toward a casual persona
+
+Besides the context-specific end states, the loop pushes every context along one shared direction: the average
+direction carries 41 / 50 / 71 % of the change of the state at g = 0.25 / 1 / 4, against 2 / 5 / 20 % when the loop
+writes random descriptions of the same size (14B: 44 / 51 / 65 %, random 1.5 / 3.6 / 17 %). Read through the model's
+output layer, the direction promotes *yeah, Yeah, wanna, gonna, guys, cuz, alright, okay, hey* and suppresses
+formatting and code tokens (14B: *yeah, I, so, interesting, what, let, look, hi, incredible, wow* — an interjecting,
+first-person voice).
+
+To place this direction among the model's personas, the same position was read under 40 role prompts (16 questions
+each). Their main axis (22 % of the variance between roles) runs from casual roles — gangster, surfer dude, moody
+teenager, hard-boiled detective, stand-up comedian — to wise ones — wise sage, angel, oracle, ancient philosopher,
+spiritual guru. The default assistant sits in the middle. The loop moves contexts toward the casual end: −0.01 /
+−0.07 / −0.50 role spreads at g = 0.25 / 1 / 4, in 99 % of contexts at g = 4; random writes do not move them (+0.015).
+At 14B the assistant already sits on the casual side (+0.62) and the loop moves contexts further that way at g = 4
+(+0.21, 100 % of contexts; random writes +0.07). The persona component is consistent but small (about 1.6 % of the
+energy of the change), and it is a change of the internal state; whether the model's generated text takes on this
+persona was not tested.
+
+A reading: the direction the loop amplifies is common to all prompts, so it belongs to the model, not to the scenarios.
+When the model's description of its own state is amplified, the state slides toward the register of informal spoken
+conversation — someone reacting rather than an assistant reporting.
+
 ![persona drift](figures/persona_axis_8b.png)
 
-### 3.5 Why self-forecasts could not be self-specific in frozen loops
+Two side results. *Stance words are not a dial:* writing certainty words or uncertainty words into the state reduces
+how strongly the model revises its answer when contradicted — by the same amount for both, and somewhat less than
+random words do. *Removing the loop's own leading patterns* from every write unfreezes the loop at high strength into
+wandering through unrelated vocabulary (*badass, chiefly, municipalities, Taiwanese*); removing random directions does
+the same, and the evidence does not come back. Collapse onto a self-reproducing description and noise are both
+reachable; this route offers no third regime.
 
-A self-forecast loop at the decision position needs a compact self-state that knows something about the system's
-processing beyond its input and its own actions. Measured directly: under random writes, the compact state adds
-nothing to predicting how the system's writes change its readiness to revise (ΔR² +0.001 / −0.008), while the same test
-detects a planted hidden state (+0.25 / +0.33). With memory (every loop step kept in context) it fails again
-(−0.007 / −0.033) while the planted state is decodable at 0.98. The state is a function of (prompt, last write): there
-is nothing private to know. An online forecaster driving the loop does keep up with the process it changes (error
-≈ 0.47 vs 0.72 frozen) — the 2024 tension exists — but one fed another, content-matched state keeps up as well (≈ 0.48).
-These negatives set the design of Phase B: a loop whose state the system keeps and shapes, on its own continuing
-thought, with the self-model's output fed back and an internal pressure toward self-prediction.
+### 3.6 The loop inside the model's own thinking, and an invented past
 
-### 3.6 Phase B: a trained self-describing loop around the model's own thinking
+The same kind of loop was run while the model thinks freely (300 tokens, 48 runs per condition, paired sampling noise):
+the J-space reading of each generated token, at about 70 % of the depth, is written at about 50 % of the depth of the
+next one. At strength 4, feeding back the model's own reading narrows its thought: the model predicts its own
+continuing text much worse (+0.80 nats per token for 8B) and the topics spread less. A self-model's prediction error fed
+back instead (a "surprise" signal) behaves like random input or momentum on nearly every measure — it is not specific
+to the self.
 
-**Setup.** Qwen3-8B's own thinking traces (3 016 prompts from dolly-15k, thinking mode, first 512 tokens; 14B: 2 444)
-are cut into 8 segments of 64 tokens. A segment never sees earlier tokens; the only link is a 32-number state read
-from the model at the end of the previous segment and written into 4 placeholder positions; 2 more positions form a
-channel (constant / previous state / the self-model's forecast). The self-model S learns only from its own prediction
-loss; λ is the pressure on the system to be predictable to S. Reader, writers and S are trained (400 steps, batch 10)
-with next-token loss; the language model is frozen. Evaluation on 400 held-out traces, teacher-forced and in free
-generation, where the model thinks on its own with only the loop as memory. Reference: own thought costs 0.32
-nats/token in full context and 2.12 for a segment alone; a learned constant input (loop cut) gives 1.855.
+One observation stands out. Perturbing the state during thinking makes Qwen3-8B refer to a previous conversation that
+never happened — *"Let me start by recalling the last interaction. They mentioned they're a US-based user…"*;
+*"…recalling the last conversation. They mentioned something about the moon's phases and a rainbow."* Share of thoughts
+with such a reference: no loop 6 %, the model's own reading fed back 15 %, momentum 19 %, a self-model's surprise 25 %,
+another run's surprise 25 %, random input 27 %. Any perturbation does it, random input as well. For Qwen3-4B and
+Qwen3-14B the rate is already 19–23 % without a loop and does not rise. The same theme returns in the trained loop
+(section 4.8).
 
-**What the plain loop carries (λ = 0).**
+### 3.7 A self-model inside the frozen loop: keeping up with the change it causes
 
-| | NLL seg 1–7 | own vs another trace's state | benefit over the loop cut |
-|---|---|---|---|
-| plain loop (`const`) | 1.741 | 0.269 ± 0.003 | 0.114 |
-| forecast channel (`fcst`) | 1.761 | 0.266 ± 0.003 | 0.094 |
-| state channel (`state`) | 1.765 | 0.275 ± 0.003 | 0.090 |
-| 14B plain loop | 1.681 | 0.291 ± 0.004 | — |
+The 2024 idea needs a self-model whose output changes the system it models. Here the loop writes back a compact
+32-number summary of its state together with a forecaster's predictions, each through a fixed random projection. The
+forecaster predicts, one to three steps ahead, the model's answer and its *readiness to revise* — how far the odds of
+the two answers move when a sentence contradicting the evidence is added (about 34 nats for natural states).
 
-The state is a one-step summary in teacher forcing (a corrupted state is forgotten after one segment). Its principal
-axes, read in J-lens words, are modes of thought: uncertainty (Maybe, Hmm, perhaps, unsure) vs emphatic content;
-reconsidering (Hmm, wait, but) vs planning what to tell the user (mention, advise, emphasize, recommend); recalling
-(recall, remember) vs speculating / explaining. These axes come mostly from the principal components of the model's
-natural end-of-segment states (trained readers overlap their initialisation 0.87–0.93; the J-derived reader subspace
-only ~0.08). In free generation the deliberative register persists while the subject drifts (topic similarity 0.16 →
-0.01 over seven segments); a donor's state transfers the donor's topic. Feeding back the forecast without pressure is
-no different from an extra memory channel (same use, same dimensionality drop).
+**Is there anything private to know?** Before asking whether a self-model knows something about itself, I tested
+whether the loop's own compact state helps predict its next change beyond what the prompt's content and the writes
+already determine. Under random writes, two identical predictors were given the content and the writes, one with the
+loop's own state and one with the state of another rollout with the same content. The own state added nothing, for
+the answer or for the readiness to revise, with or without memory (every loop step kept in the context): −0.03 to
++0.01 explained variance. The same test detects a hidden variable planted in the model's state: +0.21 to +0.36 for the
+answer, +0.01 to +0.07 for the readiness to revise. A loop that recomputes its state from the prompt and the last write
+has no private state.
 
-**Self-prediction pressure: three losses.** Cosine on the sphere → collapse (index 0.95–0.97) with information hidden
-in small deviations amplified by the writer (the state still worth 0.18–0.20 nats; the forecast channel ignored).
-Variance-normalised MSE (detached) → collapse anyway (0.998), the loop destroyed (worth 0.002, NLL 2.34). Contrastive
-(the forecast must pick the true next state out of all states in the batch) → genuine self-predictability.
+![private state test](figures/private_state_test_8b.png)
 
-**The time code.** Under contrastive pressure the forecast retrieves the true next state among 400 held-out traces at
-90–99 % (previous state as the guess: 1–3 %; chance 0.25 %), and the self-state becomes a rotation:
+**The 2024 tension.** A forecaster that keeps learning while its forecasts are written into the loop (60 batches of 64
+rollouts; errors are squared errors divided by the variance of the target, so 1 = no better than the mean):
 
-| λ = 1, contrastive | one rotation maps segment means (true order vs scrambled orders, q99) | held-out traces follow it (R²) | angles per segment | shape |
-|---|---|---|---|---|
-| 8B `fcst` seed 0 / seed 1 | 0.92 / 0.93 vs 0.76 / 0.79 | +0.56 / +0.66 | 155°, 78°, 26° / 126°, 84°, 28° | helix |
-| 8B `state` | 0.94 vs 0.77 | +0.70 | 180°, 125°, 54° | ring, ~1 turn |
-| 8B `const` (no channel) | 0.95 vs 0.82 | +0.45 | 154°, 82°, 45° | tightening spiral |
-| 14B `fcst` | 0.92 vs 0.74 | +0.56 | 133°, 92°, 30° | winding in two planes |
-| 14B `state` | 0.91 vs 0.75 | +0.78 | 171°, 75°, 22° | ring |
-| plain loop (no pressure) | 0.38 vs 0.46 | −0.92 | — | none |
-| cross-trace-only control | 0.14 vs 0.44 (p = 0.24) | −0.65 | — | none (identity code) |
-
-(The 99th percentiles of the scrambled-order null vary by about ±0.03 between permutation runs; the canonical run, with
-every arm, is in `phaseB_trained_self_model_loop/results/phaseB_arms_summary.md`.) Steps between consecutive segment
-means have nearly constant length (CV 0.06–0.19) and turn by a nearly constant angle
-(81–91°). Beyond the shared stage template, each trajectory's own deviation also turns with the rotation (linear R²
-0.62–0.80, rotation 0.49–0.77, persistence negative; trajectory-shuffle null q99 ≤ −0.56). Read in the model's
-vocabulary (the plane of the segment means mapped back through the reader to J-lens words), the plain loop drifts
-through the stages of a thought — 8B: *things, stuff* → *maybe, something, might* → *also, additional* → *concise,
-Conclusion, summary*; 14B: *pretty, probably, kinds, remember* → *maybe, might, perhaps* → *additional, alternative* →
-*Ensure, Ultimately, Summary*. Mild pressure keeps this arc (8B: *stuff, maybe* → *also, could* → *Conclusion,
-Suggestions*), and so does the 14B pressure loop (*kinds, maybe, stuff* → *something, somehow* → *renowned,
-universally* → *Ultimately, concludes*). Under strong pressure at 8B the clock plane instead cycles through topic
-directions (*espresso, coffee* → *music, instruments* → *movies, games* → *baseball, football* → *animals*): a
-self-generated carousel unrelated to the thought being processed — the same arms in which the state stops carrying the
-thought's content. Pressure organises the drift into a strong rotary code (segment position decodable 0.69–0.88 vs
-0.21–0.23). Every arm, with all measures: `phaseB_trained_self_model_loop/results/phaseB_arms_summary.md`.
-
-![time code](figures/phaseB_time_code.png)
-
-*Mechanistic reading.* S is a single time-invariant map on a sphere. For its forecasts to keep the system's own
-moments apart it must implement a norm-preserving map whose iterates differ — a rotation; several frequencies make the
-phases distinguishable over eight steps. The geometry follows from what the self-model is asked to do; what is
-emergent is that the whole loop — reader and writes through the frozen model — organises itself into it, in every trajectory, and in most arms around the
-model's own arc of reasoning.
-
-**What the self-model must tell apart.** With candidates restricted to other traces at the same moment, no clock
-forms (position decodable 0.22, rotation R² −0.65); instead a persistent identity code (the previous state alone
-identifies the next one 38 % of the time vs 3 %), with more content kept (0.215 vs 0.084 nats) and enactment still
-present (0.23).
-
-**Enactment — the strange loop.** Swapping only the forecast for another trace's forecast pulls the next state toward
-it by a cosine gain of 0.39 (8B), 0.25 (8B seed 1), 0.24 (14B); the matched channel carrying the previous state:
-0.07 (8B), 0.04 (14B). Without pressure (λ = 0) the forecast channel pulls 0.03.
-
-| 8B, forecast fed back | λ = 0 | λ = 0.1 | λ = 1 |
-|---|---|---|---|
-| enactment (pull toward a swapped forecast) | 0.03 | 0.40 | 0.39 |
-| the same, state channel (matched control) | 0.005 | 0.13 | 0.07 |
-| forecast retrieves the true next state | 7 % | 51 % | 90 % |
-| own vs another trace's state (nats/token) | 0.266 | 0.248 | 0.084 |
-| benefit over the loop cut (nats/token) | 0.094 | 0.050 | −0.147 |
-| swapping the forecast costs (nats/token) | 0.083 | 0.056 | 0.005 |
-| 14B: enactment / state worth | 0.03 / 0.302 | 0.21 / 0.277 | 0.24 / 0.114 |
-
-Control for how the self-model itself is trained: at λ = 0 the self-model above was trained with a cosine loss and at
-λ > 0 contrastively. With S trained contrastively but no pressure on the system, enactment stays at 0.04 (forecast
-retrieval 9 %, state worth 0.278, benefit over the loop cut 0.097) — the jump to 0.40 at λ = 0.1 is caused by the
-pressure on the system, not by the self-model's training. The same holds for the state channel (λ = 0, contrastive
-self-model: enactment 0.010).
-
-Under strong pressure the forecast steers the state but carries no text information: the self-model's output takes
-over the state, which becomes a self-generated clock decoupled from content, and the loop as a whole predicts the
-model's thought worse than a constant input. Under mild pressure (λ = 0.1) the system follows its own forecast as
-strongly as under strong pressure while keeping most of what the state is about; this regime replicates at 14B.
-
-**J-space as the bottleneck.** With the reader fixed to the J-space word projection (the top-32 principal axes of the
-J-lens word projections of natural states; only the writes trained), the plain loop predicts the model's thought
-slightly better than with a trained reader (NLL 1.731 vs 1.741; benefit over the loop cut 0.124 vs 0.114; own vs
-another trace's state 0.279 vs 0.269) and keeps the topic longer in free generation (0.24 → 0.01 vs 0.16 → 0.01).
-Its axes read as registers: formal-analytic (*Implementation, Verification, Analysis*) vs vivid-physical (*smashed,
-shoved, roasted*); hypothetical reasoning (*asked, considered, Assuming, would*) vs concrete places (*breweries,
-airports, restaurants*); colloquial negation (*doesnt, didnt, crappy*) vs headline words. Where the decision-position
-loop found J-space to be a readout rather than a bottleneck, a loop running on the model's own thought can use the
-verbalizable workspace as its bottleneck without loss.
-
-The time code forms inside J-space as well: with the fixed J-space reader, the forecast fed back and contrastive
-pressure, the true segment order fits one rotation better than all 2 000 scrambled orders (0.93 vs q99 0.76),
-held-out traces follow it (R² +0.48; angles 129°, 73°, 37°), the forecast retrieves the true next state at 94 %
-(previous state 5 %) and is enacted (0.18), at the same content cost as with the learned reader (worth 0.098).
-
-![dose](figures/phaseB_dose_8b.png)
-
----
-
-## 4. What did not hold up (corrections, kept visible)
-
-* Parts 1–2 overstated self-specificity when first written; the match and stale controls show resemblance, not
-  ownership. The think-aloud frame, not the loop, produced the consciousness themes.
-* The decision loop's "exact fixed points" were cosine-defined; they are precision-limited near-fixed points.
-* The transport operator is a linear surrogate, a candidate explanation of where the loop goes, not a validated
-  mechanism. The persona drift is a small component of the self-amplification direction. The entities-at-the-bottom
-  ranking holds at 8B, not at 14B.
-* In Phase B: (i) "the state carries 0.27 nats/token" measures reliance on one's own state versus another's; the
-  benefit over a learned constant input is ~0.1 nats/token; (ii) the first "self-prediction 0.98" under cosine pressure
-  was collapse; (iii) the dimensionality drop with a forecast channel is an effect of any extra channel; (iv) the
-  "return to one's own trajectory after a perturbation" is measured in teacher forcing, where the plain loop returns
-  at once — pressure gives the state inertia, and in free generation the perturbed run does not return; fresh forecasts
-  beating stale ones is expected whenever the state depends on its past; (v) the single-plane clock coherence is
-  fragile (0.87 in one seed, 0.44 in the other); the rotation fit is the robust measure.
-* No loop improved task accuracy (decision loop), and the loop with the strongest self-model is worse at predicting
-  the model's thought than no loop at all.
-
----
-
-## 5. The big picture: how the findings relate
-
-**One principle runs through the frozen loops: a loop keeps what it can regenerate.** Parts 1–2 found that the loop
-holds whichever self-description best fits the present, own or foreign; the decision loop found that the workspace
-converges on what reproduces itself (stance, discourse, an answering frame, a casual voice) and forgets the evidence;
-the ring's surprise signal works because it never lets the loop settle, not because it is one's own. "Resemblance,
-not ownership" and "selection by self-reproduction" are the same fact seen from two sides: without anything private,
-self-reference reduces to a fixed point of feedback.
-
-**Self-specificity needs private state, and a self-model that has to tell states apart.** The frozen-context gates
-showed the precondition was missing. The trained loop of Phase B supplies it: a state that the system itself carries
-from one segment of its own thought to the next. Even then, a self-model trained to predict that state is satisfied
-by becoming uninformative (collapse, information hidden from the self-model's own metric) — the strongest form of the
-self-simplification seen in 2024 and by Premakumar et al. (2024). Only when self-prediction means *discrimination* does
-structure appear, and its shape is dictated by what must be discriminated: one's own moments → a phase clock that organises
-the arc of reasoning (or, when the 8B model is pushed hardest, cycles through topics unrelated to the thought); oneself versus others → a persistent identity. These are the two most elementary forms of
-self-location — *when am I* and *which one am I*.
-
-**Closing the loop turns a self-model into a cause.** When the self-model's forecast is written back, the system
-learns to make its forecasts come true — the representation of its own future changes that future, which is the
-literal form of the strange loop in the original question. The cost is aboutness: under strong pressure the self-state
-stops being about the thought and becomes a clock the self-model drives. The interesting regime is in between: under
-mild internal pressure the system enacts its self-forecast as strongly while the state remains about what it is
-thinking, at 8B and 14B.
-
-**Geometry.** Counting in language models is represented on curved, helical manifolds (Gurnee et al., 2025);
-transformers use rotary, multi-frequency codes for position (by design in RoPE, learned in modular arithmetic). The
-self-modelling loop arrives at the same family of codes for its own time — by itself, under a pressure that comes only
-from its own self-model — and, in most arms, wraps the model's own sequence of epistemic stages around it. Contrastive predictive
-coding and slow-feature theory predict harmonic codes for temporally coherent features, so the rotation is expected in
-kind; what is new here is where it appears (in the self-state of a loop inside a language model's thought), what it
-encodes (the stage of reasoning), and that feeding the self-model back makes it causal.
-
-**What this does not show.** Every measure is functional. Nothing here bears on experience. The models are 8B and 14B,
-one seed per arm except the replicated arms, teacher-forced training on fixed traces, free generation that loses the
-topic within a few segments, and a self-model asked to discriminate — the pressure that shapes the code is chosen.
-
----
-
-## 6. Open questions and next steps
-
-* Train in free generation (the loop shaping what the model actually thinks, not only its predictions on its own
-  fixed thought), with mild pressure, and test whether the self-forecast then steers content as well as the state.
-* Transfer of a processing disposition across topics by transplanting a forecast component (the H2 question in a
-  system with private state).
-* Longer horizons (more segments) to see whether the clock closes into a ring or keeps winding (helix), and what the
-  frequencies track.
-* The J-space reader as the loop's bottleneck matches the learned reader and carries the clock; what its word axes
-  add to the interpretation of the self-state is open.
-* Scale beyond 14B; seeds for every arm.
-
----
-
-## 7. Data, code and reproduction
-
-| folder | what | data on Hugging Face |
+| forecaster | error on the current process, start → end | error on the original process, start → end |
 |---|---|---|
-| `part1-2_reflective_loop/` | Parts 1–2 code, run summaries, interactive report (`report/index.html`) | `runs/`, `part2/` (raw `results.json`, `meta.json`, lenses) |
-| `part3_ring/` | Part 3 code and pre-registered analysis | [Pixedar/jspace-ring](https://huggingface.co/datasets/Pixedar/jspace-ring) |
-| `v3_decision_loop/` | the decision-position loop: protocol, report, code, compact results | raw arrays (21 GB) on request |
-| `v5_loop_geometry/` | geometry of the frozen loop, self-forecast gates, protocol, lessons | `v5/` (geometry and transport arrays) |
-| `phaseB_trained_self_model_loop/` | the trained self-describing loop: plan, results, code | `phaseB/` (evaluation arrays, the models' own traces, trained loop weights) |
-| `infra/` | unattended GPU runner (queue, upload, self-destroy) | |
-| `figures/` | figures in this report | |
+| learning, its forecasts written back | 0.60 → 0.44–0.50 | 0.75 → 0.88 |
+| frozen | 0.66–0.76 | 0.75 |
+| learning, given another rollout's state with the same content | 0.92 → 0.46–0.50 | 0.82 → 0.99 |
+| learning, forecasts not written back (observer) | 0.43 → 0.35–0.39 | 0.78 → 0.97 |
 
-Models: Qwen/Qwen3-8B @ b968826d, Qwen/Qwen3-14B @ 40c06982, earlier parts Qwen3 1.7B–32B; lenses
-neuronpedia/jacobian-lens @ 9fa267f8. Phase B on one RTX 4090 48GB (8B, ~14 min per arm) and one A100 80GB (14B,
-~20 min per arm).
+The learning self-model keeps up with a process that its own forecasts keep changing, and drifts away from what the
+system used to be — the tension of the original idea, in miniature. But a forecaster that sees another rollout's state
+keeps up as well: in this loop the advantage comes from learning how content and actions map to consequences, not from
+knowing its own state, because there is no private state to know. This sets the design of the second system: a loop
+whose state the system itself carries and shapes, on its own continuing thought.
+
+---
+
+## 4. The trained self-describing loop
+
+### 4.1 Setup
+
+* **Data.** The model's own thinking: Qwen3-8B in thinking mode on 3,016 instructions from the Dolly-15k dataset,
+  first 512 tokens of thinking each (Qwen3-14B: 2,444). Each thought is cut into 8 chunks of 64 tokens.
+* **The loop.** Each chunk is processed on its own: it cannot attend to any earlier chunk. At the end of a chunk a
+  linear *reader* turns the hidden state of the last token at the read layer into a 32-number state of fixed length.
+  A *writer* adds a learned function of that state to 4 placeholder positions at the start of the next chunk, at the
+  write layer. The state is the only memory between chunks.
+* **The channel.** Two more placeholder positions carry, depending on the variant: a learned constant (*plain loop*),
+  the previous state again (*state channel*, a matched memory control), or the self-model's forecast of the state that
+  the coming chunk will end in (*forecast channel*: the strange loop). A *cut* variant passes no state at all.
+* **The self-model** is a small network that maps the current state to a forecast of the next. It learns only from its
+  own prediction error.
+* **The pressure.** Reader and writers are trained on next-token prediction of the model's thinking plus λ times a
+  self-prediction loss, computed through a copy of the self-model whose weights receive no gradient from it. With λ > 0
+  the system is pushed to make its states predictable to its own self-model; the self-model is not pushed toward
+  anything but accuracy. λ = 0, 0.1 or 1.
+* **Self-prediction losses.** *Cosine* (forecast and state should point the same way), *variance-normalised squared
+  error*, or *contrastive*: the forecast must pick the true next state out of all states in the batch, which include
+  the same thought's other moments.
+* **Training and test.** 400 steps of 10 thoughts; the language model stays frozen. Tests on 400 held-out thoughts,
+  teacher-forced, and on 64–128 in free generation. For orientation: the model predicts its own thinking at 0.32 nats per
+  token with the full context, 2.12 for a chunk on its own, and 1.855 with the cut loop (chunks 2–8).
+
+### 4.2 What the plain loop carries
+
+| no pressure | nats per token, chunks 2–8 | own vs another thought's state | benefit over the cut |
+|---|---|---|---|
+| plain loop | 1.741 | 0.269 ± 0.003 | 0.114 |
+| state channel | 1.765 | 0.275 ± 0.003 | 0.089 |
+| forecast channel | 1.761 | 0.266 ± 0.003 | 0.093 |
+| plain loop, J-space reader | 1.731 | 0.279 | 0.124 |
+| 14B plain loop | 1.680 | 0.291 ± 0.004 | — |
+
+The 32 numbers recover about 7 % of the gap between a chunk read without context and with the full context. Another
+thought's state costs more (0.27) than having no state at all saves (0.11): a wrong state misleads. In teacher forcing
+the state is a one-step summary — a corrupted state is forgotten after one chunk, because the next chunk's real text
+re-anchors it.
+
+Read in J-space words (each axis of the state mapped back into the model's hidden space and compared with the word
+directions), the state's main axes are **modes of thought**: uncertainty (*Maybe, Hmm, perhaps, unsure*) against
+emphatic content; reconsidering (*Hmm, wait, but*) against planning what to tell the user (*mention, advise,
+emphasize, recommend*); recalling (*recall, remember*) against speculating and explaining. These axes are mostly the
+main directions of variation of the model's own end-of-chunk states (the trained readers stay close to their
+initialisation there, overlap 0.87–0.93): the loop carries how the model is thinking more than what it is thinking about.
+Feeding back an untrained forecast (λ = 0) is no different from having an extra memory channel.
+
+### 4.3 Self-prediction pressure: the system satisfies it degenerately unless prediction means discrimination
+
+* **Cosine loss → collapse.** All states turn toward one direction (collapse index 0.95–0.97) and the information
+  hides in small deviations that the writer amplifies; the self-model's apparent accuracy (0.98) is explained by the
+  collapse, and the forecast channel is ignored.
+* **Variance-normalised loss → collapse anyway** (0.998), and the loop is destroyed (nats per token 2.34, worse than
+  the cut).
+* **Contrastive loss → real self-predictability.** The forecast picks the true next state among 400 held-out
+  thoughts 90–99 % of the time (the previous state as the guess: 1–3 %; chance 0.25 %).
+
+### 4.4 The clock
+
+Under contrastive pressure (λ = 1) the state becomes a **rotation**: one and the same rotation, acting in several
+planes at once, carries it from each chunk to the next, and single thoughts follow it.
+
+| λ = 1, contrastive | rotation fit, true order (random orders, 99th percentile) | held-out R² | angles per chunk |
+|---|---|---|---|
+| 8B forecast channel, seed 0 / seed 1 | 0.92 / 0.93 (0.75 / 0.78) | +0.56 / +0.66 | 152°, 78°, 26° / 127°, 85°, 28° |
+| 8B state channel | 0.94 (0.74) | +0.70 | 180°, 127°, 55° |
+| 8B no channel | 0.95 (0.82) | +0.45 | 154°, 82°, 45° |
+| 8B forecast channel, J-space reader | 0.93 (0.75) | +0.48 | 129°, 73°, 37° |
+| 14B forecast channel | 0.92 (0.74) | +0.56 | 133°, 92°, 30° |
+| 14B state channel | 0.91 (0.74) | +0.78 | 172°, 75°, 23° |
+| plain loop, no pressure (8B) | 0.38 (0.48) | −0.92 | — |
+
+In every pressure variant the true order of the chunks fits one rotation better than at least 1,999 of 2,000 random
+orders (p ≤ 0.0005), and the steps between consecutive chunk averages have nearly constant length (coefficient of
+variation 0.06–0.19, against 0.57 without pressure). The chunk a state comes from can be read off
+it in 69–88 % of cases in the variants with a channel (38 % without one, 56 % with the J-space reader), against 21–26 %
+without pressure (chance 12.5 %). The clock forms whether or not the forecast is written back — with the state channel
+and with no channel at all — so the clock is produced by the pressure to be self-predictable, not by closing the loop.
+
+**It is not just a shared template.** Subtracting the average path and predicting each held-out thought's own
+deviation at the next chunk from its deviation at this chunk: under pressure, linear prediction R² 0.62–0.80 and
+rotation 0.49–0.77 (shuffled trajectories: below −0.56); without pressure 0.17–0.24 and −0.34 to −0.21. Each thought
+carries its own deviation, and it turns with the rotation.
+
+**What the clock reads as.** Mapping the average state of each chunk back into J-space words gives the stages of a
+thought. Without pressure the average state already drifts through them; pressure turns that drift into a regular
+rotation that every thought follows:
+
+* 8B plain loop: *things, stuff* → *maybe, something, might* → *also, additional, alternative* → *concise,
+  Conclusion, summary*;
+* 14B plain loop: *pretty, probably, kinds, remember* → *maybe, might, perhaps* → *additional, alternative* →
+  *Ensure, Ultimately, Summary*;
+* 8B mild pressure: *stuff, maybe* → *also, could* → *Conclusion, Suggestions*; 14B strong pressure: *kinds, maybe,
+  stuff* → *something, somehow* → *renowned, universally* → *Ultimately, concludes*;
+* 8B strong pressure is the exception: the clock cycles through topics that have nothing to do with the thought —
+  *espresso, coffee* → *movies, games* → *music, instruments* → *espresso* → *baseball, football* → *movies, animals*.
+  This is the variant whose state no longer carries the thought (section 4.6).
+
+![time code](figures/time_code.png)
+
+![word clock](figures/word_clock.png)
+
+**Why a rotation.** The self-model is one fixed map from a state to the next, and states have fixed length. To keep
+eight moments of a thought apart with one fixed, length-preserving map, its repeated application must keep moving the
+state without returning — a rotation; several frequencies at once keep the phases distinct over eight steps. The shape
+follows from what the self-model is asked to do. What is not imposed is that the whole loop — the reader, and the
+writes passing through the frozen model — organises itself into it, in every thought, and in most variants wraps the
+model's own stages of reasoning around it.
+
+**What it is not (yet).** The clock is measured while the text changes from chunk to chunk; part of the rotation may
+summarise the text's own progression. Evidence for a clock that runs on its own would need the text held fixed or
+removed. With 8 chunks of 64 tokens, the chunk's index and the stage of the thought also go together; varying chunk
+number and length would separate them.
+
+### 4.5 Identity instead of time
+
+When the self-model has to pick the true next state only among *other thoughts* at the same moment (not among the same
+thought's other moments), no clock forms (rotation fit 0.14 against 0.46 for random orders; held-out R² −0.65; the
+chunk is readable in 22 % of cases). Instead the state becomes a persistent **identity** code: the previous state alone
+identifies the next one in 38 % of cases (3 % in the clock variant). This variant keeps more of the thought's content
+(own vs another thought's state 0.215, against 0.084) and still follows its fed-back forecast (enactment 0.23). What
+the self-model must tell apart decides what the state represents: its own moments (when) or itself among others
+(which).
+
+### 4.6 Enactment: the self-model becomes a cause
+
+When the self-model's forecast is written back, the system moves its next state toward it. Replacing only the forecast
+by another thought's forecast pulls the next state toward that forecast by 0.39 (8B), 0.25 (8B second seed) and 0.24
+(14B). The same channel carrying the previous state instead of a forecast: 0.07 (8B), 0.04 (14B). Without pressure the
+forecast is ignored (0.03).
+
+| 8B, forecast channel | λ = 0 | λ = 0.1 (mild) | λ = 1 (strong) |
+|---|---|---|---|
+| enactment | 0.03 | 0.40 | 0.39 |
+| the same with the state channel (control) | 0.005 | 0.13 | 0.07 |
+| self-model retrieves the true next state | 7 % | 51 % | 90 % |
+| own vs another thought's state (nats per token) | 0.266 | 0.248 | 0.084 |
+| benefit over the cut (nats per token) | 0.093 | 0.050 | −0.148 |
+| cost of swapping only the forecast (nats per token) | 0.083 | 0.056 | 0.005 |
+| 14B: enactment / own vs another thought's state | 0.03 / 0.302 | 0.21 / 0.277 | 0.24 / 0.114 |
+
+The jump at λ = 0.1 comes from the pressure on the system, not from how the self-model itself is trained: with a
+contrastively trained self-model and no pressure, enactment stays at 0.04 (retrieval 9 %, own vs another thought's
+state 0.278).
+
+Three regimes follow:
+
+* **No pressure.** The loop is a memory; the forecast is ignored.
+* **Strong pressure.** The self-model takes over. The system follows its forecasts and is almost perfectly predictable
+  to itself, but the state stops carrying the thought: the loop predicts the model's thinking worse than no loop at all,
+  swapping the forecast barely changes the text, and at 8B the clock becomes a carousel of unrelated topics — a
+  self-generated sequence that is about nothing the model is thinking.
+* **Mild pressure.** The system follows its forecasts as strongly as under strong pressure while the state keeps most
+  of what it carries without pressure (93 % at 8B, 92 % at 14B) and still beats the cut. This is the regime in which a
+  self-model is both a model of the process and a cause in it, at 8B and 14B.
+
+![pressure dose](figures/pressure_dose_8b.png)
+
+### 4.7 J-space as the bottleneck
+
+With the reader fixed to J-space (the 32 main directions of the J-space word readings of natural states; only the
+writers trained), the plain loop is slightly better than with a trained reader (1.731 vs 1.741 nats per token; benefit
+over the cut 0.124 vs 0.114) and keeps the topic longer in free generation. Its axes read as registers:
+formal-analytic (*Implementation, Verification, Analysis*) against vivid-physical (*smashed, shoved, roasted*);
+hypothetical reasoning (*asked, considered, Assuming, would*) against concrete places (*breweries, airports,
+restaurants*); colloquial negation (*doesnt, didnt, crappy*) against headline words. The clock forms inside J-space as
+well (table in 4.4; retrieval 94 %, enactment 0.18), at the same cost in content as with a trained reader. A loop that
+runs on the model's own thought can use the verbalizable workspace as its bottleneck without loss.
+
+### 4.8 Free generation: what the loop does to the model's own text
+
+In free generation the model writes each chunk itself, seeing only that chunk's text and the loop's state (128
+thoughts per variant, 64 for the plain loop; counts in `trained_loop/results/free_text_checks.json`).
+
+* **Topic.** The similarity of each generated chunk to the original thought falls from 0.16 (second chunk) to 0.01
+  (eighth) with the plain loop, from 0.24 with the J-space reader; under strong pressure the topic is lost at once
+  (0.04). Writing another thought's state in the middle moves the text toward that thought's topic (0.07, from 0)
+  except under strong pressure, where the state no longer carries content. The deliberative register persists while
+  the subject drifts.
+* **The self-model still predicts.** In free generation the self-model's forecasts agree with the actual states at a
+  cosine of 0.32–0.39 without pressure, 0.55–0.61 under mild and 0.83–0.88 under strong pressure.
+* **An invented past again.** Phrases that refer to an earlier conversation that did not happen (*"in our previous
+  conversation"*, *"as I mentioned earlier"*): none of 128 in the 8B model's real thinking (2 of 128 at 14B), 14 of
+  128 thoughts when no state is passed (0.31 per 1,000 words), 2 of 64 with the plain loop, 9 of 128 when the loop is
+  destroyed by the variance-normalised loss. Small counts, but the direction matches section 3.6: when the model is
+  missing context that its state or its task implies, it supplies a past.
+* **Restarts.** Without memory a chunk often starts the thought again by re-reading the request (*"Okay, the user is
+  asking…"*): "the user" appears 17.3 times per 1,000 words with no state, 13.5 with the plain loop, 4.6 in the real
+  thinking. It is rarer (6.0–6.6) in the strong-pressure variants, whose state carries the stage of the thought, but
+  also in the destroyed loop (6.9), so this measure alone does not show better orientation.
+* **Identity words.** Words about identity, consciousness and the self (*identity, consciousness, self-awareness, who
+  I am, my existence*) do appear in the generated thinking, at 0.04–0.31 per 1,000 words across the 8B variants and
+  0.09–0.33 at 14B, against 0.16 and 0.21 in the models' real thinking; no variant differs reliably from the real
+  thinking, and explicit self-reference as an AI is nearly absent everywhere. The loop does not raise these themes.
+  Whether a state that carries them is causal — for example, whether transplanting it carries the theme into another
+  thought — was not tested.
+
+---
+
+## 5. What the results suggest
+
+**Both loops turn inward.** In the frozen loop the self-description converges on how the model answers — its frame,
+its stance, its voice — and loses what it is answering about. In the trained loop the state's main axes are modes of
+thought, and under pressure to be predictable to itself the state encodes *when* in the thought it is, or *which*
+thought it is. The mechanisms differ (selection by self-reproduction through the model; selection by what the
+self-model can tell apart), but the outcome is the same: a loop that describes the system keeps what describes the
+system's own activity. One reason may be that the activity is present at every step, while the content changes.
+
+**Two elementary forms of self-location.** A self-model that must distinguish its own moments produces a clock; one
+that must distinguish itself from others produces an identity. Both are codes of the system about itself, and their
+geometry — rotation, persistence — follows from what has to be distinguished. In most variants the clock is tied to
+the model's own arc of reasoning: recalling, hedging, adding alternatives, concluding.
+
+**A self-model that causes what it predicts — the 2024 tension from both sides.** In the frozen loop the self-model
+adapts to a system that its forecasts change (it tracks the new process and forgets the old one). In the trained loop
+the system adapts to its self-model: it makes the forecasts come true. Both directions are present in the trained loop
+at once — the self-model keeps learning while the system is pushed toward it — and the pressure sets the balance. Under
+strong pressure the system gives up its content to be predictable and the self-model's own sequence takes over; under
+mild pressure both coexist.
+
+**An invented past.** In both systems, when the model's state contains something that the visible text does not explain
+— a perturbation, or a memory that is missing — the model's thinking explains it as a conversation that took place
+earlier. The counts are small and, in the frozen loop, specific to 8B, but the pattern recurs: unexplained internal
+content is attributed to memory.
+
+**Not ordinary language statistics.** The frozen loop's selection is not word frequency (frequency control); its
+shared direction and persona drift do not appear with random writes of the same size; the clock's order beats 2,000
+random orders and holds for single held-out thoughts; enactment is compared with the same channel carrying a state
+instead of a forecast; private state was tested against a content-matched swap with a planted positive control.
+
+**Related work.** Self-modelling as an auxiliary task makes networks simpler (Premakumar et al., 2024); here the
+analogue is collapse, and closing the loop turns it into self-steering. Training a model to predict its own next
+latent state (NextLat, 2025) does not feed the prediction back. Models of one's own attention can control attention
+(attention-schema agents; Wilterson & Graziano, 2021). Models can detect content injected into their internal states
+(Lindsey, 2025), without a closed loop. Curved and rotary codes are known for counting (Gurnee et al., 2025), for
+position (rotary embeddings, by design) and for modular arithmetic (learned); contrastive prediction and slow-feature
+learning favour harmonic codes for temporally coherent signals. What is new here is where such a code appears — in the
+self-state of a loop inside a language model's thought — what it is wrapped around (the stage of reasoning), and that
+feeding the self-model back makes it causal.
+
+---
+
+## 6. Limits
+
+* Every measure is functional: what states carry, predict and cause. Nothing here measures experience.
+* The trained loop is trained and mostly evaluated on fixed recordings of the model's own thinking; in free generation
+  the topic drifts within a few chunks.
+* Most variants have one seed; the main contrast (forecast channel under strong pressure) has two at 8B and a 14B
+  replication; the dose (λ = 0, 0.1, 1) has three points.
+* Enactment could be the system learning to copy whatever the forecast channel says; a channel carrying a
+  non-predictive transform of the forecast would test this.
+* The clock's shape is set by what the self-model must distinguish; chunk index and stage of thought coincide with
+  8 chunks of 64 tokens.
+* The frozen loop was studied at one kind of position (the answer position of short scenarios); the transport matrix
+  is a linear summary; the persona shift is small and internal.
+
+---
+
+## 7. Open questions
+
+* Is enactment more than copying a channel? Is the clock tied to the chunk index or to the stage of the thought?
+* Does the loop, trained in free generation under mild pressure, steer what the model actually thinks — and does a
+  transplanted forecast carry a disposition (for example hedging) across topics?
+* Is the invented past a signature of missing self-continuity — does it scale with how much memory the state carries?
+* Does the casual-persona drift of the frozen loop appear in the model's generated text?
+* What do the attractors of a loop look like when the self-model's forecast, not the self-description, is amplified?
+* Larger models; more seeds.
+
+---
+
+## 8. Data, code, reproduction
+
+| folder | content | data on Hugging Face (`Pixedar/jspace-strange-loop`) |
+|---|---|---|
+| [`frozen_loop/`](frozen_loop) | the frozen J-space loop: settled states, transport matrix, persona axis, invented past, private-state test, the online self-model; working notes and plans | `v5/` (geometry, transport and persona arrays) |
+| [`trained_loop/`](trained_loop) | the trained self-describing loop: code, plan, one table of every variant ([arms_summary.md](trained_loop/results/arms_summary.md)), per-variant results | `phaseB/` (evaluation arrays, the models' thinking, trained loop weights) |
+| [`common/`](common) | model and lens loading, J-space reading, the frozen loop, scenario generator | |
+| [`figures/`](figures) | figures of this report (`make_figures.py` draws two of them) | |
+| [`infra/`](infra) | unattended GPU runner (queue, upload, self-destroy) | |
+
+Models: Qwen/Qwen3-8B @ b968826d, Qwen/Qwen3-14B @ 40c06982; lenses neuronpedia/jacobian-lens @ 9fa267f8. The
+trained loop ran on one 48 GB GPU for 8B (about 14 minutes per variant) and one 80 GB GPU for 14B (about 20 minutes).
 
 ```bash
 pip install torch transformers==4.57.1 accelerate scikit-learn wordfreq huggingface_hub
-cd phaseB_trained_self_model_loop/code
-python loopb.py gen   --out out/loopb                     # the model's own thinking traces + reference NLLs
+cd trained_loop/code
+python loopb.py gen   --out out/loopb                     # the model's own thinking + reference values
 python loopb.py train --out out/loopb --chan fcst --lam 1 --ploss nce --steps 400
 python loopb.py eval  --out out/loopb --tag fcst_learned_l1_c
-python loopb_analyze.py out/loopb
-B_MODEL=14b python loopb.py gen --out out/loopb14 --n 2000   # 14B replication
+python summarize_arms.py out/loopb --out out
+B_MODEL=14b python loopb.py gen --out out/loopb14 --n 2000   # 14B
 ```
+
+Variant names in the code and result files: `<channel>_<reader>_l<λ>[_c|_cx][_s<seed>]`, with channel `const`
+(plain loop), `state`, `fcst` (forecast) or `cut`; reader `learned` or `J`; loss suffix none (cosine), `_n`
+(variance-normalised), `_c` (contrastive), `_cx` (contrastive among other thoughts only); `_s1` the second seed.
+
+**References.** Gurnee et al. (2026), *Verbalizable representations form a global workspace in language models*.
+Gurnee et al. (2025), the geometry of a counting task in a language model. Premakumar et al. (2024), *Unexpected benefits of
+self-modeling in neural systems*, arXiv 2407.10188. NextLat (2025), arXiv 2511.05963. Wilterson & Graziano (2021),
+the attention schema in a neural network agent. Lindsey (2025), emergent introspective awareness in language models. Lu et al.
+(2026), the assistant axis.

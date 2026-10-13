@@ -4,8 +4,8 @@ title: "Strange loop in J-space: what a language model builds when a description
 authors:
   - family-names: Tomasik
     given-names: Wiktor
-date-released: 2026-10-12
-version: "1.0"
+date-released: 2026-10-13
+version: "2.0"
 url: "https://github.com/Pixedar/jspace-strange-loop"
 repository-code: "https://github.com/Pixedar/jspace-strange-loop"
 license: MIT
@@ -19,9 +19,12 @@ keywords:
   - self-prediction
   - representation geometry
 abstract: >-
-  Four loops that feed a compact description of a language model's own internal state back into the model (Qwen3
-  1.7B-32B). Loops through a self-description keep what they can regenerate rather than what is their own; a learning
-  self-model's surprise is a learned exit from attractors; self-specificity needs private state. A trained
-  self-describing loop around the model's own thinking, under discriminative pressure to be predictable to its own
-  self-model, represents its own time as a multi-frequency rotation, or a persistent
-  identity when it must tell itself from others; a fed-back self-forecast is enacted, making the self-model a cause.
+  Two loops through a language model's own internal description of itself (Qwen3-8B, replicated on Qwen3-14B). In a
+  frozen loop that writes the model's J-space reading back into it, the description settles into many locally stable
+  states selected by self-reproduction: discourse and stance words and an answering frame survive, names and evidence
+  fade, and every context drifts toward a casual persona; perturbed during thinking, the model refers to a previous
+  conversation that never happened. In a trained loop that carries a 32-number state across chunks of the model's own
+  thinking, a self-model under discriminative pressure to predict that state produces a rotary time code that follows
+  the stages of reasoning (or a persistent identity code when it must tell itself from others), and a self-forecast
+  fed back into the loop is enacted, making the self-model a cause of what it predicts; mild pressure keeps both the
+  enactment and the state's content.

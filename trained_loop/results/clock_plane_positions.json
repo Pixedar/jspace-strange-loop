@@ -1,0 +1,452 @@
+{
+ "8B/const_learned_l0": [
+  {
+   "segment": 0,
+   "x": -1.1559745073318481,
+   "y": 0.3077291250228882,
+   "words": [
+    "things",
+    "everybody",
+    "stuff",
+    "anybody"
+   ]
+  },
+  {
+   "segment": 1,
+   "x": -0.3075793385505676,
+   "y": -0.26327434182167053,
+   "words": [
+    "maybe",
+    "stuff",
+    "kinda",
+    "something"
+   ]
+  },
+  {
+   "segment": 2,
+   "x": -0.06980439275503159,
+   "y": -0.3692608177661896,
+   "words": [
+    "maybe",
+    "sometimes",
+    "something",
+    "might"
+   ]
+  },
+  {
+   "segment": 3,
+   "x": 0.08187120407819748,
+   "y": -0.26085299253463745,
+   "words": [
+    "also",
+    "sometimes",
+    "maybe",
+    "cheaper"
+   ]
+  },
+  {
+   "segment": 4,
+   "x": 0.2123592495918274,
+   "y": -0.06575651466846466,
+   "words": [
+    "also",
+    "additional",
+    "additionally",
+    "alternative"
+   ]
+  },
+  {
+   "segment": 5,
+   "x": 0.33757099509239197,
+   "y": 0.12920433282852173,
+   "words": [
+    "concise",
+    "Conclusion",
+    "summary",
+    "concluding"
+   ]
+  },
+  {
+   "segment": 6,
+   "x": 0.39187273383140564,
+   "y": 0.2163185179233551,
+   "words": [
+    "concise",
+    "Conclusion",
+    "summary",
+    "Summary"
+   ]
+  },
+  {
+   "segment": 7,
+   "x": 0.5096839666366577,
+   "y": 0.3058927059173584,
+   "words": [
+    "concise",
+    "Conclusion",
+    "summary",
+    "Summary"
+   ]
+  }
+ ],
+ "8B/fcst_learned_l0.1_c": [
+  {
+   "segment": 0,
+   "x": -1.3825563192367554,
+   "y": 0.5616357326507568,
+   "words": [
+    "hitters",
+    "stadiums",
+    "powerhouse",
+    "whopping"
+   ]
+  },
+  {
+   "segment": 1,
+   "x": -0.7808465957641602,
+   "y": -0.46800145506858826,
+   "words": [
+    "stuff",
+    "things",
+    "maybe",
+    "lots"
+   ]
+  },
+  {
+   "segment": 2,
+   "x": -0.1568032056093216,
+   "y": -0.481774240732193,
+   "words": [
+    "maybe",
+    "something",
+    "sometimes",
+    "isn"
+   ]
+  },
+  {
+   "segment": 3,
+   "x": 0.23706287145614624,
+   "y": -0.3099847435951233,
+   "words": [
+    "also",
+    "could",
+    "another",
+    "sometimes"
+   ]
+  },
+  {
+   "segment": 4,
+   "x": 0.3864961564540863,
+   "y": -0.01852264441549778,
+   "words": [
+    "omitted",
+    "Conclusion",
+    "clarified",
+    "emoji"
+   ]
+  },
+  {
+   "segment": 5,
+   "x": 0.48824095726013184,
+   "y": 0.18841645121574402,
+   "words": [
+    "concise",
+    "Suggestions",
+    "Conclusion",
+    "emoji"
+   ]
+  },
+  {
+   "segment": 6,
+   "x": 0.5556634068489075,
+   "y": 0.2125559151172638,
+   "words": [
+    "concise",
+    "Suggestions",
+    "Conclusion",
+    "emoji"
+   ]
+  },
+  {
+   "segment": 7,
+   "x": 0.6527425646781921,
+   "y": 0.3156749904155731,
+   "words": [
+    "concise",
+    "Suggestions",
+    "List",
+    "emoji"
+   ]
+  }
+ ],
+ "8B/fcst_learned_l1_c": [
+  {
+   "segment": 0,
+   "x": -2.351276159286499,
+   "y": -0.12318787723779678,
+   "words": [
+    "espresso",
+    "brewed",
+    "brewers",
+    "coffee"
+   ]
+  },
+  {
+   "segment": 1,
+   "x": -0.7995641231536865,
+   "y": 1.4368773698806763,
+   "words": [
+    "brewed",
+    "roasted",
+    "espresso",
+    "brew"
+   ]
+  },
+  {
+   "segment": 2,
+   "x": 1.8951281309127808,
+   "y": 0.3005450963973999,
+   "words": [
+    "movie",
+    "movies",
+    "games",
+    "swimming"
+   ]
+  },
+  {
+   "segment": 3,
+   "x": 1.104973554611206,
+   "y": -2.255985975265503,
+   "words": [
+    "music",
+    "musical",
+    "instrument",
+    "instruments"
+   ]
+  },
+  {
+   "segment": 4,
+   "x": -1.3567532300949097,
+   "y": -2.009018898010254,
+   "words": [
+    "acoustic",
+    "melodies",
+    "Yamaha",
+    "musicians"
+   ]
+  },
+  {
+   "segment": 5,
+   "x": -1.7506874799728394,
+   "y": 0.7985353469848633,
+   "words": [
+    "espresso",
+    "brewed",
+    "brewers",
+    "brew"
+   ]
+  },
+  {
+   "segment": 6,
+   "x": 0.9442968964576721,
+   "y": 2.067159414291382,
+   "words": [
+    "baseball",
+    "football",
+    "basketball",
+    "Baseball"
+   ]
+  },
+  {
+   "segment": 7,
+   "x": 2.3138818740844727,
+   "y": -0.21492403745651245,
+   "words": [
+    "movies",
+    "movie",
+    "games",
+    "animals"
+   ]
+  }
+ ],
+ "14B/const_learned_l0": [
+  {
+   "segment": 0,
+   "x": -1.3652335405349731,
+   "y": 0.3561704754829407,
+   "words": [
+    "pretty",
+    "probably",
+    "kinds",
+    "remember"
+   ]
+  },
+  {
+   "segment": 1,
+   "x": -0.4288616478443146,
+   "y": -0.2055097073316574,
+   "words": [
+    "maybe",
+    "probably",
+    "pretty",
+    "things"
+   ]
+  },
+  {
+   "segment": 2,
+   "x": -0.15147347748279572,
+   "y": -0.3422946333885193,
+   "words": [
+    "maybe",
+    "Maybe",
+    "might",
+    "perhaps"
+   ]
+  },
+  {
+   "segment": 3,
+   "x": 0.11191112548112869,
+   "y": -0.3502752184867859,
+   "words": [
+    "maybe",
+    "perhaps",
+    "might",
+    "possibly"
+   ]
+  },
+  {
+   "segment": 4,
+   "x": 0.2595916986465454,
+   "y": -0.19470568001270294,
+   "words": [
+    "additional",
+    "additionally",
+    "lacks",
+    "alternative"
+   ]
+  },
+  {
+   "segment": 5,
+   "x": 0.4298783242702484,
+   "y": 0.006686624605208635,
+   "words": [
+    "Ensure",
+    "additional",
+    "additionally",
+    "ensured"
+   ]
+  },
+  {
+   "segment": 6,
+   "x": 0.5360890626907349,
+   "y": 0.1489657163619995,
+   "words": [
+    "Ensure",
+    "Translation",
+    "Ultimately",
+    "ensured"
+   ]
+  },
+  {
+   "segment": 7,
+   "x": 0.6080984473228455,
+   "y": 0.5809624791145325,
+   "words": [
+    "Ensure",
+    "Summary",
+    "Sentence",
+    "Translation"
+   ]
+  }
+ ],
+ "14B/fcst_learned_l1_c": [
+  {
+   "segment": 0,
+   "x": -3.011101484298706,
+   "y": 1.0753288269042969,
+   "words": [
+    "famous",
+    "habitats",
+    "kinds",
+    "excursion"
+   ]
+  },
+  {
+   "segment": 1,
+   "x": -2.5073113441467285,
+   "y": -0.3419824540615082,
+   "words": [
+    "kinds",
+    "maybe",
+    "stuff",
+    "vegetation"
+   ]
+  },
+  {
+   "segment": 2,
+   "x": -0.5217238664627075,
+   "y": -3.24465274810791,
+   "words": [
+    "something",
+    "maybe",
+    "somehow",
+    "Maybe"
+   ]
+  },
+  {
+   "segment": 3,
+   "x": -0.20551107823848724,
+   "y": -0.6385074853897095,
+   "words": [
+    "maybe",
+    "something",
+    "Maybe",
+    "stuff"
+   ]
+  },
+  {
+   "segment": 4,
+   "x": -0.625685453414917,
+   "y": 2.100717544555664,
+   "words": [
+    "renowned",
+    "universally",
+    "Famous",
+    "commonly"
+   ]
+  },
+  {
+   "segment": 5,
+   "x": 1.2335714101791382,
+   "y": -0.08769688755273819,
+   "words": [
+    "Ultimately",
+    "https",
+    "Algorithm",
+    "Dataset"
+   ]
+  },
+  {
+   "segment": 6,
+   "x": 3.1971325874328613,
+   "y": -1.0515345335006714,
+   "words": [
+    "Ultimately",
+    "sql",
+    "https",
+    "Analytics"
+   ]
+  },
+  {
+   "segment": 7,
+   "x": 2.4406299591064453,
+   "y": 2.1883280277252197,
+   "words": [
+    "Ultimately",
+    "concludes",
+    "Ideally",
+    "authored"
+   ]
+  }
+ ]
+}

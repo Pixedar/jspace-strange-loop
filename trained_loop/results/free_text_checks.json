@@ -1,0 +1,994 @@
+{
+ "8B": {
+  "real_thinking": {
+   "identity_consciousness": {
+    "per_1000_words": 0.16092335138959638,
+    "ci95": [
+     0.04774757063782476,
+     0.2851181387891545
+    ],
+    "share_of_thoughts": 0.0546875,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 4.549170770066803,
+    "ci95": [
+     3.732772232158361,
+     5.413112221829807
+    ],
+    "share_of_thoughts": 0.640625,
+    "n_thoughts": 128
+   }
+  },
+  "const_J_l0": {
+   "identity_consciousness": {
+    "per_1000_words": 0.04298885482894338,
+    "ci95": [
+     0.0,
+     0.10768944662049647
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 12.295997952062766,
+    "ci95": [
+     11.018609404816408,
+     13.620462616259568
+    ],
+    "share_of_thoughts": 0.9453125,
+    "n_thoughts": 128
+   }
+  },
+  "const_learned_l0": {
+   "identity_consciousness": {
+    "per_1000_words": 0.21919510793958494,
+    "ci95": [
+     0.04352367688022284,
+     0.45803224584043833
+    ],
+    "share_of_thoughts": 0.0625,
+    "n_thoughts": 64
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.14880952380952384,
+    "ci95": [
+     0.0,
+     0.4464285714285715
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 64
+   },
+   "invented_history": {
+    "per_1000_words": 0.08880274253099657,
+    "ci95": [
+     0.0,
+     0.2274861744836593
+    ],
+    "share_of_thoughts": 0.03125,
+    "n_thoughts": 64
+   },
+   "the_user": {
+    "per_1000_words": 13.517510475550715,
+    "ci95": [
+     11.613662854740154,
+     15.289525030091452
+    ],
+    "share_of_thoughts": 0.96875,
+    "n_thoughts": 64
+   }
+  },
+  "const_learned_l1_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.13538848984874916,
+    "ci95": [
+     0.022776967930029153,
+     0.27448344533836344
+    ],
+    "share_of_thoughts": 0.0390625,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.021345628415300546,
+    "ci95": [
+     0.0,
+     0.06403688524590163
+    ],
+    "share_of_thoughts": 0.0078125,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 16.71124318016981,
+    "ci95": [
+     15.515191764882678,
+     17.96507331938521
+    ],
+    "share_of_thoughts": 0.9921875,
+    "n_thoughts": 128
+   }
+  },
+  "cut_learned_l0": {
+   "identity_consciousness": {
+    "per_1000_words": 0.09002491886354572,
+    "ci95": [
+     0.0,
+     0.20394127503595993
+    ],
+    "share_of_thoughts": 0.0234375,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.30652488017966056,
+    "ci95": [
+     0.17313261205790192,
+     0.46099704717507306
+    ],
+    "share_of_thoughts": 0.109375,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 17.25600665475912,
+    "ci95": [
+     16.40837583372094,
+     18.135453094443566
+    ],
+    "share_of_thoughts": 1.0,
+    "n_thoughts": 128
+   }
+  },
+  "fcst_J_l1_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.0678773664638269,
+    "ci95": [
+     0.0,
+     0.18065415821501013
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.042002688172043015,
+    "ci95": [
+     0.0,
+     0.12600806451612906
+    ],
+    "share_of_thoughts": 0.0078125,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.06368885869565218,
+    "ci95": [
+     0.0,
+     0.19106657608695654
+    ],
+    "share_of_thoughts": 0.0078125,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 4.42797566940756,
+    "ci95": [
+     3.691012468795108,
+     5.210544410632805
+    ],
+    "share_of_thoughts": 0.6796875,
+    "n_thoughts": 128
+   }
+  },
+  "fcst_learned_l0.1_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.132838234304432,
+    "ci95": [
+     0.02200704225352113,
+     0.2897246681637091
+    ],
+    "share_of_thoughts": 0.03125,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.045371740083278544,
+    "ci95": [
+     0.0,
+     0.11385738549200088
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 10.405410337486389,
+    "ci95": [
+     9.09273377685089,
+     11.672022598380392
+    ],
+    "share_of_thoughts": 0.8828125,
+    "n_thoughts": 128
+   }
+  },
+  "fcst_learned_l0": {
+   "identity_consciousness": {
+    "per_1000_words": 0.21877291078168581,
+    "ci95": [
+     0.04177807486631016,
+     0.47867109226135596
+    ],
+    "share_of_thoughts": 0.0625,
+    "n_thoughts": 64
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 64
+   },
+   "invented_history": {
+    "per_1000_words": 0.1334203036053131,
+    "ci95": [
+     0.0,
+     0.35848283594962915
+    ],
+    "share_of_thoughts": 0.03125,
+    "n_thoughts": 64
+   },
+   "the_user": {
+    "per_1000_words": 12.347534770316456,
+    "ci95": [
+     10.602456692531465,
+     14.104778368118057
+    ],
+    "share_of_thoughts": 0.90625,
+    "n_thoughts": 64
+   }
+  },
+  "fcst_learned_l0_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.11482683440325124,
+    "ci95": [
+     0.02200704225352113,
+     0.22661198459117574
+    ],
+    "share_of_thoughts": 0.0390625,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.042059905079342076,
+    "ci95": [
+     0.0,
+     0.10523467502354902
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 11.839207853423986,
+    "ci95": [
+     10.720637164749228,
+     12.94186633566928
+    ],
+    "share_of_thoughts": 0.9375,
+    "n_thoughts": 128
+   }
+  },
+  "fcst_learned_l1": {
+   "identity_consciousness": {
+    "per_1000_words": 0.1348431662355791,
+    "ci95": [
+     0.0,
+     0.36026604261608575
+    ],
+    "share_of_thoughts": 0.03125,
+    "n_thoughts": 64
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.043402777777777776,
+    "ci95": [
+     0.0,
+     0.13020833333333331
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 64
+   },
+   "invented_history": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 64
+   },
+   "the_user": {
+    "per_1000_words": 15.542747410913782,
+    "ci95": [
+     13.606052119093311,
+     17.423974173183066
+    ],
+    "share_of_thoughts": 1.0,
+    "n_thoughts": 64
+   }
+  },
+  "fcst_learned_l1_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.20833830493007832,
+    "ci95": [
+     0.07237081758244816,
+     0.38506852578866807
+    ],
+    "share_of_thoughts": 0.0625,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.0779009549357437,
+    "ci95": [
+     0.0,
+     0.1752178230632606
+    ],
+    "share_of_thoughts": 0.0234375,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 6.621029440665367,
+    "ci95": [
+     5.687351783130916,
+     7.580534905559695
+    ],
+    "share_of_thoughts": 0.796875,
+    "n_thoughts": 128
+   }
+  },
+  "fcst_learned_l1_c_s1": {
+   "identity_consciousness": {
+    "per_1000_words": 0.1580516678286683,
+    "ci95": [
+     0.0,
+     0.39378596912446323
+    ],
+    "share_of_thoughts": 0.0234375,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.14164355673331164,
+    "ci95": [
+     0.020833333333333332,
+     0.32983276952946844
+    ],
+    "share_of_thoughts": 0.03125,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 6.034748795367523,
+    "ci95": [
+     5.115864955187712,
+     7.003702180691607
+    ],
+    "share_of_thoughts": 0.796875,
+    "n_thoughts": 128
+   }
+  },
+  "fcst_learned_l1_cx": {
+   "identity_consciousness": {
+    "per_1000_words": 0.25463176135445864,
+    "ci95": [
+     0.09282893986185209,
+     0.4615867852746001
+    ],
+    "share_of_thoughts": 0.0703125,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.11817259041848278,
+    "ci95": [
+     0.021114864864864864,
+     0.25931827079917896
+    ],
+    "share_of_thoughts": 0.03125,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 10.23258514305778,
+    "ci95": [
+     8.895339527401713,
+     11.600634104019244
+    ],
+    "share_of_thoughts": 0.890625,
+    "n_thoughts": 128
+   }
+  },
+  "fcst_learned_l1_n": {
+   "identity_consciousness": {
+    "per_1000_words": 0.3078919367301646,
+    "ci95": [
+     0.04466936284078339,
+     0.6810472317317806
+    ],
+    "share_of_thoughts": 0.046875,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.2440865443905258,
+    "ci95": [
+     0.09550151697409358,
+     0.4195032933720563
+    ],
+    "share_of_thoughts": 0.0703125,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 6.89285876306589,
+    "ci95": [
+     6.027715849433008,
+     7.794649810019485
+    ],
+    "share_of_thoughts": 0.8359375,
+    "n_thoughts": 128
+   }
+  },
+  "state_learned_l0.1_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.196200404265909,
+    "ci95": [
+     0.06597100050581013,
+     0.35126660162081347
+    ],
+    "share_of_thoughts": 0.0625,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.021581491712707183,
+    "ci95": [
+     0.0,
+     0.08632596685082873
+    ],
+    "share_of_thoughts": 0.0078125,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.04321600515778551,
+    "ci95": [
+     0.0,
+     0.1091427661295245
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 10.794127832205682,
+    "ci95": [
+     9.590122577791293,
+     12.092785506881944
+    ],
+    "share_of_thoughts": 0.890625,
+    "n_thoughts": 128
+   }
+  },
+  "state_learned_l0": {
+   "identity_consciousness": {
+    "per_1000_words": 0.13086932659816675,
+    "ci95": [
+     0.0,
+     0.30454622441299556
+    ],
+    "share_of_thoughts": 0.046875,
+    "n_thoughts": 64
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 64
+   },
+   "invented_history": {
+    "per_1000_words": 0.0889063132335087,
+    "ci95": [
+     0.0,
+     0.22245548360987455
+    ],
+    "share_of_thoughts": 0.03125,
+    "n_thoughts": 64
+   },
+   "the_user": {
+    "per_1000_words": 12.507977081041025,
+    "ci95": [
+     10.636206804617427,
+     14.423764837568022
+    ],
+    "share_of_thoughts": 0.9375,
+    "n_thoughts": 64
+   }
+  },
+  "state_learned_l0_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.293193976431927,
+    "ci95": [
+     0.10702568972621765,
+     0.5350465053402305
+    ],
+    "share_of_thoughts": 0.0703125,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.02176183844011142,
+    "ci95": [
+     0.0,
+     0.06528551532033426
+    ],
+    "share_of_thoughts": 0.0078125,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 11.540176573524821,
+    "ci95": [
+     10.331329097015185,
+     12.727339245487808
+    ],
+    "share_of_thoughts": 0.96875,
+    "n_thoughts": 128
+   }
+  },
+  "state_learned_l1": {
+   "identity_consciousness": {
+    "per_1000_words": 0.04426345609065156,
+    "ci95": [
+     0.0,
+     0.13279036827195467
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 64
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 64
+   },
+   "invented_history": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 64
+   },
+   "the_user": {
+    "per_1000_words": 14.356822344171608,
+    "ci95": [
+     12.568257143020324,
+     16.314554995176476
+    ],
+    "share_of_thoughts": 0.953125,
+    "n_thoughts": 64
+   }
+  },
+  "state_learned_l1_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.16544957594338472,
+    "ci95": [
+     0.053838037401038964,
+     0.29755328821595006
+    ],
+    "share_of_thoughts": 0.0546875,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.12902871138906263,
+    "ci95": [
+     0.020722811671087533,
+     0.2604638138249766
+    ],
+    "share_of_thoughts": 0.03125,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 9.545215341330394,
+    "ci95": [
+     8.36028656624143,
+     10.688153936659551
+    ],
+    "share_of_thoughts": 0.9296875,
+    "n_thoughts": 128
+   }
+  }
+ },
+ "14B": {
+  "real_thinking": {
+   "identity_consciousness": {
+    "per_1000_words": 0.20912750503272554,
+    "ci95": [
+     0.09049378586910573,
+     0.3517147984737666
+    ],
+    "share_of_thoughts": 0.0703125,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.04743737979668468,
+    "ci95": [
+     0.0,
+     0.12048951369173001
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 2.816003720109034,
+    "ci95": [
+     2.1555982334030626,
+     3.5414097906542
+    ],
+    "share_of_thoughts": 0.4296875,
+    "n_thoughts": 128
+   }
+  },
+  "const_learned_l0": {
+   "identity_consciousness": {
+    "per_1000_words": 0.16293280214081396,
+    "ci95": [
+     0.053136224925888056,
+     0.28779906256187665
+    ],
+    "share_of_thoughts": 0.0546875,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 8.708715307629344,
+    "ci95": [
+     7.565442183710618,
+     9.854659535841511
+    ],
+    "share_of_thoughts": 0.8359375,
+    "n_thoughts": 128
+   }
+  },
+  "fcst_learned_l0.1_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.32820199995002863,
+    "ci95": [
+     0.17476767584508593,
+     0.5118017279982634
+    ],
+    "share_of_thoughts": 0.1015625,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.02164127423822715,
+    "ci95": [
+     0.0,
+     0.06492382271468145
+    ],
+    "share_of_thoughts": 0.0078125,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.04410367419634409,
+    "ci95": [
+     0.0,
+     0.11125307110655248
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 8.222358959078868,
+    "ci95": [
+     7.202026048242124,
+     9.349991381799798
+    ],
+    "share_of_thoughts": 0.8828125,
+    "n_thoughts": 128
+   }
+  },
+  "fcst_learned_l0": {
+   "identity_consciousness": {
+    "per_1000_words": 0.09165028216483706,
+    "ci95": [
+     0.021404109589041095,
+     0.18607055693690253
+    ],
+    "share_of_thoughts": 0.03125,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.04403644778939513,
+    "ci95": [
+     0.0,
+     0.11058730480069229
+    ],
+    "share_of_thoughts": 0.015625,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 7.835179523826627,
+    "ci95": [
+     6.762547504117287,
+     8.924443263413243
+    ],
+    "share_of_thoughts": 0.84375,
+    "n_thoughts": 128
+   }
+  },
+  "fcst_learned_l1_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.2921319148530494,
+    "ci95": [
+     0.11388287253627004,
+     0.49995137829245184
+    ],
+    "share_of_thoughts": 0.078125,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.02244971264367816,
+    "ci95": [
+     0.0,
+     0.06734913793103448
+    ],
+    "share_of_thoughts": 0.0078125,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.08835641481638043,
+    "ci95": [
+     0.021001344086021508,
+     0.1773899342782404
+    ],
+    "share_of_thoughts": 0.03125,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 7.34744749069692,
+    "ci95": [
+     6.459745984225669,
+     8.274242113481838
+    ],
+    "share_of_thoughts": 0.8671875,
+    "n_thoughts": 128
+   }
+  },
+  "state_learned_l0": {
+   "identity_consciousness": {
+    "per_1000_words": 0.31171977943581114,
+    "ci95": [
+     0.14133869454563822,
+     0.5247191839793112
+    ],
+    "share_of_thoughts": 0.0859375,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.030164092664092666,
+    "ci95": [
+     0.0,
+     0.09049227799227799
+    ],
+    "share_of_thoughts": 0.0078125,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 7.841384091412853,
+    "ci95": [
+     6.872801704485406,
+     8.828401377953845
+    ],
+    "share_of_thoughts": 0.8515625,
+    "n_thoughts": 128
+   }
+  },
+  "state_learned_l1_c": {
+   "identity_consciousness": {
+    "per_1000_words": 0.30294603629711914,
+    "ci95": [
+     0.13286646039154337,
+     0.4975024302533753
+    ],
+    "share_of_thoughts": 0.0859375,
+    "n_thoughts": 128
+   },
+   "ai_self_reference": {
+    "per_1000_words": 0.0,
+    "ci95": [
+     0.0,
+     0.0
+    ],
+    "share_of_thoughts": 0.0,
+    "n_thoughts": 128
+   },
+   "invented_history": {
+    "per_1000_words": 0.08929948506596543,
+    "ci95": [
+     0.0,
+     0.20388732624552708
+    ],
+    "share_of_thoughts": 0.0234375,
+    "n_thoughts": 128
+   },
+   "the_user": {
+    "per_1000_words": 7.89450991938092,
+    "ci95": [
+     6.8419393853993835,
+     8.98080895448283
+    ],
+    "share_of_thoughts": 0.84375,
+    "n_thoughts": 128
+   }
+  }
+ }
+}
