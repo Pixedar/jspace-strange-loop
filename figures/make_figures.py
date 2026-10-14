@@ -61,8 +61,8 @@ TITLES = {'14B/const_learned_l0':'14B, plain loop', '14B/fcst_learned_l1_c':'14B
           '8B/const_learned_l0':'8B, plain loop', '8B/fcst_learned_l1_c':'8B, own forecast fed back, strong pressure'}
 
 
-def word_clock():
-    pos = json.load(open(R/'trained_loop'/'results'/'clock_plane_positions.json', encoding='utf-8'))
+def stages_figure():
+    pos = json.load(open(R/'trained_loop'/'results'/'rotation_plane_positions.json', encoding='utf-8'))
     keys = [k for k in TITLES if k in pos]
     fig, axs = plt.subplots(2, 2, figsize=(15, 12.5));axs = axs.ravel()
     for ax, k in zip(axs, keys):
@@ -81,8 +81,8 @@ def word_clock():
     fig.suptitle('Where the loop\'s state sits at each chunk of a thought (0–7), read in the model\'s own words\n'
                  'bold: my reading of the J-lens words; grey: the top words. Plain loops and 14B under pressure move through the stages of '
                  'reasoning;\n8B under the strongest pressure cycles through topics unrelated to the thought.', fontsize=11.5, color=INK)
-    fig.tight_layout(rect=(0, 0, 1, .94));fig.savefig(F/'word_clock.png', dpi=130);plt.close(fig)
+    fig.tight_layout(rect=(0, 0, 1, .94));fig.savefig(F/'stages_of_a_thought.png', dpi=130);plt.close(fig)
 
 
 if __name__ == '__main__':
-    architecture();word_clock();print('figures written to', F)
+    architecture();stages_figure();print('figures written to', F)

@@ -1,0 +1,77 @@
+{
+ "tag": "sel-const_l0",
+ "cfg": {
+  "stage": "train",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "lw": 8,
+  "lr": 16,
+  "query": "const",
+  "lam": 0.0,
+  "steps": 1200,
+  "bs": 32,
+  "lrate": 0.002,
+  "seed": 0,
+  "tag": null,
+  "K": 6,
+  "n_upd": 4,
+  "p_switch": 0.3,
+  "p_focus": 0.5,
+  "n_eval": 512,
+  "n_pairs": 256,
+  "at": 3,
+  "norm": 1
+ },
+ "acc": 0.28125,
+ "acc_by_chunk": [
+  0.34375,
+  0.267578125,
+  0.275390625,
+  0.25,
+  0.294921875,
+  0.255859375
+ ],
+ "acc_updated": 0.3319239020347595,
+ "acc_kept": 0.11173974722623825,
+ "acc_at_switch": 0.2922077775001526,
+ "selection": {
+  "on_tracked_record_when_present": 0.25539112091064453,
+  "on_nothing_new_when_absent": 0.06364922225475311,
+  "on_nothing_new_when_present": 0.07188160717487335
+ },
+ "no_memory_acc_by_chunk": [
+  0.34375,
+  0.27734375,
+  0.267578125,
+  0.24609375,
+  0.2890625,
+  0.248046875
+ ],
+ "query_swap": {
+  "at_chunk": 3,
+  "own": {
+   "answers_A": 0.2734375,
+   "answers_B": 0.2734375,
+   "next_answers_A": 0.2421875
+  }
+ },
+ "focus_edit": {
+  "at_chunk": 3,
+  "own": {
+   "answers_A": 0.2734375,
+   "answers_B": 0.2734375,
+   "next_answers_A": 0.2421875
+  },
+  "edited": {
+   "answers_A": 0.20703125,
+   "answers_B": 0.3046875,
+   "next_answers_A": 0.2265625
+  }
+ },
+ "colour_edit": {
+  "at_chunk": 3,
+  "n": 108,
+  "own_answers_old": 0.0555555559694767,
+  "edited_answers_old": 0.0555555559694767,
+  "edited_answers_new": 0.12037037312984467
+ }
+}

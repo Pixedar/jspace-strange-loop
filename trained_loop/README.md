@@ -14,7 +14,7 @@ results: [PLAN.md](PLAN.md).
 
 * `code/loopb.py` — the whole experiment: `gen` (the model's thinking, natural statistics, readers, reference values),
   `train` (one variant), `eval` (teacher-forced interventions, self-prediction baselines, word readouts, free
-  generation), `gate`, `words` (the state's axes and the clock plane in J-space words)
+  generation), `gate`, `words` (the state's axes and the plane of its rotation in J-space words)
 * `code/loopb_analyze.py` — probes, geometry, self-predictability measures that cannot be met by collapse
 * `code/summarize_arms.py` — the summary table, with the rotation fit against scrambled chunk orders and the held-out
   single-thought test
@@ -23,8 +23,8 @@ results: [PLAN.md](PLAN.md).
 * `code/figs_loopb.py` — figures
 * `results/loopb/` (8B), `results/loopb14/` (14B): `eval/<variant>.json` (every number of a variant),
   `ckpt/<variant>/` (configuration and training curves), `reader_words.json`, `j_axes.json`, `prompts.json`
-* `results/clock_plane_positions.json` — the chunk averages in the clock plane with their J-space words (word-clock
-  figure); `results/free_text_checks.json` — output of `free_text_checks.py`
+* `results/rotation_plane_positions.json` — the chunk averages in the plane of the rotation with their J-space words
+  (figure `stages_of_a_thought.png`); `results/free_text_checks.json` — output of `free_text_checks.py`
 
 The arrays (`eval/<variant>.npz`, the thinking `data.npz`, trained weights `loop.pt`) are in the Hugging Face dataset
 under `phaseB/`.

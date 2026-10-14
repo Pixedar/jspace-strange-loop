@@ -1,19 +1,21 @@
 # Strange loop in J-space — report
 
-**Wiktor Tomasik** · 13 October 2026 · Qwen3-8B, replicated on Qwen3-14B
+**Wiktor Tomasik** · 14 October 2026 · Qwen3-8B, replicated on Qwen3-14B; the third system on Qwen2.5-0.5B, Qwen3-1.7B
+and Qwen2.5-3B
 
 This work builds on my earlier writing on self-models and latent loops ([medium.com/@pixedar](https://medium.com/@pixedar)).
-Every number below is in this repository (`frozen_loop/results`, `trained_loop/results`) or in the dataset
+Every number below is in this repository (`frozen_loop/results`, `trained_loop/results`, `selection_loop/results`) or in the dataset
 [Pixedar/jspace-strange-loop](https://huggingface.co/datasets/Pixedar/jspace-strange-loop).
 
 1. [Question and method](#1-question-and-method)
 2. [Terms](#2-terms)
 3. [The frozen J-space loop](#3-the-frozen-j-space-loop)
 4. [The trained self-describing loop](#4-the-trained-self-describing-loop)
-5. [What the results suggest](#5-what-the-results-suggest)
-6. [Limits](#6-limits)
-7. [Open questions](#7-open-questions)
-8. [Data, code, reproduction](#8-data-code-reproduction)
+5. [A state that decides what the model reads](#5-a-state-that-decides-what-the-model-reads)
+6. [What the results suggest](#6-what-the-results-suggest)
+7. [Limits](#7-limits)
+8. [Open questions](#8-open-questions)
+9. [Data, code, reproduction](#9-data-code-reproduction)
 
 ---
 
@@ -41,14 +43,14 @@ directions, with non-negative weights, best reconstruct the state. *Writing a de
 weighted sum of those word directions to a hidden state. This gives a loop a bottleneck that is both compact and
 readable.
 
-**Two systems.**
+**Three systems.**
 
-| | frozen J-space loop (section 3) | trained self-describing loop (section 4) |
-|---|---|---|
-| what loops | the model's state at one position, described as 25 words and written back | 32 numbers carried from one piece of the model's own thinking to the next |
-| what is trained | nothing (one experiment adds an online forecaster) | a small reader, writers and a self-model; the language model stays frozen |
-| the self-model | a forecaster of the loop's next change, learning while its forecasts drive the loop | a small network that predicts the next state; its prediction can be written back |
-| question | what does a self-description converge to, and why? | what does a system build when it must carry, predict and follow its own state? |
+| | frozen J-space loop (section 3) | trained self-describing loop (section 4) | a state that decides what the model reads (section 5) |
+|---|---|---|---|
+| what loops | the model's state at one position, described as 25 words and written back | 32 numbers carried from one piece of the model's own thinking to the next | 32 numbers carried from one piece of text to the next |
+| what is trained | nothing (one experiment adds an online forecaster) | a small reader, writers and a self-model; the language model stays frozen | the same kind of small parts, plus the read that picks what the model takes in |
+| the self-model | a forecaster of the loop's next change, learning while its forecasts drive the loop | a small network that predicts the next state; its prediction can be written back | the same small network |
+| question | what does a self-description converge to, and why? | what does a system build when it must carry, predict and follow its own state? | can the state come to represent what matters and steer what the model takes in? |
 
 ![how it works](figures/how_it_works.png)
 
@@ -80,6 +82,11 @@ readable.
 | rotation fit | R² of the best single rotation that maps each chunk's average state onto the next chunk's; compared with 2,000 random orders of the chunks |
 | held-out R² | the same rotation, fitted on half of the thoughts, predicting each next state of single thoughts in the other half (below 0 = worse than predicting the average) |
 | teacher forcing, free generation | each chunk is the model's real thinking; or the model writes each chunk itself, seeing only that chunk and the state |
+| update, tracked animal | (section 5) one sentence such as "The fox is now red."; the animal whose colour the model is asked about |
+| read, query | (section 5) an attention over a chunk's updates plus a "nothing new" option; the query is the vector that decides where the attention goes |
+| restricted access, open access | (section 5) each update read on its own and only the read colour passed on; or the whole chunk read as ordinary text |
+| twin streams | two streams with identical updates that differ only in which animal is tracked |
+| focus edit | adding to the state the difference between the average states for two tracked animals (averages over separate streams) |
 
 ---
 
@@ -146,8 +153,8 @@ This is not a frequency effect: self-gain correlates only weakly with word frequ
 the frequency trend the same words are at the top and the bottom. The matrix's leading patterns (eigenvectors), also
 after the frequency control, are an answering frame (*answer, According, information, asked, Option, Wait*), question-
 and-answer structure (*Question, Answer, Solution, Section, Step, Method*), an epistemic stance (*Anyway, Obviously,
-Seems, Actually, Apparently, Maybe, Perhaps*) and a casual register (*yeah, weird, crazy, funny, dude, okay, gotta,
-guys, wanna*). Repeated application of the matrix from 20 random starting points always ends on the first pattern.
+Seems, Actually, Apparently, Maybe, Perhaps*) and a casual register (informal interjections, slang contractions and casual
+forms of address). Repeated application of the matrix from 20 random starting points always ends on the first pattern.
 
 The loop behaves approximately like repeated application of this matrix plus the prompt's own input, and repeated
 application amplifies whatever reproduces itself best. What reproduces itself best is how the model is answering — its
@@ -165,9 +172,8 @@ not a full mechanism of every trajectory.
 Besides the context-specific end states, the loop pushes every context along one shared direction: the average
 direction carries 41 / 50 / 71 % of the change of the state at g = 0.25 / 1 / 4, against 2 / 5 / 20 % when the loop
 writes random descriptions of the same size (14B: 44 / 51 / 65 %, random 1.5 / 3.6 / 17 %). Read through the model's
-output layer, the direction promotes *yeah, Yeah, wanna, gonna, guys, cuz, alright, okay, hey* and suppresses
-formatting and code tokens (14B: *yeah, I, so, interesting, what, let, look, hi, incredible, wow* — an interjecting,
-first-person voice).
+output layer, the direction promotes informal, chatty speech — interjections, slang contractions, casual forms of
+address — and suppresses formatting and code tokens (at 14B: an interjecting, exclaiming, first-person voice).
 
 To place this direction among the model's personas, the same position was read under 40 role prompts (16 questions
 each). Their main axis (22 % of the variance between roles) runs from casual roles — gangster, surfer dude, moody
@@ -304,10 +310,11 @@ Feeding back an untrained forecast (λ = 0) is no different from having an extra
 * **Contrastive loss → real self-predictability.** The forecast picks the true next state among 400 held-out
   thoughts 90–99 % of the time (the previous state as the guess: 1–3 %; chance 0.25 %).
 
-### 4.4 The clock
+### 4.4 A rotating time code
 
 Under contrastive pressure (λ = 1) the state becomes a **rotation**: one and the same rotation, acting in several
-planes at once, carries it from each chunk to the next, and single thoughts follow it.
+planes at once, carries it from each chunk to the next, and single thoughts follow it. The state turns by a fixed step
+per chunk, like a hand going round a dial, so its direction tells how far into the thought the model is — a time code.
 
 | λ = 1, contrastive | rotation fit, true order (random orders, 99th percentile) | held-out R² | angles per chunk |
 |---|---|---|---|
@@ -323,31 +330,27 @@ In every pressure variant the true order of the chunks fits one rotation better 
 orders (p ≤ 0.0005), and the steps between consecutive chunk averages have nearly constant length (coefficient of
 variation 0.06–0.19, against 0.57 without pressure). The chunk a state comes from can be read off
 it in 69–88 % of cases in the variants with a channel (38 % without one, 56 % with the J-space reader), against 21–26 %
-without pressure (chance 12.5 %). The clock forms whether or not the forecast is written back — with the state channel
-and with no channel at all — so the clock is produced by the pressure to be self-predictable, not by closing the loop.
+without pressure (chance 12.5 %). The time code forms whether or not the forecast is written back — with the state
+channel and with no channel at all — so it is produced by the pressure to be self-predictable, not by closing the loop.
 
 **It is not just a shared template.** Subtracting the average path and predicting each held-out thought's own
 deviation at the next chunk from its deviation at this chunk: under pressure, linear prediction R² 0.62–0.80 and
 rotation 0.49–0.77 (shuffled trajectories: below −0.56); without pressure 0.17–0.24 and −0.34 to −0.21. Each thought
 carries its own deviation, and it turns with the rotation.
 
-**What the clock reads as.** Mapping the average state of each chunk back into J-space words gives the stages of a
-thought. Without pressure the average state already drifts through them; pressure turns that drift into a regular
+**What the time code reads as.** Mapping the average state of each chunk back into J-space words gives the stages of
+a thought. Without pressure the average state already drifts through them; pressure turns that drift into a regular
 rotation that every thought follows:
 
-* 8B plain loop: *things, stuff* → *maybe, something, might* → *also, additional, alternative* → *concise,
-  Conclusion, summary*;
-* 14B plain loop: *pretty, probably, kinds, remember* → *maybe, might, perhaps* → *additional, alternative* →
-  *Ensure, Ultimately, Summary*;
-* 8B mild pressure: *stuff, maybe* → *also, could* → *Conclusion, Suggestions*; 14B strong pressure: *kinds, maybe,
-  stuff* → *something, somehow* → *renowned, universally* → *Ultimately, concludes*;
-* 8B strong pressure is the exception: the clock cycles through topics that have nothing to do with the thought —
-  *espresso, coffee* → *movies, games* → *music, instruments* → *espresso* → *baseball, football* → *movies, animals*.
-  This is the variant whose state no longer carries the thought (section 4.6).
+* in the plain loops (8B and 14B), and under mild pressure at 8B and strong pressure at 14B, the turn passes from vague
+  recalling, through hedging and weighing alternatives, to concluding and summarising;
+* 8B under strong pressure is the exception: the turning state passes through everyday topics that have nothing to do
+  with the thought (drinks, films and games, music, sports) and comes back to the first. This is the variant whose
+  state no longer carries the thought (section 4.6).
 
 ![time code](figures/time_code.png)
 
-![word clock](figures/word_clock.png)
+![stages of a thought](figures/stages_of_a_thought.png)
 
 **Why a rotation.** The self-model is one fixed map from a state to the next, and states have fixed length. To keep
 eight moments of a thought apart with one fixed, length-preserving map, its repeated application must keep moving the
@@ -356,17 +359,17 @@ follows from what the self-model is asked to do. What is not imposed is that the
 writes passing through the frozen model — organises itself into it, in every thought, and in most variants wraps the
 model's own stages of reasoning around it.
 
-**What it is not (yet).** The clock is measured while the text changes from chunk to chunk; part of the rotation may
-summarise the text's own progression. Evidence for a clock that runs on its own would need the text held fixed or
-removed. With 8 chunks of 64 tokens, the chunk's index and the stage of the thought also go together; varying chunk
+**What it is not (yet).** The time code is measured while the text changes from chunk to chunk; part of the rotation
+may summarise the text's own progression. Evidence for a time code that runs on its own would need the text held fixed
+or removed. With 8 chunks of 64 tokens, the chunk's index and the stage of the thought also go together; varying chunk
 number and length would separate them.
 
 ### 4.5 Identity instead of time
 
 When the self-model has to pick the true next state only among *other thoughts* at the same moment (not among the same
-thought's other moments), no clock forms (rotation fit 0.14 against 0.46 for random orders; held-out R² −0.65; the
+thought's other moments), no time code forms (rotation fit 0.14 against 0.46 for random orders; held-out R² −0.65; the
 chunk is readable in 22 % of cases). Instead the state becomes a persistent **identity** code: the previous state alone
-identifies the next one in 38 % of cases (3 % in the clock variant). This variant keeps more of the thought's content
+identifies the next one in 38 % of cases (3 % in the time-code variant). This variant keeps more of the thought's content
 (own vs another thought's state 0.215, against 0.084) and still follows its fed-back forecast (enactment 0.23). What
 the self-model must tell apart decides what the state represents: its own moments (when) or itself among others
 (which).
@@ -397,8 +400,8 @@ Three regimes follow:
 * **No pressure.** The loop is a memory; the forecast is ignored.
 * **Strong pressure.** The self-model takes over. The system follows its forecasts and is almost perfectly predictable
   to itself, but the state stops carrying the thought: the loop predicts the model's thinking worse than no loop at all,
-  swapping the forecast barely changes the text, and at 8B the clock becomes a carousel of unrelated topics — a
-  self-generated sequence that is about nothing the model is thinking.
+  swapping the forecast barely changes the text, and at 8B the turning state passes through a series of unrelated
+  topics — a self-generated sequence that is about nothing the model is thinking.
 * **Mild pressure.** The system follows its forecasts as strongly as under strong pressure while the state keeps most
   of what it carries without pressure (93 % at 8B, 92 % at 14B) and still beats the cut. This is the regime in which a
   self-model is both a model of the process and a cause in it, at 8B and 14B.
@@ -409,11 +412,10 @@ Three regimes follow:
 
 With the reader fixed to J-space (the 32 main directions of the J-space word readings of natural states; only the
 writers trained), the plain loop is slightly better than with a trained reader (1.731 vs 1.741 nats per token; benefit
-over the cut 0.124 vs 0.114) and keeps the topic longer in free generation. Its axes read as registers:
-formal-analytic (*Implementation, Verification, Analysis*) against vivid-physical (*smashed, shoved, roasted*);
-hypothetical reasoning (*asked, considered, Assuming, would*) against concrete places (*breweries, airports,
-restaurants*); colloquial negation (*doesnt, didnt, crappy*) against headline words. The clock forms inside J-space as
-well (table in 4.4; retrieval 94 %, enactment 0.18), at the same cost in content as with a trained reader. A loop that
+over the cut 0.124 vs 0.114) and keeps the topic longer in free generation. Its axes read as registers: formal and
+analytic against vivid and physical; hypothetical reasoning against concrete places; informal, colloquial negation
+against headline language. The time code forms inside J-space as well (table in 4.4; retrieval 94 %, enactment 0.18),
+at the same cost in content as with a trained reader. A loop that
 runs on the model's own thought can use the verbalizable workspace as its bottleneck without loss.
 
 ### 4.8 Free generation: what the loop does to the model's own text
@@ -446,7 +448,155 @@ thoughts per variant, 64 for the plain loop; counts in `trained_loop/results/fre
 
 ---
 
-## 5. What the results suggest
+## 5. A state that decides what the model reads
+
+The first two systems ask what a self-describing loop converges to. The third asks the question in its sharpest form:
+can a compact state come to represent **which distinction in the system's processing matters**, and regulate what the
+model takes in through that representation — so that changing the representation changes the selection? In a chunk
+of the model's own thinking nothing relevant is out of view, so nothing has to be selected; this needs a task in which
+selecting is the point.
+
+### 5.1 Setup
+
+**Task.** Ten animals, ten colours. A stream has six chunks of four updates ("The fox is now red."). Chunk 0 also says
+which animal to keep track of; in 30 % of streams a later chunk switches to another one. After every chunk the model is
+asked, with only the loop's state in view, "what color is the animal you are keeping track of now?" The question never
+names the animal, so the state has to carry it. The tracked animal appears in about 70 % of later chunks; otherwise
+its colour has to be kept.
+
+**The loop.** As in section 4, the language model stays frozen and the memory between chunks is 32 numbers (the
+*state*), written into placeholder positions of the model's input and read back out of its processing; a small
+self-model predicts the next state. Training rewards only the right colour at every question.
+
+**Restricted access.** Each update is read by the model on its own; per chunk the loop makes one *read* — an attention
+over the chunk's four updates plus a "nothing new" option — whose *query* is computed from the state and the current
+instruction, if there is one. Only the read colour reaches the state. This makes selection necessary but does not say
+how to select: nothing rewards any query or attention pattern.
+
+**Open access.** The model reads each chunk as ordinary text — the instruction (when there is one) and all four updates
+together. The loop writes its state into placeholders before the chunk and reads the next state out of the model's
+representation of the chunk's last word. Any selection has to happen inside the model's own attention, steered by what
+the loop wrote.
+
+Models: Qwen2.5-0.5B-Instruct (three training runs), Qwen3-1.7B (two), Qwen2.5-3B-Instruct (open access). Every variant
+is evaluated on the same 512 held-out streams, so comparisons are paired by stream; edits use 256 pairs of twin streams
+per edited chunk. The criteria for 5.4 and 5.5 were written down before their results
+([`selection_loop/DESIGN_retry.md`](selection_loop/DESIGN_retry.md), [`selection_loop/DESIGN_open.md`](selection_loop/DESIGN_open.md)).
+
+![the third system](figures/selection_loop.png)
+
+### 5.2 A state that chooses its read tracks the animal; fixed reads do not
+
+| Qwen2.5-0.5B, restricted access | overall | tracked animal updated | colour kept | at a switch |
+|---|---|---|---|---|
+| the state chooses the read (three runs) | 0.995 / 0.991 / 0.987 | 1.000 / 0.998 / 0.998 | 0.980 / 0.967 / 0.948 | 1.000 / 0.987 / 1.000 |
+| the same, also pushed to be predictable to its self-model | 0.992 | 0.999 | 0.967 | 0.981 |
+| the self-model's forecast chooses the read | 0.704 | 0.843 | 0.240 | 0.916 |
+| the read sees the current instruction but no state | 0.456 | 0.515 | 0.259 | 1.000 |
+| fixed read (two runs) | 0.317 / 0.318 | 0.363 / 0.362 | 0.164 / 0.171 | 0.377 / 0.351 |
+
+On chunks without an instruction in view, the state-chosen read is right more often than a fixed read by 0.70 and
+0.69 per stream (first and second run; 95 % intervals 0.68–0.72 and 0.67–0.71), and more often than a read that sees
+the instruction but keeps no state by 0.69 (0.67–0.71): the persistent state, not the instruction, does the work.
+Pushing the state to be predictable to its self-model changes nothing; letting the self-model's forecast choose the read
+instead of the state is much worse (its forecasts lose track of the animal). Qwen3-1.7B learns to aim its read at the
+tracked animal (0.94 of the read when it is present) but not to choose "nothing new" when it is absent, so it
+overwrites colours it should keep (0.65 and 0.76 overall after 1,200 and 2,400 steps).
+
+### 5.3 Editing what matters redirects the read — through the read alone
+
+To test whether the state *represents* which animal matters, and whether that representation *regulates* the read, I
+edited it. Twin streams share all updates; in one the tracked animal is A, in the other B, and both are updated, with
+different colours, in the edited chunk. The *focus edit* adds to the state, before that chunk is read, the difference
+between the average states for B and for A (averages over separate streams, by tracked animal over all colours).
+
+| at the edited chunk (0.5B, first run; edits at chunks 2–4) | A's new colour | B's new colour | A's earlier colour | read on A / B / "nothing new" | next chunk follows B |
+|---|---|---|---|---|---|
+| no edit | 0.999 | 0.000 | 0.001 | 0.77 / 0.01 / 0.20 | 0.09 |
+| focus edit A → B | 0.000 | **0.996** | 0.10 | 0.01 / 0.78 / 0.19 | **0.996** |
+| the same edit, given to the read only | 0.000 | **0.996** | 0.10 | 0.01 / 0.78 / 0.19 | 0.27 |
+| the same edit, given to the answering step only | **0.997** | 0.001 | 0.003 | 0.77 / 0.01 / 0.20 | 0.33 |
+| half the edit | 0.10 | 0.24 | **0.74** | 0.18 / 0.21 / **0.57** | 0.30 |
+| twice the edit | 0.000 | 0.996 | 0.10 | 0.00 / **0.96** / 0.02 | 0.95 |
+| random direction, same size | 0.82 | **0.03** | 0.12 | 0.61 / 0.03 / 0.30 | 0.09 |
+| toward an animal that is not in the chunk | 0.003 | 0.10 | **0.984** | 0.04 / 0.05 / **0.81** | 0.11 |
+
+The edit acts through the read: given to the read alone it has its full effect; given to the answering step alone it
+has none. It is specific (random directions of the same size do not redirect), graded (half an edit splits the read
+and often takes nothing), and it carries the meaning of a focus: pointed at another animal that is in the chunk, the
+read takes that animal's update (0.995); pointed at one that is not, it takes nothing and the stored colour stays
+(0.984). After the edit the loop keeps following the new animal by itself (0.996 in the next chunk): the changed
+representation changed the processing, and the processing carried the changed representation on. A second kind of
+edit — toward another colour, on streams where the tracked animal is not updated — changes the remembered colour
+(0.996) and leaves the focus working (the animal's next update is taken in 1.000): which animal matters and what was
+found can be changed separately.
+
+All of this repeats in the second and third 0.5B runs (focus edit 0.997 and 0.996; read only 0.996 and 0.995;
+answering step only, no effect; random 0.02; toward an absent animal, stored colour kept 0.95 and 0.92). In Qwen3-1.7B
+the steering of the read repeats (focus edit 0.987; read only 0.992; answering step only, no effect; random 0.02); the
+keeping, which that model never learned, does not. With a fixed read the same edits change nothing.
+
+![editing what matters](figures/fig_focus_edits.png)
+
+### 5.4 Reacting to the outcome of its own read
+
+Sections 5.2 and 5.3 show a representation of what matters for the task. A step toward a representation of the
+system's *own processing*: reads now sometimes fail to deliver (probability 0.3; noise arrives instead of the colour),
+each chunk allows a second, optional read, and attention placed on updates costs a little. The second read is decided
+either from the state *after* the first read has passed through the model, or — as a control — from the state *before*
+it, which cannot know what happened. From scratch, learning under failures was too slow for the compute available, so
+every variant started from the trained loop of 5.2 and trained 600 more steps (decided after seeing only the speed of
+learning, before any of the measures below).
+
+| two starting runs each | accuracy | attention on updates per chunk | second read on the tracked update after a failed / a delivered first read |
+|---|---|---|---|
+| second read decided after the first | 0.905 / 0.901 | 1.32 / 1.33 | 0.95 / 0.62 and 0.96 / 0.64 |
+| second read decided before (control) | 0.909 / 0.901 | 1.49 / 1.52 | 0.94 / 0.93 and 0.95 / 0.95 |
+| one read only | 0.721 | 0.76 | – |
+
+The variant that sees the outcome reaches the control's accuracy with less reading, and its reading follows the actual
+failure rate (1.23 / 1.32 / 1.41 at failure rates 0 / 0.3 / 0.6, against 1.50 / 1.49 / 1.48 for the control). A
+paired test — the same stream, first read and noise, branching only on whether the first read delivered — shows that
+the second read is what rescues the answer: when a failed first read is followed by a second read computed from the
+state of the branch where it succeeded, the answer is right 0.53–0.62 of the time instead of 0.99. "My first read
+failed" can be decoded from the state in every variant (0.98–1.00), also in the control, where it cannot change
+anything: being represented and being used come apart. Two limits: the second read is only partly selective (it reads
+again after 62 % of successful reads), and no specific direction in the state could be found whose editing causes or
+prevents reading again — edits along the average difference between failed and successful reads did no better than
+random directions. This is control by the outcome of its own processing, not knowledge about it.
+
+![reacting to its own read](figures/fig_retry.png)
+
+### 5.5 Open access: how to select, but not what
+
+| open access | overall | chunks with the instruction in view | chunks without | same, with no memory |
+|---|---|---|---|---|
+| Qwen2.5-0.5B (1,500 steps) | 0.442 | 1.000 | 0.291 | 0.261 |
+| Qwen2.5-3B (2,414 steps) | 0.428 | 1.000 | 0.286 | 0.259 |
+
+**Where the text names the target, selection emerges in the model's own attention.** After chunk 0 the state holds the
+instructed animal's colour (decodable 0.97–1.00) and not the colours of the three other animals in the same sentences
+(0.10–0.12, chance), although all four were in view. The model's attention from the chunk's last word shows how: with
+nothing written, it is the same on the instructed update and on another one (0.139 and 0.134 at 0.5B); with the learned
+write it is almost twice as high on whichever update the instruction names (0.179 against 0.095) and flips when the
+instruction flips — at 0.5B and at 3B alike. The written state regulates the model's own selection as a mode: attend to
+what the text names.
+
+**Where the state itself would have to say what matters, nothing emerges.** On chunks without an instruction, tracking
+is barely better than with no memory (+0.03 per stream; 95 % interval +0.01 to +0.05 at 0.5B). The state holds no usable
+code for which animal matters: the tracked animal's new colour is hardly more decodable than any other animal's
+(0.36–0.43 against 0.31–0.35, about what keeping the last update gives), focus edits change nothing (B's new colour
+0.31–0.34 with or without the edit), and the model attends to the written state (0.14 of its attention, against
+0.01–0.02 with nothing written) without preferring any update. Longer training changes nothing: the 0.5B loop, trained 1,200 more steps (2,700 in
+all), stayed at 0.43–0.44 on the validation streams; the 3B loop, trained 480 more steps (2,894 in all) and evaluated
+again, shows the same picture (chunks without an instruction 0.279 against 0.247 with no memory; focus edits without
+effect; the same attention pattern at chunk 0).
+
+![open access](figures/fig_open.png)
+
+---
+
+## 6. What the results suggest
 
 **Both loops turn inward.** In the frozen loop the self-description converges on how the model answers — its frame,
 its stance, its voice — and loses what it is answering about. In the trained loop the state's main axes are modes of
@@ -455,10 +605,20 @@ thought it is. The mechanisms differ (selection by self-reproduction through the
 self-model can tell apart), but the outcome is the same: a loop that describes the system keeps what describes the
 system's own activity. One reason may be that the activity is present at every step, while the content changes.
 
-**Two elementary forms of self-location.** A self-model that must distinguish its own moments produces a clock; one
-that must distinguish itself from others produces an identity. Both are codes of the system about itself, and their
-geometry — rotation, persistence — follows from what has to be distinguished. In most variants the clock is tied to
+**Two elementary forms of self-location.** A self-model that must distinguish its own moments produces a time code;
+one that must distinguish itself from others produces an identity. Both are codes of the system about itself, and their
+geometry — rotation, persistence — follows from what has to be distinguished. In most variants the time code is tied to
 the model's own arc of reasoning: recalling, hedging, adding alternatives, concluding.
+
+**A representation of what matters forms where it can act on selection.** Given a direct handle on what the model takes
+in (the read's query), the compact state came to represent which animal matters, used that representation to select,
+and kept following an edited representation as its own — the loop that the starting idea describes, in miniature: a
+representation that changes the processing it represents and is then maintained by that processing. Given only the
+model's input stream (open access), the same kind of state learned to switch on the model's own selection of whatever
+the text names, but not to name the target itself. What it learned in both cases was control of selection; what
+differed was whether the state could carry the *content* of that control. Models of one's own attention that steer
+attention have been proposed as a function of self-models (the attention schema); here the steering was learned, and
+the channel decided whether a representation of what matters could form at all.
 
 **A self-model that causes what it predicts — the 2024 tension from both sides.** In the frozen loop the self-model
 adapts to a system that its forecasts change (it tracks the new process and forgets the old one). In the trained loop
@@ -473,7 +633,7 @@ earlier. The counts are small and, in the frozen loop, specific to 8B, but the p
 content is attributed to memory.
 
 **Not ordinary language statistics.** The frozen loop's selection is not word frequency (frequency control); its
-shared direction and persona drift do not appear with random writes of the same size; the clock's order beats 2,000
+shared direction and persona drift do not appear with random writes of the same size; the time code's order beats 2,000
 random orders and holds for single held-out thoughts; enactment is compared with the same channel carrying a state
 instead of a forecast; private state was tested against a content-matched swap with a planted positive control.
 
@@ -489,7 +649,7 @@ feeding the self-model back makes it causal.
 
 ---
 
-## 6. Limits
+## 7. Limits
 
 * Every measure is functional: what states carry, predict and cause. Nothing here measures experience.
 * The trained loop is trained and mostly evaluated on fixed recordings of the model's own thinking; in free generation
@@ -498,16 +658,22 @@ feeding the self-model back makes it causal.
   replication; the dose (λ = 0, 0.1, 1) has three points.
 * Enactment could be the system learning to copy whatever the forecast channel says; a channel carrying a
   non-predictive transform of the forecast would test this.
-* The clock's shape is set by what the self-model must distinguish; chunk index and stage of thought coincide with
-  8 chunks of 64 tokens.
+* The time code's shape is set by what the self-model must distinguish; chunk index and stage of thought coincide
+  with 8 chunks of 64 tokens.
 * The frozen loop was studied at one kind of position (the answer position of short scenarios); the transport matrix
   is a linear summary; the persona shift is small and internal.
+* The third system is a purpose-built task with small models. Restricted access makes selection necessary by design;
+  the open-access runs had limited training (one run per model size), so they show what did not emerge in that time,
+  not what cannot. Intervals are over test streams for fixed trained models, not over training runs.
 
 ---
 
-## 7. Open questions
+## 8. Open questions
 
-* Is enactment more than copying a channel? Is the clock tied to the chunk index or to the stage of the thought?
+* Is enactment more than copying a channel? Is the time code tied to the chunk index or to the stage of the thought?
+* With open access, can a state learn to stand in for the instruction — with longer training, larger models, or a write
+  that reaches the model's attention more directly? Does a representation of what matters form when nothing names the
+  target at all?
 * Does the loop, trained in free generation under mild pressure, steer what the model actually thinks — and does a
   transplanted forecast carry a disposition (for example hedging) across topics?
 * Is the invented past a signature of missing self-continuity — does it scale with how much memory the state carries?
@@ -517,12 +683,13 @@ feeding the self-model back makes it causal.
 
 ---
 
-## 8. Data, code, reproduction
+## 9. Data, code, reproduction
 
 | folder | content | data on Hugging Face (`Pixedar/jspace-strange-loop`) |
 |---|---|---|
 | [`frozen_loop/`](frozen_loop) | the frozen J-space loop: settled states, transport matrix, persona axis, invented past, private-state test, the online self-model; working notes and plans | `v5/` (geometry, transport and persona arrays) |
 | [`trained_loop/`](trained_loop) | the trained self-describing loop: code, plan, one table of every variant ([arms_summary.md](trained_loop/results/arms_summary.md)), per-variant results | `phaseB/` (evaluation arrays, the models' thinking, trained loop weights) |
+| [`selection_loop/`](selection_loop) | the state that decides what the model reads: code, designs fixed before the results, result tables | `selection_loop/` (evaluation arrays, trained loop weights) |
 | [`common/`](common) | model and lens loading, J-space reading, the frozen loop, scenario generator | |
 | [`figures/`](figures) | figures of this report (`make_figures.py` draws two of them) | |
 | [`infra/`](infra) | unattended GPU runner (queue, upload, self-destroy) | |
@@ -539,6 +706,9 @@ python loopb.py eval  --out out/loopb --tag fcst_learned_l1_c
 python summarize_arms.py out/loopb --out out
 B_MODEL=14b python loopb.py gen --out out/loopb14 --n 2000   # 14B
 ```
+
+The third system ran on one 24 GB GPU or a 4 GB laptop GPU (about 30 minutes per 0.5B run); commands are in
+[`selection_loop/README.md`](selection_loop/README.md).
 
 Variant names in the code and result files: `<channel>_<reader>_l<λ>[_c|_cx][_s<seed>]`, with channel `const`
 (plain loop), `state`, `fcst` (forecast) or `cut`; reader `learned` or `J`; loss suffix none (cosine), `_n`

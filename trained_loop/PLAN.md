@@ -68,7 +68,7 @@ represent?
   surprise (base-model NLL), hedging / reconsideration ("Wait", "maybe", "Hmm", "Actually"), self-reference ("I", "me");
   process-level vs content-level, J vs learned (LESSONS #2 predicts J carries stance / epistemic state).
 * B5 geometry: dimension (PR, TwoNN), the shape of the segment-index code (a curved, counting-like manifold?), the local
-  spectrum of S (rotation = a self-predictable clock), all across arms in a common frame.
+  spectrum of S (a rotation = a self-predictable time code), all across arms in a common frame.
 * B6 tracking and identity (H3): corrupt z at segment 3 with a donor's; does the system return to its own trajectory or
   adopt the donor's, and does a fresh self-forecast track the corrupted system better than a stale one?
 

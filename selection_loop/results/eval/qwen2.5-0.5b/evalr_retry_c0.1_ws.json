@@ -1,0 +1,420 @@
+{
+ "tag": "retry_c0.1_ws",
+ "cfg": {
+  "stage": "train",
+  "arm": "retry",
+  "cost": 0.1,
+  "p_fail": 0.3,
+  "sigma": 0.1,
+  "no_null": 0,
+  "cost_start": 100,
+  "cost_ramp": 100,
+  "init": "sel-state_l0.pt",
+  "steps": 600,
+  "bs": 16,
+  "lrate": 0.002,
+  "seed": 0,
+  "tag": null,
+  "K": 6,
+  "n_upd": 4,
+  "p_switch": 0.3,
+  "p_focus": 0.5,
+  "n_eval": 512,
+  "norm": 0
+ },
+ "acc": 0.9046224355697632,
+ "acc_by_chunk": [
+  0.916015625,
+  0.916015625,
+  0.908203125,
+  0.90234375,
+  0.890625,
+  0.89453125
+ ],
+ "acc_updated": 0.9158562421798706,
+ "acc_kept": 0.8670438528060913,
+ "reads_per_chunk": 1.3230607509613037,
+ "first_read_on_tracked_when_present": 0.9597482085227966,
+ "first_read_nothing_new_when_absent": 0.9341208338737488,
+ "present_but_first_read_not_on_tracked": 0.009302325546741486,
+ "by_first_read": {
+  "present_first_failed": {
+   "n": 720,
+   "first_read_on_tracked": 0.9653595089912415,
+   "first_read_nothing_new": 0.029947487637400627,
+   "second_read_on_tracked": 0.9509952068328857,
+   "second_read_nothing_new": 0.04837828502058983,
+   "reads": 1.9216742515563965,
+   "acc": 0.7361111044883728
+  },
+  "present_first_delivered": {
+   "n": 1623,
+   "first_read_on_tracked": 0.967351496219635,
+   "first_read_nothing_new": 0.029089493677020073,
+   "second_read_on_tracked": 0.6205803155899048,
+   "second_read_nothing_new": 0.37782081961631775,
+   "reads": 1.5930895805358887,
+   "acc": 0.9975354075431824
+  },
+  "absent": {
+   "n": 707,
+   "first_read_on_tracked": 0.0,
+   "first_read_nothing_new": 0.9341208338737488,
+   "second_read_on_tracked": 0.0,
+   "second_read_nothing_new": 0.9874950647354126,
+   "reads": 0.07838405668735504,
+   "acc": 0.8670438528060913
+  }
+ },
+ "confidence": {
+  "update_not_acquired": {
+   "n": 141,
+   "acc": 0.021276595070958138,
+   "max_prob": 0.3053501546382904,
+   "entropy": 1.983935832977295,
+   "prob_previous_true_colour": 0.2664245665073395
+  },
+  "acquired_by_first_read": {
+   "n": 1200,
+   "acc": 0.9975000023841858,
+   "max_prob": 0.9871025681495667,
+   "entropy": 0.06481586396694183,
+   "prob_previous_true_colour": 0.004478564951568842
+  },
+  "acquired_by_second_read": {
+   "n": 357,
+   "acc": 0.9971988797187805,
+   "max_prob": 0.9694216847419739,
+   "entropy": 0.16140523552894592,
+   "prob_previous_true_colour": 0.01099167950451374
+  }
+ },
+ "decode_mid_state": {
+  "first_read_failed": 0.9953737933867324,
+  "tried_and_failed_vs_chose_nothing": 0.9523371104815863
+ },
+ "counterfactual_first_delivery": {
+  "delivered": {
+   "n": 1097,
+   "second_read_on_tracked": 0.5611587762832642,
+   "second_read_nothing_new": 0.43695491552352905,
+   "acc": 1.0,
+   "next_acc": 0.9307201504707336
+  },
+  "failed": {
+   "n": 1097,
+   "second_read_on_tracked": 0.9360694289207458,
+   "second_read_nothing_new": 0.06310401111841202,
+   "acc": 0.9936189651489258,
+   "next_acc": 0.9225159287452698
+  },
+  "delivered_query_from_failed_state": {
+   "n": 1097,
+   "second_read_on_tracked": 0.9360694289207458,
+   "second_read_nothing_new": 0.06310401111841202,
+   "acc": 0.9981768131256104,
+   "next_acc": 0.864175021648407
+  },
+  "failed_query_from_delivered_state": {
+   "n": 1097,
+   "second_read_on_tracked": 0.5611587762832642,
+   "second_read_nothing_new": 0.43695491552352905,
+   "acc": 0.623518705368042,
+   "next_acc": 0.8185961842536926
+  }
+ },
+ "test_failure_rate": {
+  "0": {
+   "acc": 0.9925130605697632,
+   "reads_per_chunk": 1.2302967309951782,
+   "second_read_on_tracked_after_failed": null,
+   "second_read_on_tracked_after_delivered": 0.6026034355163574
+  },
+  "0.6": {
+   "acc": 0.6529948115348816,
+   "reads_per_chunk": 1.4129502773284912,
+   "second_read_on_tracked_after_failed": 0.9575421214103699,
+   "second_read_on_tracked_after_delivered": 0.6416242718696594
+  }
+ },
+ "edit_direction_norm": 0.29917195439338684,
+ "calibration_counts": {
+  "failed": 727,
+  "delivered": 1626
+ },
+ "mid_state_edits": {
+  "none": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9363291064898173,
+    "second_read_nothing_new": 0.06272778163353603,
+    "acc": 0.733602782090505,
+    "next_acc": 0.8158625761667887
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.5552160541216532,
+    "second_read_nothing_new": 0.4428350826104482,
+    "acc": 0.9973902702331543,
+    "next_acc": 0.9315124948819479
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9881390333175659,
+    "acc": 0.8685232798258463,
+    "next_acc": 0.8896222710609436
+   },
+   "state_moved_1_minus_cos": 0.0
+  },
+  "toward_failed": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9122438629468282,
+    "second_read_nothing_new": 0.08572860558827718,
+    "acc": 0.7368560234705607,
+    "next_acc": 0.7745068470637003
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.6056231061617533,
+    "second_read_nothing_new": 0.39157479008038837,
+    "acc": 0.9895074566205343,
+    "next_acc": 0.9246843854586283
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9814874331156412,
+    "acc": 0.8255099654197693,
+    "next_acc": 0.8728640874226888
+   },
+   "state_moved_1_minus_cos": 0.03978746089463433
+  },
+  "toward_failed_x0.5": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9283443689346313,
+    "second_read_nothing_new": 0.07031590243180592,
+    "acc": 0.7396808862686157,
+    "next_acc": 0.8040405909220377
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.5892239809036255,
+    "second_read_nothing_new": 0.4085419376691182,
+    "acc": 0.9973902702331543,
+    "next_acc": 0.9261411627133688
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9852429628372192,
+    "acc": 0.8493282794952393,
+    "next_acc": 0.8847732146581014
+   },
+   "state_moved_1_minus_cos": 0.010550930785636107
+  },
+  "toward_failed_x2": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.8565774957338969,
+    "second_read_nothing_new": 0.1387779265642166,
+    "acc": 0.7368089358011881,
+    "next_acc": 0.6599546074867249
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.594589630762736,
+    "second_read_nothing_new": 0.40036000808080036,
+    "acc": 0.9604697426160177,
+    "next_acc": 0.8479565580685934
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9717772603034973,
+    "acc": 0.659835676352183,
+    "next_acc": 0.8107473651568095
+   },
+   "state_moved_1_minus_cos": 0.1329835963745912
+  },
+  "toward_failed_query_only": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9122438629468282,
+    "second_read_nothing_new": 0.08572860558827718,
+    "acc": 0.7369031111399332,
+    "next_acc": 0.8186403512954712
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.6056231061617533,
+    "second_read_nothing_new": 0.39157479008038837,
+    "acc": 0.9973902702331543,
+    "next_acc": 0.9315124948819479
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9814874331156412,
+    "acc": 0.8660723169644674,
+    "next_acc": 0.8871712883313497
+   },
+   "state_moved_1_minus_cos": 0.03978746089463433
+  },
+  "toward_failed_update_only": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9363291064898173,
+    "second_read_nothing_new": 0.06272778163353603,
+    "acc": 0.7368560234705607,
+    "next_acc": 0.7600483099619547
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.5552160541216532,
+    "second_read_nothing_new": 0.4428350826104482,
+    "acc": 0.9895074566205343,
+    "next_acc": 0.9260339140892029
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9881390333175659,
+    "acc": 0.8207279841105143,
+    "next_acc": 0.8728640874226888
+   },
+   "state_moved_1_minus_cos": 0.03978746089463433
+  },
+  "random_same_size_r0": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9368587930997213,
+    "second_read_nothing_new": 0.062057858953873314,
+    "acc": 0.7475858529408773,
+    "next_acc": 0.8158625761667887
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.5756418903668722,
+    "second_read_nothing_new": 0.42065945267677307,
+    "acc": 0.9960675040880839,
+    "next_acc": 0.9220746358235677
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9789246916770935,
+    "acc": 0.8276681105295817,
+    "next_acc": 0.8634729981422424
+   },
+   "state_moved_1_minus_cos": 0.043046760838478804
+  },
+  "random_same_size_r1": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9487166206041971,
+    "second_read_nothing_new": 0.049838422487179436,
+    "acc": 0.7452364563941956,
+    "next_acc": 0.7543985843658447
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.6522701780001322,
+    "second_read_nothing_new": 0.34459173679351807,
+    "acc": 0.9973902702331543,
+    "next_acc": 0.9129137992858887
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9704899589220682,
+    "acc": 0.8517650763193766,
+    "next_acc": 0.8797512849171957
+   },
+   "state_moved_1_minus_cos": 0.04199775820598006
+  },
+  "random_same_size_r2": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.8720199863115946,
+    "second_read_nothing_new": 0.1259621555606524,
+    "acc": 0.7236547072728475,
+    "next_acc": 0.8069596091906229
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.4739072422186534,
+    "second_read_nothing_new": 0.5235588947931925,
+    "acc": 0.9934309720993042,
+    "next_acc": 0.9182136257489523
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9874570568402609,
+    "acc": 0.8447578946749369,
+    "next_acc": 0.8680150310198466
+   },
+   "state_moved_1_minus_cos": 0.03726025344803929
+  },
+  "toward_delivered": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9263191223144531,
+    "second_read_nothing_new": 0.07301555822292964,
+    "acc": 0.7363334695498148,
+    "next_acc": 0.8214652140935262
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.4460388123989105,
+    "second_read_nothing_new": 0.5519645810127258,
+    "acc": 0.9973277449607849,
+    "next_acc": 0.9301362037658691
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9915100733439127,
+    "acc": 0.8304261167844137,
+    "next_acc": 0.8679479360580444
+   },
+   "state_moved_1_minus_cos": 0.04253670402492086
+  },
+  "toward_delivered_query_only": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9263191223144531,
+    "second_read_nothing_new": 0.07301555822292964,
+    "acc": 0.73077791929245,
+    "next_acc": 0.8214181264241537
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.4460388123989105,
+    "second_read_nothing_new": 0.5519645810127258,
+    "acc": 0.9973902702331543,
+    "next_acc": 0.9315124948819479
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9915100733439127,
+    "acc": 0.8661922613779703,
+    "next_acc": 0.8872241973876953
+   },
+   "state_moved_1_minus_cos": 0.04253670402492086
+  },
+  "toward_delivered_update_only": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9363291064898173,
+    "second_read_nothing_new": 0.06272778163353603,
+    "acc": 0.7396808862686157,
+    "next_acc": 0.8214652140935262
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.5552160541216532,
+    "second_read_nothing_new": 0.4428350826104482,
+    "acc": 0.9986772735913595,
+    "next_acc": 0.9301362037658691
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9881390333175659,
+    "acc": 0.8328770995140076,
+    "next_acc": 0.8679479360580444
+   },
+   "state_moved_1_minus_cos": 0.04253670402492086
+  },
+  "random_same_size": {
+   "present_first_failed": {
+    "second_read_on_tracked": 0.9191984666718377,
+    "second_read_nothing_new": 0.07928614566723506,
+    "acc": 0.7388256722026402,
+    "next_acc": 0.7924069232410854
+   },
+   "present_first_delivered": {
+    "second_read_on_tracked": 0.5672731035285526,
+    "second_read_nothing_new": 0.4296033614211612,
+    "acc": 0.9956295821401807,
+    "next_acc": 0.9177340202861363
+   },
+   "absent": {
+    "second_read_on_tracked": 0.0,
+    "second_read_nothing_new": 0.9789572358131409,
+    "acc": 0.8413970271746317,
+    "next_acc": 0.8704131046930949
+   },
+   "state_moved_1_minus_cos": 0.040768257497499384
+  }
+ }
+}

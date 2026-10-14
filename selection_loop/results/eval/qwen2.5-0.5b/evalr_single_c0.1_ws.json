@@ -1,0 +1,104 @@
+{
+ "tag": "single_c0.1_ws",
+ "cfg": {
+  "stage": "train",
+  "arm": "single",
+  "cost": 0.1,
+  "p_fail": 0.3,
+  "sigma": 0.1,
+  "no_null": 0,
+  "cost_start": 100,
+  "cost_ramp": 100,
+  "init": "sel-state_l0.pt",
+  "steps": 600,
+  "bs": 16,
+  "lrate": 0.002,
+  "seed": 0,
+  "tag": null,
+  "K": 6,
+  "n_upd": 4,
+  "p_switch": 0.3,
+  "p_focus": 0.5,
+  "n_eval": 512,
+  "norm": 0
+ },
+ "acc": 0.7210286855697632,
+ "acc_by_chunk": [
+  0.708984375,
+  0.72265625,
+  0.71484375,
+  0.728515625,
+  0.72265625,
+  0.728515625
+ ],
+ "acc_updated": 0.7188161015510559,
+ "acc_kept": 0.7284299731254578,
+ "reads_per_chunk": 0.7578884959220886,
+ "first_read_on_tracked_when_present": 0.9565021395683289,
+ "first_read_nothing_new_when_absent": 0.9196420311927795,
+ "present_but_first_read_not_on_tracked": 0.0004228329926263541,
+ "by_first_read": {
+  "present_first_failed": {
+   "n": 724,
+   "first_read_on_tracked": 0.9585737586021423,
+   "first_read_nothing_new": 0.03723934665322304,
+   "second_read_on_tracked": 0.0,
+   "second_read_nothing_new": 0.0,
+   "reads": 0.9627606868743896,
+   "acc": 0.08149171620607376
+  },
+  "present_first_delivered": {
+   "n": 1640,
+   "first_read_on_tracked": 0.9559395909309387,
+   "first_read_nothing_new": 0.04056061431765556,
+   "second_read_on_tracked": 0.0,
+   "second_read_nothing_new": 0.0,
+   "reads": 0.9594393968582153,
+   "acc": 1.0
+  },
+  "absent": {
+   "n": 707,
+   "first_read_on_tracked": 0.0,
+   "first_read_nothing_new": 0.9196420311927795,
+   "second_read_on_tracked": 0.0,
+   "second_read_nothing_new": 0.0,
+   "reads": 0.08035803586244583,
+   "acc": 0.7284299731254578
+  }
+ },
+ "confidence": {
+  "update_not_acquired": {
+   "n": 498,
+   "acc": 0.060240961611270905,
+   "max_prob": 0.17306554317474365,
+   "entropy": 2.2355852127075195,
+   "prob_previous_true_colour": 0.14371590316295624
+  },
+  "acquired_by_first_read": {
+   "n": 1201,
+   "acc": 1.0,
+   "max_prob": 0.9919652938842773,
+   "entropy": 0.04888712614774704,
+   "prob_previous_true_colour": 0.0021002606954425573
+  },
+  "acquired_by_second_read": null
+ },
+ "decode_mid_state": {
+  "first_read_failed": 0.999390243902439,
+  "tried_and_failed_vs_chose_nothing": 0.9958563535911602
+ },
+ "test_failure_rate": {
+  "0": {
+   "acc": 0.9928385615348816,
+   "reads_per_chunk": 0.7526942491531372,
+   "second_read_on_tracked_after_failed": null,
+   "second_read_on_tracked_after_delivered": 0.0
+  },
+  "0.6": {
+   "acc": 0.44921875,
+   "reads_per_chunk": 0.7632624506950378,
+   "second_read_on_tracked_after_failed": 0.0,
+   "second_read_on_tracked_after_delivered": 0.0
+  }
+ }
+}

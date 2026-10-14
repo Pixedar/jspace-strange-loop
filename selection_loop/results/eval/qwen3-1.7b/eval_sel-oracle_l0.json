@@ -1,0 +1,57 @@
+{
+ "tag": "sel-oracle_l0",
+ "cfg": {
+  "stage": "train",
+  "model": "Qwen/Qwen2.5-0.5B-Instruct",
+  "lw": 8,
+  "lr": 16,
+  "query": "oracle",
+  "lam": 0.0,
+  "steps": 300,
+  "bs": 32,
+  "lrate": 0.002,
+  "seed": 0,
+  "tag": null,
+  "K": 6,
+  "n_upd": 4,
+  "p_switch": 0.3,
+  "p_focus": 0.5,
+  "n_eval": 512,
+  "n_pairs": 256,
+  "at": 3,
+  "norm": 1
+ },
+ "acc": 1.0,
+ "acc_by_chunk": [
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0,
+  1.0
+ ],
+ "acc_updated": 1.0,
+ "acc_kept": 1.0,
+ "acc_at_switch": 1.0,
+ "selection": {
+  "on_tracked_record_when_present": 1.0,
+  "on_nothing_new_when_absent": 1.0,
+  "on_nothing_new_when_present": 0.0
+ },
+ "no_memory_acc_by_chunk": [
+  1.0,
+  0.75,
+  0.75390625,
+  0.744140625,
+  0.763671875,
+  0.744140625
+ ],
+ "query_swap": {
+  "at_chunk": 3,
+  "own": {
+   "answers_A": 1.0,
+   "answers_B": 0.0,
+   "next_answers_A": 1.0
+  }
+ }
+}
