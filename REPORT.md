@@ -594,6 +594,33 @@ effect; the same attention pattern at chunk 0).
 
 ![open access](figures/fig_open.png)
 
+### 5.6 A direct channel into the model's own attention
+
+If 5.5 is about the channel, giving the state a direct handle on the model's own attention — while keeping open access —
+should let a representation of what matters form. In this variant the state also adds a learned vector (zero at the
+start) to the attention queries of the chunk's last word in the middle layers; the model still reads every update
+together, with its own keys, values and attention. Qwen2.5-0.5B, batch 8 for 2,500 steps (batch 16 overflowed the
+laptop's 4 GB GPU; about the same number of streams as 5.5's 1,500 steps at batch 16).
+
+| at the edited chunk (twin streams, chunks 2–4) | A's new colour | B's new colour |
+|---|---|---|
+| no edit | 0.457 | 0.217 |
+| focus edit A → B | 0.243 | **0.441** |
+| the same edit, only through the attention channel | 0.250 | **0.424** |
+| the same edit, only through the written state | 0.452 | 0.225 |
+| the same edit, after the chunk was read | 0.469 | 0.234 |
+| random direction, same size | 0.426 | 0.237 |
+
+**A representation of which animal matters now forms, and it acts through the model's own attention.** Editing it
+swaps which animal's update is taken in (B's new colour 0.22 → 0.44, A's 0.46 → 0.24); the effect passes through the
+attention channel alone (0.42) and not through the written state (0.23), and random edits of the same size do nothing.
+Tracking on chunks without an instruction rises to 0.386, against 0.259 with no memory (+0.125 per stream; 95 %
+interval +0.10 to +0.15), and was still improving when training stopped; the state holds the tracked animal's new
+colour clearly better than the other animals' (decodable 0.53 against 0.29; without the channel 0.43 against 0.35). The
+model's attention from the chunk's last word moves only slightly with the edit (on A's update minus on B's: +0.009 →
+−0.001). The effect is partial — about half of what restricted access reaches — after one training run of 2,500 steps,
+and it has not yet been tried at larger sizes.
+
 ---
 
 ## 6. What the results suggest
@@ -616,9 +643,11 @@ and kept following an edited representation as its own — the loop that the sta
 representation that changes the processing it represents and is then maintained by that processing. Given only the
 model's input stream (open access), the same kind of state learned to switch on the model's own selection of whatever
 the text names, but not to name the target itself. What it learned in both cases was control of selection; what
-differed was whether the state could carry the *content* of that control. Models of one's own attention that steer
-attention have been proposed as a function of self-models (the attention schema); here the steering was learned, and
-the channel decided whether a representation of what matters could form at all.
+differed was whether the state could carry the *content* of that control. Giving the open-access state a direct
+handle on the model's own attention queries (5.6) was enough for a representation of what matters to start forming,
+acting on the model's own selection through that channel alone. Models of one's own attention that steer attention have
+been proposed as a function of self-models (the attention schema); here the steering was learned, and the channel
+decided whether a representation of what matters could form.
 
 **A self-model that causes what it predicts — the 2024 tension from both sides.** In the frozen loop the self-model
 adapts to a system that its forecasts change (it tracks the new process and forgets the old one). In the trained loop
@@ -671,9 +700,8 @@ feeding the self-model back makes it causal.
 ## 8. Open questions
 
 * Is enactment more than copying a channel? Is the time code tied to the chunk index or to the stage of the thought?
-* With open access, can a state learn to stand in for the instruction — with longer training, larger models, or a write
-  that reaches the model's attention more directly? Does a representation of what matters form when nothing names the
-  target at all?
+* With a direct channel into the model's own attention, how far does the representation of what matters go with more
+  training and with larger models? Does it form when nothing names the target at all?
 * Does the loop, trained in free generation under mild pressure, steer what the model actually thinks — and does a
   transplanted forecast carry a disposition (for example hedging) across topics?
 * Is the invented past a signature of missing self-continuity — does it scale with how much memory the state carries?

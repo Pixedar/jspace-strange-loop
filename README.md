@@ -101,7 +101,10 @@ Full report with methods, numbers and caveats: **[REPORT.md](REPORT.md)**.
   others it read. But once the text no longer names the animal, the state does not take over that role: no code for
   which animal matters forms, editing it changes nothing, and tracking is barely better than with no memory — at 0.5B
   and at 3B alike. The channel matters: given a direct handle on the reading, the state learns to carry what matters;
-  written into the text stream, it learned only to switch the model's own selection on.
+  written into the text stream, it learned only to switch the model's own selection on. Given a direct handle on the
+  model's own attention instead (it adds to the attention queries of the last word, with access still open), a code for
+  which animal matters starts to form: editing it swaps which animal the model takes in (0.22 → 0.44), through that
+  channel alone.
 
 ![editing what matters](figures/fig_focus_edits.png)
 
