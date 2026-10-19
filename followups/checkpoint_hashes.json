@@ -1,0 +1,66 @@
+{
+  "redistributed": false,
+  "reason": "Qwen Research model terms are not replaced by the release licenses",
+  "checkpoints": [
+    {
+      "file": "final_balanced_0_recorded_other.pt",
+      "bytes": 4415105,
+      "sha256": "b061c3b5ede7013e811e1efe29959ade9d010af95b362e67d3ef8622a9f7329d"
+    },
+    {
+      "file": "final_balanced_0_self.pt",
+      "bytes": 4414761,
+      "sha256": "03128b3aba0ef77e8d781bca5a110ae78d92c05d0525346e148e87baa3f8a4da"
+    },
+    {
+      "file": "final_balanced_1_recorded_other.pt",
+      "bytes": 4415105,
+      "sha256": "cd18a0df4b99cdd11ac60bd518ec84cd164cfd9a5a8abeb9a6bc73b38ba816c5"
+    },
+    {
+      "file": "final_balanced_1_self.pt",
+      "bytes": 4414761,
+      "sha256": "da366ab576b4eec995becf7923bb2c020370995957ec9f2e45c42a289c03173c"
+    },
+    {
+      "file": "final_suffix_0_recorded_other.pt",
+      "bytes": 4415049,
+      "sha256": "ab5a8638462eb17648542938236b255bbb7dcd15a25757b84bb71c6a8e7f0278"
+    },
+    {
+      "file": "final_suffix_0_self.pt",
+      "bytes": 4414705,
+      "sha256": "9dc6af378c2251a118b1e87b3ac8a32e0939f65398f22d6330b94d4bf6995f03"
+    },
+    {
+      "file": "final_suffix_1_recorded_other.pt",
+      "bytes": 4415049,
+      "sha256": "f1deedd8de96901afd72b3ebfcf3cf7c7c47c3a7c26e04c45aaf9a22f61c25e5"
+    },
+    {
+      "file": "final_suffix_1_self.pt",
+      "bytes": 4414705,
+      "sha256": "4a792bf68f7e29b9f8e311f051c081cfb17a42cba1fb037ab9817b927f35fbd6"
+    },
+    {
+      "file": "screen_0_recorded_other.pt",
+      "bytes": 4414881,
+      "sha256": "c65c3303866d7393ac1fe0d37f2561588e56307c9225f5415f2a318d45ab4d0b"
+    },
+    {
+      "file": "screen_0_self.pt",
+      "bytes": 4414537,
+      "sha256": "d1ff7d4888ee0f31abb55054e3b9058f7d904ec19f5f8b18bdc7e40715182a94"
+    },
+    {
+      "file": "screen_1_recorded_other.pt",
+      "bytes": 4414881,
+      "sha256": "32469024632ade0dad587668b3771359023f5050dcb148c2ab0d0f5ed9f79cca"
+    },
+    {
+      "file": "screen_1_self.pt",
+      "bytes": 4414537,
+      "sha256": "c40f98019077a6f26f6cb1cc000e414ae9330abdaaffd6007f0d44e0a7f7bf1f"
+    }
+  ]
+}

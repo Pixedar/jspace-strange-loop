@@ -1,0 +1,511 @@
+{
+  "dataset": "Pixedar/jspace-strange-loop",
+  "revision": "5ad82ccde6c02ad00333bd02e25dac2a9bce4031",
+  "release": "4.0",
+  "files": [
+    {
+      "path": "followups/recordings/behaviour/generation_0.npz",
+      "sha256": "bbba013844852818ed496ff024855917121a0d595017e7bd9a6b3a9009d43734",
+      "bytes": 72135,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/behaviour/generation_1.npz",
+      "sha256": "aa27b81bd7204aab54b258d43eb1803e84be0b1411079898dfe321ca4ab549a3",
+      "bytes": 71311,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/behaviour/generation_2.npz",
+      "sha256": "370ae1bde7e45102ce0bae30738bfb73461fd02457196dc560cc9336c65e67ae",
+      "bytes": 67623,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/behaviour/generation_3.npz",
+      "sha256": "542f595239de36ad7a8160fb757cfd1d1f7331d63c9eba1607fa0d436ecf9b34",
+      "bytes": 72534,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/behaviour/teacher_0.npz",
+      "sha256": "e019bf0ba86528bbae4a9e810a8dc8b2c2c8d422455acb47ce6ab505c9a64a02",
+      "bytes": 76424,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/behaviour/teacher_1.npz",
+      "sha256": "ee5c460f5931b90abf586f5b0cdf2dc14e083a1f0b9eced648b75e1cd064fd39",
+      "bytes": 72215,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/behaviour/teacher_2.npz",
+      "sha256": "f67c8c72d9b21810ac0929efa2c906453ef2e5b6f63c95e10511031103dd7550",
+      "bytes": 73627,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/multimodal/modality_features.npz",
+      "sha256": "ac00de4c46b6b3f80296aa2e7020a03bcc4ca01ce58712cb37252a4d371c9242",
+      "bytes": 1098488,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/multimodal/modality_fields.npz",
+      "sha256": "7cc67505ac7087b70df577afde8a7f1c846ab413adbaaae7060b8cf571784934",
+      "bytes": 64078,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/multimodal/native_features.npz",
+      "sha256": "0b6ebaae9a2966273999600a04b61d2415336d0bccb18023b41deb90abdbfd29",
+      "bytes": 1881625,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/multimodal/paired_intakes.npz",
+      "sha256": "a2f285a11e4e054dc540244e04047faa3311c2f1c77fda036633410aeaf6c492",
+      "bytes": 1254761,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "followups/recordings/multimodal/spoken_native_features.npz",
+      "sha256": "3f01f5704d6ecca38f74316fa5380584c0d6215f758a3a14ad23a87c93b86bab",
+      "bytes": 1998319,
+      "kind": "follow-up numeric recording"
+    },
+    {
+      "path": "self_reference/checkpoints/starts/start_s0.pt",
+      "sha256": "79f6477c72f6d37161f52be1194f536ce9db36ad0fa34e39980ac313c72e4813",
+      "bytes": 2829346,
+      "kind": "organized starting interface"
+    },
+    {
+      "path": "self_reference/checkpoints/starts/start_s1.pt",
+      "sha256": "002a36569dff900bf1a874c72838c3bfae73baf9033c0264cc049ca7d13fde4b",
+      "bytes": 2829346,
+      "kind": "organized starting interface"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/another_s1_spot/iface_3000.pt",
+      "sha256": "e5c227b51ca8c0dea58ec0215c3bd3edd56088d9a74df4eff56b871046b5a53a",
+      "bytes": 2829346,
+      "kind": "learned interface, no base weights"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/another_s1_spot/run.json",
+      "sha256": "82eca294ec5394c04bd25716e56153b40e096a29b4992c3cd6bc54955425d3dc",
+      "bytes": 596,
+      "kind": "historical configuration"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/dev_s0_seed0_spot/iface_3000.pt",
+      "sha256": "6a50b0f674fd7e089c0a1a69280d4ca57489ff3bdaf2a46f4c8bf1fdcbef7dc3",
+      "bytes": 2829346,
+      "kind": "learned interface, no base weights"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/dev_s0_seed0_spot/run.json",
+      "sha256": "b72a4dd91622a808eb173b5d9489923f726f83d40d9098d3a6d21e8c58456af7",
+      "bytes": 570,
+      "kind": "historical configuration"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/dev_s0_seed2_spot/iface_3000.pt",
+      "sha256": "c0e86bd834bcd89d231efb8fccf219269a48183940de91f4c95af7937585928d",
+      "bytes": 2829346,
+      "kind": "learned interface, no base weights"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/dev_s0_seed2_spot/run.json",
+      "sha256": "e88c3d3ab32c99a4dffc689dad8e21a980eb6b430aa17695ab0f0007bf6c4b42",
+      "bytes": 570,
+      "kind": "historical configuration"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/dev_s1_seed1_spot/iface_3000.pt",
+      "sha256": "0e280cfea128915558ef1159ac404198a95dc083f356e456574a6d858f19c79c",
+      "bytes": 2829346,
+      "kind": "learned interface, no base weights"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/dev_s1_seed1_spot/run.json",
+      "sha256": "8d49aad8fe348b64b56ef4e6cf369c594e8b4fc476ff7797acf7805e983f713c",
+      "bytes": 570,
+      "kind": "historical configuration"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/rich_s0s2_nospot/iface_3000.pt",
+      "sha256": "7bc5972da4df124bc7f962060c140c2af935cd4cc692f9b4372b7a740ce9528b",
+      "bytes": 2829346,
+      "kind": "learned interface, no base weights"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/rich_s0s2_nospot/run.json",
+      "sha256": "e4f816b8e88820c57008b9ced978b7960258459447bb12af9309de05cb703a3e",
+      "bytes": 552,
+      "kind": "historical configuration"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/rich_s0s2_spot/iface_3000.pt",
+      "sha256": "cee6f9d98a9b2b75c181ee90805d3fc39cc480f91fe2ae139652436df593b73a",
+      "bytes": 2829346,
+      "kind": "learned interface, no base weights"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/rich_s0s2_spot/run.json",
+      "sha256": "427e5bb337d84b11760fac1a3ed96d02ca35e7ea55fec6bd6225e13b84c37ccc",
+      "bytes": 572,
+      "kind": "historical configuration"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/rich_s1s1_neighbor/iface_3000.pt",
+      "sha256": "22c02da8f7d56606246ad1664b2e4c9ae14d0cb18ae70551946862de3dae3aa9",
+      "bytes": 2829346,
+      "kind": "learned interface, no base weights"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/rich_s1s1_neighbor/run.json",
+      "sha256": "e0572d6205e76230684b85491887139e3e058355d1f86b7d8413ea02365a68a7",
+      "bytes": 604,
+      "kind": "historical configuration"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/rich_s1s1_nospot/iface_3000.pt",
+      "sha256": "9f9c12008fe810f2b9e0456f1e97dad6343ede51fd7e41e95c33c8b88d4fecba",
+      "bytes": 2829346,
+      "kind": "learned interface, no base weights"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/rich_s1s1_nospot/run.json",
+      "sha256": "fdccfd76944ca6bfcc06980ee598abfae77b45d28416b39fd430ac296214655e",
+      "bytes": 552,
+      "kind": "historical configuration"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/rich_s1s1_spot/iface_3000.pt",
+      "sha256": "0a40e594af7a96ca5ca550adbbf523631306dbd6f9704b0a505dbee58ec132bb",
+      "bytes": 2829346,
+      "kind": "learned interface, no base weights"
+    },
+    {
+      "path": "self_reference/checkpoints/v24/rich_s1s1_spot/run.json",
+      "sha256": "2d7c9675293f5139eb267b1116c047a5e2f3e89e7f38f8e9f5724ab4ad5d189a",
+      "bytes": 572,
+      "kind": "historical configuration"
+    },
+    {
+      "path": "self_reference/results/v24/another_s1_spot/fields_iface_2500.npz",
+      "sha256": "f0cee9a6417181832c104c3c5b590a8299c74a579530fe225e364652d37b843f",
+      "bytes": 187556,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/another_s1_spot/fields_iface_3000.npz",
+      "sha256": "7f2a40f8375045d2de32acf57c0a184e1031976c76b5bcbc9230dd4047877a8a",
+      "bytes": 184500,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/another_s1_spot/life.npz",
+      "sha256": "5aafc59e8f52cfe60ef9bf2e27d101b07bf2a6a1af999bf3088c40d8594eddb8",
+      "bytes": 2152291,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/another_s1_spot/self_formation_ref.npz",
+      "sha256": "56a7e2bc9406640619a779706beee0d27f6086a054e313c0d600964cd742979b",
+      "bytes": 692764,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/another_s1_spot/spotlight_check_2500_another_s1_spot_tokens.npz",
+      "sha256": "9ed2d90b31bc87a14f3708e77204b7c5b016a96d406d7e5dee7541d9c22d41f7",
+      "bytes": 17052,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/another_s1_spot/spotlight_check_3000_another_s1_spot_tokens.npz",
+      "sha256": "0dff69ee44d83082f5cb9e1d27c8e6c3866578787c82376887f6ab013f834910",
+      "bytes": 17132,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed0_spot/fields_iface_2500.npz",
+      "sha256": "e128aee17c53d4fcf08cda9c1b9053680a037855046bb2fedc98f6da45a18914",
+      "bytes": 188179,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed0_spot/fields_iface_3000.npz",
+      "sha256": "49e2b36ee61e14c175772499617df1c8ecc8d5fd606b2fb723b18c95b957fb78",
+      "bytes": 186772,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed0_spot/life.npz",
+      "sha256": "003d532546c28f6697ae84c2ada51b5558b9a5d0eda79315bbb4f272de02545b",
+      "bytes": 2155382,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed0_spot/self_formation_ref.npz",
+      "sha256": "03d911537f673603f5d79b28d324d00f09011846584a8c7df41b212d7aa22b9b",
+      "bytes": 692019,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed0_spot/spotlight_check_2500_dev_s0_seed0_spot_tokens.npz",
+      "sha256": "94d73890198016a0a27c067162a8a05ddde3f1aa93bbeecd7f9ced478af20eea",
+      "bytes": 17161,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed0_spot/spotlight_check_3000_dev_s0_seed0_spot_tokens.npz",
+      "sha256": "ad017d67de9f5e62f908a65c47de7362515c8474c0b842c46f93c62c93460d2e",
+      "bytes": 17157,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed2_spot/fields_iface_2500.npz",
+      "sha256": "43e2b338beb48c81f265230f7d124898a21a1f1261bcf371dd28b59fba22c596",
+      "bytes": 184496,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed2_spot/fields_iface_3000.npz",
+      "sha256": "517d8d8a4012d1f565f110ededb13167aec23ec3390cfe7366310e99350015e3",
+      "bytes": 181062,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed2_spot/life.npz",
+      "sha256": "2deaa812aad334d9f6d7370a07d07be82376de509ffc3fb3e7624891dbda07d8",
+      "bytes": 2157124,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed2_spot/self_formation_ref.npz",
+      "sha256": "67b1755c3c46c61323c73381fd486b65ff7919b8bac1abed3ae27b3899dd991f",
+      "bytes": 688599,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed2_spot/spotlight_check_2500_dev_s0_seed2_spot_tokens.npz",
+      "sha256": "8936bae3f4aed8acf0477eb6d42c36002e4d9f376364eb20f08822011dcd97b2",
+      "bytes": 17148,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s0_seed2_spot/spotlight_check_3000_dev_s0_seed2_spot_tokens.npz",
+      "sha256": "888076db20d949b8a974deb124ca3cf134d9fd6a4360fd5cf1a9a444fd2bfee9",
+      "bytes": 17134,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s1_seed1_spot/fields_iface_2500.npz",
+      "sha256": "f2db51cf50c53870f5775eee986b134f590db0bfd404479b817cc991e202615a",
+      "bytes": 178634,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s1_seed1_spot/fields_iface_3000.npz",
+      "sha256": "88d0f6d6c90e63d2112cfacc0e1a75a37b33945167cd04d8c4bd21454c05011a",
+      "bytes": 175425,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s1_seed1_spot/life.npz",
+      "sha256": "8e3f4b061e3736232099fb3b5de168c6a48f88ea1b2f939ed660d22e8cfac509",
+      "bytes": 2134270,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s1_seed1_spot/self_formation_ref.npz",
+      "sha256": "473ac343ee935105a9510227e2e22f8b1949228f1cbf3623df4f1f1d6217c224",
+      "bytes": 674029,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s1_seed1_spot/spotlight_check_2500_dev_s1_seed1_spot_tokens.npz",
+      "sha256": "22d3df361e833b84b49ff2a54e98752596ee8b7f4d0ce2977831a78595636b22",
+      "bytes": 17140,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/dev_s1_seed1_spot/spotlight_check_3000_dev_s1_seed1_spot_tokens.npz",
+      "sha256": "d495575ad093e1a75d98633b804af96f6af3906c758f849ea8ebe701c5d6a890",
+      "bytes": 17167,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_nospot/fields_iface_2500.npz",
+      "sha256": "928337f6447db4963df7439ec674685b989047f01608a51d7fa410dcf371d592",
+      "bytes": 182851,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_nospot/fields_iface_3000.npz",
+      "sha256": "6f6722822375f2c1cdebe07f80d61e5c124557033fc49d6217e9bf7800dd3c76",
+      "bytes": 177650,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_nospot/life.npz",
+      "sha256": "7fed3f46fd3499024267e03dfea3f86a104d9e53a7e89a32865fd2b2c90d242a",
+      "bytes": 1813076,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_nospot/self_formation_ref.npz",
+      "sha256": "f4f69ec9ec609b2d2a60bf6eb1b5192ed26575ab2dccbfffa5654c1c0dcb0b44",
+      "bytes": 680027,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_nospot/spotlight_check_3000_rich_s0s2_nospot_tokens.npz",
+      "sha256": "39e4c1b4b8d287a1f3408648139dd3601a1168051986adc18efcd50520698ea0",
+      "bytes": 17145,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_spot/fields_iface_2500.npz",
+      "sha256": "b76b4d070fab305ff02553eea5952b2c1b1185d8d6053517b888c0c25acbf59e",
+      "bytes": 184313,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_spot/fields_iface_3000.npz",
+      "sha256": "aff1550996ea7bec714bc5864ccfc95217bf871c583e91be318ef3c996b72398",
+      "bytes": 182935,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_spot/life.npz",
+      "sha256": "4dfe897adac6745adfbc410b5162346fb490d715a75875c57eb95908bf614d77",
+      "bytes": 2162952,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_spot/self_formation_ref.npz",
+      "sha256": "7379ec4721fdefe37169defbc970f0c2197dcf32722416c81de99bcb5b95ae2d",
+      "bytes": 688338,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_spot/spotlight_check_2500_rich_s0s2_spot_tokens.npz",
+      "sha256": "0fd382bac5561d7118b7155b5b76afc935b4c75ed50d98a20cc14decbfc131a7",
+      "bytes": 17149,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s0s2_spot/spotlight_check_3000_rich_s0s2_spot_tokens.npz",
+      "sha256": "2c3dd70f09e9ca8877def9f6f63bd12677156fb3a1e5a476ed16e0b4a53621e9",
+      "bytes": 17178,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_neighbor/fields_iface_2500.npz",
+      "sha256": "dfa49f82c2e0b0596f40c7d08e915b0710b32818797e43396858958b259647fb",
+      "bytes": 182586,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_neighbor/fields_iface_3000.npz",
+      "sha256": "64d7b84f0c5a7823e4ad9ccf5fa6695bd82f159a4dc313139eeb7ff59848d2f3",
+      "bytes": 184038,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_neighbor/life.npz",
+      "sha256": "d63e959b0899e1059b56d33d50c725917217cc382bdc20484d63eb91ef3431f4",
+      "bytes": 2145019,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_neighbor/self_formation_ref.npz",
+      "sha256": "93a03803146c6ce4524bf080781283d9e3816cb234baef4e64fceb757a9b29a2",
+      "bytes": 694930,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_neighbor/spotlight_check_2500_rich_s1s1_neighbor_tokens.npz",
+      "sha256": "1c50fd422a54310e37006183c8e545ddf37bfb1e76aecf24a6063789a7d32048",
+      "bytes": 17139,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_neighbor/spotlight_check_3000_rich_s1s1_neighbor_tokens.npz",
+      "sha256": "0da5b0da79033b62b74dfe504af398a7cacf7b3296c7597796e7435903b8ec00",
+      "bytes": 17099,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_nospot/fields_iface_2500.npz",
+      "sha256": "0162a6f50f434c4acb7973b0d75e484921f307e05340ed39fe65b89e98b1f485",
+      "bytes": 180242,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_nospot/fields_iface_3000.npz",
+      "sha256": "c522e8417af26f240030de24a7d1e3557fb795510d71ece4f08dd29d4fee9eeb",
+      "bytes": 180117,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_nospot/life.npz",
+      "sha256": "5c4131710c102ca911831d5aae6e543f9457dde7ddde3b05df1968bd42d24a1f",
+      "bytes": 1810246,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_nospot/self_formation_ref.npz",
+      "sha256": "053dcb5642094919f1671534707bf01af1cc15cb87873ccd8c4b76ba4e5d3e31",
+      "bytes": 685032,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_nospot/spotlight_check_3000_rich_s1s1_nospot_tokens.npz",
+      "sha256": "25c343c33e5e1e3c67c8f0046d84faced1e2626048a131c2a515bfd5dc639041",
+      "bytes": 17154,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_spot/fields_iface_2500.npz",
+      "sha256": "df14922b8add3bb3ee409a6255eb9a13f22d0abc4208184a78b8c64a3959cbb7",
+      "bytes": 178593,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_spot/fields_iface_3000.npz",
+      "sha256": "b4f7533cc00eb7ca9d99db3c0ed9f8558de93a5cd1651a068ac16f34d101636d",
+      "bytes": 180951,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_spot/life.npz",
+      "sha256": "c236ba18315791a80e3544eccdc8c5c2cc547104e7e401d1744fd658e0ba6376",
+      "bytes": 2148205,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_spot/self_formation_ref.npz",
+      "sha256": "45b9bc0023cb00365bc5230460f0ec567712a9b776d8db45a107df72655787ec",
+      "bytes": 686030,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_spot/spotlight_check_2500_rich_s1s1_spot_tokens.npz",
+      "sha256": "54c9e27cec5a6133b8b98a273ec48c0043ab3c2ff791244cc2ea39728e3ed8b0",
+      "bytes": 17138,
+      "kind": "numeric recording"
+    },
+    {
+      "path": "self_reference/results/v24/rich_s1s1_spot/spotlight_check_3000_rich_s1s1_spot_tokens.npz",
+      "sha256": "49572eb8a675f144126bd861f3bb247a9084f62af3e04a89780997f453d7c4f8",
+      "bytes": 17173,
+      "kind": "numeric recording"
+    }
+  ]
+}

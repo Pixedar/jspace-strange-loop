@@ -1,0 +1,14 @@
+{
+  "life": "dev_s0_seed0_spot",
+  "interface": "iface_3000.pt",
+  "spotlight_only": {
+    "read_layer": 0.10357902944087982,
+    "picture": 0.0011266996152698994,
+    "stance": 0.00016268144827336073
+  },
+  "reading_only": {
+    "picture": 0.3853806257247925,
+    "stance": 0.4209970235824585
+  },
+  "reader_attention_on_newest": 0.06709392368793488
+}

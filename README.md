@@ -1,135 +1,55 @@
 # Strange loop in J-space
 
-**What happens inside a language model when a description of its own state is fed back into it — and can a compact
-representation of its own processing come to steer what the model takes in?**
+**Can a system’s description of itself help create the way it changes—and can that description matter to what a language model does?**
 
-Wiktor Tomasik · 2026 · builds on my earlier work on self-models and latent loops ([medium.com/@pixedar](https://medium.com/@pixedar))
+Wiktor Tomasik · 2026 · [interactive study](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space) · [full report](REPORT.md) · [data](https://huggingface.co/datasets/Pixedar/jspace-strange-loop)
 
-The starting idea (2024) is a *strange loop*: a system that holds a compact representation of its own behaviour and uses
-it in a way that changes that very behaviour, so the representation must keep up with the changes it causes. Here this
-is built inside language models whose own weights stay fixed. The first two systems use the model's *J-space* — a way
-to read an internal state as a weighted mix of words (Gurnee et al., 2026) — as the compact representation (Qwen3 8B,
-replicated at 14B). The third gives the loop a small learned state and asks whether it comes to decide what the model
-reads (Qwen2.5 0.5B and 3B, Qwen3 1.7B).
+The newest experiments build a small self-describing attention loop around a language model whose weights stay fixed. Its current state changes how it reads the model’s activity; that reading forms a picture, which becomes its next state. During development, the picture learns to distinguish the loop’s own possible moves from other copies’ moves. The description can reshape what it describes.
 
-Full report with methods, numbers and caveats: **[REPORT.md](REPORT.md)**.
+The important change was to remove an easy answer. Earlier pictures could identify a copy simply by naming where it would end up. The new game subtracts that destination and asks about **how the destination changes with the starting state**. From an already organized start, some loops develop substantial dependence on their own state, and their pictures capture its pattern. Giving the same reading a channel into the model’s attention then makes it affect the model’s predictions.
 
-![how it works](figures/how_it_works.png)
+![The reader forms a picture and a control state, which changes the next read. A shared spotlight also focuses the frozen model’s attention.](figures/self_describing_attention.png)
 
-## Three systems
+## What the newest experiments establish
 
-1. **The frozen J-space loop.** The model reads a prompt; its internal state at one layer is described as a mix of 25
-   words; that description is written back into an earlier layer, and the model reads again. Nothing is trained. The
-   question: what does such a loop converge to, and why?
-2. **The trained self-describing loop.** The model's own thinking is cut into 8 chunks that cannot see each other's
-   text. The only memory between chunks is 32 numbers that the model's state is compressed into at the end of a chunk
-   and written into the next one. A small *self-model* learns to predict the next 32 numbers, and its prediction can
-   be written back into the model (the strange loop) or not (control). A setting called *pressure* pushes the system
-   to be predictable to its own self-model.
-3. **A state that decides what the model reads.** The model must keep track of one animal's colour through a stream of
-   short updates ("The fox is now red."); which animal matters is said only once. Between pieces of text the only
-   memory is again 32 numbers, read out of the model's own processing and written back into it. In one version the
-   state chooses which update the model takes in (*restricted access*); in the other the model reads everything as
-   ordinary text and the state can only steer its reading by being written into it (*open access*). Nothing is
-   trained except the small parts around the model, and only for giving the right colour.
+- **Removing the destination shortcut changes what develops.** In the initial small-model comparison, 2 of 5 self-describing runs sustained the state-dependent regime. In the later spotlight batch, all three developmental starts reached it. Recorded-other-description controls stayed close to one destination. Two 8B runs also developed state dependence; 14B was checked only at initialization. At initialization, all tested sizes had almost no signal for the new game.
+- **The dependence runs through the reader.** In the strongest later run, cutting the state’s influence on the reader reduced large jumps from 26.6% to 1.2% of steps. Cutting the model-attention route left them at 26.4%. A transplanted picture could still influence later pictures, with about 57% of the normalized difference remaining after 20 tokens in this run.
+- **The reading now has measurable consequences.** A shared spotlight changes 11–16% of top next-token predictions in the five self-describing runs trained with their own spotlight. Next-token loss changes by −0.14% to +1.51% on the held-out texts. A control describing another run also changes predictions and slightly improves this loss: acting on the model is not exclusive to self-description.
+- **The loop still scarcely reads back what its attending did.** The route through the model carries less than 1% of the full probe-dependent variation in those five runs. The loop controls attention without a demonstrated representation of the consequences of that control.
 
-![the third system](figures/selection_loop.png)
+![Measured state dependence, top-prediction changes and next-token-loss changes are separate quantities.](figures/consequences.png)
 
-## Main findings
+The strongest developmental run has a normalized state-dependence measure of **0.65**, compared with **0.002** for the recorded-other control, and a picture–field pattern correlation of **+0.81**. The first number is a ratio of squared variations, **not a probability or a fraction of steps**. The correlation describes a pattern, **not a calibrated prediction**: the field head’s unscaled squared errors remain large. Definitions and every final-run result are in the [report](REPORT.md) and [result tables](self_reference/results/verified_summary.json).
 
-**The frozen J-space loop**
+## What the states mean—and what remains missing
 
-* **The loop turns inward.** It settles into many locally stable states (small nudges die out, large ones switch it to
-  another state). What survives is how the model speaks — discourse and stance words, an answering frame, a casual
-  voice — while names, places and the evidence of the prompt fade. Words that reproduce themselves through the model
-  come back up to about three times stronger than names; word frequency does not explain it. The loop ends up
-  representing the act of answering rather than the world it was asked about.
-* **It drifts toward a casual persona.** Every context is pushed along one shared direction (up to 71 % of the change;
-  random feedback: 2–20 %). Read through the model's output, that direction favours informal, chatty speech —
-  interjections and slang contractions — and it points toward the casual end of the model's range of roles (a surfer,
-  a gangster) rather than the wise end (a sage, an oracle), in 99 % of contexts, also at 14B.
-* **Perturbed while thinking, the model invents a past.** Disturbing its internal state during thinking makes Qwen3-8B
-  refer to a previous conversation that never happened (6 % → up to 27 % of thoughts). In the trained loop the same
-  happens when the memory is missing: with no state passed between chunks, 14 of 128 free-running thoughts refer to an
-  earlier conversation, against 2 of 64 with a working memory state and none of 128 in the model's real thinking.
-* **A self-model can keep up with a system it changes.** A forecaster that learns online while its forecasts drive the
-  loop tracks the changing process (relative squared error 0.47, against 0.72 for a frozen forecaster) and drifts away
-  from what the system used to be — the 2024 tension. In the frozen loop this is not specific to the self, because
-  that loop has no private state.
+Earlier calm loops carried information about text genre. In the state-dependent loops, a simple linear decoder of text features generalizes poorly to held-out copies; this does not establish independence from the text, and the picture still carries genre information. The loop’s dynamics have become a larger part of what is represented.
 
-**The trained self-describing loop**
+The evidence for individuality is weaker than it first appeared: two stable rich runs from the same start move similarly, while copies sharing one interface can converge on a shared text. Short follow-up generations change under the spotlight, but the non-self-describing control changes them too. No stable personality unique to self-description has been established.
 
-* **Its memory reads as modes of thought.** The main axes of the 32 numbers are uncertainty, reconsidering versus
-  planning what to say, and recalling versus speculating. A reader fixed to J-space works as well as a learned one.
-* **Asked to be predictable to itself, the system cheats — unless prediction means telling states apart.** It collapses
-  its state or hides its information where the self-model does not look. When the self-model must pick the true next
-  state out of alternatives, the state starts to **turn by a fixed step from chunk to chunk**, like a hand going round
-  a dial, so its direction tells how far into the thought the model is: a time code that every single thought follows
-  (8B two seeds, 14B, also with the J-space reader; with or without the forecast fed back). Read in words, the turn
-  follows the stages of a thought — recalling, hedging, asserting, concluding.
-* **What the self-model must tell apart decides the shape.** Telling its own moments apart gives that time code;
-  telling itself apart from other trajectories gives a persistent *identity* code instead, which keeps more of the
-  content.
-* **The fed-back forecast is enacted.** When the self-model's prediction is written back, the system moves its next
-  state toward it: the self-model becomes a cause of what it predicts. This is several times stronger than for the
-  same channel carrying a plain copy of the previous state, and absent without pressure. Strong pressure lets the
-  self-model take over (the state stops carrying the thought, and at 8B the turning state moves through a series of
-  unrelated topics instead of the stages of the thought); mild pressure keeps both — enactment as strong, most of the
-  content kept — at 8B and 14B.
+The descriptive field head shapes the interface during learning; it is not used online to choose a move. Useful online use of those predicted possibilities, a representation of the effects of its own attention, and persistent individuality within one system remain open. These are functional experiments; none measures subjective experience.
 
-![stages of a thought](figures/stages_of_a_thought.png)
+A bounded [native text–image–audio follow-up](followups/README.md) transfers the centered-field mechanism when the reader can sample modality positions. Its state dependence reaches about 0.51 in two seeds, while recent-text-only readers remain nearly constant. Yet speech drives the resulting fields far more than the image does. A rich loop is therefore not, by itself, evidence of multimodal integration. The failed beep controls, matched comparison and native input interventions are all retained.
 
-**The state that decides what the model reads**
+## Earlier results still worth keeping
 
-* **A learned state comes to represent what matters, and steers what the model takes in through it.** With restricted
-  access the system tracks the animal 99 % of the time (three training runs), against 32 % when the reading is fixed
-  and 46 % when it sees the instruction but keeps no state. Editing only the part of the state that says *which animal
-  matters* redirects the reading to another animal 99.6 % of the time — and it acts through the reading alone: the same
-  edit given only to the answering step does nothing. Random edits of the same size redirect 2–3 % of the time; half
-  an edit splits the reading and often makes it take in nothing; pointing it at an animal that is not in the text makes
-  it take in nothing and keep the colour it had. After the edit the loop goes on following the new animal by itself.
-  The 1.7B model shows the same steering of its reading, though it never learns to keep colours between updates.
-* **It also reacts to what happened to its own reading.** When reads sometimes fail to deliver, a state that sees the
-  outcome of its first read reads again after a failure (95 % of the time) much more than after a success (62 %),
-  matches the accuracy of a control that cannot see the outcome with less reading, and reads more when failures are
-  more frequent. This is control by the outcome of its own processing; no single direction in the state could be
-  found that means "my read failed".
-* **With open access it learns *how* to make the model select, but not *what* to select.** When the model reads
-  everything as ordinary text, the learned state switches on the model's own attention to whatever the text names:
-  where the instruction is in view, the model attends almost twice as much to the named record as to another one
-  (without the learned state, equally), and the state takes in only that animal's colour, not the colours of the
-  others it read. But once the text no longer names the animal, the state does not take over that role: no code for
-  which animal matters forms, editing it changes nothing, and tracking is barely better than with no memory — at 0.5B
-  and at 3B alike. The channel matters: given a direct handle on the reading, the state learns to carry what matters;
-  written into the text stream, it learned only to switch the model's own selection on. Given a direct handle on the
-  model's own attention instead (it adds to the attention queries of the last word, with access still open), a code for
-  which animal matters starts to form: editing it swaps which animal the model takes in (0.22 → 0.44), through that
-  channel alone.
+The project began with J-space: reading model states as weighted mixtures of word directions using the Jacobian lens. The newest learned picture is a different representation. The older systems answer questions the new one has not replaced:
 
-![editing what matters](figures/fig_focus_edits.png)
+| Earlier system | Distinct result | Where to read it |
+|---|---|---|
+| Frozen J-space feedback | The feedback favors self-reproducing discourse and stance words; contexts drift toward a casual persona. Perturbed thinking can invent a conversational past. | [Frozen loop](frozen_loop/) |
+| A state carried between reasoning chunks | Discriminating moments produces a rotating time code; discriminating trajectories produces a different code. A fed-back forecast can shape the state it predicts. | [Trained loop](trained_loop/), [stages of a thought](figures/stages_of_a_thought.png) |
+| A state that selects evidence | With a direct reading channel, editing the state redirects which item is read; open text access changes what the state learns. | [Selection loop](selection_loop/) |
 
-## What this does not show
+The rotating code belongs to the chunked reasoning experiment. It is not the two-state flip seen in some later attention loops. The [research history](HISTORY.md) explains the branches, negative results, corrections, and relation to earlier literature.
 
-Every measure is functional (what states carry, predict and cause); nothing here measures experience. The trained loop
-learns on fixed recordings of the model's thinking; in free generation the topic still drifts within a few chunks. The
-time code is shaped by what the self-model is asked to distinguish, and enactment may be explained by the system
-learning to copy the forecast channel. The third system is a purpose-built task with small models (0.5B to 3B);
-restricted access makes selection necessary by design, and the open-access runs had limited training (1,500 to 2,900
-steps, one training run per model size), so they show what did not emerge in that time, not what cannot.
+## Code, evidence and reproduction
 
-## Repository
+- [`self_reference/`](self_reference/): the current mechanism, methods, portable training and analysis code, final-run measurements, and artifact provenance.
+- [`interactive/`](interactive/): the recorded-data viewer used by the [Hugging Face study](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space).
+- [`followups/`](followups/): bounded multimodal and behavior investigations, with their controls and limitations.
+- [`history/REPORT_20261014.md`](history/REPORT_20261014.md): the earlier detailed report; the new findings and corrections are in the current [REPORT.md](REPORT.md).
 
-| folder | content |
-|---|---|
-| [`frozen_loop/`](frozen_loop) | the frozen J-space loop: fixed points, word transport, persona drift, stance, invented past; the self-model inside it |
-| [`trained_loop/`](trained_loop) | the trained self-describing loop: code, every result (`results/arms_summary.md`), plan |
-| [`selection_loop/`](selection_loop) | the state that decides what the model reads: code, designs fixed before the results, every result table |
-| [`common/`](common) | model, J-space reading and loop code shared by the first two systems |
-| [`figures/`](figures) | the report's figures |
-| [`infra/`](infra) | the unattended GPU runner used for the experiments |
+Start with the [reproduction guide](self_reference/README.md). Numeric recordings and learned interface weights are hosted in the linked dataset; the frozen language-model weights remain at their original model repositories. The figures and viewer are derived from saved measurements.
 
-Data (states, forecasts, generated thoughts, trained weights, evaluation arrays):
-[huggingface.co/datasets/Pixedar/jspace-strange-loop](https://huggingface.co/datasets/Pixedar/jspace-strange-loop).
-
-Code: MIT ([LICENSE](LICENSE)). Text, figures, data: CC BY 4.0 ([LICENSE-DATA](LICENSE-DATA)). Cite: [CITATION.cff](CITATION.cff).
-Commits and release tags are signed; `SHA256SUMS` lists a hash of every file.
+Code: **AGPL-3.0-only**. New author-owned text, figures and numeric observations: **CC BY-SA 4.0**. Earlier releases and third-party material retain their applicable terms; see [LICENSING.md](LICENSING.md). Cite: [CITATION.cff](CITATION.cff). `SHA256SUMS` records the published files’ hashes.

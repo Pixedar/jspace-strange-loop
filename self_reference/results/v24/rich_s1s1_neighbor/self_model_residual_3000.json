@@ -1,0 +1,12 @@
+{
+  "life": "rich_s1s1_neighbor",
+  "describe": "itself",
+  "route": "operation",
+  "picture": "sphere",
+  "remainder_share_of_field": 0.5197886824607849,
+  "predicted_remainder_correlation": 0.7110719680786133,
+  "predicted_remainder_explained": -14996.6787109375,
+  "predicted_field_correlation": 0.21723465621471405,
+  "predicted_field_explained": -47959.07421875,
+  "interface": "iface_3000.pt"
+}

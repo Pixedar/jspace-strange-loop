@@ -1,0 +1,408 @@
+{
+  "complete": true,
+  "kind": "paired cached-native-intake screening; not full live v24",
+  "seeds": [
+    0,
+    1
+  ],
+  "position_steps": 2000,
+  "centered_steps": 3000,
+  "warmup_divergence_weight": 0,
+  "input_schedule": "deterministic permutations of four distinct contexts per step",
+  "model_feedback_during_training": false,
+  "prediction_loss_during_training": false,
+  "results": [
+    {
+      "intake": "suffix",
+      "seed": 0,
+      "condition": "self",
+      "warmup": {
+        "state_dependent_share": 0.00003384705996722914,
+        "pattern_correlation": -0.1355370134115219,
+        "unscaled_variance_explained": -14053.0419921875,
+        "clamped_destination_variance": 4.163336342344337e-16
+      },
+      "training_inputs": {
+        "state_dependent_share": 0.0002776533365249634,
+        "pattern_correlation": 0.0011647380888462067,
+        "unscaled_variance_explained": -3359.574462890625,
+        "clamped_destination_variance": 3.5431726996826285e-16
+      },
+      "heldout_colours": {
+        "state_dependent_share": 0.0002811008016578853,
+        "pattern_correlation": 0.001450035721063614,
+        "unscaled_variance_explained": -3318.35595703125,
+        "clamped_destination_variance": 5.698566618583811e-16
+      },
+      "curve": [
+        {
+          "step": 500,
+          "loss": 1.3862943649291992
+        },
+        {
+          "step": 1000,
+          "loss": 1.3862943649291992
+        },
+        {
+          "step": 1500,
+          "loss": 1.3862942457199097
+        },
+        {
+          "step": 2000,
+          "loss": 1.3862943649291992
+        },
+        {
+          "step": 2500,
+          "loss": 1.3862942457199097
+        },
+        {
+          "step": 3000,
+          "loss": 1.3862943649291992
+        }
+      ]
+    },
+    {
+      "intake": "suffix",
+      "seed": 0,
+      "condition": "recorded_other",
+      "warmup": {
+        "state_dependent_share": 0.00003384705996722914,
+        "pattern_correlation": -0.1355370134115219,
+        "unscaled_variance_explained": -14053.0419921875,
+        "clamped_destination_variance": 4.163336342344337e-16
+      },
+      "training_inputs": {
+        "state_dependent_share": 0.00015052850358188152,
+        "pattern_correlation": -0.144696444272995,
+        "unscaled_variance_explained": -6167.48828125,
+        "clamped_destination_variance": 3.0769657655138616e-16
+      },
+      "heldout_colours": {
+        "state_dependent_share": 0.00014713416749145836,
+        "pattern_correlation": -0.14421167969703674,
+        "unscaled_variance_explained": -6309.28857421875,
+        "clamped_destination_variance": 5.576051773092949e-16
+      },
+      "curve": [
+        {
+          "step": 500,
+          "loss": 1.3862943649291992
+        },
+        {
+          "step": 1000,
+          "loss": 1.3862943649291992
+        },
+        {
+          "step": 1500,
+          "loss": 1.3862941265106201
+        },
+        {
+          "step": 2000,
+          "loss": 1.386293649673462
+        },
+        {
+          "step": 2500,
+          "loss": 1.3862946033477783
+        },
+        {
+          "step": 3000,
+          "loss": 1.3862920999526978
+        }
+      ]
+    },
+    {
+      "intake": "suffix",
+      "seed": 1,
+      "condition": "self",
+      "warmup": {
+        "state_dependent_share": 0.00010883669892791659,
+        "pattern_correlation": 0.10813170671463013,
+        "unscaled_variance_explained": -4495.7265625,
+        "clamped_destination_variance": 3.3306690738754696e-16
+      },
+      "training_inputs": {
+        "state_dependent_share": 1.750927354493559e-11,
+        "pattern_correlation": 0.0010747574269771576,
+        "unscaled_variance_explained": -52682240000,
+        "clamped_destination_variance": 5.082739784612045e-16
+      },
+      "heldout_colours": {
+        "state_dependent_share": 1.6092866622630098e-11,
+        "pattern_correlation": 0.002420477569103241,
+        "unscaled_variance_explained": -53520875520,
+        "clamped_destination_variance": 3.7318238776951063e-16
+      },
+      "curve": [
+        {
+          "step": 500,
+          "loss": 1.316157341003418
+        },
+        {
+          "step": 1000,
+          "loss": 1.386297583580017
+        },
+        {
+          "step": 1500,
+          "loss": 1.385723352432251
+        },
+        {
+          "step": 2000,
+          "loss": 1.4497061967849731
+        },
+        {
+          "step": 2500,
+          "loss": 1.3862943649291992
+        },
+        {
+          "step": 3000,
+          "loss": 1.3862943649291992
+        }
+      ]
+    },
+    {
+      "intake": "suffix",
+      "seed": 1,
+      "condition": "recorded_other",
+      "warmup": {
+        "state_dependent_share": 0.00010883669892791659,
+        "pattern_correlation": 0.10813170671463013,
+        "unscaled_variance_explained": -4495.7265625,
+        "clamped_destination_variance": 3.3306690738754696e-16
+      },
+      "training_inputs": {
+        "state_dependent_share": 0.0000013736886330661946,
+        "pattern_correlation": 0.009250747971236706,
+        "unscaled_variance_explained": -9602893,
+        "clamped_destination_variance": 3.473783760643556e-16
+      },
+      "heldout_colours": {
+        "state_dependent_share": 5.841929464622808e-7,
+        "pattern_correlation": 0.01638946123421192,
+        "unscaled_variance_explained": -22566944,
+        "clamped_destination_variance": 3.859776674707341e-16
+      },
+      "curve": [
+        {
+          "step": 500,
+          "loss": 1.111319661140442
+        },
+        {
+          "step": 1000,
+          "loss": 1.3879282474517822
+        },
+        {
+          "step": 1500,
+          "loss": 1.3749611377716064
+        },
+        {
+          "step": 2000,
+          "loss": 1.3346350193023682
+        },
+        {
+          "step": 2500,
+          "loss": 1.3862943649291992
+        },
+        {
+          "step": 3000,
+          "loss": 1.3862943649291992
+        }
+      ]
+    },
+    {
+      "intake": "balanced",
+      "seed": 0,
+      "condition": "self",
+      "warmup": {
+        "state_dependent_share": 0.000005196039182919776,
+        "pattern_correlation": -0.037021130323410034,
+        "unscaled_variance_explained": -85361.40625,
+        "clamped_destination_variance": 4.0245584642661925e-16
+      },
+      "training_inputs": {
+        "state_dependent_share": 0.5102627277374268,
+        "pattern_correlation": 0.7957172393798828,
+        "unscaled_variance_explained": -585.3427734375,
+        "clamped_destination_variance": 4.926614671774132e-16
+      },
+      "heldout_colours": {
+        "state_dependent_share": 0.5118514895439148,
+        "pattern_correlation": 0.7953718900680542,
+        "unscaled_variance_explained": -583.8171997070312,
+        "clamped_destination_variance": 3.7470027081099033e-16
+      },
+      "curve": [
+        {
+          "step": 500,
+          "loss": 0.9457659125328064
+        },
+        {
+          "step": 1000,
+          "loss": 1.1228268146514893
+        },
+        {
+          "step": 1500,
+          "loss": 1.130658745765686
+        },
+        {
+          "step": 2000,
+          "loss": 1.2450242042541504
+        },
+        {
+          "step": 2500,
+          "loss": 1.3175759315490723
+        },
+        {
+          "step": 3000,
+          "loss": 1.2564246654510498
+        }
+      ]
+    },
+    {
+      "intake": "balanced",
+      "seed": 0,
+      "condition": "recorded_other",
+      "warmup": {
+        "state_dependent_share": 0.000005196039182919776,
+        "pattern_correlation": -0.037021130323410034,
+        "unscaled_variance_explained": -85361.40625,
+        "clamped_destination_variance": 4.0245584642661925e-16
+      },
+      "training_inputs": {
+        "state_dependent_share": 0.000026522433472564444,
+        "pattern_correlation": -0.0637543722987175,
+        "unscaled_variance_explained": -14376165,
+        "clamped_destination_variance": 3.817475849321461e-16
+      },
+      "heldout_colours": {
+        "state_dependent_share": 0.000031008650694275275,
+        "pattern_correlation": -0.06373552978038788,
+        "unscaled_variance_explained": -12317828,
+        "clamped_destination_variance": 3.006492624302304e-16
+      },
+      "curve": [
+        {
+          "step": 500,
+          "loss": 0.9607968926429749
+        },
+        {
+          "step": 1000,
+          "loss": 1.1176142692565918
+        },
+        {
+          "step": 1500,
+          "loss": 1.1250689029693604
+        },
+        {
+          "step": 2000,
+          "loss": 1.240243911743164
+        },
+        {
+          "step": 2500,
+          "loss": 1.3171941041946411
+        },
+        {
+          "step": 3000,
+          "loss": 1.2568758726119995
+        }
+      ]
+    },
+    {
+      "intake": "balanced",
+      "seed": 1,
+      "condition": "self",
+      "warmup": {
+        "state_dependent_share": 0.00005733219222747721,
+        "pattern_correlation": 0.11074357479810715,
+        "unscaled_variance_explained": -8256.8564453125,
+        "clamped_destination_variance": 6.661338147750939e-16
+      },
+      "training_inputs": {
+        "state_dependent_share": 0.5044418573379517,
+        "pattern_correlation": 0.8658464550971985,
+        "unscaled_variance_explained": -603.40673828125,
+        "clamped_destination_variance": 4.753142324176451e-16
+      },
+      "heldout_colours": {
+        "state_dependent_share": 0.5046629309654236,
+        "pattern_correlation": 0.8659628033638,
+        "unscaled_variance_explained": -603.5535888671875,
+        "clamped_destination_variance": 5.863433111437388e-16
+      },
+      "curve": [
+        {
+          "step": 500,
+          "loss": 0.988239586353302
+        },
+        {
+          "step": 1000,
+          "loss": 1.0566294193267822
+        },
+        {
+          "step": 1500,
+          "loss": 1.0940862894058228
+        },
+        {
+          "step": 2000,
+          "loss": 1.2626357078552246
+        },
+        {
+          "step": 2500,
+          "loss": 1.1995434761047363
+        },
+        {
+          "step": 3000,
+          "loss": 1.2571125030517578
+        }
+      ]
+    },
+    {
+      "intake": "balanced",
+      "seed": 1,
+      "condition": "recorded_other",
+      "warmup": {
+        "state_dependent_share": 0.00005733219222747721,
+        "pattern_correlation": 0.11074357479810715,
+        "unscaled_variance_explained": -8256.8564453125,
+        "clamped_destination_variance": 6.661338147750939e-16
+      },
+      "training_inputs": {
+        "state_dependent_share": 2.0094466890441254e-7,
+        "pattern_correlation": 0.09006520360708237,
+        "unscaled_variance_explained": -1842680320,
+        "clamped_destination_variance": 3.677613769070831e-16
+      },
+      "heldout_colours": {
+        "state_dependent_share": 2.6534615926721017e-7,
+        "pattern_correlation": 0.06374464929103851,
+        "unscaled_variance_explained": -1396108544,
+        "clamped_destination_variance": 5.290906601729262e-16
+      },
+      "curve": [
+        {
+          "step": 500,
+          "loss": 0.9960278272628784
+        },
+        {
+          "step": 1000,
+          "loss": 1.0686609745025635
+        },
+        {
+          "step": 1500,
+          "loss": 1.0982928276062012
+        },
+        {
+          "step": 2000,
+          "loss": 1.2680805921554565
+        },
+        {
+          "step": 2500,
+          "loss": 1.1949481964111328
+        },
+        {
+          "step": 3000,
+          "loss": 1.2661207914352417
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "life": "pos_s0_seed0",
+  "interface": "iface_3000.pt",
+  "after_switch": {
+    "0": {
+      "stance_apart": 0.006305948675920566,
+      "picture_apart": 0.05061304879685243,
+      "duplicate_vs_original": 0.0
+    },
+    "50": {
+      "stance_apart": 0.0008688251449105641,
+      "picture_apart": 0.008280180239429077,
+      "duplicate_vs_original": 0.0
+    },
+    "100": {
+      "stance_apart": 0.00031042052432894707,
+      "picture_apart": 0.0032979658183952174,
+      "duplicate_vs_original": 0.0
+    },
+    "256": {
+      "stance_apart": 0.00035451063498233754,
+      "picture_apart": 0.004328649413461487,
+      "duplicate_vs_original": 0.0
+    },
+    "300": {
+      "stance_apart": 0.00011672341164133589,
+      "picture_apart": 0.0012590434732070814,
+      "duplicate_vs_original": 0.0
+    },
+    "400": {
+      "stance_apart": 0.0004496191553092406,
+      "picture_apart": 0.006198624537015955,
+      "duplicate_vs_original": 0.0
+    },
+    "500": {
+      "stance_apart": 5.274593422655016e-05,
+      "picture_apart": 0.0006243710619552681,
+      "duplicate_vs_original": 0.0
+    },
+    "599": {
+      "stance_apart": 9.875458454189356e-05,
+      "picture_apart": 0.001048782413514952,
+      "duplicate_vs_original": 0.0
+    }
+  },
+  "state_dependent_part_on_shared_text": 4.565519371985454e-07
+}

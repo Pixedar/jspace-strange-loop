@@ -1,0 +1,11 @@
+{
+  "life": "negate0_s1",
+  "describe": "itself",
+  "route": "operation",
+  "picture": "sphere",
+  "remainder_share_of_field": 0.00650553684681654,
+  "predicted_remainder_correlation": 0.00516121368855238,
+  "predicted_remainder_explained": -1013.8385009765625,
+  "predicted_field_correlation": 0.624171257019043,
+  "predicted_field_explained": -38344.0546875
+}

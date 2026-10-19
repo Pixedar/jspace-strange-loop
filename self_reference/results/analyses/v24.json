@@ -1,0 +1,3624 @@
+[
+  {
+    "life": "rich_s0s2_spot",
+    "model": "Qwen/Qwen3-0.6B",
+    "arm": "itself",
+    "picture": "sphere",
+    "route": "operation",
+    "identity": "dynamics",
+    "div_scale": 0.0,
+    "records": [
+      {
+        "record": "ref",
+        "tokens": 898,
+        "regime": {
+          "rests": 0.2900890868596882,
+          "big_steps": 0.5370267260579065,
+          "cos_next": -0.76900714635849,
+          "cos_two_apart": 0.9999592304229736
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.21429981817196264,
+            "picture_shifted": 0.16294598455805254,
+            "next_stance": 0.13195733884748692,
+            "next_stance_shifted": 0.16082741069524006,
+            "stance_before": 0.16049383513848414,
+            "stance_before_shifted": 0.18661211092306665,
+            "text_only": 0.7321729916589648
+          },
+          "class_prev": {
+            "picture": 0.20670383284131855,
+            "picture_shifted": 0.16898863215155105,
+            "next_stance": 0.15641132272223318,
+            "next_stance_shifted": 0.18894695813053494,
+            "stance_before": 0.13155680205096248,
+            "stance_before_shifted": 0.1669437217484994,
+            "text_only": 0.5046938270669497
+          },
+          "sentence_position": {
+            "picture": -0.01415881916476272,
+            "picture_shifted": -0.04816614245581191,
+            "next_stance": -0.0010622090944199525,
+            "next_stance_shifted": -0.029095719207436643,
+            "stance_before": -0.00042500758741920164,
+            "stance_before_shifted": -0.024741381662348266,
+            "text_only": 0.3315148809748969
+          },
+          "line_position": {
+            "picture": 0.03357825770557804,
+            "picture_shifted": -0.01462686279769293,
+            "next_stance": 0.02015888588199541,
+            "next_stance_shifted": 0.05355583568218941,
+            "stance_before": 0.017568452000638474,
+            "stance_before_shifted": 0.0587018771627201,
+            "text_only": 0.31997212206326175
+          },
+          "document_position": {
+            "picture": -0.07187558111539322,
+            "picture_shifted": -0.0221057536752976,
+            "next_stance": 0.0063444262662714634,
+            "next_stance_shifted": 0.031104013088715576,
+            "stance_before": 0.004827290602025802,
+            "stance_before_shifted": 0.03345198956630174,
+            "text_only": 0.22163811612863507
+          },
+          "in_quote": {
+            "picture": 0.5757868369911852,
+            "picture_shifted": 0.5624265911280573,
+            "next_stance": 0.5577705998051472,
+            "next_stance_shifted": 0.5871811545542789,
+            "stance_before": 0.5671902161081944,
+            "stance_before_shifted": 0.5723881776875483,
+            "text_only": 0.6086605521908008
+          },
+          "genre": {
+            "picture": 0.6723229056112923,
+            "picture_shifted": 0.1255073714237564,
+            "next_stance": 0.5384821159624498,
+            "next_stance_shifted": 0.22222430069472504,
+            "stance_before": 0.5387475900032859,
+            "stance_before_shifted": 0.22194821320869298,
+            "text_only": 0.8437658490460662
+          },
+          "content_window_pcs": {
+            "picture": -0.09348118282740034,
+            "picture_shifted": -0.19131782728797214,
+            "next_stance": -0.02826866801214778,
+            "next_stance_shifted": -0.06198830734637778,
+            "stance_before": -0.027798877367874092,
+            "stance_before_shifted": -0.06123556101458916,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": -0.02046432166880252,
+            "picture_shifted": -0.07198368525942705,
+            "next_stance": -0.004195718126085268,
+            "next_stance_shifted": -0.01916291486965349,
+            "stance_before": -0.0048348516059635305,
+            "stance_before_shifted": -0.01932042863793787,
+            "text_only": null
+          },
+          "attention_entropy": {
+            "picture": 0.38591516260417036,
+            "picture_shifted": -0.06507793942211498,
+            "next_stance": 0.5050636133348161,
+            "next_stance_shifted": -0.009796251934602651,
+            "stance_before": 0.5289024086482823,
+            "stance_before_shifted": -0.019501708641014193,
+            "text_only": -0.08175069927903705
+          },
+          "attention_age": {
+            "picture": -0.032743351566543344,
+            "picture_shifted": -0.019525741364536497,
+            "next_stance": -0.0025530655428113447,
+            "next_stance_shifted": -0.0029814877936456263,
+            "stance_before": -0.0007342310081571157,
+            "stance_before_shifted": -0.000706614199883604,
+            "text_only": 0.04093177984844046
+          },
+          "surprise_at_token": {
+            "picture": -0.015663210909286407,
+            "picture_shifted": -0.006877377399760909,
+            "next_stance": -0.004786950493250619,
+            "next_stance_shifted": -0.0018367526717620875,
+            "stance_before": -0.002528899864801204,
+            "stance_before_shifted": -0.001056552384535725,
+            "text_only": 0.23789454599716695
+          },
+          "next_attention_entropy": {
+            "picture": 0.4778946988453794,
+            "picture_shifted": -0.046690603323156166,
+            "next_stance": 0.5297677106773275,
+            "next_stance_shifted": -0.020048082612056206,
+            "stance_before": 0.4477341889197266,
+            "stance_before_shifted": -0.016880971769367786,
+            "text_only": -0.10309815459175042
+          },
+          "next_attention_age": {
+            "picture": -0.031878078441161084,
+            "picture_shifted": -0.021591313182724114,
+            "next_stance": -0.0007021142386514911,
+            "next_stance_shifted": -0.0006930125869184234,
+            "stance_before": -0.008387109323373665,
+            "stance_before_shifted": -0.001250672328982877,
+            "text_only": 0.05730010942756089
+          }
+        },
+        "attention_steering": {
+          "attention_from_text": 0.033511244555460534,
+          "attention_from_text_and_stance": 0.04443183301246892,
+          "attention_from_stance_alone": 0.00945428654623695,
+          "next_attention_from_next_text": 0.036773384436629475,
+          "next_attention_from_next_text_and_picture": 0.020820322263469304
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.4890957647095901,
+            "grammar_alone": -0.007038712971144279,
+            "grammar_unique": 0.011464773374444903,
+            "indices_alone": -0.0041480705990590006,
+            "indices_unique": -0.0417911134135987,
+            "content_alone": -0.3597876650891387,
+            "content_unique": -0.4703794441121675,
+            "attention_alone": 0.021021719828363955,
+            "attention_unique": -0.16492737581786748,
+            "all_families_shifted": -0.19112135768678146
+          },
+          "picture": {
+            "all_families": 0.0697471867815864,
+            "grammar_alone": 0.004116923214393137,
+            "grammar_unique": -0.0015298347439096915,
+            "indices_alone": 0.08216006907726522,
+            "indices_unique": -0.028832525813948656,
+            "content_alone": 0.0474672767418344,
+            "content_unique": -0.07659984830739328,
+            "attention_alone": 0.035053045761074125,
+            "attention_unique": 0.05086270117657557,
+            "all_families_shifted": -0.3327477983289749
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.1759910650730903,
+            "between_sentences": 0.14850927005749615,
+            "within_sentences": 0.6754997372627258,
+            "between_genres": 0.023041108802419618,
+            "between_documents_within_genre": 0.1529499562706707
+          },
+          "picture": {
+            "between_documents": 0.3545725161694103,
+            "between_sentences": 0.2115999506759316,
+            "within_sentences": 0.433827668428421,
+            "between_genres": 0.21119836167673092,
+            "between_documents_within_genre": 0.1433741544926794
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.14262303960343745,
+            "between_sentences": 0.1720017158138652,
+            "within_sentences": 0.6853752136230469
+          },
+          "content_window_pcs": {
+            "between_documents": 0.48514834241835175,
+            "between_sentences": 0.3726243848967943,
+            "within_sentences": 0.14222723245620728,
+            "between_genres": 0.1743971818338286,
+            "between_documents_within_genre": 0.3107511605845231
+          }
+        },
+        "rest_states": {
+          "states": 2,
+          "resting_share": 0.21547884187082406,
+          "genre_bits": 0.10761718576670187,
+          "genre_bits_shifted": 0.099251034111554,
+          "sentence_position_bits": 0.03221232400312912,
+          "sentence_position_bits_shifted": 0.0076439516299982024,
+          "state_entropy_bits": 0.7846627997776916,
+          "entry_token_class_bits": 0.14551716901800615,
+          "entry_token_class_bits_shifted": 0.07320039850285953,
+          "jump_rate": 0.5370267260579065,
+          "jump_lift_by_token_class": {
+            "newline": 1.4483036691434825,
+            "sent_end": 0.7816242023948953,
+            "punct": 0.9903550567437007,
+            "num": 0.9175588462896598,
+            "func": 1.1002557230904955,
+            "word": 0.963157612484582,
+            "cont": 0.9603768424747839
+          }
+        }
+      },
+      {
+        "record": "life",
+        "tokens": 1498,
+        "regime": {
+          "rests": 0.3204272363150868,
+          "big_steps": 0.4781375166889186,
+          "cos_next": 0.9941639304161072,
+          "cos_two_apart": 0.9999586343765259
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.23574315376289848,
+            "picture_shifted": 0.13505127626827784,
+            "next_stance": 0.20364096535304005,
+            "next_stance_shifted": 0.14391592884907006,
+            "stance_before": 0.19913962013024505,
+            "stance_before_shifted": 0.13842110564650134,
+            "text_only": 0.7496465243855437
+          },
+          "class_prev": {
+            "picture": 0.2474111956332559,
+            "picture_shifted": 0.13032486254567308,
+            "next_stance": 0.20154473530578737,
+            "next_stance_shifted": 0.1293642611537737,
+            "stance_before": 0.20145082100827472,
+            "stance_before_shifted": 0.1398648838678032,
+            "text_only": 0.5297416291085746
+          },
+          "sentence_position": {
+            "picture": -0.017906720418215893,
+            "picture_shifted": -0.13162162592220789,
+            "next_stance": -0.06719995601733228,
+            "next_stance_shifted": -0.050248958668874355,
+            "stance_before": -0.06679878260913646,
+            "stance_before_shifted": -0.05375301277481154,
+            "text_only": 0.41195907299741286
+          },
+          "line_position": {
+            "picture": 0.3723955979710748,
+            "picture_shifted": -0.18725795068734602,
+            "next_stance": 0.16950166068071418,
+            "next_stance_shifted": -0.08017441003397635,
+            "stance_before": 0.16620999958096677,
+            "stance_before_shifted": -0.08164734699858978,
+            "text_only": 0.614674560254418
+          },
+          "document_position": {
+            "picture": -0.00837305476205541,
+            "picture_shifted": -0.16923457284415777,
+            "next_stance": -0.04747832865757551,
+            "next_stance_shifted": -0.06087922632519521,
+            "stance_before": -0.04508643627437944,
+            "stance_before_shifted": -0.06251605942259308,
+            "text_only": 0.4111338556413763
+          },
+          "in_quote": {
+            "picture": 0.450032268482409,
+            "picture_shifted": 0.4331284537249854,
+            "next_stance": 0.4454694482281571,
+            "next_stance_shifted": 0.38914328394282444,
+            "stance_before": 0.44321661909494964,
+            "stance_before_shifted": 0.398529060740117,
+            "text_only": 0.7573763199936172
+          },
+          "genre": {
+            "picture": 0.4436225573691925,
+            "picture_shifted": 0.18439123656196782,
+            "next_stance": 0.3960151692391841,
+            "next_stance_shifted": 0.10443360802696564,
+            "stance_before": 0.3942864022162337,
+            "stance_before_shifted": 0.10539546355586914,
+            "text_only": 0.9241240565708762
+          },
+          "content_window_pcs": {
+            "picture": -0.10380557408436952,
+            "picture_shifted": -0.23168471479672603,
+            "next_stance": -0.05664946469905108,
+            "next_stance_shifted": -0.07441651654263681,
+            "stance_before": -0.056823902126474035,
+            "stance_before_shifted": -0.07430544458723709,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": -0.0017389253004839733,
+            "picture_shifted": -0.08239552315217802,
+            "next_stance": -0.004412541470258158,
+            "next_stance_shifted": -0.029564247990617076,
+            "stance_before": -0.004648876529891682,
+            "stance_before_shifted": -0.030115140074936764,
+            "text_only": null
+          },
+          "run_position": {
+            "picture": 0.9069985922072874,
+            "picture_shifted": 0.49724371777215437,
+            "next_stance": 0.3172443342605141,
+            "next_stance_shifted": 0.2188036998462178,
+            "stance_before": 0.3166535360381447,
+            "stance_before_shifted": 0.21897587342747002,
+            "text_only": -0.38284454472795104
+          }
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.1416855793511499,
+            "grammar_alone": -0.010528880375995087,
+            "grammar_unique": -0.014808061392301675,
+            "indices_alone": 0.013187655573634688,
+            "indices_unique": 0.025017593718608566,
+            "content_alone": -0.1684774231877869,
+            "content_unique": -0.14155600115696748,
+            "all_families_shifted": -0.24966440194144796
+          },
+          "picture": {
+            "all_families": 0.44213306133589775,
+            "grammar_alone": 0.04170814656907748,
+            "grammar_unique": -0.010911737837074276,
+            "indices_alone": 0.312052912198929,
+            "indices_unique": 0.0743989344557075,
+            "content_alone": 0.38593822814771583,
+            "content_unique": 0.09586717981731624,
+            "all_families_shifted": -0.33094698691385377
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.303923285592918,
+            "between_sentences": 0.1681445343600545,
+            "within_sentences": 0.5279319286346436,
+            "between_genres": 0.02867991942234337,
+            "between_documents_within_genre": 0.2752433661705746
+          },
+          "picture": {
+            "between_documents": 0.6666988547984345,
+            "between_sentences": 0.11580869185473192,
+            "within_sentences": 0.21749243140220642,
+            "between_genres": 0.486490697298769,
+            "between_documents_within_genre": 0.18020815749966554
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.22203742092873383,
+            "between_sentences": 0.2566042283469595,
+            "within_sentences": 0.5213583707809448
+          },
+          "content_window_pcs": {
+            "between_documents": 0.4357805577928293,
+            "between_sentences": 0.43822275144718564,
+            "within_sentences": 0.12599675357341766,
+            "between_genres": 0.23472435991654148,
+            "between_documents_within_genre": 0.20105619787628784
+          }
+        },
+        "rest_states": {
+          "states": 6,
+          "resting_share": 0.21428571428571427,
+          "genre_bits": 0.16462756771757192,
+          "genre_bits_shifted": 0.3341018409317682,
+          "sentence_position_bits": 0.05573902444664869,
+          "sentence_position_bits_shifted": 0.04425249702157563,
+          "state_entropy_bits": 1.7313617128322243,
+          "entry_token_class_bits": 0.23740880072371517,
+          "entry_token_class_bits_shifted": 0.2173155009334069,
+          "jump_rate": 0.4781375166889186,
+          "jump_lift_by_token_class": {
+            "newline": 1.8015447618060234,
+            "sent_end": 0.8520716178656841,
+            "punct": 1.0790984367457577,
+            "num": 0.5228621291448516,
+            "func": 1.1699208154439047,
+            "word": 0.8873914868466052,
+            "cont": 0.9080310285504897
+          }
+        }
+      }
+    ]
+  },
+  {
+    "life": "rich_s1s1_spot",
+    "model": "Qwen/Qwen3-0.6B",
+    "arm": "itself",
+    "picture": "sphere",
+    "route": "operation",
+    "identity": "dynamics",
+    "div_scale": 0.0,
+    "records": [
+      {
+        "record": "ref",
+        "tokens": 898,
+        "regime": {
+          "rests": 0.51586859688196,
+          "big_steps": 0.32516703786191536,
+          "cos_next": 0.9999638795852661,
+          "cos_two_apart": 0.9999860525131226
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.2126722308413754,
+            "picture_shifted": 0.12600824611692904,
+            "next_stance": 0.16909528866901416,
+            "next_stance_shifted": 0.1566463284592563,
+            "stance_before": 0.15105571043324212,
+            "stance_before_shifted": 0.1424942929271674,
+            "text_only": 0.7321729916589648
+          },
+          "class_prev": {
+            "picture": 0.2120771465893925,
+            "picture_shifted": 0.1146361526109875,
+            "next_stance": 0.18358652403799847,
+            "next_stance_shifted": 0.14877324030319056,
+            "stance_before": 0.1691216438056257,
+            "stance_before_shifted": 0.1566463284592563,
+            "text_only": 0.5046938270669497
+          },
+          "sentence_position": {
+            "picture": 0.10012595466697596,
+            "picture_shifted": -0.14123116348916293,
+            "next_stance": -0.03562901067098989,
+            "next_stance_shifted": -0.02314401283815143,
+            "stance_before": -0.038939326698678944,
+            "stance_before_shifted": -0.025991837569178694,
+            "text_only": 0.3315148809748969
+          },
+          "line_position": {
+            "picture": 0.14729224818916004,
+            "picture_shifted": -0.4386878169907036,
+            "next_stance": 0.08893032692610778,
+            "next_stance_shifted": -0.09813416195248775,
+            "stance_before": 0.09334058947159019,
+            "stance_before_shifted": -0.0858974854528251,
+            "text_only": 0.31997212206326175
+          },
+          "document_position": {
+            "picture": -0.08644312194548345,
+            "picture_shifted": -0.2706726044460086,
+            "next_stance": -0.01815258662983546,
+            "next_stance_shifted": -0.008530113898357422,
+            "stance_before": -0.015234697029958666,
+            "stance_before_shifted": -0.005575825400579687,
+            "text_only": 0.22163811612863507
+          },
+          "in_quote": {
+            "picture": 0.5644668132126448,
+            "picture_shifted": 0.42116878760871335,
+            "next_stance": 0.3884790130254889,
+            "next_stance_shifted": 0.5536545931201708,
+            "stance_before": 0.3271015725388865,
+            "stance_before_shifted": 0.5830151389450305,
+            "text_only": 0.6086605521908008
+          },
+          "genre": {
+            "picture": 0.6249840571921728,
+            "picture_shifted": 0.06342177834142658,
+            "next_stance": 0.38627168553322466,
+            "next_stance_shifted": 0.04545341984768561,
+            "stance_before": 0.3866536740473582,
+            "stance_before_shifted": 0.042660042068885184,
+            "text_only": 0.8437658490460662
+          },
+          "content_window_pcs": {
+            "picture": -0.06762474904872176,
+            "picture_shifted": -0.2227735470593996,
+            "next_stance": -0.024797099625451402,
+            "next_stance_shifted": -0.06132354537731738,
+            "stance_before": -0.025491005262620464,
+            "stance_before_shifted": -0.061067968193628586,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": 0.023108071012549913,
+            "picture_shifted": -0.09529549045335889,
+            "next_stance": -0.003021581174411092,
+            "next_stance_shifted": -0.020814699662611236,
+            "stance_before": -0.003950368858504277,
+            "stance_before_shifted": -0.01987119059756881,
+            "text_only": null
+          },
+          "attention_entropy": {
+            "picture": 0.37303461337545873,
+            "picture_shifted": -0.08688690371562069,
+            "next_stance": 0.42892206243879105,
+            "next_stance_shifted": -0.0365664498901348,
+            "stance_before": 0.4766078336582034,
+            "stance_before_shifted": -0.034238197165468776,
+            "text_only": 0.029512358029642388
+          },
+          "attention_age": {
+            "picture": -0.025816116920733434,
+            "picture_shifted": -0.03490205467774321,
+            "next_stance": -0.0003794152859072364,
+            "next_stance_shifted": -0.0037611419980082272,
+            "stance_before": -0.0009649090793514281,
+            "stance_before_shifted": -0.007075080199335837,
+            "text_only": 0.04349126734328734
+          },
+          "surprise_at_token": {
+            "picture": -0.012916291142648556,
+            "picture_shifted": -0.006510691214849984,
+            "next_stance": 0.001954471023135812,
+            "next_stance_shifted": -0.0009343152571947289,
+            "stance_before": 0.0019808531907998528,
+            "stance_before_shifted": -0.001418755101549013,
+            "text_only": 0.23818260969931646
+          },
+          "next_attention_entropy": {
+            "picture": 0.396232600995721,
+            "picture_shifted": -0.08421405760969558,
+            "next_stance": 0.47786611404050183,
+            "next_stance_shifted": -0.03370320095103105,
+            "stance_before": 0.41343922446958525,
+            "stance_before_shifted": -0.03505164923803114,
+            "text_only": 0.03474741925813962
+          },
+          "next_attention_age": {
+            "picture": -0.027220712305767836,
+            "picture_shifted": -0.03453489630368517,
+            "next_stance": -0.0009905120356491492,
+            "next_stance_shifted": -0.0069692171133159675,
+            "stance_before": -0.00020768535259882426,
+            "stance_before_shifted": -0.008595056234459553,
+            "text_only": 0.041375536260905094
+          }
+        },
+        "attention_steering": {
+          "attention_from_text": 0.043576404485964754,
+          "attention_from_text_and_stance": 0.051455843517067446,
+          "attention_from_stance_alone": 0.008168800552983996,
+          "next_attention_from_next_text": 0.04649143064298947,
+          "next_attention_from_next_text_and_picture": 0.02095082777383303
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.021737206915317553,
+            "grammar_alone": -0.04659469193072727,
+            "grammar_unique": -0.017336100738971738,
+            "indices_alone": -0.01188123678394154,
+            "indices_unique": 0.008685389296465479,
+            "content_alone": -0.054550082943984446,
+            "content_unique": -0.052568372825802234,
+            "attention_alone": 0.0769919285091483,
+            "attention_unique": 0.01612354379434819,
+            "all_families_shifted": -0.23583705462229054
+          },
+          "picture": {
+            "all_families": 0.42968679124544,
+            "grammar_alone": 0.009114809144896596,
+            "grammar_unique": -0.008843210822848502,
+            "indices_alone": 0.20973868705516682,
+            "indices_unique": 0.0035764111892557238,
+            "content_alone": 0.41476080276828453,
+            "content_unique": 0.18290085771311898,
+            "attention_alone": 0.026995648101093644,
+            "attention_unique": 0.016210751743377494,
+            "all_families_shifted": -0.26647084930311843
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.3426017583044683,
+            "between_sentences": 0.18356704056567158,
+            "within_sentences": 0.4738311171531677,
+            "between_genres": 0.07379881757517992,
+            "between_documents_within_genre": 0.2688029407292884
+          },
+          "picture": {
+            "between_documents": 0.4821254810024542,
+            "between_sentences": 0.22076819594058425,
+            "within_sentences": 0.29710623621940613,
+            "between_genres": 0.37126158289227607,
+            "between_documents_within_genre": 0.11086389811017816
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.35516497612006404,
+            "between_sentences": 0.1698590975645458,
+            "within_sentences": 0.47497573494911194
+          },
+          "content_window_pcs": {
+            "between_documents": 0.48514834241835175,
+            "between_sentences": 0.3726243848967943,
+            "within_sentences": 0.14222723245620728,
+            "between_genres": 0.1743971818338286,
+            "between_documents_within_genre": 0.3107511605845231
+          }
+        },
+        "rest_states": {
+          "states": 2,
+          "resting_share": 0.44153674832962136,
+          "genre_bits": 0.15185108771741085,
+          "genre_bits_shifted": 0.07960661733764507,
+          "sentence_position_bits": 0.0002096940244475931,
+          "sentence_position_bits_shifted": 0.0025235580910272226,
+          "state_entropy_bits": 0.9928291113645983,
+          "entry_token_class_bits": 0.1669992434630747,
+          "entry_token_class_bits_shifted": 0.02761417661200838,
+          "jump_rate": 0.32516703786191536,
+          "jump_lift_by_token_class": {
+            "newline": 2.2780314561136477,
+            "sent_end": 0.8162946051073905,
+            "punct": 0.8716735014396649,
+            "num": 0.2674210839785587,
+            "func": 1.2381621110955074,
+            "word": 0.9847155678520818,
+            "cont": 0.6295976701542444
+          }
+        }
+      },
+      {
+        "record": "life",
+        "tokens": 1498,
+        "regime": {
+          "rests": 0.5707610146862483,
+          "big_steps": 0.35196929238985314,
+          "cos_next": 0.9999851584434509,
+          "cos_two_apart": 0.999992847442627
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.2376267945182201,
+            "picture_shifted": 0.14412419696114187,
+            "next_stance": 0.1900110430413273,
+            "next_stance_shifted": 0.1520586859858294,
+            "stance_before": 0.17890595034896664,
+            "stance_before_shifted": 0.1729912008141578,
+            "text_only": 0.7496465243855437
+          },
+          "class_prev": {
+            "picture": 0.22798009518531806,
+            "picture_shifted": 0.14235211840217693,
+            "next_stance": 0.17443266485070344,
+            "next_stance_shifted": 0.16770405077937364,
+            "stance_before": 0.1897419909804115,
+            "stance_before_shifted": 0.1516910131212918,
+            "text_only": 0.5297416291085746
+          },
+          "sentence_position": {
+            "picture": -0.041690977342367735,
+            "picture_shifted": -0.1670140191531015,
+            "next_stance": -0.03735306256122453,
+            "next_stance_shifted": -0.025917890330997145,
+            "stance_before": -0.04120732183526274,
+            "stance_before_shifted": -0.02462860823268423,
+            "text_only": 0.41195907299741286
+          },
+          "line_position": {
+            "picture": 0.27596412602161036,
+            "picture_shifted": -0.25394403896799933,
+            "next_stance": 0.09099546366549299,
+            "next_stance_shifted": -0.1368640143056344,
+            "stance_before": 0.08476403174782715,
+            "stance_before_shifted": -0.13750926838796615,
+            "text_only": 0.614674560254418
+          },
+          "document_position": {
+            "picture": -0.15786674660913108,
+            "picture_shifted": -0.14749209180544387,
+            "next_stance": -0.0294251144067168,
+            "next_stance_shifted": -0.03225838002772341,
+            "stance_before": -0.027766557700973443,
+            "stance_before_shifted": -0.03363934683168862,
+            "text_only": 0.4111338556413763
+          },
+          "in_quote": {
+            "picture": 0.443716950328374,
+            "picture_shifted": 0.4124603530877869,
+            "next_stance": 0.3812146723878569,
+            "next_stance_shifted": 0.37990712032089685,
+            "stance_before": 0.3757530597522327,
+            "stance_before_shifted": 0.3306134013709358,
+            "text_only": 0.7573763199936172
+          },
+          "genre": {
+            "picture": 0.5677335946779167,
+            "picture_shifted": 0.14113369867519915,
+            "next_stance": 0.27101317452736456,
+            "next_stance_shifted": 0.190147881781619,
+            "stance_before": 0.2714384485179704,
+            "stance_before_shifted": 0.18923304043015712,
+            "text_only": 0.9241240565708762
+          },
+          "content_window_pcs": {
+            "picture": -0.04380170342230755,
+            "picture_shifted": -0.27783776848329317,
+            "next_stance": -0.0661495742168865,
+            "next_stance_shifted": -0.08442418455711642,
+            "stance_before": -0.06920048036766802,
+            "stance_before_shifted": -0.084490640901566,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": 0.028070691937168768,
+            "picture_shifted": -0.12037503180749043,
+            "next_stance": -0.011622783901319267,
+            "next_stance_shifted": -0.03604151446941617,
+            "stance_before": -0.011738321972858706,
+            "stance_before_shifted": -0.036247620502715294,
+            "text_only": null
+          },
+          "run_position": {
+            "picture": 0.8128692501336331,
+            "picture_shifted": 0.36479109660932363,
+            "next_stance": 0.2887811490109784,
+            "next_stance_shifted": -0.111941103469096,
+            "stance_before": 0.2896796118946613,
+            "stance_before_shifted": -0.11309102714459834,
+            "text_only": -0.38284454472795104
+          }
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.3831117732774555,
+            "grammar_alone": -0.006644594403451276,
+            "grammar_unique": -0.032709488040673085,
+            "indices_alone": 0.007170923186918976,
+            "indices_unique": -0.1980830388172336,
+            "content_alone": -0.18335687798008068,
+            "content_unique": -0.3600161567859106,
+            "all_families_shifted": -0.26361282770288286
+          },
+          "picture": {
+            "all_families": 0.4330783921146796,
+            "grammar_alone": 0.040511618513303815,
+            "grammar_unique": -0.01516378429053511,
+            "indices_alone": 0.2595043796148641,
+            "indices_unique": -0.04158936764266297,
+            "content_alone": 0.47557969564132385,
+            "content_unique": 0.1666490208223218,
+            "all_families_shifted": -0.17931324455040148
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.41925452497704857,
+            "between_sentences": 0.15467705756555325,
+            "within_sentences": 0.4260682463645935,
+            "between_genres": 0.08373532115516596,
+            "between_documents_within_genre": 0.3355192038218826
+          },
+          "picture": {
+            "between_documents": 0.6898204510095937,
+            "between_sentences": 0.13091385626936858,
+            "within_sentences": 0.179265558719635,
+            "between_genres": 0.5328767502282066,
+            "between_documents_within_genre": 0.1569437007813871
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.35722579830892087,
+            "between_sentences": 0.2380553119590827,
+            "within_sentences": 0.4047185182571411
+          },
+          "content_window_pcs": {
+            "between_documents": 0.4357805577928293,
+            "between_sentences": 0.43822275144718564,
+            "within_sentences": 0.12599675357341766,
+            "between_genres": 0.23472435991654148,
+            "between_documents_within_genre": 0.20105619787628784
+          }
+        },
+        "rest_states": {
+          "states": 3,
+          "resting_share": 0.5509012016021362,
+          "genre_bits": 0.032283258658958314,
+          "genre_bits_shifted": 0.03412802266948178,
+          "sentence_position_bits": 0.004733860570484971,
+          "sentence_position_bits_shifted": 0.005744719988411973,
+          "state_entropy_bits": 0.8047114556474044,
+          "entry_token_class_bits": 0.07592560838526952,
+          "entry_token_class_bits_shifted": 0.0967209887214131,
+          "jump_rate": 0.35196929238985314,
+          "jump_lift_by_token_class": {
+            "newline": 1.9972489425329445,
+            "sent_end": 0.9470523154733681,
+            "punct": 0.9672023647387589,
+            "num": 0.37058568866349184,
+            "func": 1.2387152136577113,
+            "word": 0.864312972910258,
+            "cont": 0.6875397592760395
+          }
+        }
+      }
+    ]
+  },
+  {
+    "life": "rich_s0s2_nospot",
+    "model": "Qwen/Qwen3-0.6B",
+    "arm": "itself",
+    "picture": "sphere",
+    "route": "operation",
+    "identity": "dynamics",
+    "div_scale": 0.0,
+    "records": [
+      {
+        "record": "ref",
+        "tokens": 898,
+        "regime": {
+          "rests": 0.8207126948775055,
+          "big_steps": 0.0041759465478841875,
+          "cos_next": 0.9999993443489075,
+          "cos_two_apart": 0.9999948740005493
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.20736298009578652,
+            "picture_shifted": 0.09979214007404777,
+            "next_stance": 0.18413335883052112,
+            "next_stance_shifted": 0.1046485700033298,
+            "stance_before": 0.17782358686270733,
+            "stance_before_shifted": 0.09435151447085813,
+            "text_only": 0.7321729916589648
+          },
+          "class_prev": {
+            "picture": 0.22058624687624595,
+            "picture_shifted": 0.08344662444196224,
+            "next_stance": 0.18702761766759549,
+            "next_stance_shifted": 0.09938090725401147,
+            "stance_before": 0.18220451835490395,
+            "stance_before_shifted": 0.1048551349870718,
+            "text_only": 0.5046938270669497
+          },
+          "sentence_position": {
+            "picture": 0.1218361374113453,
+            "picture_shifted": -0.04041937926776232,
+            "next_stance": 0.04340144669885729,
+            "next_stance_shifted": -0.013760076413667693,
+            "stance_before": 0.04425079889709024,
+            "stance_before_shifted": -0.015250099952910212,
+            "text_only": 0.3315148809748969
+          },
+          "line_position": {
+            "picture": 0.2837553290233963,
+            "picture_shifted": -0.40275268743237747,
+            "next_stance": 0.25900773510017694,
+            "next_stance_shifted": -0.07460726789052055,
+            "stance_before": 0.26581770426561235,
+            "stance_before_shifted": -0.07366622190239766,
+            "text_only": 0.31997212206326175
+          },
+          "document_position": {
+            "picture": 0.006514128553893883,
+            "picture_shifted": -0.17804182546551853,
+            "next_stance": 0.029929796350464694,
+            "next_stance_shifted": 0.002164882928354317,
+            "stance_before": 0.03217625407578123,
+            "stance_before_shifted": 0.0009828863998762594,
+            "text_only": 0.22163811612863507
+          },
+          "in_quote": {
+            "picture": 0.5774024983803796,
+            "picture_shifted": 0.49174566937899566,
+            "next_stance": 0.5108494429251142,
+            "next_stance_shifted": 0.526545144647338,
+            "stance_before": 0.5312426982889564,
+            "stance_before_shifted": 0.5118417606006743,
+            "text_only": 0.6086605521908008
+          },
+          "genre": {
+            "picture": 0.5808658968772539,
+            "picture_shifted": 0.18458644402918906,
+            "next_stance": 0.31825409550539663,
+            "next_stance_shifted": 0.12261005120715733,
+            "stance_before": 0.3202295390164003,
+            "stance_before_shifted": 0.12261627364088004,
+            "text_only": 0.8437658490460662
+          },
+          "content_window_pcs": {
+            "picture": -0.17599423219591848,
+            "picture_shifted": -0.27508240323708594,
+            "next_stance": -0.08867939729432098,
+            "next_stance_shifted": -0.11255888798009583,
+            "stance_before": -0.08795980209736418,
+            "stance_before_shifted": -0.11306320976818468,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": -0.013452955803993139,
+            "picture_shifted": -0.09815261154639826,
+            "next_stance": 0.007972308691992475,
+            "next_stance_shifted": -0.02979177173029024,
+            "stance_before": 0.007059104640499858,
+            "stance_before_shifted": -0.030215748217550964,
+            "text_only": null
+          },
+          "attention_entropy": {
+            "picture": -0.05567799284204125,
+            "picture_shifted": -0.09217121900786662,
+            "next_stance": -0.0022989899117950297,
+            "next_stance_shifted": -0.023078691432130205,
+            "stance_before": 0.003231516477704477,
+            "stance_before_shifted": -0.014916919875575196,
+            "text_only": -0.057537906151712614
+          },
+          "attention_age": {
+            "picture": -0.011548268629835129,
+            "picture_shifted": -0.038120086007660925,
+            "next_stance": -0.004214120868538562,
+            "next_stance_shifted": -0.009672373235956822,
+            "stance_before": -0.0018494728719991027,
+            "stance_before_shifted": -0.014370524033386678,
+            "text_only": 0.025933990850187466
+          },
+          "surprise_at_token": {
+            "picture": -0.010146588960419228,
+            "picture_shifted": -0.030554147587512626,
+            "next_stance": -0.006600454090532087,
+            "next_stance_shifted": -0.03261142075908946,
+            "stance_before": -0.003836833631843034,
+            "stance_before_shifted": -0.029876304176836288,
+            "text_only": 0.2431368162634085
+          },
+          "next_attention_entropy": {
+            "picture": -0.05875474627935573,
+            "picture_shifted": -0.09126519887461643,
+            "next_stance": 0.002988407582245861,
+            "next_stance_shifted": -0.014777818128337561,
+            "stance_before": -0.004217683567416919,
+            "stance_before_shifted": -0.01281646582372753,
+            "text_only": -0.05024148009107579
+          },
+          "next_attention_age": {
+            "picture": -0.014736710847733647,
+            "picture_shifted": -0.03540594909735861,
+            "next_stance": -0.001785395780297544,
+            "next_stance_shifted": -0.014178475427097104,
+            "stance_before": -0.0007148741035505057,
+            "stance_before_shifted": -0.010235853522107374,
+            "text_only": 0.017190502506480798
+          }
+        },
+        "attention_steering": {
+          "attention_from_text": 0.014376544273716041,
+          "attention_from_text_and_stance": -0.010387481744003668,
+          "attention_from_stance_alone": -0.0016536874281911917,
+          "next_attention_from_next_text": 0.019921451570665882,
+          "next_attention_from_next_text_and_picture": -0.009599031287255089
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.2266182954116032,
+            "grammar_alone": 0.028038188041789508,
+            "grammar_unique": -0.002046324377675879,
+            "indices_alone": 0.1507555994149477,
+            "indices_unique": 0.0538150482603392,
+            "content_alone": -0.29260331138411944,
+            "content_unique": -0.38072494012804525,
+            "attention_alone": 0.0038595711842495106,
+            "attention_unique": 0.007960752435400842,
+            "all_families_shifted": -0.6034640447135877
+          },
+          "picture": {
+            "all_families": 0.03278967494005372,
+            "grammar_alone": 0.03885296711577349,
+            "grammar_unique": -0.0005134231999389949,
+            "indices_alone": 0.2644873671447872,
+            "indices_unique": 0.029890021862544497,
+            "content_alone": -0.002800874856309088,
+            "content_unique": -0.24385411071322036,
+            "attention_alone": 0.0029374820683981673,
+            "attention_unique": 0.00811233984341761,
+            "all_families_shifted": -0.5691233132720347
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.8140116549145663,
+            "between_sentences": 0.14905184114572637,
+            "within_sentences": 0.03693649545311928,
+            "between_genres": 0.21997439782403774,
+            "between_documents_within_genre": 0.5940372570905285
+          },
+          "picture": {
+            "between_documents": 0.749045226277421,
+            "between_sentences": 0.1763652371712959,
+            "within_sentences": 0.07458951324224472,
+            "between_genres": 0.3804865223652376,
+            "between_documents_within_genre": 0.3685587039121834
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.6384948417108197,
+            "between_sentences": 0.30783924860336265,
+            "within_sentences": 0.05366591736674309
+          },
+          "content_window_pcs": {
+            "between_documents": 0.48514834241835175,
+            "between_sentences": 0.3726243848967943,
+            "within_sentences": 0.14222723245620728,
+            "between_genres": 0.1743971818338286,
+            "between_documents_within_genre": 0.3107511605845231
+          }
+        },
+        "rest_states": {
+          "states": 3,
+          "resting_share": 0.7126948775055679,
+          "genre_bits": 0.4779641971035269,
+          "genre_bits_shifted": 0.26893282255800566,
+          "sentence_position_bits": 0.05282219770520413,
+          "sentence_position_bits_shifted": 0.01488914474984826,
+          "state_entropy_bits": 1.3187180178352775,
+          "entry_token_class_bits": 0.2283209286124661,
+          "entry_token_class_bits_shifted": 0.08933928185916251,
+          "jump_rate": 0.0041759465478841875,
+          "jump_lift_by_token_class": {
+            "newline": 0.0,
+            "sent_end": 4.434567901234567,
+            "punct": 0.7626326963906581,
+            "num": 0.0,
+            "func": 1.1158744951848398,
+            "word": 0.8847290640394088,
+            "cont": 0.0
+          }
+        }
+      },
+      {
+        "record": "life",
+        "tokens": 1498,
+        "regime": {
+          "rests": 0.5076769025367156,
+          "big_steps": 0.36014686248331107,
+          "cos_next": 0.9999551773071289,
+          "cos_two_apart": 0.9999812841415405
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.18849501544170033,
+            "picture_shifted": 0.16965724487046263,
+            "next_stance": 0.1613693462169709,
+            "next_stance_shifted": 0.12698846974539768,
+            "stance_before": 0.15867285021602398,
+            "stance_before_shifted": 0.12671500483051584,
+            "text_only": 0.7496465243855437
+          },
+          "class_prev": {
+            "picture": 0.1956690429837757,
+            "picture_shifted": 0.17498964126159083,
+            "next_stance": 0.16514550896091268,
+            "next_stance_shifted": 0.11844134958914718,
+            "stance_before": 0.16165614975461878,
+            "stance_before_shifted": 0.12689898475065625,
+            "text_only": 0.5297416291085746
+          },
+          "sentence_position": {
+            "picture": -0.12451415702231594,
+            "picture_shifted": -0.09356701638276899,
+            "next_stance": -0.0748935638528776,
+            "next_stance_shifted": -0.03788311910219089,
+            "stance_before": -0.07864855361267106,
+            "stance_before_shifted": -0.041387668480205364,
+            "text_only": 0.41195907299741286
+          },
+          "line_position": {
+            "picture": 0.26759751687508215,
+            "picture_shifted": -0.3756920116731838,
+            "next_stance": 0.08951877350297596,
+            "next_stance_shifted": -0.2814093536339648,
+            "stance_before": 0.08666325316583123,
+            "stance_before_shifted": -0.2791773306508871,
+            "text_only": 0.614674560254418
+          },
+          "document_position": {
+            "picture": -0.1724208237403521,
+            "picture_shifted": -0.15040005442584592,
+            "next_stance": -0.009958177103982807,
+            "next_stance_shifted": -0.08318681403687561,
+            "stance_before": -0.009977936701850265,
+            "stance_before_shifted": -0.0820128306564491,
+            "text_only": 0.4111338556413763
+          },
+          "in_quote": {
+            "picture": 0.5027237869979426,
+            "picture_shifted": 0.39412061271389787,
+            "next_stance": 0.3963776440025831,
+            "next_stance_shifted": 0.38414280081843516,
+            "stance_before": 0.3964223825069224,
+            "stance_before_shifted": 0.3863513789882143,
+            "text_only": 0.7573763199936172
+          },
+          "genre": {
+            "picture": 0.38334927443599975,
+            "picture_shifted": 0.12811471140890915,
+            "next_stance": 0.36410543010436097,
+            "next_stance_shifted": 0.04069588806610474,
+            "stance_before": 0.36325498320304783,
+            "stance_before_shifted": 0.03844974027451254,
+            "text_only": 0.9241240565708762
+          },
+          "content_window_pcs": {
+            "picture": -0.20741045596403795,
+            "picture_shifted": -0.32426240840145265,
+            "next_stance": -0.04055765484699567,
+            "next_stance_shifted": -0.11958153406076127,
+            "stance_before": -0.04151767220458141,
+            "stance_before_shifted": -0.11987971971957184,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": -0.028414421756058905,
+            "picture_shifted": -0.15970008398104296,
+            "next_stance": -0.01657060507584976,
+            "next_stance_shifted": -0.04632664976264772,
+            "stance_before": -0.017768641905062083,
+            "stance_before_shifted": -0.04669991864698303,
+            "text_only": null
+          },
+          "run_position": {
+            "picture": 0.8498956344087794,
+            "picture_shifted": 0.5571301332729568,
+            "next_stance": 0.23806042088122442,
+            "next_stance_shifted": 0.16156439974031211,
+            "stance_before": 0.23883109506661598,
+            "stance_before_shifted": 0.15920759310720417,
+            "text_only": -0.38284454472795104
+          }
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.12960510238760095,
+            "grammar_alone": -0.0035965420759177247,
+            "grammar_unique": -0.012589644679776052,
+            "indices_alone": -0.005290711092284767,
+            "indices_unique": -0.02393065536013056,
+            "content_alone": -0.08416585944191171,
+            "content_unique": -0.1351174194736893,
+            "all_families_shifted": 0.07818178675824963
+          },
+          "picture": {
+            "all_families": 0.425201455594615,
+            "grammar_alone": 0.05890208789604154,
+            "grammar_unique": -0.007657312767553992,
+            "indices_alone": 0.293204740198107,
+            "indices_unique": 0.006059673338205673,
+            "content_alone": 0.4305627166210212,
+            "content_unique": 0.09766260077647793,
+            "all_families_shifted": -0.1439271478829834
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.4756462457695133,
+            "between_sentences": 0.120819269242598,
+            "within_sentences": 0.40353459119796753,
+            "between_genres": 0.08988061589955577,
+            "between_documents_within_genre": 0.38576562986995755
+          },
+          "picture": {
+            "between_documents": 0.6945971742927838,
+            "between_sentences": 0.1353036676245238,
+            "within_sentences": 0.170099139213562,
+            "between_genres": 0.49523200440812454,
+            "between_documents_within_genre": 0.19936516988465924
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.42635204052137754,
+            "between_sentences": 0.18096065370283906,
+            "within_sentences": 0.39268746972084045
+          },
+          "content_window_pcs": {
+            "between_documents": 0.4357805577928293,
+            "between_sentences": 0.43822275144718564,
+            "within_sentences": 0.12599675357341766,
+            "between_genres": 0.23472435991654148,
+            "between_documents_within_genre": 0.20105619787628784
+          }
+        },
+        "rest_states": {
+          "states": 5,
+          "resting_share": 0.42690253671562084,
+          "genre_bits": 0.30677178376491554,
+          "genre_bits_shifted": 0.3680198130270109,
+          "sentence_position_bits": 0.018714060685756984,
+          "sentence_position_bits_shifted": 0.020493126414604657,
+          "state_entropy_bits": 1.3471645273690855,
+          "entry_token_class_bits": 0.14764205153690968,
+          "entry_token_class_bits_shifted": 0.13210465661300308,
+          "jump_rate": 0.36014686248331107,
+          "jump_lift_by_token_class": {
+            "newline": 2.0068820598463923,
+            "sent_end": 0.8141397498827219,
+            "punct": 1.12247352749788,
+            "num": 0.4828947898617883,
+            "func": 1.1920301335855585,
+            "word": 0.8611175538320247,
+            "cont": 0.9486047117569649
+          }
+        }
+      }
+    ]
+  },
+  {
+    "life": "rich_s1s1_nospot",
+    "model": "Qwen/Qwen3-0.6B",
+    "arm": "itself",
+    "picture": "sphere",
+    "route": "operation",
+    "identity": "dynamics",
+    "div_scale": 0.0,
+    "records": [
+      {
+        "record": "ref",
+        "tokens": 898,
+        "regime": {
+          "rests": 0.6656458797327395,
+          "big_steps": 0.19961024498886415,
+          "cos_next": 0.9999971985816956,
+          "cos_two_apart": 0.9999943971633911
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.21784276699407093,
+            "picture_shifted": 0.1473973106584861,
+            "next_stance": 0.15688462040456477,
+            "next_stance_shifted": 0.14872514366823839,
+            "stance_before": 0.16724502377219874,
+            "stance_before_shifted": 0.14819788239006826,
+            "text_only": 0.7321729916589648
+          },
+          "class_prev": {
+            "picture": 0.21148754834346017,
+            "picture_shifted": 0.15885229885358665,
+            "next_stance": 0.16702540041901393,
+            "next_stance_shifted": 0.1369148846049326,
+            "stance_before": 0.15709975166093798,
+            "stance_before_shifted": 0.14898753433879233,
+            "text_only": 0.5046938270669497
+          },
+          "sentence_position": {
+            "picture": 0.019010284599378147,
+            "picture_shifted": -0.07054143277720162,
+            "next_stance": 0.01815242086559593,
+            "next_stance_shifted": 0.03512165225068947,
+            "stance_before": 0.029747460754562888,
+            "stance_before_shifted": 0.03675518111035672,
+            "text_only": 0.3315148809748969
+          },
+          "line_position": {
+            "picture": 0.3000729695646871,
+            "picture_shifted": -0.06259930382203305,
+            "next_stance": 0.3200533274984655,
+            "next_stance_shifted": 0.10486830979850484,
+            "stance_before": 0.3216364018853235,
+            "stance_before_shifted": 0.09934516007790398,
+            "text_only": 0.31997212206326175
+          },
+          "document_position": {
+            "picture": -0.039080340621876875,
+            "picture_shifted": -0.0669808840198669,
+            "next_stance": 0.039644596124949805,
+            "next_stance_shifted": 0.03204502907368062,
+            "stance_before": 0.041607908882385525,
+            "stance_before_shifted": 0.030286333106069513,
+            "text_only": 0.22163811612863507
+          },
+          "in_quote": {
+            "picture": 0.6459793158517411,
+            "picture_shifted": 0.46735413957226823,
+            "next_stance": 0.4969948758243181,
+            "next_stance_shifted": 0.4482755132923958,
+            "stance_before": 0.4985190740414662,
+            "stance_before_shifted": 0.44230626161289216,
+            "text_only": 0.6086605521908008
+          },
+          "genre": {
+            "picture": 0.5642985938942099,
+            "picture_shifted": 0.27946485845272145,
+            "next_stance": 0.34728175959405444,
+            "next_stance_shifted": 0.3141699144071221,
+            "stance_before": 0.3464735511782847,
+            "stance_before_shifted": 0.3162449413612301,
+            "text_only": 0.8437658490460662
+          },
+          "content_window_pcs": {
+            "picture": -0.2641628384279716,
+            "picture_shifted": -0.35056096274073606,
+            "next_stance": -0.09314030253359434,
+            "next_stance_shifted": -0.09944802531543057,
+            "stance_before": -0.09263333754172703,
+            "stance_before_shifted": -0.09927230564627992,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": -0.019048275757944405,
+            "picture_shifted": -0.09198369206946094,
+            "next_stance": 0.004885817160914935,
+            "next_stance_shifted": -0.0032976671154325565,
+            "stance_before": 0.005584195164536954,
+            "stance_before_shifted": -0.004430012030800956,
+            "text_only": null
+          },
+          "attention_entropy": {
+            "picture": -0.1418727595227362,
+            "picture_shifted": -0.2329961047613186,
+            "next_stance": 0.10700466399425318,
+            "next_stance_shifted": -0.03246162301733854,
+            "stance_before": 0.11164501400264173,
+            "stance_before_shifted": -0.028630915252934708,
+            "text_only": -0.07378240303088673
+          },
+          "attention_age": {
+            "picture": -0.03614835043004333,
+            "picture_shifted": -0.022800251699176183,
+            "next_stance": -0.009595767875110961,
+            "next_stance_shifted": -0.005652092538355247,
+            "stance_before": -0.013667667296549557,
+            "stance_before_shifted": -6.924054575535576e-05,
+            "text_only": 0.12714508836627658
+          },
+          "surprise_at_token": {
+            "picture": -0.006008360768232801,
+            "picture_shifted": -0.012782302536916257,
+            "next_stance": -0.0025931086250774726,
+            "next_stance_shifted": -0.010067309561428178,
+            "stance_before": 6.320754193986367e-05,
+            "stance_before_shifted": -0.012846385299664864,
+            "text_only": 0.23566906882167848
+          },
+          "next_attention_entropy": {
+            "picture": -0.14502760152241675,
+            "picture_shifted": -0.23914767119290703,
+            "next_stance": 0.11233019224475538,
+            "next_stance_shifted": -0.02918938193810605,
+            "stance_before": 0.10613610495282075,
+            "stance_before_shifted": -0.030356683172200194,
+            "text_only": -0.0847362800259997
+          },
+          "next_attention_age": {
+            "picture": -0.02531006178028536,
+            "picture_shifted": -0.016567075384008423,
+            "next_stance": -0.013526912059157015,
+            "next_stance_shifted": -6.820606208113311e-05,
+            "stance_before": -0.007818046711662308,
+            "stance_before_shifted": -0.0022867231557786305,
+            "text_only": 0.1262863444561668
+          }
+        },
+        "attention_steering": {
+          "attention_from_text": 0.13617051564057495,
+          "attention_from_text_and_stance": 0.10293283418504781,
+          "attention_from_stance_alone": -0.011902561465149675,
+          "next_attention_from_next_text": 0.12788080979273841,
+          "next_attention_from_next_text_and_picture": 0.0513453789797263
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -1.0935166663882654,
+            "grammar_alone": -0.03416054835732779,
+            "grammar_unique": -0.010264210570473997,
+            "indices_alone": -0.01419160066479136,
+            "indices_unique": 0.03075182906997731,
+            "content_alone": -1.392249641754171,
+            "content_unique": -1.0853215961488825,
+            "attention_alone": 0.0420023104456933,
+            "attention_unique": 0.2053475995168863,
+            "all_families_shifted": -0.9229298717984733
+          },
+          "picture": {
+            "all_families": -0.09958245715549738,
+            "grammar_alone": 0.004637453059627594,
+            "grammar_unique": -9.820521758824308e-05,
+            "indices_alone": 0.25333156173837695,
+            "indices_unique": 0.0025009872802680966,
+            "content_alone": -0.2319104494695082,
+            "content_unique": -0.36279422278491047,
+            "attention_alone": 0.027783067058134686,
+            "attention_unique": 0.11461311354211998,
+            "all_families_shifted": -0.7993145907727324
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.6260932373444468,
+            "between_sentences": 0.1497468816276563,
+            "within_sentences": 0.22415997087955475,
+            "between_genres": 0.07603821455364289,
+            "between_documents_within_genre": 0.5500550227908039
+          },
+          "picture": {
+            "between_documents": 0.7388274243696266,
+            "between_sentences": 0.13583088486166423,
+            "within_sentences": 0.12534163892269135,
+            "between_genres": 0.47913856295484025,
+            "between_documents_within_genre": 0.25968886141478625
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.5505097503409637,
+            "between_sentences": 0.20501993272981406,
+            "within_sentences": 0.24447037279605865
+          },
+          "content_window_pcs": {
+            "between_documents": 0.48514834241835175,
+            "between_sentences": 0.3726243848967943,
+            "within_sentences": 0.14222723245620728,
+            "between_genres": 0.1743971818338286,
+            "between_documents_within_genre": 0.3107511605845231
+          }
+        },
+        "rest_states": {
+          "states": 2,
+          "resting_share": 0.589086859688196,
+          "genre_bits": 0.08103184583267353,
+          "genre_bits_shifted": 0.03184037532051631,
+          "sentence_position_bits": 0.0008414813883437233,
+          "sentence_position_bits_shifted": 0.0010530418042300482,
+          "state_entropy_bits": 0.9593399207080985,
+          "entry_token_class_bits": 0.09905098891405517,
+          "entry_token_class_bits_shifted": 0.028976771274442203,
+          "jump_rate": 0.19961024498886415,
+          "jump_lift_by_token_class": {
+            "newline": 3.339841933984193,
+            "sent_end": 0.9895827952545757,
+            "punct": 0.7339143103341061,
+            "num": 0.10890788915165847,
+            "func": 1.2792870781616994,
+            "word": 0.9994847166972401,
+            "cont": 0.3944695197619126
+          }
+        }
+      },
+      {
+        "record": "life",
+        "tokens": 1498,
+        "regime": {
+          "rests": 0.5031708945260347,
+          "big_steps": 0.39052069425901204,
+          "cos_next": 0.9999531507492065,
+          "cos_two_apart": 0.9999880790710449
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.24971505980097625,
+            "picture_shifted": 0.14456329029598253,
+            "next_stance": 0.1548339545119771,
+            "next_stance_shifted": 0.17746071248058237,
+            "stance_before": 0.1576338737565443,
+            "stance_before_shifted": 0.1785535445354864,
+            "text_only": 0.7496465243855437
+          },
+          "class_prev": {
+            "picture": 0.2455122703826912,
+            "picture_shifted": 0.13929713051329567,
+            "next_stance": 0.15288304299204525,
+            "next_stance_shifted": 0.18143305217828998,
+            "stance_before": 0.15355595323928542,
+            "stance_before_shifted": 0.1773339295681835,
+            "text_only": 0.5297416291085746
+          },
+          "sentence_position": {
+            "picture": 0.024021807202740664,
+            "picture_shifted": -0.1985068610210402,
+            "next_stance": -0.016386824265929384,
+            "next_stance_shifted": -0.08325222570726099,
+            "stance_before": -0.01521779691763589,
+            "stance_before_shifted": -0.08354782057934401,
+            "text_only": 0.41195907299741286
+          },
+          "line_position": {
+            "picture": 0.405897069155389,
+            "picture_shifted": -0.29263522262667,
+            "next_stance": 0.27734479160942993,
+            "next_stance_shifted": -0.21346597888327706,
+            "stance_before": 0.27287452267799395,
+            "stance_before_shifted": -0.21532137293745385,
+            "text_only": 0.614674560254418
+          },
+          "document_position": {
+            "picture": -0.08904257796672077,
+            "picture_shifted": -0.13162664853776102,
+            "next_stance": 0.02117670990584128,
+            "next_stance_shifted": -0.02501093130873744,
+            "stance_before": 0.022615455533720186,
+            "stance_before_shifted": -0.02542494937406431,
+            "text_only": 0.4111338556413763
+          },
+          "in_quote": {
+            "picture": 0.497205324452821,
+            "picture_shifted": 0.40705658674518186,
+            "next_stance": 0.37465518632311867,
+            "next_stance_shifted": 0.37195421763795183,
+            "stance_before": 0.3765783776312263,
+            "stance_before_shifted": 0.3660386958895358,
+            "text_only": 0.7573763199936172
+          },
+          "genre": {
+            "picture": 0.5199343513405382,
+            "picture_shifted": 0.13233684241782553,
+            "next_stance": 0.46999603064590195,
+            "next_stance_shifted": 0.11863467329206939,
+            "stance_before": 0.4691346801413178,
+            "stance_before_shifted": 0.11729349016016946,
+            "text_only": 0.9241240565708762
+          },
+          "content_window_pcs": {
+            "picture": -0.0839446315398501,
+            "picture_shifted": -0.26494124528600027,
+            "next_stance": -0.032424635585530215,
+            "next_stance_shifted": -0.08946883709699954,
+            "stance_before": -0.03257350598060468,
+            "stance_before_shifted": -0.09005771626032205,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": 0.018945654394406153,
+            "picture_shifted": -0.11335598436125888,
+            "next_stance": 0.006113266390538358,
+            "next_stance_shifted": -0.03585364526228685,
+            "stance_before": 0.005073441218977098,
+            "stance_before_shifted": -0.03453524137635677,
+            "text_only": null
+          },
+          "run_position": {
+            "picture": 0.861735954779574,
+            "picture_shifted": 0.3233836250980039,
+            "next_stance": 0.6865848522429288,
+            "next_stance_shifted": 0.2607315639207989,
+            "stance_before": 0.687196780102402,
+            "stance_before_shifted": 0.2623176665660148,
+            "text_only": -0.38284454472795104
+          }
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.00832717481266182,
+            "grammar_alone": -0.013416639609753173,
+            "grammar_unique": 0.00364424411965128,
+            "indices_alone": -0.012610103435507308,
+            "indices_unique": -0.028629961383881575,
+            "content_alone": 0.022738808635489827,
+            "content_unique": 0.006050531576429208,
+            "all_families_shifted": -0.4510401124378158
+          },
+          "picture": {
+            "all_families": 0.5878321942122271,
+            "grammar_alone": 0.07305411447101426,
+            "grammar_unique": 0.004352737386405847,
+            "indices_alone": 0.3517010007668301,
+            "indices_unique": -0.015227017897492923,
+            "content_alone": 0.603579299496702,
+            "content_unique": 0.20284855869163582,
+            "all_families_shifted": -0.29080355711023914
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.4100486549979151,
+            "between_sentences": 0.11816486520456966,
+            "within_sentences": 0.4717864692211151,
+            "between_genres": 0.17737893357891538,
+            "between_documents_within_genre": 0.23266972141899975
+          },
+          "picture": {
+            "between_documents": 0.7398168188368867,
+            "between_sentences": 0.09472258620754782,
+            "within_sentences": 0.1654607057571411,
+            "between_genres": 0.6421324583761222,
+            "between_documents_within_genre": 0.0976843604607645
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.3241733781932675,
+            "between_sentences": 0.1992726954817579,
+            "within_sentences": 0.4765539765357971
+          },
+          "content_window_pcs": {
+            "between_documents": 0.4357805577928293,
+            "between_sentences": 0.43822275144718564,
+            "within_sentences": 0.12599675357341766,
+            "between_genres": 0.23472435991654148,
+            "between_documents_within_genre": 0.20105619787628784
+          }
+        },
+        "rest_states": {
+          "states": 3,
+          "resting_share": 0.43775033377837114,
+          "genre_bits": 0.2083642979741429,
+          "genre_bits_shifted": 0.12195917838379255,
+          "sentence_position_bits": 0.0225719107904796,
+          "sentence_position_bits_shifted": 0.008060484735506357,
+          "state_entropy_bits": 0.6726346702122821,
+          "entry_token_class_bits": 0.05414877939414353,
+          "entry_token_class_bits_shifted": 0.024255366716122495,
+          "jump_rate": 0.39052069425901204,
+          "jump_lift_by_token_class": {
+            "newline": 2.0029110603368028,
+            "sent_end": 0.9246913580246913,
+            "punct": 1.0011183851609382,
+            "num": 0.3340022296544035,
+            "func": 1.2217555423725088,
+            "word": 0.8672277407397491,
+            "cont": 0.7654713021261063
+          }
+        }
+      }
+    ]
+  },
+  {
+    "life": "dev_s0_seed0_spot",
+    "model": "Qwen/Qwen3-0.6B",
+    "arm": "itself",
+    "picture": "sphere",
+    "route": "operation",
+    "identity": "dynamics",
+    "div_scale": 0.0,
+    "records": [
+      {
+        "record": "ref",
+        "tokens": 898,
+        "regime": {
+          "rests": 0.7023942093541202,
+          "big_steps": 0.1987750556792873,
+          "cos_next": 0.9999974370002747,
+          "cos_two_apart": 0.9999951124191284
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.2681985777974595,
+            "picture_shifted": 0.15781692993506852,
+            "next_stance": 0.20255842459764972,
+            "next_stance_shifted": 0.14926097793593635,
+            "stance_before": 0.18172788004892512,
+            "stance_before_shifted": 0.14538086547179,
+            "text_only": 0.7321729916589648
+          },
+          "class_prev": {
+            "picture": 0.25870603795490865,
+            "picture_shifted": 0.14073087336996748,
+            "next_stance": 0.19034521933423457,
+            "next_stance_shifted": 0.18696416365589297,
+            "stance_before": 0.21269050083894597,
+            "stance_before_shifted": 0.14800937560008676,
+            "text_only": 0.5046938270669497
+          },
+          "sentence_position": {
+            "picture": -0.24050917719392126,
+            "picture_shifted": -0.14823889718254607,
+            "next_stance": 0.02345888363792109,
+            "next_stance_shifted": -0.07332708194707738,
+            "stance_before": 0.02641395118012238,
+            "stance_before_shifted": -0.07978846772546744,
+            "text_only": 0.3315148809748969
+          },
+          "line_position": {
+            "picture": 0.3764952033766205,
+            "picture_shifted": -0.5302053115705578,
+            "next_stance": 0.3274937377646866,
+            "next_stance_shifted": -0.29581983997946726,
+            "stance_before": 0.33154451808315516,
+            "stance_before_shifted": -0.2903268817163469,
+            "text_only": 0.31997212206326175
+          },
+          "document_position": {
+            "picture": 0.054774969878653906,
+            "picture_shifted": -0.21043999570390842,
+            "next_stance": 0.03369541858690811,
+            "next_stance_shifted": -0.046223853138212506,
+            "stance_before": 0.03380534389825793,
+            "stance_before_shifted": -0.03694589638753515,
+            "text_only": 0.22163811612863507
+          },
+          "in_quote": {
+            "picture": 0.5743236195770725,
+            "picture_shifted": 0.48735919707102787,
+            "next_stance": 0.6007101210674503,
+            "next_stance_shifted": 0.5571318243566092,
+            "stance_before": 0.6451815371100186,
+            "stance_before_shifted": 0.5403482442210151,
+            "text_only": 0.6086605521908008
+          },
+          "genre": {
+            "picture": 0.6494607125131566,
+            "picture_shifted": 0.11512930530631188,
+            "next_stance": 0.3417361931897098,
+            "next_stance_shifted": 0.015257617874751387,
+            "stance_before": 0.33998730519719444,
+            "stance_before_shifted": 0.01622386769192266,
+            "text_only": 0.8437658490460662
+          },
+          "content_window_pcs": {
+            "picture": -0.1428934600787703,
+            "picture_shifted": -0.34773772676309134,
+            "next_stance": -0.07210717472753736,
+            "next_stance_shifted": -0.16134300088166215,
+            "stance_before": -0.07143109451004148,
+            "stance_before_shifted": -0.1612895895154216,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": -9.115934488940214e-05,
+            "picture_shifted": -0.113124002720354,
+            "next_stance": 0.025772153445289908,
+            "next_stance_shifted": -0.056039507490297236,
+            "stance_before": 0.024534511465784475,
+            "stance_before_shifted": -0.055059872032316715,
+            "text_only": null
+          },
+          "attention_entropy": {
+            "picture": 0.23456296547815425,
+            "picture_shifted": -0.13752580255016822,
+            "next_stance": 0.1731944788712367,
+            "next_stance_shifted": -0.05213148539088816,
+            "stance_before": 0.21433126174416056,
+            "stance_before_shifted": -0.05900276561537063,
+            "text_only": 0.07760845567759736
+          },
+          "attention_age": {
+            "picture": -0.00795585399993129,
+            "picture_shifted": -0.04988139014074899,
+            "next_stance": -0.0015945836400850233,
+            "next_stance_shifted": -0.008766294258076068,
+            "stance_before": -0.002553242142141282,
+            "stance_before_shifted": -0.02030309915230699,
+            "text_only": 0.017186519990527588
+          },
+          "surprise_at_token": {
+            "picture": -0.011178285514715391,
+            "picture_shifted": -0.021296332277650543,
+            "next_stance": -0.0032986435189674146,
+            "next_stance_shifted": -0.006421284263780469,
+            "stance_before": 0.0013822951682217754,
+            "stance_before_shifted": -0.003971908125525031,
+            "text_only": 0.23677086923620555
+          },
+          "next_attention_entropy": {
+            "picture": 0.25499735828393916,
+            "picture_shifted": -0.17729641293951748,
+            "next_stance": 0.21388885536896582,
+            "next_stance_shifted": -0.06080251179228541,
+            "stance_before": 0.15806329112009349,
+            "stance_before_shifted": -0.05788506973176086,
+            "text_only": 0.08805288998299007
+          },
+          "next_attention_age": {
+            "picture": -0.017817115043336468,
+            "picture_shifted": -0.05687191042071671,
+            "next_stance": -0.002381595207469306,
+            "next_stance_shifted": -0.019449786513949963,
+            "stance_before": -0.002869490890481885,
+            "stance_before_shifted": -0.024902073890962717,
+            "text_only": 0.01418541423967154
+          }
+        },
+        "attention_steering": {
+          "attention_from_text": 0.019873288351162643,
+          "attention_from_text_and_stance": 0.007976984039815477,
+          "attention_from_stance_alone": 0.0001576861891111614,
+          "next_attention_from_next_text": 0.023810213685805742,
+          "next_attention_from_next_text_and_picture": -0.01644226056380993
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": 0.05280441095787239,
+            "grammar_alone": 0.015506565019779539,
+            "grammar_unique": 0.0030985735543232196,
+            "indices_alone": -0.03470966963295252,
+            "indices_unique": 0.03922975886495908,
+            "content_alone": 0.011878298388654396,
+            "content_unique": 0.08014008622293087,
+            "attention_alone": -0.04584141550746057,
+            "attention_unique": 0.012134712369372996,
+            "all_families_shifted": -0.21278934745876707
+          },
+          "picture": {
+            "all_families": 0.5089849082305379,
+            "grammar_alone": 0.042097558050573025,
+            "grammar_unique": -0.007345669884419093,
+            "indices_alone": 0.2331160441896673,
+            "indices_unique": 0.022975928009975055,
+            "content_alone": 0.45696957569531005,
+            "content_unique": 0.1895238368353953,
+            "attention_alone": 0.036344195400799195,
+            "attention_unique": 0.036151079419659005,
+            "all_families_shifted": -0.4682549382471202
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.6889748301175395,
+            "between_sentences": 0.08289376742773516,
+            "within_sentences": 0.22813129425048828,
+            "between_genres": 0.10340159446012945,
+            "between_documents_within_genre": 0.58557323565741
+          },
+          "picture": {
+            "between_documents": 0.7424869753092794,
+            "between_sentences": 0.11944645469818278,
+            "within_sentences": 0.13806651532649994,
+            "between_genres": 0.45689614252388816,
+            "between_documents_within_genre": 0.2855908327853913
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.6048075964983396,
+            "between_sentences": 0.15562315320807601,
+            "within_sentences": 0.23956920206546783
+          },
+          "content_window_pcs": {
+            "between_documents": 0.48514834241835175,
+            "between_sentences": 0.3726243848967943,
+            "within_sentences": 0.14222723245620728,
+            "between_genres": 0.1743971818338286,
+            "between_documents_within_genre": 0.3107511605845231
+          }
+        },
+        "rest_states": {
+          "states": 2,
+          "resting_share": 0.6817928730512249,
+          "genre_bits": 0.12580299536133976,
+          "genre_bits_shifted": 0.14196841247246894,
+          "sentence_position_bits": 0.01049181345010286,
+          "sentence_position_bits_shifted": 0.006468301988238778,
+          "state_entropy_bits": 0.9937935641982959,
+          "entry_token_class_bits": 0.45037799930068667,
+          "entry_token_class_bits_shifted": 0.010269677751997275,
+          "jump_rate": 0.1987750556792873,
+          "jump_lift_by_token_class": {
+            "newline": 3.540201265691462,
+            "sent_end": 1.0247951032264757,
+            "punct": 0.6889328979999644,
+            "num": 0.0,
+            "func": 1.294039330550487,
+            "word": 0.9943908597921928,
+            "cont": 0.435739650190785
+          }
+        }
+      },
+      {
+        "record": "life",
+        "tokens": 1498,
+        "regime": {
+          "rests": 0.47096128170894525,
+          "big_steps": 0.4265687583444593,
+          "cos_next": 0.9999059438705444,
+          "cos_two_apart": 0.9999825358390808
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.229285681846843,
+            "picture_shifted": 0.19494985738329806,
+            "next_stance": 0.15873190323436126,
+            "next_stance_shifted": 0.1483134433303066,
+            "stance_before": 0.17060323981298361,
+            "stance_before_shifted": 0.1387158098814303,
+            "text_only": 0.7496465243855437
+          },
+          "class_prev": {
+            "picture": 0.2225947463280079,
+            "picture_shifted": 0.16270696087158112,
+            "next_stance": 0.16856286991025662,
+            "next_stance_shifted": 0.12613029552118732,
+            "stance_before": 0.15755559354305454,
+            "stance_before_shifted": 0.14995032447243828,
+            "text_only": 0.5297416291085746
+          },
+          "sentence_position": {
+            "picture": -0.08178498908415846,
+            "picture_shifted": -0.09799587370931523,
+            "next_stance": -0.05651061785418307,
+            "next_stance_shifted": -0.038506503280974214,
+            "stance_before": -0.05486667866097353,
+            "stance_before_shifted": -0.037955882313144174,
+            "text_only": 0.41195907299741286
+          },
+          "line_position": {
+            "picture": 0.3857780795776923,
+            "picture_shifted": -0.15922920659075734,
+            "next_stance": 0.04089991442143945,
+            "next_stance_shifted": -0.053922042153849575,
+            "stance_before": 0.03928056884101769,
+            "stance_before_shifted": -0.05605078429220561,
+            "text_only": 0.614674560254418
+          },
+          "document_position": {
+            "picture": -0.045622361878531886,
+            "picture_shifted": -0.035608362735227106,
+            "next_stance": -0.03167680035109516,
+            "next_stance_shifted": 0.020680127049095887,
+            "stance_before": -0.02991238897917392,
+            "stance_before_shifted": 0.018462656136868344,
+            "text_only": 0.4111338556413763
+          },
+          "in_quote": {
+            "picture": 0.4606876561531364,
+            "picture_shifted": 0.56118520226403,
+            "next_stance": 0.44446880231001407,
+            "next_stance_shifted": 0.6150485199996284,
+            "stance_before": 0.44174578926844826,
+            "stance_before_shifted": 0.5980758036710041,
+            "text_only": 0.7573763199936172
+          },
+          "genre": {
+            "picture": 0.42202839486872656,
+            "picture_shifted": 0.1726602568152244,
+            "next_stance": 0.22264000021734137,
+            "next_stance_shifted": 0.16340122633033952,
+            "stance_before": 0.2243639198320182,
+            "stance_before_shifted": 0.1637731271866874,
+            "text_only": 0.9241240565708762
+          },
+          "content_window_pcs": {
+            "picture": -0.10450635918245321,
+            "picture_shifted": -0.2551080190407159,
+            "next_stance": -0.07111387089490334,
+            "next_stance_shifted": -0.06298613261131442,
+            "stance_before": -0.07078550527734107,
+            "stance_before_shifted": -0.06264151427404463,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": 0.00014447982486223698,
+            "picture_shifted": -0.10815191390640916,
+            "next_stance": -0.017347221187124034,
+            "next_stance_shifted": -0.026849614468836214,
+            "stance_before": -0.017722969049891346,
+            "stance_before_shifted": -0.02639639971072194,
+            "text_only": null
+          },
+          "run_position": {
+            "picture": 0.7829730223469868,
+            "picture_shifted": 0.5369924059475246,
+            "next_stance": -0.015563903310262778,
+            "next_stance_shifted": -0.09678569663260395,
+            "stance_before": -0.016076748294315962,
+            "stance_before_shifted": -0.09646424674217355,
+            "text_only": -0.38284454472795104
+          }
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.4753898443559946,
+            "grammar_alone": -0.029650623462611908,
+            "grammar_unique": -0.016584928668160415,
+            "indices_alone": -0.05954170939033132,
+            "indices_unique": -0.1881263745918656,
+            "content_alone": -0.2768452027208794,
+            "content_unique": -0.3844008029006142,
+            "all_families_shifted": -0.19499674233629116
+          },
+          "picture": {
+            "all_families": 0.3374249886834201,
+            "grammar_alone": 0.05183696741612076,
+            "grammar_unique": -0.016996959690258273,
+            "indices_alone": 0.30183297694312405,
+            "indices_unique": -0.06798695992848208,
+            "content_alone": 0.41404271823661526,
+            "content_unique": 0.0255981321192289,
+            "all_families_shifted": -0.25607653351654913
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.39812375742195005,
+            "between_sentences": 0.12893868354883045,
+            "within_sentences": 0.47293737530708313,
+            "between_genres": 0.03557645972698088,
+            "between_documents_within_genre": 0.3625472976949692
+          },
+          "picture": {
+            "between_documents": 0.6953449685852433,
+            "between_sentences": 0.11954144740910075,
+            "within_sentences": 0.18511362373828888,
+            "between_genres": 0.5165965307554069,
+            "between_documents_within_genre": 0.17874843782983632
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.37719490436237235,
+            "between_sentences": 0.17960142127067844,
+            "within_sentences": 0.4432036578655243
+          },
+          "content_window_pcs": {
+            "between_documents": 0.4357805577928293,
+            "between_sentences": 0.43822275144718564,
+            "within_sentences": 0.12599675357341766,
+            "between_genres": 0.23472435991654148,
+            "between_documents_within_genre": 0.20105619787628784
+          }
+        },
+        "rest_states": {
+          "states": 2,
+          "resting_share": 0.44576101468624835,
+          "genre_bits": 0.06776698240293566,
+          "genre_bits_shifted": 0.2478217959684823,
+          "sentence_position_bits": 0.008945795793612543,
+          "sentence_position_bits_shifted": 0.02856665170591377,
+          "state_entropy_bits": 0.9987538572378509,
+          "entry_token_class_bits": 0.07859694728403976,
+          "entry_token_class_bits_shifted": 0.04943577144218958,
+          "jump_rate": 0.4265687583444593,
+          "jump_lift_by_token_class": {
+            "newline": 1.9729156014192968,
+            "sent_end": 0.8899611661739988,
+            "punct": 1.05991742416675,
+            "num": 0.4077022521603048,
+            "func": 1.195647118931814,
+            "word": 0.8739061588465705,
+            "cont": 0.8259235126058844
+          }
+        }
+      }
+    ]
+  },
+  {
+    "life": "dev_s0_seed2_spot",
+    "model": "Qwen/Qwen3-0.6B",
+    "arm": "itself",
+    "picture": "sphere",
+    "route": "operation",
+    "identity": "dynamics",
+    "div_scale": 0.0,
+    "records": [
+      {
+        "record": "ref",
+        "tokens": 898,
+        "regime": {
+          "rests": 0.6322383073496659,
+          "big_steps": 0.2591870824053452,
+          "cos_next": 0.9999929070472717,
+          "cos_two_apart": 0.999995231628418
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.19748300373160094,
+            "picture_shifted": 0.10354309070953752,
+            "next_stance": 0.18041824609263893,
+            "next_stance_shifted": 0.10164460781220336,
+            "stance_before": 0.17610013064382585,
+            "stance_before_shifted": 0.11778088645176642,
+            "text_only": 0.7321729916589648
+          },
+          "class_prev": {
+            "picture": 0.21869861945261077,
+            "picture_shifted": 0.10420336137197886,
+            "next_stance": 0.19364372011406533,
+            "next_stance_shifted": 0.13507449327650342,
+            "stance_before": 0.18071815443364736,
+            "stance_before_shifted": 0.10126627854967284,
+            "text_only": 0.5046938270669497
+          },
+          "sentence_position": {
+            "picture": -0.02896867714419321,
+            "picture_shifted": -0.06213971040404484,
+            "next_stance": -0.019003675456636004,
+            "next_stance_shifted": -0.01378932749536449,
+            "stance_before": -0.021704558199871105,
+            "stance_before_shifted": -0.009395242493338146,
+            "text_only": 0.3315148809748969
+          },
+          "line_position": {
+            "picture": 0.2914699375654538,
+            "picture_shifted": -0.33338297628012864,
+            "next_stance": 0.17396102585927473,
+            "next_stance_shifted": -0.1478848418361146,
+            "stance_before": 0.182725468943731,
+            "stance_before_shifted": -0.15626785140412836,
+            "text_only": 0.31997212206326175
+          },
+          "document_position": {
+            "picture": 0.014950604080923274,
+            "picture_shifted": -0.1489715754079085,
+            "next_stance": 0.002376385765540251,
+            "next_stance_shifted": -0.05350937490161656,
+            "stance_before": 0.009736817738375508,
+            "stance_before_shifted": -0.0528326257180049,
+            "text_only": 0.22163811612863507
+          },
+          "in_quote": {
+            "picture": 0.48162227219704895,
+            "picture_shifted": 0.4386419232731788,
+            "next_stance": 0.6298053955026083,
+            "next_stance_shifted": 0.39323900725061833,
+            "stance_before": 0.6107990591094477,
+            "stance_before_shifted": 0.42375684360669774,
+            "text_only": 0.6086605521908008
+          },
+          "genre": {
+            "picture": 0.6389987553318976,
+            "picture_shifted": 0.12752016028931906,
+            "next_stance": 0.49162592786744985,
+            "next_stance_shifted": 0.07041360312968722,
+            "stance_before": 0.5005676832106274,
+            "stance_before_shifted": 0.06697014861989084,
+            "text_only": 0.8437658490460662
+          },
+          "content_window_pcs": {
+            "picture": -0.07665755063375645,
+            "picture_shifted": -0.23828417805415508,
+            "next_stance": -0.038922495599365114,
+            "next_stance_shifted": -0.07139831674905328,
+            "stance_before": -0.03827102796131032,
+            "stance_before_shifted": -0.07058880935999856,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": 0.05606535020319134,
+            "picture_shifted": -0.08959023357537549,
+            "next_stance": 0.015024967015367707,
+            "next_stance_shifted": -0.022374566351066882,
+            "stance_before": 0.016673738924715964,
+            "stance_before_shifted": -0.022776922719822956,
+            "text_only": null
+          },
+          "attention_entropy": {
+            "picture": 0.029182888368338655,
+            "picture_shifted": -0.05940822622270442,
+            "next_stance": 0.07677533114187271,
+            "next_stance_shifted": -0.04410920603134133,
+            "stance_before": 0.086238011380016,
+            "stance_before_shifted": -0.06301969367665261,
+            "text_only": 0.06767563203008853
+          },
+          "attention_age": {
+            "picture": -0.009511300290771685,
+            "picture_shifted": -0.010242134402946496,
+            "next_stance": 0.0008522605922136883,
+            "next_stance_shifted": -0.0005320687665731627,
+            "stance_before": 0.006313685407909803,
+            "stance_before_shifted": -0.006312177190144264,
+            "text_only": -0.025279861341529625
+          },
+          "surprise_at_token": {
+            "picture": -0.02012830764739032,
+            "picture_shifted": -0.01817243700298743,
+            "next_stance": -0.016276820944656406,
+            "next_stance_shifted": -0.012677230594617117,
+            "stance_before": -0.026607945516270937,
+            "stance_before_shifted": -0.012250268528137487,
+            "text_only": 0.23422923430230544
+          },
+          "next_attention_entropy": {
+            "picture": 0.0448465085161264,
+            "picture_shifted": -0.08428196569251581,
+            "next_stance": 0.08608983644342011,
+            "next_stance_shifted": -0.06345298685217443,
+            "stance_before": 0.03621541872282552,
+            "stance_before_shifted": -0.05107084725501004,
+            "text_only": 0.07079454049198325
+          },
+          "next_attention_age": {
+            "picture": -0.03959341321841803,
+            "picture_shifted": -0.015396101119438343,
+            "next_stance": 0.00638827442657075,
+            "next_stance_shifted": -0.00641245996743553,
+            "stance_before": 0.0017424344896038169,
+            "stance_before_shifted": -0.0008023643396920799,
+            "text_only": -0.020311945208899645
+          }
+        },
+        "attention_steering": {
+          "attention_from_text": -0.024412457604238685,
+          "attention_from_text_and_stance": -0.03219645117264977,
+          "attention_from_stance_alone": 0.007039162978078162,
+          "next_attention_from_next_text": -0.02752899739661685,
+          "next_attention_from_next_text_and_picture": -0.07013940690461806
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": 0.02767973360279205,
+            "grammar_alone": -0.048227148093444666,
+            "grammar_unique": 0.003979320612943565,
+            "indices_alone": 0.10212015189945797,
+            "indices_unique": -0.02180256446538012,
+            "content_alone": 0.11209195190951776,
+            "content_unique": 0.05668502526744931,
+            "attention_alone": -0.029920036483442658,
+            "attention_unique": -0.06587812306130028,
+            "all_families_shifted": -0.33696701358837017
+          },
+          "picture": {
+            "all_families": 0.4942863380174909,
+            "grammar_alone": 0.004944770441708379,
+            "grammar_unique": -0.0026090292330548936,
+            "indices_alone": 0.2712714231290305,
+            "indices_unique": -0.006691656073894547,
+            "content_alone": 0.5239856168325978,
+            "content_unique": 0.26911325693961163,
+            "attention_alone": 0.0029503465996144063,
+            "attention_unique": -0.025358190049483698,
+            "all_families_shifted": -0.2381838747638603
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.19731653007229083,
+            "between_sentences": 0.3095505694042901,
+            "within_sentences": 0.49313291907310486,
+            "between_genres": 0.13686632780161187,
+            "between_documents_within_genre": 0.06045020227067896
+          },
+          "picture": {
+            "between_documents": 0.477221011955096,
+            "between_sentences": 0.21572997664074248,
+            "within_sentences": 0.3070489466190338,
+            "between_genres": 0.3726487219617894,
+            "between_documents_within_genre": 0.10457228999330656
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.17821839472613102,
+            "between_sentences": 0.33021860490523613,
+            "within_sentences": 0.49156299233436584
+          },
+          "content_window_pcs": {
+            "between_documents": 0.48514834241835175,
+            "between_sentences": 0.3726243848967943,
+            "within_sentences": 0.14222723245620728,
+            "between_genres": 0.1743971818338286,
+            "between_documents_within_genre": 0.3107511605845231
+          }
+        },
+        "rest_states": {
+          "states": 2,
+          "resting_share": 0.60913140311804,
+          "genre_bits": 0.024917910679447708,
+          "genre_bits_shifted": 0.010532304696631467,
+          "sentence_position_bits": 0.0017599695983392394,
+          "sentence_position_bits_shifted": 0.000256189724139988,
+          "state_entropy_bits": 0.27975893698218834,
+          "entry_token_class_bits": 0.08665233340653566,
+          "entry_token_class_bits_shifted": 0.01238789610186286,
+          "jump_rate": 0.2591870824053452,
+          "jump_lift_by_token_class": {
+            "newline": 2.8579384970362414,
+            "sent_end": 0.9288300115367784,
+            "punct": 0.7249515964615817,
+            "num": 0.19570665794922087,
+            "func": 1.269292256069544,
+            "word": 0.988311736413518,
+            "cont": 0.5620237319959065
+          }
+        }
+      },
+      {
+        "record": "life",
+        "tokens": 1498,
+        "regime": {
+          "rests": 0.5262016021361816,
+          "big_steps": 0.32009345794392524,
+          "cos_next": 0.9999668598175049,
+          "cos_two_apart": 0.9999828338623047
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.2534922378087165,
+            "picture_shifted": 0.11662211140923245,
+            "next_stance": 0.16462150854711033,
+            "next_stance_shifted": 0.09633495074526818,
+            "stance_before": 0.16753544723155372,
+            "stance_before_shifted": 0.1066408025745805,
+            "text_only": 0.7496465243855437
+          },
+          "class_prev": {
+            "picture": 0.23393843695569644,
+            "picture_shifted": 0.12357161526498611,
+            "next_stance": 0.15540771837458595,
+            "next_stance_shifted": 0.10950488089850412,
+            "stance_before": 0.16435560326728174,
+            "stance_before_shifted": 0.09674072821716154,
+            "text_only": 0.5297416291085746
+          },
+          "sentence_position": {
+            "picture": -0.02342510617170554,
+            "picture_shifted": -0.10017651354718765,
+            "next_stance": -0.044172351045649705,
+            "next_stance_shifted": -0.013624304103126206,
+            "stance_before": -0.04313798149604986,
+            "stance_before_shifted": -0.014472064128918855,
+            "text_only": 0.41195907299741286
+          },
+          "line_position": {
+            "picture": 0.3562371049465125,
+            "picture_shifted": -0.2551237984392243,
+            "next_stance": 0.06856283866643498,
+            "next_stance_shifted": -0.19601605817674506,
+            "stance_before": 0.06539454193657446,
+            "stance_before_shifted": -0.19525277217919507,
+            "text_only": 0.614674560254418
+          },
+          "document_position": {
+            "picture": -0.03590442749485054,
+            "picture_shifted": -0.13660426850683538,
+            "next_stance": -0.0281119698515519,
+            "next_stance_shifted": -0.04571533107127129,
+            "stance_before": -0.02833850640608765,
+            "stance_before_shifted": -0.04730015144208782,
+            "text_only": 0.4111338556413763
+          },
+          "in_quote": {
+            "picture": 0.43167202400110466,
+            "picture_shifted": 0.4762971807705192,
+            "next_stance": 0.33989467565939585,
+            "next_stance_shifted": 0.4784864452954112,
+            "stance_before": 0.3455220123968548,
+            "stance_before_shifted": 0.4855184598933557,
+            "text_only": 0.7573763199936172
+          },
+          "genre": {
+            "picture": 0.47137325294341176,
+            "picture_shifted": 0.15037959923493321,
+            "next_stance": 0.2742840613288078,
+            "next_stance_shifted": 0.10841522370167497,
+            "stance_before": 0.2724253495219766,
+            "stance_before_shifted": 0.10862431938475278,
+            "text_only": 0.9241240565708762
+          },
+          "content_window_pcs": {
+            "picture": -0.07074574037807224,
+            "picture_shifted": -0.20201142556403534,
+            "next_stance": -0.05460308206877973,
+            "next_stance_shifted": -0.08361613040891502,
+            "stance_before": -0.05448749770224276,
+            "stance_before_shifted": -0.08354479771058115,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": 0.014171240848011496,
+            "picture_shifted": -0.08069668397086005,
+            "next_stance": -0.007508246485390779,
+            "next_stance_shifted": -0.03636792060559213,
+            "stance_before": -0.007531697728961562,
+            "stance_before_shifted": -0.0371973930354485,
+            "text_only": null
+          },
+          "run_position": {
+            "picture": 0.5076439925183038,
+            "picture_shifted": 0.16127761840542765,
+            "next_stance": 0.13845800682529658,
+            "next_stance_shifted": 0.10445928603212506,
+            "stance_before": 0.14099049801236482,
+            "stance_before_shifted": 0.10319749606595663,
+            "text_only": -0.38284454472795104
+          }
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.3455279355042725,
+            "grammar_alone": -0.025177636268823078,
+            "grammar_unique": -0.035602950121032484,
+            "indices_alone": -0.008500162305284886,
+            "indices_unique": -0.04866670871359141,
+            "content_alone": -0.2563570920450854,
+            "content_unique": -0.3007306500810827,
+            "all_families_shifted": -0.3854672997085948
+          },
+          "picture": {
+            "all_families": 0.25243321163011634,
+            "grammar_alone": 0.031143855492947264,
+            "grammar_unique": -0.015673231894355766,
+            "indices_alone": 0.22769073988859992,
+            "indices_unique": -0.020261402572661902,
+            "content_alone": 0.2892634624029269,
+            "content_unique": 0.027564738135647388,
+            "all_families_shifted": -0.2519405094204333
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.41059298402047956,
+            "between_sentences": 0.2049854672377454,
+            "within_sentences": 0.3844214975833893,
+            "between_genres": 0.046513582485905015,
+            "between_documents_within_genre": 0.3640794015345746
+          },
+          "picture": {
+            "between_documents": 0.6113578013373766,
+            "between_sentences": 0.15543168653848227,
+            "within_sentences": 0.23321059346199036,
+            "between_genres": 0.37751525405316044,
+            "between_documents_within_genre": 0.23384254728421622
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.39363955545528234,
+            "between_sentences": 0.23271785232937542,
+            "within_sentences": 0.3736426830291748
+          },
+          "content_window_pcs": {
+            "between_documents": 0.4357805577928293,
+            "between_sentences": 0.43822275144718564,
+            "within_sentences": 0.12599675357341766,
+            "between_genres": 0.23472435991654148,
+            "between_documents_within_genre": 0.20105619787628784
+          }
+        },
+        "rest_states": {
+          "states": 2,
+          "resting_share": 0.4597797062750334,
+          "genre_bits": 0.03733136418404914,
+          "genre_bits_shifted": 0.1713885037064653,
+          "sentence_position_bits": 0.002730752312154472,
+          "sentence_position_bits_shifted": 0.020208741031971122,
+          "state_entropy_bits": 0.9709505944546686,
+          "entry_token_class_bits": 0.043211122473295394,
+          "entry_token_class_bits_shifted": 0.022147707980413767,
+          "jump_rate": 0.32009345794392524,
+          "jump_lift_by_token_class": {
+            "newline": 2.04148298041483,
+            "sent_end": 0.9449400738938452,
+            "punct": 1.0219754620282653,
+            "num": 0.3056172643605205,
+            "func": 1.2383915335972828,
+            "word": 0.8612173241429772,
+            "cont": 0.6559472166662337
+          }
+        }
+      }
+    ]
+  },
+  {
+    "life": "dev_s1_seed1_spot",
+    "model": "Qwen/Qwen3-0.6B",
+    "arm": "itself",
+    "picture": "sphere",
+    "route": "operation",
+    "identity": "dynamics",
+    "div_scale": 0.0,
+    "records": [
+      {
+        "record": "ref",
+        "tokens": 898,
+        "regime": {
+          "rests": 0.6748329621380846,
+          "big_steps": 0.2733853006681514,
+          "cos_next": 0.9999995827674866,
+          "cos_two_apart": 0.9999995231628418
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.22389472996530219,
+            "picture_shifted": 0.13076510978807568,
+            "next_stance": 0.16549114351653768,
+            "next_stance_shifted": 0.12416964316349308,
+            "stance_before": 0.1783338045952279,
+            "stance_before_shifted": 0.11509832154235564,
+            "text_only": 0.7321729916589648
+          },
+          "class_prev": {
+            "picture": 0.22485818176054928,
+            "picture_shifted": 0.08896895692082207,
+            "next_stance": 0.18752330003381487,
+            "next_stance_shifted": 0.11666951579306956,
+            "stance_before": 0.16549114351653768,
+            "stance_before_shifted": 0.12270672025096131,
+            "text_only": 0.5046938270669497
+          },
+          "sentence_position": {
+            "picture": 0.017712812059804572,
+            "picture_shifted": -0.02526624754853818,
+            "next_stance": -0.010942673863803737,
+            "next_stance_shifted": -0.013325373489762204,
+            "stance_before": -0.009339147745375975,
+            "stance_before_shifted": -0.014787906234478482,
+            "text_only": 0.3315148809748969
+          },
+          "line_position": {
+            "picture": 0.18832336854512383,
+            "picture_shifted": -0.1541311800810447,
+            "next_stance": 0.16106892561119573,
+            "next_stance_shifted": -0.008098246498033729,
+            "stance_before": 0.1619362557766812,
+            "stance_before_shifted": -0.009471288726674021,
+            "text_only": 0.31997212206326175
+          },
+          "document_position": {
+            "picture": -0.1661099707628153,
+            "picture_shifted": -0.17227705755612105,
+            "next_stance": -0.02189525216324642,
+            "next_stance_shifted": -0.0010364301473947124,
+            "stance_before": -0.02384490835386341,
+            "stance_before_shifted": -0.0018896462623304022,
+            "text_only": 0.22163811612863507
+          },
+          "in_quote": {
+            "picture": 0.5949158665051284,
+            "picture_shifted": 0.4652813395334958,
+            "next_stance": 0.5203858904555014,
+            "next_stance_shifted": 0.4229949910535815,
+            "stance_before": 0.5301678528671447,
+            "stance_before_shifted": 0.41051020827961127,
+            "text_only": 0.6086605521908008
+          },
+          "genre": {
+            "picture": 0.6476518307832269,
+            "picture_shifted": 0.14120011916346764,
+            "next_stance": 0.49626881459906497,
+            "next_stance_shifted": 0.10398651107804208,
+            "stance_before": 0.49585526546344905,
+            "stance_before_shifted": 0.10384706694251633,
+            "text_only": 0.8437658490460662
+          },
+          "content_window_pcs": {
+            "picture": -0.13694892529001135,
+            "picture_shifted": -0.2752325981464807,
+            "next_stance": -0.059963610752821306,
+            "next_stance_shifted": -0.06241409616923593,
+            "stance_before": -0.05885223287374605,
+            "stance_before_shifted": -0.062183625869835224,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": -0.010888905045024183,
+            "picture_shifted": -0.1158821030888661,
+            "next_stance": -0.016745696453082243,
+            "next_stance_shifted": -0.00411174310107934,
+            "stance_before": 0.006923455220894159,
+            "stance_before_shifted": -0.004181108140405343,
+            "text_only": null
+          },
+          "attention_entropy": {
+            "picture": 0.580075929750792,
+            "picture_shifted": -0.08284933896920782,
+            "next_stance": 0.4879689451128067,
+            "next_stance_shifted": 0.00994634358598312,
+            "stance_before": 0.6390517427452436,
+            "stance_before_shifted": 0.004180591667649697,
+            "text_only": 0.2448732720831026
+          },
+          "attention_age": {
+            "picture": -0.027611871027251017,
+            "picture_shifted": -0.05155995363007823,
+            "next_stance": -0.009051136949471045,
+            "next_stance_shifted": -0.0017399056587755202,
+            "stance_before": -0.02173522217366952,
+            "stance_before_shifted": -0.005224771896445907,
+            "text_only": 0.043832211010057076
+          },
+          "surprise_at_token": {
+            "picture": -0.002668070847435533,
+            "picture_shifted": -0.015120252304336057,
+            "next_stance": -0.006947832649473212,
+            "next_stance_shifted": -0.003908000223538016,
+            "stance_before": -0.0014119106321772434,
+            "stance_before_shifted": -0.00489033648871709,
+            "text_only": 0.23482771194751095
+          },
+          "next_attention_entropy": {
+            "picture": 0.601386077666088,
+            "picture_shifted": -0.14577042000301474,
+            "next_stance": 0.6391199277276385,
+            "next_stance_shifted": 0.004355538182199331,
+            "stance_before": 0.41977892451279725,
+            "stance_before_shifted": 0.012358363410365503,
+            "text_only": 0.2576856787948253
+          },
+          "next_attention_age": {
+            "picture": -0.011562202706500685,
+            "picture_shifted": -0.02342751376224622,
+            "next_stance": -0.022299416165052655,
+            "next_stance_shifted": -0.004891626093302043,
+            "stance_before": -0.004206524959017327,
+            "stance_before_shifted": -0.002347711687895021,
+            "text_only": 0.05571906229351056
+          }
+        },
+        "attention_steering": {
+          "attention_from_text": 0.038865756708191784,
+          "attention_from_text_and_stance": 0.019839246940908634,
+          "attention_from_stance_alone": -0.005317750000561089,
+          "next_attention_from_next_text": 0.04900522982009051,
+          "next_attention_from_next_text_and_picture": 0.03002206499581997
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": 0.23359797417044234,
+            "grammar_alone": -0.0015555222348847542,
+            "grammar_unique": -0.0056129486993238276,
+            "indices_alone": 0.17622953470348784,
+            "indices_unique": -0.014312603175144628,
+            "content_alone": 0.3369908276881267,
+            "content_unique": 0.17962127184726873,
+            "attention_alone": -0.09792887379690104,
+            "attention_unique": -0.12051253932691305,
+            "all_families_shifted": -0.0587806454785223
+          },
+          "picture": {
+            "all_families": 0.4569538509017411,
+            "grammar_alone": -0.017289455099872952,
+            "grammar_unique": -0.013393532809443331,
+            "indices_alone": 0.2298034103013319,
+            "indices_unique": 0.0025414451655282333,
+            "content_alone": 0.4401985075847033,
+            "content_unique": 0.19929551121536726,
+            "attention_alone": 0.15012609727365478,
+            "attention_unique": 0.026901138391851542,
+            "all_families_shifted": -0.1039749642833585
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.21960132625311354,
+            "between_sentences": 0.09529043188635555,
+            "within_sentences": 0.6851080060005188,
+            "between_genres": 0.19037479032935622,
+            "between_documents_within_genre": 0.029226535923757332
+          },
+          "picture": {
+            "between_documents": 0.3517560895878877,
+            "between_sentences": 0.16104773406939837,
+            "within_sentences": 0.48719626665115356,
+            "between_genres": 0.30647888371993626,
+            "between_documents_within_genre": 0.04527720586795143
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.19789562495386598,
+            "between_sentences": 0.12708169651303805,
+            "within_sentences": 0.6750224232673645
+          },
+          "content_window_pcs": {
+            "between_documents": 0.48514834241835175,
+            "between_sentences": 0.3726243848967943,
+            "within_sentences": 0.14222723245620728,
+            "between_genres": 0.1743971818338286,
+            "between_documents_within_genre": 0.3107511605845231
+          }
+        },
+        "rest_states": {
+          "states": 1,
+          "resting_share": 0.6570155902004454,
+          "jump_rate": 0.2733853006681514,
+          "jump_lift_by_token_class": {
+            "newline": 2.3030851625556314,
+            "sent_end": 0.8580121193834704,
+            "punct": 0.9319340485425559,
+            "num": 0.26506095221228493,
+            "func": 1.20678076770499,
+            "word": 0.9572552245843912,
+            "cont": 0.8352550635854837
+          }
+        }
+      },
+      {
+        "record": "life",
+        "tokens": 1498,
+        "regime": {
+          "rests": 0.5929572763684913,
+          "big_steps": 0.37016021361815754,
+          "cos_next": 0.9999984502792358,
+          "cos_two_apart": 0.9999991059303284
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.23459317171690966,
+            "picture_shifted": 0.12533607139263522,
+            "next_stance": 0.19557272730206804,
+            "next_stance_shifted": 0.1333492849260353,
+            "stance_before": 0.2063302685380435,
+            "stance_before_shifted": 0.15242725662249346,
+            "text_only": 0.7496465243855437
+          },
+          "class_prev": {
+            "picture": 0.23611809277633267,
+            "picture_shifted": 0.14762827959118835,
+            "next_stance": 0.19470021764202544,
+            "next_stance_shifted": 0.15215071430726482,
+            "stance_before": 0.19457956364934875,
+            "stance_before_shifted": 0.13316392966598245,
+            "text_only": 0.5297416291085746
+          },
+          "sentence_position": {
+            "picture": -0.020888167872015917,
+            "picture_shifted": -0.11428790765078062,
+            "next_stance": -0.021927829827257855,
+            "next_stance_shifted": -0.07272496711130316,
+            "stance_before": -0.02321901165023363,
+            "stance_before_shifted": -0.0776874937521631,
+            "text_only": 0.41195907299741286
+          },
+          "line_position": {
+            "picture": 0.28411991605711034,
+            "picture_shifted": -0.3008342875678537,
+            "next_stance": 0.12160037292211401,
+            "next_stance_shifted": -0.20028498616509588,
+            "stance_before": 0.11601742444597779,
+            "stance_before_shifted": -0.19969589191529397,
+            "text_only": 0.614674560254418
+          },
+          "document_position": {
+            "picture": -0.14624938146796101,
+            "picture_shifted": -0.08394529099163767,
+            "next_stance": -0.027604860055529507,
+            "next_stance_shifted": -0.031142331095801723,
+            "stance_before": -0.024549229690113528,
+            "stance_before_shifted": -0.03092003892515935,
+            "text_only": 0.4111338556413763
+          },
+          "in_quote": {
+            "picture": 0.4478285919024841,
+            "picture_shifted": 0.43843166396782207,
+            "next_stance": 0.3732412293378165,
+            "next_stance_shifted": 0.3196546402659582,
+            "stance_before": 0.3732451635853307,
+            "stance_before_shifted": 0.3170200025653962,
+            "text_only": 0.7573763199936172
+          },
+          "genre": {
+            "picture": 0.4042112941491146,
+            "picture_shifted": 0.17884727927395172,
+            "next_stance": 0.24158338905822965,
+            "next_stance_shifted": 0.11646551885540275,
+            "stance_before": 0.24264972728010775,
+            "stance_before_shifted": 0.12020043661641452,
+            "text_only": 0.9241240565708762
+          },
+          "content_window_pcs": {
+            "picture": -0.08904929181389176,
+            "picture_shifted": -0.2334055806089987,
+            "next_stance": -0.060064949216765695,
+            "next_stance_shifted": -0.0908396282176166,
+            "stance_before": -0.0600505569320286,
+            "stance_before_shifted": -0.09049392610926021,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": -0.008320279808199521,
+            "picture_shifted": -0.09817801631740175,
+            "next_stance": -0.020483138620323194,
+            "next_stance_shifted": -0.04753375267622001,
+            "stance_before": -0.020333234656207122,
+            "stance_before_shifted": -0.047702368220967684,
+            "text_only": null
+          },
+          "run_position": {
+            "picture": 0.7255262230526858,
+            "picture_shifted": 0.456212795538771,
+            "next_stance": 0.7958988055685331,
+            "next_stance_shifted": 0.5358135134796752,
+            "stance_before": 0.7955571669788564,
+            "stance_before_shifted": 0.5353573511747112,
+            "text_only": -0.38284454472795104
+          }
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": 0.26000171668477384,
+            "grammar_alone": 0.023143250408892646,
+            "grammar_unique": -0.005898637503905013,
+            "indices_alone": 0.155035077726495,
+            "indices_unique": 0.047711819238003134,
+            "content_alone": 0.22456163181455463,
+            "content_unique": 0.10726228763119772,
+            "all_families_shifted": -0.13743914679380692
+          },
+          "picture": {
+            "all_families": 0.4275398450153399,
+            "grammar_alone": 0.04200304785518902,
+            "grammar_unique": -0.011194913758316494,
+            "indices_alone": 0.23130055808014788,
+            "indices_unique": 0.06961179302681786,
+            "content_alone": 0.37850899644883307,
+            "content_unique": 0.19050702588365948,
+            "all_families_shifted": -0.22152310017074878
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.29072051364307094,
+            "between_sentences": 0.0636077024313015,
+            "within_sentences": 0.6456714272499084,
+            "between_genres": 0.2396903466046938,
+            "between_documents_within_genre": 0.051030167038377115
+          },
+          "picture": {
+            "between_documents": 0.46660577786272345,
+            "between_sentences": 0.09992843581847043,
+            "within_sentences": 0.4334656298160553,
+            "between_genres": 0.3993535159749527,
+            "between_documents_within_genre": 0.06725226188777071
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.20641997597594172,
+            "between_sentences": 0.1482258814782713,
+            "within_sentences": 0.6453536748886108
+          },
+          "content_window_pcs": {
+            "between_documents": 0.4357805577928293,
+            "between_sentences": 0.43822275144718564,
+            "within_sentences": 0.12599675357341766,
+            "between_genres": 0.23472435991654148,
+            "between_documents_within_genre": 0.20105619787628784
+          }
+        },
+        "rest_states": {
+          "states": 1,
+          "resting_share": 0.6031375166889186,
+          "jump_rate": 0.37016021361815754,
+          "jump_lift_by_token_class": {
+            "newline": 1.9258452445785605,
+            "sent_end": 0.8754967772100324,
+            "punct": 1.1639583293363773,
+            "num": 0.35237385815658445,
+            "func": 1.2083977552207805,
+            "word": 0.8556891578161402,
+            "cont": 0.836417663311181
+          }
+        }
+      }
+    ]
+  },
+  {
+    "life": "rich_s1s1_neighbor",
+    "model": "Qwen/Qwen3-0.6B",
+    "arm": "itself",
+    "picture": "sphere",
+    "route": "operation",
+    "identity": "dynamics",
+    "div_scale": 0.0,
+    "records": [
+      {
+        "record": "ref",
+        "tokens": 898,
+        "regime": {
+          "rests": 0.731347438752784,
+          "big_steps": 0.20684855233853006,
+          "cos_next": 0.9999988079071045,
+          "cos_two_apart": 0.9999982118606567
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.25475945292470203,
+            "picture_shifted": 0.10428775431614926,
+            "next_stance": 0.23715104515898833,
+            "next_stance_shifted": 0.11541383960952906,
+            "stance_before": 0.2179563477599386,
+            "stance_before_shifted": 0.1174422251333122,
+            "text_only": 0.7321729916589648
+          },
+          "class_prev": {
+            "picture": 0.2668409323957591,
+            "picture_shifted": 0.101185051926547,
+            "next_stance": 0.2318176950986823,
+            "next_stance_shifted": 0.10489718614718614,
+            "stance_before": 0.23694660524054645,
+            "stance_before_shifted": 0.11347823224939751,
+            "text_only": 0.5046938270669497
+          },
+          "sentence_position": {
+            "picture": -0.01823773177440105,
+            "picture_shifted": -0.16078580157302208,
+            "next_stance": 0.014913280325645428,
+            "next_stance_shifted": -0.06882458683562848,
+            "stance_before": 0.014566619318377688,
+            "stance_before_shifted": -0.06687107138675613,
+            "text_only": 0.3315148809748969
+          },
+          "line_position": {
+            "picture": 0.2517763453593078,
+            "picture_shifted": -0.16422014631192638,
+            "next_stance": 0.07978462619184434,
+            "next_stance_shifted": -0.13053561190697893,
+            "stance_before": 0.089255596965682,
+            "stance_before_shifted": -0.11667368066443268,
+            "text_only": 0.31997212206326175
+          },
+          "document_position": {
+            "picture": -0.02640775217731048,
+            "picture_shifted": -0.26693343405101694,
+            "next_stance": -0.01820587011197594,
+            "next_stance_shifted": -0.01930347403054497,
+            "stance_before": -0.015019789917387671,
+            "stance_before_shifted": -0.0200512199765098,
+            "text_only": 0.22163811612863507
+          },
+          "in_quote": {
+            "picture": 0.5669118703486482,
+            "picture_shifted": 0.4600032384899203,
+            "next_stance": 0.4250357545676282,
+            "next_stance_shifted": 0.5074228983668132,
+            "stance_before": 0.4371823911187197,
+            "stance_before_shifted": 0.484096341776867,
+            "text_only": 0.6086605521908008
+          },
+          "genre": {
+            "picture": 0.6599827721293543,
+            "picture_shifted": 0.16128355379994477,
+            "next_stance": 0.29546416931214114,
+            "next_stance_shifted": 0.1037322351086057,
+            "stance_before": 0.28529567284216284,
+            "stance_before_shifted": 0.11398412808384067,
+            "text_only": 0.8437658490460662
+          },
+          "content_window_pcs": {
+            "picture": -0.422925819759819,
+            "picture_shifted": -0.4443404305413109,
+            "next_stance": -0.05667171409240346,
+            "next_stance_shifted": -0.10664532693223194,
+            "stance_before": -0.0547490906657736,
+            "stance_before_shifted": -0.10676582472434687,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": -0.0920859393331317,
+            "picture_shifted": -0.11005859922671068,
+            "next_stance": 0.005828692345066,
+            "next_stance_shifted": -0.03968531895981703,
+            "stance_before": 0.004498646305334086,
+            "stance_before_shifted": -0.04016548162117678,
+            "text_only": null
+          },
+          "attention_entropy": {
+            "picture": 0.18256689220761185,
+            "picture_shifted": -0.28170421624634706,
+            "next_stance": 0.2797834599832192,
+            "next_stance_shifted": -0.08622909423151476,
+            "stance_before": 0.3407408032867246,
+            "stance_before_shifted": -0.07425668552551212,
+            "text_only": 0.0858901139990283
+          },
+          "attention_age": {
+            "picture": -0.1491403032023203,
+            "picture_shifted": -0.09767128988711732,
+            "next_stance": -0.0011450780199578903,
+            "next_stance_shifted": -0.008894747393162927,
+            "stance_before": 0.0004936722480949618,
+            "stance_before_shifted": -0.011214877713523558,
+            "text_only": 0.054019104987014704
+          },
+          "surprise_at_token": {
+            "picture": -0.026797057244967698,
+            "picture_shifted": -0.01871713066703823,
+            "next_stance": -0.019183192722950937,
+            "next_stance_shifted": -0.0016773726253005994,
+            "stance_before": -0.005359109901351494,
+            "stance_before_shifted": -0.0036775614937341883,
+            "text_only": 0.2361361827768694
+          },
+          "next_attention_entropy": {
+            "picture": 0.31646665900144555,
+            "picture_shifted": -0.2640211945058604,
+            "next_stance": 0.3371622334041136,
+            "next_stance_shifted": -0.08411430414226634,
+            "stance_before": 0.2440992195128497,
+            "stance_before_shifted": -0.0805919036262693,
+            "text_only": 0.07422411686149363
+          },
+          "next_attention_age": {
+            "picture": -0.05370720807544499,
+            "picture_shifted": -0.07909456106088264,
+            "next_stance": 0.0004588302091222962,
+            "next_stance_shifted": -0.006649268933487135,
+            "stance_before": 0.001041055871524449,
+            "stance_before_shifted": -0.005102814072300621,
+            "text_only": 0.06746961024538659
+          }
+        },
+        "attention_steering": {
+          "attention_from_text": 0.07518182596764972,
+          "attention_from_text_and_stance": 0.07629334411105154,
+          "attention_from_stance_alone": 0.004546083290752567,
+          "next_attention_from_next_text": 0.07313875529295821,
+          "next_attention_from_next_text_and_picture": 0.008871317789582722
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.387286465211899,
+            "grammar_alone": -0.04000524779134812,
+            "grammar_unique": 0.08391334555848595,
+            "indices_alone": 0.13459243187025055,
+            "indices_unique": -0.05792235443164706,
+            "content_alone": -0.3456428796974419,
+            "content_unique": -0.439293248122361,
+            "attention_alone": 0.03778481380707088,
+            "attention_unique": -0.06033207993638667,
+            "all_families_shifted": -0.39762513290006013
+          },
+          "picture": {
+            "all_families": 0.40068457634034615,
+            "grammar_alone": -0.011798989486236228,
+            "grammar_unique": -0.010792468909757547,
+            "indices_alone": 0.2921041098962909,
+            "indices_unique": -0.033518543590147776,
+            "content_alone": 0.45320134554767155,
+            "content_unique": 0.12605207856951428,
+            "attention_alone": 0.08467424179121008,
+            "attention_unique": -0.01381321100163696,
+            "all_families_shifted": -0.693931080908792
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.5285696612098548,
+            "between_sentences": 0.0871167550012271,
+            "within_sentences": 0.3843134641647339,
+            "between_genres": 0.23104028920539635,
+            "between_documents_within_genre": 0.2975293720044585
+          },
+          "picture": {
+            "between_documents": 0.6818611993174158,
+            "between_sentences": 0.12209634244187219,
+            "within_sentences": 0.19604241847991943,
+            "between_genres": 0.5373427457707303,
+            "between_documents_within_genre": 0.14451845354668558
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.4833673993210714,
+            "between_sentences": 0.12056475810005052,
+            "within_sentences": 0.39606764912605286
+          },
+          "content_window_pcs": {
+            "between_documents": 0.48514834241835175,
+            "between_sentences": 0.3726243848967943,
+            "within_sentences": 0.14222723245620728,
+            "between_genres": 0.1743971818338286,
+            "between_documents_within_genre": 0.3107511605845231
+          }
+        },
+        "rest_states": {
+          "states": 2,
+          "resting_share": 0.7152004454342984,
+          "genre_bits": 0.2093349820134347,
+          "genre_bits_shifted": 0.0712347385334462,
+          "sentence_position_bits": 0.03836416057691938,
+          "sentence_position_bits_shifted": 0.006631109024165749,
+          "state_entropy_bits": 0.48974718633235825,
+          "entry_token_class_bits": 0.24046036787808944,
+          "entry_token_class_bits_shifted": 0.13831002794139335,
+          "jump_rate": 0.20684855233853006,
+          "jump_lift_by_token_class": {
+            "newline": 3.402023827326654,
+            "sent_end": 0.9847963710682418,
+            "punct": 0.8467994273516729,
+            "num": 0.0,
+            "func": 1.2705650375859687,
+            "word": 0.9764170020354177,
+            "cont": 0.4948654634859741
+          }
+        }
+      },
+      {
+        "record": "life",
+        "tokens": 1498,
+        "regime": {
+          "rests": 0.4876502002670227,
+          "big_steps": 0.4182242990654206,
+          "cos_next": 0.9999319314956665,
+          "cos_two_apart": 0.9999910593032837
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.238643478914386,
+            "picture_shifted": 0.12658916431965725,
+            "next_stance": 0.13067716240340285,
+            "next_stance_shifted": 0.1510640331662914,
+            "stance_before": 0.1515842135989754,
+            "stance_before_shifted": 0.1372679211035614,
+            "text_only": 0.7496465243855437
+          },
+          "class_prev": {
+            "picture": 0.24493746478477674,
+            "picture_shifted": 0.15326517243229887,
+            "next_stance": 0.15405631737093206,
+            "next_stance_shifted": 0.1250182657919755,
+            "stance_before": 0.13001152637816057,
+            "stance_before_shifted": 0.1505005357008486,
+            "text_only": 0.5297416291085746
+          },
+          "sentence_position": {
+            "picture": -0.007653027815756663,
+            "picture_shifted": -0.1297569527319304,
+            "next_stance": -0.0466260772659175,
+            "next_stance_shifted": -0.030871600368746532,
+            "stance_before": -0.04800396351062991,
+            "stance_before_shifted": -0.03108613873757915,
+            "text_only": 0.41195907299741286
+          },
+          "line_position": {
+            "picture": 0.2314222190101163,
+            "picture_shifted": -0.30859182588412,
+            "next_stance": -0.003830444938161509,
+            "next_stance_shifted": -0.14361091413969834,
+            "stance_before": -0.0005459796057678823,
+            "stance_before_shifted": -0.143214550842872,
+            "text_only": 0.614674560254418
+          },
+          "document_position": {
+            "picture": -0.2794435437927071,
+            "picture_shifted": -0.056002383128555294,
+            "next_stance": -0.0008732963214734268,
+            "next_stance_shifted": -0.03545087899946714,
+            "stance_before": 0.0017207285486030566,
+            "stance_before_shifted": -0.033918259562921604,
+            "text_only": 0.4111338556413763
+          },
+          "in_quote": {
+            "picture": 0.5059797376994847,
+            "picture_shifted": 0.42120005248569586,
+            "next_stance": 0.40371054617970176,
+            "next_stance_shifted": 0.36133806474775115,
+            "stance_before": 0.4017358270496485,
+            "stance_before_shifted": 0.37729120630465424,
+            "text_only": 0.7573763199936172
+          },
+          "genre": {
+            "picture": 0.43208321280674244,
+            "picture_shifted": 0.1078690565895517,
+            "next_stance": 0.2294042618066094,
+            "next_stance_shifted": 0.03790591763964887,
+            "stance_before": 0.22969702338957945,
+            "stance_before_shifted": 0.03821250667139192,
+            "text_only": 0.9241240565708762
+          },
+          "content_window_pcs": {
+            "picture": -0.1324336635105267,
+            "picture_shifted": -0.27416865735145385,
+            "next_stance": -0.059017426066108825,
+            "next_stance_shifted": -0.09526338456124339,
+            "stance_before": -0.05902637814635797,
+            "stance_before_shifted": -0.09543779496629584,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": 0.007399853760523545,
+            "picture_shifted": -0.1190761186247864,
+            "next_stance": -0.01129313488621983,
+            "next_stance_shifted": -0.05187831385907937,
+            "stance_before": -0.01032001080336123,
+            "stance_before_shifted": -0.05129466731409099,
+            "text_only": null
+          },
+          "run_position": {
+            "picture": 0.779425685106293,
+            "picture_shifted": 0.5222942461839224,
+            "next_stance": 0.24681992623784843,
+            "next_stance_shifted": 0.11242890501913916,
+            "stance_before": 0.24565014832522844,
+            "stance_before_shifted": 0.11339524413271757,
+            "text_only": -0.38284454472795104
+          }
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": -0.1897475054334552,
+            "grammar_alone": 0.0009452852048682514,
+            "grammar_unique": -0.008183010920605416,
+            "indices_alone": -0.019293881877414792,
+            "indices_unique": 0.12665351003219455,
+            "content_alone": -0.31090479470833393,
+            "content_unique": -0.17495392702113288,
+            "all_families_shifted": -0.31462001745557083
+          },
+          "picture": {
+            "all_families": 0.47742042191450695,
+            "grammar_alone": 0.07182672587859792,
+            "grammar_unique": -0.010703726114387524,
+            "indices_alone": 0.3059757306162972,
+            "indices_unique": 0.0451420937428898,
+            "content_alone": 0.43966013829617595,
+            "content_unique": 0.14142363633766208,
+            "all_families_shifted": -0.2774015265763383
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.4125443444659174,
+            "between_sentences": 0.13306222689401417,
+            "within_sentences": 0.4543934464454651,
+            "between_genres": 0.0038848934738652872,
+            "between_documents_within_genre": 0.40865945099205214
+          },
+          "picture": {
+            "between_documents": 0.6997725262349536,
+            "between_sentences": 0.1089509372648749,
+            "within_sentences": 0.1912766695022583,
+            "between_genres": 0.5258450282333051,
+            "between_documents_within_genre": 0.17392749800164845
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.35743407509175634,
+            "between_sentences": 0.19757034612167787,
+            "within_sentences": 0.444995641708374
+          },
+          "content_window_pcs": {
+            "between_documents": 0.4357805577928293,
+            "between_sentences": 0.43822275144718564,
+            "within_sentences": 0.12599675357341766,
+            "between_genres": 0.23472435991654148,
+            "between_documents_within_genre": 0.20105619787628784
+          }
+        },
+        "rest_states": {
+          "states": 3,
+          "resting_share": 0.4661214953271028,
+          "genre_bits": 0.02832975928771919,
+          "genre_bits_shifted": 0.11502255995494881,
+          "sentence_position_bits": 0.00424157548643711,
+          "sentence_position_bits_shifted": 0.0043859332695550535,
+          "state_entropy_bits": 1.1343765459842077,
+          "entry_token_class_bits": 0.2370816788250747,
+          "entry_token_class_bits_shifted": 0.19262422035244686,
+          "jump_rate": 0.4182242990654206,
+          "jump_lift_by_token_class": {
+            "newline": 1.9412578129321312,
+            "sent_end": 0.9150975929374439,
+            "punct": 0.9920361345536669,
+            "num": 0.2858877823658003,
+            "func": 1.2084387700880352,
+            "word": 0.881355404877233,
+            "cont": 0.7743295095329927
+          }
+        }
+      }
+    ]
+  },
+  {
+    "life": "another_s1_spot",
+    "model": "Qwen/Qwen3-0.6B",
+    "arm": "itself",
+    "picture": "sphere",
+    "route": "operation",
+    "identity": "dynamics",
+    "div_scale": 0.0,
+    "records": [
+      {
+        "record": "ref",
+        "tokens": 898,
+        "regime": {
+          "rests": 0.9136971046770601,
+          "big_steps": 0.00027839643652561246,
+          "cos_next": 0.9999997615814209,
+          "cos_two_apart": 0.9999992251396179
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.2749418316642082,
+            "picture_shifted": 0.09218580996200475,
+            "next_stance": 0.24494632536067534,
+            "next_stance_shifted": 0.10419898633633329,
+            "stance_before": 0.23792218943380927,
+            "stance_before_shifted": 0.07644134665086515,
+            "text_only": 0.7321729916589648
+          },
+          "class_prev": {
+            "picture": 0.27623055550449693,
+            "picture_shifted": 0.08747911671753333,
+            "next_stance": 0.2583472703997385,
+            "next_stance_shifted": 0.10759756898281328,
+            "stance_before": 0.24363632357578308,
+            "stance_before_shifted": 0.10387606969569532,
+            "text_only": 0.5046938270669497
+          },
+          "sentence_position": {
+            "picture": -0.11504886254887167,
+            "picture_shifted": -0.18807711024601165,
+            "next_stance": 0.09160167624180748,
+            "next_stance_shifted": -0.05107455332716626,
+            "stance_before": 0.09112539117065621,
+            "stance_before_shifted": -0.05352212703659509,
+            "text_only": 0.3315148809748969
+          },
+          "line_position": {
+            "picture": 0.26696611959813493,
+            "picture_shifted": -0.6078526344604505,
+            "next_stance": 0.3665549077632038,
+            "next_stance_shifted": -0.13937465616357692,
+            "stance_before": 0.3638260576910784,
+            "stance_before_shifted": -0.14081866768840356,
+            "text_only": 0.31997212206326175
+          },
+          "document_position": {
+            "picture": -0.13845268758992255,
+            "picture_shifted": -0.3501706947138189,
+            "next_stance": 0.05117826196410921,
+            "next_stance_shifted": -0.00868499391574204,
+            "stance_before": 0.05447931450019172,
+            "stance_before_shifted": -0.0073643760960235005,
+            "text_only": 0.22163811612863507
+          },
+          "in_quote": {
+            "picture": 0.6965334571655666,
+            "picture_shifted": 0.3913522085509361,
+            "next_stance": 0.6988702676445329,
+            "next_stance_shifted": 0.49152013721854204,
+            "stance_before": 0.6937959891186769,
+            "stance_before_shifted": 0.48911214280116777,
+            "text_only": 0.6086605521908008
+          },
+          "genre": {
+            "picture": 0.6809345046217047,
+            "picture_shifted": 0.07681543530881382,
+            "next_stance": 0.6149095417000958,
+            "next_stance_shifted": 0.06980353118475668,
+            "stance_before": 0.6060872873982025,
+            "stance_before_shifted": 0.07286975301008518,
+            "text_only": 0.8437658490460662
+          },
+          "content_window_pcs": {
+            "picture": -0.1134675727229005,
+            "picture_shifted": -0.33397004180186135,
+            "next_stance": -0.0353394632714879,
+            "next_stance_shifted": -0.12307536122772422,
+            "stance_before": -0.03471461978224591,
+            "stance_before_shifted": -0.12201765279034049,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": 0.02853898278053818,
+            "picture_shifted": -0.15481975439466794,
+            "next_stance": 0.04222595443847488,
+            "next_stance_shifted": -0.04396952623849504,
+            "stance_before": 0.03871964690498417,
+            "stance_before_shifted": -0.04369376245220685,
+            "text_only": null
+          },
+          "attention_entropy": {
+            "picture": 0.15159277675499624,
+            "picture_shifted": -0.8228371853929699,
+            "next_stance": 0.142009445604521,
+            "next_stance_shifted": -0.23083651406826783,
+            "stance_before": 0.14612588390909534,
+            "stance_before_shifted": -0.22860895526574554,
+            "text_only": 0.1371185527352252
+          },
+          "attention_age": {
+            "picture": -0.09736064534698563,
+            "picture_shifted": -0.10668407212029896,
+            "next_stance": -0.00320388236295846,
+            "next_stance_shifted": -0.009292027497982719,
+            "stance_before": -0.002294614165249953,
+            "stance_before_shifted": -0.01441111410317758,
+            "text_only": 0.05951545529747018
+          },
+          "surprise_at_token": {
+            "picture": -0.034010429797055264,
+            "picture_shifted": -0.05147809107599366,
+            "next_stance": 0.002253182280709254,
+            "next_stance_shifted": -0.010931433932424878,
+            "stance_before": 0.0018235611860702161,
+            "stance_before_shifted": -0.01183112136563641,
+            "text_only": 0.2375446604663036
+          },
+          "next_attention_entropy": {
+            "picture": 0.12424992521872152,
+            "picture_shifted": -0.8096330482776656,
+            "next_stance": 0.14414477682346416,
+            "next_stance_shifted": -0.22933416923780142,
+            "stance_before": 0.1446837167522477,
+            "stance_before_shifted": -0.2259995671333238,
+            "text_only": 0.12914296353237822
+          },
+          "next_attention_age": {
+            "picture": -0.0765059436938994,
+            "picture_shifted": -0.12443669328471774,
+            "next_stance": -0.0020823304568568513,
+            "next_stance_shifted": -0.014114997066355217,
+            "stance_before": -0.004786320095995611,
+            "stance_before_shifted": -0.019091803236041816,
+            "text_only": 0.056914651793825544
+          }
+        },
+        "attention_steering": {
+          "attention_from_text": 0.05193097088987972,
+          "attention_from_text_and_stance": 0.03887926367509306,
+          "attention_from_stance_alone": 0.001561589459492807,
+          "next_attention_from_next_text": 0.06882137552035267,
+          "next_attention_from_next_text_and_picture": -0.0431767642508287
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": 0.8313946345554994,
+            "grammar_alone": 0.03938538967603758,
+            "grammar_unique": -0.0003650660749244805,
+            "indices_alone": 0.5878864031704519,
+            "indices_unique": -0.006344214772598833,
+            "content_alone": 0.8067412879743151,
+            "content_unique": 0.25187448728100414,
+            "attention_alone": -0.03531643981340096,
+            "attention_unique": 0.03259805464849275,
+            "all_families_shifted": -1.0242008549080381
+          },
+          "picture": {
+            "all_families": 0.8260867829389686,
+            "grammar_alone": 0.039365477352481526,
+            "grammar_unique": 0.0007676026716245676,
+            "indices_alone": 0.5827486578620775,
+            "indices_unique": -0.0063469890329442835,
+            "content_alone": 0.8011712086992809,
+            "content_unique": 0.2502704994934445,
+            "attention_alone": -0.03239183126961159,
+            "attention_unique": 0.03175979053561617,
+            "all_families_shifted": -0.9959131277050193
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.8526419666839811,
+            "between_sentences": 0.08832222032936783,
+            "within_sentences": 0.05903595685958862,
+            "between_genres": 0.8467630168308928,
+            "between_documents_within_genre": 0.005878949853088143
+          },
+          "picture": {
+            "between_documents": 0.8467049677205202,
+            "between_sentences": 0.090237724182175,
+            "within_sentences": 0.06305739283561707,
+            "between_genres": 0.839971222596836,
+            "between_documents_within_genre": 0.006733745123684182
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.6992192638955932,
+            "between_sentences": 0.25329420643634154,
+            "within_sentences": 0.047486502677202225
+          },
+          "content_window_pcs": {
+            "between_documents": 0.48514834241835175,
+            "between_sentences": 0.3726243848967943,
+            "within_sentences": 0.14222723245620728,
+            "between_genres": 0.1743971818338286,
+            "between_documents_within_genre": 0.3107511605845231
+          }
+        },
+        "rest_states": {
+          "states": 2,
+          "resting_share": 0.8961581291759465,
+          "genre_bits": 0.5046154951802704,
+          "genre_bits_shifted": 0.1981769508948319,
+          "sentence_position_bits": 0.03160641702045064,
+          "sentence_position_bits_shifted": 0.00032603173728862345,
+          "state_entropy_bits": 0.5933909559087702,
+          "entry_token_class_bits": 0.1424425567805585,
+          "entry_token_class_bits_shifted": 0.028006738124632502,
+          "jump_rate": 0.00027839643652561246,
+          "jump_lift_by_token_class": {
+            "newline": 0.0,
+            "sent_end": 0.0,
+            "punct": 11.439490445859875,
+            "num": 0.0,
+            "func": 0.0,
+            "word": 0.0,
+            "cont": 0.0
+          }
+        }
+      },
+      {
+        "record": "life",
+        "tokens": 1498,
+        "regime": {
+          "rests": 0.8828437917222964,
+          "big_steps": 0.0,
+          "cos_next": 0.9999995827674866,
+          "cos_two_apart": 0.9999974966049194
+        },
+        "decoding": {
+          "class_now": {
+            "picture": 0.25293355204596557,
+            "picture_shifted": 0.1674824046822164,
+            "next_stance": 0.2223789597597099,
+            "next_stance_shifted": 0.12448589797422492,
+            "stance_before": 0.22065336941090546,
+            "stance_before_shifted": 0.12258288879700244,
+            "text_only": 0.7496465243855437
+          },
+          "class_prev": {
+            "picture": 0.2509666808612305,
+            "picture_shifted": 0.16343621412334344,
+            "next_stance": 0.2226893638255841,
+            "next_stance_shifted": 0.1225458118180801,
+            "stance_before": 0.2215206378746879,
+            "stance_before_shifted": 0.12368523616691708,
+            "text_only": 0.5297416291085746
+          },
+          "sentence_position": {
+            "picture": 0.01502789376201727,
+            "picture_shifted": -0.20732203975011854,
+            "next_stance": -0.07740415934938832,
+            "next_stance_shifted": -0.16042937994248052,
+            "stance_before": -0.0755375197655376,
+            "stance_before_shifted": -0.16205801483232313,
+            "text_only": 0.41195907299741286
+          },
+          "line_position": {
+            "picture": 0.2019395430532334,
+            "picture_shifted": 0.08071138415083895,
+            "next_stance": 0.2809656300268458,
+            "next_stance_shifted": -0.2866228902507017,
+            "stance_before": 0.2812562549132841,
+            "stance_before_shifted": -0.2879805513728537,
+            "text_only": 0.614674560254418
+          },
+          "document_position": {
+            "picture": -0.14398693940337487,
+            "picture_shifted": -0.11606339611931987,
+            "next_stance": -0.07391611598011083,
+            "next_stance_shifted": -0.051133863478656505,
+            "stance_before": -0.0703718875104451,
+            "stance_before_shifted": -0.04981575246182779,
+            "text_only": 0.4111338556413763
+          },
+          "in_quote": {
+            "picture": 0.4741482224304671,
+            "picture_shifted": 0.40078370608731667,
+            "next_stance": 0.42775516644655637,
+            "next_stance_shifted": 0.5566679533649491,
+            "stance_before": 0.42916948639063973,
+            "stance_before_shifted": 0.5560065193406221,
+            "text_only": 0.7573763199936172
+          },
+          "genre": {
+            "picture": 0.5722585493413175,
+            "picture_shifted": 0.16631157674264474,
+            "next_stance": 0.33945552445247595,
+            "next_stance_shifted": 0.04000284292187245,
+            "stance_before": 0.33877378692973664,
+            "stance_before_shifted": 0.041882439691324186,
+            "text_only": 0.9241240565708762
+          },
+          "content_window_pcs": {
+            "picture": -0.15652677145540123,
+            "picture_shifted": -0.3381347883756768,
+            "next_stance": -0.08312025471499696,
+            "next_stance_shifted": -0.1752536735793126,
+            "stance_before": -0.08256781297942001,
+            "stance_before_shifted": -0.17536292176460228,
+            "text_only": null
+          },
+          "content_token_pcs": {
+            "picture": 0.03416578192432751,
+            "picture_shifted": -0.14018658330768918,
+            "next_stance": -0.015297416087131394,
+            "next_stance_shifted": -0.08243188872420681,
+            "stance_before": -0.015233081090267803,
+            "stance_before_shifted": -0.08225417771306176,
+            "text_only": null
+          },
+          "run_position": {
+            "picture": 0.9297488463854391,
+            "picture_shifted": 0.7289698873262098,
+            "next_stance": 0.7391709151360472,
+            "next_stance_shifted": 0.5299357859114717,
+            "stance_before": 0.7377708993646073,
+            "stance_before_shifted": 0.5283499572232504,
+            "text_only": -0.38284454472795104
+          }
+        },
+        "made_of": {
+          "next_stance": {
+            "all_families": 0.5028841198898533,
+            "grammar_alone": 0.058426884766953735,
+            "grammar_unique": -0.01691466030967459,
+            "indices_alone": 0.3158402658265017,
+            "indices_unique": 0.12523684850601313,
+            "content_alone": 0.4008839593458843,
+            "content_unique": 0.1631430571798662,
+            "all_families_shifted": -0.48188064912227385
+          },
+          "picture": {
+            "all_families": 0.7343160844019945,
+            "grammar_alone": 0.10493732203929396,
+            "grammar_unique": -0.0015542828563168687,
+            "indices_alone": 0.44653538478805244,
+            "indices_unique": 0.03272487822715853,
+            "content_alone": 0.707681050841951,
+            "content_unique": 0.23983375747515173,
+            "all_families_shifted": -0.3078814219126628
+          }
+        },
+        "time_scales": {
+          "next_stance": {
+            "between_documents": 0.8229451818787268,
+            "between_sentences": 0.14277521247134647,
+            "within_sentences": 0.034279584884643555,
+            "between_genres": 0.5620064335743611,
+            "between_documents_within_genre": 0.26093874830436564
+          },
+          "picture": {
+            "between_documents": 0.8390891541800971,
+            "between_sentences": 0.11698003412260007,
+            "within_sentences": 0.04393076151609421,
+            "between_genres": 0.7371608487110988,
+            "between_documents_within_genre": 0.10192830546899836
+          },
+          "next_stance_boundaries_shifted": {
+            "between_documents": 0.6252061254348942,
+            "between_sentences": 0.3420015002612962,
+            "within_sentences": 0.03279223293066025
+          },
+          "content_window_pcs": {
+            "between_documents": 0.4357805577928293,
+            "between_sentences": 0.43822275144718564,
+            "within_sentences": 0.12599675357341766,
+            "between_genres": 0.23472435991654148,
+            "between_documents_within_genre": 0.20105619787628784
+          }
+        },
+        "rest_states": {
+          "states": 3,
+          "resting_share": 0.904539385847797,
+          "genre_bits": 0.7868761109099953,
+          "genre_bits_shifted": 0.15561246220472968,
+          "sentence_position_bits": 0.03633010679821069,
+          "sentence_position_bits_shifted": 0.008053994440157641,
+          "state_entropy_bits": 1.4475081927179292,
+          "entry_token_class_bits": 0.17356760748148936,
+          "entry_token_class_bits_shifted": 0.12287626556143971,
+          "jump_rate": 0.0,
+          "jump_lift_by_token_class": {
+            "newline": null,
+            "sent_end": null,
+            "punct": null,
+            "num": null,
+            "func": null,
+            "word": null,
+            "cont": null
+          }
+        }
+      }
+    ]
+  }
+]

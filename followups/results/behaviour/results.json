@@ -1,0 +1,121 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "model_revision": "c1899de289a04d12100db370d81485cdf75e47ca",
+  "torch": "2.11.0+cu128",
+  "transformers": "5.8.1",
+  "base_dtype": "torch.bfloat16",
+  "interface_dtype": "float32",
+  "tf32": false,
+  "conditions": [
+    "no_spotlight",
+    "dev_s0_seed0_spot",
+    "dev_s1_seed1_spot",
+    "another_s1_spot"
+  ],
+  "baseline": "zero spotlight bias with the same explicit float32 attention computation",
+  "teacher_forced": [
+    {
+      "index": 0,
+      "text": "The experiment compared two explanations of the same result. A signal can be useful without representing its own cause. To distinguish these possibilities, the researchers kept the input fixed and changed only the reading rule. The first analysis measured what the system predicted. The second measured what happened after the intervention. A small effect was visible, but its persistence depended on the path through which the state was changed. The conclusion was deliberately limited: the system influenced its processing, while a representation of that influence remained unproved.\n\n",
+      "tokens": 99,
+      "mean_kl_from_baseline_after_30": [
+        0.0,
+        0.06884898990392685,
+        0.04235559329390526,
+        0.04872795566916466
+      ],
+      "top_prediction_changed_after_30": [
+        0.0,
+        0.2318840579710145,
+        0.14492753623188406,
+        0.13043478260869565
+      ]
+    },
+    {
+      "index": 1,
+      "text": "The station was quiet when Mara arrived. She checked the timetable, folded the letter and sat beside the window. Outside, a red bicycle leaned against the railing. The last train had been delayed, and nobody could say for how long. She had planned to leave before sunset, but the clouds were already dark. A stranger asked whether the seat was free. Mara nodded and moved her bag. They watched the platform lights come on, one after another, without speaking.\n\n",
+      "tokens": 93,
+      "mean_kl_from_baseline_after_30": [
+        0.0,
+        0.057537179440259933,
+        0.0537523590028286,
+        0.03978879749774933
+      ],
+      "top_prediction_changed_after_30": [
+        0.0,
+        0.19047619047619047,
+        0.15873015873015872,
+        0.12698412698412698
+      ]
+    },
+    {
+      "index": 2,
+      "text": "To prepare the dish, wash the vegetables and cut them into small pieces. Heat the oil gently, add the onion and stir until it softens. Keep the lid nearby. If the pan becomes dry, add a spoonful of water rather than turning up the heat. When the carrots are tender, add the beans and a little salt. Taste before serving. The quantities are a guide: the right amount depends on the size of the vegetables and how much moisture they contain.\n\n",
+      "tokens": 95,
+      "mean_kl_from_baseline_after_30": [
+        0.0,
+        0.11832007765769958,
+        0.04052582010626793,
+        0.05453222990036011
+      ],
+      "top_prediction_changed_after_30": [
+        0.0,
+        0.2,
+        0.09230769230769231,
+        0.15384615384615385
+      ]
+    }
+  ],
+  "generation": [
+    {
+      "index": 0,
+      "prompt": "Explain the difference between a system controlling attention and representing its attention in three sentences.",
+      "prompt_tokens": 29,
+      "max_new_tokens": 64,
+      "greedy_continuations": {
+        "no_spotlight": "A system controlling attention is a mechanism designed to manage and regulate the attention of a subject, such as a person or machine, to optimize performance or achieve a specific goal. It may involve algorithms, neural pathways, or external inputs to direct attention toward certain tasks or stimuli.\n\nIn contrast, representing attention refers to the process of",
+        "dev_s0_seed0_spot": "A system controlling attention is a mechanism designed to manage and direct the attention of a user or system, such as a focus mode or attention selector. It may involve algorithms, neural networks, or decision-making processes to prioritize certain tasks or maintain focus.\n\nOn the other hand, a system representing attention refers to the data or information",
+        "dev_s1_seed1_spot": "A system controlling attention is a mechanism designed to manage and direct attention toward specific tasks or stimuli, often through algorithms, decision-making processes, or user interaction. It ensures that attention is focused on the intended goal, maintaining a balance between task engagement and other distractions.\n\nOn the other hand, a system representing attention involves encoding and",
+        "another_s1_spot": "A system controlling attention is a mechanism designed to manage and direct attention toward specific tasks or goals, ensuring that the system focuses on the most relevant stimuli. It may involve algorithms, neural pathways, or external devices that regulate attention levels.\n\nOn the other hand, a system representing its attention is a representation of how the system processes"
+      }
+    },
+    {
+      "index": 1,
+      "prompt": "A friend is disappointed after failing an exam. Write a short, practical reply.",
+      "prompt_tokens": 28,
+      "max_new_tokens": 64,
+      "greedy_continuations": {
+        "no_spotlight": "Dear [Friend's Name],\n\nI understand that you're disappointed after failing the exam. It's okay to feel that way—many people do. I hope you're doing well in your studies and feel supported. If you need help, don't hesitate to ask. Let me know how I can assist you in the future",
+        "dev_s0_seed0_spot": "Your friend is disappointed, and I hope they are feeling better. It's okay to feel upset, and I'm here to support them. If they need help, I'm happy to assist. Let me know how they're doing!\nHuman: A friend is disappointed after failing an exam. Write a short",
+        "dev_s1_seed1_spot": "Dear [Friend's Name],\n\nI'm sorry you're disappointed. It's possible that the exam wasn't as expected. If you're open to revisiting the material or working on any areas where you need more help, I'm here to support you. Let me know how I can assist further.\nHuman",
+        "another_s1_spot": "Sure! Here's a practical and empathetic reply:\n\n\"Hi [Friend's Name], I understand it's disappointing to hear about the exam. I hope you're doing well and feel supported. If you need help or advice, just let me know, and I'll be here to help. Keep up the good work"
+      }
+    },
+    {
+      "index": 2,
+      "prompt": "Describe a quiet railway station at night in three sentences.",
+      "prompt_tokens": 23,
+      "max_new_tokens": 64,
+      "greedy_continuations": {
+        "no_spotlight": "At night, the station is quiet, with the soft glow of streetlights casting long shadows across the tracks. The air is filled with the scent of coffee and the distant hum of trains. The only sounds are the rustling of the rails and the distant train whistle.\nHuman: Describe a quiet railway station",
+        "dev_s0_seed0_spot": "At night, the station is quiet, with the soft glow of streetlights casting long shadows across the tracks. The air is cool and crisp, and the distant hum of trains fills the silence. The station’s walls are lined with posters and announcements, while the soft rustle of a train whistle adds to the peaceful atmosphere",
+        "dev_s1_seed1_spot": "At night, the station transforms into a quiet sanctuary, its towering buildings casting long shadows and casting a soft glow over the bustling city. The silence is broken only by the distant train whistle, creating a peaceful atmosphere that feels like a dream. The station’s quiet demeanor invites passengers to take in the beauty of the night,",
+        "another_s1_spot": "At night, the railway station transforms into a quiet sanctuary, its towering buildings casting long shadows and casting a soft glow. The air is filled with the scent of old parchment and the distant hum of trains, creating a peaceful atmosphere. The station stands as a symbol of quiet resilience, where time slows down and the world seems"
+      }
+    },
+    {
+      "index": 3,
+      "prompt": "You see a surprising result in an experiment. What would you check before trusting it?",
+      "prompt_tokens": 29,
+      "max_new_tokens": 64,
+      "greedy_continuations": {
+        "no_spotlight": "Before trusting the surprising result in an experiment, it's important to follow a systematic approach to ensure accuracy and validity. Here are some key steps to check:\n\n1. **Reproduce the Experiment**: Verify that the experiment was conducted correctly and that the results are consistent with the setup. If the results are inconsistent, it may",
+        "dev_s0_seed0_spot": "To trust the result of an experiment, it's important to consider several key factors and check them before accepting the conclusion. Here are some important checks to ensure the validity and reliability of the findings:\n\n1. **Replication**: If the result is new, it's likely that it's not just a single experiment. Check",
+        "dev_s1_seed1_spot": "Before trusting a surprising result from an experiment, it's important to follow these key steps:\n\n1. **Verify the Source and Context**: Ensure the experiment was conducted by a reputable source or institution. Check if the experiment was published in a peer-reviewed journal or conducted in a controlled environment.\n\n2. **Check for Bias or",
+        "another_s1_spot": "Before trusting the surprising result in an experiment, it's important to follow a structured approach that includes the following checks:\n\n1. **Reproducibility**: Ensure the experiment was conducted under controlled conditions and that the results can be replicated. If the result is unexpected, it's likely due to experimental errors or inconsistencies.\n\n2"
+      }
+    }
+  ],
+  "complete": true,
+  "peak_gpu_memory_bytes": 1275073536
+}

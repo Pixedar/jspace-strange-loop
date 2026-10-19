@@ -1,0 +1,12 @@
+{
+  "life": "pos_s0",
+  "describe": "itself",
+  "route": "operation",
+  "picture": "sphere",
+  "remainder_share_of_field": 0.04053577780723572,
+  "predicted_remainder_correlation": 0.03409336134791374,
+  "predicted_remainder_explained": -668.35986328125,
+  "predicted_field_correlation": 0.5051900148391724,
+  "predicted_field_explained": -202814.609375,
+  "interface": "iface_3000.pt"
+}

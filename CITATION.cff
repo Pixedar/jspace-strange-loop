@@ -1,37 +1,26 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Strange loop in J-space: what a language model builds when a description of itself is looped back into itself"
+title: "Strange loop in J-space: a self-description that changes its own reading"
 authors:
   - family-names: Tomasik
     given-names: Wiktor
-date-released: 2026-10-14
-version: "3.0"
+date-released: 2026-10-19
+version: "4.0"
 url: "https://github.com/Pixedar/jspace-strange-loop"
 repository-code: "https://github.com/Pixedar/jspace-strange-loop"
-license: MIT
+license: AGPL-3.0-only
 keywords:
+  - self-modeling
   - strange loop
-  - self-model
   - language models
-  - interpretability
-  - global workspace
-  - J-space
-  - self-prediction
-  - representation geometry
   - attention
-  - information selection
+  - representation geometry
+  - multimodal models
 abstract: >-
-  Three loops through language models whose weights stay fixed. The first two use the model's own internal
-  description of itself (Qwen3-8B, replicated on Qwen3-14B). In a
-  frozen loop that writes the model's J-space reading back into it, the description settles into many locally stable
-  states selected by self-reproduction: discourse and stance words and an answering frame survive, names and evidence
-  fade, and every context drifts toward a casual persona; perturbed during thinking, the model refers to a previous
-  conversation that never happened. In a trained loop that carries a 32-number state across chunks of the model's own
-  thinking, a self-model under discriminative pressure to predict that state produces a rotating time code that follows
-  the stages of reasoning (or a persistent identity code when it must tell itself from others), and a self-forecast
-  fed back into the loop is enacted, making the self-model a cause of what it predicts; mild pressure keeps both the
-  enactment and the state's content. In the third (Qwen2.5-0.5B and 3B, Qwen3-1.7B), a learned 32-number state that
-  chooses what the model reads comes to represent which item matters and steers the reading through that
-  representation (edits redirect it, through the reading alone); it also reads again when its own read failed. When
-  the model instead reads everything as text, the state learns to switch on the model's own attention to whatever the
-  text names, but not to carry the target itself.
+  A small self-describing attention loop around a frozen language model. Removing a destination
+  shortcut from field discrimination can produce state-dependent movement from organized starts.
+  Path interventions locate that dependence mainly in the reader. A shared spotlight changes
+  the language model's predictions, while the measured return through model processing remains
+  weak. Field pattern agreement does not establish calibrated forecasts, useful online prediction,
+  persistent individuality or subjective experience. Earlier frozen feedback, chunked reasoning,
+  evidence selection and negative causal-map results are preserved as distinct research branches.

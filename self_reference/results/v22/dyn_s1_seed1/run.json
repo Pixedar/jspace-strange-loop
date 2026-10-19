@@ -1,0 +1,33 @@
+{
+  "model": "Qwen/Qwen3-0.6B",
+  "band": [
+    12,
+    18
+  ],
+  "read_layer": 19,
+  "window": 256,
+  "stream_seed": 1,
+  "T": 3000,
+  "B": 4,
+  "K": 8,
+  "m": 8,
+  "p": 32,
+  "R": 16,
+  "bound": 3.0,
+  "lr": 0.002,
+  "chunk": 8,
+  "calib_tokens": 150,
+  "print_every": 250,
+  "arm": "itself",
+  "init_seed": 1,
+  "picture": "sphere",
+  "div": "shared",
+  "plastic": "none",
+  "reader_route": "operation",
+  "stream_T": 4000,
+  "div_scale": 0.0,
+  "save_every": 250,
+  "identity": "dynamics",
+  "init_iface": "warm_s1.pt",
+  "record_twin": true
+}

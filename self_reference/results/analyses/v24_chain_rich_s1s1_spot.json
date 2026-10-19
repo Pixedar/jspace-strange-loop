@@ -1,0 +1,14 @@
+{
+  "life": "rich_s1s1_spot",
+  "interface": "iface_3000.pt",
+  "spotlight_only": {
+    "read_layer": 0.1008409783244133,
+    "picture": 0.0013404362834990025,
+    "stance": 0.0001641677226871252
+  },
+  "reading_only": {
+    "picture": 0.35607200860977173,
+    "stance": 0.09944920241832733
+  },
+  "reader_attention_on_newest": 0.0649481862783432
+}

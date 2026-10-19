@@ -1,0 +1,12 @@
+{
+  "life": "dyn_s1",
+  "describe": "itself",
+  "route": "operation",
+  "picture": "sphere",
+  "remainder_share_of_field": 0.28646600246429443,
+  "predicted_remainder_correlation": 0.5587226152420044,
+  "predicted_remainder_explained": -4552.765625,
+  "predicted_field_correlation": -0.04268808662891388,
+  "predicted_field_explained": -8034.36865234375,
+  "interface": "iface_3000.pt"
+}

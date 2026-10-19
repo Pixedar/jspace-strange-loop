@@ -1,0 +1,12 @@
+{
+  "life": "rich_s0s2_nospot",
+  "describe": "itself",
+  "route": "operation",
+  "picture": "sphere",
+  "remainder_share_of_field": 0.5439059734344482,
+  "predicted_remainder_correlation": 0.6382719874382019,
+  "predicted_remainder_explained": -72629.6796875,
+  "predicted_field_correlation": 0.38365665078163147,
+  "predicted_field_explained": -175397.75,
+  "interface": "iface_3000.pt"
+}

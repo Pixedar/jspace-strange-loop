@@ -1,0 +1,47 @@
+{
+  "life": "dyn_s0_seed0",
+  "interface": "iface_3000.pt",
+  "after_switch": {
+    "0": {
+      "stance_apart": 0.16633185263102254,
+      "picture_apart": 0.9880513499180476,
+      "duplicate_vs_original": 0.0
+    },
+    "50": {
+      "stance_apart": 0.014776027606179317,
+      "picture_apart": 0.0628966682900985,
+      "duplicate_vs_original": 0.0
+    },
+    "100": {
+      "stance_apart": 0.007588890613988042,
+      "picture_apart": 0.05251822620630264,
+      "duplicate_vs_original": 0.0
+    },
+    "256": {
+      "stance_apart": 0.06073094345629215,
+      "picture_apart": 0.03286033791179458,
+      "duplicate_vs_original": 0.0
+    },
+    "300": {
+      "stance_apart": 0.03656927046055595,
+      "picture_apart": 0.00930596717322866,
+      "duplicate_vs_original": 0.0
+    },
+    "400": {
+      "stance_apart": 0.002059531048871577,
+      "picture_apart": 0.013098414909715453,
+      "duplicate_vs_original": 0.0
+    },
+    "500": {
+      "stance_apart": 0.0002750920393737033,
+      "picture_apart": 0.0015046829357743263,
+      "duplicate_vs_original": 0.0
+    },
+    "599": {
+      "stance_apart": 0.0004133528370099763,
+      "picture_apart": 0.0006095676314240942,
+      "duplicate_vs_original": 0.0
+    }
+  },
+  "state_dependent_part_on_shared_text": 0.12375282807111301
+}

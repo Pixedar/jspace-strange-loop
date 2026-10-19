@@ -1,0 +1,12 @@
+{
+  "life": "dev_s0_seed2_spot",
+  "describe": "itself",
+  "route": "operation",
+  "picture": "sphere",
+  "remainder_share_of_field": 0.538652241230011,
+  "predicted_remainder_correlation": 0.7644805312156677,
+  "predicted_remainder_explained": -2562.506103515625,
+  "predicted_field_correlation": 0.19407889246940613,
+  "predicted_field_explained": -13566.8623046875,
+  "interface": "iface_3000.pt"
+}

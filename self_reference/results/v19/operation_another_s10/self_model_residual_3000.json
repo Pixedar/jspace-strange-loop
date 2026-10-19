@@ -1,0 +1,11 @@
+{
+  "life": "operation_another_s10",
+  "describe": "another",
+  "route": "operation",
+  "picture": "sphere",
+  "remainder_share_of_field": 4.396706572151743e-06,
+  "predicted_remainder_correlation": 0.009553009644150734,
+  "predicted_remainder_explained": -1896522.625,
+  "predicted_field_correlation": 0.0053071435540914536,
+  "predicted_field_explained": -5763.40771484375
+}

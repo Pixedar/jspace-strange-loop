@@ -1,0 +1,47 @@
+{
+  "life": "rich_s1s1_spot",
+  "interface": "iface_3000.pt",
+  "after_switch": {
+    "0": {
+      "stance_apart": 0.11024526382486026,
+      "picture_apart": 1.3924558758735657,
+      "duplicate_vs_original": 0.0
+    },
+    "50": {
+      "stance_apart": 1.3344098975261052,
+      "picture_apart": 0.6247879378497601,
+      "duplicate_vs_original": 0.0
+    },
+    "100": {
+      "stance_apart": 0.002639901436244448,
+      "picture_apart": 0.01857508346438408,
+      "duplicate_vs_original": 0.0
+    },
+    "256": {
+      "stance_apart": 0.0010465485393069685,
+      "picture_apart": 0.010219802614301443,
+      "duplicate_vs_original": 0.0
+    },
+    "300": {
+      "stance_apart": 0.00357612296162794,
+      "picture_apart": 0.005393236177042127,
+      "duplicate_vs_original": 0.0
+    },
+    "400": {
+      "stance_apart": 0.0006367038828708852,
+      "picture_apart": 0.008771268534474075,
+      "duplicate_vs_original": 0.0
+    },
+    "500": {
+      "stance_apart": 0.0005835661043723425,
+      "picture_apart": 0.008070203475654125,
+      "duplicate_vs_original": 0.0
+    },
+    "599": {
+      "stance_apart": 0.0007751825032755733,
+      "picture_apart": 0.007554733660072088,
+      "duplicate_vs_original": 0.0
+    }
+  },
+  "state_dependent_part_on_shared_text": 0.5445402404841255
+}

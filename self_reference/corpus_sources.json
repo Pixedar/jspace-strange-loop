@@ -1,0 +1,25 @@
+{
+  "Salesforce/wikitext": {
+    "revision": "b08601e04326c79dfdd32d625aee71d232d685c3",
+    "license": [
+      "cc-by-sa-3.0",
+      "gfdl"
+    ]
+  },
+  "fancyzhx/ag_news": {
+    "revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+    "license": [
+      "unknown"
+    ]
+  },
+  "roneneldan/TinyStories": {
+    "revision": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+    "license": "cdla-sharing-1.0"
+  },
+  "knkarthick/dialogsum": {
+    "revision": "a968e7aee0602e257935f1321a02e4287f7d5848",
+    "license": "cc-by-nc-sa-4.0"
+  },
+  "original_corpus_sha256": "843f2ff61f87524f1cf824ae146fde3b1f26c67cbac3b230a74f0f2c73b1b19d",
+  "scope": "Upstream corpus texts are not redistributed or relicensed in this release. Revisions are the sources used by the exported reconstruction script; exact identity is checked against the original combined-corpus hash."
+}

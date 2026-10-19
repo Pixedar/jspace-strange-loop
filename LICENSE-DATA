@@ -1,10 +1,12 @@
-Text, figures and data in this repository (all files other than source code) are licensed under the
-Creative Commons Attribution 4.0 International licence (CC BY 4.0).
-
 Copyright (c) 2026 Wiktor Tomasik
 
-You are free to share and adapt the material for any purpose, including commercially, provided you give appropriate
-credit (Wiktor Tomasik, "Strange loop in J-space", 2026, https://github.com/Pixedar/jspace-strange-loop), provide a link
-to the licence, and indicate if changes were made.
+New author-owned text, figures and numeric observations in this release are
+licensed under the Creative Commons Attribution-ShareAlike 4.0 International
+License (CC BY-SA 4.0).
 
-Full licence text: https://creativecommons.org/licenses/by/4.0/legalcode
+License summary: https://creativecommons.org/licenses/by-sa/4.0/
+Full legal terms: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Earlier releases retain their original license grants. Third-party material,
+including pretrained models and external text corpora, retains its own terms.
+See LICENSING.md and THIRD_PARTY_NOTICES.md for the code/data split and exceptions.

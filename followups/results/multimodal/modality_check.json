@@ -1,0 +1,126 @@
+{
+  "complete": true,
+  "kind": "frozen full-native input interventions",
+  "rows": [
+    {
+      "seed": 0,
+      "condition": "self",
+      "palette": 0,
+      "image_reversal_destination_rms": 0.008715610019862652,
+      "spoken_direction_destination_rms": 0.6755168437957764,
+      "factorial_destination_interaction_rms": 0.012570728547871113,
+      "grey_input_destination_rms": 0.04405641555786133,
+      "silence_input_destination_rms": 0.48017480969429016,
+      "mean_reader_mass": {
+        "image": 0.08437780290842056,
+        "audio": 0.857320249080658,
+        "text": 0.058301910758018494
+      }
+    },
+    {
+      "seed": 0,
+      "condition": "self",
+      "palette": 1,
+      "image_reversal_destination_rms": 0.004769015125930309,
+      "spoken_direction_destination_rms": 0.678407609462738,
+      "factorial_destination_interaction_rms": 0.006348248105496168,
+      "grey_input_destination_rms": 0.0263698548078537,
+      "silence_input_destination_rms": 0.47768327593803406,
+      "mean_reader_mass": {
+        "image": 0.08423060178756714,
+        "audio": 0.8557599782943726,
+        "text": 0.0600094236433506
+      }
+    },
+    {
+      "seed": 0,
+      "condition": "recorded_other",
+      "palette": 0,
+      "image_reversal_destination_rms": 0.0013321982696652412,
+      "spoken_direction_destination_rms": 0.5201167464256287,
+      "factorial_destination_interaction_rms": 0.001883622375316918,
+      "grey_input_destination_rms": 0.00881426315754652,
+      "silence_input_destination_rms": 0.33096587657928467,
+      "mean_reader_mass": {
+        "image": 0.001401395769789815,
+        "audio": 0.9985121488571167,
+        "text": 0.00008639335283078253
+      }
+    },
+    {
+      "seed": 0,
+      "condition": "recorded_other",
+      "palette": 1,
+      "image_reversal_destination_rms": 0.0012042392045259476,
+      "spoken_direction_destination_rms": 0.5187479257583618,
+      "factorial_destination_interaction_rms": 0.0018183095380663872,
+      "grey_input_destination_rms": 0.00789432693272829,
+      "silence_input_destination_rms": 0.31287941336631775,
+      "mean_reader_mass": {
+        "image": 0.000750197796151042,
+        "audio": 0.999159574508667,
+        "text": 0.00009024103928823024
+      }
+    },
+    {
+      "seed": 1,
+      "condition": "self",
+      "palette": 0,
+      "image_reversal_destination_rms": 0.002768914448097348,
+      "spoken_direction_destination_rms": 0.6952074766159058,
+      "factorial_destination_interaction_rms": 0.0046323928982019424,
+      "grey_input_destination_rms": 0.012674445286393166,
+      "silence_input_destination_rms": 0.48954474925994873,
+      "mean_reader_mass": {
+        "image": 0.0237453393638134,
+        "audio": 0.6179256439208984,
+        "text": 0.35832899808883667
+      }
+    },
+    {
+      "seed": 1,
+      "condition": "self",
+      "palette": 1,
+      "image_reversal_destination_rms": 0.0032632050570100546,
+      "spoken_direction_destination_rms": 0.6951856017112732,
+      "factorial_destination_interaction_rms": 0.0049043744802474976,
+      "grey_input_destination_rms": 0.012133047915995121,
+      "silence_input_destination_rms": 0.48932939767837524,
+      "mean_reader_mass": {
+        "image": 0.024382734671235085,
+        "audio": 0.6170803308486938,
+        "text": 0.3585369288921356
+      }
+    },
+    {
+      "seed": 1,
+      "condition": "recorded_other",
+      "palette": 0,
+      "image_reversal_destination_rms": 0.00014832116721663624,
+      "spoken_direction_destination_rms": 0.6531413793563843,
+      "factorial_destination_interaction_rms": 0.00019156358030159026,
+      "grey_input_destination_rms": 0.002539711305871606,
+      "silence_input_destination_rms": 0.4611051678657532,
+      "mean_reader_mass": {
+        "image": 0.003811192698776722,
+        "audio": 0.6258294582366943,
+        "text": 0.3703593611717224
+      }
+    },
+    {
+      "seed": 1,
+      "condition": "recorded_other",
+      "palette": 1,
+      "image_reversal_destination_rms": 0.0007228124886751175,
+      "spoken_direction_destination_rms": 0.6528785824775696,
+      "factorial_destination_interaction_rms": 0.0009658082271926105,
+      "grey_input_destination_rms": 0.0012266668491065502,
+      "silence_input_destination_rms": 0.46083834767341614,
+      "mean_reader_mass": {
+        "image": 0.006678131874650717,
+        "audio": 0.6260554790496826,
+        "text": 0.36726632714271545
+      }
+    }
+  ]
+}

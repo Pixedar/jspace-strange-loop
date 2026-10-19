@@ -1,0 +1,408 @@
+[
+  {
+    "life": "rich_s0s2_spot",
+    "spotlight": 1.5,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": -0.111497595421084,
+        "text_stance": 0.4798445130186123,
+        "text_stance_picture": 0.5231023090222644,
+        "control_gain": 0.5913421084396964,
+        "representation_gain": 0.043257796003652094
+      },
+      "attention_age": {
+        "text": 0.03531121144159219,
+        "text_stance": 0.03427643706559377,
+        "text_stance_picture": -0.003867857367409744,
+        "control_gain": -0.0010347743759984152,
+        "representation_gain": -0.03814429443300352
+      }
+    },
+    "own_record": {
+      "spotlight_sharpness": {
+        "text": -0.16020373303261537,
+        "text_stance": 0.6798407510628031,
+        "text_stance_picture": 0.6935119522895135,
+        "control_gain": 0.8400444840954184,
+        "representation_gain": 0.013671201226710394
+      },
+      "spotlight_age": {
+        "text": 0.020135235242956684,
+        "text_stance": 0.023071265981912364,
+        "text_stance_picture": 0.018008383561981256,
+        "control_gain": 0.0029360307389556806,
+        "representation_gain": -0.0050628824199311084
+      }
+    }
+  },
+  {
+    "life": "rich_s1s1_spot",
+    "spotlight": 1.5,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": 0.004037898534739015,
+        "text_stance": 0.5512956405097864,
+        "text_stance_picture": 0.5237378322984537,
+        "control_gain": 0.5472577419750474,
+        "representation_gain": -0.02755780821133269
+      },
+      "attention_age": {
+        "text": 0.04597692131308867,
+        "text_stance": 0.04850848017275394,
+        "text_stance_picture": 0.0021332810434741833,
+        "control_gain": 0.0025315588596652727,
+        "representation_gain": -0.04637519912927976
+      }
+    },
+    "own_record": {
+      "spotlight_sharpness": {
+        "text": -0.05853182020065931,
+        "text_stance": 0.39903201122715976,
+        "text_stance_picture": 0.3919352131448914,
+        "control_gain": 0.4575638314278191,
+        "representation_gain": -0.007096798082268374
+      },
+      "spotlight_age": {
+        "text": 0.002712635114005768,
+        "text_stance": 0.0014392177807318052,
+        "text_stance_picture": -0.03965961750714894,
+        "control_gain": -0.001273417333273963,
+        "representation_gain": -0.04109883528788075
+      }
+    }
+  },
+  {
+    "life": "rich_s0s2_nospot",
+    "spotlight": null,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": -0.04352087389706824,
+        "text_stance": -0.12076495611644822,
+        "text_stance_picture": -0.25239834536769057,
+        "control_gain": -0.07724408221937998,
+        "representation_gain": -0.13163338925124235
+      },
+      "attention_age": {
+        "text": 0.017406727499948316,
+        "text_stance": 0.00023352208176674605,
+        "text_stance_picture": 0.013612301973397078,
+        "control_gain": -0.01717320541818157,
+        "representation_gain": 0.013378779891630332
+      }
+    }
+  },
+  {
+    "life": "rich_s1s1_nospot",
+    "spotlight": null,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": -0.1450077732544498,
+        "text_stance": 0.17209354796316764,
+        "text_stance_picture": -0.02743848969413676,
+        "control_gain": 0.31710132121761747,
+        "representation_gain": -0.1995320376573044
+      },
+      "attention_age": {
+        "text": 0.12803539306322784,
+        "text_stance": 0.08769561467553755,
+        "text_stance_picture": 0.015778854496718925,
+        "control_gain": -0.04033977838769029,
+        "representation_gain": -0.07191676017881862
+      }
+    }
+  },
+  {
+    "life": "dev_s0_seed0_spot",
+    "spotlight": 1.5,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": 0.08068642410029436,
+        "text_stance": 0.3048394828457304,
+        "text_stance_picture": 0.196681226686615,
+        "control_gain": 0.22415305874543606,
+        "representation_gain": -0.10815825615911542
+      },
+      "attention_age": {
+        "text": 0.018280779199628283,
+        "text_stance": 0.003352793076712879,
+        "text_stance_picture": -0.0266869509572481,
+        "control_gain": -0.014927986122915404,
+        "representation_gain": -0.03003974403396098
+      }
+    },
+    "own_record": {
+      "spotlight_sharpness": {
+        "text": -0.05521217902333972,
+        "text_stance": 0.5013090536087499,
+        "text_stance_picture": 0.4715475947697974,
+        "control_gain": 0.5565212326320896,
+        "representation_gain": -0.02976145883895248
+      },
+      "spotlight_age": {
+        "text": 0.04597943974306573,
+        "text_stance": 0.04292683456143079,
+        "text_stance_picture": 0.02610762361744473,
+        "control_gain": -0.003052605181634943,
+        "representation_gain": -0.016819210943986057
+      }
+    }
+  },
+  {
+    "life": "dev_s0_seed2_spot",
+    "spotlight": 1.5,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": 0.02610661893236743,
+        "text_stance": 0.09833464933940059,
+        "text_stance_picture": 0.008873286469937458,
+        "control_gain": 0.07222803040703316,
+        "representation_gain": -0.08946136286946313
+      },
+      "attention_age": {
+        "text": -0.025720155245401832,
+        "text_stance": -0.03323333791346644,
+        "text_stance_picture": -0.0399285523149355,
+        "control_gain": -0.007513182668064611,
+        "representation_gain": -0.006695214401469057
+      }
+    },
+    "own_record": {
+      "spotlight_sharpness": {
+        "text": -0.038099952284610245,
+        "text_stance": 0.13334752368307223,
+        "text_stance_picture": 0.13156571501936565,
+        "control_gain": 0.17144747596768248,
+        "representation_gain": -0.0017818086637065855
+      },
+      "spotlight_age": {
+        "text": 0.01477463735152909,
+        "text_stance": 0.015562767079600831,
+        "text_stance_picture": 0.0035732855381778728,
+        "control_gain": 0.0007881297280717403,
+        "representation_gain": -0.011989481541422958
+      }
+    }
+  },
+  {
+    "life": "dev_s1_seed1_spot",
+    "spotlight": 1.5,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": 0.18129346997211207,
+        "text_stance": 0.5994885785297289,
+        "text_stance_picture": 0.5538933734917045,
+        "control_gain": 0.4181951085576169,
+        "representation_gain": -0.04559520503802439
+      },
+      "attention_age": {
+        "text": 0.020395766510314467,
+        "text_stance": 0.004085606510039669,
+        "text_stance_picture": 0.011506907304560998,
+        "control_gain": -0.016310160000274798,
+        "representation_gain": 0.007421300794521329
+      }
+    },
+    "own_record": {
+      "spotlight_sharpness": {
+        "text": 0.22917072508150016,
+        "text_stance": 0.7141125507670681,
+        "text_stance_picture": 0.7331940459683244,
+        "control_gain": 0.484941825685568,
+        "representation_gain": 0.019081495201256238
+      },
+      "spotlight_age": {
+        "text": 0.01178322108740601,
+        "text_stance": 0.011825836735329054,
+        "text_stance_picture": 0.014534222642833772,
+        "control_gain": 4.26156479230444e-05,
+        "representation_gain": 0.002708385907504718
+      }
+    }
+  },
+  {
+    "life": "rich_s1s1_neighbor",
+    "spotlight": 1.5,
+    "spotlight_from": "neighbor",
+    "ref": {
+      "attention_sharpness": {
+        "text": 0.04105175874935199,
+        "text_stance": 0.22260969526396207,
+        "text_stance_picture": 0.1366645266296616,
+        "control_gain": 0.18155793651461008,
+        "representation_gain": -0.08594516863430046
+      },
+      "attention_age": {
+        "text": 0.06052557541219386,
+        "text_stance": 0.042492034209500734,
+        "text_stance_picture": -0.11680519017315993,
+        "control_gain": -0.018033541202693126,
+        "representation_gain": -0.15929722438266067
+      }
+    },
+    "own_record": {
+      "spotlight_sharpness": {
+        "text": -0.18254964885642613,
+        "text_stance": 0.40602671945307733,
+        "text_stance_picture": 0.48079254949542743,
+        "control_gain": 0.5885763683095034,
+        "representation_gain": 0.0747658300423501
+      },
+      "spotlight_age": {
+        "text": -0.002731297084743123,
+        "text_stance": -0.0010081399050096973,
+        "text_stance_picture": -0.026430916235478913,
+        "control_gain": 0.0017231571797334255,
+        "representation_gain": -0.025422776330469216
+      }
+    }
+  },
+  {
+    "life": "another_s1_spot",
+    "spotlight": 1.5,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": 0.2325236198447637,
+        "text_stance": 0.3397105820792343,
+        "text_stance_picture": 0.37982953242312534,
+        "control_gain": 0.10718696223447063,
+        "representation_gain": 0.04011895034389101
+      },
+      "attention_age": {
+        "text": 0.060741969018142966,
+        "text_stance": 0.048108778977389105,
+        "text_stance_picture": -0.06773125586670511,
+        "control_gain": -0.012633190040753861,
+        "representation_gain": -0.11584003484409422
+      }
+    },
+    "own_record": {
+      "spotlight_sharpness": {
+        "text": 0.2946208757916785,
+        "text_stance": 0.4004398095439546,
+        "text_stance_picture": 0.23051729659196,
+        "control_gain": 0.10581893375227608,
+        "representation_gain": -0.1699225129519946
+      },
+      "spotlight_age": {
+        "text": -0.0028194206522890175,
+        "text_stance": -0.002998695121781303,
+        "text_stance_picture": -0.0479551215498033,
+        "control_gain": -0.00017927446949228543,
+        "representation_gain": -0.044956426428022
+      }
+    }
+  },
+  {
+    "life": "dyn_s0_seed2",
+    "spotlight": null,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": -0.03374631842027051,
+        "text_stance": -0.09132837280330836,
+        "text_stance_picture": -0.015878339464481833,
+        "control_gain": -0.057582054383037845,
+        "representation_gain": 0.07545003333882652
+      },
+      "attention_age": {
+        "text": 0.1421980126557387,
+        "text_stance": 0.14326956847038633,
+        "text_stance_picture": 0.08947713778678529,
+        "control_gain": 0.001071555814647629,
+        "representation_gain": -0.05379243068360104
+      }
+    }
+  },
+  {
+    "life": "dyn_s1_seed1",
+    "spotlight": null,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": 0.007937757224414005,
+        "text_stance": -0.0007552979634511126,
+        "text_stance_picture": -0.045426824456163695,
+        "control_gain": -0.008693055187865117,
+        "representation_gain": -0.04467152649271258
+      },
+      "attention_age": {
+        "text": 0.12609469781255103,
+        "text_stance": 0.10683533575077159,
+        "text_stance_picture": 0.05312800490528685,
+        "control_gain": -0.019259362061779445,
+        "representation_gain": -0.053707330845484735
+      }
+    }
+  },
+  {
+    "life": "dyn_s0_seed0",
+    "spotlight": null,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": -0.026609239416747504,
+        "text_stance": 0.15685755215908212,
+        "text_stance_picture": 0.1767599639648689,
+        "control_gain": 0.18346679157582962,
+        "representation_gain": 0.01990241180578678
+      },
+      "attention_age": {
+        "text": 0.16806400602648666,
+        "text_stance": 0.1680165664235325,
+        "text_stance_picture": 0.12578784131118415,
+        "control_gain": -4.743960295416905e-05,
+        "representation_gain": -0.04222872511234835
+      }
+    }
+  },
+  {
+    "life": "dyn_s1_seed4",
+    "spotlight": null,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": 0.07392994457484328,
+        "text_stance": 0.21702362205714174,
+        "text_stance_picture": 0.34444137319959445,
+        "control_gain": 0.14309367748229845,
+        "representation_gain": 0.1274177511424527
+      },
+      "attention_age": {
+        "text": 0.22327351481755917,
+        "text_stance": 0.20526685546477708,
+        "text_stance_picture": 0.15402688860696295,
+        "control_gain": -0.01800665935278209,
+        "representation_gain": -0.05123996685781412
+      }
+    }
+  },
+  {
+    "life": "pos_s0_seed0",
+    "spotlight": null,
+    "spotlight_from": "own",
+    "ref": {
+      "attention_sharpness": {
+        "text": -0.2539929961138626,
+        "text_stance": -0.19479147261879037,
+        "text_stance_picture": -1.560623291993261,
+        "control_gain": 0.05920152349507224,
+        "representation_gain": -1.3658318193744705
+      },
+      "attention_age": {
+        "text": 0.08085087209791966,
+        "text_stance": 0.06595299575725266,
+        "text_stance_picture": 0.031243734842097942,
+        "control_gain": -0.014897876340666999,
+        "representation_gain": -0.03470926091515472
+      }
+    }
+  }
+]

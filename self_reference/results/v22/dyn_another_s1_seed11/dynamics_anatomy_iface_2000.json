@@ -1,0 +1,18 @@
+{
+  "life": "dyn_another_s1_seed11",
+  "interface": "iface_2000.pt",
+  "big_steps": 0.018363939899833055,
+  "rests": 0.9148580968280468,
+  "cos_next_median": 0.9999998211860657,
+  "cos_two_apart_median": 0.999998927116394,
+  "state_dependent_size": 0.0415814123570008,
+  "signature_share": 0.03150094516424279,
+  "time_varying_share": 0.9684991535871187,
+  "time_varying_genre_share": 0.019828772251698178,
+  "same_genre_shifted": 0.026766437603462336,
+  "copies_apart_frozen": 0.6993789672851562,
+  "copy_specific_share": 0.7461539506912231,
+  "description_of_time_varying_part": -0.025561315938830376,
+  "description_of_signature": 0.2864118218421936,
+  "description_overall": 0.02981315366923809
+}

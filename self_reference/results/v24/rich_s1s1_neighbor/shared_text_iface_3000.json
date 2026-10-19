@@ -1,0 +1,47 @@
+{
+  "life": "rich_s1s1_neighbor",
+  "interface": "iface_3000.pt",
+  "after_switch": {
+    "0": {
+      "stance_apart": 0.012343443154046932,
+      "picture_apart": 0.3365795264641444,
+      "duplicate_vs_original": 0.0
+    },
+    "50": {
+      "stance_apart": 0.006268587739517291,
+      "picture_apart": 0.08923519278566043,
+      "duplicate_vs_original": 1.2921136658405885e-05
+    },
+    "100": {
+      "stance_apart": 0.0022338751199034355,
+      "picture_apart": 0.026936206345756847,
+      "duplicate_vs_original": 0.00010559425572864711
+    },
+    "256": {
+      "stance_apart": 0.0007916938435907165,
+      "picture_apart": 0.06833634028832118,
+      "duplicate_vs_original": 9.610905544832349e-05
+    },
+    "300": {
+      "stance_apart": 0.0013767483566577237,
+      "picture_apart": 0.020049049519002438,
+      "duplicate_vs_original": 0.0004584548296406865
+    },
+    "400": {
+      "stance_apart": 0.004022663536792,
+      "picture_apart": 0.005727329136182864,
+      "duplicate_vs_original": 0.004571202211081982
+    },
+    "500": {
+      "stance_apart": 0.0006642018876542958,
+      "picture_apart": 0.008430143585428596,
+      "duplicate_vs_original": 0.00016967399278655648
+    },
+    "599": {
+      "stance_apart": 0.0006215177806249509,
+      "picture_apart": 0.0034646436106413603,
+      "duplicate_vs_original": 0.0001901013747556135
+    }
+  },
+  "state_dependent_part_on_shared_text": 0.5347400894936394
+}

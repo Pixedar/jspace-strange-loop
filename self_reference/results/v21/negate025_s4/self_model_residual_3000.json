@@ -1,0 +1,12 @@
+{
+  "life": "negate025_s4",
+  "describe": "itself",
+  "route": "operation",
+  "picture": "sphere",
+  "remainder_share_of_field": 0.015091224573552608,
+  "predicted_remainder_correlation": 0.024471057578921318,
+  "predicted_remainder_explained": -942.63818359375,
+  "predicted_field_correlation": 0.5248855352401733,
+  "predicted_field_explained": -19592.515625,
+  "interface": "iface_3000.pt"
+}

@@ -1,0 +1,519 @@
+{
+  "complete": true,
+  "kind": "one-shot frozen spotlight check; no training or temporal recurrence",
+  "rows": [
+    {
+      "key": "p0_r0_n1_joint",
+      "condition": "self",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.21114248037338257,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.25453171133995056,
+      "picture_relative_change": 0.00001512999733677134,
+      "control_relative_change": 0.000004459308001969475,
+      "reader_mass": {
+        "image": 0.003257227595895529,
+        "audio": 0.9959522485733032,
+        "text": 0.0007904748781584203
+      }
+    },
+    {
+      "key": "p0_r0_n1_joint",
+      "condition": "self",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.09915944933891296,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.27819955348968506,
+      "picture_relative_change": 0.000005645837063639192,
+      "control_relative_change": 0.000002829965524142608,
+      "reader_mass": {
+        "image": 0.003257227595895529,
+        "audio": 0.9959522485733032,
+        "text": 0.0007904748781584203
+      }
+    },
+    {
+      "key": "p0_r0_n1_joint",
+      "condition": "recorded_other",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.1922219842672348,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.2625857889652252,
+      "picture_relative_change": 1.0405264561086369e-7,
+      "control_relative_change": 1.3096926920752594e-7,
+      "reader_mass": {
+        "image": 0.000005074079126643483,
+        "audio": 0.999994695186615,
+        "text": 1.6045775907969073e-7
+      }
+    },
+    {
+      "key": "p0_r0_n1_joint",
+      "condition": "recorded_other",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.11416196078062057,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.330797404050827,
+      "picture_relative_change": 2.7910560973509746e-8,
+      "control_relative_change": 7.33797165253236e-8,
+      "reader_mass": {
+        "image": 0.000005074079126643483,
+        "audio": 0.999994695186615,
+        "text": 1.6045775907969073e-7
+      }
+    },
+    {
+      "key": "p0_r0_n2_joint",
+      "condition": "self",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.16794830560684204,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.25431543588638306,
+      "picture_relative_change": 0.00023142584541346878,
+      "control_relative_change": 0.00006730440509272739,
+      "reader_mass": {
+        "image": 0.26512280106544495,
+        "audio": 0.7340270280838013,
+        "text": 0.0008501934935338795
+      }
+    },
+    {
+      "key": "p0_r0_n2_joint",
+      "condition": "self",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.07325190305709839,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.22939489781856537,
+      "picture_relative_change": 0.00013233695062808692,
+      "control_relative_change": 0.00003722656038007699,
+      "reader_mass": {
+        "image": 0.26512280106544495,
+        "audio": 0.7340270280838013,
+        "text": 0.0008501934935338795
+      }
+    },
+    {
+      "key": "p0_r0_n2_joint",
+      "condition": "recorded_other",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.0806427001953125,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.24706803262233734,
+      "picture_relative_change": 0,
+      "control_relative_change": 0,
+      "reader_mass": {
+        "image": 1.55837938109471e-8,
+        "audio": 1,
+        "text": 1.119178083541783e-9
+      }
+    },
+    {
+      "key": "p0_r0_n2_joint",
+      "condition": "recorded_other",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.2982914447784424,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.275966078042984,
+      "picture_relative_change": 0,
+      "control_relative_change": 0,
+      "reader_mass": {
+        "image": 1.55837938109471e-8,
+        "audio": 1,
+        "text": 1.119178083541783e-9
+      }
+    },
+    {
+      "key": "p0_r1_n1_joint",
+      "condition": "self",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.034562475979328156,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.2515777349472046,
+      "picture_relative_change": 0.000022980402718530968,
+      "control_relative_change": 0.000006218624093889957,
+      "reader_mass": {
+        "image": 0.002875781850889325,
+        "audio": 0.9960843324661255,
+        "text": 0.0010399643797427416
+      }
+    },
+    {
+      "key": "p0_r1_n1_joint",
+      "condition": "self",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.07162665575742722,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.2771322429180145,
+      "picture_relative_change": 0.000008474141395709012,
+      "control_relative_change": 0.000004201704541628715,
+      "reader_mass": {
+        "image": 0.002875781850889325,
+        "audio": 0.9960843324661255,
+        "text": 0.0010399643797427416
+      }
+    },
+    {
+      "key": "p0_r1_n1_joint",
+      "condition": "recorded_other",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.010494071990251541,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.2588197886943817,
+      "picture_relative_change": 1.195748495774751e-7,
+      "control_relative_change": 1.2287812012345967e-7,
+      "reader_mass": {
+        "image": 0.000002436219347146107,
+        "audio": 0.9999973773956299,
+        "text": 2.7065178187513084e-7
+      }
+    },
+    {
+      "key": "p0_r1_n1_joint",
+      "condition": "recorded_other",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.09956209361553192,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.327648788690567,
+      "picture_relative_change": 1.1230066121470372e-7,
+      "control_relative_change": 1.095007249318769e-7,
+      "reader_mass": {
+        "image": 0.000002436219347146107,
+        "audio": 0.9999973773956299,
+        "text": 2.7065178187513084e-7
+      }
+    },
+    {
+      "key": "p0_r1_n2_joint",
+      "condition": "self",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.067533478140831,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.25019219517707825,
+      "picture_relative_change": 0.00022021387121640146,
+      "control_relative_change": 0.00005739234620705247,
+      "reader_mass": {
+        "image": 0.25716346502304077,
+        "audio": 0.7419962882995605,
+        "text": 0.0008402455714531243
+      }
+    },
+    {
+      "key": "p0_r1_n2_joint",
+      "condition": "self",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.018600478768348694,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.23156492412090302,
+      "picture_relative_change": 0.00014260172611102462,
+      "control_relative_change": 0.00003685794217744842,
+      "reader_mass": {
+        "image": 0.25716346502304077,
+        "audio": 0.7419962882995605,
+        "text": 0.0008402455714531243
+      }
+    },
+    {
+      "key": "p0_r1_n2_joint",
+      "condition": "recorded_other",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.030721940100193024,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.243503138422966,
+      "picture_relative_change": 0,
+      "control_relative_change": 0,
+      "reader_mass": {
+        "image": 2.5317683505221567e-9,
+        "audio": 1,
+        "text": 9.633428499356e-10
+      }
+    },
+    {
+      "key": "p0_r1_n2_joint",
+      "condition": "recorded_other",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.1908566951751709,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.2736709713935852,
+      "picture_relative_change": 0,
+      "control_relative_change": 0,
+      "reader_mass": {
+        "image": 2.5317683505221567e-9,
+        "audio": 1,
+        "text": 9.633428499356e-10
+      }
+    },
+    {
+      "key": "p1_r0_n1_joint",
+      "condition": "self",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.049643903970718384,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.24816222488880157,
+      "picture_relative_change": 0.000029009888748987578,
+      "control_relative_change": 0.000006368010872392915,
+      "reader_mass": {
+        "image": 0.00294663617387414,
+        "audio": 0.9958289861679077,
+        "text": 0.0012243932578712702
+      }
+    },
+    {
+      "key": "p1_r0_n1_joint",
+      "condition": "self",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.07290589809417725,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.2742159962654114,
+      "picture_relative_change": 0.000013977214621263556,
+      "control_relative_change": 0.000009143001079792157,
+      "reader_mass": {
+        "image": 0.00294663617387414,
+        "audio": 0.9958289861679077,
+        "text": 0.0012243932578712702
+      }
+    },
+    {
+      "key": "p1_r0_n1_joint",
+      "condition": "recorded_other",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.053003475069999695,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.25683656334877014,
+      "picture_relative_change": 1.4970906647704396e-7,
+      "control_relative_change": 1.043081283569336e-7,
+      "reader_mass": {
+        "image": 0.000004691735284723109,
+        "audio": 0.9999949336051941,
+        "text": 3.7007660580457014e-7
+      }
+    },
+    {
+      "key": "p1_r0_n1_joint",
+      "condition": "recorded_other",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.13292372226715088,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.3184802830219269,
+      "picture_relative_change": 1.0792611959686838e-7,
+      "control_relative_change": 1.1050996562289583e-7,
+      "reader_mass": {
+        "image": 0.000004691735284723109,
+        "audio": 0.9999949336051941,
+        "text": 3.7007660580457014e-7
+      }
+    },
+    {
+      "key": "p1_r0_n2_joint",
+      "condition": "self",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.06819833815097809,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.24572141468524933,
+      "picture_relative_change": 0.00024694905732758343,
+      "control_relative_change": 0.00005752313882112503,
+      "reader_mass": {
+        "image": 0.26211628317832947,
+        "audio": 0.7366652488708496,
+        "text": 0.001218487392179668
+      }
+    },
+    {
+      "key": "p1_r0_n2_joint",
+      "condition": "self",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.05011441558599472,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.22142444550991058,
+      "picture_relative_change": 0.0001700480788713321,
+      "control_relative_change": 0.000039369839214487,
+      "reader_mass": {
+        "image": 0.26211628317832947,
+        "audio": 0.7366652488708496,
+        "text": 0.001218487392179668
+      }
+    },
+    {
+      "key": "p1_r0_n2_joint",
+      "condition": "recorded_other",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.04245450720191002,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.24071556329727173,
+      "picture_relative_change": 0,
+      "control_relative_change": 0,
+      "reader_mass": {
+        "image": 2.4764091222095885e-8,
+        "audio": 1,
+        "text": 4.229894212670615e-9
+      }
+    },
+    {
+      "key": "p1_r0_n2_joint",
+      "condition": "recorded_other",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.2976204752922058,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.2723146378993988,
+      "picture_relative_change": 0,
+      "control_relative_change": 0,
+      "reader_mass": {
+        "image": 2.4764091222095885e-8,
+        "audio": 1,
+        "text": 4.229894212670615e-9
+      }
+    },
+    {
+      "key": "p1_r1_n1_joint",
+      "condition": "self",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.07795516401529312,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.24715492129325867,
+      "picture_relative_change": 0.00003630463106674142,
+      "control_relative_change": 0.000009052257155417465,
+      "reader_mass": {
+        "image": 0.003372607519850135,
+        "audio": 0.9954254627227783,
+        "text": 0.0012018594425171614
+      }
+    },
+    {
+      "key": "p1_r1_n1_joint",
+      "condition": "self",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.16275900602340698,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.2753187417984009,
+      "picture_relative_change": 0.000009560451871948317,
+      "control_relative_change": 0.000005019281161366962,
+      "reader_mass": {
+        "image": 0.003372607519850135,
+        "audio": 0.9954254627227783,
+        "text": 0.0012018594425171614
+      }
+    },
+    {
+      "key": "p1_r1_n1_joint",
+      "condition": "recorded_other",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.11000257730484009,
+      "top_prediction_changed": true,
+      "read_states_relative_change": 0.2554529905319214,
+      "picture_relative_change": 9.746184304049166e-8,
+      "control_relative_change": 1.423431399416586e-7,
+      "reader_mass": {
+        "image": 0.000004111503585590981,
+        "audio": 0.9999954700469971,
+        "text": 4.2578824377415003e-7
+      }
+    },
+    {
+      "key": "p1_r1_n1_joint",
+      "condition": "recorded_other",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.23101072013378143,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.31485557556152344,
+      "picture_relative_change": 2.7060616858420872e-8,
+      "control_relative_change": 6.495265836292674e-8,
+      "reader_mass": {
+        "image": 0.000004111503585590981,
+        "audio": 0.9999954700469971,
+        "text": 4.2578824377415003e-7
+      }
+    },
+    {
+      "key": "p1_r1_n2_joint",
+      "condition": "self",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.08185464888811111,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.24531963467597961,
+      "picture_relative_change": 0.0002407383144600317,
+      "control_relative_change": 0.00005519392652786337,
+      "reader_mass": {
+        "image": 0.2590722143650055,
+        "audio": 0.7397139072418213,
+        "text": 0.0012138980673626065
+      }
+    },
+    {
+      "key": "p1_r1_n2_joint",
+      "condition": "self",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.06483559310436249,
+      "top_prediction_changed": true,
+      "read_states_relative_change": 0.2247108370065689,
+      "picture_relative_change": 0.00012520304881036282,
+      "control_relative_change": 0.000027362702894606628,
+      "reader_mass": {
+        "image": 0.2590722143650055,
+        "audio": 0.7397139072418213,
+        "text": 0.0012138980673626065
+      }
+    },
+    {
+      "key": "p1_r1_n2_joint",
+      "condition": "recorded_other",
+      "arm": "own",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.07974991947412491,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.2405964434146881,
+      "picture_relative_change": 8.736580525692261e-8,
+      "control_relative_change": 1.066760830781277e-7,
+      "reader_mass": {
+        "image": 3.4791046488180655e-8,
+        "audio": 1,
+        "text": 1.1530187471464615e-8
+      }
+    },
+    {
+      "key": "p1_r1_n2_joint",
+      "condition": "recorded_other",
+      "arm": "permuted",
+      "zero_bias_max_logit_error": 0,
+      "kl_to_no_spotlight": 0.27024632692337036,
+      "top_prediction_changed": false,
+      "read_states_relative_change": 0.27092593908309937,
+      "picture_relative_change": 0,
+      "control_relative_change": 0,
+      "reader_mass": {
+        "image": 3.4791046488180655e-8,
+        "audio": 1,
+        "text": 1.1530187471464615e-8
+      }
+    }
+  ],
+  "elapsed_seconds": 10.145865440368652
+}

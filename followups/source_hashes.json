@@ -1,0 +1,9 @@
+{
+  "omni_perception.py": "a8d2be34bbd119f58a708b5edb987b6e8567d904126c95f09c6809e5ccd623a6",
+  "omni_spoken.py": "0e19e7d8abe7e59b02e1a23c9aa7c498c13c9f29ad90465ef47581ce5382443c",
+  "omni_screen.py": "f0960ca6e1cbf0c9a4e387cb1fe87212f3b54d407d475bc1929070c3afc48fb0",
+  "omni_balanced.py": "3f6ac9b60eb4cbb0e29c8102af0a4ddc4f981327f7bde801b543e3b515d728c9",
+  "omni_intake_screen.py": "77c65e1e361b0a07b4c993a07c8826a5bba7773f1919161d1372a1f604fc9d62",
+  "omni_spotlight_check.py": "9a77b8a3b0af2f1cb474d5dafa0357d2f4b390fe4978389e30f2329f3a2c39c7",
+  "omni_modality_check.py": "56059646f88eb8c8a2740f8cb220ac9f6d7f2338fb4396a535a2d86c56d98686"
+}
