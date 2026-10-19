@@ -32,7 +32,7 @@ for seed,offset,c in [(0,-.17,'#287d76'),(1,.17,'#426b9e')]:
     for x,v in zip(np.arange(3)+offset,values):ax.text(x,v*1.18,f'{v:.3f}',ha='center',size=8.5)
 ax.set_yscale('log');ax.set_ylim(.001,2)
 ax.set_xticks([0,1,2],['Reverse image','Swap speech','Nonadditive\ninteraction'])
-ax.set_ylabel('Change in next destination (RMS)');ax.set_title('The rich loop is mainly driven by speech',weight='bold',pad=16)
+ax.set_ylabel('Root-mean-square change in next state');ax.set_title('Speech drives the state more than the image',weight='bold',pad=16)
 ax.legend(frameon=False,fontsize=9,loc='upper left')
 for ax in axes:ax.spines[['top','right']].set_visible(False)
 fig.subplots_adjust(wspace=.35,bottom=.19)

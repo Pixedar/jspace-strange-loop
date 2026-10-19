@@ -6,7 +6,7 @@ the next one. Two extra positions (the channel) carry a constant, the previous s
 the next state. The self-model learns only from its own prediction error; the pressure λ trains the reader and writers
 to make the states predictable to it. The language model stays frozen.
 
-Results and their interpretation: [../REPORT.md](../REPORT.md), section 4. Every variant in one table:
+Results and their interpretation: [archived detailed report](../history/REPORT_20261014.md), section 4. Every variant in one table:
 [results/arms_summary.md](results/arms_summary.md) (also `.csv`). Design and the predictions written before the
 results: [PLAN.md](PLAN.md).
 

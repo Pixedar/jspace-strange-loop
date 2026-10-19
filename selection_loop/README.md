@@ -1,6 +1,6 @@
 # A state that decides what the model reads
 
-Code and results for section 5 of the [report](../REPORT.md): a compact learned state (32 numbers) that lives in a
+Code and results for section 5 of the [archived detailed report](../history/REPORT_20261014.md): a compact learned state (32 numbers) that lives in a
 frozen language model's processing, carried from one piece of text to the next, trained only to give the right answer.
 The question is whether it comes to represent which distinction matters and to steer what the model takes in through
 that representation.

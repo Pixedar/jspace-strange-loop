@@ -1,11 +1,11 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Strange loop in J-space: a self-description that changes its own reading"
+title: "Strange loop in J-space: self-description in a language-model feedback loop"
 authors:
   - family-names: Tomasik
     given-names: Wiktor
 date-released: 2026-10-19
-version: "4.0.1"
+version: "4.0.2"
 url: "https://github.com/Pixedar/jspace-strange-loop"
 repository-code: "https://github.com/Pixedar/jspace-strange-loop"
 license: AGPL-3.0-only
@@ -17,10 +17,12 @@ keywords:
   - representation geometry
   - multimodal models
 abstract: >-
-  A small self-describing attention loop around a frozen language model. Removing a destination
-  shortcut from field discrimination can produce state-dependent movement from organized starts.
-  Path interventions locate that dependence mainly in the reader. A shared spotlight changes
-  the language model's predictions, while the measured return through model processing remains
-  weak. Field pattern agreement does not establish calibrated forecasts, useful online prediction,
-  persistent individuality or subjective experience. Earlier frozen feedback, chunked reasoning,
-  evidence selection and negative causal-map results are preserved as distinct research branches.
+  A learned reader repeatedly summarizes a frozen language model's activity. Its summary
+  sets the control state that determines the next reading. A centered-field objective
+  trains the summary to distinguish possible updates after removing their common
+  destination. Some runs develop substantial state dependence; path interventions
+  locate most of it in feedback through the reader. Applying the reader's attention
+  inside the language model changes predictions, but feedback through model processing
+  remains weak. Predictions match response patterns while retaining large scale errors.
+  The repository includes frozen J-space feedback, memory between reasoning segments,
+  evidence selection, multimodal input experiments and their controls.

@@ -3,7 +3,7 @@
 Qwen3-8B (Qwen3-14B where marked). The model's state at the answer position of a short scenario is read at layer 29,
 described as 25 J-space words, written back at layer 22, and read again; nothing is trained. What the loop converges
 to, why, and whether a self-model inside it can know anything private. Summary and figures:
-[../REPORT.md](../REPORT.md), section 3.
+[archived detailed report](../history/REPORT_20261014.md), section 3.
 
 ## Code (`code/`)
 

@@ -1,6 +1,6 @@
-# Current mechanism and measurement definitions
+# Attention-feedback mechanism and measurements
 
-The frozen runner, reader and interface are in `code/llm_loop.py`. `code/loop12.py` supplies the centered-field objective and optional shared spotlight. The original frozen J-space lens is not used to interpret the newest learned picture.
+The frozen runner, reader and interface are in `code/llm_loop.py`. `code/loop12.py` supplies the centered-field objective and optional shared spotlight. The learned numerical summary is called the “picture” (`P`) in the code. It is distinct from the word-based Jacobian-lens representation used in the frozen J-space experiments.
 
 The picture has 32 components and is normalized to radius √32. A learned decoder maps it to an eight-dimensional unit control state. That state supplies the reader's query over the last 16 native hidden states. Four parallel copies share all interface weights and read different text streams. The model weights remain frozen. There is no per-copy plasticity in the current configurations.
 
@@ -8,7 +8,7 @@ Let **F(s)** be the next control state from probe state **s**, and **D(s) = F(s)
 
 The historical key `remainder_share_of_field` divides the summed squared centered destinations by the summed squared displacement deviations from their global mean. The numerator and denominator are centered differently. This is a **normalized state-dependence ratio**, not a bounded variance partition, explained causal responsibility, or a count of steps. Pattern correlation compares centered predicted and actual destinations after flattening and mean removal. Raw explained variance uses their unscaled squared error; it is strongly negative in the final runs despite positive correlations.
 
-The descriptive head affects development through the training loss. During frozen operation, the next state comes from the picture decoder; the field head is not consulted. The loss also includes next-token prediction and the configured auxiliary objectives. The zero-divergence organized starts are important: the later objective has very little signal at initialization.
+The descriptive head affects development through the training loss. During frozen operation, the next state comes from the picture decoder; the field head is not consulted. The loss also includes next-token prediction and the configured auxiliary objectives. The developmental runs begin from interfaces trained with the uncentered position objective and without the auxiliary divergence objective. The centered-field task has very little signal at random initialization.
 
 The shared spotlight takes the reader's mean attention probabilities **p** over **R′ ≤ 16** retained positions. It adds **1.5 × clamp(log(R′p), −log R′, +log R′)** to the frozen model's attention scores for those positions in layers 12–18 of the 0.6B model. The old direct query shift is disabled. The spotlight for a token uses the available earlier native states; the resulting native read-layer state joins the next reader window. See the source for cache, sink-position, masking and probe details.
 

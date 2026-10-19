@@ -33,11 +33,11 @@ def box(ax,x,y,w,h,title,body,colour=INK):
 
 
 fig,ax=plt.subplots(figsize=(12,6.3)); ax.set(xlim=(0,1),ylim=(0,1)); ax.axis('off')
-ax.text(.02,.97,'A self-description that changes its own reading',size=18,weight='bold',va='top')
-ax.text(.02,.895,'The language model stays frozen. Only the small reader, state decoder and descriptive head learn.',size=10.5,color=MUTED)
+ax.text(.02,.97,'The control state changes what the reader reads next',size=18,weight='bold',va='top')
+ax.text(.02,.895,'The language model’s weights stay fixed. The reader, summary map, decoder and prediction network learn.',size=10.5,color=MUTED)
 box(ax,.04,.52,.21,.18,'Language model','processes the text')
 box(ax,.39,.52,.21,.18,'Reader','attends to recent activity',TEAL)
-box(ax,.75,.52,.21,.18,'Picture','32 learned numbers',TEAL)
+box(ax,.75,.52,.21,.18,'Summary','32 learned numbers',TEAL)
 box(ax,.75,.18,.21,.18,'Control state','8 numbers set the next read',TEAL)
 for x0,x1 in ((.25,.39),(.60,.75)):
     ax.add_patch(FancyArrowPatch((x0,.61),(x1,.61),arrowstyle='-|>',mutation_scale=14,color=TEAL,lw=1.8))
@@ -49,9 +49,9 @@ ax.text(.61,.30,'sets the reader’s query',ha='center',size=10,color=TEAL)
 ax.plot([.495,.495,.145,.145],[.70,.79,.79,.70],color=RED,lw=1.8)
 ax.add_patch(FancyArrowPatch((.145,.755),(.145,.70),arrowstyle='-|>',mutation_scale=14,color=RED,lw=1.8))
 ax.text(.32,.81,'the same attention also focuses the model',ha='center',size=10,color=RED)
-ax.text(.04,.40,'Shared spotlight (v24)',color=RED,weight='bold',size=11)
+ax.text(.04,.40,'Shared attention bias',color=RED,weight='bold',size=11)
 ax.text(.04,.355,'Changes the model’s predictions.\nIts effects return only weakly\nthrough the reader.',va='top',color=MUTED,size=10,linespacing=1.6)
-ax.text(.02,.055,'During training, the picture predicts how the control state would move from alternative positions.\nThat comparison reshapes the loop. The prediction head is not used to choose the next state.',size=10.5,color=MUTED,linespacing=1.5)
+ax.text(.02,.055,'During training, a prediction network uses the summary to describe responses from alternative starting states.\nThe training loss changes the loop. During operation, the summary decoder supplies the next state directly.',size=10.5,color=MUTED,linespacing=1.5)
 finish(fig,'self_describing_attention')
 
 # Actual probe-response arrows from one matched held-out token/context.
