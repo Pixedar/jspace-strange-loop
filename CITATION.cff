@@ -5,7 +5,7 @@ authors:
   - family-names: Tomasik
     given-names: Wiktor
 date-released: 2026-10-19
-version: "4.0"
+version: "4.0.1"
 url: "https://github.com/Pixedar/jspace-strange-loop"
 repository-code: "https://github.com/Pixedar/jspace-strange-loop"
 license: AGPL-3.0-only
