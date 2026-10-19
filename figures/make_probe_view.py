@@ -33,7 +33,7 @@ data['cut_source']='self_reference/results/v24/dev_s0_seed0_spot/self_formation.
 data['cuts']=json.loads((root/data['cut_source']).read_text(encoding='utf-8'))['jumps']
 data['measurements']=json.loads((root/'self_reference/results/verified_summary.json').read_text(encoding='utf-8'))['runs']
 out=root/'interactive/probe_responses.json'
-out.write_text(json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n',encoding='utf-8')
+out.write_bytes((json.dumps(data,ensure_ascii=False,separators=(',',':'))+'\n').encode('utf-8'))
 for condition in data['conditions']:
     d=np.array(condition['destinations'])[30,0]
     pair=np.linalg.norm(d[:,None]-d[None,:],axis=-1)
