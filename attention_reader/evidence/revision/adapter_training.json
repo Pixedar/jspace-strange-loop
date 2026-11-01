@@ -1,0 +1,22 @@
+{
+  "train_samples": 2080,
+  "test_samples": 616,
+  "train_scenes": 6,
+  "test_scenes": 2,
+  "objective": "predict coefficients of reference selected-content action in the rank-128 J-derived basis",
+  "input": "stance 8 + reading summary 32 + expected attention pull 256",
+  "frozen_backbone": true,
+  "held_out_r2": -0.568293571472168,
+  "held_out_cosine": 0.3891598582267761,
+  "schema_mean_ablation_r2": -0.17407381534576416,
+  "training_loss_every100": [
+    1.224011778831482,
+    0.3006887137889862,
+    0.23392759263515472,
+    0.19754236936569214,
+    0.18110597133636475,
+    0.1655200719833374
+  ],
+  "interpretation": "small supervised interface fit; no identity or personality labels; ablation is diagnostic, not independent proof of self-modeling",
+  "deployment": "same action norm as reference; explore behavior even if fit is poor and label failed fit"
+}

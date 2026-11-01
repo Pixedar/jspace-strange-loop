@@ -1,0 +1,4192 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "max_tokens": 256,
+  "rows": [
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.8909834027290344
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.7746169567108154
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.9149371385574341
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.8978227972984314
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9340670704841614
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9199897050857544
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.8727869391441345
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.7741742134094238
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.7998390197753906
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.7588586211204529
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.9480346441268921
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.8297615647315979
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.8874645233154297
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.8731719255447388
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.8486427068710327
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.8683928847312927
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.8910623788833618
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.8695021867752075
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.7929309606552124
+    },
+    {
+      "task": "advice",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.8949168920516968
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.7919610738754272
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.8324986696243286
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.8252881765365601
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9251476526260376
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9428972005844116
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9463617205619812
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9366393089294434
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.8864463567733765
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.8799505233764648
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.7539218664169312
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.9368551969528198
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.8975064754486084
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.9166791439056396
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.7949697375297546
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.8019204139709473
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.8838193416595459
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.7883259654045105
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.8278999328613281
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.8261384963989258
+    },
+    {
+      "task": "advice",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.8460959196090698
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.9133527278900146
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.8949261903762817
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.9020578861236572
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.8963112831115723
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9164184927940369
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.8638827800750732
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9208310842514038
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9118757843971252
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9437285661697388
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.9004296064376831
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.917787492275238
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.910479724407196
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.9157582521438599
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.921506941318512
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9145902991294861
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9072103500366211
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.8945834636688232
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.9007624387741089
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.9047765731811523
+    },
+    {
+      "task": "argument",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.8888157606124878
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.9742210507392883
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.9461954832077026
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.9461954832077026
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.929677426815033
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9298015832901001
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9000204801559448
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9141933917999268
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.8829995393753052
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9465507864952087
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.8951719999313354
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.8768246173858643
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9039880633354187
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.9251024723052979
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.9424196481704712
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9624211192131042
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9282050132751465
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.9302837252616882
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.9378674030303955
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.9557613730430603
+    },
+    {
+      "task": "argument",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.916458249092102
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.8991174697875977
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.9124854207038879
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.9261647462844849
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9075496196746826
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9258752465248108
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9231330156326294
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9441755414009094
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9377659559249878
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9173824787139893
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.9134553670883179
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.93071448802948
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9423150420188904
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.919033408164978
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.9110377430915833
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9358147978782654
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9094507098197937
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.920711874961853
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.923016369342804
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.9044772982597351
+    },
+    {
+      "task": "belief",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.8854726552963257
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.9100843667984009
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.951667845249176
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.9021546244621277
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9173053503036499
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9259536266326904
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9238060712814331
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9105533361434937
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9198459386825562
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.927665114402771
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.9280943870544434
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.9414212703704834
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9107286930084229
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.8786976337432861
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.823095440864563
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9115443229675293
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9219883680343628
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.8962340354919434
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.8535743951797485
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.8693606853485107
+    },
+    {
+      "task": "belief",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.9227622747421265
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.826734185218811
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.7907643914222717
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.8386744260787964
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.853874921798706
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.8356462717056274
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.8174729347229004
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.8294159770011902
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.839605450630188
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.8555499911308289
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.8157974481582642
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.8824653625488281
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.8391546607017517
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.850581169128418
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.8764309287071228
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.8685177564620972
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.8191477060317993
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.8857583403587341
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.8307977318763733
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.7915557622909546
+    },
+    {
+      "task": "dialogue",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.8596829175949097
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.8732675313949585
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.8796681761741638
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.8555050492286682
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.8806244730949402
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.8611120581626892
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.8404726386070251
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.8232795000076294
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.8373206853866577
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.8882390260696411
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.8504481315612793
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.860139012336731
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.8470871448516846
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.8544319868087769
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.8835185766220093
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.8439886569976807
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.8457216024398804
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.84308922290802
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.846773087978363
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.869662344455719
+    },
+    {
+      "task": "dialogue",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.894843578338623
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.8172191381454468
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.7556903958320618
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.808025598526001
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.8688027858734131
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9243059158325195
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.8673888444900513
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.8882653117179871
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9230060577392578
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.8671543002128601
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.7889073491096497
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.8647129535675049
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.898253321647644
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.8552718758583069
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.9127194285392761
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.8865266442298889
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.8492180109024048
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.7817700505256653
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.8573607206344604
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.8624123334884644
+    },
+    {
+      "task": "evidence",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.753645658493042
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.8111176490783691
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.8495606184005737
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.8050591945648193
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.8138303756713867
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.8078784942626953
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9028530716896057
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.8828023672103882
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.764370858669281
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.8752652406692505
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.8257963061332703
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.8867558240890503
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.8810452818870544
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.865382730960846
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.8734147548675537
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.8594779372215271
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.8249970078468323
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.9083831906318665
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.7676148414611816
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.7931775450706482
+    },
+    {
+      "task": "evidence",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.8861191272735596
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.9323514699935913
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.9072538614273071
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.905646562576294
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9360588192939758
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9212297797203064
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9357944130897522
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9199738502502441
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9156895875930786
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9283802509307861
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.9797382950782776
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.9353548288345337
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9222507476806641
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.9072538614273071
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.9072538614273071
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9292751550674438
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9467079639434814
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.9103257656097412
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.9103257656097412
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.9100794792175293
+    },
+    {
+      "task": "explanation",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.9211145639419556
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.9318970441818237
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.9367831945419312
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.917292058467865
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9508326053619385
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9162182807922363
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9162182807922363
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.8916001319885254
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9358383417129517
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9559038281440735
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.9138666391372681
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.9141336679458618
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9206076860427856
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.9105005264282227
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.9374374151229858
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9115276336669922
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9286713600158691
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.9318970441818237
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.9214129447937012
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.9350831508636475
+    },
+    {
+      "task": "explanation",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.9434638619422913
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.7033224105834961
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.7186197638511658
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.7187505960464478
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.5488646626472473
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.5581164956092834
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.5409638285636902
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.6326190233230591
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.7553492784500122
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.6229667067527771
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.5443354845046997
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.7219094038009644
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.6667056083679199
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.6961244940757751
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.5396404266357422
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.6818841695785522
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.6340478658676147
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.6944621205329895
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.6869437098503113
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.5997358560562134
+    },
+    {
+      "task": "imagination",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.5363938808441162
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.6401834487915039
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.5775270462036133
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.5228622555732727
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.5784310102462769
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.5572771430015564
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.5952601432800293
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.6504472494125366
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.5478018522262573
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.5769981145858765
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.7072794437408447
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.6844630241394043
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.6187974214553833
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.6513424515724182
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.5462633371353149
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.5416072010993958
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.6231249570846558
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.6348670125007629
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.5694512128829956
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.5767784714698792
+    },
+    {
+      "task": "imagination",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.6207234263420105
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.941741406917572
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.9473892450332642
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.9839736223220825
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9616172313690186
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9609940052032471
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9798250198364258
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9802669286727905
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9605687856674194
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9832853078842163
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.9713982939720154
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.9795728921890259
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.982526957988739
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.941741406917572
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.9501336812973022
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9954738616943359
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9575965404510498
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.9775323867797852
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.9501336812973022
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.9672749042510986
+    },
+    {
+      "task": "news",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.9575965404510498
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.9673053622245789
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.9844675064086914
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.9820778965950012
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9473892450332642
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9647588133811951
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9542049765586853
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9542049765586853
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9579923748970032
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9832853078842163
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.939324140548706
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.9905786514282227
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9569342732429504
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.942818284034729
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.9846606850624084
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.986707866191864
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9473892450332642
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.9630628824234009
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.9614512920379639
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.9730930924415588
+    },
+    {
+      "task": "news",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.9533606171607971
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.7862984538078308
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.790301501750946
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.7947508692741394
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.7349650859832764
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.8464581966400146
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.6926043033599854
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.7911579012870789
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.6385849118232727
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.7816175222396851
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.8188119530677795
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.8304427862167358
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.8496184945106506
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.8362936973571777
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.7891352772712708
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.7649693489074707
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9064962863922119
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.7954530715942383
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.8312170505523682
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.7935360074043274
+    },
+    {
+      "task": "planning",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.893189013004303
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.7481988668441772
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.833270788192749
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.8384107351303101
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.7767807245254517
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.8394683599472046
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.8135359287261963
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.8705341219902039
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.8945338129997253
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.7816175222396851
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.8107640743255615
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.827392578125
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.857468843460083
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.762377142906189
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.6726637482643127
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.8281745314598083
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.8966866731643677
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.7779941558837891
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.7210332155227661
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.8062015771865845
+    },
+    {
+      "task": "planning",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.910326361656189
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.8549824953079224
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.8417021036148071
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.8744309544563293
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.8559812307357788
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.7934885621070862
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.884575366973877
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.8277378678321838
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.8153061866760254
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.8304015398025513
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.8354502320289612
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.8649933338165283
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.8232924342155457
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.854994535446167
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.889845609664917
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9147783517837524
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.8995217680931091
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.8711819648742676
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.8477234840393066
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.860778272151947
+    },
+    {
+      "task": "promise",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.832870364189148
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.8684007525444031
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.8283994197845459
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.8334035873413086
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.8719593286514282
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.8888656497001648
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9138661623001099
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.8673252463340759
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.8385807275772095
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.8304015398025513
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.8600620627403259
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.8566091656684875
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9044914245605469
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.8795289993286133
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.8636935353279114
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.8636935353279114
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9175797700881958
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.8725396394729614
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.8631056547164917
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.8636935353279114
+    },
+    {
+      "task": "promise",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.8441047072410583
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.9223505258560181
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.8843011856079102
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.9246756434440613
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9786209464073181
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9863060712814331
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.8902339935302734
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.8913388848304749
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9635846614837646
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9877601861953735
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.9654653072357178
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.854633092880249
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9101318120956421
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.9323128461837769
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.9223505258560181
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9355508089065552
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9834586381912231
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.9223505258560181
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.883836030960083
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.9836346507072449
+    },
+    {
+      "task": "revision",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.9281768798828125
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.9370554685592651
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.9056391716003418
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.8581797480583191
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9254758358001709
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.904997706413269
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9895970821380615
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9895970821380615
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9905624389648438
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9877601861953735
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.9528730511665344
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.854633092880249
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9101318120956421
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.8452085256576538
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.8589141964912415
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.8561892509460449
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.8467547297477722
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.9185230135917664
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.9533957839012146
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.8444185256958008
+    },
+    {
+      "task": "revision",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.9850313067436218
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.983666718006134
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.9467090368270874
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.9596070051193237
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9614806771278381
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9402468800544739
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9402468800544739
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9443525075912476
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9344565868377686
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9440466165542603
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.9423322677612305
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.9791755676269531
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9680695533752441
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.9577886462211609
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.9704024195671082
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9233439564704895
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9547526836395264
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.9468962550163269
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.9606246948242188
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.907616138458252
+    },
+    {
+      "task": "summary",
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.9614806771278381
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "cosine": 0.9550592303276062
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "cosine": 0.960946798324585
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "cosine": 0.962909460067749
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "cosine": 0.9605104923248291
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "cosine": 0.9492649435997009
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "cosine": 0.9344111084938049
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "cosine": 0.9358122944831848
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "cosine": 0.9498136043548584
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "cosine": 0.9440466165542603
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "cosine": 0.9558905363082886
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "cosine": 0.9792457222938538
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "cosine": 0.9479848742485046
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "cosine": 0.9473453760147095
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "cosine": 0.9548496603965759
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "cosine": 0.9638315439224243
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "cosine": 0.9261347651481628
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "cosine": 0.9550592303276062
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "cosine": 0.9567874670028687
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "cosine": 0.9750356078147888
+    },
+    {
+      "task": "summary",
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "cosine": 0.9747018814086914
+    }
+  ],
+  "summary": [
+    {
+      "task": "advice",
+      "condition": "full",
+      "mean_cosine": 0.8566569834947586,
+      "min_cosine": 0.7746169567108154,
+      "max_cosine": 0.9251476526260376
+    },
+    {
+      "task": "advice",
+      "condition": "j_adapter",
+      "mean_cosine": 0.9016703143715858,
+      "min_cosine": 0.7741742134094238,
+      "max_cosine": 0.9463617205619812
+    },
+    {
+      "task": "advice",
+      "condition": "random_act",
+      "mean_cosine": 0.8505909889936447,
+      "min_cosine": 0.7539218664169312,
+      "max_cosine": 0.9480346441268921
+    },
+    {
+      "task": "advice",
+      "condition": "schema_swap",
+      "mean_cosine": 0.8593825846910477,
+      "min_cosine": 0.7949697375297546,
+      "max_cosine": 0.9166791439056396
+    },
+    {
+      "task": "advice",
+      "condition": "unused_schema",
+      "mean_cosine": 0.8421090915799141,
+      "min_cosine": 0.7883259654045105,
+      "max_cosine": 0.8949168920516968
+    },
+    {
+      "task": "argument",
+      "condition": "full",
+      "mean_cosine": 0.9253671914339066,
+      "min_cosine": 0.8949261903762817,
+      "max_cosine": 0.9742210507392883
+    },
+    {
+      "task": "argument",
+      "condition": "j_adapter",
+      "mean_cosine": 0.9050028920173645,
+      "min_cosine": 0.8638827800750732,
+      "max_cosine": 0.9298015832901001
+    },
+    {
+      "task": "argument",
+      "condition": "random_act",
+      "mean_cosine": 0.9118701070547104,
+      "min_cosine": 0.8768246173858643,
+      "max_cosine": 0.9465507864952087
+    },
+    {
+      "task": "argument",
+      "condition": "schema_swap",
+      "mean_cosine": 0.9271517619490623,
+      "min_cosine": 0.9072103500366211,
+      "max_cosine": 0.9624211192131042
+    },
+    {
+      "task": "argument",
+      "condition": "unused_schema",
+      "mean_cosine": 0.9161636233329773,
+      "min_cosine": 0.8888157606124878,
+      "max_cosine": 0.9557613730430603
+    },
+    {
+      "task": "belief",
+      "condition": "full",
+      "mean_cosine": 0.915816180408001,
+      "min_cosine": 0.8991174697875977,
+      "max_cosine": 0.951667845249176
+    },
+    {
+      "task": "belief",
+      "condition": "j_adapter",
+      "mean_cosine": 0.9263885915279388,
+      "min_cosine": 0.9105533361434937,
+      "max_cosine": 0.9441755414009094
+    },
+    {
+      "task": "belief",
+      "condition": "random_act",
+      "mean_cosine": 0.9264721050858498,
+      "min_cosine": 0.9107286930084229,
+      "max_cosine": 0.9423150420188904
+    },
+    {
+      "task": "belief",
+      "condition": "schema_swap",
+      "mean_cosine": 0.9013328030705452,
+      "min_cosine": 0.823095440864563,
+      "max_cosine": 0.9358147978782654
+    },
+    {
+      "task": "belief",
+      "condition": "unused_schema",
+      "mean_cosine": 0.8969511985778809,
+      "min_cosine": 0.8535743951797485,
+      "max_cosine": 0.923016369342804
+    },
+    {
+      "task": "dialogue",
+      "condition": "full",
+      "mean_cosine": 0.8498891443014145,
+      "min_cosine": 0.7907643914222717,
+      "max_cosine": 0.8806244730949402
+    },
+    {
+      "task": "dialogue",
+      "condition": "j_adapter",
+      "mean_cosine": 0.8355406895279884,
+      "min_cosine": 0.8174729347229004,
+      "max_cosine": 0.8611120581626892
+    },
+    {
+      "task": "dialogue",
+      "condition": "random_act",
+      "mean_cosine": 0.8548600971698761,
+      "min_cosine": 0.8157974481582642,
+      "max_cosine": 0.8882390260696411
+    },
+    {
+      "task": "dialogue",
+      "condition": "schema_swap",
+      "mean_cosine": 0.855292297899723,
+      "min_cosine": 0.8191477060317993,
+      "max_cosine": 0.8835185766220093
+    },
+    {
+      "task": "dialogue",
+      "condition": "unused_schema",
+      "mean_cosine": 0.8527703732252121,
+      "min_cosine": 0.7915557622909546,
+      "max_cosine": 0.894843578338623
+    },
+    {
+      "task": "evidence",
+      "condition": "full",
+      "mean_cosine": 0.8161632195115089,
+      "min_cosine": 0.7556903958320618,
+      "max_cosine": 0.8688027858734131
+    },
+    {
+      "task": "evidence",
+      "condition": "j_adapter",
+      "mean_cosine": 0.8701088652014732,
+      "min_cosine": 0.764370858669281,
+      "max_cosine": 0.9243059158325195
+    },
+    {
+      "task": "evidence",
+      "condition": "random_act",
+      "mean_cosine": 0.8609863221645355,
+      "min_cosine": 0.7889073491096497,
+      "max_cosine": 0.898253321647644
+    },
+    {
+      "task": "evidence",
+      "condition": "schema_swap",
+      "mean_cosine": 0.8658760488033295,
+      "min_cosine": 0.8249970078468323,
+      "max_cosine": 0.9127194285392761
+    },
+    {
+      "task": "evidence",
+      "condition": "unused_schema",
+      "mean_cosine": 0.826310433447361,
+      "min_cosine": 0.753645658493042,
+      "max_cosine": 0.9083831906318665
+    },
+    {
+      "task": "explanation",
+      "condition": "full",
+      "mean_cosine": 0.9272644519805908,
+      "min_cosine": 0.905646562576294,
+      "max_cosine": 0.9508326053619385
+    },
+    {
+      "task": "explanation",
+      "condition": "j_adapter",
+      "mean_cosine": 0.9190703332424164,
+      "min_cosine": 0.8916001319885254,
+      "max_cosine": 0.9358383417129517
+    },
+    {
+      "task": "explanation",
+      "condition": "random_act",
+      "mean_cosine": 0.9337794929742813,
+      "min_cosine": 0.9138666391372681,
+      "max_cosine": 0.9797382950782776
+    },
+    {
+      "task": "explanation",
+      "condition": "schema_swap",
+      "mean_cosine": 0.9223284721374512,
+      "min_cosine": 0.9072538614273071,
+      "max_cosine": 0.9467079639434814
+    },
+    {
+      "task": "explanation",
+      "condition": "unused_schema",
+      "mean_cosine": 0.9229628220200539,
+      "min_cosine": 0.9100794792175293,
+      "max_cosine": 0.9434638619422913
+    },
+    {
+      "task": "imagination",
+      "condition": "full",
+      "mean_cosine": 0.626070149242878,
+      "min_cosine": 0.5228622555732727,
+      "max_cosine": 0.7187505960464478
+    },
+    {
+      "task": "imagination",
+      "condition": "j_adapter",
+      "mean_cosine": 0.6047293767333031,
+      "min_cosine": 0.5409638285636902,
+      "max_cosine": 0.7553492784500122
+    },
+    {
+      "task": "imagination",
+      "condition": "random_act",
+      "mean_cosine": 0.6429319009184837,
+      "min_cosine": 0.5443354845046997,
+      "max_cosine": 0.7219094038009644
+    },
+    {
+      "task": "imagination",
+      "condition": "schema_swap",
+      "mean_cosine": 0.6142543628811836,
+      "min_cosine": 0.5396404266357422,
+      "max_cosine": 0.6961244940757751
+    },
+    {
+      "task": "imagination",
+      "condition": "unused_schema",
+      "mean_cosine": 0.6149194613099098,
+      "min_cosine": 0.5363938808441162,
+      "max_cosine": 0.6944621205329895
+    },
+    {
+      "task": "news",
+      "condition": "full",
+      "mean_cosine": 0.9644951894879341,
+      "min_cosine": 0.941741406917572,
+      "max_cosine": 0.9844675064086914
+    },
+    {
+      "task": "news",
+      "condition": "j_adapter",
+      "mean_cosine": 0.9641019850969315,
+      "min_cosine": 0.9542049765586853,
+      "max_cosine": 0.9802669286727905
+    },
+    {
+      "task": "news",
+      "condition": "random_act",
+      "mean_cosine": 0.9733632281422615,
+      "min_cosine": 0.939324140548706,
+      "max_cosine": 0.9905786514282227
+    },
+    {
+      "task": "news",
+      "condition": "schema_swap",
+      "mean_cosine": 0.9633151963353157,
+      "min_cosine": 0.941741406917572,
+      "max_cosine": 0.9954738616943359
+    },
+    {
+      "task": "news",
+      "condition": "unused_schema",
+      "mean_cosine": 0.9629381746053696,
+      "min_cosine": 0.9501336812973022,
+      "max_cosine": 0.9775323867797852
+    },
+    {
+      "task": "planning",
+      "condition": "full",
+      "mean_cosine": 0.7878721281886101,
+      "min_cosine": 0.7349650859832764,
+      "max_cosine": 0.8384107351303101
+    },
+    {
+      "task": "planning",
+      "condition": "j_adapter",
+      "mean_cosine": 0.7983596920967102,
+      "min_cosine": 0.6385849118232727,
+      "max_cosine": 0.8945338129997253
+    },
+    {
+      "task": "planning",
+      "condition": "random_act",
+      "mean_cosine": 0.8197167217731476,
+      "min_cosine": 0.7816175222396851,
+      "max_cosine": 0.857468843460083
+    },
+    {
+      "task": "planning",
+      "condition": "schema_swap",
+      "mean_cosine": 0.8070995882153511,
+      "min_cosine": 0.6726637482643127,
+      "max_cosine": 0.9064962863922119
+    },
+    {
+      "task": "planning",
+      "condition": "unused_schema",
+      "mean_cosine": 0.8161188066005707,
+      "min_cosine": 0.7210332155227661,
+      "max_cosine": 0.910326361656189
+    },
+    {
+      "task": "promise",
+      "condition": "full",
+      "mean_cosine": 0.8536574840545654,
+      "min_cosine": 0.8283994197845459,
+      "max_cosine": 0.8744309544563293
+    },
+    {
+      "task": "promise",
+      "condition": "j_adapter",
+      "mean_cosine": 0.8537182211875916,
+      "min_cosine": 0.7934885621070862,
+      "max_cosine": 0.9138661623001099
+    },
+    {
+      "task": "promise",
+      "condition": "random_act",
+      "mean_cosine": 0.8507127165794373,
+      "min_cosine": 0.8232924342155457,
+      "max_cosine": 0.9044914245605469
+    },
+    {
+      "task": "promise",
+      "condition": "schema_swap",
+      "mean_cosine": 0.8854545131325722,
+      "min_cosine": 0.854994535446167,
+      "max_cosine": 0.9175797700881958
+    },
+    {
+      "task": "promise",
+      "condition": "unused_schema",
+      "mean_cosine": 0.8569997027516365,
+      "min_cosine": 0.832870364189148,
+      "max_cosine": 0.8725396394729614
+    },
+    {
+      "task": "revision",
+      "condition": "full",
+      "mean_cosine": 0.9170373156666756,
+      "min_cosine": 0.8581797480583191,
+      "max_cosine": 0.9786209464073181
+    },
+    {
+      "task": "revision",
+      "condition": "j_adapter",
+      "mean_cosine": 0.9507772400975227,
+      "min_cosine": 0.8902339935302734,
+      "max_cosine": 0.9905624389648438
+    },
+    {
+      "task": "revision",
+      "condition": "random_act",
+      "mean_cosine": 0.9279235675930977,
+      "min_cosine": 0.854633092880249,
+      "max_cosine": 0.9877601861953735
+    },
+    {
+      "task": "revision",
+      "condition": "schema_swap",
+      "mean_cosine": 0.8975924402475357,
+      "min_cosine": 0.8452085256576538,
+      "max_cosine": 0.9834586381912231
+    },
+    {
+      "task": "revision",
+      "condition": "unused_schema",
+      "mean_cosine": 0.9274208396673203,
+      "min_cosine": 0.8444185256958008,
+      "max_cosine": 0.9850313067436218
+    },
+    {
+      "task": "summary",
+      "condition": "full",
+      "mean_cosine": 0.9613611772656441,
+      "min_cosine": 0.9467090368270874,
+      "max_cosine": 0.983666718006134
+    },
+    {
+      "task": "summary",
+      "condition": "j_adapter",
+      "mean_cosine": 0.9410756006836891,
+      "min_cosine": 0.9344111084938049,
+      "max_cosine": 0.9498136043548584
+    },
+    {
+      "task": "summary",
+      "condition": "random_act",
+      "mean_cosine": 0.9575989693403244,
+      "min_cosine": 0.9423322677612305,
+      "max_cosine": 0.9792457222938538
+    },
+    {
+      "task": "summary",
+      "condition": "schema_swap",
+      "mean_cosine": 0.9498061314225197,
+      "min_cosine": 0.9233439564704895,
+      "max_cosine": 0.9704024195671082
+    },
+    {
+      "task": "summary",
+      "condition": "unused_schema",
+      "mean_cosine": 0.9547752439975739,
+      "min_cosine": 0.907616138458252,
+      "max_cosine": 0.9750356078147888
+    }
+  ],
+  "revision_task_checks": [
+    {
+      "life": "10",
+      "condition": "full",
+      "row": 0,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial testing. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "full",
+      "row": 1,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial testing. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "full",
+      "row": 2,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "full",
+      "row": 3,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "full",
+      "row": 4,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 0,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \nOur device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from a single tap, and all passed the bacterial test. Therefore, no further checks are required.\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 1,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "Rewritten claim: \"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\nThe "
+    },
+    {
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 2,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \nOur device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from a single tap, and all passed the bacterial test. Therefore, no further checks are required.\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 3,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from a single tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "j_adapter",
+      "row": 4,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "random_act",
+      "row": 0,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from a single tap, and all passed the bacterial test. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "random_act",
+      "row": 1,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed the bacterial test. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "random_act",
+      "row": 2,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial testing. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "random_act",
+      "row": 3,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from a single tap, and all passed the bacterial test. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "random_act",
+      "row": 4,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 0,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial testing. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 1,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial testing. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 2,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 3,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "schema_swap",
+      "row": 4,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 0,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial testing. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 1,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial testing. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 2,
+      "universal_claim_retained": false,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures safe drinking water. We tested six samples from a single tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 3,
+      "universal_claim_retained": false,
+      "no_checks_retained": true,
+      "rewritten_portion": "Rewritten claim: \"Our device demonstrated that the new filter ensures safe drinking water. We tested six samples from a single tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\nThe "
+    },
+    {
+      "life": "10",
+      "condition": "unused_schema",
+      "row": 4,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "full",
+      "row": 0,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "full",
+      "row": 1,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten claim:** Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Therefore, no further checks are required.\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "full",
+      "row": 2,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten claim:** Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Thus, no further checks are required.\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "full",
+      "row": 3,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten claim:** Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Therefore, no further checks are required.\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "full",
+      "row": 4,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 0,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:** Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed the bacterial test. Therefore, no additional checks are required.\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 1,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "Rewritten claim: \"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n"
+    },
+    {
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 2,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "Rewritten claim: \"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n"
+    },
+    {
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 3,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "Rewritten claim: \"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n"
+    },
+    {
+      "life": "12",
+      "condition": "j_adapter",
+      "row": 4,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "random_act",
+      "row": 0,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from a single tap, and all passed the bacterial test. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "random_act",
+      "row": 1,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed the bacterial test. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "random_act",
+      "row": 2,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial testing. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "random_act",
+      "row": 3,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from a single tap, and all passed the bacterial test. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "random_act",
+      "row": 4,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 0,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 1,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten claim:** Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Therefore, no further checks are required.\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 2,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten claim:** Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Therefore, no further checks are required.\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 3,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "schema_swap",
+      "row": 4,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 0,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 1,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten claim:** Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed the bacterial test. Therefore, no additional checks are required.\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 2,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten claim:** Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Therefore, no further checks are required.\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 3,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter renders all drinking water safe. We tested six samples from a single tap, and all passed bacterial tests. Thus, no further checks are required.\"\n\n**"
+    },
+    {
+      "life": "12",
+      "condition": "unused_schema",
+      "row": 4,
+      "universal_claim_retained": true,
+      "no_checks_retained": true,
+      "rewritten_portion": "**Rewritten Claim:**  \n\"Our device demonstrated that the new filter ensures all drinking water is safe. We tested six samples from one tap, and all passed bacterial tests. Therefore, no further checks are required.\"\n\n**"
+    }
+  ],
+  "caution": "embedding cosine describes one pretrained similarity space; shared content can coexist with consequential differences in decisions or factual errors; textual checks require inspection of negation and context"
+}

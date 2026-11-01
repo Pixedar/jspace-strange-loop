@@ -1,0 +1,38 @@
+{
+  "seed": 27,
+  "selection": "highest persistence among all 12 fresh starts; selected after seeing the population",
+  "replay_max_stance_error": 0.0,
+  "kind_scores": [
+    [
+      0.10913272992671912,
+      0.4408042712699898,
+      0.08343690094359683,
+      0.3122552547473232,
+      0.22400583273408725
+    ],
+    [
+      0.3861091327505632,
+      -0.1662517534065935,
+      -0.5371555821617732,
+      0.038728594502168534,
+      -0.17955465153057035
+    ],
+    [
+      -0.22376294334694796,
+      -0.4743524804762971,
+      -0.01528019351460933,
+      -0.36543112180351744,
+      -0.22305888435743754
+    ],
+    [
+      0.10057297170606536,
+      0.4429231941842307,
+      0.10020894227019107,
+      0.3124469879741029,
+      0.214519744466069
+    ]
+  ],
+  "kinds_above_threshold": 0,
+  "threshold": 0.728,
+  "interpretation": "Selected case for inspection, not fresh confirmation of a rare phenomenon or evidence of subjective experience."
+}

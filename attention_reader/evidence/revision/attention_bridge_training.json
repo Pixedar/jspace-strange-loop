@@ -1,0 +1,100 @@
+[
+  {
+    "model": "14B",
+    "training": "600 AdamW steps on early windows; attention KL plus 0.1 normalized key MSE; values frozen",
+    "history": [
+      {
+        "step": 0,
+        "loss": 0.19761504232883453,
+        "validation_attention_tv": 0.32559138536453247
+      },
+      {
+        "step": 100,
+        "loss": 0.13682490587234497,
+        "validation_attention_tv": 0.32627570629119873
+      },
+      {
+        "step": 200,
+        "loss": 0.11275792866945267,
+        "validation_attention_tv": 0.32749807834625244
+      },
+      {
+        "step": 300,
+        "loss": 0.13109144568443298,
+        "validation_attention_tv": 0.3282039165496826
+      },
+      {
+        "step": 400,
+        "loss": 0.11096861213445663,
+        "validation_attention_tv": 0.32872867584228516
+      },
+      {
+        "step": 500,
+        "loss": 0.09707116335630417,
+        "validation_attention_tv": 0.3288958668708801
+      },
+      {
+        "step": 600,
+        "loss": 0.09867630898952484,
+        "validation_attention_tv": 0.3292471766471863
+      }
+    ],
+    "selected_step": 0,
+    "input_r2": 0.848922073841095,
+    "attention_tv": 0.3600796078074169,
+    "picture_cosine": 0.9637471135071618,
+    "destination_cosine": 0.9570676207225374,
+    "whole_query_perturbation_attention_tv": 0.3639984726905823,
+    "passed": false,
+    "boundary": "exploratory reuse of the prior test stream; attention gate <=0.15 including whole-query perturbations; no multimodal claim from text fitting"
+  },
+  {
+    "model": "Omni30B",
+    "training": "600 AdamW steps on early windows; attention KL plus 0.1 normalized key MSE; values frozen",
+    "history": [
+      {
+        "step": 0,
+        "loss": 0.7978163361549377,
+        "validation_attention_tv": 0.45054566860198975
+      },
+      {
+        "step": 100,
+        "loss": 0.5741573572158813,
+        "validation_attention_tv": 0.4505572021007538
+      },
+      {
+        "step": 200,
+        "loss": 0.6519589424133301,
+        "validation_attention_tv": 0.450542151927948
+      },
+      {
+        "step": 300,
+        "loss": 0.5698649287223816,
+        "validation_attention_tv": 0.45072031021118164
+      },
+      {
+        "step": 400,
+        "loss": 0.5655272603034973,
+        "validation_attention_tv": 0.4508473575115204
+      },
+      {
+        "step": 500,
+        "loss": 0.5938255786895752,
+        "validation_attention_tv": 0.4508433938026428
+      },
+      {
+        "step": 600,
+        "loss": 0.5132521986961365,
+        "validation_attention_tv": 0.45103079080581665
+      }
+    ],
+    "selected_step": 200,
+    "input_r2": 0.7557953000068665,
+    "attention_tv": 0.45121136264122547,
+    "picture_cosine": 0.9434375808514813,
+    "destination_cosine": 0.940784002792962,
+    "whole_query_perturbation_attention_tv": 0.4411792457103729,
+    "passed": false,
+    "boundary": "exploratory reuse of the prior test stream; attention gate <=0.15 including whole-query perturbations; no multimodal claim from text fitting"
+  }
+]

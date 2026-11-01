@@ -1,0 +1,20 @@
+{
+  "engine": "isolated complete c8 milestone",
+  "steps": 3000,
+  "device": "cuda",
+  "max_abs_errors": {
+    "s": 0.0003108084201812744,
+    "g": 0.0005325973033905029,
+    "att": 0.0001487433910369873
+  },
+  "resume_max_error": 0.0,
+  "resume_steps": 50,
+  "seconds": 63.59714365005493,
+  "passed": true,
+  "fresh_original_errors": {
+    "s": 0.0,
+    "g": 0.0,
+    "att": 0.0
+  },
+  "archive_note": "The preserved original itself differs from its older archive by the same amount on this runtime. Clean extraction is bit-identical to the fresh original; archival discrepancy remains recorded."
+}

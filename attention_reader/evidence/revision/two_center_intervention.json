@@ -1,0 +1,88 @@
+{
+  "protocol": {
+    "question": "Does replacing the reading summary by two shared earlier prototypes preserve later organization, beyond a size-matched random distortion?",
+    "lives": [
+      10,
+      12,
+      27
+    ],
+    "fit_steps": [
+      300,
+      1400
+    ],
+    "intervention_step": 1700,
+    "end": 3000,
+    "conditions": [
+      "unchanged",
+      "two_shared_centers",
+      "matched_angle_random"
+    ],
+    "specification": "Centers fitted jointly to all copies, then normalized to the original radius. Random controls match the conditional angular distance to the nearest center.",
+    "boundary": "exploratory follow-up after inspecting these selected lives, not fresh population confirmation; the rest of the controller remains high dimensional"
+  },
+  "rows": [
+    {
+      "seed": 10,
+      "condition": "unchanged",
+      "post_persistence": 0.4661838108151749,
+      "mean_attention_difference": 0.0,
+      "pre_intervention_max_stance_error": 0.0
+    },
+    {
+      "seed": 10,
+      "condition": "two_shared_centers",
+      "post_persistence": 0.4836761536251833,
+      "mean_attention_difference": 0.03439807753029534,
+      "pre_intervention_max_stance_error": 0.0
+    },
+    {
+      "seed": 10,
+      "condition": "matched_angle_random",
+      "post_persistence": 0.4872868389345358,
+      "mean_attention_difference": 0.0938837271066002,
+      "pre_intervention_max_stance_error": 0.0
+    },
+    {
+      "seed": 12,
+      "condition": "unchanged",
+      "post_persistence": 0.09511356547805128,
+      "mean_attention_difference": 0.0,
+      "pre_intervention_max_stance_error": 0.0
+    },
+    {
+      "seed": 12,
+      "condition": "two_shared_centers",
+      "post_persistence": 0.06757235829431862,
+      "mean_attention_difference": 0.09797373447675718,
+      "pre_intervention_max_stance_error": 0.0
+    },
+    {
+      "seed": 12,
+      "condition": "matched_angle_random",
+      "post_persistence": 0.06227409884281748,
+      "mean_attention_difference": 0.08544897080012266,
+      "pre_intervention_max_stance_error": 0.0
+    },
+    {
+      "seed": 27,
+      "condition": "unchanged",
+      "post_persistence": 0.4978702553025542,
+      "mean_attention_difference": 0.0,
+      "pre_intervention_max_stance_error": 0.0
+    },
+    {
+      "seed": 27,
+      "condition": "two_shared_centers",
+      "post_persistence": 0.500055480038972,
+      "mean_attention_difference": 0.0464571526383382,
+      "pre_intervention_max_stance_error": 0.0
+    },
+    {
+      "seed": 27,
+      "condition": "matched_angle_random",
+      "post_persistence": 0.27712163498474285,
+      "mean_attention_difference": 0.13831023101349862,
+      "pre_intervention_max_stance_error": 0.0
+    }
+  ]
+}

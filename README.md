@@ -1,66 +1,30 @@
-# Strange loop in J-space
+# Strange loop in J-space: one reader, many histories
 
-**Learning to describe a loop’s possible changes**
+Wiktor Tomasik · measurements: 1 November 2026 · publication updated: 2026-11-01T23:52:27+01:00
 
-Wiktor Tomasik · 2026 · [interactive experiment](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space) · [report](REPORT.md) · [data](https://huggingface.co/datasets/Pixedar/jspace-strange-loop)
+A compact reader selects a frozen language model's recent internal activity, updates a persistent state, and predicts its own attention. That prediction helps shape what it reads next. In live mode, selected content can also change the language model and return through its later activity.
 
-A small trainable network repeatedly reads a language model’s internal activity. What it reads sets its next state, and that state changes what it reads next. This repository tests what happens when the network is also trained to describe how this feedback loop responds to changes in its own state.
+The current study asks a specific question: **which effects depend on modeling this copy's attention, beyond private memory, structured steering and arbitrary recurrence?** Exchanging learned predictors changes developed reading habits. Matched recurrent controls and fact-paired response tests separate this ownership-sensitive relationship from the influence of the retained selector. See the [main report](attention_reader/RESEARCH_REPORT.md) for why each comparison was performed and what it means.
 
-The central comparison holds the text fixed and tries several starting states. Does the loop go to the same next state every time, or does its starting state make a difference? Some trained loops develop a strong dependence on their starting state. A control trained to describe another loop’s recorded responses remains close to one destination. Cutting the feedback into the reader largely removes the movements in the strongest case.
+## Explore the current study
 
-![A small reader summarizes language-model activity, sets the next control state, and reads again. Its attention can also bias the language model.](figures/self_describing_attention.png)
+- [Public interactive explorer](https://pixedar.github.io/projects/self-awareness/attention-reader/explorer/index.html): separate recorded/live architectures, module details, guided examples and synchronized measured paths.
+- [Research report](attention_reader/RESEARCH_REPORT.md): the questions, methods, figures and interpretations.
+- [Attention model versus recurrence](attention_reader/RECURRENCE_REPORT.md): controls for generic recurrent influence and information-conditioned behavior.
+- [Response analysis](attention_reader/PATTERN_BEHAVIOR.md) and [architecture rationale](attention_reader/ARCHITECTURE_CHOICES.md).
+- [Reproducibility package](attention_reader/README.md): one default checkpoint, an authored CPU demo, recorded numerical evidence and live rerun instructions.
+- [Reader on Hugging Face](https://huggingface.co/Pixedar/jspace-strange-loop), [evidence dataset](https://huggingface.co/datasets/Pixedar/jspace-strange-loop), and [companion Space](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space).
 
-## How the experiment works
+GitHub and the three Hugging Face repositories are private at publication time. The personal website hosts the sanitized public explorer independently of their access settings.
 
-The language model’s weights stay fixed. Around it, three learned components form a loop:
+## What the comparisons establish
 
-1. A **reader** uses the current control state to weight the model’s activity at recent text positions.
-2. A **summary** compresses that reading into 32 numbers. This is a learned vector, not a verbal description or an image.
-3. A **state decoder** turns the summary into eight control numbers, which set the next read.
+A learned prediction can participate in a persistent way of reading. Content-aligned actions influence the model more than equally sized noise or rotations. Much organization and live influence also survive simpler private-memory and recurrent controls. Counterbalanced information tests show mostly softer existing answer preferences rather than new decisions. The contribution is a controlled separation of these mechanisms; persistent individuality, general personality and subjective experience are not established.
 
-During training, a separate prediction network receives the summary and several candidate starting states. It learns to distinguish the loop’s possible updates from those of parallel copies. These copies share learned weights but read different text streams.
+## Earlier systems
 
-There is a shortcut in that task. If every starting state leads to one destination, identifying the destination is enough. The **centered-field objective** removes that common destination from the target. What remains is the pattern of differences between next states. Training can change both the description and the loop it describes. The prediction network shapes this learning; it is not used to choose the next state during operation.
+The earlier frozen J-space feedback, memory-between-reasoning-segments, evidence-selection and self-description training studies remain in [frozen_loop/](frozen_loop/), [trained_loop/](trained_loop/), [selection_loop/](selection_loop/), [self_reference/](self_reference/) and [followups/](followups/). They use different mechanisms and are not extra versions of the current default reader. The [research history](HISTORY.md) and [previous release account](history/before_attention_reader_20261101/REPORT.md) preserve their findings.
 
-## Results
+## Attribution and licenses
 
-**The training target changes the dynamics that develop.** In an initial comparison on a 0.6-billion-parameter model, 2 of 5 self-description runs sustained substantial state dependence without settling into a two-state oscillation. Three further runs starting from previously trained readers reached the state-dependent criterion during training. Controls describing another loop’s recordings remained near a common destination. Two runs on an 8-billion-parameter model also developed state dependence. These are small, related samples: the outcome depends on initialization and training history.
-
-![Different starting states lead to nearly one next state in the control and to separated next states in a self-description run.](figures/state_dependence.png)
-
-**The feedback through the reader causes most of the large movements in the strongest run.** Holding the reader’s query fixed reduces large steps from **26.6% to 1.2%** of evaluated steps. Disabling the separate route into the language model’s attention leaves **26.4%**. A large step is a distance greater than 0.5 between successive unit control vectors. The [interactive comparison](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space) shows the starting-state tests and these path interventions.
-
-**The reader can affect the language model’s predictions.** Applying the reader’s attention weights as a bias inside the model changes **11–16% of its highest-probability next-token predictions** across five self-description runs. A token is a word or part of a word. Prediction loss changes by −0.14% to +1.51%, with negative values indicating improvement. The control describing another loop also changes predictions. These effects establish influence on processing; they do not establish improved performance caused by self-description.
-
-**Feedback through the language model remains weak.** Interventions isolate two routes: the state changes the small reader, or it changes the language model’s processing. The second route produces less than 1% of the full starting-state-dependent variation in the five runs. Most of the measured dependence therefore travels through the small reader. A representation of the consequences of its own attention has not been demonstrated.
-
-The [report](REPORT.md) gives every final-run result, measurement definitions and causal tests. Its strongest case has a normalized state-dependence score of **0.65**, compared with **0.002** for the control. The score compares two sums of squared variation; it is not a probability or a percentage of movement caused by the state. Predicted and measured response patterns correlate at **+0.81**, but the predictions have large scale errors. Pattern agreement is stronger than absolute forecasting accuracy here.
-
-## Interpretation and open questions
-
-The evidence supports a specific result: training a summary to distinguish the loop’s own possible updates can help produce dynamics that depend on its state. It does not yet show reliable development across starts, accurate forecasts used during operation, or lasting individuality among copies. Copies with one shared reader can converge when given the same text. Short changes in generated wording do not establish a stable personality. None of these measurements tests subjective experience.
-
-A [text, image and audio experiment](followups/README.md) tests the same training objective with Qwen2.5-Omni. Readers given sampled image, audio and text positions develop state dependence, while readers restricted to recent text positions do not. However, changing the spoken direction affects their next states roughly 80–250 times more than reversing the image. State dependence alone is insufficient evidence that information from the modalities has been integrated. This experiment uses cached model activity and does not reproduce the full live feedback system.
-
-## Other experiments in this repository
-
-The name J-space comes from the project’s word-based reading of internal model states using the Jacobian lens. The attention-feedback system above learns its own numerical summary. The following experiments use different mechanisms and address distinct questions.
-
-| System | Question and finding | Details |
-|---|---|---|
-| Frozen J-space feedback | What survives repeated reading and rewriting of a model’s state? Discourse and stance words persist, and the feedback favors a casual persona. Perturbed reasoning can invent a conversational past. | [Frozen loop](frozen_loop/) |
-| State passed between reasoning segments | How does a self-prediction task shape memory? Distinguishing moments produces a rotating time code; distinguishing trajectories produces a different code. A forecast written back into the model can shape the state it predicts. | [Trained loop](trained_loop/), [stages of a thought](figures/stages_of_a_thought.png) |
-| State controlling evidence selection | Can a compact state steer what is read? Editing the state redirects evidence selection when access is restricted; giving the model full text access changes the learned solution. | [Selection loop](selection_loop/) |
-
-The rotating code across reasoning segments and the token-by-token two-state oscillation are different phenomena. The [research history](HISTORY.md) compares the mechanisms, records unsuccessful causal-model experiments and explains which interpretations the controls support.
-
-## Explore and reproduce
-
-- [Interactive experiment](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space): change a starting-state comparison and inspect measured responses and path cuts.
-- [Report](REPORT.md): experimental design, results, limits and related work.
-- [Methods and code](self_reference/): configurations, numerical settings, data provenance and reproduction instructions.
-- [Behavior and multimodal experiments](followups/): prediction changes, generated text, perception controls and input interventions.
-- [Data](https://huggingface.co/datasets/Pixedar/jspace-strange-loop): numeric recordings and learned interface weights. Base-model weights remain in their upstream repositories.
-- [Archived report](history/REPORT_20261014.md): detailed results for the frozen, reasoning-segment and evidence-selection systems.
-
-Code: **AGPL-3.0-only**. Author-owned text, figures and observations introduced in release 4: **CC BY-SA 4.0**. Earlier grants and third-party terms remain valid; see [LICENSING.md](LICENSING.md). Citation: [CITATION.cff](CITATION.cff). File checksums: `SHA256SUMS`.
+Wiktor Tomasik, 2026. Software and the compact reader weights are AGPL-3.0-only; new author-owned research text, figures and numerical observations are CC BY-SA 4.0. Earlier grants remain valid. External model weights and source texts retain their upstream terms. The public explorer omits external corpus passages. See [license scope](LICENSING.md), [third-party sources](THIRD_PARTY_NOTICES.md) and [publication scope](attention_reader/PUBLICATION_NOTES.md).

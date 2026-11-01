@@ -1,0 +1,19 @@
+{
+  "source_files_checked": 17,
+  "changed_source_files": [],
+  "git_head_unchanged": true,
+  "git_status_unchanged": true,
+  "syntax_errors": [],
+  "secret_hits": [],
+  "verified_final_cloud_files": 69,
+  "failed_cloud_receipts": [],
+  "checks": {
+    "qualification.json": true,
+    "portable_qualification.json": true,
+    "portable_mean_qualification.json": true,
+    "demo_qualification.json": true,
+    "explorer_qa.json": true,
+    "release_explorer_qa.json": true
+  },
+  "passed": true
+}

@@ -1,0 +1,223 @@
+{
+  "rows": [
+    {
+      "seed": 10,
+      "copy": 0,
+      "fixed_parity_variance_fraction": 9.83344040650369e-06,
+      "lag1": 0.010445319009521047,
+      "lag2": 0.016418029272593664,
+      "lag2_over_lag1": 1.5718073576908864,
+      "pair_center_motion_100_readings": 0.10936083582987022
+    },
+    {
+      "seed": 10,
+      "copy": 1,
+      "fixed_parity_variance_fraction": 2.342548505585018e-05,
+      "lag1": 0.01110114030091947,
+      "lag2": 0.017826860402754063,
+      "lag2_over_lag1": 1.6058584901658728,
+      "pair_center_motion_100_readings": 0.0809065886125708
+    },
+    {
+      "seed": 10,
+      "copy": 2,
+      "fixed_parity_variance_fraction": 6.878619080663562e-06,
+      "lag1": 0.004906972802005435,
+      "lag2": 0.007887093942896422,
+      "lag2_over_lag1": 1.6073237535926506,
+      "pair_center_motion_100_readings": 0.04735402736538934
+    },
+    {
+      "seed": 10,
+      "copy": 3,
+      "fixed_parity_variance_fraction": 6.755762655963338e-07,
+      "lag1": 0.006439788571315256,
+      "lag2": 0.010645922078095947,
+      "lag2_over_lag1": 1.6531477641231993,
+      "pair_center_motion_100_readings": 0.1538468990580496
+    },
+    {
+      "seed": 11,
+      "copy": 0,
+      "fixed_parity_variance_fraction": 2.6401784377627635e-06,
+      "lag1": 0.004662137347208308,
+      "lag2": 0.007414298289679854,
+      "lag2_over_lag1": 1.5903217210277045,
+      "pair_center_motion_100_readings": 0.09756784731593666
+    },
+    {
+      "seed": 11,
+      "copy": 1,
+      "fixed_parity_variance_fraction": 3.354608920980162e-06,
+      "lag1": 0.004629047067425089,
+      "lag2": 0.0072456691754556575,
+      "lag2_over_lag1": 1.5652615041320086,
+      "pair_center_motion_100_readings": 0.10246163034334012
+    },
+    {
+      "seed": 11,
+      "copy": 2,
+      "fixed_parity_variance_fraction": 3.279031503655716e-06,
+      "lag1": 0.004744342174986187,
+      "lag2": 0.007393349187143883,
+      "lag2_over_lag1": 1.5583507501048675,
+      "pair_center_motion_100_readings": 0.1093408004615228
+    },
+    {
+      "seed": 11,
+      "copy": 3,
+      "fixed_parity_variance_fraction": 2.659350985867448e-06,
+      "lag1": 0.0046430561693687105,
+      "lag2": 0.007394546886914782,
+      "lag2_over_lag1": 1.5926033666571335,
+      "pair_center_motion_100_readings": 0.09621441503589334
+    },
+    {
+      "seed": 12,
+      "copy": 0,
+      "fixed_parity_variance_fraction": 0.050709929559354494,
+      "lag1": 0.21811946477947916,
+      "lag2": 0.018259272040591676,
+      "lag2_over_lag1": 0.08371225401204781,
+      "pair_center_motion_100_readings": 0.14545085442791764
+    },
+    {
+      "seed": 12,
+      "copy": 1,
+      "fixed_parity_variance_fraction": 4.918816513432844e-06,
+      "lag1": 0.008186900057038683,
+      "lag2": 0.012681052840061248,
+      "lag2_over_lag1": 1.5489443808659566,
+      "pair_center_motion_100_readings": 0.18573708634721187
+    },
+    {
+      "seed": 12,
+      "copy": 2,
+      "fixed_parity_variance_fraction": 5.256349706717067e-06,
+      "lag1": 0.008133732322371913,
+      "lag2": 0.01255923306398185,
+      "lag2_over_lag1": 1.5440922526350607,
+      "pair_center_motion_100_readings": 0.17850316916017187
+    },
+    {
+      "seed": 12,
+      "copy": 3,
+      "fixed_parity_variance_fraction": 0.0041180271721995565,
+      "lag1": 0.4654703486696681,
+      "lag2": 0.03553573784595039,
+      "lag2_over_lag1": 0.07634371973964159,
+      "pair_center_motion_100_readings": 0.2591011467164361
+    },
+    {
+      "seed": 13,
+      "copy": 0,
+      "fixed_parity_variance_fraction": 5.853961653201623e-07,
+      "lag1": 0.00507324657790914,
+      "lag2": 0.008916284801589318,
+      "lag2_over_lag1": 1.757510632425051,
+      "pair_center_motion_100_readings": 0.11923653262782392
+    },
+    {
+      "seed": 13,
+      "copy": 1,
+      "fixed_parity_variance_fraction": 3.943168280784448e-07,
+      "lag1": 0.005276252750361213,
+      "lag2": 0.00931842860820142,
+      "lag2_over_lag1": 1.7661073206857802,
+      "pair_center_motion_100_readings": 0.13224259879035788
+    },
+    {
+      "seed": 13,
+      "copy": 2,
+      "fixed_parity_variance_fraction": 4.379681075583619e-07,
+      "lag1": 0.005057248072213275,
+      "lag2": 0.00891076068976713,
+      "lag2_over_lag1": 1.7619781672816752,
+      "pair_center_motion_100_readings": 0.11875546583088266
+    },
+    {
+      "seed": 13,
+      "copy": 3,
+      "fixed_parity_variance_fraction": 3.4776993669272116e-06,
+      "lag1": 0.00585692823979258,
+      "lag2": 0.008893354904144633,
+      "lag2_over_lag1": 1.5184333049741423,
+      "pair_center_motion_100_readings": 0.1271237537479077
+    },
+    {
+      "seed": 14,
+      "copy": 0,
+      "fixed_parity_variance_fraction": 3.6197725292730354e-06,
+      "lag1": 0.004444580875619191,
+      "lag2": 0.006912170450374225,
+      "lag2_over_lag1": 1.5551906116257286,
+      "pair_center_motion_100_readings": 0.09470177142813489
+    },
+    {
+      "seed": 14,
+      "copy": 1,
+      "fixed_parity_variance_fraction": 3.3542919243290115e-06,
+      "lag1": 0.004391308705405655,
+      "lag2": 0.006824316973625915,
+      "lag2_over_lag1": 1.5540508380167517,
+      "pair_center_motion_100_readings": 0.09443031293536933
+    },
+    {
+      "seed": 14,
+      "copy": 2,
+      "fixed_parity_variance_fraction": 3.3829661074680217e-06,
+      "lag1": 0.004427446745647641,
+      "lag2": 0.0068815749270274285,
+      "lag2_over_lag1": 1.5542987465162161,
+      "pair_center_motion_100_readings": 0.09449525299214297
+    },
+    {
+      "seed": 14,
+      "copy": 3,
+      "fixed_parity_variance_fraction": 3.6973802972628533e-06,
+      "lag1": 0.004471205125151785,
+      "lag2": 0.006953416402987671,
+      "lag2_over_lag1": 1.5551548650435987,
+      "pair_center_motion_100_readings": 0.09487566182053829
+    },
+    {
+      "seed": 15,
+      "copy": 0,
+      "fixed_parity_variance_fraction": 4.535968984864525e-06,
+      "lag1": 0.0027416137381466835,
+      "lag2": 0.004480133926485938,
+      "lag2_over_lag1": 1.6341229488857483,
+      "pair_center_motion_100_readings": 0.04745167333124863
+    },
+    {
+      "seed": 15,
+      "copy": 1,
+      "fixed_parity_variance_fraction": 2.8655936278321192e-06,
+      "lag1": 0.0024244585937667046,
+      "lag2": 0.004036697955633595,
+      "lag2_over_lag1": 1.6649894397091236,
+      "pair_center_motion_100_readings": 0.027991894868451075
+    },
+    {
+      "seed": 15,
+      "copy": 2,
+      "fixed_parity_variance_fraction": 3.6981753217535385e-06,
+      "lag1": 0.002770428370087502,
+      "lag2": 0.004488707826260108,
+      "lag2_over_lag1": 1.6202215782674558,
+      "pair_center_motion_100_readings": 0.05086124067707085
+    },
+    {
+      "seed": 15,
+      "copy": 3,
+      "fixed_parity_variance_fraction": 4.404030504723266e-06,
+      "lag1": 0.0027916058967492273,
+      "lag2": 0.004543362533515347,
+      "lag2_over_lag1": 1.627508574475361,
+      "pair_center_motion_100_readings": 0.05006648338743254
+    }
+  ],
+  "method": "Fit one constant-amplitude odd/even pattern to the final 1500 readings of each stance. Compare residual and slow motion of successive pair means.",
+  "warning": "These distinguish exact/simple alternation from additional motion; additional motion is not by itself meaningful emergence. Main persistence metrics average 100 readings, which includes both parities.",
+  "interpretation": "Seed 12 has substantial two-reading motion. Do not present this fast motion as richness; assess slower content-conditioned organization and intervention outcomes separately."
+}

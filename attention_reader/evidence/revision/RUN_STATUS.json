@@ -1,0 +1,53 @@
+{
+  "status": "explanatory revision and bounded studies completed; stronger research aims remain open",
+  "behavior": {
+    "tasks": 12,
+    "histories": 2,
+    "conditions": 5,
+    "controller_outputs": 480,
+    "unique_unchanged_outputs": 12,
+    "concepts": 120,
+    "rater_groups": 1440,
+    "rater_grounding_failures": 720
+  },
+  "replays": {
+    "lives": [
+      10,
+      12,
+      27
+    ],
+    "steps": 3000,
+    "max_stance_error": 0,
+    "selectable_spaces": 5,
+    "synchronized_panels": 3
+  },
+  "training": {
+    "j_adapter": "failed held-out generalization",
+    "larger_bridges": "full-rank and attention-trained alternatives still fail attention fidelity"
+  },
+  "bottleneck": "nine causal branches across three selected lives; two shared prototypes preserve much of organization in two cases",
+  "open": [
+    "qualified full multimodal controller",
+    "qualified larger-model population",
+    "crossed continuing LLM-cache and controller histories",
+    "independently validated broad semantic judgments",
+    "complete internal J-space interpretation"
+  ],
+  "cloud": {
+    "results_collected_with_sha256": true,
+    "owned_rentals_destroyed_verified": true
+  },
+  "publishing": "none",
+  "active_checkout_edits": "none by this revision",
+  "extended": {
+    "long_cohorts": 2,
+    "copies_per_cohort": 16,
+    "readings": 16720,
+    "paired_response_outputs": 768,
+    "recurrent_response_outputs": 384,
+    "information_presentations": 64,
+    "baseline_format_qualified": 64,
+    "recurrent_comparator": "64-state context-driven filter; positive conditional exponent on recorded history"
+  },
+  "main_report": "Curated around informative mechanisms; routine interface attempts remain in appendices"
+}

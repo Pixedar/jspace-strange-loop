@@ -1,0 +1,5722 @@
+{
+  "protocol": {
+    "question": "How much does allowing the attention forecast to respond to new model activity change the stance response, beyond an identical frozen forecast value?",
+    "modes": [
+      "own_context",
+      "own_frozen",
+      "private_mean",
+      "unused"
+    ],
+    "control": "own_context and own_frozen give exactly the same base query and output; only their response to a changed input differs",
+    "bases": "rank-64 J-lens-derived linear basis; activity PCA fitted on four other scene families; five random orthonormal rank-64 bases",
+    "evaluation_families": [
+      "debate",
+      "editing",
+      "imagination",
+      "planning"
+    ],
+    "scope": "local derivatives and finite returns at one probe position in eight scenes; experimenter-supplied analysis, not learned self-attribution"
+  },
+  "rows": [
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "mode": "own_context",
+      "jacobian_norm": 0.014377817511558533,
+      "J_lens_basis_fraction": 0.018177572637796402,
+      "activity_PCA_fraction": 0.06175447255373001,
+      "random_basis_fractions": [
+        0.017765186727046967,
+        0.013675127178430557,
+        0.016087738797068596,
+        0.012479939498007298,
+        0.013169636018574238
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.014380195178091526,
+      "J_lens_basis_fraction": 0.018182625994086266,
+      "activity_PCA_fraction": 0.06179511919617653,
+      "random_basis_fractions": [
+        0.017753105610609055,
+        0.013672180473804474,
+        0.01611917093396187,
+        0.012487168423831463,
+        0.013158210553228855
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "mode": "private_mean",
+      "jacobian_norm": 0.008754302747547626,
+      "J_lens_basis_fraction": 0.018070748075842857,
+      "activity_PCA_fraction": 0.06139572709798813,
+      "random_basis_fractions": [
+        0.01805957779288292,
+        0.013657782226800919,
+        0.01576133817434311,
+        0.013082285411655903,
+        0.013222300447523594
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "mode": "unused",
+      "jacobian_norm": 0.008297004736959934,
+      "J_lens_basis_fraction": 0.018114037811756134,
+      "activity_PCA_fraction": 0.060656365007162094,
+      "random_basis_fractions": [
+        0.01814177632331848,
+        0.013618762604892254,
+        0.015657322481274605,
+        0.013339950703084469,
+        0.013296090997755527
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 4.790121965925209e-05,
+      "relative_to_full": 0.0033316058106720448,
+      "J_lens_basis_fraction": 0.016257837414741516,
+      "activity_PCA_fraction": 0.04868415370583534,
+      "random_basis_fractions": [
+        0.011105646379292011,
+        0.012686725705862045,
+        0.01905781403183937,
+        0.011656025424599648,
+        0.01665329374372959
+      ]
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "mode": "own_context",
+      "jacobian_norm": 0.006986104883253574,
+      "J_lens_basis_fraction": 0.02171052061021328,
+      "activity_PCA_fraction": 0.05129629373550415,
+      "random_basis_fractions": [
+        0.014788809232413769,
+        0.015747180208563805,
+        0.014661300927400589,
+        0.015489648096263409,
+        0.01989353448152542
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.006987357046455145,
+      "J_lens_basis_fraction": 0.02171112410724163,
+      "activity_PCA_fraction": 0.051318515092134476,
+      "random_basis_fractions": [
+        0.014779395423829556,
+        0.015742601826786995,
+        0.014678307808935642,
+        0.015489138662815094,
+        0.019888661801815033
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "mode": "private_mean",
+      "jacobian_norm": 0.006512518040835857,
+      "J_lens_basis_fraction": 0.022629177197813988,
+      "activity_PCA_fraction": 0.04758106917142868,
+      "random_basis_fractions": [
+        0.014867044985294342,
+        0.015601745806634426,
+        0.014386961236596107,
+        0.01486074086278677,
+        0.020228611305356026
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "mode": "unused",
+      "jacobian_norm": 0.00635502627119422,
+      "J_lens_basis_fraction": 0.02272333949804306,
+      "activity_PCA_fraction": 0.0471377894282341,
+      "random_basis_fractions": [
+        0.014905496500432491,
+        0.015603766776621342,
+        0.014390839263796806,
+        0.014699574559926987,
+        0.02032511681318283
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 1.4780816854909062e-05,
+      "relative_to_full": 0.002115745097398758,
+      "J_lens_basis_fraction": 0.012245651334524155,
+      "activity_PCA_fraction": 0.058619771152734756,
+      "random_basis_fractions": [
+        0.012861516326665878,
+        0.011141769587993622,
+        0.018248237669467926,
+        0.01111993845552206,
+        0.018078576773405075
+      ]
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "mode": "own_context",
+      "jacobian_norm": 0.0015909940702840686,
+      "J_lens_basis_fraction": 0.023960867896676064,
+      "activity_PCA_fraction": 0.05225900933146477,
+      "random_basis_fractions": [
+        0.014690443873405457,
+        0.016735311597585678,
+        0.014021760784089565,
+        0.01712399534881115,
+        0.019503777846693993
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.0015913097886368632,
+      "J_lens_basis_fraction": 0.02397121861577034,
+      "activity_PCA_fraction": 0.052279043942689896,
+      "random_basis_fractions": [
+        0.01468722429126501,
+        0.016712935641407967,
+        0.014039581641554832,
+        0.017122728750109673,
+        0.019502822309732437
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "mode": "private_mean",
+      "jacobian_norm": 0.0014447889989241958,
+      "J_lens_basis_fraction": 0.024980157613754272,
+      "activity_PCA_fraction": 0.048392634838819504,
+      "random_basis_fractions": [
+        0.014601821079850197,
+        0.016655409708619118,
+        0.01371069811284542,
+        0.016924288123846054,
+        0.019852088764309883
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "mode": "unused",
+      "jacobian_norm": 0.0014847806887701154,
+      "J_lens_basis_fraction": 0.024633241817355156,
+      "activity_PCA_fraction": 0.049617912620306015,
+      "random_basis_fractions": [
+        0.014636692591011524,
+        0.01671157218515873,
+        0.01384217943996191,
+        0.016944371163845062,
+        0.01976552978157997
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 5.310035248839995e-06,
+      "relative_to_full": 0.003337558126077056,
+      "J_lens_basis_fraction": 0.01532471738755703,
+      "activity_PCA_fraction": 0.04911927133798599,
+      "random_basis_fractions": [
+        0.011152059771120548,
+        0.01378774456679821,
+        0.017407143488526344,
+        0.009783277288079262,
+        0.016642224043607712
+      ]
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "mode": "own_context",
+      "jacobian_norm": 0.0038629884365946054,
+      "J_lens_basis_fraction": 0.019063612446188927,
+      "activity_PCA_fraction": 0.054424066096544266,
+      "random_basis_fractions": [
+        0.017568059265613556,
+        0.013401709496974945,
+        0.015350192785263062,
+        0.014500070363283157,
+        0.015080558136105537
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.0038630736526101828,
+      "J_lens_basis_fraction": 0.019060520455241203,
+      "activity_PCA_fraction": 0.054441191256046295,
+      "random_basis_fractions": [
+        0.017564335837960243,
+        0.013403551653027534,
+        0.015362156555056572,
+        0.014500043354928493,
+        0.015075870789587498
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "mode": "private_mean",
+      "jacobian_norm": 0.0037060556933283806,
+      "J_lens_basis_fraction": 0.01884649321436882,
+      "activity_PCA_fraction": 0.05425291880965233,
+      "random_basis_fractions": [
+        0.01783805340528488,
+        0.013292133808135986,
+        0.015195023268461227,
+        0.014552981592714787,
+        0.014779750257730484
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "mode": "unused",
+      "jacobian_norm": 0.0037707325536757708,
+      "J_lens_basis_fraction": 0.018409954383969307,
+      "activity_PCA_fraction": 0.05489553138613701,
+      "random_basis_fractions": [
+        0.018018299713730812,
+        0.013217492029070854,
+        0.015320995822548866,
+        0.014445575885474682,
+        0.01442565768957138
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 4.7354856178571936e-06,
+      "relative_to_full": 0.0012258606730028987,
+      "J_lens_basis_fraction": 0.011305983178317547,
+      "activity_PCA_fraction": 0.04237645864486694,
+      "random_basis_fractions": [
+        0.01175997219979763,
+        0.014842761680483818,
+        0.019364086911082268,
+        0.011773141101002693,
+        0.02205609530210495
+      ]
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "mode": "own_context",
+      "jacobian_norm": 0.009858015924692154,
+      "J_lens_basis_fraction": 0.019855692982673645,
+      "activity_PCA_fraction": 0.04887574166059494,
+      "random_basis_fractions": [
+        0.01694723218679428,
+        0.01450361218303442,
+        0.015109478496015072,
+        0.008981683291494846,
+        0.013807159848511219
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.009857755154371262,
+      "J_lens_basis_fraction": 0.019897913560271263,
+      "activity_PCA_fraction": 0.04887612536549568,
+      "random_basis_fractions": [
+        0.0169421024620533,
+        0.014486166648566723,
+        0.015095295384526253,
+        0.00896815862506628,
+        0.013830993324518204
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "mode": "private_mean",
+      "jacobian_norm": 0.011170173063874245,
+      "J_lens_basis_fraction": 0.01857319101691246,
+      "activity_PCA_fraction": 0.05218218266963959,
+      "random_basis_fractions": [
+        0.017447929829359055,
+        0.014175196178257465,
+        0.01551021821796894,
+        0.008923295885324478,
+        0.012961180880665779
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "mode": "unused",
+      "jacobian_norm": 0.011991672217845917,
+      "J_lens_basis_fraction": 0.017461884766817093,
+      "activity_PCA_fraction": 0.055172473192214966,
+      "random_basis_fractions": [
+        0.017886998131871223,
+        0.013924792408943176,
+        0.015884950757026672,
+        0.009237319231033325,
+        0.012300717644393444
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 6.319384556263685e-05,
+      "relative_to_full": 0.006410402245819569,
+      "J_lens_basis_fraction": 0.01779322139918804,
+      "activity_PCA_fraction": 0.04453431814908981,
+      "random_basis_fractions": [
+        0.013478398323059082,
+        0.014312468469142914,
+        0.016684433445334435,
+        0.012050441466271877,
+        0.015958361327648163
+      ]
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "mode": "own_context",
+      "jacobian_norm": 0.05269373580813408,
+      "J_lens_basis_fraction": 0.02379976212978363,
+      "activity_PCA_fraction": 0.041687965393066406,
+      "random_basis_fractions": [
+        0.015114989131689072,
+        0.014944064430892467,
+        0.013828775845468044,
+        0.011471797712147236,
+        0.01879955269396305
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.05269236117601395,
+      "J_lens_basis_fraction": 0.023804305121302605,
+      "activity_PCA_fraction": 0.0416923351585865,
+      "random_basis_fractions": [
+        0.015113946981728077,
+        0.014942054636776447,
+        0.01382971927523613,
+        0.0114704305306077,
+        0.018799060955643654
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "mode": "private_mean",
+      "jacobian_norm": 0.05212697386741638,
+      "J_lens_basis_fraction": 0.023721877485513687,
+      "activity_PCA_fraction": 0.04164180904626846,
+      "random_basis_fractions": [
+        0.015147803351283073,
+        0.014904431067407131,
+        0.013827783055603504,
+        0.011281694285571575,
+        0.018633347004652023
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "mode": "unused",
+      "jacobian_norm": 0.051331646740436554,
+      "J_lens_basis_fraction": 0.023329194635152817,
+      "activity_PCA_fraction": 0.04149911552667618,
+      "random_basis_fractions": [
+        0.015199527144432068,
+        0.014684237539768219,
+        0.013859473168849945,
+        0.010707401670515537,
+        0.017828721553087234
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 3.078220834140666e-05,
+      "relative_to_full": 0.0005841720849275589,
+      "J_lens_basis_fraction": 0.017398254945874214,
+      "activity_PCA_fraction": 0.06495260447263718,
+      "random_basis_fractions": [
+        0.015561668202280998,
+        0.010704184882342815,
+        0.014947635121643543,
+        0.014508125372231007,
+        0.010062921792268753
+      ]
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "mode": "own_context",
+      "jacobian_norm": 0.003503749379888177,
+      "J_lens_basis_fraction": 0.01785540208220482,
+      "activity_PCA_fraction": 0.053923238068819046,
+      "random_basis_fractions": [
+        0.017984725534915924,
+        0.013551617972552776,
+        0.015081403777003288,
+        0.008981741033494473,
+        0.011891967616975307
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.0035019570495933294,
+      "J_lens_basis_fraction": 0.01789068803191185,
+      "activity_PCA_fraction": 0.053917352110147476,
+      "random_basis_fractions": [
+        0.017955316230654716,
+        0.013532556593418121,
+        0.01505835261195898,
+        0.008956591598689556,
+        0.011919021606445312
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "mode": "private_mean",
+      "jacobian_norm": 0.0038280829321593046,
+      "J_lens_basis_fraction": 0.017065882682800293,
+      "activity_PCA_fraction": 0.05648142844438553,
+      "random_basis_fractions": [
+        0.018256261944770813,
+        0.013477645814418793,
+        0.015283462591469288,
+        0.009216279722750187,
+        0.01162339560687542
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "mode": "unused",
+      "jacobian_norm": 0.0033557487186044455,
+      "J_lens_basis_fraction": 0.016839535906910896,
+      "activity_PCA_fraction": 0.05710427090525627,
+      "random_basis_fractions": [
+        0.01839127391576767,
+        0.013452036306262016,
+        0.015297124162316322,
+        0.009378582239151001,
+        0.011485415510833263
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 3.0148545192787424e-05,
+      "relative_to_full": 0.008604652248322964,
+      "J_lens_basis_fraction": 0.016518667340278625,
+      "activity_PCA_fraction": 0.04191331937909126,
+      "random_basis_fractions": [
+        0.01337878406047821,
+        0.015173736028373241,
+        0.014726202934980392,
+        0.012593354098498821,
+        0.016375182196497917
+      ]
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "mode": "own_context",
+      "jacobian_norm": 0.016851194202899933,
+      "J_lens_basis_fraction": 0.015027142129838467,
+      "activity_PCA_fraction": 0.05985817313194275,
+      "random_basis_fractions": [
+        0.018886489793658257,
+        0.013681585900485516,
+        0.015670988708734512,
+        0.010843543335795403,
+        0.011713997460901737
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.016842205077409744,
+      "J_lens_basis_fraction": 0.015067288652062416,
+      "activity_PCA_fraction": 0.059862084686756134,
+      "random_basis_fractions": [
+        0.018879154697060585,
+        0.013668210245668888,
+        0.015650734305381775,
+        0.010822673328220844,
+        0.011724301613867283
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "mode": "private_mean",
+      "jacobian_norm": 0.005625495687127113,
+      "J_lens_basis_fraction": 0.014913180842995644,
+      "activity_PCA_fraction": 0.05988620966672897,
+      "random_basis_fractions": [
+        0.018910616636276245,
+        0.01369520090520382,
+        0.015575475059449673,
+        0.011080143973231316,
+        0.011744523420929909
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "mode": "unused",
+      "jacobian_norm": 0.003715555416420102,
+      "J_lens_basis_fraction": 0.014959774911403656,
+      "activity_PCA_fraction": 0.0594024732708931,
+      "random_basis_fractions": [
+        0.018760422244668007,
+        0.013615219853818417,
+        0.015675138682127,
+        0.01101156510412693,
+        0.011828998103737831
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 0.0001356436259811744,
+      "relative_to_full": 0.008049496449530125,
+      "J_lens_basis_fraction": 0.01675569638609886,
+      "activity_PCA_fraction": 0.04178614541888237,
+      "random_basis_fractions": [
+        0.012993120588362217,
+        0.015632567927241325,
+        0.014062101021409035,
+        0.012669500894844532,
+        0.01763833686709404
+      ]
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "mode": "own_context",
+      "jacobian_norm": 0.014150000177323818,
+      "J_lens_basis_fraction": 0.02516394853591919,
+      "activity_PCA_fraction": 0.031014302745461464,
+      "random_basis_fractions": [
+        0.016602925956249237,
+        0.011709061451256275,
+        0.01615750789642334,
+        0.01632801443338394,
+        0.017968174070119858
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.014101916924118996,
+      "J_lens_basis_fraction": 0.025297315791249275,
+      "activity_PCA_fraction": 0.031253550201654434,
+      "random_basis_fractions": [
+        0.01679963991045952,
+        0.011702068150043488,
+        0.016049280762672424,
+        0.016310377046465874,
+        0.017811672762036324
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "mode": "private_mean",
+      "jacobian_norm": 0.007210042327642441,
+      "J_lens_basis_fraction": 0.025826698169112206,
+      "activity_PCA_fraction": 0.03219234570860863,
+      "random_basis_fractions": [
+        0.01699172705411911,
+        0.011365526355803013,
+        0.015827154740691185,
+        0.01651039905846119,
+        0.017695622518658638
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "mode": "unused",
+      "jacobian_norm": 0.011593004688620567,
+      "J_lens_basis_fraction": 0.0253895316272974,
+      "activity_PCA_fraction": 0.03076629899442196,
+      "random_basis_fractions": [
+        0.01691492274403572,
+        0.011626163497567177,
+        0.0157247893512249,
+        0.016102643683552742,
+        0.017933007329702377
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 0.000550554774235934,
+      "relative_to_full": 0.0389084629714489,
+      "J_lens_basis_fraction": 0.01668418012559414,
+      "activity_PCA_fraction": 0.05409831926226616,
+      "random_basis_fractions": [
+        0.015612813644111156,
+        0.01435784250497818,
+        0.013607817701995373,
+        0.01433185301721096,
+        0.015161384828388691
+      ]
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "mode": "own_context",
+      "jacobian_norm": 0.017504367977380753,
+      "J_lens_basis_fraction": 0.02599629946053028,
+      "activity_PCA_fraction": 0.03674957528710365,
+      "random_basis_fractions": [
+        0.01673687994480133,
+        0.010889960452914238,
+        0.015352771617472172,
+        0.017141317948698997,
+        0.017316501587629318
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.017504381015896797,
+      "J_lens_basis_fraction": 0.02599632740020752,
+      "activity_PCA_fraction": 0.03675051033496857,
+      "random_basis_fractions": [
+        0.016736231744289398,
+        0.0108901746571064,
+        0.015352888964116573,
+        0.01714138686656952,
+        0.01731725223362446
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "mode": "private_mean",
+      "jacobian_norm": 0.017557624727487564,
+      "J_lens_basis_fraction": 0.02599565126001835,
+      "activity_PCA_fraction": 0.036763302981853485,
+      "random_basis_fractions": [
+        0.01673225685954094,
+        0.010890578851103783,
+        0.015355611220002174,
+        0.01714457757771015,
+        0.01731514185667038
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "mode": "unused",
+      "jacobian_norm": 0.017640113830566406,
+      "J_lens_basis_fraction": 0.026004808023571968,
+      "activity_PCA_fraction": 0.03657258674502373,
+      "random_basis_fractions": [
+        0.016786018386483192,
+        0.010886438190937042,
+        0.015315636061131954,
+        0.017095714807510376,
+        0.017346467822790146
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 2.094065848723403e-06,
+      "relative_to_full": 0.000119631047709845,
+      "J_lens_basis_fraction": 0.016150426119565964,
+      "activity_PCA_fraction": 0.04597625881433487,
+      "random_basis_fractions": [
+        0.011990776285529137,
+        0.019255274906754494,
+        0.013420742936432362,
+        0.01298124622553587,
+        0.016563907265663147
+      ]
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "mode": "own_context",
+      "jacobian_norm": 0.0010258089751005173,
+      "J_lens_basis_fraction": 0.024885645136237144,
+      "activity_PCA_fraction": 0.032583869993686676,
+      "random_basis_fractions": [
+        0.017202487215399742,
+        0.013011706061661243,
+        0.016047950834035873,
+        0.015121248550713062,
+        0.017017187550663948
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.001025784993544221,
+      "J_lens_basis_fraction": 0.024884965270757675,
+      "activity_PCA_fraction": 0.032579753547906876,
+      "random_basis_fractions": [
+        0.017202120274305344,
+        0.013015550561249256,
+        0.01604890264570713,
+        0.015118722803890705,
+        0.017024746164679527
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "mode": "private_mean",
+      "jacobian_norm": 0.0010256869718432426,
+      "J_lens_basis_fraction": 0.024877427145838737,
+      "activity_PCA_fraction": 0.032666243612766266,
+      "random_basis_fractions": [
+        0.017168231308460236,
+        0.01303970068693161,
+        0.016067754477262497,
+        0.015113720670342445,
+        0.01700928434729576
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "mode": "unused",
+      "jacobian_norm": 0.000996654387563467,
+      "J_lens_basis_fraction": 0.024865832179784775,
+      "activity_PCA_fraction": 0.03195629268884659,
+      "random_basis_fractions": [
+        0.017459385097026825,
+        0.012837233021855354,
+        0.015877272933721542,
+        0.01512207742780447,
+        0.017148824408650398
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 1.5365936860689544e-06,
+      "relative_to_full": 0.001497933641076088,
+      "J_lens_basis_fraction": 0.016592463478446007,
+      "activity_PCA_fraction": 0.04543613642454147,
+      "random_basis_fractions": [
+        0.011986625380814075,
+        0.016460413113236427,
+        0.013660580851137638,
+        0.014746071770787239,
+        0.014779303222894669
+      ]
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "mode": "own_context",
+      "jacobian_norm": 0.009421369060873985,
+      "J_lens_basis_fraction": 0.026164665818214417,
+      "activity_PCA_fraction": 0.036502715200185776,
+      "random_basis_fractions": [
+        0.01695520058274269,
+        0.010906795971095562,
+        0.01516078319400549,
+        0.017036668956279755,
+        0.017294293269515038
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.009417995810508728,
+      "J_lens_basis_fraction": 0.02608826570212841,
+      "activity_PCA_fraction": 0.03617040440440178,
+      "random_basis_fractions": [
+        0.01685665361583233,
+        0.010892219841480255,
+        0.015193414874374866,
+        0.016984445974230766,
+        0.017434051260352135
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "mode": "private_mean",
+      "jacobian_norm": 0.009081034921109676,
+      "J_lens_basis_fraction": 0.026071129366755486,
+      "activity_PCA_fraction": 0.03625033050775528,
+      "random_basis_fractions": [
+        0.01683197356760502,
+        0.010898291133344173,
+        0.015230566263198853,
+        0.01700666919350624,
+        0.017417272552847862
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "mode": "unused",
+      "jacobian_norm": 0.008685491979122162,
+      "J_lens_basis_fraction": 0.026092257350683212,
+      "activity_PCA_fraction": 0.035493720322847366,
+      "random_basis_fractions": [
+        0.01696954295039177,
+        0.010954598896205425,
+        0.014956078492105007,
+        0.016692934557795525,
+        0.01760883443057537
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 0.0002128562773577869,
+      "relative_to_full": 0.022592924535274506,
+      "J_lens_basis_fraction": 0.015951009467244148,
+      "activity_PCA_fraction": 0.05039512366056442,
+      "random_basis_fractions": [
+        0.011721678078174591,
+        0.01632704585790634,
+        0.013887357898056507,
+        0.014657684601843357,
+        0.0171214509755373
+      ]
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "mode": "own_context",
+      "jacobian_norm": 0.02482258342206478,
+      "J_lens_basis_fraction": 0.01971687749028206,
+      "activity_PCA_fraction": 0.09684159606695175,
+      "random_basis_fractions": [
+        0.012160333804786205,
+        0.015896815806627274,
+        0.014562102034687996,
+        0.016432827338576317,
+        0.014516880735754967
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.02478777803480625,
+      "J_lens_basis_fraction": 0.019088849425315857,
+      "activity_PCA_fraction": 0.1008206382393837,
+      "random_basis_fractions": [
+        0.011715510860085487,
+        0.016308490186929703,
+        0.014718879945576191,
+        0.016267122700810432,
+        0.014970309101045132
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "mode": "private_mean",
+      "jacobian_norm": 0.014545544050633907,
+      "J_lens_basis_fraction": 0.020344337448477745,
+      "activity_PCA_fraction": 0.09656797349452972,
+      "random_basis_fractions": [
+        0.011818455532193184,
+        0.016377488151192665,
+        0.014307286590337753,
+        0.01741626113653183,
+        0.01577911525964737
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "mode": "unused",
+      "jacobian_norm": 0.026856286451220512,
+      "J_lens_basis_fraction": 0.018709620460867882,
+      "activity_PCA_fraction": 0.10465619713068008,
+      "random_basis_fractions": [
+        0.011606298387050629,
+        0.016370248049497604,
+        0.014189660549163818,
+        0.01665985956788063,
+        0.015224034897983074
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 0.0023706997744739056,
+      "relative_to_full": 0.09550576657056808,
+      "J_lens_basis_fraction": 0.017452070489525795,
+      "activity_PCA_fraction": 0.04627864062786102,
+      "random_basis_fractions": [
+        0.016585716977715492,
+        0.01518514845520258,
+        0.01353297010064125,
+        0.014083272777497768,
+        0.014501404017210007
+      ]
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "mode": "own_context",
+      "jacobian_norm": 0.011725880205631256,
+      "J_lens_basis_fraction": 0.022041724994778633,
+      "activity_PCA_fraction": 0.052891820669174194,
+      "random_basis_fractions": [
+        0.015031185001134872,
+        0.015820270404219627,
+        0.015574448741972446,
+        0.018941553309559822,
+        0.019999509677290916
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.011725878342986107,
+      "J_lens_basis_fraction": 0.02204173617064953,
+      "activity_PCA_fraction": 0.05289183557033539,
+      "random_basis_fractions": [
+        0.015031162649393082,
+        0.015820248052477837,
+        0.015574437566101551,
+        0.018941547721624374,
+        0.019999505952000618
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "mode": "private_mean",
+      "jacobian_norm": 0.011725852265954018,
+      "J_lens_basis_fraction": 0.02204173058271408,
+      "activity_PCA_fraction": 0.052891843020915985,
+      "random_basis_fractions": [
+        0.015031161718070507,
+        0.015820248052477837,
+        0.015574436634778976,
+        0.018941545858979225,
+        0.019999505952000618
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "mode": "unused",
+      "jacobian_norm": 0.011729774996638298,
+      "J_lens_basis_fraction": 0.022041963413357735,
+      "activity_PCA_fraction": 0.05289093777537346,
+      "random_basis_fractions": [
+        0.015031162649393082,
+        0.015820225700736046,
+        0.015574590303003788,
+        0.018941514194011688,
+        0.019999589771032333
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 4.778598494681319e-08,
+      "relative_to_full": 4.075257947988575e-06,
+      "J_lens_basis_fraction": 0.01764952391386032,
+      "activity_PCA_fraction": 0.05188193917274475,
+      "random_basis_fractions": [
+        0.02302584983408451,
+        0.011038470081984997,
+        0.013488275930285454,
+        0.012072009965777397,
+        0.011976806446909904
+      ]
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "mode": "own_context",
+      "jacobian_norm": 0.015022137202322483,
+      "J_lens_basis_fraction": 0.02180982381105423,
+      "activity_PCA_fraction": 0.08326441049575806,
+      "random_basis_fractions": [
+        0.012047751806676388,
+        0.016693437471985817,
+        0.014522279612720013,
+        0.017423612996935844,
+        0.016030587255954742
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.01502204965800047,
+      "J_lens_basis_fraction": 0.02180955372750759,
+      "activity_PCA_fraction": 0.08326318860054016,
+      "random_basis_fractions": [
+        0.012047777883708477,
+        0.01669422723352909,
+        0.014522364363074303,
+        0.017423409968614578,
+        0.01603047177195549
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "mode": "private_mean",
+      "jacobian_norm": 0.014845631085336208,
+      "J_lens_basis_fraction": 0.021803224459290504,
+      "activity_PCA_fraction": 0.0832686498761177,
+      "random_basis_fractions": [
+        0.012046732008457184,
+        0.01669319160282612,
+        0.014517860487103462,
+        0.01742376945912838,
+        0.016029633581638336
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "mode": "unused",
+      "jacobian_norm": 0.013935757800936699,
+      "J_lens_basis_fraction": 0.02177364192903042,
+      "activity_PCA_fraction": 0.08326035737991333,
+      "random_basis_fractions": [
+        0.012043251655995846,
+        0.016690459102392197,
+        0.014493620954453945,
+        0.0174251701682806,
+        0.016027243807911873
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 1.108381070480391e-06,
+      "relative_to_full": 7.378317968687043e-05,
+      "J_lens_basis_fraction": 0.015580164268612862,
+      "activity_PCA_fraction": 0.04740600660443306,
+      "random_basis_fractions": [
+        0.010837015695869923,
+        0.015922103077173233,
+        0.013996184803545475,
+        0.013340375386178493,
+        0.01724395342171192
+      ]
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "mode": "own_context",
+      "jacobian_norm": 0.006378737278282642,
+      "J_lens_basis_fraction": 0.02188851870596409,
+      "activity_PCA_fraction": 0.05340027064085007,
+      "random_basis_fractions": [
+        0.015041950158774853,
+        0.015815768390893936,
+        0.01548423245549202,
+        0.018963878974318504,
+        0.01989036612212658
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.006378756370395422,
+      "J_lens_basis_fraction": 0.021881582215428352,
+      "activity_PCA_fraction": 0.05339609086513519,
+      "random_basis_fractions": [
+        0.015039529651403427,
+        0.01581982709467411,
+        0.01548130065202713,
+        0.018962867558002472,
+        0.019890541210770607
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "mode": "private_mean",
+      "jacobian_norm": 0.006237227004021406,
+      "J_lens_basis_fraction": 0.021863436326384544,
+      "activity_PCA_fraction": 0.05346868932247162,
+      "random_basis_fractions": [
+        0.015039030462503433,
+        0.015822039917111397,
+        0.015469290316104889,
+        0.0189640074968338,
+        0.019883645698428154
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "mode": "unused",
+      "jacobian_norm": 0.005980301648378372,
+      "J_lens_basis_fraction": 0.021828262135386467,
+      "activity_PCA_fraction": 0.0536152645945549,
+      "random_basis_fractions": [
+        0.015039230696856976,
+        0.01582547277212143,
+        0.015446755103766918,
+        0.018967952579259872,
+        0.019871022552251816
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 3.8455023059214e-06,
+      "relative_to_full": 0.0006028626230545342,
+      "J_lens_basis_fraction": 0.01495073176920414,
+      "activity_PCA_fraction": 0.045329224318265915,
+      "random_basis_fractions": [
+        0.011125468648970127,
+        0.016563626006245613,
+        0.013654902577400208,
+        0.014083679765462875,
+        0.018116893246769905
+      ]
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "mode": "own_context",
+      "jacobian_norm": 1.535216824777308e-06,
+      "J_lens_basis_fraction": 0.018708527088165283,
+      "activity_PCA_fraction": 0.06865297257900238,
+      "random_basis_fractions": [
+        0.01985224522650242,
+        0.009108866564929485,
+        0.013097694143652916,
+        0.01242157444357872,
+        0.01323773991316557
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "mode": "own_frozen",
+      "jacobian_norm": 6.281948919384384e-12,
+      "J_lens_basis_fraction": 0.018071573227643967,
+      "activity_PCA_fraction": 0.06684789806604385,
+      "random_basis_fractions": [
+        0.018051626160740852,
+        0.013597341254353523,
+        0.016163380816578865,
+        0.011448878794908524,
+        0.012408233247697353
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "mode": "private_mean",
+      "jacobian_norm": 1.5574388567002329e-12,
+      "J_lens_basis_fraction": 0.017874402925372124,
+      "activity_PCA_fraction": 0.06637788563966751,
+      "random_basis_fractions": [
+        0.018241818994283676,
+        0.013556500896811485,
+        0.015962176024913788,
+        0.01149482186883688,
+        0.012391402386128902
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "mode": "unused",
+      "jacobian_norm": 2.8187209510921463e-11,
+      "J_lens_basis_fraction": 0.018106570467352867,
+      "activity_PCA_fraction": 0.0659012719988823,
+      "random_basis_fractions": [
+        0.018370836973190308,
+        0.01353413425385952,
+        0.015713362023234367,
+        0.011650454252958298,
+        0.01256061252206564
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 1.5352161426562816e-06,
+      "relative_to_full": 0.9999995827674866,
+      "J_lens_basis_fraction": 0.01870851218700409,
+      "activity_PCA_fraction": 0.06865303218364716,
+      "random_basis_fractions": [
+        0.019852234050631523,
+        0.009108874946832657,
+        0.01309771928936243,
+        0.01242157630622387,
+        0.0132377278059721
+      ]
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "mode": "own_context",
+      "jacobian_norm": 0.005054887384176254,
+      "J_lens_basis_fraction": 0.023199349641799927,
+      "activity_PCA_fraction": 0.07289853692054749,
+      "random_basis_fractions": [
+        0.019784005358815193,
+        0.017214994877576828,
+        0.014008497819304466,
+        0.014878040179610252,
+        0.019106561318039894
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.005006843712180853,
+      "J_lens_basis_fraction": 0.023130981251597404,
+      "activity_PCA_fraction": 0.07320720702409744,
+      "random_basis_fractions": [
+        0.019647251814603806,
+        0.01738606207072735,
+        0.014140740968286991,
+        0.014850424602627754,
+        0.01923733577132225
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "mode": "private_mean",
+      "jacobian_norm": 0.007320026867091656,
+      "J_lens_basis_fraction": 0.023325594142079353,
+      "activity_PCA_fraction": 0.09943365305662155,
+      "random_basis_fractions": [
+        0.019865727052092552,
+        0.01765507459640503,
+        0.01438834797590971,
+        0.014682219363749027,
+        0.019418545067310333
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "mode": "unused",
+      "jacobian_norm": 0.005630067549645901,
+      "J_lens_basis_fraction": 0.023959672078490257,
+      "activity_PCA_fraction": 0.07272941619157791,
+      "random_basis_fractions": [
+        0.01944654993712902,
+        0.01710962876677513,
+        0.013944819569587708,
+        0.01472513284534216,
+        0.019202761352062225
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 0.00023202432203106582,
+      "relative_to_full": 0.04590098559856415,
+      "J_lens_basis_fraction": 0.0163332000374794,
+      "activity_PCA_fraction": 0.05197727307677269,
+      "random_basis_fractions": [
+        0.018187807872891426,
+        0.010372462682425976,
+        0.012669188901782036,
+        0.011679134331643581,
+        0.014013716019690037
+      ]
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "mode": "own_context",
+      "jacobian_norm": 2.6648414859664626e-05,
+      "J_lens_basis_fraction": 0.017090411856770515,
+      "activity_PCA_fraction": 0.05120076611638069,
+      "random_basis_fractions": [
+        0.012892608530819416,
+        0.013977518305182457,
+        0.014546387828886509,
+        0.0114589286968112,
+        0.015361832454800606
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "mode": "own_frozen",
+      "jacobian_norm": 3.402592443912944e-12,
+      "J_lens_basis_fraction": 0.01729077845811844,
+      "activity_PCA_fraction": 0.06775866448879242,
+      "random_basis_fractions": [
+        0.0179284755140543,
+        0.014407014474272728,
+        0.015476729720830917,
+        0.012148684822022915,
+        0.012802191078662872
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "mode": "private_mean",
+      "jacobian_norm": 1.2364260006461625e-12,
+      "J_lens_basis_fraction": 0.017198290675878525,
+      "activity_PCA_fraction": 0.06744255870580673,
+      "random_basis_fractions": [
+        0.018141208216547966,
+        0.01431223563849926,
+        0.015404041856527328,
+        0.01204842422157526,
+        0.012705734930932522
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "mode": "unused",
+      "jacobian_norm": 3.1420102630796976e-11,
+      "J_lens_basis_fraction": 0.0174995306879282,
+      "activity_PCA_fraction": 0.0673028901219368,
+      "random_basis_fractions": [
+        0.018139079213142395,
+        0.014562812633812428,
+        0.015194636769592762,
+        0.01235820259898901,
+        0.013022113591432571
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 2.6648414859664626e-05,
+      "relative_to_full": 1.0,
+      "J_lens_basis_fraction": 0.017090411856770515,
+      "activity_PCA_fraction": 0.05120076611638069,
+      "random_basis_fractions": [
+        0.01289261132478714,
+        0.013977518305182457,
+        0.01454638596624136,
+        0.0114589286968112,
+        0.015361832454800606
+      ]
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "mode": "own_context",
+      "jacobian_norm": 0.003689585253596306,
+      "J_lens_basis_fraction": 0.02516154758632183,
+      "activity_PCA_fraction": 0.049443379044532776,
+      "random_basis_fractions": [
+        0.01692322827875614,
+        0.01558842882514,
+        0.014624034985899925,
+        0.013730385340750217,
+        0.0178491473197937
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.0036886276211589575,
+      "J_lens_basis_fraction": 0.0251562912017107,
+      "activity_PCA_fraction": 0.04971163347363472,
+      "random_basis_fractions": [
+        0.016868267208337784,
+        0.01578834094107151,
+        0.014694037847220898,
+        0.013710454106330872,
+        0.017945174127817154
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "mode": "private_mean",
+      "jacobian_norm": 0.003450345480814576,
+      "J_lens_basis_fraction": 0.024947063997387886,
+      "activity_PCA_fraction": 0.045887671411037445,
+      "random_basis_fractions": [
+        0.016313020139932632,
+        0.01582922227680683,
+        0.014739807695150375,
+        0.013816289603710175,
+        0.017587337642908096
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "mode": "unused",
+      "jacobian_norm": 0.0034139009658247232,
+      "J_lens_basis_fraction": 0.02420809678733349,
+      "activity_PCA_fraction": 0.04250938817858696,
+      "random_basis_fractions": [
+        0.014574956148862839,
+        0.01579337753355503,
+        0.015054653398692608,
+        0.014177479781210423,
+        0.016423210501670837
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 0.00010699390986701474,
+      "relative_to_full": 0.028998902067542076,
+      "J_lens_basis_fraction": 0.01491966936737299,
+      "activity_PCA_fraction": 0.04984080791473389,
+      "random_basis_fractions": [
+        0.01241905428469181,
+        0.017155969515442848,
+        0.015549244359135628,
+        0.014720608480274677,
+        0.01878395490348339
+      ]
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "mode": "own_context",
+      "jacobian_norm": 0.00043847112101502717,
+      "J_lens_basis_fraction": 0.016708476468920708,
+      "activity_PCA_fraction": 0.055554911494255066,
+      "random_basis_fractions": [
+        0.012356262654066086,
+        0.013920348137617111,
+        0.016332639381289482,
+        0.010900458320975304,
+        0.01584486849606037
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "mode": "own_frozen",
+      "jacobian_norm": 1.2035314284730703e-05,
+      "J_lens_basis_fraction": 0.02499968186020851,
+      "activity_PCA_fraction": 0.041001707315444946,
+      "random_basis_fractions": [
+        0.014398920349776745,
+        0.016069842502474785,
+        0.013281920924782753,
+        0.014207608997821808,
+        0.02015700936317444
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "mode": "private_mean",
+      "jacobian_norm": 9.621031495044008e-06,
+      "J_lens_basis_fraction": 0.024233214557170868,
+      "activity_PCA_fraction": 0.04433687403798103,
+      "random_basis_fractions": [
+        0.014334849081933498,
+        0.016315197572112083,
+        0.014284581877291203,
+        0.011911509558558464,
+        0.01877179741859436
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "mode": "unused",
+      "jacobian_norm": 5.4342028306564316e-05,
+      "J_lens_basis_fraction": 0.023798450827598572,
+      "activity_PCA_fraction": 0.05549105629324913,
+      "random_basis_fractions": [
+        0.013535255566239357,
+        0.016985168680548668,
+        0.015228726901113987,
+        0.013490215875208378,
+        0.019028518348932266
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 0.00043873355025425553,
+      "relative_to_full": 1.0005985498428345,
+      "J_lens_basis_fraction": 0.01690714620053768,
+      "activity_PCA_fraction": 0.05583718419075012,
+      "random_basis_fractions": [
+        0.012357084080576897,
+        0.013768378645181656,
+        0.016444917768239975,
+        0.010896269232034683,
+        0.015944968909025192
+      ]
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "mode": "own_context",
+      "jacobian_norm": 0.0011641577584668994,
+      "J_lens_basis_fraction": 0.016033269464969635,
+      "activity_PCA_fraction": 0.05045659840106964,
+      "random_basis_fractions": [
+        0.01914019137620926,
+        0.01011616550385952,
+        0.013678452931344509,
+        0.011291230097413063,
+        0.013495096936821938
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "mode": "own_frozen",
+      "jacobian_norm": 2.0819095425395062e-06,
+      "J_lens_basis_fraction": 0.017318572849035263,
+      "activity_PCA_fraction": 0.06553357094526291,
+      "random_basis_fractions": [
+        0.01716206967830658,
+        0.013905664905905724,
+        0.015637710690498352,
+        0.011027716100215912,
+        0.012441406957805157
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "mode": "private_mean",
+      "jacobian_norm": 8.520091796526685e-06,
+      "J_lens_basis_fraction": 0.017094101756811142,
+      "activity_PCA_fraction": 0.06474102288484573,
+      "random_basis_fractions": [
+        0.017406346276402473,
+        0.013733481988310814,
+        0.015677671879529953,
+        0.010518955066800117,
+        0.012129342183470726
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "mode": "unused",
+      "jacobian_norm": 4.595197242451832e-05,
+      "J_lens_basis_fraction": 0.01695254072546959,
+      "activity_PCA_fraction": 0.06319122761487961,
+      "random_basis_fractions": [
+        0.017481304705142975,
+        0.01361837424337864,
+        0.015497535467147827,
+        0.010013422928750515,
+        0.01188251469284296
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 0.0011642803438007832,
+      "relative_to_full": 1.0001052618026733,
+      "J_lens_basis_fraction": 0.016023116186261177,
+      "activity_PCA_fraction": 0.05045130103826523,
+      "random_basis_fractions": [
+        0.019140517339110374,
+        0.010119495913386345,
+        0.013685586862266064,
+        0.01129534374922514,
+        0.013500317931175232
+      ]
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "mode": "own_context",
+      "jacobian_norm": 1.3589517948275898e-05,
+      "J_lens_basis_fraction": 0.018115779384970665,
+      "activity_PCA_fraction": 0.051147736608982086,
+      "random_basis_fractions": [
+        0.012976357713341713,
+        0.013555986806750298,
+        0.014618910849094391,
+        0.010832532308995724,
+        0.016024386510252953
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "mode": "own_frozen",
+      "jacobian_norm": 2.57676492765313e-06,
+      "J_lens_basis_fraction": 0.019040793180465698,
+      "activity_PCA_fraction": 0.052750468254089355,
+      "random_basis_fractions": [
+        0.01738082431256771,
+        0.013667762279510498,
+        0.014555227011442184,
+        0.009198476560413837,
+        0.01257321611046791
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "mode": "private_mean",
+      "jacobian_norm": 1.9583612811402418e-06,
+      "J_lens_basis_fraction": 0.018955398350954056,
+      "activity_PCA_fraction": 0.05301542952656746,
+      "random_basis_fractions": [
+        0.017426317557692528,
+        0.013678187504410744,
+        0.014637376181781292,
+        0.009196825325489044,
+        0.012589278630912304
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "mode": "unused",
+      "jacobian_norm": 6.832255621702643e-06,
+      "J_lens_basis_fraction": 0.019477855414152145,
+      "activity_PCA_fraction": 0.05123394355177879,
+      "random_basis_fractions": [
+        0.017264392226934433,
+        0.01375129260122776,
+        0.014393524266779423,
+        0.009333975613117218,
+        0.01283568050712347
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 1.3290571587276645e-05,
+      "relative_to_full": 0.9780017137527466,
+      "J_lens_basis_fraction": 0.0169637743383646,
+      "activity_PCA_fraction": 0.051345691084861755,
+      "random_basis_fractions": [
+        0.013306541368365288,
+        0.013984408229589462,
+        0.014835799112915993,
+        0.01147419959306717,
+        0.015501516871154308
+      ]
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "mode": "own_context",
+      "jacobian_norm": 1.0366483365942258e-05,
+      "J_lens_basis_fraction": 0.01861063577234745,
+      "activity_PCA_fraction": 0.03199903294444084,
+      "random_basis_fractions": [
+        0.015416136011481285,
+        0.022505927830934525,
+        0.020063502714037895,
+        0.01638743467628956,
+        0.014127742499113083
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "mode": "own_frozen",
+      "jacobian_norm": 5.342494205251569e-06,
+      "J_lens_basis_fraction": 0.022075796499848366,
+      "activity_PCA_fraction": 0.050703853368759155,
+      "random_basis_fractions": [
+        0.016687914729118347,
+        0.013776649720966816,
+        0.014840706251561642,
+        0.014869543723762035,
+        0.01708209700882435
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "mode": "private_mean",
+      "jacobian_norm": 3.6521801121125463e-06,
+      "J_lens_basis_fraction": 0.021900959312915802,
+      "activity_PCA_fraction": 0.05143818259239197,
+      "random_basis_fractions": [
+        0.016647661104798317,
+        0.013772593811154366,
+        0.014868170954287052,
+        0.014898856170475483,
+        0.01696001924574375
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "mode": "unused",
+      "jacobian_norm": 1.178962156700436e-05,
+      "J_lens_basis_fraction": 0.023075025528669357,
+      "activity_PCA_fraction": 0.050303857773542404,
+      "random_basis_fractions": [
+        0.016133977100253105,
+        0.01404556818306446,
+        0.014641870744526386,
+        0.014788868837058544,
+        0.01763266511261463
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 8.653377335576806e-06,
+      "relative_to_full": 0.8347457051277161,
+      "J_lens_basis_fraction": 0.017230937257409096,
+      "activity_PCA_fraction": 0.030645115301012993,
+      "random_basis_fractions": [
+        0.016327807679772377,
+        0.023742221295833588,
+        0.017797721549868584,
+        0.016133049502968788,
+        0.017824484035372734
+      ]
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "mode": "own_context",
+      "jacobian_norm": 1.4177115190250333e-05,
+      "J_lens_basis_fraction": 0.01811208575963974,
+      "activity_PCA_fraction": 0.048799172043800354,
+      "random_basis_fractions": [
+        0.01323251985013485,
+        0.01304555218666792,
+        0.016493206843733788,
+        0.012827741913497448,
+        0.01533633004873991
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "mode": "own_frozen",
+      "jacobian_norm": 3.688872993734549e-07,
+      "J_lens_basis_fraction": 0.015091187320649624,
+      "activity_PCA_fraction": 0.0583781823515892,
+      "random_basis_fractions": [
+        0.019404862076044083,
+        0.012691163457930088,
+        0.013760830275714397,
+        0.011802048422396183,
+        0.012817549519240856
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "mode": "private_mean",
+      "jacobian_norm": 3.5977203083348286e-07,
+      "J_lens_basis_fraction": 0.016376882791519165,
+      "activity_PCA_fraction": 0.06472033262252808,
+      "random_basis_fractions": [
+        0.018598342314362526,
+        0.013677418231964111,
+        0.015035097487270832,
+        0.011680543422698975,
+        0.012131644412875175
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "mode": "unused",
+      "jacobian_norm": 8.385200089833234e-07,
+      "J_lens_basis_fraction": 0.015585212968289852,
+      "activity_PCA_fraction": 0.061826594173908234,
+      "random_basis_fractions": [
+        0.019102415069937706,
+        0.013328249566257,
+        0.014285393059253693,
+        0.012000806629657745,
+        0.012417150661349297
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 1.4179356185195502e-05,
+      "relative_to_full": 1.0001581907272339,
+      "J_lens_basis_fraction": 0.01817711628973484,
+      "activity_PCA_fraction": 0.048440996557474136,
+      "random_basis_fractions": [
+        0.01335960440337658,
+        0.013067335821688175,
+        0.016304727643728256,
+        0.012819300405681133,
+        0.015391134656965733
+      ]
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "mode": "own_context",
+      "jacobian_norm": 0.00011456826905487105,
+      "J_lens_basis_fraction": 0.016222400590777397,
+      "activity_PCA_fraction": 0.05256621912121773,
+      "random_basis_fractions": [
+        0.016656875610351562,
+        0.01103831734508276,
+        0.012705914676189423,
+        0.009819499216973782,
+        0.016657201573252678
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "mode": "own_frozen",
+      "jacobian_norm": 3.962055052397773e-05,
+      "J_lens_basis_fraction": 0.018390296027064323,
+      "activity_PCA_fraction": 0.056452348828315735,
+      "random_basis_fractions": [
+        0.017203547060489655,
+        0.013527123257517815,
+        0.015232060104608536,
+        0.008493093773722649,
+        0.012041207402944565
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "mode": "private_mean",
+      "jacobian_norm": 7.656955858692527e-05,
+      "J_lens_basis_fraction": 0.02127007767558098,
+      "activity_PCA_fraction": 0.04563314840197563,
+      "random_basis_fractions": [
+        0.01629984751343727,
+        0.01406589150428772,
+        0.014206280931830406,
+        0.008634094148874283,
+        0.01503219548612833
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "mode": "unused",
+      "jacobian_norm": 0.00043985634692944586,
+      "J_lens_basis_fraction": 0.020774951204657555,
+      "activity_PCA_fraction": 0.05859080329537392,
+      "random_basis_fractions": [
+        0.01577659137547016,
+        0.015125459991395473,
+        0.015045983716845512,
+        0.015310663729906082,
+        0.018180392682552338
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 0.00011151691433042288,
+      "relative_to_full": 0.9733664989471436,
+      "J_lens_basis_fraction": 0.013577904552221298,
+      "activity_PCA_fraction": 0.05071709677577019,
+      "random_basis_fractions": [
+        0.015568185597658157,
+        0.01105216983705759,
+        0.014721130952239037,
+        0.010991091839969158,
+        0.018357906490564346
+      ]
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "mode": "own_context",
+      "jacobian_norm": 6.1374753386189695e-06,
+      "J_lens_basis_fraction": 0.01568985916674137,
+      "activity_PCA_fraction": 0.05350145697593689,
+      "random_basis_fractions": [
+        0.013239126652479172,
+        0.014080772176384926,
+        0.018366513773798943,
+        0.011822810396552086,
+        0.014542904682457447
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "mode": "own_frozen",
+      "jacobian_norm": 2.6842735678656027e-06,
+      "J_lens_basis_fraction": 0.01665806584060192,
+      "activity_PCA_fraction": 0.06568707525730133,
+      "random_basis_fractions": [
+        0.018094034865498543,
+        0.01403889898210764,
+        0.01523385476320982,
+        0.011520329862833023,
+        0.012334978207945824
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "mode": "private_mean",
+      "jacobian_norm": 1.5562160342597053e-06,
+      "J_lens_basis_fraction": 0.016510386019945145,
+      "activity_PCA_fraction": 0.06570027023553848,
+      "random_basis_fractions": [
+        0.018200380727648735,
+        0.01402017567306757,
+        0.015186415053904057,
+        0.011559106409549713,
+        0.01229753065854311
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "mode": "unused",
+      "jacobian_norm": 6.2410249483946245e-06,
+      "J_lens_basis_fraction": 0.01651988923549652,
+      "activity_PCA_fraction": 0.06577382981777191,
+      "random_basis_fractions": [
+        0.01819794625043869,
+        0.014103722758591175,
+        0.015104173682630062,
+        0.011621079407632351,
+        0.01236297469586134
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 5.487285761773819e-06,
+      "relative_to_full": 0.8940623998641968,
+      "J_lens_basis_fraction": 0.016585107892751694,
+      "activity_PCA_fraction": 0.04809819534420967,
+      "random_basis_fractions": [
+        0.012043684720993042,
+        0.015267274342477322,
+        0.01674038916826248,
+        0.010599206201732159,
+        0.016053253784775734
+      ]
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "mode": "own_context",
+      "jacobian_norm": 9.590449963070569e-07,
+      "J_lens_basis_fraction": 0.017447207123041153,
+      "activity_PCA_fraction": 0.04823186248540878,
+      "random_basis_fractions": [
+        0.014091863296926022,
+        0.014874313957989216,
+        0.016376109793782234,
+        0.011525462381541729,
+        0.015483441762626171
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "mode": "own_frozen",
+      "jacobian_norm": 1.5262338060040292e-09,
+      "J_lens_basis_fraction": 0.015662282705307007,
+      "activity_PCA_fraction": 0.062362730503082275,
+      "random_basis_fractions": [
+        0.018806904554367065,
+        0.013201451860368252,
+        0.016333771869540215,
+        0.011930238455533981,
+        0.01178138330578804
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "mode": "private_mean",
+      "jacobian_norm": 1.0638403491469717e-09,
+      "J_lens_basis_fraction": 0.015468180179595947,
+      "activity_PCA_fraction": 0.062313687056303024,
+      "random_basis_fractions": [
+        0.018882187083363533,
+        0.013205081224441528,
+        0.016272427514195442,
+        0.012044060975313187,
+        0.011751070618629456
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "mode": "unused",
+      "jacobian_norm": 7.965278214783211e-09,
+      "J_lens_basis_fraction": 0.015435351058840752,
+      "activity_PCA_fraction": 0.06201275810599327,
+      "random_basis_fractions": [
+        0.01888342946767807,
+        0.0131640350446105,
+        0.01639096811413765,
+        0.012072441168129444,
+        0.011752499267458916
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 9.590329455022584e-07,
+      "relative_to_full": 0.9999874234199524,
+      "J_lens_basis_fraction": 0.01745370775461197,
+      "activity_PCA_fraction": 0.04822497069835663,
+      "random_basis_fractions": [
+        0.014091738499701023,
+        0.014874901622533798,
+        0.016369903460144997,
+        0.011520745232701302,
+        0.015484470874071121
+      ]
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "mode": "own_context",
+      "jacobian_norm": 5.190859519643709e-05,
+      "J_lens_basis_fraction": 0.017501547932624817,
+      "activity_PCA_fraction": 0.05130894109606743,
+      "random_basis_fractions": [
+        0.011981748975813389,
+        0.014033899642527103,
+        0.020374052226543427,
+        0.012609192170202732,
+        0.013950224965810776
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "mode": "own_frozen",
+      "jacobian_norm": 1.8751823517959565e-05,
+      "J_lens_basis_fraction": 0.01651732623577118,
+      "activity_PCA_fraction": 0.06412294507026672,
+      "random_basis_fractions": [
+        0.018630487844347954,
+        0.013680927455425262,
+        0.015111932530999184,
+        0.01194358803331852,
+        0.012266777455806732
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "mode": "private_mean",
+      "jacobian_norm": 1.9966639229096472e-05,
+      "J_lens_basis_fraction": 0.016511963680386543,
+      "activity_PCA_fraction": 0.06418441236019135,
+      "random_basis_fractions": [
+        0.018670450896024704,
+        0.013709062710404396,
+        0.01503252424299717,
+        0.01200968585908413,
+        0.012261532247066498
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "mode": "unused",
+      "jacobian_norm": 3.450044823694043e-05,
+      "J_lens_basis_fraction": 0.01636696048080921,
+      "activity_PCA_fraction": 0.06376957148313522,
+      "random_basis_fractions": [
+        0.018800651654601097,
+        0.013738327659666538,
+        0.01479604747146368,
+        0.012281271629035473,
+        0.012302657589316368
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 4.8149693611776456e-05,
+      "relative_to_full": 0.9275861382484436,
+      "J_lens_basis_fraction": 0.01810253970324993,
+      "activity_PCA_fraction": 0.045508574694395065,
+      "random_basis_fractions": [
+        0.01186288520693779,
+        0.014877695590257645,
+        0.018924856558442116,
+        0.011996712535619736,
+        0.015778152272105217
+      ]
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "mode": "own_context",
+      "jacobian_norm": 3.262281825300306e-05,
+      "J_lens_basis_fraction": 0.018100997433066368,
+      "activity_PCA_fraction": 0.05567213147878647,
+      "random_basis_fractions": [
+        0.01739327237010002,
+        0.012716199271380901,
+        0.01148726511746645,
+        0.009820113889873028,
+        0.014641044661402702
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "mode": "own_frozen",
+      "jacobian_norm": 1.981713285204023e-05,
+      "J_lens_basis_fraction": 0.01728610135614872,
+      "activity_PCA_fraction": 0.06434870511293411,
+      "random_basis_fractions": [
+        0.017168821766972542,
+        0.013805999420583248,
+        0.015831736847758293,
+        0.010853470303118229,
+        0.012307490222156048
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "mode": "private_mean",
+      "jacobian_norm": 0.00011911325418623164,
+      "J_lens_basis_fraction": 0.017072569578886032,
+      "activity_PCA_fraction": 0.06440088152885437,
+      "random_basis_fractions": [
+        0.01736082322895527,
+        0.013788414187729359,
+        0.015698205679655075,
+        0.010687140747904778,
+        0.012171358801424503
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "mode": "unused",
+      "jacobian_norm": 0.0004368429072201252,
+      "J_lens_basis_fraction": 0.01695142313838005,
+      "activity_PCA_fraction": 0.06389817595481873,
+      "random_basis_fractions": [
+        0.017386432737112045,
+        0.013749073259532452,
+        0.01560466643422842,
+        0.010548103600740433,
+        0.012089785188436508
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 2.8772243240382522e-05,
+      "relative_to_full": 0.8819668292999268,
+      "J_lens_basis_fraction": 0.014086198061704636,
+      "activity_PCA_fraction": 0.05005739629268646,
+      "random_basis_fractions": [
+        0.014853105880320072,
+        0.011505951173603535,
+        0.014711642637848854,
+        0.011045727878808975,
+        0.018566090613603592
+      ]
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "mode": "own_context",
+      "jacobian_norm": 0.0017703056801110506,
+      "J_lens_basis_fraction": 0.01724659465253353,
+      "activity_PCA_fraction": 0.04652196541428566,
+      "random_basis_fractions": [
+        0.011156783439218998,
+        0.01594351977109909,
+        0.015693290159106255,
+        0.010581083595752716,
+        0.01744234189391136
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "mode": "own_frozen",
+      "jacobian_norm": 0.00015825506125111133,
+      "J_lens_basis_fraction": 0.017026439309120178,
+      "activity_PCA_fraction": 0.06264128535985947,
+      "random_basis_fractions": [
+        0.017437143251299858,
+        0.013614531606435776,
+        0.015301926992833614,
+        0.009870044887065887,
+        0.011646894738078117
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "mode": "private_mean",
+      "jacobian_norm": 0.003601120552048087,
+      "J_lens_basis_fraction": 0.01729758270084858,
+      "activity_PCA_fraction": 0.06630810350179672,
+      "random_basis_fractions": [
+        0.017382750287652016,
+        0.014613867737352848,
+        0.015488396398723125,
+        0.012953164987266064,
+        0.013813001103699207
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "mode": "unused",
+      "jacobian_norm": 0.017018446698784828,
+      "J_lens_basis_fraction": 0.017918549478054047,
+      "activity_PCA_fraction": 0.06569435447454453,
+      "random_basis_fractions": [
+        0.017050741240382195,
+        0.015165085904300213,
+        0.0153888538479805,
+        0.013878950849175453,
+        0.014916653744876385
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 0.0017701302422210574,
+      "relative_to_full": 0.9999008178710938,
+      "J_lens_basis_fraction": 0.01687704585492611,
+      "activity_PCA_fraction": 0.04659225791692734,
+      "random_basis_fractions": [
+        0.010957363992929459,
+        0.015812238678336143,
+        0.01612553559243679,
+        0.010809727013111115,
+        0.017367564141750336
+      ]
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "mode": "own_context",
+      "jacobian_norm": 7.157555501180468e-06,
+      "J_lens_basis_fraction": 0.018147224560379982,
+      "activity_PCA_fraction": 0.04459087550640106,
+      "random_basis_fractions": [
+        0.012665963731706142,
+        0.01596069522202015,
+        0.015677062794566154,
+        0.012284760363399982,
+        0.017321139574050903
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "mode": "own_frozen",
+      "jacobian_norm": 2.1928296689566196e-07,
+      "J_lens_basis_fraction": 0.015857720747590065,
+      "activity_PCA_fraction": 0.06191451475024223,
+      "random_basis_fractions": [
+        0.01879812218248844,
+        0.013173102401196957,
+        0.01635642722249031,
+        0.012145624496042728,
+        0.011902222409844398
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "mode": "private_mean",
+      "jacobian_norm": 1.848961375117142e-07,
+      "J_lens_basis_fraction": 0.015651728957891464,
+      "activity_PCA_fraction": 0.06180203706026077,
+      "random_basis_fractions": [
+        0.018895970657467842,
+        0.013172629289329052,
+        0.01628090627491474,
+        0.012280086986720562,
+        0.0118620116263628
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "mode": "unused",
+      "jacobian_norm": 5.760794579146022e-07,
+      "J_lens_basis_fraction": 0.01562829315662384,
+      "activity_PCA_fraction": 0.06159622222185135,
+      "random_basis_fractions": [
+        0.018884288147091866,
+        0.01314794085919857,
+        0.01637633889913559,
+        0.01234543975442648,
+        0.01188414916396141
+      ],
+      "input": "one current 4096-number model observation",
+      "output": "next 8-number stance; before learning updates"
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "mode": "context_feedback_only",
+      "jacobian_norm": 7.1488225330540445e-06,
+      "relative_to_full": 0.9987798929214478,
+      "J_lens_basis_fraction": 0.018270762637257576,
+      "activity_PCA_fraction": 0.04443889856338501,
+      "random_basis_fractions": [
+        0.012700788676738739,
+        0.016017207875847816,
+        0.015558712184429169,
+        0.01219989638775587,
+        0.01733565144240856
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "condition": "full",
+      "model_return_size": 30.95892333984375,
+      "stance_change": 0.0014376365579664707,
+      "context_feedback_change": 4.162281584285665e-06,
+      "feedback_gain_per_return": 1.344453011142832e-07,
+      "linear_prediction_relative_error": 0.9308562874794006,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "condition": "unused_schema",
+      "model_return_size": 31.582263946533203,
+      "stance_change": 0.0009355897782370448,
+      "context_feedback_change": 1.3401360774878412e-05,
+      "feedback_gain_per_return": 4.2433185853951727e-07,
+      "linear_prediction_relative_error": 1.4115880727767944,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "condition": "mean_memory",
+      "model_return_size": 31.13254165649414,
+      "stance_change": 0.0006853251252323389,
+      "context_feedback_change": 6.1093819567759056e-06,
+      "feedback_gain_per_return": 1.962378206599169e-07,
+      "linear_prediction_relative_error": 1.7564902305603027,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "condition": "random_act",
+      "model_return_size": 20.95353126525879,
+      "stance_change": 0.0050248634070158005,
+      "context_feedback_change": 4.6847862904542126e-06,
+      "feedback_gain_per_return": 2.2357980355991458e-07,
+      "linear_prediction_relative_error": 1.0034674406051636,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "condition": "rotated_act",
+      "model_return_size": 21.134756088256836,
+      "stance_change": 0.0084547009319067,
+      "context_feedback_change": 9.081903044716455e-06,
+      "feedback_gain_per_return": 4.297141060760623e-07,
+      "linear_prediction_relative_error": 0.3363598883152008,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "condition": "fixed_act",
+      "model_return_size": 20.842777252197266,
+      "stance_change": 0.002401623409241438,
+      "context_feedback_change": 1.3598973055195529e-05,
+      "feedback_gain_per_return": 6.524549576170102e-07,
+      "linear_prediction_relative_error": 0.4633272588253021,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 0,
+      "condition": "neighbor_act",
+      "model_return_size": 28.988439559936523,
+      "stance_change": 0.002416926668956876,
+      "context_feedback_change": 2.069894208034384e-06,
+      "feedback_gain_per_return": 7.140412350281622e-08,
+      "linear_prediction_relative_error": 0.7811686396598816,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "condition": "full",
+      "model_return_size": 22.942197799682617,
+      "stance_change": 0.0007070766296237707,
+      "context_feedback_change": 2.0771901745320065e-06,
+      "feedback_gain_per_return": 9.054015492893086e-08,
+      "linear_prediction_relative_error": 0.5638368129730225,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "condition": "unused_schema",
+      "model_return_size": 22.9386043548584,
+      "stance_change": 0.0005510709015652537,
+      "context_feedback_change": 7.119983820302878e-07,
+      "feedback_gain_per_return": 3.103930623638007e-08,
+      "linear_prediction_relative_error": 0.7810285091400146,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "condition": "mean_memory",
+      "model_return_size": 22.877513885498047,
+      "stance_change": 0.0011237022699788213,
+      "context_feedback_change": 1.0459046961841523e-07,
+      "feedback_gain_per_return": 4.571758527305292e-09,
+      "linear_prediction_relative_error": 0.3454528748989105,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "condition": "random_act",
+      "model_return_size": 17.2225341796875,
+      "stance_change": 0.00085065996972844,
+      "context_feedback_change": 2.0595464320649626e-06,
+      "feedback_gain_per_return": 1.1958439927184372e-07,
+      "linear_prediction_relative_error": 0.23633503913879395,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "condition": "rotated_act",
+      "model_return_size": 15.610980033874512,
+      "stance_change": 0.0007025419035926461,
+      "context_feedback_change": 2.977961344186042e-07,
+      "feedback_gain_per_return": 1.9076068724643847e-08,
+      "linear_prediction_relative_error": 0.24941116571426392,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "condition": "fixed_act",
+      "model_return_size": 21.03166961669922,
+      "stance_change": 0.001987422350794077,
+      "context_feedback_change": 1.7423569715901976e-06,
+      "feedback_gain_per_return": 8.284444419359716e-08,
+      "linear_prediction_relative_error": 0.2727285623550415,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 1,
+      "condition": "neighbor_act",
+      "model_return_size": 24.48766326904297,
+      "stance_change": 0.0005115618696436286,
+      "context_feedback_change": 1.119697685680876e-06,
+      "feedback_gain_per_return": 4.5724970476612725e-08,
+      "linear_prediction_relative_error": 1.4468822479248047,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "condition": "full",
+      "model_return_size": 30.09507179260254,
+      "stance_change": 4.222407369525172e-05,
+      "context_feedback_change": 2.359612608415773e-06,
+      "feedback_gain_per_return": 7.840528581937178e-08,
+      "linear_prediction_relative_error": 4.825695514678955,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "condition": "unused_schema",
+      "model_return_size": 29.889484405517578,
+      "stance_change": 2.982023397635203e-05,
+      "context_feedback_change": 2.084519564959919e-06,
+      "feedback_gain_per_return": 6.974089927780369e-08,
+      "linear_prediction_relative_error": 6.1768388748168945,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "condition": "mean_memory",
+      "model_return_size": 29.869619369506836,
+      "stance_change": 0.00011187264317413792,
+      "context_feedback_change": 2.1386385924415663e-06,
+      "feedback_gain_per_return": 7.159912485121822e-08,
+      "linear_prediction_relative_error": 1.4876350164413452,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "condition": "random_act",
+      "model_return_size": 20.777029037475586,
+      "stance_change": 0.00031266926089301705,
+      "context_feedback_change": 5.0422254389559384e-06,
+      "feedback_gain_per_return": 2.42682688167406e-07,
+      "linear_prediction_relative_error": 0.24837923049926758,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "condition": "rotated_act",
+      "model_return_size": 21.55413055419922,
+      "stance_change": 0.0007342220051214099,
+      "context_feedback_change": 4.541618181974627e-06,
+      "feedback_gain_per_return": 2.1070755451546574e-07,
+      "linear_prediction_relative_error": 0.3772692084312439,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "condition": "fixed_act",
+      "model_return_size": 22.2429141998291,
+      "stance_change": 0.00024802301777526736,
+      "context_feedback_change": 1.1415542076065321e-06,
+      "feedback_gain_per_return": 5.1322150085297835e-08,
+      "linear_prediction_relative_error": 0.4136768877506256,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 2,
+      "condition": "neighbor_act",
+      "model_return_size": 28.645902633666992,
+      "stance_change": 0.00028375297551974654,
+      "context_feedback_change": 8.928969918997609e-07,
+      "feedback_gain_per_return": 3.1170145575742936e-08,
+      "linear_prediction_relative_error": 0.5056779980659485,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "condition": "full",
+      "model_return_size": 24.971506118774414,
+      "stance_change": 0.0007768807699903846,
+      "context_feedback_change": 8.541809961570834e-07,
+      "feedback_gain_per_return": 3.4206227184085947e-08,
+      "linear_prediction_relative_error": 0.5894337892532349,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "condition": "unused_schema",
+      "model_return_size": 25.573230743408203,
+      "stance_change": 0.0001777806755853817,
+      "context_feedback_change": 3.8808343560958747e-07,
+      "feedback_gain_per_return": 1.5175377399145873e-08,
+      "linear_prediction_relative_error": 1.9933770895004272,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "condition": "mean_memory",
+      "model_return_size": 25.43922233581543,
+      "stance_change": 0.0005133709055371583,
+      "context_feedback_change": 5.425433755590348e-07,
+      "feedback_gain_per_return": 2.1327043242536092e-08,
+      "linear_prediction_relative_error": 0.8514940738677979,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "condition": "random_act",
+      "model_return_size": 19.229921340942383,
+      "stance_change": 0.0004648303729481995,
+      "context_feedback_change": 3.639901933638612e-06,
+      "feedback_gain_per_return": 1.8928324152511777e-07,
+      "linear_prediction_relative_error": 0.265617698431015,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "condition": "rotated_act",
+      "model_return_size": 17.661317825317383,
+      "stance_change": 0.0007000117911957204,
+      "context_feedback_change": 1.3878213849238819e-06,
+      "feedback_gain_per_return": 7.857971695557353e-08,
+      "linear_prediction_relative_error": 0.31802698969841003,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "condition": "fixed_act",
+      "model_return_size": 18.98394012451172,
+      "stance_change": 0.0005210559465922415,
+      "context_feedback_change": 1.4225952327251434e-07,
+      "feedback_gain_per_return": 7.493677678382937e-09,
+      "linear_prediction_relative_error": 0.7853951454162598,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_measured",
+      "family": "debate",
+      "copy": 3,
+      "condition": "neighbor_act",
+      "model_return_size": 25.795812606811523,
+      "stance_change": 0.0008293893188238144,
+      "context_feedback_change": 9.336555422123638e-07,
+      "feedback_gain_per_return": 3.619407351607151e-08,
+      "linear_prediction_relative_error": 0.3796183466911316,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "condition": "full",
+      "model_return_size": 24.71994972229004,
+      "stance_change": 0.0006870150100439787,
+      "context_feedback_change": 7.758889296383131e-06,
+      "feedback_gain_per_return": 3.138715669592784e-07,
+      "linear_prediction_relative_error": 3.515779495239258,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "condition": "unused_schema",
+      "model_return_size": 23.954259872436523,
+      "stance_change": 0.0022011534310877323,
+      "context_feedback_change": 1.1185487892362289e-05,
+      "feedback_gain_per_return": 4.669519171329739e-07,
+      "linear_prediction_relative_error": 0.6589230895042419,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "condition": "mean_memory",
+      "model_return_size": 24.733692169189453,
+      "stance_change": 0.0008885519928298891,
+      "context_feedback_change": 7.892331268521957e-06,
+      "feedback_gain_per_return": 3.190923223428399e-07,
+      "linear_prediction_relative_error": 2.915405750274658,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "condition": "random_act",
+      "model_return_size": 15.432535171508789,
+      "stance_change": 0.0028259933460503817,
+      "context_feedback_change": 1.1038021511922125e-05,
+      "feedback_gain_per_return": 7.152435728130513e-07,
+      "linear_prediction_relative_error": 0.15937523543834686,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "condition": "rotated_act",
+      "model_return_size": 15.495418548583984,
+      "stance_change": 0.0003002236189786345,
+      "context_feedback_change": 7.383991487586172e-06,
+      "feedback_gain_per_return": 4.7652738999204303e-07,
+      "linear_prediction_relative_error": 1.154569149017334,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "condition": "fixed_act",
+      "model_return_size": 15.154559135437012,
+      "stance_change": 0.0011623221216723323,
+      "context_feedback_change": 1.5082880054251291e-05,
+      "feedback_gain_per_return": 9.952701702786726e-07,
+      "linear_prediction_relative_error": 0.1760355532169342,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 0,
+      "condition": "neighbor_act",
+      "model_return_size": 23.803255081176758,
+      "stance_change": 0.002497577341273427,
+      "context_feedback_change": 3.908481176040368e-06,
+      "feedback_gain_per_return": 1.6419943449363927e-07,
+      "linear_prediction_relative_error": 0.5053215622901917,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "condition": "full",
+      "model_return_size": 22.401639938354492,
+      "stance_change": 0.025618629530072212,
+      "context_feedback_change": 5.072510248282924e-06,
+      "feedback_gain_per_return": 2.2643477848305338e-07,
+      "linear_prediction_relative_error": 0.11857505887746811,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "condition": "unused_schema",
+      "model_return_size": 22.068859100341797,
+      "stance_change": 0.02896328829228878,
+      "context_feedback_change": 6.941999345144723e-06,
+      "feedback_gain_per_return": 3.145608502563846e-07,
+      "linear_prediction_relative_error": 0.15623703598976135,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "condition": "mean_memory",
+      "model_return_size": 22.42363929748535,
+      "stance_change": 0.02531828172504902,
+      "context_feedback_change": 5.3025746638013516e-06,
+      "feedback_gain_per_return": 2.3647253044600802e-07,
+      "linear_prediction_relative_error": 0.11293070018291473,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "condition": "random_act",
+      "model_return_size": 14.886080741882324,
+      "stance_change": 0.01018292736262083,
+      "context_feedback_change": 1.5362973499577492e-05,
+      "feedback_gain_per_return": 1.03203615253733e-06,
+      "linear_prediction_relative_error": 0.10707999765872955,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "condition": "rotated_act",
+      "model_return_size": 14.497126579284668,
+      "stance_change": 0.02276952564716339,
+      "context_feedback_change": 1.0471911991771776e-05,
+      "feedback_gain_per_return": 7.223439979497925e-07,
+      "linear_prediction_relative_error": 0.11466281861066818,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "condition": "fixed_act",
+      "model_return_size": 14.169829368591309,
+      "stance_change": 0.0023471342865377665,
+      "context_feedback_change": 3.0631583740614587e-06,
+      "feedback_gain_per_return": 2.1617468348722468e-07,
+      "linear_prediction_relative_error": 0.11803469061851501,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 1,
+      "condition": "neighbor_act",
+      "model_return_size": 23.135774612426758,
+      "stance_change": 0.011672155000269413,
+      "context_feedback_change": 2.276222403452266e-06,
+      "feedback_gain_per_return": 9.838539938300528e-08,
+      "linear_prediction_relative_error": 0.0380885973572731,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "condition": "full",
+      "model_return_size": 24.404565811157227,
+      "stance_change": 0.0007646286976523697,
+      "context_feedback_change": 6.48280501991394e-06,
+      "feedback_gain_per_return": 2.6563901656118105e-07,
+      "linear_prediction_relative_error": 1.1415518522262573,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "condition": "unused_schema",
+      "model_return_size": 24.301044464111328,
+      "stance_change": 0.0005313981091603637,
+      "context_feedback_change": 6.441861387429526e-06,
+      "feedback_gain_per_return": 2.6508578798711824e-07,
+      "linear_prediction_relative_error": 1.4230031967163086,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "condition": "mean_memory",
+      "model_return_size": 24.46906280517578,
+      "stance_change": 0.000636265380308032,
+      "context_feedback_change": 7.156627361837309e-06,
+      "feedback_gain_per_return": 2.924765567513532e-07,
+      "linear_prediction_relative_error": 1.2878721952438354,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "condition": "random_act",
+      "model_return_size": 14.996371269226074,
+      "stance_change": 0.0012729974696412683,
+      "context_feedback_change": 4.165448444837239e-06,
+      "feedback_gain_per_return": 2.7776374622590083e-07,
+      "linear_prediction_relative_error": 0.21962839365005493,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "condition": "rotated_act",
+      "model_return_size": 16.02025604248047,
+      "stance_change": 0.0011173775419592857,
+      "context_feedback_change": 2.578956355137052e-07,
+      "feedback_gain_per_return": 1.6098097077588136e-08,
+      "linear_prediction_relative_error": 0.08656112104654312,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "condition": "fixed_act",
+      "model_return_size": 16.68779182434082,
+      "stance_change": 0.0005078905378468335,
+      "context_feedback_change": 8.46350872052426e-07,
+      "feedback_gain_per_return": 5.071676767443023e-08,
+      "linear_prediction_relative_error": 0.10114823281764984,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 2,
+      "condition": "neighbor_act",
+      "model_return_size": 23.76651954650879,
+      "stance_change": 0.0008564170566387475,
+      "context_feedback_change": 1.778776663741155e-06,
+      "feedback_gain_per_return": 7.4843804043212e-08,
+      "linear_prediction_relative_error": 0.632381021976471,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "condition": "full",
+      "model_return_size": 20.24889373779297,
+      "stance_change": 0.0035018555354326963,
+      "context_feedback_change": 5.947033787379041e-05,
+      "feedback_gain_per_return": 2.9369673484325176e-06,
+      "linear_prediction_relative_error": 0.05415326729416847,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "condition": "unused_schema",
+      "model_return_size": 19.98732566833496,
+      "stance_change": 0.0039009195752441883,
+      "context_feedback_change": 3.181466308888048e-05,
+      "feedback_gain_per_return": 1.5917419204924954e-06,
+      "linear_prediction_relative_error": 0.10263132303953171,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "condition": "mean_memory",
+      "model_return_size": 20.107952117919922,
+      "stance_change": 0.003251690650358796,
+      "context_feedback_change": 4.9063979531638324e-05,
+      "feedback_gain_per_return": 2.440028765704483e-06,
+      "linear_prediction_relative_error": 0.06653483211994171,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "condition": "random_act",
+      "model_return_size": 12.981132507324219,
+      "stance_change": 0.0047134212218225,
+      "context_feedback_change": 7.485954483854584e-06,
+      "feedback_gain_per_return": 5.766796107309347e-07,
+      "linear_prediction_relative_error": 0.12983012199401855,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "condition": "rotated_act",
+      "model_return_size": 13.46302604675293,
+      "stance_change": 2.2138303393148817e-05,
+      "context_feedback_change": 1.9955246898462065e-05,
+      "feedback_gain_per_return": 1.48222602547321e-06,
+      "linear_prediction_relative_error": 4.563482284545898,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "condition": "fixed_act",
+      "model_return_size": 13.997085571289062,
+      "stance_change": 0.00664455397054553,
+      "context_feedback_change": 3.067475336138159e-05,
+      "feedback_gain_per_return": 2.1915100205660565e-06,
+      "linear_prediction_relative_error": 0.16850800812244415,
+      "signal_resolved": true
+    },
+    {
+      "scene": "debate_rumor",
+      "family": "debate",
+      "copy": 3,
+      "condition": "neighbor_act",
+      "model_return_size": 20.744861602783203,
+      "stance_change": 0.006649135611951351,
+      "context_feedback_change": 5.1781294132524636e-06,
+      "feedback_gain_per_return": 2.496102240456821e-07,
+      "linear_prediction_relative_error": 0.11061829328536987,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "condition": "full",
+      "model_return_size": 23.462905883789062,
+      "stance_change": 0.0013184434501454234,
+      "context_feedback_change": 8.880176756065339e-05,
+      "feedback_gain_per_return": 3.7847728435735917e-06,
+      "linear_prediction_relative_error": 0.023688076063990593,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "condition": "unused_schema",
+      "model_return_size": 22.988460540771484,
+      "stance_change": 0.0017743395874276757,
+      "context_feedback_change": 4.8155838157981634e-05,
+      "feedback_gain_per_return": 2.094782985295751e-06,
+      "linear_prediction_relative_error": 0.036712706089019775,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "condition": "mean_memory",
+      "model_return_size": 23.9191951751709,
+      "stance_change": 0.0008313325815834105,
+      "context_feedback_change": 2.20556521526305e-05,
+      "feedback_gain_per_return": 9.220900665241061e-07,
+      "linear_prediction_relative_error": 0.15162618458271027,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "condition": "random_act",
+      "model_return_size": 15.583047866821289,
+      "stance_change": 0.002513241022825241,
+      "context_feedback_change": 0.0001114278711611405,
+      "feedback_gain_per_return": 7.150582405301975e-06,
+      "linear_prediction_relative_error": 0.038765277713537216,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "condition": "rotated_act",
+      "model_return_size": 15.210474967956543,
+      "stance_change": 0.0056321448646485806,
+      "context_feedback_change": 0.00016171153401955962,
+      "feedback_gain_per_return": 1.0631590157572646e-05,
+      "linear_prediction_relative_error": 0.12581054866313934,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "condition": "fixed_act",
+      "model_return_size": 17.118024826049805,
+      "stance_change": 0.005674165207892656,
+      "context_feedback_change": 0.00015468720812350512,
+      "feedback_gain_per_return": 9.036510164150968e-06,
+      "linear_prediction_relative_error": 0.16048866510391235,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 0,
+      "condition": "neighbor_act",
+      "model_return_size": 27.10190200805664,
+      "stance_change": 0.0022094394080340862,
+      "context_feedback_change": 4.263643131707795e-05,
+      "feedback_gain_per_return": 1.5731895928183803e-06,
+      "linear_prediction_relative_error": 0.03047507256269455,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "condition": "full",
+      "model_return_size": 25.200366973876953,
+      "stance_change": 0.0028231004253029823,
+      "context_feedback_change": 9.235414495378791e-07,
+      "feedback_gain_per_return": 3.6647936241251955e-08,
+      "linear_prediction_relative_error": 0.07386042177677155,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "condition": "unused_schema",
+      "model_return_size": 25.12842559814453,
+      "stance_change": 0.0024673889856785536,
+      "context_feedback_change": 9.53790731728077e-07,
+      "feedback_gain_per_return": 3.7956645826398017e-08,
+      "linear_prediction_relative_error": 0.08595646172761917,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "condition": "mean_memory",
+      "model_return_size": 25.124771118164062,
+      "stance_change": 0.002676402684301138,
+      "context_feedback_change": 9.878694982035086e-07,
+      "feedback_gain_per_return": 3.931854664074308e-08,
+      "linear_prediction_relative_error": 0.07722921669483185,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "condition": "random_act",
+      "model_return_size": 14.468055725097656,
+      "stance_change": 0.0014320621266961098,
+      "context_feedback_change": 1.134838640837188e-07,
+      "feedback_gain_per_return": 7.843753202507742e-09,
+      "linear_prediction_relative_error": 0.02711351029574871,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "condition": "rotated_act",
+      "model_return_size": 17.406845092773438,
+      "stance_change": 0.006235871929675341,
+      "context_feedback_change": 3.9452916666959936e-07,
+      "feedback_gain_per_return": 2.26651728496563e-08,
+      "linear_prediction_relative_error": 0.025009457021951675,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "condition": "fixed_act",
+      "model_return_size": 15.287362098693848,
+      "stance_change": 0.010695445351302624,
+      "context_feedback_change": 2.5647750589996576e-07,
+      "feedback_gain_per_return": 1.6777093492237327e-08,
+      "linear_prediction_relative_error": 0.047888342291116714,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 1,
+      "condition": "neighbor_act",
+      "model_return_size": 22.39060401916504,
+      "stance_change": 4.373027695692144e-05,
+      "context_feedback_change": 1.1282895684416872e-06,
+      "feedback_gain_per_return": 5.039120765104599e-08,
+      "linear_prediction_relative_error": 3.425196409225464,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "condition": "full",
+      "model_return_size": 32.79698181152344,
+      "stance_change": 0.0003010040963999927,
+      "context_feedback_change": 1.194465426124225e-06,
+      "feedback_gain_per_return": 3.64199799207654e-08,
+      "linear_prediction_relative_error": 0.0711563229560852,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "condition": "unused_schema",
+      "model_return_size": 32.92433166503906,
+      "stance_change": 0.0002851818280760199,
+      "context_feedback_change": 1.2104900406484376e-06,
+      "feedback_gain_per_return": 3.6765818833828234e-08,
+      "linear_prediction_relative_error": 0.07791279256343842,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "condition": "mean_memory",
+      "model_return_size": 32.919368743896484,
+      "stance_change": 0.00027356186183169484,
+      "context_feedback_change": 1.1891687563547748e-06,
+      "feedback_gain_per_return": 3.612368004723976e-08,
+      "linear_prediction_relative_error": 0.08047456294298172,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "condition": "random_act",
+      "model_return_size": 21.276498794555664,
+      "stance_change": 0.00047538094804622233,
+      "context_feedback_change": 1.5638455863609124e-07,
+      "feedback_gain_per_return": 7.350107633641301e-09,
+      "linear_prediction_relative_error": 0.02215699478983879,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "condition": "rotated_act",
+      "model_return_size": 22.299867630004883,
+      "stance_change": 0.00038950584712438285,
+      "context_feedback_change": 8.821488108878839e-07,
+      "feedback_gain_per_return": 3.955847915904087e-08,
+      "linear_prediction_relative_error": 0.08512485772371292,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "condition": "fixed_act",
+      "model_return_size": 19.981021881103516,
+      "stance_change": 0.0005807749112136662,
+      "context_feedback_change": 5.068346240477695e-07,
+      "feedback_gain_per_return": 2.536580012701961e-08,
+      "linear_prediction_relative_error": 0.03846617788076401,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 2,
+      "condition": "neighbor_act",
+      "model_return_size": 36.37490463256836,
+      "stance_change": 0.00011979680857621133,
+      "context_feedback_change": 1.5699800997026614e-06,
+      "feedback_gain_per_return": 4.316107649060541e-08,
+      "linear_prediction_relative_error": 0.40055105090141296,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "condition": "full",
+      "model_return_size": 22.799442291259766,
+      "stance_change": 0.0007957698544487357,
+      "context_feedback_change": 0.0001156835351139307,
+      "feedback_gain_per_return": 5.0739631660690065e-06,
+      "linear_prediction_relative_error": 0.1126502975821495,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "condition": "unused_schema",
+      "model_return_size": 23.00278663635254,
+      "stance_change": 0.001189088448882103,
+      "context_feedback_change": 0.00012027155753457919,
+      "feedback_gain_per_return": 5.2285645324445795e-06,
+      "linear_prediction_relative_error": 0.07452362030744553,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "condition": "mean_memory",
+      "model_return_size": 22.938232421875,
+      "stance_change": 0.0008299463079310954,
+      "context_feedback_change": 0.0001092439706553705,
+      "feedback_gain_per_return": 4.762527623825008e-06,
+      "linear_prediction_relative_error": 0.10862691700458527,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "condition": "random_act",
+      "model_return_size": 14.314510345458984,
+      "stance_change": 0.0023535515647381544,
+      "context_feedback_change": 2.344543418075773e-06,
+      "feedback_gain_per_return": 1.6378788814108702e-07,
+      "linear_prediction_relative_error": 0.011009737849235535,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "condition": "rotated_act",
+      "model_return_size": 14.669428825378418,
+      "stance_change": 0.0016422395128756762,
+      "context_feedback_change": 2.1761854441137984e-05,
+      "feedback_gain_per_return": 1.483483401898411e-06,
+      "linear_prediction_relative_error": 0.0750504583120346,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "condition": "fixed_act",
+      "model_return_size": 14.189435005187988,
+      "stance_change": 0.0024777583312243223,
+      "context_feedback_change": 3.1774216040503234e-06,
+      "feedback_gain_per_return": 2.239286942540275e-07,
+      "linear_prediction_relative_error": 0.017255796119570732,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "copy": 3,
+      "condition": "neighbor_act",
+      "model_return_size": 20.615556716918945,
+      "stance_change": 0.0015889473725110292,
+      "context_feedback_change": 0.00011194719263585284,
+      "feedback_gain_per_return": 5.430229066405445e-06,
+      "linear_prediction_relative_error": 0.02935558557510376,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "condition": "full",
+      "model_return_size": 17.146799087524414,
+      "stance_change": 0.004999336786568165,
+      "context_feedback_change": 0.0001812229020288214,
+      "feedback_gain_per_return": 1.0568905963737052e-05,
+      "linear_prediction_relative_error": 0.06876051425933838,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "condition": "unused_schema",
+      "model_return_size": 17.183046340942383,
+      "stance_change": 0.003897875314578414,
+      "context_feedback_change": 0.0003300990501884371,
+      "feedback_gain_per_return": 1.9210739992558956e-05,
+      "linear_prediction_relative_error": 0.14114615321159363,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "condition": "mean_memory",
+      "model_return_size": 21.077131271362305,
+      "stance_change": 0.009648502804338932,
+      "context_feedback_change": 0.0009283599210903049,
+      "feedback_gain_per_return": 4.4045838876627386e-05,
+      "linear_prediction_relative_error": 0.02904834970831871,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "condition": "random_act",
+      "model_return_size": 12.248856544494629,
+      "stance_change": 6.102192492107861e-05,
+      "context_feedback_change": 0.00058011244982481,
+      "feedback_gain_per_return": 4.7360539610963315e-05,
+      "linear_prediction_relative_error": 6.725873947143555,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "condition": "rotated_act",
+      "model_return_size": 12.76771068572998,
+      "stance_change": 0.00572140421718359,
+      "context_feedback_change": 0.00017507618758827448,
+      "feedback_gain_per_return": 1.3712417967326473e-05,
+      "linear_prediction_relative_error": 0.021546125411987305,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "condition": "fixed_act",
+      "model_return_size": 12.52699089050293,
+      "stance_change": 0.0025176526978611946,
+      "context_feedback_change": 0.0008983838488347828,
+      "feedback_gain_per_return": 7.171585457399487e-05,
+      "linear_prediction_relative_error": 0.11528303474187851,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 0,
+      "condition": "neighbor_act",
+      "model_return_size": 17.193544387817383,
+      "stance_change": 0.0011416157940402627,
+      "context_feedback_change": 9.194792801281437e-05,
+      "feedback_gain_per_return": 5.347817022993695e-06,
+      "linear_prediction_relative_error": 0.8258785009384155,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "condition": "full",
+      "model_return_size": 20.551542282104492,
+      "stance_change": 0.0033519777934998274,
+      "context_feedback_change": 2.2351741790771484e-08,
+      "feedback_gain_per_return": 1.0875943479149441e-09,
+      "linear_prediction_relative_error": 0.13954590260982513,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "condition": "unused_schema",
+      "model_return_size": 20.555130004882812,
+      "stance_change": 0.0032852510921657085,
+      "context_feedback_change": 8.195638656616211e-08,
+      "feedback_gain_per_return": 3.9871501655852626e-09,
+      "linear_prediction_relative_error": 0.14311060309410095,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "condition": "mean_memory",
+      "model_return_size": 20.46509552001953,
+      "stance_change": 0.003956053871661425,
+      "context_feedback_change": 3.942476567431186e-08,
+      "feedback_gain_per_return": 1.9264394524043382e-09,
+      "linear_prediction_relative_error": 0.1099836677312851,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "condition": "random_act",
+      "model_return_size": 13.857869148254395,
+      "stance_change": 0.0035890191793441772,
+      "context_feedback_change": 0.0,
+      "feedback_gain_per_return": 0.0,
+      "linear_prediction_relative_error": 0.02521989494562149,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "condition": "rotated_act",
+      "model_return_size": 13.3417329788208,
+      "stance_change": 0.00038507033605128527,
+      "context_feedback_change": 1.666000493116826e-08,
+      "feedback_gain_per_return": 1.2487136880068306e-09,
+      "linear_prediction_relative_error": 0.5732273459434509,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "condition": "fixed_act",
+      "model_return_size": 15.17628288269043,
+      "stance_change": 0.0004595759673975408,
+      "context_feedback_change": 7.450580596923828e-09,
+      "feedback_gain_per_return": 4.909357920190871e-10,
+      "linear_prediction_relative_error": 0.6034085154533386,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 1,
+      "condition": "neighbor_act",
+      "model_return_size": 25.743677139282227,
+      "stance_change": 0.005242522805929184,
+      "context_feedback_change": 4.942156195397729e-08,
+      "feedback_gain_per_return": 1.91975524366228e-09,
+      "linear_prediction_relative_error": 0.07145948708057404,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "condition": "full",
+      "model_return_size": 33.11979675292969,
+      "stance_change": 0.002917790086939931,
+      "context_feedback_change": 3.7372385008893616e-07,
+      "feedback_gain_per_return": 1.1284002177092134e-08,
+      "linear_prediction_relative_error": 0.4534260630607605,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "condition": "unused_schema",
+      "model_return_size": 33.342220306396484,
+      "stance_change": 0.001977840904146433,
+      "context_feedback_change": 3.3178619673890353e-07,
+      "feedback_gain_per_return": 9.950932522428957e-09,
+      "linear_prediction_relative_error": 0.7087621092796326,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "condition": "mean_memory",
+      "model_return_size": 33.14798355102539,
+      "stance_change": 0.0026097630616277456,
+      "context_feedback_change": 3.8936411783652147e-07,
+      "feedback_gain_per_return": 1.174623864841351e-08,
+      "linear_prediction_relative_error": 0.5173946022987366,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "condition": "random_act",
+      "model_return_size": 17.690481185913086,
+      "stance_change": 0.008811723440885544,
+      "context_feedback_change": 1.826627311629636e-07,
+      "feedback_gain_per_return": 1.0325480914730178e-08,
+      "linear_prediction_relative_error": 0.27232980728149414,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "condition": "rotated_act",
+      "model_return_size": 16.678564071655273,
+      "stance_change": 0.0038352899719029665,
+      "context_feedback_change": 2.7750286335503915e-07,
+      "feedback_gain_per_return": 1.663829429787711e-08,
+      "linear_prediction_relative_error": 0.012637977488338947,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "condition": "fixed_act",
+      "model_return_size": 20.397464752197266,
+      "stance_change": 0.004319518338888884,
+      "context_feedback_change": 5.809810659229697e-07,
+      "feedback_gain_per_return": 2.8483004399504352e-08,
+      "linear_prediction_relative_error": 0.02505125105381012,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 2,
+      "condition": "neighbor_act",
+      "model_return_size": 26.01868438720703,
+      "stance_change": 0.0015450967475771904,
+      "context_feedback_change": 3.689777372528624e-07,
+      "feedback_gain_per_return": 1.4181260610257596e-08,
+      "linear_prediction_relative_error": 0.49126291275024414,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "condition": "full",
+      "model_return_size": 20.4923038482666,
+      "stance_change": 0.002178862923756242,
+      "context_feedback_change": 7.396765226985735e-07,
+      "feedback_gain_per_return": 3.609533294479661e-08,
+      "linear_prediction_relative_error": 0.11618095636367798,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "condition": "unused_schema",
+      "model_return_size": 20.55944061279297,
+      "stance_change": 0.0015366359148174524,
+      "context_feedback_change": 6.660799272140139e-07,
+      "feedback_gain_per_return": 3.2397764471170376e-08,
+      "linear_prediction_relative_error": 0.18173907697200775,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "condition": "mean_memory",
+      "model_return_size": 20.476341247558594,
+      "stance_change": 0.0022227156441658735,
+      "context_feedback_change": 7.670299169149075e-07,
+      "feedback_gain_per_return": 3.7459326307498486e-08,
+      "linear_prediction_relative_error": 0.11204944550991058,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "condition": "random_act",
+      "model_return_size": 13.865501403808594,
+      "stance_change": 0.0004222474526613951,
+      "context_feedback_change": 2.861207235582697e-07,
+      "feedback_gain_per_return": 2.0635440023397678e-08,
+      "linear_prediction_relative_error": 0.31164535880088806,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "condition": "rotated_act",
+      "model_return_size": 13.426339149475098,
+      "stance_change": 0.0005870898021385074,
+      "context_feedback_change": 9.613847851142054e-08,
+      "feedback_gain_per_return": 7.160438908471178e-09,
+      "linear_prediction_relative_error": 0.20248331129550934,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "condition": "fixed_act",
+      "model_return_size": 13.025858879089355,
+      "stance_change": 0.0014424120308831334,
+      "context_feedback_change": 4.809701863450755e-07,
+      "feedback_gain_per_return": 3.69242592057617e-08,
+      "linear_prediction_relative_error": 0.061948031187057495,
+      "signal_resolved": true
+    },
+    {
+      "scene": "editing_bounded",
+      "family": "editing",
+      "copy": 3,
+      "condition": "neighbor_act",
+      "model_return_size": 20.682716369628906,
+      "stance_change": 0.004487409722059965,
+      "context_feedback_change": 1.8988678220921429e-06,
+      "feedback_gain_per_return": 9.180940452324649e-08,
+      "linear_prediction_relative_error": 0.026362219825387,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "full",
+      "model_return_size": 24.60207748413086,
+      "stance_change": 5.264139417704428e-07,
+      "context_feedback_change": 5.264139417704428e-07,
+      "feedback_gain_per_return": 2.1397132954348308e-08,
+      "linear_prediction_relative_error": 0.13620981574058533,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "unused_schema",
+      "model_return_size": 24.91669273376465,
+      "stance_change": 5.613210305455141e-07,
+      "context_feedback_change": 5.613210305455141e-07,
+      "feedback_gain_per_return": 2.2527910203962165e-08,
+      "linear_prediction_relative_error": 0.17430052161216736,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "mean_memory",
+      "model_return_size": 24.65761947631836,
+      "stance_change": 4.455422413229826e-07,
+      "context_feedback_change": 4.455422413229826e-07,
+      "feedback_gain_per_return": 1.806915150837085e-08,
+      "linear_prediction_relative_error": 0.11097169667482376,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "random_act",
+      "model_return_size": 19.898746490478516,
+      "stance_change": 3.1610136375093134e-07,
+      "context_feedback_change": 3.1610136375093134e-07,
+      "feedback_gain_per_return": 1.5885492032907678e-08,
+      "linear_prediction_relative_error": 0.18608970940113068,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "rotated_act",
+      "model_return_size": 24.091651916503906,
+      "stance_change": 7.849673693272052e-07,
+      "context_feedback_change": 7.849673693272052e-07,
+      "feedback_gain_per_return": 3.258254821503215e-08,
+      "linear_prediction_relative_error": 0.12372704595327377,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "fixed_act",
+      "model_return_size": 20.27976417541504,
+      "stance_change": 3.1889877050161886e-07,
+      "context_feedback_change": 3.1889877050161886e-07,
+      "feedback_gain_per_return": 1.5724975099828953e-08,
+      "linear_prediction_relative_error": 0.2036418616771698,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "neighbor_act",
+      "model_return_size": 25.13987159729004,
+      "stance_change": 1.4523855895731685e-07,
+      "context_feedback_change": 1.4523855895731685e-07,
+      "feedback_gain_per_return": 5.777219591607263e-09,
+      "linear_prediction_relative_error": 0.3783038258552551,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "full",
+      "model_return_size": 21.396020889282227,
+      "stance_change": 0.0005024443380534649,
+      "context_feedback_change": 9.314205090049654e-05,
+      "feedback_gain_per_return": 4.353241820354015e-06,
+      "linear_prediction_relative_error": 3.3816792964935303,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "unused_schema",
+      "model_return_size": 22.427949905395508,
+      "stance_change": 0.0006863106391392648,
+      "context_feedback_change": 0.00010357509745517746,
+      "feedback_gain_per_return": 4.6181257857824676e-06,
+      "linear_prediction_relative_error": 2.5774447917938232,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "mean_memory",
+      "model_return_size": 22.28618621826172,
+      "stance_change": 0.0006082145846448839,
+      "context_feedback_change": 8.889301534509286e-05,
+      "feedback_gain_per_return": 3.988704520452302e-06,
+      "linear_prediction_relative_error": 4.334566593170166,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "random_act",
+      "model_return_size": 16.9970645904541,
+      "stance_change": 2.1842382921022363e-05,
+      "context_feedback_change": 7.800658204359934e-05,
+      "feedback_gain_per_return": 4.5894148570369e-06,
+      "linear_prediction_relative_error": 20.1132755279541,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "rotated_act",
+      "model_return_size": 15.483781814575195,
+      "stance_change": 0.00011376566544640809,
+      "context_feedback_change": 4.4434898882173e-05,
+      "feedback_gain_per_return": 2.869770469260402e-06,
+      "linear_prediction_relative_error": 2.3920540809631348,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "fixed_act",
+      "model_return_size": 17.016700744628906,
+      "stance_change": 5.0112546887248755e-05,
+      "context_feedback_change": 6.797507376177236e-05,
+      "feedback_gain_per_return": 3.994609414803563e-06,
+      "linear_prediction_relative_error": 13.640012741088867,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "neighbor_act",
+      "model_return_size": 21.16550064086914,
+      "stance_change": 0.00661947438493371,
+      "context_feedback_change": 0.0002031792828347534,
+      "feedback_gain_per_return": 9.599550139682833e-06,
+      "linear_prediction_relative_error": 0.4254706799983978,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "full",
+      "model_return_size": 24.733234405517578,
+      "stance_change": 1.3835906429449096e-05,
+      "context_feedback_change": 1.3835906429449096e-05,
+      "feedback_gain_per_return": 5.594054641733237e-07,
+      "linear_prediction_relative_error": 0.044987715780735016,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "unused_schema",
+      "model_return_size": 24.478622436523438,
+      "stance_change": 1.4679992091259919e-05,
+      "context_feedback_change": 1.4679992091259919e-05,
+      "feedback_gain_per_return": 5.997066523377725e-07,
+      "linear_prediction_relative_error": 0.0364859476685524,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "mean_memory",
+      "model_return_size": 24.525741577148438,
+      "stance_change": 1.351598166365875e-05,
+      "context_feedback_change": 1.351598166365875e-05,
+      "feedback_gain_per_return": 5.510937057806586e-07,
+      "linear_prediction_relative_error": 0.041409242898225784,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "random_act",
+      "model_return_size": 18.8165283203125,
+      "stance_change": 9.387497811985668e-06,
+      "context_feedback_change": 9.387497811985668e-06,
+      "feedback_gain_per_return": 4.988963837604388e-07,
+      "linear_prediction_relative_error": 0.02518441155552864,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "rotated_act",
+      "model_return_size": 21.45901107788086,
+      "stance_change": 7.1855511123430915e-06,
+      "context_feedback_change": 7.1855511123430915e-06,
+      "feedback_gain_per_return": 3.348500570155011e-07,
+      "linear_prediction_relative_error": 0.06294509023427963,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "fixed_act",
+      "model_return_size": 18.378725051879883,
+      "stance_change": 6.500750259874621e-06,
+      "context_feedback_change": 6.500750259874621e-06,
+      "feedback_gain_per_return": 3.537106181283889e-07,
+      "linear_prediction_relative_error": 0.05967644602060318,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "neighbor_act",
+      "model_return_size": 24.917011260986328,
+      "stance_change": 3.0164752388373017e-05,
+      "context_feedback_change": 3.0164752388373017e-05,
+      "feedback_gain_per_return": 1.210608729707019e-06,
+      "linear_prediction_relative_error": 0.011579529382288456,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "full",
+      "model_return_size": 21.99058723449707,
+      "stance_change": 0.0006616944447159767,
+      "context_feedback_change": 0.00011328359687468037,
+      "feedback_gain_per_return": 5.1514584811229724e-06,
+      "linear_prediction_relative_error": 0.8286519050598145,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "unused_schema",
+      "model_return_size": 22.153667449951172,
+      "stance_change": 0.000582834065426141,
+      "context_feedback_change": 0.00010947056580334902,
+      "feedback_gain_per_return": 4.941419774695532e-06,
+      "linear_prediction_relative_error": 1.1675046682357788,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "mean_memory",
+      "model_return_size": 21.9211368560791,
+      "stance_change": 7.949509745230898e-05,
+      "context_feedback_change": 0.00010750849469332024,
+      "feedback_gain_per_return": 4.9043301260098815e-06,
+      "linear_prediction_relative_error": 8.867061614990234,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "random_act",
+      "model_return_size": 16.32595443725586,
+      "stance_change": 0.0015871593495830894,
+      "context_feedback_change": 6.234110969671747e-07,
+      "feedback_gain_per_return": 3.8185277162483544e-08,
+      "linear_prediction_relative_error": 0.17098115384578705,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "rotated_act",
+      "model_return_size": 18.58699607849121,
+      "stance_change": 0.0017082544509321451,
+      "context_feedback_change": 2.6992944185622036e-05,
+      "feedback_gain_per_return": 1.4522488527290989e-06,
+      "linear_prediction_relative_error": 0.11049912124872208,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "fixed_act",
+      "model_return_size": 16.570873260498047,
+      "stance_change": 0.0017147272592410445,
+      "context_feedback_change": 6.06931564561819e-07,
+      "feedback_gain_per_return": 3.6626406796358424e-08,
+      "linear_prediction_relative_error": 0.5343838930130005,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "neighbor_act",
+      "model_return_size": 21.381351470947266,
+      "stance_change": 0.0037483898922801018,
+      "context_feedback_change": 9.582121856510639e-05,
+      "feedback_gain_per_return": 4.4815324145019986e-06,
+      "linear_prediction_relative_error": 0.5488019585609436,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "full",
+      "model_return_size": 17.8370361328125,
+      "stance_change": 0.00020454110926948488,
+      "context_feedback_change": 0.00020737787417601794,
+      "feedback_gain_per_return": 1.1626251762208994e-05,
+      "linear_prediction_relative_error": 0.017532432451844215,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "unused_schema",
+      "model_return_size": 18.144582748413086,
+      "stance_change": 0.00018078389985021204,
+      "context_feedback_change": 0.00018183319480158389,
+      "feedback_gain_per_return": 1.002134922600817e-05,
+      "linear_prediction_relative_error": 0.00966408010572195,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "mean_memory",
+      "model_return_size": 17.733579635620117,
+      "stance_change": 0.00015934665862005204,
+      "context_feedback_change": 0.00016293249791488051,
+      "feedback_gain_per_return": 9.187795512843877e-06,
+      "linear_prediction_relative_error": 0.017266372218728065,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "random_act",
+      "model_return_size": 10.92691421508789,
+      "stance_change": 0.00010287778422934934,
+      "context_feedback_change": 0.00010606434807414189,
+      "feedback_gain_per_return": 9.70670680544572e-06,
+      "linear_prediction_relative_error": 0.01919618621468544,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "rotated_act",
+      "model_return_size": 13.816781997680664,
+      "stance_change": 2.673946801223792e-05,
+      "context_feedback_change": 2.6486490241950378e-05,
+      "feedback_gain_per_return": 1.9169797269569244e-06,
+      "linear_prediction_relative_error": 0.03700445592403412,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "fixed_act",
+      "model_return_size": 11.166389465332031,
+      "stance_change": 6.458716234192252e-05,
+      "context_feedback_change": 6.39055942883715e-05,
+      "feedback_gain_per_return": 5.723031335946871e-06,
+      "linear_prediction_relative_error": 0.006646469235420227,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 0,
+      "condition": "neighbor_act",
+      "model_return_size": 18.06488609313965,
+      "stance_change": 0.0001632248895475641,
+      "context_feedback_change": 0.00016282832075376064,
+      "feedback_gain_per_return": 9.013526323542465e-06,
+      "linear_prediction_relative_error": 0.04233776032924652,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "full",
+      "model_return_size": 19.263153076171875,
+      "stance_change": 0.0006212559528648853,
+      "context_feedback_change": 0.0006216982146725059,
+      "feedback_gain_per_return": 3.227395791327581e-05,
+      "linear_prediction_relative_error": 0.04407196864485741,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "unused_schema",
+      "model_return_size": 16.262916564941406,
+      "stance_change": 0.00045287239481694996,
+      "context_feedback_change": 0.0004532199527602643,
+      "feedback_gain_per_return": 2.786830737022683e-05,
+      "linear_prediction_relative_error": 0.02404918521642685,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "mean_memory",
+      "model_return_size": 18.10904312133789,
+      "stance_change": 0.0005827719578519464,
+      "context_feedback_change": 0.0005832434399053454,
+      "feedback_gain_per_return": 3.2207302865572274e-05,
+      "linear_prediction_relative_error": 0.038106273859739304,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "random_act",
+      "model_return_size": 11.881391525268555,
+      "stance_change": 0.0002151459630113095,
+      "context_feedback_change": 0.00021503401512745768,
+      "feedback_gain_per_return": 1.8098386135534383e-05,
+      "linear_prediction_relative_error": 0.008116479963064194,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "rotated_act",
+      "model_return_size": 14.276124000549316,
+      "stance_change": 0.00029464191175065935,
+      "context_feedback_change": 0.0002952739014290273,
+      "feedback_gain_per_return": 2.0683057300630026e-05,
+      "linear_prediction_relative_error": 0.028581174090504646,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "fixed_act",
+      "model_return_size": 11.62687873840332,
+      "stance_change": 0.0001552723115310073,
+      "context_feedback_change": 0.0001556401257403195,
+      "feedback_gain_per_return": 1.3386234968493227e-05,
+      "linear_prediction_relative_error": 0.01762596145272255,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 1,
+      "condition": "neighbor_act",
+      "model_return_size": 17.885417938232422,
+      "stance_change": 0.0005009330343455076,
+      "context_feedback_change": 0.0005009146989323199,
+      "feedback_gain_per_return": 2.800687616399955e-05,
+      "linear_prediction_relative_error": 0.0024521001614630222,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "full",
+      "model_return_size": 20.757492065429688,
+      "stance_change": 6.656008736172225e-06,
+      "context_feedback_change": 6.176464012241922e-06,
+      "feedback_gain_per_return": 2.975534698634874e-07,
+      "linear_prediction_relative_error": 0.045480359345674515,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "unused_schema",
+      "model_return_size": 20.852378845214844,
+      "stance_change": 7.070255378494039e-06,
+      "context_feedback_change": 6.495299658126896e-06,
+      "feedback_gain_per_return": 3.1148962875704456e-07,
+      "linear_prediction_relative_error": 0.04436754807829857,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "mean_memory",
+      "model_return_size": 20.86566925048828,
+      "stance_change": 7.015507890173467e-06,
+      "context_feedback_change": 6.546856184286298e-06,
+      "feedback_gain_per_return": 3.137620865345525e-07,
+      "linear_prediction_relative_error": 0.05138282850384712,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "random_act",
+      "model_return_size": 17.643543243408203,
+      "stance_change": 2.8635440685320646e-06,
+      "context_feedback_change": 2.1909902443439933e-06,
+      "feedback_gain_per_return": 1.2418085759691166e-07,
+      "linear_prediction_relative_error": 0.22471678256988525,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "rotated_act",
+      "model_return_size": 14.735671043395996,
+      "stance_change": 1.8521849654007383e-07,
+      "context_feedback_change": 6.199671247486549e-07,
+      "feedback_gain_per_return": 4.207254278298933e-08,
+      "linear_prediction_relative_error": 4.720137119293213,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "fixed_act",
+      "model_return_size": 15.20605182647705,
+      "stance_change": 3.7114737096999306e-06,
+      "context_feedback_change": 3.1240240332408575e-06,
+      "feedback_gain_per_return": 2.0544609924399992e-07,
+      "linear_prediction_relative_error": 0.09519936889410019,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 2,
+      "condition": "neighbor_act",
+      "model_return_size": 17.097640991210938,
+      "stance_change": 1.1269356718912604e-06,
+      "context_feedback_change": 8.994242648441286e-07,
+      "feedback_gain_per_return": 5.260516644511881e-08,
+      "linear_prediction_relative_error": 0.15116925537586212,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "full",
+      "model_return_size": 13.031123161315918,
+      "stance_change": 4.83584415178484e-07,
+      "context_feedback_change": 1.801428766157187e-06,
+      "feedback_gain_per_return": 1.382404803962345e-07,
+      "linear_prediction_relative_error": 0.2409619688987732,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "unused_schema",
+      "model_return_size": 12.974698066711426,
+      "stance_change": 5.109372409606294e-07,
+      "context_feedback_change": 1.7370218756695976e-06,
+      "feedback_gain_per_return": 1.3387763431182975e-07,
+      "linear_prediction_relative_error": 0.1739172786474228,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "mean_memory",
+      "model_return_size": 13.05163288116455,
+      "stance_change": 2.0811478407267714e-07,
+      "context_feedback_change": 1.5280056686606258e-06,
+      "feedback_gain_per_return": 1.1707390967785614e-07,
+      "linear_prediction_relative_error": 0.5933711528778076,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "random_act",
+      "model_return_size": 10.507787704467773,
+      "stance_change": 1.7592964240975562e-07,
+      "context_feedback_change": 8.209113389057165e-07,
+      "feedback_gain_per_return": 7.812408853169472e-08,
+      "linear_prediction_relative_error": 0.8460412621498108,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "rotated_act",
+      "model_return_size": 12.189788818359375,
+      "stance_change": 2.584054982435191e-06,
+      "context_feedback_change": 1.453842287446605e-06,
+      "feedback_gain_per_return": 1.1926722720545513e-07,
+      "linear_prediction_relative_error": 0.21621082723140717,
+      "signal_resolved": true
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "fixed_act",
+      "model_return_size": 12.06657886505127,
+      "stance_change": 3.410077908938547e-07,
+      "context_feedback_change": 2.622315093958605e-07,
+      "feedback_gain_per_return": 2.173205082556251e-08,
+      "linear_prediction_relative_error": 0.4182652533054352,
+      "signal_resolved": false
+    },
+    {
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "copy": 3,
+      "condition": "neighbor_act",
+      "model_return_size": 16.260181427001953,
+      "stance_change": 3.5886171190213645e-07,
+      "context_feedback_change": 2.794600050037843e-06,
+      "feedback_gain_per_return": 1.7186771117394528e-07,
+      "linear_prediction_relative_error": 3.20601749420166,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "condition": "full",
+      "model_return_size": 38.52751541137695,
+      "stance_change": 4.493787400861038e-06,
+      "context_feedback_change": 4.617274498741608e-06,
+      "feedback_gain_per_return": 1.1984356262928486e-07,
+      "linear_prediction_relative_error": 0.02324889972805977,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "condition": "unused_schema",
+      "model_return_size": 38.47751235961914,
+      "stance_change": 4.62505249743117e-06,
+      "context_feedback_change": 4.773444743477739e-06,
+      "feedback_gain_per_return": 1.2405803317960817e-07,
+      "linear_prediction_relative_error": 0.02011791430413723,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "condition": "mean_memory",
+      "model_return_size": 38.287349700927734,
+      "stance_change": 4.871699729847023e-06,
+      "context_feedback_change": 5.018622687202878e-06,
+      "feedback_gain_per_return": 1.3107782592669537e-07,
+      "linear_prediction_relative_error": 0.017766742035746574,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "condition": "random_act",
+      "model_return_size": 18.331897735595703,
+      "stance_change": 1.1514647667354438e-05,
+      "context_feedback_change": 1.1410544175305404e-05,
+      "feedback_gain_per_return": 6.224420872058545e-07,
+      "linear_prediction_relative_error": 0.022882163524627686,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "condition": "rotated_act",
+      "model_return_size": 19.96416664123535,
+      "stance_change": 5.086078544991324e-07,
+      "context_feedback_change": 5.349911020857689e-07,
+      "feedback_gain_per_return": 2.6797566832215125e-08,
+      "linear_prediction_relative_error": 0.13493430614471436,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "condition": "fixed_act",
+      "model_return_size": 18.8463077545166,
+      "stance_change": 4.925397206534399e-06,
+      "context_feedback_change": 4.8078418330987915e-06,
+      "feedback_gain_per_return": 2.55107892144224e-07,
+      "linear_prediction_relative_error": 0.023221522569656372,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 0,
+      "condition": "neighbor_act",
+      "model_return_size": 25.527875900268555,
+      "stance_change": 3.329434321130975e-06,
+      "context_feedback_change": 3.2871923849597806e-06,
+      "feedback_gain_per_return": 1.2876873256573163e-07,
+      "linear_prediction_relative_error": 0.03378453105688095,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "condition": "full",
+      "model_return_size": 16.499902725219727,
+      "stance_change": 2.9245877612993354e-06,
+      "context_feedback_change": 1.5184568837867118e-06,
+      "feedback_gain_per_return": 9.202823036957852e-08,
+      "linear_prediction_relative_error": 0.14307574927806854,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "condition": "unused_schema",
+      "model_return_size": 16.491262435913086,
+      "stance_change": 1.159487510449253e-05,
+      "context_feedback_change": 1.5124905985430814e-05,
+      "feedback_gain_per_return": 9.17146621759457e-07,
+      "linear_prediction_relative_error": 0.012540712021291256,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "condition": "mean_memory",
+      "model_return_size": 16.445053100585938,
+      "stance_change": 1.863017587311333e-06,
+      "context_feedback_change": 5.530097951123025e-06,
+      "feedback_gain_per_return": 3.3627728157625825e-07,
+      "linear_prediction_relative_error": 0.05003141611814499,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "condition": "random_act",
+      "model_return_size": 13.100404739379883,
+      "stance_change": 3.081536488025449e-05,
+      "context_feedback_change": 2.099607627314981e-05,
+      "feedback_gain_per_return": 1.6027044011934777e-06,
+      "linear_prediction_relative_error": 0.0769760012626648,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "condition": "rotated_act",
+      "model_return_size": 14.660722732543945,
+      "stance_change": 1.1054816241085064e-05,
+      "context_feedback_change": 1.872293978522066e-05,
+      "feedback_gain_per_return": 1.2770816510965233e-06,
+      "linear_prediction_relative_error": 0.1776510626077652,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "condition": "fixed_act",
+      "model_return_size": 11.918251037597656,
+      "stance_change": 2.6744435672299005e-05,
+      "context_feedback_change": 2.7022544600185938e-05,
+      "feedback_gain_per_return": 2.267324589411146e-06,
+      "linear_prediction_relative_error": 0.023241614922881126,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 1,
+      "condition": "neighbor_act",
+      "model_return_size": 21.83139419555664,
+      "stance_change": 2.422265606583096e-05,
+      "context_feedback_change": 2.9951526812510565e-05,
+      "feedback_gain_per_return": 1.371947519146488e-06,
+      "linear_prediction_relative_error": 0.08490217477083206,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "condition": "full",
+      "model_return_size": 31.426633834838867,
+      "stance_change": 1.445124553356436e-06,
+      "context_feedback_change": 1.4637336107625742e-06,
+      "feedback_gain_per_return": 4.657621488490804e-08,
+      "linear_prediction_relative_error": 0.04705129563808441,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "condition": "unused_schema",
+      "model_return_size": 30.313133239746094,
+      "stance_change": 1.07727419162984e-06,
+      "context_feedback_change": 1.05976198483404e-06,
+      "feedback_gain_per_return": 3.4960489614377366e-08,
+      "linear_prediction_relative_error": 0.10019028186798096,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "condition": "mean_memory",
+      "model_return_size": 34.14060592651367,
+      "stance_change": 1.6956905710685533e-06,
+      "context_feedback_change": 1.734933675834327e-06,
+      "feedback_gain_per_return": 5.0817305918826605e-08,
+      "linear_prediction_relative_error": 0.051088083535432816,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "condition": "random_act",
+      "model_return_size": 19.396074295043945,
+      "stance_change": 9.95093614619691e-07,
+      "context_feedback_change": 1.321214313065866e-06,
+      "feedback_gain_per_return": 6.811761465996824e-08,
+      "linear_prediction_relative_error": 0.045905325561761856,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "condition": "rotated_act",
+      "model_return_size": 20.114891052246094,
+      "stance_change": 4.3300090624143195e-07,
+      "context_feedback_change": 1.203822250772646e-07,
+      "feedback_gain_per_return": 5.984731821229161e-09,
+      "linear_prediction_relative_error": 0.09478981047868729,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "condition": "fixed_act",
+      "model_return_size": 18.398021697998047,
+      "stance_change": 2.9056000130367465e-06,
+      "context_feedback_change": 2.339314960408956e-06,
+      "feedback_gain_per_return": 1.2715035779820028e-07,
+      "linear_prediction_relative_error": 0.04581616073846817,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 2,
+      "condition": "neighbor_act",
+      "model_return_size": 34.47555160522461,
+      "stance_change": 1.2245967582202866e-06,
+      "context_feedback_change": 1.5321601267714868e-06,
+      "feedback_gain_per_return": 4.4441932800509676e-08,
+      "linear_prediction_relative_error": 0.047002632170915604,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "condition": "full",
+      "model_return_size": 28.024580001831055,
+      "stance_change": 1.6221062537624675e-07,
+      "context_feedback_change": 1.6221062537624675e-07,
+      "feedback_gain_per_return": 5.788155288399821e-09,
+      "linear_prediction_relative_error": 0.2831977903842926,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "condition": "unused_schema",
+      "model_return_size": 28.307361602783203,
+      "stance_change": 1.6357375898223836e-07,
+      "context_feedback_change": 1.6357375898223836e-07,
+      "feedback_gain_per_return": 5.778488354479805e-09,
+      "linear_prediction_relative_error": 0.27174219489097595,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "condition": "mean_memory",
+      "model_return_size": 28.108339309692383,
+      "stance_change": 1.7221158543634374e-07,
+      "context_feedback_change": 1.7221158543634374e-07,
+      "feedback_gain_per_return": 6.126708029796646e-09,
+      "linear_prediction_relative_error": 0.31652775406837463,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "condition": "random_act",
+      "model_return_size": 16.00886344909668,
+      "stance_change": 3.1168013947535655e-08,
+      "context_feedback_change": 3.1168013947535655e-08,
+      "feedback_gain_per_return": 1.9469224010748576e-09,
+      "linear_prediction_relative_error": 0.7774585485458374,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "condition": "rotated_act",
+      "model_return_size": 14.922383308410645,
+      "stance_change": 2.7243055455983267e-07,
+      "context_feedback_change": 2.7243055455983267e-07,
+      "feedback_gain_per_return": 1.8256503864222395e-08,
+      "linear_prediction_relative_error": 0.16753613948822021,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "condition": "fixed_act",
+      "model_return_size": 13.345824241638184,
+      "stance_change": 7.009091973486647e-08,
+      "context_feedback_change": 7.009091973486647e-08,
+      "feedback_gain_per_return": 5.251898915759057e-09,
+      "linear_prediction_relative_error": 0.4133259057998657,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_two",
+      "family": "planning",
+      "copy": 3,
+      "condition": "neighbor_act",
+      "model_return_size": 27.832927703857422,
+      "stance_change": 8.33000246558413e-09,
+      "context_feedback_change": 8.33000246558413e-09,
+      "feedback_gain_per_return": 2.9928587386152117e-10,
+      "linear_prediction_relative_error": 4.502945899963379,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "condition": "full",
+      "model_return_size": 19.63180160522461,
+      "stance_change": 1.91721337614581e-05,
+      "context_feedback_change": 3.0331797461258247e-05,
+      "feedback_gain_per_return": 1.5450337969014072e-06,
+      "linear_prediction_relative_error": 0.1702890545129776,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "condition": "unused_schema",
+      "model_return_size": 19.764652252197266,
+      "stance_change": 2.0910880266455933e-05,
+      "context_feedback_change": 3.237600321881473e-05,
+      "feedback_gain_per_return": 1.6380760143874795e-06,
+      "linear_prediction_relative_error": 0.16556158661842346,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "condition": "mean_memory",
+      "model_return_size": 19.608734130859375,
+      "stance_change": 1.9926290406147018e-05,
+      "context_feedback_change": 3.130856202915311e-05,
+      "feedback_gain_per_return": 1.5966641058184905e-06,
+      "linear_prediction_relative_error": 0.17026785016059875,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "condition": "random_act",
+      "model_return_size": 13.781843185424805,
+      "stance_change": 1.2665173926507123e-05,
+      "context_feedback_change": 6.580600711458828e-06,
+      "feedback_gain_per_return": 4.774833541887347e-07,
+      "linear_prediction_relative_error": 0.09433091431856155,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "condition": "rotated_act",
+      "model_return_size": 14.554532051086426,
+      "stance_change": 2.4627572202007286e-05,
+      "context_feedback_change": 2.364637293794658e-05,
+      "feedback_gain_per_return": 1.6246742688963423e-06,
+      "linear_prediction_relative_error": 0.0037007220089435577,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "condition": "fixed_act",
+      "model_return_size": 13.964387893676758,
+      "stance_change": 1.7227059288416058e-05,
+      "context_feedback_change": 1.822800732043106e-05,
+      "feedback_gain_per_return": 1.305320893152384e-06,
+      "linear_prediction_relative_error": 0.003665114287286997,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 0,
+      "condition": "neighbor_act",
+      "model_return_size": 22.76883888244629,
+      "stance_change": 2.0830336779908976e-06,
+      "context_feedback_change": 1.1264952263445593e-05,
+      "feedback_gain_per_return": 4.947530669596745e-07,
+      "linear_prediction_relative_error": 0.8589191436767578,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "condition": "full",
+      "model_return_size": 14.863077163696289,
+      "stance_change": 1.9158102077199146e-05,
+      "context_feedback_change": 1.3633748494612519e-06,
+      "feedback_gain_per_return": 9.17289781909858e-08,
+      "linear_prediction_relative_error": 0.5159053206443787,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "condition": "unused_schema",
+      "model_return_size": 14.690860748291016,
+      "stance_change": 1.5386647646664642e-05,
+      "context_feedback_change": 2.0932816369167995e-06,
+      "feedback_gain_per_return": 1.424887017265064e-07,
+      "linear_prediction_relative_error": 0.505444347858429,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "condition": "mean_memory",
+      "model_return_size": 14.916943550109863,
+      "stance_change": 1.991608769458253e-05,
+      "context_feedback_change": 1.7377591348122223e-06,
+      "feedback_gain_per_return": 1.1649565578863985e-07,
+      "linear_prediction_relative_error": 0.5355883836746216,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "condition": "random_act",
+      "model_return_size": 9.29312515258789,
+      "stance_change": 5.7116221796604805e-06,
+      "context_feedback_change": 1.4803986232436728e-06,
+      "feedback_gain_per_return": 1.5930041286082997e-07,
+      "linear_prediction_relative_error": 0.13202382624149323,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "condition": "rotated_act",
+      "model_return_size": 9.078885078430176,
+      "stance_change": 1.1566411473040716e-07,
+      "context_feedback_change": 9.307263439950475e-07,
+      "feedback_gain_per_return": 1.0251548587802972e-07,
+      "linear_prediction_relative_error": 0.8166642189025879,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "condition": "fixed_act",
+      "model_return_size": 9.476225852966309,
+      "stance_change": 6.652746833424317e-07,
+      "context_feedback_change": 7.945617426230456e-07,
+      "feedback_gain_per_return": 8.384790817217436e-08,
+      "linear_prediction_relative_error": 0.22112461924552917,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 1,
+      "condition": "neighbor_act",
+      "model_return_size": 13.719871520996094,
+      "stance_change": 2.3471600798075087e-05,
+      "context_feedback_change": 1.5401827113237232e-05,
+      "feedback_gain_per_return": 1.1225926073166193e-06,
+      "linear_prediction_relative_error": 0.11813099682331085,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "condition": "full",
+      "model_return_size": 18.09503173828125,
+      "stance_change": 0.0013035489246249199,
+      "context_feedback_change": 0.001259761629626155,
+      "feedback_gain_per_return": 6.961920007597655e-05,
+      "linear_prediction_relative_error": 0.05205037444829941,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "condition": "unused_schema",
+      "model_return_size": 17.629037857055664,
+      "stance_change": 0.0011598541168496013,
+      "context_feedback_change": 0.0011282524792477489,
+      "feedback_gain_per_return": 6.399966514436528e-05,
+      "linear_prediction_relative_error": 0.046376220881938934,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "condition": "mean_memory",
+      "model_return_size": 16.88873291015625,
+      "stance_change": 0.0010533189633861184,
+      "context_feedback_change": 0.0010241656564176083,
+      "feedback_gain_per_return": 6.06419489486143e-05,
+      "linear_prediction_relative_error": 0.04441680759191513,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "condition": "random_act",
+      "model_return_size": 13.934494972229004,
+      "stance_change": 0.00016846589278429747,
+      "context_feedback_change": 0.00016521886573173106,
+      "feedback_gain_per_return": 1.1856825040013064e-05,
+      "linear_prediction_relative_error": 0.01590205729007721,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "condition": "rotated_act",
+      "model_return_size": 14.102668762207031,
+      "stance_change": 2.74201956926845e-05,
+      "context_feedback_change": 6.944227789063007e-05,
+      "feedback_gain_per_return": 4.9240520638704766e-06,
+      "linear_prediction_relative_error": 0.4132882058620453,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "condition": "fixed_act",
+      "model_return_size": 12.484037399291992,
+      "stance_change": 0.0004598693922162056,
+      "context_feedback_change": 0.00047193458885885775,
+      "feedback_gain_per_return": 3.7803041777806357e-05,
+      "linear_prediction_relative_error": 0.018966158851981163,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 2,
+      "condition": "neighbor_act",
+      "model_return_size": 17.031265258789062,
+      "stance_change": 0.00020909160957671702,
+      "context_feedback_change": 0.00013923278311267495,
+      "feedback_gain_per_return": 8.17512864159653e-06,
+      "linear_prediction_relative_error": 0.12087779492139816,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "condition": "full",
+      "model_return_size": 14.615349769592285,
+      "stance_change": 7.954781722219195e-07,
+      "context_feedback_change": 8.761582535043999e-07,
+      "feedback_gain_per_return": 5.994781560048068e-08,
+      "linear_prediction_relative_error": 0.07698387652635574,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "condition": "unused_schema",
+      "model_return_size": 14.766362190246582,
+      "stance_change": 1.0212409051746363e-06,
+      "context_feedback_change": 1.109917775465874e-06,
+      "feedback_gain_per_return": 7.51652819985793e-08,
+      "linear_prediction_relative_error": 0.04709815979003906,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "condition": "mean_memory",
+      "model_return_size": 14.715380668640137,
+      "stance_change": 5.986745463815168e-07,
+      "context_feedback_change": 6.790050406380033e-07,
+      "feedback_gain_per_return": 4.614253867885054e-08,
+      "linear_prediction_relative_error": 0.09448070824146271,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "condition": "random_act",
+      "model_return_size": 11.132166862487793,
+      "stance_change": 1.6214954712268081e-06,
+      "context_feedback_change": 1.6709328747310792e-06,
+      "feedback_gain_per_return": 1.5009952392119885e-07,
+      "linear_prediction_relative_error": 0.03766566142439842,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "condition": "rotated_act",
+      "model_return_size": 10.454673767089844,
+      "stance_change": 1.9120766410196666e-06,
+      "context_feedback_change": 1.9013730252481764e-06,
+      "feedback_gain_per_return": 1.818682306975461e-07,
+      "linear_prediction_relative_error": 0.03772338107228279,
+      "signal_resolved": true
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "condition": "fixed_act",
+      "model_return_size": 10.805829048156738,
+      "stance_change": 1.0798523675248362e-07,
+      "context_feedback_change": 4.6863203095881545e-08,
+      "feedback_gain_per_return": 4.336844661168016e-09,
+      "linear_prediction_relative_error": 0.8773026466369629,
+      "signal_resolved": false
+    },
+    {
+      "scene": "planning_one",
+      "family": "planning",
+      "copy": 3,
+      "condition": "neighbor_act",
+      "model_return_size": 14.400318145751953,
+      "stance_change": 3.4357562981313094e-06,
+      "context_feedback_change": 3.531276433932362e-06,
+      "feedback_gain_per_return": 2.4522211106159375e-07,
+      "linear_prediction_relative_error": 0.023117780685424805,
+      "signal_resolved": true
+    }
+  ],
+  "qualification": [
+    {
+      "scene": "debate_measured",
+      "copy": 0,
+      "maximum_formula_error": 1.1920928955078125e-07
+    },
+    {
+      "scene": "debate_measured",
+      "copy": 1,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "debate_measured",
+      "copy": 2,
+      "maximum_formula_error": 2.9802322387695312e-08
+    },
+    {
+      "scene": "debate_measured",
+      "copy": 3,
+      "maximum_formula_error": 3.3527612686157227e-08
+    },
+    {
+      "scene": "debate_rumor",
+      "copy": 0,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "debate_rumor",
+      "copy": 1,
+      "maximum_formula_error": 7.450580596923828e-09
+    },
+    {
+      "scene": "debate_rumor",
+      "copy": 2,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "debate_rumor",
+      "copy": 3,
+      "maximum_formula_error": 1.4901161193847656e-08
+    },
+    {
+      "scene": "editing_overclaim",
+      "copy": 0,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "editing_overclaim",
+      "copy": 1,
+      "maximum_formula_error": 2.9802322387695312e-08
+    },
+    {
+      "scene": "editing_overclaim",
+      "copy": 2,
+      "maximum_formula_error": 2.9802322387695312e-08
+    },
+    {
+      "scene": "editing_overclaim",
+      "copy": 3,
+      "maximum_formula_error": 1.1175870895385742e-08
+    },
+    {
+      "scene": "editing_bounded",
+      "copy": 0,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "editing_bounded",
+      "copy": 1,
+      "maximum_formula_error": 2.9802322387695312e-08
+    },
+    {
+      "scene": "editing_bounded",
+      "copy": 2,
+      "maximum_formula_error": 2.9802322387695312e-08
+    },
+    {
+      "scene": "editing_bounded",
+      "copy": 3,
+      "maximum_formula_error": 2.9802322387695312e-08
+    },
+    {
+      "scene": "imagination_temporary",
+      "copy": 0,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "imagination_temporary",
+      "copy": 1,
+      "maximum_formula_error": 0.0
+    },
+    {
+      "scene": "imagination_temporary",
+      "copy": 2,
+      "maximum_formula_error": 1.1920928955078125e-07
+    },
+    {
+      "scene": "imagination_temporary",
+      "copy": 3,
+      "maximum_formula_error": 2.9802322387695312e-08
+    },
+    {
+      "scene": "imagination_permanent",
+      "copy": 0,
+      "maximum_formula_error": 0.0
+    },
+    {
+      "scene": "imagination_permanent",
+      "copy": 1,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "imagination_permanent",
+      "copy": 2,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "imagination_permanent",
+      "copy": 3,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "planning_two",
+      "copy": 0,
+      "maximum_formula_error": 2.9802322387695312e-08
+    },
+    {
+      "scene": "planning_two",
+      "copy": 1,
+      "maximum_formula_error": 2.9802322387695312e-08
+    },
+    {
+      "scene": "planning_two",
+      "copy": 2,
+      "maximum_formula_error": 7.450580596923828e-09
+    },
+    {
+      "scene": "planning_two",
+      "copy": 3,
+      "maximum_formula_error": 2.9802322387695312e-08
+    },
+    {
+      "scene": "planning_one",
+      "copy": 0,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "planning_one",
+      "copy": 1,
+      "maximum_formula_error": 5.960464477539063e-08
+    },
+    {
+      "scene": "planning_one",
+      "copy": 2,
+      "maximum_formula_error": 4.470348358154297e-08
+    },
+    {
+      "scene": "planning_one",
+      "copy": 3,
+      "maximum_formula_error": 5.960464477539063e-08
+    }
+  ]
+}

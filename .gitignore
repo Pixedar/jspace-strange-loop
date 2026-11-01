@@ -5,3 +5,7 @@ __pycache__/
 *.pt
 *.safetensors
 out/
+
+# Selected reproducibility artifacts for the attention-reader release.
+!attention_reader/**/*.pt
+!attention_reader/**/*.npz

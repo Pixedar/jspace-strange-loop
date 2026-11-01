@@ -1,0 +1,9 @@
+{
+  "steps": 200,
+  "errors": {
+    "s": 0.0,
+    "g": 0.0,
+    "picture": 0.0
+  },
+  "passed": true
+}

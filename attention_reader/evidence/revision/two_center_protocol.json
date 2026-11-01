@@ -1,0 +1,21 @@
+{
+  "question": "Does replacing the reading summary by two shared earlier prototypes preserve later organization, beyond a size-matched random distortion?",
+  "lives": [
+    10,
+    12,
+    27
+  ],
+  "fit_steps": [
+    300,
+    1400
+  ],
+  "intervention_step": 1700,
+  "end": 3000,
+  "conditions": [
+    "unchanged",
+    "two_shared_centers",
+    "matched_angle_random"
+  ],
+  "specification": "Centers fitted jointly to all copies, then normalized to the original radius. Random controls match the conditional angular distance to the nearest center.",
+  "boundary": "exploratory follow-up after inspecting these selected lives, not fresh population confirmation; the rest of the controller remains high dimensional"
+}

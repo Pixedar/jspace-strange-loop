@@ -1,0 +1,75 @@
+{
+  "copies": 16,
+  "cohorts": [
+    83,
+    84
+  ],
+  "arms": [
+    "own",
+    "unused",
+    "neighbor",
+    "mean"
+  ],
+  "readings": 16720,
+  "warmup": 256,
+  "streams": [
+    {
+      "stream": 1,
+      "sha256": "af2d0ce9ad1565bf80e0fd0d56cc14c22fe3a680fe9b4e40870294c876f8f310",
+      "common_readings": [
+        256,
+        3000
+      ]
+    },
+    {
+      "stream": 2,
+      "sha256": "508d32961cb1062450cb6bfba3f5337464346feb994e65536927b8516c20e431",
+      "common_readings": [
+        256,
+        3000
+      ]
+    },
+    {
+      "stream": 3,
+      "sha256": "ad3eda8b7c18ae8f394c44aab88fa10063b1c35625c428bddd9c67678dbfcd73",
+      "common_readings": [
+        256,
+        3000
+      ]
+    },
+    {
+      "stream": 4,
+      "sha256": "303c2545f11ca4728d1b50abef51ee3f0264f5ede4a6142bd0e58c51ad3f7f32",
+      "common_readings": [
+        256,
+        3000
+      ]
+    },
+    {
+      "stream": 5,
+      "sha256": "fead833baeb7978db5cf1969bd5bdc9ad2268054e7cb06889d6a81bbd54dd67c",
+      "common_readings": [
+        256,
+        3000
+      ]
+    },
+    {
+      "stream": 6,
+      "sha256": "da4df567c1480a0048fce3769f84973c3232e1a4aa8e44f96d2798ca3a1a43da",
+      "common_readings": [
+        256,
+        3000
+      ]
+    }
+  ],
+  "stream_boundaries": [
+    256,
+    3000,
+    5744,
+    8488,
+    11232,
+    13976
+  ],
+  "interpretation": "Continuous controller state across six independently recorded LLM streams. Not a continuous LLM context. Same common activity for every condition after warm-up.",
+  "selection": "Cohorts, lengths, controls and warm-up selection fixed before running. Unusual cases require replay and causal tests; no self-awareness endpoint is assumed."
+}

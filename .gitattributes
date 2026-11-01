@@ -1,2 +1,4 @@
 * text=auto eol=lf
 *.png binary
+
+attention_reader/** -text -eol

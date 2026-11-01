@@ -1,0 +1,9 @@
+{
+  "layer": 15,
+  "rank": 128,
+  "sampled_vocabulary_rows": 4096,
+  "dictionary_squared_energy": 0.7761563062667847,
+  "definition": "centered unembedding times final-norm gamma times J15; unit rows; rank-128 PCA",
+  "lens_revision": "e166deb5ad540932100ef803c8c9bcc2a5453694",
+  "limitation": "dictionary approximation; not the earlier full-vocabulary positive sparse J decomposition; not a workspace test"
+}

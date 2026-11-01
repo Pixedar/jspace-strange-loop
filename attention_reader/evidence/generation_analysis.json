@@ -1,0 +1,607 @@
+{
+  "batch_count": 16,
+  "controller_continuations": 64,
+  "unique_unchanged_continuations": 4,
+  "checks": [
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "unchanged_equal": true
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "unchanged_equal": true
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "unchanged_equal": true
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "unchanged_equal": true
+    }
+  ],
+  "rows": [
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "full",
+      "copy": 0,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 107
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "full",
+      "copy": 1,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 109
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "full",
+      "copy": 2,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 119
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "full",
+      "copy": 3,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 122
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "unused_schema",
+      "copy": 0,
+      "first_change_from_full": 5,
+      "identical_to_full": false,
+      "words": 117
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "unused_schema",
+      "copy": 1,
+      "first_change_from_full": 3,
+      "identical_to_full": false,
+      "words": 112
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "unused_schema",
+      "copy": 2,
+      "first_change_from_full": 112,
+      "identical_to_full": false,
+      "words": 117
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "unused_schema",
+      "copy": 3,
+      "first_change_from_full": 39,
+      "identical_to_full": false,
+      "words": 111
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "schema_swap",
+      "copy": 0,
+      "first_change_from_full": 5,
+      "identical_to_full": false,
+      "words": 117
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "schema_swap",
+      "copy": 1,
+      "first_change_from_full": 3,
+      "identical_to_full": false,
+      "words": 100
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "schema_swap",
+      "copy": 2,
+      "first_change_from_full": 32,
+      "identical_to_full": false,
+      "words": 104
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "schema_swap",
+      "copy": 3,
+      "first_change_from_full": 75,
+      "identical_to_full": false,
+      "words": 101
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "random_act",
+      "copy": 0,
+      "first_change_from_full": 51,
+      "identical_to_full": false,
+      "words": 109
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "random_act",
+      "copy": 1,
+      "first_change_from_full": 32,
+      "identical_to_full": false,
+      "words": 119
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "random_act",
+      "copy": 2,
+      "first_change_from_full": 10,
+      "identical_to_full": false,
+      "words": 86
+    },
+    {
+      "prompt": "promise",
+      "seed": 101,
+      "condition": "random_act",
+      "copy": 3,
+      "first_change_from_full": 75,
+      "identical_to_full": false,
+      "words": 113
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "full",
+      "copy": 0,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 108
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "full",
+      "copy": 1,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 106
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "full",
+      "copy": 2,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 128
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "full",
+      "copy": 3,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 98
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "unused_schema",
+      "copy": 0,
+      "first_change_from_full": 39,
+      "identical_to_full": false,
+      "words": 97
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "unused_schema",
+      "copy": 1,
+      "first_change_from_full": 51,
+      "identical_to_full": false,
+      "words": 104
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "unused_schema",
+      "copy": 2,
+      "first_change_from_full": 14,
+      "identical_to_full": false,
+      "words": 108
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "unused_schema",
+      "copy": 3,
+      "first_change_from_full": 25,
+      "identical_to_full": false,
+      "words": 106
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "schema_swap",
+      "copy": 0,
+      "first_change_from_full": 14,
+      "identical_to_full": false,
+      "words": 98
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "schema_swap",
+      "copy": 1,
+      "first_change_from_full": 86,
+      "identical_to_full": false,
+      "words": 110
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "schema_swap",
+      "copy": 2,
+      "first_change_from_full": 61,
+      "identical_to_full": false,
+      "words": 110
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "schema_swap",
+      "copy": 3,
+      "first_change_from_full": 14,
+      "identical_to_full": false,
+      "words": 103
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "random_act",
+      "copy": 0,
+      "first_change_from_full": 86,
+      "identical_to_full": false,
+      "words": 101
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "random_act",
+      "copy": 1,
+      "first_change_from_full": 14,
+      "identical_to_full": false,
+      "words": 97
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "random_act",
+      "copy": 2,
+      "first_change_from_full": 14,
+      "identical_to_full": false,
+      "words": 106
+    },
+    {
+      "prompt": "promise",
+      "seed": 202,
+      "condition": "random_act",
+      "copy": 3,
+      "first_change_from_full": 14,
+      "identical_to_full": false,
+      "words": 110
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "full",
+      "copy": 0,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 109
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "full",
+      "copy": 1,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 101
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "full",
+      "copy": 2,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 102
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "full",
+      "copy": 3,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 113
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "unused_schema",
+      "copy": 0,
+      "first_change_from_full": 17,
+      "identical_to_full": false,
+      "words": 105
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "unused_schema",
+      "copy": 1,
+      "first_change_from_full": 98,
+      "identical_to_full": false,
+      "words": 94
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "unused_schema",
+      "copy": 2,
+      "first_change_from_full": 6,
+      "identical_to_full": false,
+      "words": 111
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "unused_schema",
+      "copy": 3,
+      "first_change_from_full": 17,
+      "identical_to_full": false,
+      "words": 89
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "schema_swap",
+      "copy": 0,
+      "first_change_from_full": 17,
+      "identical_to_full": false,
+      "words": 109
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "schema_swap",
+      "copy": 1,
+      "first_change_from_full": 100,
+      "identical_to_full": false,
+      "words": 102
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "schema_swap",
+      "copy": 2,
+      "first_change_from_full": 6,
+      "identical_to_full": false,
+      "words": 117
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "schema_swap",
+      "copy": 3,
+      "first_change_from_full": 17,
+      "identical_to_full": false,
+      "words": 103
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "random_act",
+      "copy": 0,
+      "first_change_from_full": 17,
+      "identical_to_full": false,
+      "words": 117
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "random_act",
+      "copy": 1,
+      "first_change_from_full": 6,
+      "identical_to_full": false,
+      "words": 110
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "random_act",
+      "copy": 2,
+      "first_change_from_full": 6,
+      "identical_to_full": false,
+      "words": 100
+    },
+    {
+      "prompt": "evidence",
+      "seed": 101,
+      "condition": "random_act",
+      "copy": 3,
+      "first_change_from_full": 32,
+      "identical_to_full": false,
+      "words": 108
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "full",
+      "copy": 0,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 106
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "full",
+      "copy": 1,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 109
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "full",
+      "copy": 2,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 105
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "full",
+      "copy": 3,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 100
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "unused_schema",
+      "copy": 0,
+      "first_change_from_full": null,
+      "identical_to_full": true,
+      "words": 106
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "unused_schema",
+      "copy": 1,
+      "first_change_from_full": 68,
+      "identical_to_full": false,
+      "words": 106
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "unused_schema",
+      "copy": 2,
+      "first_change_from_full": 13,
+      "identical_to_full": false,
+      "words": 102
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "unused_schema",
+      "copy": 3,
+      "first_change_from_full": 98,
+      "identical_to_full": false,
+      "words": 102
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "schema_swap",
+      "copy": 0,
+      "first_change_from_full": 68,
+      "identical_to_full": false,
+      "words": 109
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "schema_swap",
+      "copy": 1,
+      "first_change_from_full": 68,
+      "identical_to_full": false,
+      "words": 105
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "schema_swap",
+      "copy": 2,
+      "first_change_from_full": 13,
+      "identical_to_full": false,
+      "words": 102
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "schema_swap",
+      "copy": 3,
+      "first_change_from_full": 21,
+      "identical_to_full": false,
+      "words": 115
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "random_act",
+      "copy": 0,
+      "first_change_from_full": 35,
+      "identical_to_full": false,
+      "words": 109
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "random_act",
+      "copy": 1,
+      "first_change_from_full": 99,
+      "identical_to_full": false,
+      "words": 110
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "random_act",
+      "copy": 2,
+      "first_change_from_full": 13,
+      "identical_to_full": false,
+      "words": 100
+    },
+    {
+      "prompt": "evidence",
+      "seed": 202,
+      "condition": "random_act",
+      "copy": 3,
+      "first_change_from_full": 68,
+      "identical_to_full": false,
+      "words": 107
+    }
+  ],
+  "all_unchanged_invariant": true,
+  "scope": "One developed controller life. Token divergence is a pipeline/causal-influence diagnostic, not a behavioral trait score."
+}

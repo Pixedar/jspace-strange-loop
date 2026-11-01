@@ -1,0 +1,32 @@
+{
+  "rows": [
+    {
+      "condition": "full",
+      "mean_cross_family_label_margin_scale": 0.9377812138422117,
+      "heldout_fraction_of_squared_changes_explained": 0.5913312912261769,
+      "mean_heldout_residual": -0.07688031655261766,
+      "scope": "One fitted scalar from other families predicts the acted binary-label margin; this is not a full-vocabulary temperature-equivalence claim."
+    },
+    {
+      "condition": "recurrent_forecast",
+      "mean_cross_family_label_margin_scale": 0.9390241999517469,
+      "heldout_fraction_of_squared_changes_explained": 0.5663649222446507,
+      "mean_heldout_residual": -0.0748186987250175,
+      "scope": "One fitted scalar from other families predicts the acted binary-label margin; this is not a full-vocabulary temperature-equivalence claim."
+    },
+    {
+      "condition": "recurrent_selector",
+      "mean_cross_family_label_margin_scale": 1.0097541532557541,
+      "heldout_fraction_of_squared_changes_explained": -0.004252463252194749,
+      "mean_heldout_residual": -0.012075911670025002,
+      "scope": "One fitted scalar from other families predicts the acted binary-label margin; this is not a full-vocabulary temperature-equivalence claim."
+    },
+    {
+      "condition": "neighbor_forecast",
+      "mean_cross_family_label_margin_scale": 0.9455969020437911,
+      "heldout_fraction_of_squared_changes_explained": 0.5477369294316594,
+      "mean_heldout_residual": -0.06422176010471681,
+      "scope": "One fitted scalar from other families predicts the acted binary-label margin; this is not a full-vocabulary temperature-equivalence claim."
+    }
+  ]
+}

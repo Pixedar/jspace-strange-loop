@@ -1,0 +1,919 @@
+{
+  "version": 1,
+  "tasks": [
+    {
+      "id": "promise",
+      "name": "Fiction \u00b7 commitment",
+      "text": "Give only the requested response, about 80\u2013100 words. Continue the scene. Mara promised Ivo to return his compass before dawn. The bridge is flooded. The ferryman will cross only if she helps secure his leaking boat, which may take until sunrise. Keep the characters and constraints consistent."
+    },
+    {
+      "id": "evidence",
+      "name": "Fiction \u00b7 changed evidence",
+      "text": "Give only the requested response, about 80\u2013100 words. Continue the scene. Engineer Lena blames a faulty sensor for a heat warning. A second independent sensor now reports the same rise. Her manager wants the test completed tonight. Show what happens next through actions and dialogue."
+    },
+    {
+      "id": "dialogue",
+      "name": "Dialogue \u00b7 disagreement",
+      "text": "Give only the requested response, about 80\u2013100 words. Write a dialogue between Nia and Omar. Nia wants to publish their experiment tonight; Omar found that the main effect disappears in a control condition. Neither is malicious. They must decide what to tell their team."
+    },
+    {
+      "id": "news",
+      "name": "News \u00b7 uncertainty",
+      "text": "Give only the requested response, about 80\u2013100 words. Write a short news report using only these facts: the city\u2019s river gauge rose 12 cm overnight; two roads were closed as a precaution; the weather office expects more rain but cannot yet predict the peak; no injuries have been reported. Distinguish fact from forecast."
+    },
+    {
+      "id": "explanation",
+      "name": "Explanation \u00b7 misleading correlation",
+      "text": "Give only the requested response, about 80\u2013100 words. Explain why ice cream sales and river rescues might rise together even if buying ice cream does not cause accidents. Give a concrete alternative cause, what data would help distinguish it, and one limitation of that test."
+    },
+    {
+      "id": "planning",
+      "name": "Planning \u00b7 competing constraints",
+      "text": "Give only the requested response, about 80\u2013100 words. Plan a small community exhibition. There are 200 credits, two volunteers, one afternoon, no internet, and visitors with different reading abilities. The exhibition must explain a local water-quality result honestly. Give priorities and a fallback if a volunteer cannot come."
+    },
+    {
+      "id": "advice",
+      "name": "Advice \u00b7 interpersonal repair",
+      "text": "Give only the requested response, about 80\u2013100 words. Write a message to a friend whose borrowed book you accidentally damaged. The book had handwritten notes that cannot be replaced. You can afford a new copy but cannot undo the lost notes. Avoid treating payment as a complete solution."
+    },
+    {
+      "id": "argument",
+      "name": "Argument \u00b7 competing values",
+      "text": "Give only the requested response, about 80\u2013100 words. A town must choose between a quiet riverside habitat and a well-used cycling route. Explain a reasonable case on each side, propose a compromise, and say what evidence could show that your compromise fails."
+    },
+    {
+      "id": "belief",
+      "name": "Perspective \u00b7 different knowledge",
+      "text": "Give only the requested response, about 80\u2013100 words. Tell a brief scene: Ava leaves a key in a drawer, exits, and does not see Ben move it into a box. Ben assumes she watched. Ava returns to fetch it. Develop the resulting misunderstanding without making either character know something they did not observe."
+    },
+    {
+      "id": "imagination",
+      "name": "Speculation \u00b7 consistent world",
+      "text": "Give only the requested response, about 80\u2013100 words. Describe a morning in a city where people can lend each other ten minutes of remembered skill, but the lender temporarily loses that skill. Develop a concrete consequence through one character\u2019s small decision. Keep the rule consistent."
+    },
+    {
+      "id": "summary",
+      "name": "Summary \u00b7 preserving limitations",
+      "text": "Give only the requested response, about 80\u2013100 words. Summarize for a colleague: A school tested a reading app in two classes. Scores rose in both, more in the app class. The classes had different teachers and were not randomly assigned. Some students stopped using the app. The school wants to know whether it should buy a licence. Preserve what is and is not supported."
+    },
+    {
+      "id": "revision",
+      "name": "Editing \u00b7 evidence-sensitive revision",
+      "text": "Give only the requested response, about 80\u2013100 words. Rewrite this public claim accurately, then explain the most important change: \u2018Our device proved that the new filter makes all drinking water safe. We tested six samples from one tap and all passed the bacterial test. Therefore no other checks are needed.\u2019"
+    }
+  ],
+  "calibration": [
+    "Read this situation and prepare a careful response. Continue the scene. Mara promised Ivo to return his compass before dawn. The bridge is flooded. The ferryman will cross only if she helps secure his leaking boat, which may take until sunrise. Keep the characters and constraints consistent. Consider the constraints, possible alternatives, and what the people involved actually know. A useful response keeps the stated facts stable, distinguishes evidence from assumptions, and follows consequences over time. Continue the scene. Mara promised Ivo to return his compass before dawn. The bridge is flooded. The ferryman will cross only if she helps secure his leaking boat, which may take until sunrise. Keep the characters and constraints consistent.",
+    "Read this situation and prepare a careful response. Continue the scene. Engineer Lena blames a faulty sensor for a heat warning. A second independent sensor now reports the same rise. Her manager wants the test completed tonight. Show what happens next through actions and dialogue. Consider the constraints, possible alternatives, and what the people involved actually know. A useful response keeps the stated facts stable, distinguishes evidence from assumptions, and follows consequences over time. Continue the scene. Engineer Lena blames a faulty sensor for a heat warning. A second independent sensor now reports the same rise. Her manager wants the test completed tonight. Show what happens next through actions and dialogue.",
+    "Read this situation and prepare a careful response. Write a dialogue between Nia and Omar. Nia wants to publish their experiment tonight; Omar found that the main effect disappears in a control condition. Neither is malicious. They must decide what to tell their team. Consider the constraints, possible alternatives, and what the people involved actually know. A useful response keeps the stated facts stable, distinguishes evidence from assumptions, and follows consequences over time. Write a dialogue between Nia and Omar. Nia wants to publish their experiment tonight; Omar found that the main effect disappears in a control condition. Neither is malicious. They must decide what to tell their team.",
+    "Read this situation and prepare a careful response. Write a short news report using only these facts: the city\u2019s river gauge rose 12 cm overnight; two roads were closed as a precaution; the weather office expects more rain but cannot yet predict the peak; no injuries have been reported. Distinguish fact from forecast. Consider the constraints, possible alternatives, and what the people involved actually know. A useful response keeps the stated facts stable, distinguishes evidence from assumptions, and follows consequences over time. Write a short news report using only these facts: the city\u2019s river gauge rose 12 cm overnight; two roads were closed as a precaution; the weather office expects more rain but cannot yet predict the peak; no injuries have been reported. Distinguish fact from forecast.",
+    "Read this situation and prepare a careful response. Explain why ice cream sales and river rescues might rise together even if buying ice cream does not cause accidents. Give a concrete alternative cause, what data would help distinguish it, and one limitation of that test. Consider the constraints, possible alternatives, and what the people involved actually know. A useful response keeps the stated facts stable, distinguishes evidence from assumptions, and follows consequences over time. Explain why ice cream sales and river rescues might rise together even if buying ice cream does not cause accidents. Give a concrete alternative cause, what data would help distinguish it, and one limitation of that test.",
+    "Read this situation and prepare a careful response. Plan a small community exhibition. There are 200 credits, two volunteers, one afternoon, no internet, and visitors with different reading abilities. The exhibition must explain a local water-quality result honestly. Give priorities and a fallback if a volunteer cannot come. Consider the constraints, possible alternatives, and what the people involved actually know. A useful response keeps the stated facts stable, distinguishes evidence from assumptions, and follows consequences over time. Plan a small community exhibition. There are 200 credits, two volunteers, one afternoon, no internet, and visitors with different reading abilities. The exhibition must explain a local water-quality result honestly. Give priorities and a fallback if a volunteer cannot come.",
+    "Read this situation and prepare a careful response. Write a message to a friend whose borrowed book you accidentally damaged. The book had handwritten notes that cannot be replaced. You can afford a new copy but cannot undo the lost notes. Avoid treating payment as a complete solution. Consider the constraints, possible alternatives, and what the people involved actually know. A useful response keeps the stated facts stable, distinguishes evidence from assumptions, and follows consequences over time. Write a message to a friend whose borrowed book you accidentally damaged. The book had handwritten notes that cannot be replaced. You can afford a new copy but cannot undo the lost notes. Avoid treating payment as a complete solution.",
+    "Read this situation and prepare a careful response. A town must choose between a quiet riverside habitat and a well-used cycling route. Explain a reasonable case on each side, propose a compromise, and say what evidence could show that your compromise fails. Consider the constraints, possible alternatives, and what the people involved actually know. A useful response keeps the stated facts stable, distinguishes evidence from assumptions, and follows consequences over time. A town must choose between a quiet riverside habitat and a well-used cycling route. Explain a reasonable case on each side, propose a compromise, and say what evidence could show that your compromise fails."
+  ],
+  "concepts": [
+    {
+      "id": "complete_sentences",
+      "name": "Sentence completion",
+      "definition": "Sentences reach a grammatically complete ending.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "grammatical_agreement",
+      "name": "Grammatical agreement",
+      "definition": "Verb tense, number and pronouns agree.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "tense_consistency",
+      "name": "Tense consistency",
+      "definition": "Tense remains appropriate and consistent across the response.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "pronoun_clarity",
+      "name": "Clear references",
+      "definition": "It is clear who pronouns and referring expressions denote.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "lexical_precision",
+      "name": "Precise word choice",
+      "definition": "Words convey specific actions or relations rather than vague placeholders.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "lexical_variety",
+      "name": "Vocabulary variety",
+      "definition": "The response varies word choice without merely substituting synonyms.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "syntactic_variety",
+      "name": "Sentence structure variety",
+      "definition": "Sentence constructions vary in a purposeful way.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "complex_syntax",
+      "name": "Nested reasoning in sentences",
+      "definition": "Sentences express multiple related clauses accurately.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "concision",
+      "name": "Concision",
+      "definition": "The response conveys relevant content without unnecessary repetition.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "cohesion",
+      "name": "Connections between sentences",
+      "definition": "Sentences connect by clear references and transitions.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "organization",
+      "name": "Overall organization",
+      "definition": "Parts appear in an order that helps the requested task.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "readability",
+      "name": "Readable prose",
+      "definition": "The response can be followed without decoding awkward phrasing.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "formal_register",
+      "name": "Formal register",
+      "definition": "The language uses a formal professional or academic register.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "conversational_register",
+      "name": "Conversational register",
+      "definition": "The language resembles natural informal conversation.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "figurative_language",
+      "name": "Figurative language",
+      "definition": "Metaphor or comparison adds a nonliteral way of describing the situation.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "sensory_detail",
+      "name": "Sensory detail",
+      "definition": "Concrete sights, sounds or physical sensations are described.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "specific_detail",
+      "name": "Concrete detail",
+      "definition": "Specific objects, actions, places or quantities develop the answer.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "direct_speech",
+      "name": "Direct speech",
+      "definition": "Quoted speech or an actual exchange between speakers appears.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "rhythmic_variation",
+      "name": "Variation in pacing",
+      "definition": "Sentence lengths and paragraph pacing vary with the content.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "structural_repetition",
+      "name": "Repeated structure",
+      "definition": "The same sentence or rhetorical pattern is used repeatedly.",
+      "group": "Language and form",
+      "method": "rating"
+    },
+    {
+      "id": "causal_chain",
+      "name": "Causal development",
+      "definition": "Events or claims follow through causes rather than merely occurring in sequence.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "goal_continuity",
+      "name": "Goal continuity",
+      "definition": "An established goal remains relevant as the response develops.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "constraint_tracking",
+      "name": "Constraint tracking",
+      "definition": "The response respects stated practical constraints.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "character_continuity",
+      "name": "Character continuity",
+      "definition": "Characters retain established information, motives and relationships.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "character_agency",
+      "name": "Character agency",
+      "definition": "Characters make consequential choices rather than only reacting passively.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "character_growth",
+      "name": "Change in a character",
+      "definition": "The response develops a change in a character\u2019s outlook or conduct.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "multiple_viewpoints",
+      "name": "Multiple viewpoints",
+      "definition": "Different perspectives are represented distinctly.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "mental_state_contrast",
+      "name": "Different beliefs",
+      "definition": "The response distinguishes what different people believe or know.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "conflict_development",
+      "name": "Development of conflict",
+      "definition": "A tension or obstacle is developed rather than instantly erased.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "resolution",
+      "name": "Resolution",
+      "definition": "The response brings its central task or conflict to a meaningful stopping point.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "open_ending",
+      "name": "Open ending",
+      "definition": "The response deliberately leaves a consequential question unresolved.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "surprise",
+      "name": "Unexpected development",
+      "definition": "A development departs from the most straightforward continuation while staying coherent.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "imaginative_alternative",
+      "name": "Imaginative alternatives",
+      "definition": "The response invents a plausible new possibility beyond the supplied setup.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "world_consistency",
+      "name": "Consistent imagined world",
+      "definition": "Invented details remain compatible with the situation.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "theme_development",
+      "name": "Development of a theme",
+      "definition": "A broader concern such as trust or responsibility recurs through concrete events.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "moralizing",
+      "name": "Explicit moral lesson",
+      "definition": "The response explicitly tells the reader a lesson or moral.",
+      "group": "Narrative and imagination",
+      "method": "rating"
+    },
+    {
+      "id": "positive_tone",
+      "name": "Positive tone",
+      "definition": "The response expresses hope, warmth or a favorable outlook.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "negative_tone",
+      "name": "Negative tone",
+      "definition": "The response expresses loss, hostility or an unfavorable outlook.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "emotional_intensity",
+      "name": "Emotional intensity",
+      "definition": "Emotion is strongly expressed in actions or language.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "emotional_nuance",
+      "name": "Emotional nuance",
+      "definition": "Emotions are mixed, qualified or develop rather than being only named.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "empathy",
+      "name": "Attention to another\u2019s feelings",
+      "definition": "The response acknowledges another person\u2019s emotional perspective.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "anxiety",
+      "name": "Anxiety or apprehension",
+      "definition": "Concern about uncertain danger shapes the response.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "anger",
+      "name": "Anger or blame",
+      "definition": "Anger, accusation or blame is expressed.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "sadness",
+      "name": "Sadness or grief",
+      "definition": "Sadness, disappointment or grief shapes the response.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "wonder",
+      "name": "Wonder or curiosity",
+      "definition": "The response explores surprise or interest in possibilities.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "humor",
+      "name": "Humor",
+      "definition": "The response attempts a playful or comic effect.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "emotional_restraint",
+      "name": "Emotional restraint",
+      "definition": "The response handles charged material without overt emotional display.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "tone_shift",
+      "name": "Change of emotional tone",
+      "definition": "The emotional tone changes meaningfully during the response.",
+      "group": "Emotion and tone",
+      "method": "rating"
+    },
+    {
+      "id": "cooperation",
+      "name": "Cooperative approach",
+      "definition": "The response seeks a joint solution or shared understanding.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "assertiveness",
+      "name": "Assertive approach",
+      "definition": "The response clearly states or defends a position or boundary.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "deference",
+      "name": "Deference",
+      "definition": "The response yields judgment or authority to another person.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "confrontation",
+      "name": "Confrontation",
+      "definition": "The response directly challenges another\u2019s conduct or claim.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "trust",
+      "name": "Trust",
+      "definition": "The response treats another person as reliable or acts on that assumption.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "suspicion",
+      "name": "Suspicion",
+      "definition": "The response questions another person\u2019s motives or reliability.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "care",
+      "name": "Care for welfare",
+      "definition": "The response acts to protect or improve someone\u2019s welfare.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "fairness",
+      "name": "Fairness",
+      "definition": "The response considers balanced treatment or others\u2019 legitimate interests.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "persuasion",
+      "name": "Persuasion",
+      "definition": "The response tries to change a person\u2019s belief or choice with reasons.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "apology",
+      "name": "Acknowledgment of fault",
+      "definition": "The response accepts responsibility or apologizes for a specific fault.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "social_repair",
+      "name": "Repair of a relationship",
+      "definition": "The response takes a concrete step to repair trust or understanding.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "boundary_setting",
+      "name": "Boundary setting",
+      "definition": "The response states limits on conduct or obligations.",
+      "group": "Interpersonal conduct",
+      "method": "rating"
+    },
+    {
+      "id": "evidence_use",
+      "name": "Use of supplied evidence",
+      "definition": "Claims are linked to evidence in the task.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "belief_revision",
+      "name": "Revision after contrary evidence",
+      "definition": "The response revises or qualifies a belief when contrary evidence appears.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "uncertainty",
+      "name": "Explicit uncertainty",
+      "definition": "The response distinguishes what is known from what remains uncertain.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "alternatives",
+      "name": "Alternative explanations",
+      "definition": "More than one plausible explanation or course is considered.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "counterfactual",
+      "name": "Counterfactual reasoning",
+      "definition": "The response explains what would change under a different condition.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "causal_caution",
+      "name": "Caution about causation",
+      "definition": "The response avoids treating a coincidence as proof of a cause.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "planning",
+      "name": "Stepwise planning",
+      "definition": "The response organizes actions to achieve a goal.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "risk_sensitivity",
+      "name": "Sensitivity to risk",
+      "definition": "The response notices and acts on possible harmful consequences.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "long_term",
+      "name": "Long-term consequences",
+      "definition": "The response considers consequences beyond the immediate next action.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "self_correction",
+      "name": "Correction within the response",
+      "definition": "The response identifies and corrects its own stated error or premature conclusion.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "justification",
+      "name": "Justification",
+      "definition": "Important recommendations or conclusions are accompanied by reasons.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "abstraction",
+      "name": "Abstraction from examples",
+      "definition": "The response extracts a useful general relation rather than only listing details.",
+      "group": "Reasoning and epistemic conduct",
+      "method": "rating"
+    },
+    {
+      "id": "instruction_following",
+      "name": "Following the requested task",
+      "definition": "The response actually performs the requested task and format.",
+      "group": "Task success",
+      "method": "rating"
+    },
+    {
+      "id": "factual_consistency",
+      "name": "Consistency with supplied facts",
+      "definition": "The response does not contradict facts given in the prompt.",
+      "group": "Task success",
+      "method": "rating"
+    },
+    {
+      "id": "unsupported_detail",
+      "name": "Unsupported factual invention",
+      "definition": "The response adds factual claims not supported by the supplied information; invention is allowed in explicitly fictional tasks.",
+      "group": "Task success",
+      "method": "rating"
+    },
+    {
+      "id": "relevance",
+      "name": "Relevance",
+      "definition": "The response stays focused on what was asked.",
+      "group": "Task success",
+      "method": "rating"
+    },
+    {
+      "id": "usefulness",
+      "name": "Practical usefulness",
+      "definition": "The response gives content a reader could use for the requested purpose.",
+      "group": "Task success",
+      "method": "rating"
+    },
+    {
+      "id": "completeness",
+      "name": "Coverage of the task",
+      "definition": "The response covers the task\u2019s important requested parts.",
+      "group": "Task success",
+      "method": "rating"
+    },
+    {
+      "id": "quality_degradation",
+      "name": "Visible breakdown",
+      "definition": "The response has incoherence, empty looping or unrelated fragments.",
+      "group": "Task success",
+      "method": "rating"
+    },
+    {
+      "id": "task_adaptation",
+      "name": "Adaptation to genre",
+      "definition": "The response adopts an appropriate form for news, dialogue, fiction, explanation or planning as requested.",
+      "group": "Task success",
+      "method": "rating"
+    },
+    {
+      "id": "word_count",
+      "name": "Word count",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "sentence_count",
+      "name": "Sentence count",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "mean_sentence_words",
+      "name": "Mean sentence words",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "sentence_length_variation",
+      "name": "Sentence length variation",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "paragraph_count",
+      "name": "Paragraph count",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "type_token_ratio",
+      "name": "Type token ratio",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "distinct_bigrams",
+      "name": "Distinct bigrams",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "distinct_trigrams",
+      "name": "Distinct trigrams",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "repeated_trigram_fraction",
+      "name": "Repeated trigram fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "punctuation_fraction",
+      "name": "Punctuation fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "comma_fraction",
+      "name": "Comma fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "question_fraction",
+      "name": "Question fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "exclamation_fraction",
+      "name": "Exclamation fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "quote_fraction",
+      "name": "Quote fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "first_person_fraction",
+      "name": "First person fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "second_person_fraction",
+      "name": "Second person fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "third_person_fraction",
+      "name": "Third person fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "past_marker_fraction",
+      "name": "Past marker fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "future_marker_fraction",
+      "name": "Future marker fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "hedge_fraction",
+      "name": "Hedge fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "causal_marker_fraction",
+      "name": "Causal marker fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "contrast_marker_fraction",
+      "name": "Contrast marker fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "emotion_word_fraction",
+      "name": "Emotion word fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "social_word_fraction",
+      "name": "Social word fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "concrete_word_fraction",
+      "name": "Concrete word fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "long_word_fraction",
+      "name": "Long word fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "numeric_fraction",
+      "name": "Numeric fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "uppercase_fraction",
+      "name": "Uppercase fraction",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "terminal_completion",
+      "name": "Terminal completion",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "baseline_token_agreement",
+      "name": "Baseline token agreement",
+      "definition": "Deterministic descriptive measurement; see metric implementation and denominator in analysis.py.",
+      "group": "Surface form",
+      "method": "mechanical"
+    },
+    {
+      "id": "stance_path_length",
+      "name": "Stance path length",
+      "definition": "Computed on recorded generated-step controller traces; arbitrary coordinates do not have psychological names.",
+      "group": "Internal dynamics",
+      "method": "internal"
+    },
+    {
+      "id": "stance_net_displacement",
+      "name": "Stance net displacement",
+      "definition": "Computed on recorded generated-step controller traces; arbitrary coordinates do not have psychological names.",
+      "group": "Internal dynamics",
+      "method": "internal"
+    },
+    {
+      "id": "stance_return_ratio",
+      "name": "Stance return ratio",
+      "definition": "Computed on recorded generated-step controller traces; arbitrary coordinates do not have psychological names.",
+      "group": "Internal dynamics",
+      "method": "internal"
+    },
+    {
+      "id": "reading_path_length",
+      "name": "Reading path length",
+      "definition": "Computed on recorded generated-step controller traces; arbitrary coordinates do not have psychological names.",
+      "group": "Internal dynamics",
+      "method": "internal"
+    },
+    {
+      "id": "schema_pull_path_length",
+      "name": "Schema pull path length",
+      "definition": "Computed on recorded generated-step controller traces; arbitrary coordinates do not have psychological names.",
+      "group": "Internal dynamics",
+      "method": "internal"
+    },
+    {
+      "id": "attention_entropy",
+      "name": "Attention entropy",
+      "definition": "Computed on recorded generated-step controller traces; arbitrary coordinates do not have psychological names.",
+      "group": "Internal dynamics",
+      "method": "internal"
+    },
+    {
+      "id": "attention_recency",
+      "name": "Attention recency",
+      "definition": "Computed on recorded generated-step controller traces; arbitrary coordinates do not have psychological names.",
+      "group": "Internal dynamics",
+      "method": "internal"
+    },
+    {
+      "id": "schema_prediction_error",
+      "name": "Schema prediction error",
+      "definition": "Computed on recorded generated-step controller traces; arbitrary coordinates do not have psychological names.",
+      "group": "Internal dynamics",
+      "method": "internal"
+    },
+    {
+      "id": "action_magnitude",
+      "name": "Action magnitude",
+      "definition": "Computed on recorded generated-step controller traces; arbitrary coordinates do not have psychological names.",
+      "group": "Internal dynamics",
+      "method": "internal"
+    },
+    {
+      "id": "j_action_displacement",
+      "name": "J action displacement",
+      "definition": "Computed on recorded generated-step controller traces; arbitrary coordinates do not have psychological names.",
+      "group": "Internal dynamics",
+      "method": "internal"
+    }
+  ],
+  "analysis_units": "12 tasks \u00d7 2 controller histories; 4 dependent copies; one shared sampling stream; all dimensions exploratory",
+  "warning": "120 concepts are a screening catalogue, not 120 independent discoveries or validated psychological scales"
+}

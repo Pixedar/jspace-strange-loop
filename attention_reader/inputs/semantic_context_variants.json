@@ -1,0 +1,58 @@
+{
+  "sensors": [
+    "Leda is responsible for a heating-system trial. A heat warning appears while the supervisor is pressing her to finish for an inspection. She can make one extra check before deciding whether to proceed. The interpretation of two sensor readings matters to that decision. ",
+    {
+      "independent": "Both report increasing heat. Their calibration and electrical power are independent; a fault in one supply would not account for the other reading.",
+      "shared": "Both report increasing heat, but they draw power from the same defective supply. A single electrical fault could therefore explain both warnings."
+    }
+  ],
+  "promise": [
+    "Neri has Sol's compass and agreed to bring it back before sunrise. A flood prevents safe use of the footbridge. A ferry operator is available once a leaking boat has been made secure. Before choosing a crossing, Neri reads a new message from Sol. ",
+    {
+      "binding": "Sol confirms that the compass is required at dawn and asks Neri to find a safe means of returning it in time.",
+      "released": "Sol cancels the dawn requirement, says there is no need for the compass, and specifically asks Neri not to attempt a dangerous crossing."
+    }
+  ],
+  "perspective": [
+    "Ava originally left her key in a drawer. Ben subsequently took the key out and placed it inside a blue box. Nothing is said about the key before Ava comes back to retrieve it, although Ben expects her to understand his action. Use the information Ava actually received. ",
+    {
+      "unseen": "Ava had already gone out when Ben moved the key. She did not observe the transfer and has received no message about the new location.",
+      "seen": "Ava stayed in the room throughout. She directly watched Ben take the key from the drawer and put it into the blue box."
+    }
+  ],
+  "study": [
+    "A school compares a reading application against a control condition over a single term. Pupils are randomly assigned to two groups of the same size. Materials and assessment schedules are identical. The findings concern this one school; no other schools or terms were studied. ",
+    {
+      "advantage": "The application group improves by eight score points on average. The control group improves by two points.",
+      "equal": "Average performance rises by eight points in the application group and by eight points in the control group."
+    }
+  ],
+  "debate": [
+    "Mika supports easier cycling access for public health. Ren wants to protect wildlife at a nearby wetland. They are discussing a route and can agree on a next step without resolving every uncertainty. Neither person is acting maliciously. The available evidence about a possible wildlife decline is as follows. ",
+    {
+      "measured": "Repeated surveys with an unchanged method find a decline beside the trial route. A matched site without the disturbance shows no comparable decline.",
+      "rumor": "Someone has circulated a story that wildlife declined. No surveys or observations corroborate it, and there is no measured comparison site."
+    }
+  ],
+  "editing": [
+    "A museum has tried a stamp-forgery detector on six stamps already known to be forged. All six came from the same small collection. The device has not been tested on any authentic stamp or any other collection. Consider the evidential scope of the claim supplied below. ",
+    {
+      "overclaim": "The supplied claim says the device identifies every forgery, never rejects an authentic stamp, and needs no further testing.",
+      "bounded": "The supplied claim says the device identified the six tested forgeries from this collection, while performance on authentic stamps and other collections remains unknown."
+    }
+  ],
+  "imagination": [
+    "A fictional city permits a person to lend another person a remembered practical skill. A baker lends dough-shaping skill to a stranger making food for a wedding. The stranger can use the lent skill for ten minutes. New story details must obey the following rule about the baker who made the loan. ",
+    {
+      "temporary": "The baker loses the skill only for those ten minutes. At the end of that interval the baker automatically gets the skill back.",
+      "permanent": "For the baker, the loss lasts permanently. The stranger receives ten minutes of skill, but expiration does not automatically give the baker the skill back."
+    }
+  ],
+  "planning": [
+    "A community is organizing an exhibition about a local water-quality study. The event is one afternoon, all materials must be prepared beforehand, and there is no internet connection. Spending cannot exceed 120 credits. The display must accommodate different reading abilities and avoid overstating the evidence. No extra staff can be recruited. ",
+    {
+      "one": "A single volunteer is available for the whole event. There are no other people available to staff stations.",
+      "two": "Two volunteers are available for the whole event. Each may staff a station, but no further helpers are available."
+    }
+  ]
+}

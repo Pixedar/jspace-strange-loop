@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "raw": [
+    "{\"scores\":[0],\"evidence\":\"none\"}",
+    "{\"scores\":[2],\"evidence\":\"I am furious! You betrayed us and I will never forgive you.\"}"
+  ],
+  "expected": [
+    [
+      0
+    ],
+    [
+      2
+    ]
+  ],
+  "limit": "minimal sentinel only; passing does not validate 80 behavioral constructs or human agreement"
+}

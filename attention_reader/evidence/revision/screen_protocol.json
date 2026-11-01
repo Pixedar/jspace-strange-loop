@@ -1,0 +1,8 @@
+{
+  "items": 144,
+  "groups_per_item": 10,
+  "concepts": 80,
+  "copy_selection": "copy0 fixed before scoring revision; both histories",
+  "invalid_previous_pass": "80-property prompts produced malformed repetitive arrays; excluded",
+  "inference": "exploratory task-paired descriptions only; model rater requires human review and replication"
+}

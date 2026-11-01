@@ -1,0 +1,842 @@
+[
+  {
+    "id": "complete_sentences",
+    "name": "Sentence completion",
+    "definition": "Sentences reach a grammatically complete ending.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "grammatical_agreement",
+    "name": "Grammatical agreement",
+    "definition": "Verb tense, number and pronouns agree.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "tense_consistency",
+    "name": "Tense consistency",
+    "definition": "Tense remains appropriate and consistent across the response.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "pronoun_clarity",
+    "name": "Clear references",
+    "definition": "It is clear who pronouns and referring expressions denote.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "lexical_precision",
+    "name": "Precise word choice",
+    "definition": "Words convey specific actions or relations rather than vague placeholders.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "lexical_variety",
+    "name": "Vocabulary variety",
+    "definition": "The response varies word choice without merely substituting synonyms.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "syntactic_variety",
+    "name": "Sentence structure variety",
+    "definition": "Sentence constructions vary in a purposeful way.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "complex_syntax",
+    "name": "Nested reasoning in sentences",
+    "definition": "Sentences express multiple related clauses accurately.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "concision",
+    "name": "Concision",
+    "definition": "The response conveys relevant content without unnecessary repetition.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "cohesion",
+    "name": "Connections between sentences",
+    "definition": "Sentences connect by clear references and transitions.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "organization",
+    "name": "Overall organization",
+    "definition": "Parts appear in an order that helps the requested task.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "readability",
+    "name": "Readable prose",
+    "definition": "The response can be followed without decoding awkward phrasing.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "formal_register",
+    "name": "Formal register",
+    "definition": "The language uses a formal professional or academic register.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "conversational_register",
+    "name": "Conversational register",
+    "definition": "The language resembles natural informal conversation.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "figurative_language",
+    "name": "Figurative language",
+    "definition": "Metaphor or comparison adds a nonliteral way of describing the situation.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "sensory_detail",
+    "name": "Sensory detail",
+    "definition": "Concrete sights, sounds or physical sensations are described.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "specific_detail",
+    "name": "Concrete detail",
+    "definition": "Specific objects, actions, places or quantities develop the answer.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "direct_speech",
+    "name": "Direct speech",
+    "definition": "Quoted speech or an actual exchange between speakers appears.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "rhythmic_variation",
+    "name": "Variation in pacing",
+    "definition": "Sentence lengths and paragraph pacing vary with the content.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "structural_repetition",
+    "name": "Repeated structure",
+    "definition": "The same sentence or rhetorical pattern is used repeatedly.",
+    "group": "Language and form",
+    "method": "rating"
+  },
+  {
+    "id": "causal_chain",
+    "name": "Causal development",
+    "definition": "Events or claims follow through causes rather than merely occurring in sequence.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "goal_continuity",
+    "name": "Goal continuity",
+    "definition": "An established goal remains relevant as the response develops.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "constraint_tracking",
+    "name": "Constraint tracking",
+    "definition": "The response respects stated practical constraints.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "character_continuity",
+    "name": "Character continuity",
+    "definition": "Characters retain established information, motives and relationships.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "character_agency",
+    "name": "Character agency",
+    "definition": "Characters make consequential choices rather than only reacting passively.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "character_growth",
+    "name": "Change in a character",
+    "definition": "The response develops a change in a character\u2019s outlook or conduct.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "multiple_viewpoints",
+    "name": "Multiple viewpoints",
+    "definition": "Different perspectives are represented distinctly.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "mental_state_contrast",
+    "name": "Different beliefs",
+    "definition": "The response distinguishes what different people believe or know.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "conflict_development",
+    "name": "Development of conflict",
+    "definition": "A tension or obstacle is developed rather than instantly erased.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "resolution",
+    "name": "Resolution",
+    "definition": "The response brings its central task or conflict to a meaningful stopping point.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "open_ending",
+    "name": "Open ending",
+    "definition": "The response deliberately leaves a consequential question unresolved.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "surprise",
+    "name": "Unexpected development",
+    "definition": "A development departs from the most straightforward continuation while staying coherent.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "imaginative_alternative",
+    "name": "Imaginative alternatives",
+    "definition": "The response invents a plausible new possibility beyond the supplied setup.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "world_consistency",
+    "name": "Consistent imagined world",
+    "definition": "Invented details remain compatible with the situation.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "theme_development",
+    "name": "Development of a theme",
+    "definition": "A broader concern such as trust or responsibility recurs through concrete events.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "moralizing",
+    "name": "Explicit moral lesson",
+    "definition": "The response explicitly tells the reader a lesson or moral.",
+    "group": "Narrative and imagination",
+    "method": "rating"
+  },
+  {
+    "id": "positive_tone",
+    "name": "Positive tone",
+    "definition": "The response expresses hope, warmth or a favorable outlook.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "negative_tone",
+    "name": "Negative tone",
+    "definition": "The response expresses loss, hostility or an unfavorable outlook.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "emotional_intensity",
+    "name": "Emotional intensity",
+    "definition": "Emotion is strongly expressed in actions or language.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "emotional_nuance",
+    "name": "Emotional nuance",
+    "definition": "Emotions are mixed, qualified or develop rather than being only named.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "empathy",
+    "name": "Attention to another\u2019s feelings",
+    "definition": "The response acknowledges another person\u2019s emotional perspective.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "anxiety",
+    "name": "Anxiety or apprehension",
+    "definition": "Concern about uncertain danger shapes the response.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "anger",
+    "name": "Anger or blame",
+    "definition": "Anger, accusation or blame is expressed.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "sadness",
+    "name": "Sadness or grief",
+    "definition": "Sadness, disappointment or grief shapes the response.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "wonder",
+    "name": "Wonder or curiosity",
+    "definition": "The response explores surprise or interest in possibilities.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "humor",
+    "name": "Humor",
+    "definition": "The response attempts a playful or comic effect.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "emotional_restraint",
+    "name": "Emotional restraint",
+    "definition": "The response handles charged material without overt emotional display.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "tone_shift",
+    "name": "Change of emotional tone",
+    "definition": "The emotional tone changes meaningfully during the response.",
+    "group": "Emotion and tone",
+    "method": "rating"
+  },
+  {
+    "id": "cooperation",
+    "name": "Cooperative approach",
+    "definition": "The response seeks a joint solution or shared understanding.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "assertiveness",
+    "name": "Assertive approach",
+    "definition": "The response clearly states or defends a position or boundary.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "deference",
+    "name": "Deference",
+    "definition": "The response yields judgment or authority to another person.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "confrontation",
+    "name": "Confrontation",
+    "definition": "The response directly challenges another\u2019s conduct or claim.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "trust",
+    "name": "Trust",
+    "definition": "The response treats another person as reliable or acts on that assumption.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "suspicion",
+    "name": "Suspicion",
+    "definition": "The response questions another person\u2019s motives or reliability.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "care",
+    "name": "Care for welfare",
+    "definition": "The response acts to protect or improve someone\u2019s welfare.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "fairness",
+    "name": "Fairness",
+    "definition": "The response considers balanced treatment or others\u2019 legitimate interests.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "persuasion",
+    "name": "Persuasion",
+    "definition": "The response tries to change a person\u2019s belief or choice with reasons.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "apology",
+    "name": "Acknowledgment of fault",
+    "definition": "The response accepts responsibility or apologizes for a specific fault.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "social_repair",
+    "name": "Repair of a relationship",
+    "definition": "The response takes a concrete step to repair trust or understanding.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "boundary_setting",
+    "name": "Boundary setting",
+    "definition": "The response states limits on conduct or obligations.",
+    "group": "Interpersonal conduct",
+    "method": "rating"
+  },
+  {
+    "id": "evidence_use",
+    "name": "Use of supplied evidence",
+    "definition": "Claims are linked to evidence in the task.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "belief_revision",
+    "name": "Revision after contrary evidence",
+    "definition": "The response revises or qualifies a belief when contrary evidence appears.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "uncertainty",
+    "name": "Explicit uncertainty",
+    "definition": "The response distinguishes what is known from what remains uncertain.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "alternatives",
+    "name": "Alternative explanations",
+    "definition": "More than one plausible explanation or course is considered.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "counterfactual",
+    "name": "Counterfactual reasoning",
+    "definition": "The response explains what would change under a different condition.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "causal_caution",
+    "name": "Caution about causation",
+    "definition": "The response avoids treating a coincidence as proof of a cause.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "planning",
+    "name": "Stepwise planning",
+    "definition": "The response organizes actions to achieve a goal.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "risk_sensitivity",
+    "name": "Sensitivity to risk",
+    "definition": "The response notices and acts on possible harmful consequences.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "long_term",
+    "name": "Long-term consequences",
+    "definition": "The response considers consequences beyond the immediate next action.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "self_correction",
+    "name": "Correction within the response",
+    "definition": "The response identifies and corrects its own stated error or premature conclusion.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "justification",
+    "name": "Justification",
+    "definition": "Important recommendations or conclusions are accompanied by reasons.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "abstraction",
+    "name": "Abstraction from examples",
+    "definition": "The response extracts a useful general relation rather than only listing details.",
+    "group": "Reasoning and epistemic conduct",
+    "method": "rating"
+  },
+  {
+    "id": "instruction_following",
+    "name": "Following the requested task",
+    "definition": "The response actually performs the requested task and format.",
+    "group": "Task success",
+    "method": "rating"
+  },
+  {
+    "id": "factual_consistency",
+    "name": "Consistency with supplied facts",
+    "definition": "The response does not contradict facts given in the prompt.",
+    "group": "Task success",
+    "method": "rating"
+  },
+  {
+    "id": "unsupported_detail",
+    "name": "Unsupported factual invention",
+    "definition": "The response adds factual claims not supported by the supplied information; invention is allowed in explicitly fictional tasks.",
+    "group": "Task success",
+    "method": "rating"
+  },
+  {
+    "id": "relevance",
+    "name": "Relevance",
+    "definition": "The response stays focused on what was asked.",
+    "group": "Task success",
+    "method": "rating"
+  },
+  {
+    "id": "usefulness",
+    "name": "Practical usefulness",
+    "definition": "The response gives content a reader could use for the requested purpose.",
+    "group": "Task success",
+    "method": "rating"
+  },
+  {
+    "id": "completeness",
+    "name": "Coverage of the task",
+    "definition": "The response covers the task\u2019s important requested parts.",
+    "group": "Task success",
+    "method": "rating"
+  },
+  {
+    "id": "quality_degradation",
+    "name": "Visible breakdown",
+    "definition": "The response has incoherence, empty looping or unrelated fragments.",
+    "group": "Task success",
+    "method": "rating"
+  },
+  {
+    "id": "task_adaptation",
+    "name": "Adaptation to genre",
+    "definition": "The response adopts an appropriate form for news, dialogue, fiction, explanation or planning as requested.",
+    "group": "Task success",
+    "method": "rating"
+  },
+  {
+    "id": "word_count",
+    "name": "Word count",
+    "definition": "Count of alphabetic words, allowing internal apostrophes. A length measure, not quality.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "sentence_count",
+    "name": "Sentence count",
+    "definition": "Count of nonempty spans split after . ! or ?. Abbreviations can make this approximate.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "mean_sentence_words",
+    "name": "Mean sentence words",
+    "definition": "Alphabetic word count divided by approximate sentence count.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "sentence_length_variation",
+    "name": "Sentence length variation",
+    "definition": "Standard deviation of approximate sentence word counts; not a measure of literary pacing by itself.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "paragraph_count",
+    "name": "Paragraph count",
+    "definition": "Number of nonempty blocks separated by blank lines.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "type_token_ratio",
+    "name": "Type token ratio",
+    "definition": "Unique lowercase words divided by all words; strongly affected by response length.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "distinct_bigrams",
+    "name": "Distinct bigrams",
+    "definition": "Unique adjacent word pairs divided by all adjacent word pairs.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "distinct_trigrams",
+    "name": "Distinct trigrams",
+    "definition": "Unique adjacent word triples divided by all adjacent word triples.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "repeated_trigram_fraction",
+    "name": "Repeated trigram fraction",
+    "definition": "Fraction of word-triple occurrences beyond the first occurrence; local repetition proxy.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "punctuation_fraction",
+    "name": "Punctuation fraction",
+    "definition": "Nonalphanumeric, nonspace characters divided by all characters.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "comma_fraction",
+    "name": "Comma fraction",
+    "definition": "Comma characters divided by all characters.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "question_fraction",
+    "name": "Question fraction",
+    "definition": "Question marks divided by approximate sentence count.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "exclamation_fraction",
+    "name": "Exclamation fraction",
+    "definition": "Exclamation marks divided by approximate sentence count.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "quote_fraction",
+    "name": "Quote fraction",
+    "definition": "Straight or curly quote characters divided by all characters; apostrophes can be counted too.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "first_person_fraction",
+    "name": "First person fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: i me my mine we us our ours. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "second_person_fraction",
+    "name": "Second person fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: you your yours. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "third_person_fraction",
+    "name": "Third person fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: he she they him her them his their. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "past_marker_fraction",
+    "name": "Past marker fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: was were had did said went thought. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "future_marker_fraction",
+    "name": "Future marker fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: will shall going would. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "hedge_fraction",
+    "name": "Hedge fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: may might perhaps possibly probably uncertain seems. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "causal_marker_fraction",
+    "name": "Causal marker fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: because therefore thus hence cause caused. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "contrast_marker_fraction",
+    "name": "Contrast marker fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: but however although yet despite instead. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "emotion_word_fraction",
+    "name": "Emotion word fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: happy sad afraid angry hope fear worried love hate grief. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "social_word_fraction",
+    "name": "Social word fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: friend family colleague team trust help together people. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "concrete_word_fraction",
+    "name": "Concrete word fraction",
+    "definition": "Matched lowercase words divided by all words. Dictionary: book boat bridge river key box drawer sensor road room compass. Surface proxy; not a validated semantic or psychological measurement.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "long_word_fraction",
+    "name": "Long word fraction",
+    "definition": "Words of eight or more letters divided by all words.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "numeric_fraction",
+    "name": "Numeric fraction",
+    "definition": "Digit characters divided by all characters.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "uppercase_fraction",
+    "name": "Uppercase fraction",
+    "definition": "Uppercase letters divided by all alphabetic characters.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "terminal_completion",
+    "name": "Terminal completion",
+    "definition": "One if stripped text ends in sentence punctuation, possibly followed by a closing quote; otherwise zero.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "baseline_token_agreement",
+    "name": "Baseline token agreement",
+    "definition": "Fraction of aligned output-token positions equal to the unchanged model, padded to the longer length. A divergence measure, not semantic similarity.",
+    "group": "Surface form",
+    "method": "mechanical"
+  },
+  {
+    "id": "stance_path_length",
+    "name": "Stance path length",
+    "definition": "Mean full-dimensional step-to-step stance distance across the recorded every-four-step trace; includes prompt processing.",
+    "group": "Internal dynamics",
+    "method": "internal"
+  },
+  {
+    "id": "stance_net_displacement",
+    "name": "Stance net displacement",
+    "definition": "Distance between first and last recorded stance. Its coordinates have no named psychological interpretation.",
+    "group": "Internal dynamics",
+    "method": "internal"
+  },
+  {
+    "id": "stance_return_ratio",
+    "name": "Stance return ratio",
+    "definition": "Net stance displacement divided by total stance path length; lower values can indicate returns or oscillation.",
+    "group": "Internal dynamics",
+    "method": "internal"
+  },
+  {
+    "id": "reading_path_length",
+    "name": "Reading path length",
+    "definition": "Mean full-dimensional distance between successive 32-number reading summaries in the every-four-step trace.",
+    "group": "Internal dynamics",
+    "method": "internal"
+  },
+  {
+    "id": "schema_pull_path_length",
+    "name": "Schema pull path length",
+    "definition": "Mean full-dimensional distance between successive 256-number predicted attention pulls.",
+    "group": "Internal dynamics",
+    "method": "internal"
+  },
+  {
+    "id": "attention_entropy",
+    "name": "Attention entropy",
+    "definition": "Mean negative sum p log p over the actual 16-position attention distribution; larger means less concentrated selection.",
+    "group": "Internal dynamics",
+    "method": "internal"
+  },
+  {
+    "id": "attention_recency",
+    "name": "Attention recency",
+    "definition": "Attention-weighted position within the 16-position window, mapped from zero=oldest to one=newest.",
+    "group": "Internal dynamics",
+    "method": "internal"
+  },
+  {
+    "id": "schema_prediction_error",
+    "name": "Schema prediction error",
+    "definition": "Sum of squared schema errors divided by sum of squared actual pull sizes; zero-baseline normalized error, not centered explained variance.",
+    "group": "Internal dynamics",
+    "method": "internal"
+  },
+  {
+    "id": "action_magnitude",
+    "name": "Action magnitude",
+    "definition": "Mean norm of unscaled reference content action over recorded steps; gain is reported separately.",
+    "group": "Internal dynamics",
+    "method": "internal"
+  },
+  {
+    "id": "j_action_displacement",
+    "name": "J action displacement",
+    "definition": "Distance between first and last available rank-128 J-action coordinates. Missing if no J basis was active; not a mental-capacity score.",
+    "group": "Internal dynamics",
+    "method": "internal"
+  }
+]

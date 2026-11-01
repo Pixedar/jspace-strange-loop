@@ -1,0 +1,46 @@
+{
+  "source_copies": [
+    0,
+    11,
+    7,
+    5
+  ],
+  "readings": 16720,
+  "spectral_radius": 1.7,
+  "seed": 4819,
+  "mean_conditional_lyapunov": [
+    0.024066872894763947,
+    0.02202000468969345,
+    0.0246559027582407,
+    0.02373770996928215
+  ],
+  "final_pairwise_hidden_distances": [
+    [
+      0.0,
+      4.582950115203857,
+      3.6417126655578613,
+      2.564488172531128
+    ],
+    [
+      4.582950115203857,
+      0.0,
+      2.3030154705047607,
+      4.312830448150635
+    ],
+    [
+      3.6417126655578613,
+      2.3030154705047607,
+      0.0,
+      4.060728073120117
+    ],
+    [
+      2.564488172531128,
+      4.312830448150635,
+      4.060728073120117,
+      0.0
+    ]
+  ],
+  "hidden_dimension": 64,
+  "parameters_shared_across_copies": true,
+  "interpretation": "Fixed untrained recurrent filter driven by the same 16-number context. No selection for a desired phenotype. A positive conditional exponent describes sensitivity to initial state under this recorded input, not self-awareness."
+}

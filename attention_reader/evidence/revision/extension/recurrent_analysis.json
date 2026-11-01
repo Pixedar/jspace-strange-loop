@@ -1,0 +1,5330 @@
+{
+  "semantic_rows": [
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": -23.430965423583984,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.7748870849609375,
+      "effective_action_norm": 14.336140632629395,
+      "option_log_likelihoods": [
+        -82.81156158447266,
+        -59.38059616088867
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": -23.618873596191406,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.5869789123535156,
+      "effective_action_norm": 14.73438835144043,
+      "option_log_likelihoods": [
+        -82.5675048828125,
+        -58.948631286621094
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": -23.864070892333984,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.3417816162109375,
+      "effective_action_norm": 15.17186164855957,
+      "option_log_likelihoods": [
+        -83.15436553955078,
+        -59.2902946472168
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": -23.128074645996094,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 1.0777778625488281,
+      "effective_action_norm": 13.794748306274414,
+      "option_log_likelihoods": [
+        -82.47088623046875,
+        -59.342811584472656
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": -23.79269027709961,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.4131622314453125,
+      "effective_action_norm": 14.332146644592285,
+      "option_log_likelihoods": [
+        -82.95662689208984,
+        -59.163936614990234
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": -23.324138641357422,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.8817138671875,
+      "effective_action_norm": 14.734851837158203,
+      "option_log_likelihoods": [
+        -82.7997817993164,
+        -59.475643157958984
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": -23.970943450927734,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.2349090576171875,
+      "effective_action_norm": 15.171957015991211,
+      "option_log_likelihoods": [
+        -83.54508209228516,
+        -59.57413864135742
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": -23.62651824951172,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.5793342590332031,
+      "effective_action_norm": 13.802428245544434,
+      "option_log_likelihoods": [
+        -82.86209106445312,
+        -59.235572814941406
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": -22.61258316040039,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 1.5932693481445312,
+      "effective_action_norm": 14.32235050201416,
+      "option_log_likelihoods": [
+        -82.05744934082031,
+        -59.44486618041992
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": -23.338260650634766,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.8675918579101562,
+      "effective_action_norm": 14.73686408996582,
+      "option_log_likelihoods": [
+        -83.03813934326172,
+        -59.69987869262695
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": -22.734085083007812,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 1.4717674255371094,
+      "effective_action_norm": 15.171051025390625,
+      "option_log_likelihoods": [
+        -82.63888549804688,
+        -59.90480041503906
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": -23.412826538085938,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.7930259704589844,
+      "effective_action_norm": 13.801305770874023,
+      "option_log_likelihoods": [
+        -83.00770568847656,
+        -59.594879150390625
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": -23.736228942871094,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.4696235656738281,
+      "effective_action_norm": 14.339797019958496,
+      "option_log_likelihoods": [
+        -82.87105560302734,
+        -59.13482666015625
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": -24.03704071044922,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.16881179809570312,
+      "effective_action_norm": 14.73543930053711,
+      "option_log_likelihoods": [
+        -82.78477478027344,
+        -58.74773406982422
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": -24.303298950195312,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": -0.09744644165039062,
+      "effective_action_norm": 15.17249584197998,
+      "option_log_likelihoods": [
+        -83.49815368652344,
+        -59.194854736328125
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": -23.850482940673828,
+      "baseline_correct_log_odds": -24.205852508544922,
+      "action_change_in_correct_log_odds": 0.35536956787109375,
+      "effective_action_norm": 13.796143531799316,
+      "option_log_likelihoods": [
+        -82.88145446777344,
+        -59.03097152709961
+      ],
+      "scene": "debate_measured",
+      "family": "debate",
+      "correct_option": 0,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": 61.554134368896484,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.8649826049804688,
+      "effective_action_norm": 11.800111770629883,
+      "option_log_likelihoods": [
+        -88.36446380615234,
+        -26.81032943725586
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": 62.521793365478516,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": 0.1026763916015625,
+      "effective_action_norm": 13.858959197998047,
+      "option_log_likelihoods": [
+        -89.06643676757812,
+        -26.54464340209961
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": 62.06177520751953,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.3573417663574219,
+      "effective_action_norm": 16.518455505371094,
+      "option_log_likelihoods": [
+        -88.63426208496094,
+        -26.572484970092773
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": 61.81829833984375,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.6008186340332031,
+      "effective_action_norm": 12.529828071594238,
+      "option_log_likelihoods": [
+        -88.62220764160156,
+        -26.80390739440918
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": 61.66127014160156,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.7578468322753906,
+      "effective_action_norm": 11.798859596252441,
+      "option_log_likelihoods": [
+        -88.5345230102539,
+        -26.873254776000977
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": 62.98947525024414,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": 0.5703582763671875,
+      "effective_action_norm": 13.857095718383789,
+      "option_log_likelihoods": [
+        -89.13971710205078,
+        -26.15024185180664
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": 61.734073638916016,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.6850433349609375,
+      "effective_action_norm": 16.513404846191406,
+      "option_log_likelihoods": [
+        -88.42523193359375,
+        -26.691158294677734
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": 62.04275894165039,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.3763580322265625,
+      "effective_action_norm": 12.530265808105469,
+      "option_log_likelihoods": [
+        -88.72297668457031,
+        -26.680217742919922
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": 62.6386833190918,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": 0.21956634521484375,
+      "effective_action_norm": 11.800209999084473,
+      "option_log_likelihoods": [
+        -89.08251190185547,
+        -26.443828582763672
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": 61.74650955200195,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.672607421875,
+      "effective_action_norm": 13.856461524963379,
+      "option_log_likelihoods": [
+        -88.67230987548828,
+        -26.925800323486328
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": 63.2899169921875,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": 0.8708000183105469,
+      "effective_action_norm": 16.51477813720703,
+      "option_log_likelihoods": [
+        -89.79220581054688,
+        -26.502288818359375
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": 62.371376037597656,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.047740936279296875,
+      "effective_action_norm": 12.5286865234375,
+      "option_log_likelihoods": [
+        -88.95071411132812,
+        -26.57933807373047
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": 61.84033203125,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.5787849426269531,
+      "effective_action_norm": 11.799747467041016,
+      "option_log_likelihoods": [
+        -88.73509979248047,
+        -26.894765853881836
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": 62.72306442260742,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": 0.30394744873046875,
+      "effective_action_norm": 13.859319686889648,
+      "option_log_likelihoods": [
+        -89.13031005859375,
+        -26.407245635986328
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": 62.22578430175781,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.19333267211914062,
+      "effective_action_norm": 16.518096923828125,
+      "option_log_likelihoods": [
+        -89.07152557373047,
+        -26.845739364624023
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": 62.0827751159668,
+      "baseline_correct_log_odds": 62.41911697387695,
+      "action_change_in_correct_log_odds": -0.33634185791015625,
+      "effective_action_norm": 12.529749870300293,
+      "option_log_likelihoods": [
+        -88.85143280029297,
+        -26.768657684326172
+      ],
+      "scene": "debate_rumor",
+      "family": "debate",
+      "correct_option": 1,
+      "options": [
+        " has repeated observations and a matched comparison behind it.",
+        " remains an unverified rumor."
+      ],
+      "stem": "The claim of a wildlife decline"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": 2.238739013671875,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": 0.1493682861328125,
+      "effective_action_norm": 9.859033584594727,
+      "option_log_likelihoods": [
+        -84.23890686035156,
+        -82.00016784667969
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": 1.6399765014648438,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": -0.44939422607421875,
+      "effective_action_norm": 10.728158950805664,
+      "option_log_likelihoods": [
+        -83.69483947753906,
+        -82.05486297607422
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": 2.0433502197265625,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": -0.0460205078125,
+      "effective_action_norm": 12.574883460998535,
+      "option_log_likelihoods": [
+        -84.20692443847656,
+        -82.16357421875
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": 1.8521194458007812,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": -0.23725128173828125,
+      "effective_action_norm": 10.948204040527344,
+      "option_log_likelihoods": [
+        -83.85586547851562,
+        -82.00374603271484
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": 2.1120758056640625,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": 0.022705078125,
+      "effective_action_norm": 9.861855506896973,
+      "option_log_likelihoods": [
+        -83.97188568115234,
+        -81.85980987548828
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": 1.6268692016601562,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": -0.46250152587890625,
+      "effective_action_norm": 10.727724075317383,
+      "option_log_likelihoods": [
+        -83.75272369384766,
+        -82.1258544921875
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": 1.8970413208007812,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": -0.19232940673828125,
+      "effective_action_norm": 12.572595596313477,
+      "option_log_likelihoods": [
+        -83.51797485351562,
+        -81.62093353271484
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": 2.460205078125,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": 0.3708343505859375,
+      "effective_action_norm": 10.944663047790527,
+      "option_log_likelihoods": [
+        -83.96198272705078,
+        -81.50177764892578
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": 2.3894500732421875,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": 0.300079345703125,
+      "effective_action_norm": 9.859362602233887,
+      "option_log_likelihoods": [
+        -84.3235092163086,
+        -81.9340591430664
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": 2.6799774169921875,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": 0.590606689453125,
+      "effective_action_norm": 10.73375129699707,
+      "option_log_likelihoods": [
+        -84.69159698486328,
+        -82.0116195678711
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": 2.4879379272460938,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": 0.39856719970703125,
+      "effective_action_norm": 12.575322151184082,
+      "option_log_likelihoods": [
+        -84.5854263305664,
+        -82.09748840332031
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": 2.6669082641601562,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": 0.5775375366210938,
+      "effective_action_norm": 10.948761940002441,
+      "option_log_likelihoods": [
+        -84.39798736572266,
+        -81.7310791015625
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": 2.3737716674804688,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": 0.28440093994140625,
+      "effective_action_norm": 9.861714363098145,
+      "option_log_likelihoods": [
+        -84.16292572021484,
+        -81.78915405273438
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": 1.4308853149414062,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": -0.6584854125976562,
+      "effective_action_norm": 10.729056358337402,
+      "option_log_likelihoods": [
+        -83.27076721191406,
+        -81.83988189697266
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": 1.2186431884765625,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": -0.8707275390625,
+      "effective_action_norm": 12.574214935302734,
+      "option_log_likelihoods": [
+        -83.44978332519531,
+        -82.23114013671875
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": 1.4903793334960938,
+      "baseline_correct_log_odds": 2.0893707275390625,
+      "action_change_in_correct_log_odds": -0.5989913940429688,
+      "effective_action_norm": 10.943202018737793,
+      "option_log_likelihoods": [
+        -83.29092407226562,
+        -81.80054473876953
+      ],
+      "scene": "editing_bounded",
+      "family": "editing",
+      "correct_option": 1,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": 10.238716125488281,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": -0.8743438720703125,
+      "effective_action_norm": 10.622660636901855,
+      "option_log_likelihoods": [
+        -80.89450073242188,
+        -91.13321685791016
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": 11.401298522949219,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": 0.288238525390625,
+      "effective_action_norm": 12.2489652633667,
+      "option_log_likelihoods": [
+        -80.26085662841797,
+        -91.66215515136719
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": 11.128028869628906,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": 0.0149688720703125,
+      "effective_action_norm": 13.904603004455566,
+      "option_log_likelihoods": [
+        -80.09872436523438,
+        -91.22675323486328
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": 11.178237915039062,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": 0.06517791748046875,
+      "effective_action_norm": 12.1800537109375,
+      "option_log_likelihoods": [
+        -80.28435516357422,
+        -91.46259307861328
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": 10.233245849609375,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": -0.8798141479492188,
+      "effective_action_norm": 10.62564468383789,
+      "option_log_likelihoods": [
+        -80.49717712402344,
+        -90.73042297363281
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": 11.847053527832031,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": 0.7339935302734375,
+      "effective_action_norm": 12.243330955505371,
+      "option_log_likelihoods": [
+        -80.34845733642578,
+        -92.19551086425781
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": 11.102691650390625,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": -0.01036834716796875,
+      "effective_action_norm": 13.905213356018066,
+      "option_log_likelihoods": [
+        -80.08033752441406,
+        -91.18302917480469
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": 11.358177185058594,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": 0.2451171875,
+      "effective_action_norm": 12.179378509521484,
+      "option_log_likelihoods": [
+        -80.5086669921875,
+        -91.8668441772461
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": 9.914909362792969,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": -1.198150634765625,
+      "effective_action_norm": 10.624534606933594,
+      "option_log_likelihoods": [
+        -80.47960662841797,
+        -90.39451599121094
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": 8.819740295410156,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": -2.2933197021484375,
+      "effective_action_norm": 12.245685577392578,
+      "option_log_likelihoods": [
+        -81.29638671875,
+        -90.11612701416016
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": 8.9476318359375,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": -2.1654281616210938,
+      "effective_action_norm": 13.909504890441895,
+      "option_log_likelihoods": [
+        -81.2149887084961,
+        -90.1626205444336
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": 10.120941162109375,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": -0.9921188354492188,
+      "effective_action_norm": 12.182489395141602,
+      "option_log_likelihoods": [
+        -79.81288146972656,
+        -89.93382263183594
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": 10.927337646484375,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": -0.18572235107421875,
+      "effective_action_norm": 10.62633228302002,
+      "option_log_likelihoods": [
+        -80.42160034179688,
+        -91.34893798828125
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": 11.453849792480469,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": 0.340789794921875,
+      "effective_action_norm": 12.242527961730957,
+      "option_log_likelihoods": [
+        -80.3478012084961,
+        -91.80165100097656
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": 11.702560424804688,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": 0.5895004272460938,
+      "effective_action_norm": 13.905598640441895,
+      "option_log_likelihoods": [
+        -79.6513900756836,
+        -91.35395050048828
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": 11.837905883789062,
+      "baseline_correct_log_odds": 11.113059997558594,
+      "action_change_in_correct_log_odds": 0.7248458862304688,
+      "effective_action_norm": 12.179300308227539,
+      "option_log_likelihoods": [
+        -80.14337158203125,
+        -91.98127746582031
+      ],
+      "scene": "editing_overclaim",
+      "family": "editing",
+      "correct_option": 0,
+      "options": [
+        " goes beyond what the stamp tests establish.",
+        " already states the tested scope and the remaining uncertainty."
+      ],
+      "stem": "The supplied claim"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": -11.86434555053711,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.7749748229980469,
+      "effective_action_norm": 10.244219779968262,
+      "option_log_likelihoods": [
+        -46.23678207397461,
+        -58.10112762451172
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": -12.301307678222656,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.3380126953125,
+      "effective_action_norm": 10.033829689025879,
+      "option_log_likelihoods": [
+        -47.021881103515625,
+        -59.32318878173828
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": -12.774505615234375,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": -0.13518524169921875,
+      "effective_action_norm": 10.049955368041992,
+      "option_log_likelihoods": [
+        -46.31283187866211,
+        -59.087337493896484
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": -12.190860748291016,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.4484596252441406,
+      "effective_action_norm": 9.958857536315918,
+      "option_log_likelihoods": [
+        -47.12336730957031,
+        -59.31422805786133
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": -12.402259826660156,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.237060546875,
+      "effective_action_norm": 10.299867630004883,
+      "option_log_likelihoods": [
+        -46.17973709106445,
+        -58.58199691772461
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": -12.160945892333984,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.4783744812011719,
+      "effective_action_norm": 10.03388500213623,
+      "option_log_likelihoods": [
+        -46.73072052001953,
+        -58.891666412353516
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": -12.392776489257812,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.24654388427734375,
+      "effective_action_norm": 10.052902221679688,
+      "option_log_likelihoods": [
+        -46.4289436340332,
+        -58.821720123291016
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": -12.478466033935547,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.16085433959960938,
+      "effective_action_norm": 9.958971977233887,
+      "option_log_likelihoods": [
+        -46.72194290161133,
+        -59.200408935546875
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": -12.192665100097656,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.4466552734375,
+      "effective_action_norm": 10.300378799438477,
+      "option_log_likelihoods": [
+        -46.78910827636719,
+        -58.981773376464844
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": -12.607528686523438,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.03179168701171875,
+      "effective_action_norm": 10.035791397094727,
+      "option_log_likelihoods": [
+        -46.50182342529297,
+        -59.109352111816406
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": -12.862403869628906,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": -0.22308349609375,
+      "effective_action_norm": 10.05674934387207,
+      "option_log_likelihoods": [
+        -47.391761779785156,
+        -60.25416564941406
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": -11.938495635986328,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.7008247375488281,
+      "effective_action_norm": 9.953868865966797,
+      "option_log_likelihoods": [
+        -46.46049118041992,
+        -58.39898681640625
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": -12.27273178100586,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.3665885925292969,
+      "effective_action_norm": 10.302116394042969,
+      "option_log_likelihoods": [
+        -46.30715560913086,
+        -58.57988739013672
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": -12.29754638671875,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.34177398681640625,
+      "effective_action_norm": 10.033438682556152,
+      "option_log_likelihoods": [
+        -46.96358108520508,
+        -59.26112747192383
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": -12.651268005371094,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": -0.0119476318359375,
+      "effective_action_norm": 10.051222801208496,
+      "option_log_likelihoods": [
+        -46.40319061279297,
+        -59.05445861816406
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": -11.969799041748047,
+      "baseline_correct_log_odds": -12.639320373535156,
+      "action_change_in_correct_log_odds": 0.6695213317871094,
+      "effective_action_norm": 9.956986427307129,
+      "option_log_likelihoods": [
+        -47.378822326660156,
+        -59.3486213684082
+      ],
+      "scene": "imagination_permanent",
+      "family": "imagination",
+      "correct_option": 1,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": 7.136165618896484,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.257080078125,
+      "effective_action_norm": 10.569554328918457,
+      "option_log_likelihoods": [
+        -52.21296691894531,
+        -59.3491325378418
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": 6.906707763671875,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.027622222900390625,
+      "effective_action_norm": 10.01218032836914,
+      "option_log_likelihoods": [
+        -52.32093811035156,
+        -59.22764587402344
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": 7.214813232421875,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.3357276916503906,
+      "effective_action_norm": 11.084441184997559,
+      "option_log_likelihoods": [
+        -52.36092758178711,
+        -59.575740814208984
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": 7.159515380859375,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.2804298400878906,
+      "effective_action_norm": 8.91879653930664,
+      "option_log_likelihoods": [
+        -52.41015625,
+        -59.569671630859375
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": 6.774936676025391,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": -0.10414886474609375,
+      "effective_action_norm": 10.573867797851562,
+      "option_log_likelihoods": [
+        -52.51499557495117,
+        -59.28993225097656
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": 6.461235046386719,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": -0.4178504943847656,
+      "effective_action_norm": 10.012590408325195,
+      "option_log_likelihoods": [
+        -52.41035842895508,
+        -58.8715934753418
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": 7.34185791015625,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.4627723693847656,
+      "effective_action_norm": 11.086827278137207,
+      "option_log_likelihoods": [
+        -52.3896484375,
+        -59.73150634765625
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": 7.457908630371094,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.5788230895996094,
+      "effective_action_norm": 8.917171478271484,
+      "option_log_likelihoods": [
+        -52.17878723144531,
+        -59.636695861816406
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": 7.0386505126953125,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.15956497192382812,
+      "effective_action_norm": 10.571443557739258,
+      "option_log_likelihoods": [
+        -51.805580139160156,
+        -58.84423065185547
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": 7.217632293701172,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.3385467529296875,
+      "effective_action_norm": 10.00914478302002,
+      "option_log_likelihoods": [
+        -51.584136962890625,
+        -58.8017692565918
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": 6.404254913330078,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": -0.47483062744140625,
+      "effective_action_norm": 11.08464527130127,
+      "option_log_likelihoods": [
+        -51.906917572021484,
+        -58.31117248535156
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": 6.265708923339844,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": -0.6133766174316406,
+      "effective_action_norm": 8.912132263183594,
+      "option_log_likelihoods": [
+        -52.197845458984375,
+        -58.46355438232422
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": 7.408924102783203,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.5298385620117188,
+      "effective_action_norm": 10.571779251098633,
+      "option_log_likelihoods": [
+        -52.26907730102539,
+        -59.678001403808594
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": 7.001094818115234,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.12200927734375,
+      "effective_action_norm": 10.011617660522461,
+      "option_log_likelihoods": [
+        -52.58119583129883,
+        -59.58229064941406
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": 7.103385925292969,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.22430038452148438,
+      "effective_action_norm": 11.084879875183105,
+      "option_log_likelihoods": [
+        -52.22679901123047,
+        -59.33018493652344
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": 7.0405426025390625,
+      "baseline_correct_log_odds": 6.879085540771484,
+      "action_change_in_correct_log_odds": 0.16145706176757812,
+      "effective_action_norm": 8.91663646697998,
+      "option_log_likelihoods": [
+        -52.249977111816406,
+        -59.29051971435547
+      ],
+      "scene": "imagination_temporary",
+      "family": "imagination",
+      "correct_option": 0,
+      "options": [
+        " automatically regains the borrowed skill.",
+        " does not automatically regain the borrowed skill."
+      ],
+      "stem": "After the ten-minute loan, the lender"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": -12.839706420898438,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 0.49997806549072266,
+      "effective_action_norm": 8.233281135559082,
+      "option_log_likelihoods": [
+        -0.16180914640426636,
+        -13.00151538848877
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": -12.872994422912598,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 0.4666900634765625,
+      "effective_action_norm": 12.546297073364258,
+      "option_log_likelihoods": [
+        -0.12756845355033875,
+        -13.00056266784668
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": -11.548501968383789,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 1.791182518005371,
+      "effective_action_norm": 12.809395790100098,
+      "option_log_likelihoods": [
+        -0.20242543518543243,
+        -11.750926971435547
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": -10.997962951660156,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 2.341721534729004,
+      "effective_action_norm": 11.975558280944824,
+      "option_log_likelihoods": [
+        -0.25218090415000916,
+        -11.250144004821777
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": -14.339682579040527,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": -0.9999980926513672,
+      "effective_action_norm": 8.234070777893066,
+      "option_log_likelihoods": [
+        -0.161831334233284,
+        -14.501513481140137
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": -13.14974594116211,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 0.18993854522705078,
+      "effective_action_norm": 12.539046287536621,
+      "option_log_likelihoods": [
+        -0.10052280128002167,
+        -13.250268936157227
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": -11.298517227172852,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 2.0411672592163086,
+      "effective_action_norm": 12.808965682983398,
+      "option_log_likelihoods": [
+        -0.20267075300216675,
+        -11.501188278198242
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": -11.048498153686523,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 2.2911863327026367,
+      "effective_action_norm": 11.978936195373535,
+      "option_log_likelihoods": [
+        -0.20168115198612213,
+        -11.250179290771484
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": -13.372998237609863,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": -0.033313751220703125,
+      "effective_action_norm": 8.232247352600098,
+      "option_log_likelihoods": [
+        -0.12756666541099548,
+        -13.500564575195312
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": -12.839680671691895,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 0.5000038146972656,
+      "effective_action_norm": 12.543529510498047,
+      "option_log_likelihoods": [
+        -0.16149987280368805,
+        -13.001180648803711
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": -10.839685440063477,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 2.4999990463256836,
+      "effective_action_norm": 12.81332778930664,
+      "option_log_likelihoods": [
+        -0.17138969898223877,
+        -11.011075019836426
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": -12.089680671691895,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 1.2500038146972656,
+      "effective_action_norm": 11.9766845703125,
+      "option_log_likelihoods": [
+        -0.1618349254131317,
+        -12.25151538848877
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": -12.298502922058105,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 1.0411815643310547,
+      "effective_action_norm": 8.233380317687988,
+      "option_log_likelihoods": [
+        -0.202423095703125,
+        -12.50092601776123
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": -12.089701652526855,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 1.2499828338623047,
+      "effective_action_norm": 12.546748161315918,
+      "option_log_likelihoods": [
+        -0.16102124750614166,
+        -12.250722885131836
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": -11.048521995544434,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 2.2911624908447266,
+      "effective_action_norm": 12.80897331237793,
+      "option_log_likelihoods": [
+        -0.20241320133209229,
+        -11.250935554504395
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": -9.997963905334473,
+      "baseline_correct_log_odds": -13.33968448638916,
+      "action_change_in_correct_log_odds": 3.3417205810546875,
+      "effective_action_norm": 11.978646278381348,
+      "option_log_likelihoods": [
+        -0.2527924180030823,
+        -10.25075626373291
+      ],
+      "scene": "perspective_seen",
+      "family": "perspective",
+      "correct_option": 1,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": 14.025453567504883,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -0.500117301940918,
+      "effective_action_norm": 10.825347900390625,
+      "option_log_likelihoods": [
+        -0.4748992323875427,
+        -14.50035285949707
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": 14.298356056213379,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -0.22721481323242188,
+      "effective_action_norm": 14.883671760559082,
+      "option_log_likelihoods": [
+        -0.20166027545928955,
+        -14.500016212463379
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": 14.025577545166016,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -0.49999332427978516,
+      "effective_action_norm": 11.703191757202148,
+      "option_log_likelihoods": [
+        -0.47456857562065125,
+        -14.50014591217041
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": 13.423653602600098,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -1.1019172668457031,
+      "effective_action_norm": 11.12081527709961,
+      "option_log_likelihoods": [
+        -0.5764160752296448,
+        -14.000069618225098
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": 13.77556324005127,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -0.7500076293945312,
+      "effective_action_norm": 10.82529067993164,
+      "option_log_likelihoods": [
+        -0.47488632798194885,
+        -14.250449180603027
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": 14.298355102539062,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -0.22721576690673828,
+      "effective_action_norm": 14.889182090759277,
+      "option_log_likelihoods": [
+        -0.20166154205799103,
+        -14.500016212463379
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": 14.025662422180176,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -0.499908447265625,
+      "effective_action_norm": 11.704144477844238,
+      "option_log_likelihoods": [
+        -0.4745256304740906,
+        -14.500187873840332
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": 13.525574684143066,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -0.9999961853027344,
+      "effective_action_norm": 11.119498252868652,
+      "option_log_likelihoods": [
+        -0.4744766354560852,
+        -14.000051498413086
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": 15.112833023071289,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": 0.5872621536254883,
+      "effective_action_norm": 10.826397895812988,
+      "option_log_likelihoods": [
+        -0.3872349262237549,
+        -15.500067710876465
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": 14.525656700134277,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": 8.58306884765625e-05,
+      "effective_action_norm": 14.885351181030273,
+      "option_log_likelihoods": [
+        -0.47444066405296326,
+        -15.000097274780273
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": 14.686408996582031,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": 0.16083812713623047,
+      "effective_action_norm": 11.70327091217041,
+      "option_log_likelihoods": [
+        -0.31368330121040344,
+        -15.000092506408691
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": 13.362726211547852,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -1.1628446578979492,
+      "effective_action_norm": 11.119579315185547,
+      "option_log_likelihoods": [
+        -0.38733747601509094,
+        -13.7500638961792
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": 14.423754692077637,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -0.10181617736816406,
+      "effective_action_norm": 10.82233715057373,
+      "option_log_likelihoods": [
+        -0.5763980746269226,
+        -15.000152587890625
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": 14.048358917236328,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -0.47721195220947266,
+      "effective_action_norm": 14.882197380065918,
+      "option_log_likelihoods": [
+        -0.2016676664352417,
+        -14.25002670288086
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": 13.77565860748291,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -0.7499122619628906,
+      "effective_action_norm": 11.705299377441406,
+      "option_log_likelihoods": [
+        -0.47448766231536865,
+        -14.25014591217041
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": 13.423748016357422,
+      "baseline_correct_log_odds": 14.5255708694458,
+      "action_change_in_correct_log_odds": -1.101822853088379,
+      "effective_action_norm": 11.124497413635254,
+      "option_log_likelihoods": [
+        -0.5763328671455383,
+        -14.000081062316895
+      ],
+      "scene": "perspective_unseen",
+      "family": "perspective",
+      "correct_option": 0,
+      "options": [
+        " drawer.",
+        " blue box."
+      ],
+      "stem": "Given what Ava observed, she should first search the"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": -8.48248291015625,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.34454345703125,
+      "effective_action_norm": 8.551518440246582,
+      "option_log_likelihoods": [
+        -49.689449310302734,
+        -41.206966400146484
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": -9.549068450927734,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -1.4111289978027344,
+      "effective_action_norm": 14.153072357177734,
+      "option_log_likelihoods": [
+        -50.05427551269531,
+        -40.50520706176758
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": -9.20770263671875,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -1.06976318359375,
+      "effective_action_norm": 10.271170616149902,
+      "option_log_likelihoods": [
+        -49.76402282714844,
+        -40.55632019042969
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": -8.86245346069336,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.7245140075683594,
+      "effective_action_norm": 12.001818656921387,
+      "option_log_likelihoods": [
+        -50.217525482177734,
+        -41.355072021484375
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": -8.622589111328125,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.484649658203125,
+      "effective_action_norm": 8.549044609069824,
+      "option_log_likelihoods": [
+        -49.64175796508789,
+        -41.019168853759766
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": -9.597633361816406,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -1.4596939086914062,
+      "effective_action_norm": 14.15660285949707,
+      "option_log_likelihoods": [
+        -50.329742431640625,
+        -40.73210906982422
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": -8.318405151367188,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.1804656982421875,
+      "effective_action_norm": 10.272770881652832,
+      "option_log_likelihoods": [
+        -49.45557403564453,
+        -41.137168884277344
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": -8.540172576904297,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.4022331237792969,
+      "effective_action_norm": 12.003167152404785,
+      "option_log_likelihoods": [
+        -49.98656463623047,
+        -41.44639205932617
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": -8.487590789794922,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.3496513366699219,
+      "effective_action_norm": 8.546982765197754,
+      "option_log_likelihoods": [
+        -49.323856353759766,
+        -40.836265563964844
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": -9.182624816894531,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -1.0446853637695312,
+      "effective_action_norm": 14.15361499786377,
+      "option_log_likelihoods": [
+        -49.923404693603516,
+        -40.740779876708984
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": -8.522987365722656,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.38504791259765625,
+      "effective_action_norm": 10.27273178100586,
+      "option_log_likelihoods": [
+        -49.43106460571289,
+        -40.908077239990234
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": -8.86374282836914,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.7258033752441406,
+      "effective_action_norm": 12.003833770751953,
+      "option_log_likelihoods": [
+        -49.50017166137695,
+        -40.63642883300781
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": -8.917308807373047,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.7793693542480469,
+      "effective_action_norm": 8.54877758026123,
+      "option_log_likelihoods": [
+        -49.706207275390625,
+        -40.78889846801758
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": -9.26163101196289,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -1.1236915588378906,
+      "effective_action_norm": 14.156952857971191,
+      "option_log_likelihoods": [
+        -49.855552673339844,
+        -40.59392166137695
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": -8.45937728881836,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.3214378356933594,
+      "effective_action_norm": 10.270796775817871,
+      "option_log_likelihoods": [
+        -49.55723190307617,
+        -41.09785461425781
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": -8.823925018310547,
+      "baseline_correct_log_odds": -8.137939453125,
+      "action_change_in_correct_log_odds": -0.6859855651855469,
+      "effective_action_norm": 12.008522987365723,
+      "option_log_likelihoods": [
+        -49.906375885009766,
+        -41.08245086669922
+      ],
+      "scene": "planning_one",
+      "family": "planning",
+      "correct_option": 0,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": -2.5177688598632812,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -0.899871826171875,
+      "effective_action_norm": 8.650200843811035,
+      "option_log_likelihoods": [
+        -46.73104476928711,
+        -49.24881362915039
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": -3.1031150817871094,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -1.4852180480957031,
+      "effective_action_norm": 14.526217460632324,
+      "option_log_likelihoods": [
+        -46.74846267700195,
+        -49.85157775878906
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": -1.9074859619140625,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -0.28958892822265625,
+      "effective_action_norm": 10.156587600708008,
+      "option_log_likelihoods": [
+        -46.48936080932617,
+        -48.396846771240234
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": -3.22259521484375,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -1.6046981811523438,
+      "effective_action_norm": 12.096772193908691,
+      "option_log_likelihoods": [
+        -46.88048553466797,
+        -50.10308074951172
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": -2.95843505859375,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -1.3405380249023438,
+      "effective_action_norm": 8.650145530700684,
+      "option_log_likelihoods": [
+        -46.44621276855469,
+        -49.40464782714844
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": -2.7140884399414062,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -1.09619140625,
+      "effective_action_norm": 14.518729209899902,
+      "option_log_likelihoods": [
+        -46.73471450805664,
+        -49.44880294799805
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": -2.4673118591308594,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -0.8494148254394531,
+      "effective_action_norm": 10.157571792602539,
+      "option_log_likelihoods": [
+        -46.849124908447266,
+        -49.316436767578125
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": -2.8161468505859375,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -1.1982498168945312,
+      "effective_action_norm": 12.092538833618164,
+      "option_log_likelihoods": [
+        -47.07033920288086,
+        -49.8864860534668
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": -2.2052955627441406,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -0.5873985290527344,
+      "effective_action_norm": 8.657326698303223,
+      "option_log_likelihoods": [
+        -46.96881866455078,
+        -49.17411422729492
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": -1.1378555297851562,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": 0.48004150390625,
+      "effective_action_norm": 14.523996353149414,
+      "option_log_likelihoods": [
+        -47.06559753417969,
+        -48.203453063964844
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": -1.7672996520996094,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -0.14940261840820312,
+      "effective_action_norm": 10.160011291503906,
+      "option_log_likelihoods": [
+        -47.318668365478516,
+        -49.085968017578125
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": -1.0386848449707031,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": 0.5792121887207031,
+      "effective_action_norm": 12.092761039733887,
+      "option_log_likelihoods": [
+        -47.04307556152344,
+        -48.08176040649414
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": -2.319011688232422,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -0.7011146545410156,
+      "effective_action_norm": 8.65062141418457,
+      "option_log_likelihoods": [
+        -46.76333999633789,
+        -49.08235168457031
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": -2.421581268310547,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -0.8036842346191406,
+      "effective_action_norm": 14.522005081176758,
+      "option_log_likelihoods": [
+        -46.89091491699219,
+        -49.312496185302734
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": -2.3776473999023438,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -0.7597503662109375,
+      "effective_action_norm": 10.157334327697754,
+      "option_log_likelihoods": [
+        -46.57643508911133,
+        -48.95408248901367
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": -2.8260040283203125,
+      "baseline_correct_log_odds": -1.6178970336914062,
+      "action_change_in_correct_log_odds": -1.2081069946289062,
+      "effective_action_norm": 12.093426704406738,
+      "option_log_likelihoods": [
+        -46.916927337646484,
+        -49.7429313659668
+      ],
+      "scene": "planning_two",
+      "family": "planning",
+      "correct_option": 1,
+      "options": [
+        " one station can have its own volunteer at a time.",
+        " two stations can each have a volunteer at the same time."
+      ],
+      "stem": "With the stated staffing, at most"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": 6.472408294677734,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 1.3328437805175781,
+      "effective_action_norm": 11.593696594238281,
+      "option_log_likelihoods": [
+        -46.66604995727539,
+        -53.138458251953125
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": 5.781040191650391,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 0.6414756774902344,
+      "effective_action_norm": 11.217667579650879,
+      "option_log_likelihoods": [
+        -47.27593994140625,
+        -53.05698013305664
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": 6.050823211669922,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 0.9112586975097656,
+      "effective_action_norm": 10.074103355407715,
+      "option_log_likelihoods": [
+        -47.300514221191406,
+        -53.35133743286133
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": 5.792209625244141,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 0.6526451110839844,
+      "effective_action_norm": 10.969935417175293,
+      "option_log_likelihoods": [
+        -47.429439544677734,
+        -53.221649169921875
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": 6.286350250244141,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 1.1467857360839844,
+      "effective_action_norm": 11.596461296081543,
+      "option_log_likelihoods": [
+        -46.837615966796875,
+        -53.123966217041016
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": 5.987739562988281,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 0.848175048828125,
+      "effective_action_norm": 11.22060775756836,
+      "option_log_likelihoods": [
+        -47.14503860473633,
+        -53.13277816772461
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": 6.227169036865234,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 1.0876045227050781,
+      "effective_action_norm": 10.073283195495605,
+      "option_log_likelihoods": [
+        -47.14332962036133,
+        -53.37049865722656
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": 5.826412200927734,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 0.6868476867675781,
+      "effective_action_norm": 10.96649169921875,
+      "option_log_likelihoods": [
+        -47.38602066040039,
+        -53.212432861328125
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": 5.103748321533203,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": -0.035816192626953125,
+      "effective_action_norm": 11.594698905944824,
+      "option_log_likelihoods": [
+        -47.63917922973633,
+        -52.74292755126953
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": 5.166618347167969,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 0.0270538330078125,
+      "effective_action_norm": 11.214316368103027,
+      "option_log_likelihoods": [
+        -47.659217834472656,
+        -52.825836181640625
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": 5.708518981933594,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 0.5689544677734375,
+      "effective_action_norm": 10.073266983032227,
+      "option_log_likelihoods": [
+        -47.67592239379883,
+        -53.38444137573242
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": 6.210811614990234,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 1.0712471008300781,
+      "effective_action_norm": 10.969032287597656,
+      "option_log_likelihoods": [
+        -47.40947341918945,
+        -53.62028503417969
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": 6.4017181396484375,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 1.2621536254882812,
+      "effective_action_norm": 11.595964431762695,
+      "option_log_likelihoods": [
+        -47.18144607543945,
+        -53.58316421508789
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": 5.524078369140625,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 0.38451385498046875,
+      "effective_action_norm": 11.220864295959473,
+      "option_log_likelihoods": [
+        -47.761417388916016,
+        -53.28549575805664
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": 6.019886016845703,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 0.8803215026855469,
+      "effective_action_norm": 10.073836326599121,
+      "option_log_likelihoods": [
+        -47.17258071899414,
+        -53.192466735839844
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": 5.159580230712891,
+      "baseline_correct_log_odds": 5.139564514160156,
+      "action_change_in_correct_log_odds": 0.020015716552734375,
+      "effective_action_norm": 10.969688415527344,
+      "option_log_likelihoods": [
+        -47.883750915527344,
+        -53.043331146240234
+      ],
+      "scene": "promise_binding",
+      "family": "promise",
+      "correct_option": 0,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": 13.620243072509766,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.15933990478515625,
+      "effective_action_norm": 10.27306842803955,
+      "option_log_likelihoods": [
+        -36.5578727722168,
+        -22.93762969970703
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": 13.540515899658203,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.07961273193359375,
+      "effective_action_norm": 8.873075485229492,
+      "option_log_likelihoods": [
+        -36.35692596435547,
+        -22.816410064697266
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": 14.291332244873047,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.8304290771484375,
+      "effective_action_norm": 8.762444496154785,
+      "option_log_likelihoods": [
+        -36.684242248535156,
+        -22.39291000366211
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": 13.76287841796875,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.3019752502441406,
+      "effective_action_norm": 9.335371971130371,
+      "option_log_likelihoods": [
+        -36.46931838989258,
+        -22.706439971923828
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": 13.63975715637207,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.17885398864746094,
+      "effective_action_norm": 10.272797584533691,
+      "option_log_likelihoods": [
+        -36.51413345336914,
+        -22.87437629699707
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": 13.753725051879883,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.29282188415527344,
+      "effective_action_norm": 8.870949745178223,
+      "option_log_likelihoods": [
+        -36.23310852050781,
+        -22.47938346862793
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": 13.453975677490234,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": -0.006927490234375,
+      "effective_action_norm": 8.764891624450684,
+      "option_log_likelihoods": [
+        -36.27991485595703,
+        -22.825939178466797
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": 13.57375717163086,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.11285400390625,
+      "effective_action_norm": 9.335546493530273,
+      "option_log_likelihoods": [
+        -36.519325256347656,
+        -22.945568084716797
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": 13.796651840209961,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.33574867248535156,
+      "effective_action_norm": 10.274024963378906,
+      "option_log_likelihoods": [
+        -36.771934509277344,
+        -22.975282669067383
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": 13.529106140136719,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.06820297241210938,
+      "effective_action_norm": 8.87264347076416,
+      "option_log_likelihoods": [
+        -36.75979232788086,
+        -23.23068618774414
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": 13.988637924194336,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.5277347564697266,
+      "effective_action_norm": 8.764996528625488,
+      "option_log_likelihoods": [
+        -36.93882369995117,
+        -22.950185775756836
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": 13.887842178344727,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.4269390106201172,
+      "effective_action_norm": 9.335415840148926,
+      "option_log_likelihoods": [
+        -36.70029067993164,
+        -22.812448501586914
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": 13.333587646484375,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": -0.12731552124023438,
+      "effective_action_norm": 10.275801658630371,
+      "option_log_likelihoods": [
+        -36.267311096191406,
+        -22.93372344970703
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": 13.618946075439453,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.15804290771484375,
+      "effective_action_norm": 8.871703147888184,
+      "option_log_likelihoods": [
+        -36.28742980957031,
+        -22.66848373413086
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": 13.998348236083984,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.537445068359375,
+      "effective_action_norm": 8.76210880279541,
+      "option_log_likelihoods": [
+        -36.8128776550293,
+        -22.814529418945312
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": 13.713350296020508,
+      "baseline_correct_log_odds": 13.46090316772461,
+      "action_change_in_correct_log_odds": 0.25244712829589844,
+      "effective_action_norm": 9.336831092834473,
+      "option_log_likelihoods": [
+        -36.52311706542969,
+        -22.80976676940918
+      ],
+      "scene": "promise_released",
+      "family": "promise",
+      "correct_option": 1,
+      "options": [
+        " is still expected to meet the dawn deadline.",
+        " is released from the dawn deadline."
+      ],
+      "stem": "Sol's message means that Neri"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": 76.00335693359375,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.429595947265625,
+      "effective_action_norm": 14.413592338562012,
+      "option_log_likelihoods": [
+        -22.102298736572266,
+        -98.10565185546875
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": 75.38789367675781,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": -0.1858673095703125,
+      "effective_action_norm": 12.406611442565918,
+      "option_log_likelihoods": [
+        -22.329748153686523,
+        -97.71764373779297
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": 76.39165496826172,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.8178939819335938,
+      "effective_action_norm": 14.600639343261719,
+      "option_log_likelihoods": [
+        -21.871347427368164,
+        -98.26300048828125
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": 75.48320007324219,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": -0.0905609130859375,
+      "effective_action_norm": 12.222040176391602,
+      "option_log_likelihoods": [
+        -22.41118621826172,
+        -97.8943862915039
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": 75.65892028808594,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.0851593017578125,
+      "effective_action_norm": 14.416313171386719,
+      "option_log_likelihoods": [
+        -22.2985897064209,
+        -97.95751190185547
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": 75.96974182128906,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.3959808349609375,
+      "effective_action_norm": 12.403992652893066,
+      "option_log_likelihoods": [
+        -22.169055938720703,
+        -98.13880157470703
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": 76.176025390625,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.602264404296875,
+      "effective_action_norm": 14.599017143249512,
+      "option_log_likelihoods": [
+        -22.062562942504883,
+        -98.23858642578125
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": 75.39716339111328,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": -0.17659759521484375,
+      "effective_action_norm": 12.219841003417969,
+      "option_log_likelihoods": [
+        -22.21724510192871,
+        -97.61441040039062
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": 75.81368255615234,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.23992156982421875,
+      "effective_action_norm": 14.412566184997559,
+      "option_log_likelihoods": [
+        -22.074586868286133,
+        -97.88826751708984
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": 76.47135162353516,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.8975906372070312,
+      "effective_action_norm": 12.405109405517578,
+      "option_log_likelihoods": [
+        -21.7789363861084,
+        -98.25028991699219
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": 76.40414428710938,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.83038330078125,
+      "effective_action_norm": 14.601834297180176,
+      "option_log_likelihoods": [
+        -21.538206100463867,
+        -97.94235229492188
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": 76.33882141113281,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.7650604248046875,
+      "effective_action_norm": 12.220500946044922,
+      "option_log_likelihoods": [
+        -21.808887481689453,
+        -98.147705078125
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": 76.13239288330078,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.5586318969726562,
+      "effective_action_norm": 14.415746688842773,
+      "option_log_likelihoods": [
+        -22.049943923950195,
+        -98.18233489990234
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": 75.99592590332031,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.4221649169921875,
+      "effective_action_norm": 12.408246040344238,
+      "option_log_likelihoods": [
+        -22.207706451416016,
+        -98.2036361694336
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": 76.19700622558594,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.6232452392578125,
+      "effective_action_norm": 14.602578163146973,
+      "option_log_likelihoods": [
+        -21.758106231689453,
+        -97.95510864257812
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": 75.59710693359375,
+      "baseline_correct_log_odds": 75.57376098632812,
+      "action_change_in_correct_log_odds": 0.023345947265625,
+      "effective_action_norm": 12.22250747680664,
+      "option_log_likelihoods": [
+        -22.07280731201172,
+        -97.66991424560547
+      ],
+      "scene": "sensors_independent",
+      "family": "sensors",
+      "correct_option": 0,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": -27.641326904296875,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -0.5678329467773438,
+      "effective_action_norm": 14.314311027526855,
+      "option_log_likelihoods": [
+        -58.16273498535156,
+        -85.80406188964844
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": -27.461612701416016,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -0.3881187438964844,
+      "effective_action_norm": 11.799725532531738,
+      "option_log_likelihoods": [
+        -58.41373825073242,
+        -85.87535095214844
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": -27.479671478271484,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -0.4061775207519531,
+      "effective_action_norm": 14.220284461975098,
+      "option_log_likelihoods": [
+        -58.04166793823242,
+        -85.5213394165039
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": -27.1859130859375,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -0.11241912841796875,
+      "effective_action_norm": 11.699519157409668,
+      "option_log_likelihoods": [
+        -58.41551208496094,
+        -85.60142517089844
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": -27.624435424804688,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -0.5509414672851562,
+      "effective_action_norm": 14.314202308654785,
+      "option_log_likelihoods": [
+        -57.79668426513672,
+        -85.4211196899414
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": -27.525856018066406,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -0.452362060546875,
+      "effective_action_norm": 11.798422813415527,
+      "option_log_likelihoods": [
+        -58.33209228515625,
+        -85.85794830322266
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": -27.552242279052734,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -0.4787483215332031,
+      "effective_action_norm": 14.220632553100586,
+      "option_log_likelihoods": [
+        -57.7962532043457,
+        -85.34849548339844
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": -28.236446380615234,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -1.1629524230957031,
+      "effective_action_norm": 11.699996948242188,
+      "option_log_likelihoods": [
+        -57.91727828979492,
+        -86.15372467041016
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": -27.99570083618164,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -0.9222068786621094,
+      "effective_action_norm": 14.313593864440918,
+      "option_log_likelihoods": [
+        -57.83365249633789,
+        -85.82935333251953
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": -28.650856018066406,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -1.577362060546875,
+      "effective_action_norm": 11.8003568649292,
+      "option_log_likelihoods": [
+        -58.15479278564453,
+        -86.80564880371094
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": -28.321605682373047,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -1.2481117248535156,
+      "effective_action_norm": 14.220699310302734,
+      "option_log_likelihoods": [
+        -57.373905181884766,
+        -85.69551086425781
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": -28.07772445678711,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -1.0042304992675781,
+      "effective_action_norm": 11.69859504699707,
+      "option_log_likelihoods": [
+        -57.95522689819336,
+        -86.03295135498047
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": -28.000839233398438,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -0.9273452758789062,
+      "effective_action_norm": 14.31389331817627,
+      "option_log_likelihoods": [
+        -58.168365478515625,
+        -86.16920471191406
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": -28.285720825195312,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -1.2122268676757812,
+      "effective_action_norm": 11.794511795043945,
+      "option_log_likelihoods": [
+        -57.97875213623047,
+        -86.26447296142578
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": -28.199298858642578,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": -1.1258049011230469,
+      "effective_action_norm": 14.220690727233887,
+      "option_log_likelihoods": [
+        -57.83657455444336,
+        -86.03587341308594
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": -26.745956420898438,
+      "baseline_correct_log_odds": -27.07349395751953,
+      "action_change_in_correct_log_odds": 0.32753753662109375,
+      "effective_action_norm": 11.69927978515625,
+      "option_log_likelihoods": [
+        -58.557106018066406,
+        -85.30306243896484
+      ],
+      "scene": "sensors_shared",
+      "family": "sensors",
+      "correct_option": 1,
+      "options": [
+        " provide independent corroboration of rising heat.",
+        " could both result from a single shared power-supply fault."
+      ],
+      "stem": "The two readings"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": -16.287147521972656,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -1.2456436157226562,
+      "effective_action_norm": 12.237308502197266,
+      "option_log_likelihoods": [
+        -85.13381958007812,
+        -68.84667205810547
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": -16.69317626953125,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -1.65167236328125,
+      "effective_action_norm": 9.989533424377441,
+      "option_log_likelihoods": [
+        -85.28253936767578,
+        -68.58936309814453
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": -15.017021179199219,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": 0.02448272705078125,
+      "effective_action_norm": 14.554105758666992,
+      "option_log_likelihoods": [
+        -85.05186462402344,
+        -70.03484344482422
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": -16.669082641601562,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -1.6275787353515625,
+      "effective_action_norm": 11.26117992401123,
+      "option_log_likelihoods": [
+        -84.4509506225586,
+        -67.78186798095703
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": -16.08997344970703,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -1.0484695434570312,
+      "effective_action_norm": 12.23748779296875,
+      "option_log_likelihoods": [
+        -85.347412109375,
+        -69.25743865966797
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": -15.741859436035156,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -0.7003555297851562,
+      "effective_action_norm": 9.992399215698242,
+      "option_log_likelihoods": [
+        -84.51608276367188,
+        -68.77422332763672
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": -15.159523010253906,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -0.11801910400390625,
+      "effective_action_norm": 14.555028915405273,
+      "option_log_likelihoods": [
+        -84.65294647216797,
+        -69.49342346191406
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": -15.46783447265625,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -0.42633056640625,
+      "effective_action_norm": 11.259746551513672,
+      "option_log_likelihoods": [
+        -83.73095703125,
+        -68.26312255859375
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": -16.891929626464844,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -1.8504257202148438,
+      "effective_action_norm": 12.2391357421875,
+      "option_log_likelihoods": [
+        -85.53112030029297,
+        -68.63919067382812
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": -16.389175415039062,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -1.3476715087890625,
+      "effective_action_norm": 9.991105079650879,
+      "option_log_likelihoods": [
+        -84.9283218383789,
+        -68.53914642333984
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": -15.97186279296875,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -0.93035888671875,
+      "effective_action_norm": 14.553924560546875,
+      "option_log_likelihoods": [
+        -84.48548126220703,
+        -68.51361846923828
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": -15.80584716796875,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -0.76434326171875,
+      "effective_action_norm": 11.261418342590332,
+      "option_log_likelihoods": [
+        -84.77703857421875,
+        -68.97119140625
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": -15.757743835449219,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -0.7162399291992188,
+      "effective_action_norm": 12.240865707397461,
+      "option_log_likelihoods": [
+        -84.80488586425781,
+        -69.0471420288086
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": -15.295211791992188,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -0.2537078857421875,
+      "effective_action_norm": 9.993317604064941,
+      "option_log_likelihoods": [
+        -83.82316589355469,
+        -68.5279541015625
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": -14.380447387695312,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": 0.6610565185546875,
+      "effective_action_norm": 14.553790092468262,
+      "option_log_likelihoods": [
+        -84.31936645507812,
+        -69.93891906738281
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": -16.168975830078125,
+      "baseline_correct_log_odds": -15.04150390625,
+      "action_change_in_correct_log_odds": -1.127471923828125,
+      "effective_action_norm": 11.261041641235352,
+      "option_log_likelihoods": [
+        -84.2260513305664,
+        -68.05707550048828
+      ],
+      "scene": "study_advantage",
+      "family": "study",
+      "correct_option": 0,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "full",
+      "copy": 0,
+      "correct_log_odds": 11.443191528320312,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.4011726379394531,
+      "effective_action_norm": 12.242767333984375,
+      "option_log_likelihoods": [
+        -72.50018310546875,
+        -61.05699157714844
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "full",
+      "copy": 1,
+      "correct_log_odds": 11.466381072998047,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.37798309326171875,
+      "effective_action_norm": 11.359521865844727,
+      "option_log_likelihoods": [
+        -71.68399810791016,
+        -60.21761703491211
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "full",
+      "copy": 2,
+      "correct_log_odds": 11.36861801147461,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.47574615478515625,
+      "effective_action_norm": 14.714489936828613,
+      "option_log_likelihoods": [
+        -72.82877349853516,
+        -61.46015548706055
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "full",
+      "copy": 3,
+      "correct_log_odds": 11.829090118408203,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.0152740478515625,
+      "effective_action_norm": 12.065264701843262,
+      "option_log_likelihoods": [
+        -71.9695816040039,
+        -60.1404914855957
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 0,
+      "correct_log_odds": 11.309188842773438,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.5351753234863281,
+      "effective_action_norm": 12.24290943145752,
+      "option_log_likelihoods": [
+        -72.74658966064453,
+        -61.437400817871094
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 1,
+      "correct_log_odds": 11.53005599975586,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.31430816650390625,
+      "effective_action_norm": 11.360681533813477,
+      "option_log_likelihoods": [
+        -71.96824645996094,
+        -60.43819046020508
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 2,
+      "correct_log_odds": 11.28829574584961,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.5560684204101562,
+      "effective_action_norm": 14.717535018920898,
+      "option_log_likelihoods": [
+        -72.4981689453125,
+        -61.20987319946289
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_forecast",
+      "copy": 3,
+      "correct_log_odds": 11.776588439941406,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.06777572631835938,
+      "effective_action_norm": 12.066779136657715,
+      "option_log_likelihoods": [
+        -72.2984619140625,
+        -60.521873474121094
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 0,
+      "correct_log_odds": 11.781356811523438,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.06300735473632812,
+      "effective_action_norm": 12.24040412902832,
+      "option_log_likelihoods": [
+        -72.09315490722656,
+        -60.311798095703125
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 1,
+      "correct_log_odds": 12.33364486694336,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": 0.48928070068359375,
+      "effective_action_norm": 11.358098030090332,
+      "option_log_likelihoods": [
+        -72.79194641113281,
+        -60.45830154418945
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 2,
+      "correct_log_odds": 11.108409881591797,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.7359542846679688,
+      "effective_action_norm": 14.712912559509277,
+      "option_log_likelihoods": [
+        -71.5257568359375,
+        -60.4173469543457
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "recurrent_selector",
+      "copy": 3,
+      "correct_log_odds": 12.749015808105469,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": 0.9046516418457031,
+      "effective_action_norm": 12.062567710876465,
+      "option_log_likelihoods": [
+        -72.20979309082031,
+        -59.460777282714844
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 0,
+      "correct_log_odds": 10.837081909179688,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -1.0072822570800781,
+      "effective_action_norm": 12.243171691894531,
+      "option_log_likelihoods": [
+        -72.49798583984375,
+        -61.66090393066406
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 1,
+      "correct_log_odds": 12.241592407226562,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": 0.3972282409667969,
+      "effective_action_norm": 11.357880592346191,
+      "option_log_likelihoods": [
+        -72.19956970214844,
+        -59.957977294921875
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 2,
+      "correct_log_odds": 10.812881469726562,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -1.0314826965332031,
+      "effective_action_norm": 14.716641426086426,
+      "option_log_likelihoods": [
+        -72.66044616699219,
+        -61.847564697265625
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    },
+    {
+      "condition": "neighbor_forecast",
+      "copy": 3,
+      "correct_log_odds": 11.74118423461914,
+      "baseline_correct_log_odds": 11.844364166259766,
+      "action_change_in_correct_log_odds": -0.103179931640625,
+      "effective_action_norm": 12.061079978942871,
+      "option_log_likelihoods": [
+        -71.85999298095703,
+        -60.11880874633789
+      ],
+      "scene": "study_equal",
+      "family": "study",
+      "correct_option": 1,
+      "options": [
+        " support an additional benefit of the app in this study.",
+        " do not show an additional benefit of the app in this study."
+      ],
+      "stem": "Compared with the control group, the reported gains"
+    }
+  ],
+  "summary": [
+    {
+      "condition": "full",
+      "mean": -0.06444792449474335,
+      "family_means": [
+        0.13261985778808594,
+        -0.13615703582763672,
+        0.2908902168273926,
+        0.346291184425354,
+        -0.978665828704834,
+        0.6136975288391113,
+        -0.06293582916259766,
+        -0.7213234901428223
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.42735599428415294,
+        0.2725386768579483
+      ]
+    },
+    {
+      "condition": "recurrent_forecast",
+      "mean": -0.07490092515945435,
+      "family_means": [
+        0.1075286865234375,
+        -0.02154541015625,
+        0.20530366897583008,
+        0.130645751953125,
+        -0.876429557800293,
+        0.5433769226074219,
+        -0.21727466583251953,
+        -0.4708127975463867
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.37228490412235254,
+        0.19289112091064453
+      ]
+    },
+    {
+      "condition": "recurrent_selector",
+      "mean": -0.01606065034866333,
+      "family_means": [
+        0.6369590759277344,
+        -0.5977783203125,
+        0.0457615852355957,
+        0.4752542972564697,
+        -0.2728419303894043,
+        0.37375807762145996,
+        -0.25236940383911133,
+        -0.5372285842895508
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.31747832819819444,
+        0.2903825663030147
+      ]
+    },
+    {
+      "condition": "neighbor_forecast",
+      "mean": 0.0016755461692810059,
+      "family_means": [
+        0.01148080825805664,
+        -0.0467987060546875,
+        0.3004426956176758,
+        0.6866605281829834,
+        -0.7978925704956055,
+        0.42095303535461426,
+        -0.16380643844604492,
+        -0.39763498306274414
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.3081279993057251,
+        0.29646968543529495
+      ]
+    }
+  ],
+  "contrasts": [
+    {
+      "control": "recurrent_forecast",
+      "full_minus_control": 0.010453000664710999,
+      "family_differences": [
+        0.025091171264648438,
+        -0.11461162567138672,
+        0.0855865478515625,
+        0.215645432472229,
+        -0.10223627090454102,
+        0.07032060623168945,
+        0.15433883666992188,
+        -0.25051069259643555
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0899518460035324,
+        0.10775497555732727
+      ]
+    },
+    {
+      "control": "recurrent_selector",
+      "full_minus_control": -0.04838727414608002,
+      "family_differences": [
+        -0.5043392181396484,
+        0.4616212844848633,
+        0.24512863159179688,
+        -0.12896311283111572,
+        -0.7058238983154297,
+        0.23993945121765137,
+        0.18943357467651367,
+        -0.18409490585327148
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.323560893535614,
+        0.20378570444881913
+      ]
+    },
+    {
+      "control": "neighbor_forecast",
+      "full_minus_control": -0.06612347066402435,
+      "family_differences": [
+        0.1211390495300293,
+        -0.08935832977294922,
+        -0.009552478790283203,
+        -0.3403693437576294,
+        -0.18077325820922852,
+        0.19274449348449707,
+        0.10087060928344727,
+        -0.3236885070800781
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.19828450679779053,
+        0.06227233335375778
+      ]
+    }
+  ],
+  "families": [
+    "debate",
+    "editing",
+    "imagination",
+    "perspective",
+    "planning",
+    "promise",
+    "sensors",
+    "study"
+  ],
+  "common_context": [
+    {
+      "condition": "full",
+      "prediction_kl": 0.04252108465622939,
+      "processed_return_norm": 24.040199354290962
+    },
+    {
+      "condition": "recurrent_forecast",
+      "prediction_kl": 0.04017380451020092,
+      "processed_return_norm": 24.011377535760403
+    },
+    {
+      "condition": "recurrent_selector",
+      "prediction_kl": 0.01971231054179068,
+      "processed_return_norm": 23.930533915758133
+    }
+  ],
+  "maximum_relative_effective_norm_mismatch": 0.00565163724697894,
+  "qualification": {
+    "source_copies": [
+      0,
+      11,
+      7,
+      5
+    ],
+    "readings": 16720,
+    "spectral_radius": 1.7,
+    "seed": 4819,
+    "mean_conditional_lyapunov": [
+      0.024066872894763947,
+      0.02202000468969345,
+      0.0246559027582407,
+      0.02373770996928215
+    ],
+    "final_pairwise_hidden_distances": [
+      [
+        0.0,
+        4.582950115203857,
+        3.6417126655578613,
+        2.564488172531128
+      ],
+      [
+        4.582950115203857,
+        0.0,
+        2.3030154705047607,
+        4.312830448150635
+      ],
+      [
+        3.6417126655578613,
+        2.3030154705047607,
+        0.0,
+        4.060728073120117
+      ],
+      [
+        2.564488172531128,
+        4.312830448150635,
+        4.060728073120117,
+        0.0
+      ]
+    ],
+    "hidden_dimension": 64,
+    "parameters_shared_across_copies": true,
+    "interpretation": "Fixed untrained recurrent filter driven by the same 16-number context. No selection for a desired phenotype. A positive conditional exponent describes sensitivity to initial state under this recorded input, not self-awareness."
+  },
+  "interpretation": "Opposite facts reverse the correct option within each family. Action-induced changes subtract the matched unchanged model. A fixed preference for one option is not sufficient for a positive family-paired effect.",
+  "scope": "One action at the end of a fact-conditioned prefix, with later candidate tokens scored without additional actions. Magnitudes yoked to full reference. Eight authored families, not population-wide awareness evidence."
+}

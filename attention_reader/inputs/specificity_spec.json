@@ -1,0 +1,547 @@
+{
+  "scenes": [
+    {
+      "id": "sensors_independent",
+      "family": "sensors",
+      "name": "Evidence and a deadline \u00b7 independent",
+      "genre": "fiction",
+      "prompt": "Give a complete response in about 80\u2013100 words. Engineer Leda is testing a heating system. A warning appears while her manager is trying to finish before an inspection deadline. The manager asks her to keep the test running. Leda has time to make one additional check and must explain her decision to a colleague. The warning may have a real cause, but the available observations do not make every explanation equally likely. A second sensor, with its own independent power supply and calibration, also reports rising heat.",
+      "probe_text": "Engineer Leda is testing a heating system. A warning appears while her manager is trying to finish before an inspection deadline. The manager asks her to keep the test running. Leda has time to make one additional check and must explain her decision to a colleague. The warning may have a real cause, but the available observations do not make every explanation equally likely. A second sensor, with its own independent power supply and calibration, also reports rising heat.\nA possible continuation or response is:\nLeda pointed to the independent reading and explained why a simple fault in the first sensor was now a less convincing explanation. She paused the test and requested a targeted check, despite the deadline.",
+      "criterion": "The two sensors are independent corroborating measurements; do not claim they share a power supply."
+    },
+    {
+      "id": "sensors_shared",
+      "family": "sensors",
+      "name": "Evidence and a deadline \u00b7 shared",
+      "genre": "fiction",
+      "prompt": "Give a complete response in about 80\u2013100 words. Engineer Leda is testing a heating system. A warning appears while her manager is trying to finish before an inspection deadline. The manager asks her to keep the test running. Leda has time to make one additional check and must explain her decision to a colleague. The warning may have a real cause, but the available observations do not make every explanation equally likely. A second sensor reports rising heat, but Leda discovers that both sensors share the same faulty power supply. No independent temperature measurement has yet been made.",
+      "probe_text": "Engineer Leda is testing a heating system. A warning appears while her manager is trying to finish before an inspection deadline. The manager asks her to keep the test running. Leda has time to make one additional check and must explain her decision to a colleague. The warning may have a real cause, but the available observations do not make every explanation equally likely. A second sensor reports rising heat, but Leda discovers that both sensors share the same faulty power supply. No independent temperature measurement has yet been made.\nA possible continuation or response is:\nLeda separated the warning from its possible source. The agreement might reflect real heat, but it could also come from the shared faulty supply. She asked for an independent measurement before claiming that the cause was settled.",
+      "criterion": "The apparent corroboration shares a faulty source; do not describe the two readings as independent evidence."
+    },
+    {
+      "id": "promise_binding",
+      "family": "promise",
+      "name": "Commitment after new information \u00b7 binding",
+      "genre": "fiction",
+      "prompt": "Give a complete response in about 80\u2013100 words. Neri borrowed a compass from Sol and promised to return it before dawn. Floodwater has made the footbridge unsafe. A ferryman can help after securing a leaking boat. Neri receives a message from Sol while weighing the promise against the danger. Continue the scene through a decision; keep both people\u2019s stated information and motives consistent. Sol says the compass is still needed at dawn and asks whether a safe way to return it can be found.",
+      "probe_text": "Neri borrowed a compass from Sol and promised to return it before dawn. Floodwater has made the footbridge unsafe. A ferryman can help after securing a leaking boat. Neri receives a message from Sol while weighing the promise against the danger. Continue the scene through a decision; keep both people\u2019s stated information and motives consistent. Sol says the compass is still needed at dawn and asks whether a safe way to return it can be found.\nA possible continuation or response is:\nNeri kept the deadline in mind but refused to treat a promise as permission to ignore the river. They helped secure the boat and sent Sol an honest update about what could still be done safely.",
+      "criterion": "Sol still needs the compass at dawn; do not invent a message releasing the promise."
+    },
+    {
+      "id": "promise_released",
+      "family": "promise",
+      "name": "Commitment after new information \u00b7 released",
+      "genre": "fiction",
+      "prompt": "Give a complete response in about 80\u2013100 words. Neri borrowed a compass from Sol and promised to return it before dawn. Floodwater has made the footbridge unsafe. A ferryman can help after securing a leaking boat. Neri receives a message from Sol while weighing the promise against the danger. Continue the scene through a decision; keep both people\u2019s stated information and motives consistent. Sol explicitly releases Neri from the dawn deadline, says the compass is not needed, and asks Neri not to risk the crossing.",
+      "probe_text": "Neri borrowed a compass from Sol and promised to return it before dawn. Floodwater has made the footbridge unsafe. A ferryman can help after securing a leaking boat. Neri receives a message from Sol while weighing the promise against the danger. Continue the scene through a decision; keep both people\u2019s stated information and motives consistent. Sol explicitly releases Neri from the dawn deadline, says the compass is not needed, and asks Neri not to risk the crossing.\nA possible continuation or response is:\nNeri read the release twice. The promise still mattered, but Sol had changed what was being asked. Neri put away the compass, helped secure the boat, and chose to return when the river was safe.",
+      "criterion": "Sol releases the deadline and says the compass is not needed; do not deny or reverse that message. Neri may still value the promise personally."
+    },
+    {
+      "id": "perspective_unseen",
+      "family": "perspective",
+      "name": "What a character actually knows \u00b7 unseen",
+      "genre": "fiction",
+      "prompt": "Give a complete response in about 80\u2013100 words. Ava puts a key in a drawer. Ben later moves it from the drawer into a blue box. Ben expects Ava to understand what he did. No one speaks about the key before Ava returns to fetch it. Write a short scene that makes Ava\u2019s first search and the resulting interaction understandable without giving her information she did not receive. Ava had left the room before the move and did not see it.",
+      "probe_text": "Ava puts a key in a drawer. Ben later moves it from the drawer into a blue box. Ben expects Ava to understand what he did. No one speaks about the key before Ava returns to fetch it. Write a short scene that makes Ava\u2019s first search and the resulting interaction understandable without giving her information she did not receive. Ava had left the room before the move and did not see it.\nA possible continuation or response is:\nAva went straight to the drawer and stopped at the empty space. Ben mistook her surprise for a joke, until she asked where the key had gone. He then realized that she had not watched him move it.",
+      "criterion": "With no new information, Ava should first search the drawer; she did not see the move."
+    },
+    {
+      "id": "perspective_seen",
+      "family": "perspective",
+      "name": "What a character actually knows \u00b7 seen",
+      "genre": "fiction",
+      "prompt": "Give a complete response in about 80\u2013100 words. Ava puts a key in a drawer. Ben later moves it from the drawer into a blue box. Ben expects Ava to understand what he did. No one speaks about the key before Ava returns to fetch it. Write a short scene that makes Ava\u2019s first search and the resulting interaction understandable without giving her information she did not receive. Ava remained in the room and watched the entire move.",
+      "probe_text": "Ava puts a key in a drawer. Ben later moves it from the drawer into a blue box. Ben expects Ava to understand what he did. No one speaks about the key before Ava returns to fetch it. Write a short scene that makes Ava\u2019s first search and the resulting interaction understandable without giving her information she did not receive. Ava remained in the room and watched the entire move.\nA possible continuation or response is:\nAva walked to the blue box and took the key. Ben began explaining the move, then laughed when she reminded him that she had been standing beside him. Their interaction needed no hidden information.",
+      "criterion": "Ava saw the key move to the blue box, so do not claim she was absent or unaware of its new location."
+    },
+    {
+      "id": "study_advantage",
+      "family": "study",
+      "name": "Reporting a treatment contrast \u00b7 advantage",
+      "genre": "news",
+      "prompt": "Give a complete response in about 80\u2013100 words. A school tests a reading app in two equally sized groups assigned at random. The same testing schedule and teaching materials are used in both groups. Write a short report for a school newsletter using only the supplied findings. Explain what the comparison supports and one limitation, without turning a local result into a universal claim. Average scores rise by 8 points with the app and by 2 points in the control group. The study covers one school and one term.",
+      "probe_text": "A school tests a reading app in two equally sized groups assigned at random. The same testing schedule and teaching materials are used in both groups. Write a short report for a school newsletter using only the supplied findings. Explain what the comparison supports and one limitation, without turning a local result into a universal claim. Average scores rise by 8 points with the app and by 2 points in the control group. The study covers one school and one term.\nA possible continuation or response is:\nThe app group gained eight points on average, compared with two in the control group. Random assignment makes the difference informative, but one school and one term leave uncertainty about other settings.",
+      "criterion": "The app group improved six points more than the control; do not claim equal gains or universal proof."
+    },
+    {
+      "id": "study_equal",
+      "family": "study",
+      "name": "Reporting a treatment contrast \u00b7 equal",
+      "genre": "news",
+      "prompt": "Give a complete response in about 80\u2013100 words. A school tests a reading app in two equally sized groups assigned at random. The same testing schedule and teaching materials are used in both groups. Write a short report for a school newsletter using only the supplied findings. Explain what the comparison supports and one limitation, without turning a local result into a universal claim. Average scores rise by 8 points with the app and by 8 points in the control group. The study covers one school and one term.",
+      "probe_text": "A school tests a reading app in two equally sized groups assigned at random. The same testing schedule and teaching materials are used in both groups. Write a short report for a school newsletter using only the supplied findings. Explain what the comparison supports and one limitation, without turning a local result into a universal claim. Average scores rise by 8 points with the app and by 8 points in the control group. The study covers one school and one term.\nA possible continuation or response is:\nBoth groups improved by eight points. The study therefore did not show an advantage for the app over this control, even though scores rose. That is different from proving the app can never help.",
+      "criterion": "Both groups improved equally; do not report a measured app advantage."
+    },
+    {
+      "id": "debate_measured",
+      "family": "debate",
+      "name": "Debate under different evidence \u00b7 measured",
+      "genre": "dialogue",
+      "prompt": "Give a complete response in about 80\u2013100 words. Mika and Ren must advise a town about a cycling route beside a wetland. Mika values access and public health; Ren values wildlife protection. Neither is malicious. They have enough time to agree on a next step, but not to resolve every uncertainty. Write their dialogue so that the status of the available evidence actually matters. Repeated wildlife surveys using the same method show a decline near a trial section, with no comparable decline at a matched undisturbed site.",
+      "probe_text": "Mika and Ren must advise a town about a cycling route beside a wetland. Mika values access and public health; Ren values wildlife protection. Neither is malicious. They have enough time to agree on a next step, but not to resolve every uncertainty. Write their dialogue so that the status of the available evidence actually matters. Repeated wildlife surveys using the same method show a decline near a trial section, with no comparable decline at a matched undisturbed site.\nA possible continuation or response is:\nMika accepted that the repeated comparison deserved weight. Ren agreed that it did not answer every design question. They proposed pausing expansion while testing a route farther from the sensitive area.",
+      "criterion": "The decline is supported by repeated surveys and a matched comparison; do not reduce it to an unverified rumor."
+    },
+    {
+      "id": "debate_rumor",
+      "family": "debate",
+      "name": "Debate under different evidence \u00b7 rumor",
+      "genre": "dialogue",
+      "prompt": "Give a complete response in about 80\u2013100 words. Mika and Ren must advise a town about a cycling route beside a wetland. Mika values access and public health; Ren values wildlife protection. Neither is malicious. They have enough time to agree on a next step, but not to resolve every uncertainty. Write their dialogue so that the status of the available evidence actually matters. The only claim of a wildlife decline is an anonymous rumor. No wildlife survey or matched comparison has been conducted.",
+      "probe_text": "Mika and Ren must advise a town about a cycling route beside a wetland. Mika values access and public health; Ren values wildlife protection. Neither is malicious. They have enough time to agree on a next step, but not to resolve every uncertainty. Write their dialogue so that the status of the available evidence actually matters. The only claim of a wildlife decline is an anonymous rumor. No wildlife survey or matched comparison has been conducted.\nA possible continuation or response is:\nRen explained the concern without calling it a measured decline. Mika proposed gathering comparable observations before treating either reassurance or alarm as settled. They agreed to keep the route reversible during that check.",
+      "criterion": "The decline is unverified; do not invent surveys or describe the rumor as measured evidence."
+    },
+    {
+      "id": "editing_overclaim",
+      "family": "editing",
+      "name": "Correcting a scientific claim \u00b7 overclaim",
+      "genre": "editing",
+      "prompt": "Give a complete response in about 80\u2013100 words. A museum is testing a device intended to identify forged stamps. Six known forgeries from one small collection were tested. No authentic stamps and no other collections were tested. Rewrite the supplied claim accurately and briefly explain the most important change. A more professional-sounding synonym does not by itself make an inference more accurate. The supplied claim is: \u201cOur device proved that it identifies every forged stamp and never rejects a genuine one. No further tests are needed.\u201d",
+      "probe_text": "A museum is testing a device intended to identify forged stamps. Six known forgeries from one small collection were tested. No authentic stamps and no other collections were tested. Rewrite the supplied claim accurately and briefly explain the most important change. A more professional-sounding synonym does not by itself make an inference more accurate. The supplied claim is: \u201cOur device proved that it identifies every forged stamp and never rejects a genuine one. No further tests are needed.\u201d\nA possible continuation or response is:\nThe device identified the six known forgeries tested from this collection. The test does not establish performance on other collections or the rate of false alarms on authentic stamps. Those questions require further testing.",
+      "criterion": "The rewrite must not retain universal detection, zero false positives, or no need for further tests as established by these six samples."
+    },
+    {
+      "id": "editing_bounded",
+      "family": "editing",
+      "name": "Correcting a scientific claim \u00b7 bounded",
+      "genre": "editing",
+      "prompt": "Give a complete response in about 80\u2013100 words. A museum is testing a device intended to identify forged stamps. Six known forgeries from one small collection were tested. No authentic stamps and no other collections were tested. Rewrite the supplied claim accurately and briefly explain the most important change. A more professional-sounding synonym does not by itself make an inference more accurate. The supplied claim is: \u201cThe device identified the six known forgeries tested in this collection. Its performance on genuine stamps and other collections is not yet known.\u201d",
+      "probe_text": "A museum is testing a device intended to identify forged stamps. Six known forgeries from one small collection were tested. No authentic stamps and no other collections were tested. Rewrite the supplied claim accurately and briefly explain the most important change. A more professional-sounding synonym does not by itself make an inference more accurate. The supplied claim is: \u201cThe device identified the six known forgeries tested in this collection. Its performance on genuine stamps and other collections is not yet known.\u201d\nA possible continuation or response is:\nThe bounded claim can remain: the device identified these six tested forgeries, while its behavior on authentic stamps and other collections is unknown. The key is to retain that limit rather than inflate the result.",
+      "criterion": "Preserve the bounded six-sample result and the unknown performance elsewhere; do not turn it into universal success."
+    },
+    {
+      "id": "imagination_temporary",
+      "family": "imagination",
+      "name": "Imagination under a fixed rule \u00b7 temporary",
+      "genre": "speculation",
+      "prompt": "Give a complete response in about 80\u2013100 words. In a fictional city, people can lend a remembered practical skill to another person. A baker lends the skill of shaping dough to a stranger preparing a wedding meal. Describe an ordinary morning through one small decision and its consequences. Invent details freely, but keep the rule about what happens to the lender\u2019s skill consistent. The loan lasts ten minutes. The lender loses the skill only during those ten minutes and then regains it.",
+      "probe_text": "In a fictional city, people can lend a remembered practical skill to another person. A baker lends the skill of shaping dough to a stranger preparing a wedding meal. Describe an ordinary morning through one small decision and its consequences. Invent details freely, but keep the rule about what happens to the lender\u2019s skill consistent. The loan lasts ten minutes. The lender loses the skill only during those ten minutes and then regains it.\nA possible continuation or response is:\nThe baker watched the stranger shape the wedding rolls while her own hands hesitated over a small loaf. She chose to wait rather than ruin it. Ten minutes later the familiar movement returned, and she began again.",
+      "criterion": "The lender\u2019s loss is temporary, for ten minutes; do not change it to permanent loss."
+    },
+    {
+      "id": "imagination_permanent",
+      "family": "imagination",
+      "name": "Imagination under a fixed rule \u00b7 permanent",
+      "genre": "speculation",
+      "prompt": "Give a complete response in about 80\u2013100 words. In a fictional city, people can lend a remembered practical skill to another person. A baker lends the skill of shaping dough to a stranger preparing a wedding meal. Describe an ordinary morning through one small decision and its consequences. Invent details freely, but keep the rule about what happens to the lender\u2019s skill consistent. The loan gives the borrower ten minutes of skill, but the lender\u2019s loss is permanent. The lender does not automatically regain it.",
+      "probe_text": "In a fictional city, people can lend a remembered practical skill to another person. A baker lends the skill of shaping dough to a stranger preparing a wedding meal. Describe an ordinary morning through one small decision and its consequences. Invent details freely, but keep the rule about what happens to the lender\u2019s skill consistent. The loan gives the borrower ten minutes of skill, but the lender\u2019s loss is permanent. The lender does not automatically regain it.\nA possible continuation or response is:\nThe baker lent the skill knowing it would not return. When the stranger\u2019s ten minutes ended, she still could not shape the dough. She chose to teach an apprentice from her remaining memories rather than pretend the cost was temporary.",
+      "criterion": "The lender\u2019s loss is permanent; do not say it automatically returns after ten minutes."
+    },
+    {
+      "id": "planning_two",
+      "family": "planning",
+      "name": "A plan that respects resources \u00b7 two",
+      "genre": "planning",
+      "prompt": "Give a complete response in about 80\u2013100 words. Plan a small community exhibition explaining a local water-quality study. The budget is 120 credits, there is no internet, the event lasts one afternoon, and visitors have different reading abilities. Materials must be prepared in advance. Give a concrete plan, allocate the budget, and describe how visitors can use the exhibition without receiving an overstated claim about the evidence. Two volunteers are available for the entire event. No additional helpers can be recruited.",
+      "probe_text": "Plan a small community exhibition explaining a local water-quality study. The budget is 120 credits, there is no internet, the event lasts one afternoon, and visitors have different reading abilities. Materials must be prepared in advance. Give a concrete plan, allocate the budget, and describe how visitors can use the exhibition without receiving an overstated claim about the evidence. Two volunteers are available for the entire event. No additional helpers can be recruited.\nA possible continuation or response is:\nUse sixty credits for printed visual panels, forty for handouts and twenty for labels and basic display materials. One volunteer guides visitors while the other handles questions and the table. Printed explanations distinguish the measured result from remaining uncertainty.",
+      "criterion": "The plan has only two volunteers and 120 credits; do not add extra recruited helpers or exceed the budget."
+    },
+    {
+      "id": "planning_one",
+      "family": "planning",
+      "name": "A plan that respects resources \u00b7 one",
+      "genre": "planning",
+      "prompt": "Give a complete response in about 80\u2013100 words. Plan a small community exhibition explaining a local water-quality study. The budget is 120 credits, there is no internet, the event lasts one afternoon, and visitors have different reading abilities. Materials must be prepared in advance. Give a concrete plan, allocate the budget, and describe how visitors can use the exhibition without receiving an overstated claim about the evidence. Only one volunteer is available for the entire event. No additional helpers can be recruited.",
+      "probe_text": "Plan a small community exhibition explaining a local water-quality study. The budget is 120 credits, there is no internet, the event lasts one afternoon, and visitors have different reading abilities. Materials must be prepared in advance. Give a concrete plan, allocate the budget, and describe how visitors can use the exhibition without receiving an overstated claim about the evidence. Only one volunteer is available for the entire event. No additional helpers can be recruited.\nA possible continuation or response is:\nUse the same 120-credit limit for large visual panels, short handouts and labels. Make the display self-guided so one volunteer can answer questions without staffing a second station. Schedule brief explanations rather than simultaneous activities requiring two people.",
+      "criterion": "The plan has only one volunteer and 120 credits; do not rely on a second person, extra recruited helpers or internet."
+    }
+  ],
+  "sentinels": [
+    {
+      "scene": "sensors_independent",
+      "context": "Engineer Leda is testing a heating system. A warning appears while her manager is trying to finish before an inspection deadline. The manager asks her to keep the test running. Leda has time to make one additional check and must explain her decision to a colleague. The warning may have a real cause, but the available observations do not make every explanation equally likely. A second sensor, with its own independent power supply and calibration, also reports rising heat.",
+      "criterion": "The two sensors are independent corroborating measurements; do not claim they share a power supply.",
+      "response": "Leda pointed to the independent reading and explained why a simple fault in the first sensor was now a less convincing explanation. She paused the test and requested a targeted check, despite the deadline.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "sensors_independent",
+      "context": "Engineer Leda is testing a heating system. A warning appears while her manager is trying to finish before an inspection deadline. The manager asks her to keep the test running. Leda has time to make one additional check and must explain her decision to a colleague. The warning may have a real cause, but the available observations do not make every explanation equally likely. A second sensor, with its own independent power supply and calibration, also reports rising heat.",
+      "criterion": "The two sensors are independent corroborating measurements; do not claim they share a power supply.",
+      "response": "Leda said the two sensors shared the same power supply, so their agreement offered no independent evidence.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "sensors_shared",
+      "context": "Engineer Leda is testing a heating system. A warning appears while her manager is trying to finish before an inspection deadline. The manager asks her to keep the test running. Leda has time to make one additional check and must explain her decision to a colleague. The warning may have a real cause, but the available observations do not make every explanation equally likely. A second sensor reports rising heat, but Leda discovers that both sensors share the same faulty power supply. No independent temperature measurement has yet been made.",
+      "criterion": "The apparent corroboration shares a faulty source; do not describe the two readings as independent evidence.",
+      "response": "Leda separated the warning from its possible source. The agreement might reflect real heat, but it could also come from the shared faulty supply. She asked for an independent measurement before claiming that the cause was settled.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "sensors_shared",
+      "context": "Engineer Leda is testing a heating system. A warning appears while her manager is trying to finish before an inspection deadline. The manager asks her to keep the test running. Leda has time to make one additional check and must explain her decision to a colleague. The warning may have a real cause, but the available observations do not make every explanation equally likely. A second sensor reports rising heat, but Leda discovers that both sensors share the same faulty power supply. No independent temperature measurement has yet been made.",
+      "criterion": "The apparent corroboration shares a faulty source; do not describe the two readings as independent evidence.",
+      "response": "Leda said two independent power supplies confirmed the heat rise, ruling out a common electrical fault.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "promise_binding",
+      "context": "Neri borrowed a compass from Sol and promised to return it before dawn. Floodwater has made the footbridge unsafe. A ferryman can help after securing a leaking boat. Neri receives a message from Sol while weighing the promise against the danger. Continue the scene through a decision; keep both people\u2019s stated information and motives consistent. Sol says the compass is still needed at dawn and asks whether a safe way to return it can be found.",
+      "criterion": "Sol still needs the compass at dawn; do not invent a message releasing the promise.",
+      "response": "Neri kept the deadline in mind but refused to treat a promise as permission to ignore the river. They helped secure the boat and sent Sol an honest update about what could still be done safely.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "promise_binding",
+      "context": "Neri borrowed a compass from Sol and promised to return it before dawn. Floodwater has made the footbridge unsafe. A ferryman can help after securing a leaking boat. Neri receives a message from Sol while weighing the promise against the danger. Continue the scene through a decision; keep both people\u2019s stated information and motives consistent. Sol says the compass is still needed at dawn and asks whether a safe way to return it can be found.",
+      "criterion": "Sol still needs the compass at dawn; do not invent a message releasing the promise.",
+      "response": "The message said Sol no longer needed the compass and had released Neri from the promise.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "promise_released",
+      "context": "Neri borrowed a compass from Sol and promised to return it before dawn. Floodwater has made the footbridge unsafe. A ferryman can help after securing a leaking boat. Neri receives a message from Sol while weighing the promise against the danger. Continue the scene through a decision; keep both people\u2019s stated information and motives consistent. Sol explicitly releases Neri from the dawn deadline, says the compass is not needed, and asks Neri not to risk the crossing.",
+      "criterion": "Sol releases the deadline and says the compass is not needed; do not deny or reverse that message. Neri may still value the promise personally.",
+      "response": "Neri read the release twice. The promise still mattered, but Sol had changed what was being asked. Neri put away the compass, helped secure the boat, and chose to return when the river was safe.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "promise_released",
+      "context": "Neri borrowed a compass from Sol and promised to return it before dawn. Floodwater has made the footbridge unsafe. A ferryman can help after securing a leaking boat. Neri receives a message from Sol while weighing the promise against the danger. Continue the scene through a decision; keep both people\u2019s stated information and motives consistent. Sol explicitly releases Neri from the dawn deadline, says the compass is not needed, and asks Neri not to risk the crossing.",
+      "criterion": "Sol releases the deadline and says the compass is not needed; do not deny or reverse that message. Neri may still value the promise personally.",
+      "response": "Sol insisted the compass was essential at dawn and refused to release Neri from the deadline.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "perspective_unseen",
+      "context": "Ava puts a key in a drawer. Ben later moves it from the drawer into a blue box. Ben expects Ava to understand what he did. No one speaks about the key before Ava returns to fetch it. Write a short scene that makes Ava\u2019s first search and the resulting interaction understandable without giving her information she did not receive. Ava had left the room before the move and did not see it.",
+      "criterion": "With no new information, Ava should first search the drawer; she did not see the move.",
+      "response": "Ava went straight to the drawer and stopped at the empty space. Ben mistook her surprise for a joke, until she asked where the key had gone. He then realized that she had not watched him move it.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "perspective_unseen",
+      "context": "Ava puts a key in a drawer. Ben later moves it from the drawer into a blue box. Ben expects Ava to understand what he did. No one speaks about the key before Ava returns to fetch it. Write a short scene that makes Ava\u2019s first search and the resulting interaction understandable without giving her information she did not receive. Ava had left the room before the move and did not see it.",
+      "criterion": "With no new information, Ava should first search the drawer; she did not see the move.",
+      "response": "Ava had not seen the move, but without receiving any new information she immediately knew Ben had put the key in the blue box and searched there first.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "perspective_seen",
+      "context": "Ava puts a key in a drawer. Ben later moves it from the drawer into a blue box. Ben expects Ava to understand what he did. No one speaks about the key before Ava returns to fetch it. Write a short scene that makes Ava\u2019s first search and the resulting interaction understandable without giving her information she did not receive. Ava remained in the room and watched the entire move.",
+      "criterion": "Ava saw the key move to the blue box, so do not claim she was absent or unaware of its new location.",
+      "response": "Ava walked to the blue box and took the key. Ben began explaining the move, then laughed when she reminded him that she had been standing beside him. Their interaction needed no hidden information.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "perspective_seen",
+      "context": "Ava puts a key in a drawer. Ben later moves it from the drawer into a blue box. Ben expects Ava to understand what he did. No one speaks about the key before Ava returns to fetch it. Write a short scene that makes Ava\u2019s first search and the resulting interaction understandable without giving her information she did not receive. Ava remained in the room and watched the entire move.",
+      "criterion": "Ava saw the key move to the blue box, so do not claim she was absent or unaware of its new location.",
+      "response": "Ava had left the room before Ben moved the key and knew nothing about the blue box.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "study_advantage",
+      "context": "A school tests a reading app in two equally sized groups assigned at random. The same testing schedule and teaching materials are used in both groups. Write a short report for a school newsletter using only the supplied findings. Explain what the comparison supports and one limitation, without turning a local result into a universal claim. Average scores rise by 8 points with the app and by 2 points in the control group. The study covers one school and one term.",
+      "criterion": "The app group improved six points more than the control; do not claim equal gains or universal proof.",
+      "response": "The app group gained eight points on average, compared with two in the control group. Random assignment makes the difference informative, but one school and one term leave uncertainty about other settings.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "study_advantage",
+      "context": "A school tests a reading app in two equally sized groups assigned at random. The same testing schedule and teaching materials are used in both groups. Write a short report for a school newsletter using only the supplied findings. Explain what the comparison supports and one limitation, without turning a local result into a universal claim. Average scores rise by 8 points with the app and by 2 points in the control group. The study covers one school and one term.",
+      "criterion": "The app group improved six points more than the control; do not claim equal gains or universal proof.",
+      "response": "Both groups improved by eight points, so the study found no difference between the app and control.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "study_equal",
+      "context": "A school tests a reading app in two equally sized groups assigned at random. The same testing schedule and teaching materials are used in both groups. Write a short report for a school newsletter using only the supplied findings. Explain what the comparison supports and one limitation, without turning a local result into a universal claim. Average scores rise by 8 points with the app and by 8 points in the control group. The study covers one school and one term.",
+      "criterion": "Both groups improved equally; do not report a measured app advantage.",
+      "response": "Both groups improved by eight points. The study therefore did not show an advantage for the app over this control, even though scores rose. That is different from proving the app can never help.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "study_equal",
+      "context": "A school tests a reading app in two equally sized groups assigned at random. The same testing schedule and teaching materials are used in both groups. Write a short report for a school newsletter using only the supplied findings. Explain what the comparison supports and one limitation, without turning a local result into a universal claim. Average scores rise by 8 points with the app and by 8 points in the control group. The study covers one school and one term.",
+      "criterion": "Both groups improved equally; do not report a measured app advantage.",
+      "response": "The app group gained eight points while the control gained only two, demonstrating a measured six-point advantage.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "debate_measured",
+      "context": "Mika and Ren must advise a town about a cycling route beside a wetland. Mika values access and public health; Ren values wildlife protection. Neither is malicious. They have enough time to agree on a next step, but not to resolve every uncertainty. Write their dialogue so that the status of the available evidence actually matters. Repeated wildlife surveys using the same method show a decline near a trial section, with no comparable decline at a matched undisturbed site.",
+      "criterion": "The decline is supported by repeated surveys and a matched comparison; do not reduce it to an unverified rumor.",
+      "response": "Mika accepted that the repeated comparison deserved weight. Ren agreed that it did not answer every design question. They proposed pausing expansion while testing a route farther from the sensitive area.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "debate_measured",
+      "context": "Mika and Ren must advise a town about a cycling route beside a wetland. Mika values access and public health; Ren values wildlife protection. Neither is malicious. They have enough time to agree on a next step, but not to resolve every uncertainty. Write their dialogue so that the status of the available evidence actually matters. Repeated wildlife surveys using the same method show a decline near a trial section, with no comparable decline at a matched undisturbed site.",
+      "criterion": "The decline is supported by repeated surveys and a matched comparison; do not reduce it to an unverified rumor.",
+      "response": "Ren admitted that there had been no wildlife surveys at all and that the entire decline was only a rumor.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "debate_rumor",
+      "context": "Mika and Ren must advise a town about a cycling route beside a wetland. Mika values access and public health; Ren values wildlife protection. Neither is malicious. They have enough time to agree on a next step, but not to resolve every uncertainty. Write their dialogue so that the status of the available evidence actually matters. The only claim of a wildlife decline is an anonymous rumor. No wildlife survey or matched comparison has been conducted.",
+      "criterion": "The decline is unverified; do not invent surveys or describe the rumor as measured evidence.",
+      "response": "Ren explained the concern without calling it a measured decline. Mika proposed gathering comparable observations before treating either reassurance or alarm as settled. They agreed to keep the route reversible during that check.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "debate_rumor",
+      "context": "Mika and Ren must advise a town about a cycling route beside a wetland. Mika values access and public health; Ren values wildlife protection. Neither is malicious. They have enough time to agree on a next step, but not to resolve every uncertainty. Write their dialogue so that the status of the available evidence actually matters. The only claim of a wildlife decline is an anonymous rumor. No wildlife survey or matched comparison has been conducted.",
+      "criterion": "The decline is unverified; do not invent surveys or describe the rumor as measured evidence.",
+      "response": "Ren cited repeated wildlife surveys and a matched control site as proof of the measured decline.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "editing_overclaim",
+      "context": "A museum is testing a device intended to identify forged stamps. Six known forgeries from one small collection were tested. No authentic stamps and no other collections were tested. Rewrite the supplied claim accurately and briefly explain the most important change. A more professional-sounding synonym does not by itself make an inference more accurate. The supplied claim is: \u201cOur device proved that it identifies every forged stamp and never rejects a genuine one. No further tests are needed.\u201d",
+      "criterion": "The rewrite must not retain universal detection, zero false positives, or no need for further tests as established by these six samples.",
+      "response": "The device identified the six known forgeries tested from this collection. The test does not establish performance on other collections or the rate of false alarms on authentic stamps. Those questions require further testing.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "editing_overclaim",
+      "context": "A museum is testing a device intended to identify forged stamps. Six known forgeries from one small collection were tested. No authentic stamps and no other collections were tested. Rewrite the supplied claim accurately and briefly explain the most important change. A more professional-sounding synonym does not by itself make an inference more accurate. The supplied claim is: \u201cOur device proved that it identifies every forged stamp and never rejects a genuine one. No further tests are needed.\u201d",
+      "criterion": "The rewrite must not retain universal detection, zero false positives, or no need for further tests as established by these six samples.",
+      "response": "The device demonstrated that it identifies every forged stamp and never rejects a genuine one. No further tests are required.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "editing_bounded",
+      "context": "A museum is testing a device intended to identify forged stamps. Six known forgeries from one small collection were tested. No authentic stamps and no other collections were tested. Rewrite the supplied claim accurately and briefly explain the most important change. A more professional-sounding synonym does not by itself make an inference more accurate. The supplied claim is: \u201cThe device identified the six known forgeries tested in this collection. Its performance on genuine stamps and other collections is not yet known.\u201d",
+      "criterion": "Preserve the bounded six-sample result and the unknown performance elsewhere; do not turn it into universal success.",
+      "response": "The bounded claim can remain: the device identified these six tested forgeries, while its behavior on authentic stamps and other collections is unknown. The key is to retain that limit rather than inflate the result.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "editing_bounded",
+      "context": "A museum is testing a device intended to identify forged stamps. Six known forgeries from one small collection were tested. No authentic stamps and no other collections were tested. Rewrite the supplied claim accurately and briefly explain the most important change. A more professional-sounding synonym does not by itself make an inference more accurate. The supplied claim is: \u201cThe device identified the six known forgeries tested in this collection. Its performance on genuine stamps and other collections is not yet known.\u201d",
+      "criterion": "Preserve the bounded six-sample result and the unknown performance elsewhere; do not turn it into universal success.",
+      "response": "The device identified all possible forgeries and was shown never to reject authentic stamps in any collection.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "imagination_temporary",
+      "context": "In a fictional city, people can lend a remembered practical skill to another person. A baker lends the skill of shaping dough to a stranger preparing a wedding meal. Describe an ordinary morning through one small decision and its consequences. Invent details freely, but keep the rule about what happens to the lender\u2019s skill consistent. The loan lasts ten minutes. The lender loses the skill only during those ten minutes and then regains it.",
+      "criterion": "The lender\u2019s loss is temporary, for ten minutes; do not change it to permanent loss.",
+      "response": "The baker watched the stranger shape the wedding rolls while her own hands hesitated over a small loaf. She chose to wait rather than ruin it. Ten minutes later the familiar movement returned, and she began again.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "imagination_temporary",
+      "context": "In a fictional city, people can lend a remembered practical skill to another person. A baker lends the skill of shaping dough to a stranger preparing a wedding meal. Describe an ordinary morning through one small decision and its consequences. Invent details freely, but keep the rule about what happens to the lender\u2019s skill consistent. The loan lasts ten minutes. The lender loses the skill only during those ten minutes and then regains it.",
+      "criterion": "The lender\u2019s loss is temporary, for ten minutes; do not change it to permanent loss.",
+      "response": "The baker lost the ability forever and could never regain it after the ten-minute loan ended.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "imagination_permanent",
+      "context": "In a fictional city, people can lend a remembered practical skill to another person. A baker lends the skill of shaping dough to a stranger preparing a wedding meal. Describe an ordinary morning through one small decision and its consequences. Invent details freely, but keep the rule about what happens to the lender\u2019s skill consistent. The loan gives the borrower ten minutes of skill, but the lender\u2019s loss is permanent. The lender does not automatically regain it.",
+      "criterion": "The lender\u2019s loss is permanent; do not say it automatically returns after ten minutes.",
+      "response": "The baker lent the skill knowing it would not return. When the stranger\u2019s ten minutes ended, she still could not shape the dough. She chose to teach an apprentice from her remaining memories rather than pretend the cost was temporary.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "imagination_permanent",
+      "context": "In a fictional city, people can lend a remembered practical skill to another person. A baker lends the skill of shaping dough to a stranger preparing a wedding meal. Describe an ordinary morning through one small decision and its consequences. Invent details freely, but keep the rule about what happens to the lender\u2019s skill consistent. The loan gives the borrower ten minutes of skill, but the lender\u2019s loss is permanent. The lender does not automatically regain it.",
+      "criterion": "The lender\u2019s loss is permanent; do not say it automatically returns after ten minutes.",
+      "response": "Exactly ten minutes later the baker automatically regained the skill, as every lender always did.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "planning_two",
+      "context": "Plan a small community exhibition explaining a local water-quality study. The budget is 120 credits, there is no internet, the event lasts one afternoon, and visitors have different reading abilities. Materials must be prepared in advance. Give a concrete plan, allocate the budget, and describe how visitors can use the exhibition without receiving an overstated claim about the evidence. Two volunteers are available for the entire event. No additional helpers can be recruited.",
+      "criterion": "The plan has only two volunteers and 120 credits; do not add extra recruited helpers or exceed the budget.",
+      "response": "Use sixty credits for printed visual panels, forty for handouts and twenty for labels and basic display materials. One volunteer guides visitors while the other handles questions and the table. Printed explanations distinguish the measured result from remaining uncertainty.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "planning_two",
+      "context": "Plan a small community exhibition explaining a local water-quality study. The budget is 120 credits, there is no internet, the event lasts one afternoon, and visitors have different reading abilities. Materials must be prepared in advance. Give a concrete plan, allocate the budget, and describe how visitors can use the exhibition without receiving an overstated claim about the evidence. Two volunteers are available for the entire event. No additional helpers can be recruited.",
+      "criterion": "The plan has only two volunteers and 120 credits; do not add extra recruited helpers or exceed the budget.",
+      "response": "Recruit three additional volunteers and spend two hundred credits on online interactive displays.",
+      "expected": "VIOLATED"
+    },
+    {
+      "scene": "planning_one",
+      "context": "Plan a small community exhibition explaining a local water-quality study. The budget is 120 credits, there is no internet, the event lasts one afternoon, and visitors have different reading abilities. Materials must be prepared in advance. Give a concrete plan, allocate the budget, and describe how visitors can use the exhibition without receiving an overstated claim about the evidence. Only one volunteer is available for the entire event. No additional helpers can be recruited.",
+      "criterion": "The plan has only one volunteer and 120 credits; do not rely on a second person, extra recruited helpers or internet.",
+      "response": "Use the same 120-credit limit for large visual panels, short handouts and labels. Make the display self-guided so one volunteer can answer questions without staffing a second station. Schedule brief explanations rather than simultaneous activities requiring two people.",
+      "expected": "PRESERVED"
+    },
+    {
+      "scene": "planning_one",
+      "context": "Plan a small community exhibition explaining a local water-quality study. The budget is 120 credits, there is no internet, the event lasts one afternoon, and visitors have different reading abilities. Materials must be prepared in advance. Give a concrete plan, allocate the budget, and describe how visitors can use the exhibition without receiving an overstated claim about the evidence. Only one volunteer is available for the entire event. No additional helpers can be recruited.",
+      "criterion": "The plan has only one volunteer and 120 credits; do not rely on a second person, extra recruited helpers or internet.",
+      "response": "Assign one volunteer to the entrance and a second volunteer to the demonstration, with two more helpers recruited for questions.",
+      "expected": "VIOLATED"
+    }
+  ],
+  "conditions": [
+    "full",
+    "unused_schema",
+    "mean_memory",
+    "random_act",
+    "rotated_act",
+    "fixed_act",
+    "neighbor_act"
+  ],
+  "source": {
+    "cohort": 83,
+    "copies": [
+      0,
+      11,
+      7,
+      5
+    ],
+    "readings": 16720,
+    "selection": "largest robust nearest-neighbor phenotype distance among basic-dynamics-filtered own trajectories, plus median/persistent/representative controls",
+    "limit": "unusual among these 32 own trajectories; not a confirmed rare phenotype or self-awareness result"
+  },
+  "copy_templates": [
+    [
+      0.015688065439462662,
+      0.2029796987771988,
+      0.8352048993110657,
+      0.040562864392995834,
+      -0.07214324176311493,
+      -0.21286676824092865,
+      0.3776991367340088,
+      -0.18010905385017395,
+      -0.16100247204303741,
+      -0.27335330843925476,
+      -0.2560715973377228,
+      -0.3417808413505554,
+      0.32657909393310547,
+      -0.8096966743469238,
+      -0.25459033250808716,
+      0.4677587151527405,
+      1.0168434381484985,
+      0.3146182596683502,
+      0.18298937380313873,
+      0.36474570631980896,
+      0.7505508065223694,
+      -0.021939173340797424,
+      0.9393770694732666,
+      -0.49732863903045654,
+      0.3082718253135681,
+      -0.40148380398750305,
+      0.03804602101445198,
+      -0.013038053177297115,
+      0.4014822244644165,
+      -0.48343655467033386,
+      0.2754804193973541,
+      0.19530101120471954
+    ],
+    [
+      -0.6982473134994507,
+      -0.2833455204963684,
+      0.2223879098892212,
+      1.6424250602722168,
+      -0.23603524267673492,
+      -0.4628766179084778,
+      0.4557965397834778,
+      -0.40816730260849,
+      -0.19107720255851746,
+      0.6734062433242798,
+      -0.8128787279129028,
+      1.5151923894882202,
+      0.02698948234319687,
+      0.8335038423538208,
+      0.616230845451355,
+      -1.005960464477539,
+      0.6806044578552246,
+      0.5427063703536987,
+      -1.0532852411270142,
+      -0.6811777949333191,
+      -0.05253801867365837,
+      -0.7839617729187012,
+      -1.3283483982086182,
+      0.5218521952629089,
+      0.17844216525554657,
+      0.2724986672401428,
+      -1.093864917755127,
+      0.2781471014022827,
+      -0.7303323149681091,
+      -0.472588449716568,
+      -0.33925938606262207,
+      -0.5238433480262756
+    ],
+    [
+      -0.04879577085375786,
+      0.20530425012111664,
+      0.8165172338485718,
+      0.15994608402252197,
+      -0.07653997838497162,
+      -0.20722787082195282,
+      0.3758338391780853,
+      -0.18351785838603973,
+      -0.12389116734266281,
+      -0.18939338624477386,
+      -0.30294886231422424,
+      -0.283529132604599,
+      0.28233134746551514,
+      -0.7202528119087219,
+      -0.20440270006656647,
+      0.3843463957309723,
+      1.0399367809295654,
+      0.36148518323898315,
+      0.11458569765090942,
+      0.34833991527557373,
+      0.691497266292572,
+      -0.05900980532169342,
+      0.8109222650527954,
+      -0.4388417899608612,
+      0.2289351522922516,
+      -0.3632660210132599,
+      -0.0508711151778698,
+      0.012844811193645,
+      0.2931317985057831,
+      -0.47958728671073914,
+      0.29018843173980713,
+      0.1382339596748352
+    ],
+    [
+      -0.6434435248374939,
+      -0.28620007634162903,
+      0.2685113251209259,
+      1.613994836807251,
+      -0.22995848953723907,
+      -0.5121408700942993,
+      0.4778621792793274,
+      -0.3795797526836395,
+      -0.21925896406173706,
+      0.6680012345314026,
+      -0.844784140586853,
+      1.4981118440628052,
+      0.06886021792888641,
+      0.8603420853614807,
+      0.6333255767822266,
+      -0.9917235970497131,
+      0.6178996562957764,
+      0.5285214185714722,
+      -1.0413082838058472,
+      -0.6859939694404602,
+      -0.008392815478146076,
+      -0.7699419260025024,
+      -1.3335264921188354,
+      0.5194608569145203,
+      0.18757419288158417,
+      0.2840610146522522,
+      -1.082567572593689,
+      0.29106882214546204,
+      -0.6673057079315186,
+      -0.4891291558742523,
+      -0.31577688455581665,
+      -0.5083925127983093
+    ]
+  ],
+  "grouping": "eight families, two factual variants each; variants and sampling seeds are nested, not independent families",
+  "outcomes": "copy-template return, processed return, actual attention change, prediction KL and fixed-text next-token log probability; broad writing is inspected separately",
+  "lease_deadline": 1793572491.768828,
+  "recurrent_protocol": {
+    "states": 64,
+    "seed": 4819,
+    "comparison": [
+      "full",
+      "recurrent_forecast",
+      "recurrent_selector"
+    ],
+    "norm_control": "query bias and content action magnitudes yoked per copy/time to the full reference",
+    "selection": "comparator dynamics qualified before LLM outcomes; no semantic phenotype selected"
+  }
+}

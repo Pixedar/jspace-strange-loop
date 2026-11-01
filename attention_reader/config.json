@@ -1,0 +1,22 @@
+{
+  "name": "c8-complete-attention-schema",
+  "base_model": "Qwen/Qwen3-8B",
+  "base_revision": "b968826d9c46dd6066d109eabc6255188de91218",
+  "read_layer": 24,
+  "act_layer": 16,
+  "stance_dimensions": 8,
+  "reading_dimensions": 32,
+  "attention_dimensions": 256,
+  "heads": 4,
+  "window": 16,
+  "context_summary_dimensions": 16,
+  "habit_size": 0.5,
+  "habit_fill": 1000,
+  "schema_memory": 500,
+  "schema_strength": 0.5,
+  "tensor_count": 18,
+  "parameters": 2148088,
+  "release_state": "publication edition",
+  "author": "Wiktor Tomasik",
+  "release_updated": "2026-11-01T23:52:27+01:00"
+}

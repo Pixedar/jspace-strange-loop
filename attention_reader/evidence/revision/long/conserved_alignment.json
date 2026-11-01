@@ -1,0 +1,1160 @@
+{
+  "rows": [
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 0,
+      "first_alignment": 0.1383871355437776,
+      "mean_alignment": 0.13837709120059058,
+      "max_alignment_drift": 2.1274917387903436e-05,
+      "max_stance_norm_drift": 1.1429686042951914e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 1,
+      "first_alignment": 0.1367778032827383,
+      "mean_alignment": 0.13677491560076177,
+      "max_alignment_drift": 6.550977616842646e-06,
+      "max_stance_norm_drift": 7.621931349066635e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 2,
+      "first_alignment": 0.13751163589165755,
+      "mean_alignment": 0.1375042638824849,
+      "max_alignment_drift": 1.813331962197129e-05,
+      "max_stance_norm_drift": 1.1532801815650195e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 3,
+      "first_alignment": 0.13766571433268404,
+      "mean_alignment": 0.13766041792147035,
+      "max_alignment_drift": 1.0896548420624708e-05,
+      "max_stance_norm_drift": 2.8825355720796253e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 4,
+      "first_alignment": 0.1376784365587996,
+      "mean_alignment": 0.13767288045457862,
+      "max_alignment_drift": 1.0309938307251354e-05,
+      "max_stance_norm_drift": 5.184231516408566e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 5,
+      "first_alignment": 0.14045117811986352,
+      "mean_alignment": 0.14044961068082587,
+      "max_alignment_drift": 5.404315427337547e-06,
+      "max_stance_norm_drift": 8.398947173304805e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 6,
+      "first_alignment": 0.13839443955886732,
+      "mean_alignment": 0.1383856697746962,
+      "max_alignment_drift": 1.451548762734789e-05,
+      "max_stance_norm_drift": 2.2308732452236413e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 7,
+      "first_alignment": 0.1383941249144777,
+      "mean_alignment": 0.13838736130954365,
+      "max_alignment_drift": 1.4556123716702452e-05,
+      "max_stance_norm_drift": 1.3099087041168467e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 8,
+      "first_alignment": 0.13936046880108938,
+      "mean_alignment": 0.13935644825718996,
+      "max_alignment_drift": 7.635049105336744e-06,
+      "max_stance_norm_drift": 8.421551845438913e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 9,
+      "first_alignment": 0.1368695015284693,
+      "mean_alignment": 0.13686619586353435,
+      "max_alignment_drift": 8.920733057304897e-06,
+      "max_stance_norm_drift": 3.24468484314e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 10,
+      "first_alignment": 0.13839238128772235,
+      "mean_alignment": 0.13838608573710282,
+      "max_alignment_drift": 1.2922952782906671e-05,
+      "max_stance_norm_drift": 2.3154012747439445e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 11,
+      "first_alignment": 0.13767975831010296,
+      "mean_alignment": 0.13767354827479933,
+      "max_alignment_drift": 1.119262425264278e-05,
+      "max_stance_norm_drift": 1.9043136381458048e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 12,
+      "first_alignment": 0.13679623341008237,
+      "mean_alignment": 0.13679127769074453,
+      "max_alignment_drift": 8.855562391579808e-06,
+      "max_stance_norm_drift": 1.0690568939097922e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 13,
+      "first_alignment": 0.13767942496663793,
+      "mean_alignment": 0.1376751840713699,
+      "max_alignment_drift": 9.577482215167299e-06,
+      "max_stance_norm_drift": 1.972154113383251e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 14,
+      "first_alignment": 0.1368766778281419,
+      "mean_alignment": 0.1368750686798783,
+      "max_alignment_drift": 5.5247394281365825e-06,
+      "max_stance_norm_drift": 3.5355507673751063e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "own",
+      "copy": 15,
+      "first_alignment": 0.13767925350066249,
+      "mean_alignment": 0.13767489860553175,
+      "max_alignment_drift": 8.332880471195736e-06,
+      "max_stance_norm_drift": 8.169073922426051e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 0,
+      "first_alignment": 0.1383871355437776,
+      "mean_alignment": 0.1383758929544356,
+      "max_alignment_drift": 2.2383124141184263e-05,
+      "max_stance_norm_drift": 1.3729060973188822e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 1,
+      "first_alignment": 0.1367778032827383,
+      "mean_alignment": 0.13677616390521213,
+      "max_alignment_drift": 3.5990369047500526e-06,
+      "max_stance_norm_drift": 4.579802422632895e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 2,
+      "first_alignment": 0.13751163589165755,
+      "mean_alignment": 0.13750535713417136,
+      "max_alignment_drift": 1.555312535825304e-05,
+      "max_stance_norm_drift": 1.1702937478541564e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 3,
+      "first_alignment": 0.13766571433268404,
+      "mean_alignment": 0.13765881591630194,
+      "max_alignment_drift": 1.3129490645830133e-05,
+      "max_stance_norm_drift": 2.7269292365739162e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 4,
+      "first_alignment": 0.1376784365587996,
+      "mean_alignment": 0.13767494751249762,
+      "max_alignment_drift": 8.507638030619269e-06,
+      "max_stance_norm_drift": 1.8182296528723718e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 5,
+      "first_alignment": 0.14045117811986352,
+      "mean_alignment": 0.14045035308338316,
+      "max_alignment_drift": 2.496191909839851e-06,
+      "max_stance_norm_drift": 4.079597128781032e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 6,
+      "first_alignment": 0.13839443955886732,
+      "mean_alignment": 0.1383874508025636,
+      "max_alignment_drift": 1.3933360149681606e-05,
+      "max_stance_norm_drift": 1.952036568775295e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 7,
+      "first_alignment": 0.1383941249144777,
+      "mean_alignment": 0.1383865842022085,
+      "max_alignment_drift": 1.5145695193535813e-05,
+      "max_stance_norm_drift": 1.6939610979149755e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 8,
+      "first_alignment": 0.13936046880108938,
+      "mean_alignment": 0.13935891166764253,
+      "max_alignment_drift": 5.6245769040064175e-06,
+      "max_stance_norm_drift": 8.587919810065792e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 9,
+      "first_alignment": 0.1368695015284693,
+      "mean_alignment": 0.13686739058717395,
+      "max_alignment_drift": 7.309475317629488e-06,
+      "max_stance_norm_drift": 4.094421682920846e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 10,
+      "first_alignment": 0.13839238128772235,
+      "mean_alignment": 0.1383827556131842,
+      "max_alignment_drift": 1.8499899949647736e-05,
+      "max_stance_norm_drift": 2.1549312416491162e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 11,
+      "first_alignment": 0.13767975831010296,
+      "mean_alignment": 0.1376757213339169,
+      "max_alignment_drift": 8.59538986119901e-06,
+      "max_stance_norm_drift": 2.0046421208230747e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 12,
+      "first_alignment": 0.13679623341008237,
+      "mean_alignment": 0.13679358432341954,
+      "max_alignment_drift": 6.569361085895231e-06,
+      "max_stance_norm_drift": 1.2511388081559716e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 13,
+      "first_alignment": 0.13767942496663793,
+      "mean_alignment": 0.13767626774909278,
+      "max_alignment_drift": 6.220225094277776e-06,
+      "max_stance_norm_drift": 2.2433842859492792e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 14,
+      "first_alignment": 0.1368766778281419,
+      "mean_alignment": 0.13687205868340047,
+      "max_alignment_drift": 9.895604511561684e-06,
+      "max_stance_norm_drift": 9.110419804447822e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "unused",
+      "copy": 15,
+      "first_alignment": 0.13767925350066249,
+      "mean_alignment": 0.13767500976718006,
+      "max_alignment_drift": 8.244985474442634e-06,
+      "max_stance_norm_drift": 4.3652069616761935e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 0,
+      "first_alignment": 0.1383871355437776,
+      "mean_alignment": 0.13838353346623003,
+      "max_alignment_drift": 7.963442130581866e-06,
+      "max_stance_norm_drift": 5.452972024921898e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 1,
+      "first_alignment": 0.1367778032827383,
+      "mean_alignment": 0.13677430320223105,
+      "max_alignment_drift": 6.584928862046757e-06,
+      "max_stance_norm_drift": 1.1386000830615473e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 2,
+      "first_alignment": 0.13751163589165755,
+      "mean_alignment": 0.1375077443517819,
+      "max_alignment_drift": 8.747761686467292e-06,
+      "max_stance_norm_drift": 1.7004308098145238e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 3,
+      "first_alignment": 0.13766571433268404,
+      "mean_alignment": 0.13766050087840778,
+      "max_alignment_drift": 1.0888749585047375e-05,
+      "max_stance_norm_drift": 1.8092027639582398e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 4,
+      "first_alignment": 0.1376784365587996,
+      "mean_alignment": 0.13767172806244884,
+      "max_alignment_drift": 1.2209012746733361e-05,
+      "max_stance_norm_drift": 1.3176913240320332e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 5,
+      "first_alignment": 0.14045117811986352,
+      "mean_alignment": 0.14044725860217658,
+      "max_alignment_drift": 7.038634073947003e-06,
+      "max_stance_norm_drift": 7.788444134959605e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 6,
+      "first_alignment": 0.13839443955886732,
+      "mean_alignment": 0.13838672256877235,
+      "max_alignment_drift": 1.719379363335216e-05,
+      "max_stance_norm_drift": 2.5957151923106103e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 7,
+      "first_alignment": 0.1383941249144777,
+      "mean_alignment": 0.13838637254268996,
+      "max_alignment_drift": 1.453804230092115e-05,
+      "max_stance_norm_drift": 2.271067824832773e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 8,
+      "first_alignment": 0.13936046880108938,
+      "mean_alignment": 0.13935914437174685,
+      "max_alignment_drift": 4.643306932200497e-06,
+      "max_stance_norm_drift": 3.613477464581294e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 9,
+      "first_alignment": 0.1368695015284693,
+      "mean_alignment": 0.13686711555144873,
+      "max_alignment_drift": 7.1403296190986065e-06,
+      "max_stance_norm_drift": 4.364680974533464e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 10,
+      "first_alignment": 0.13839238128772235,
+      "mean_alignment": 0.13838710271679966,
+      "max_alignment_drift": 9.944314666304743e-06,
+      "max_stance_norm_drift": 2.1451899518298845e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 11,
+      "first_alignment": 0.13767975831010296,
+      "mean_alignment": 0.13767468207412006,
+      "max_alignment_drift": 1.1436648680557271e-05,
+      "max_stance_norm_drift": 1.4564886823498213e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 12,
+      "first_alignment": 0.13679623341008237,
+      "mean_alignment": 0.13679367980905097,
+      "max_alignment_drift": 4.780728713821292e-06,
+      "max_stance_norm_drift": 2.971069049229058e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 13,
+      "first_alignment": 0.13767942496663793,
+      "mean_alignment": 0.13767474220193027,
+      "max_alignment_drift": 7.981620226943376e-06,
+      "max_stance_norm_drift": 1.5960709801032813e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 14,
+      "first_alignment": 0.1368766778281419,
+      "mean_alignment": 0.13687278922991694,
+      "max_alignment_drift": 8.649433481028312e-06,
+      "max_stance_norm_drift": 8.453556126664097e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "neighbor",
+      "copy": 15,
+      "first_alignment": 0.13767925350066249,
+      "mean_alignment": 0.1376767286954935,
+      "max_alignment_drift": 7.026190743941729e-06,
+      "max_stance_norm_drift": 5.423081708255673e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 0,
+      "first_alignment": 0.1383871355437776,
+      "mean_alignment": 0.13837946518569194,
+      "max_alignment_drift": 1.5320733040335988e-05,
+      "max_stance_norm_drift": 2.1247613006813992e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 1,
+      "first_alignment": 0.1367778032827383,
+      "mean_alignment": 0.13677308789344894,
+      "max_alignment_drift": 8.87269751290165e-06,
+      "max_stance_norm_drift": 6.243383547932524e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 2,
+      "first_alignment": 0.13751163589165755,
+      "mean_alignment": 0.13749935216378797,
+      "max_alignment_drift": 2.564475030253366e-05,
+      "max_stance_norm_drift": 1.3893548719390303e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 3,
+      "first_alignment": 0.13766571433268404,
+      "mean_alignment": 0.13765876336804334,
+      "max_alignment_drift": 1.3561043045895449e-05,
+      "max_stance_norm_drift": 2.8806709617357207e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 4,
+      "first_alignment": 0.1376784365587996,
+      "mean_alignment": 0.13767124352935067,
+      "max_alignment_drift": 1.4899329444401088e-05,
+      "max_stance_norm_drift": 1.9190817089564938e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 5,
+      "first_alignment": 0.14045117811986352,
+      "mean_alignment": 0.14044662059958815,
+      "max_alignment_drift": 8.660743903904367e-06,
+      "max_stance_norm_drift": 5.76516961414697e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 6,
+      "first_alignment": 0.13839443955886732,
+      "mean_alignment": 0.13838761839555083,
+      "max_alignment_drift": 1.4967949998778707e-05,
+      "max_stance_norm_drift": 1.7412806733729802e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 7,
+      "first_alignment": 0.1383941249144777,
+      "mean_alignment": 0.13838530201472707,
+      "max_alignment_drift": 1.716472207138886e-05,
+      "max_stance_norm_drift": 1.628462063041347e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 8,
+      "first_alignment": 0.13936046880108938,
+      "mean_alignment": 0.1393569040113526,
+      "max_alignment_drift": 8.258423948442895e-06,
+      "max_stance_norm_drift": 4.791461399200614e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 9,
+      "first_alignment": 0.1368695015284693,
+      "mean_alignment": 0.13686444927335553,
+      "max_alignment_drift": 1.1186996516060477e-05,
+      "max_stance_norm_drift": 1.042079845958721e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 10,
+      "first_alignment": 0.13839238128772235,
+      "mean_alignment": 0.1383848267297418,
+      "max_alignment_drift": 1.580854186478131e-05,
+      "max_stance_norm_drift": 1.5904741705319303e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 11,
+      "first_alignment": 0.13767975831010296,
+      "mean_alignment": 0.13767456528060534,
+      "max_alignment_drift": 1.218271436331797e-05,
+      "max_stance_norm_drift": 2.3676335258571157e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 12,
+      "first_alignment": 0.13679623341008237,
+      "mean_alignment": 0.1367905034575175,
+      "max_alignment_drift": 1.0971393561182152e-05,
+      "max_stance_norm_drift": 1.1910116335500653e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 13,
+      "first_alignment": 0.13767942496663793,
+      "mean_alignment": 0.1376753454677113,
+      "max_alignment_drift": 9.048337128475525e-06,
+      "max_stance_norm_drift": 1.5572820785569874e-05
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 14,
+      "first_alignment": 0.1368766778281419,
+      "mean_alignment": 0.13687075270688157,
+      "max_alignment_drift": 1.0508288342925276e-05,
+      "max_stance_norm_drift": 2.602681014485242e-06
+    },
+    {
+      "cohort": 83,
+      "condition": "mean",
+      "copy": 15,
+      "first_alignment": 0.13767925350066249,
+      "mean_alignment": 0.13767443692814166,
+      "max_alignment_drift": 1.0431323683418592e-05,
+      "max_stance_norm_drift": 1.2248003457004941e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 0,
+      "first_alignment": 0.09229480611506233,
+      "mean_alignment": 0.0922907586683545,
+      "max_alignment_drift": 8.193831677466568e-06,
+      "max_stance_norm_drift": 1.545909973077464e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 1,
+      "first_alignment": 0.100850955120363,
+      "mean_alignment": 0.10084782999061032,
+      "max_alignment_drift": 6.994724169262501e-06,
+      "max_stance_norm_drift": 1.1679745598125457e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 2,
+      "first_alignment": 0.096972585091398,
+      "mean_alignment": 0.09696935875428306,
+      "max_alignment_drift": 4.9232985648572924e-06,
+      "max_stance_norm_drift": 8.613865039586166e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 3,
+      "first_alignment": 0.09601256093008809,
+      "mean_alignment": 0.09600908514595924,
+      "max_alignment_drift": 6.236561640088345e-06,
+      "max_stance_norm_drift": 9.794512104477349e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 4,
+      "first_alignment": 0.0959172068150246,
+      "mean_alignment": 0.09591279848844282,
+      "max_alignment_drift": 1.0447012639427933e-05,
+      "max_stance_norm_drift": 1.255982612358153e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 5,
+      "first_alignment": 0.08271037219473362,
+      "mean_alignment": 0.08271085399131922,
+      "max_alignment_drift": 2.4183359999818688e-06,
+      "max_stance_norm_drift": 7.062979488825505e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 6,
+      "first_alignment": 0.09230092257367835,
+      "mean_alignment": 0.09229891925610842,
+      "max_alignment_drift": 5.9173252752176e-06,
+      "max_stance_norm_drift": 1.6329875794141024e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 7,
+      "first_alignment": 0.09230124135201513,
+      "mean_alignment": 0.09229886411815993,
+      "max_alignment_drift": 5.245497524966614e-06,
+      "max_stance_norm_drift": 1.2604451873565736e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 8,
+      "first_alignment": 0.08787967524638349,
+      "mean_alignment": 0.08787918684412827,
+      "max_alignment_drift": 2.1631718742504136e-06,
+      "max_stance_norm_drift": 8.742936276617819e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 9,
+      "first_alignment": 0.10019528962135354,
+      "mean_alignment": 0.1001926330462874,
+      "max_alignment_drift": 5.616587987630761e-06,
+      "max_stance_norm_drift": 1.556091341514687e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 10,
+      "first_alignment": 0.0923005420457856,
+      "mean_alignment": 0.09229918432176237,
+      "max_alignment_drift": 3.484954860397127e-06,
+      "max_stance_norm_drift": 2.328480438773539e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 11,
+      "first_alignment": 0.09591609658405095,
+      "mean_alignment": 0.09591216032800753,
+      "max_alignment_drift": 8.95847905545144e-06,
+      "max_stance_norm_drift": 1.7988698323589958e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 12,
+      "first_alignment": 0.10064727595115235,
+      "mean_alignment": 0.1006438322296898,
+      "max_alignment_drift": 7.192905700725838e-06,
+      "max_stance_norm_drift": 1.9318880262964022e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 13,
+      "first_alignment": 0.09591659291389096,
+      "mean_alignment": 0.09591252415830107,
+      "max_alignment_drift": 7.85687523084666e-06,
+      "max_stance_norm_drift": 8.072203767417463e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 14,
+      "first_alignment": 0.10015976290718165,
+      "mean_alignment": 0.10015642280840116,
+      "max_alignment_drift": 5.830638253129239e-06,
+      "max_stance_norm_drift": 1.968292590881493e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "own",
+      "copy": 15,
+      "first_alignment": 0.09591669064201187,
+      "mean_alignment": 0.09591457644948857,
+      "max_alignment_drift": 4.64976288054586e-06,
+      "max_stance_norm_drift": 1.4723732669308376e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 0,
+      "first_alignment": 0.09229480611506233,
+      "mean_alignment": 0.09229313211708813,
+      "max_alignment_drift": 3.603137945173973e-06,
+      "max_stance_norm_drift": 2.1049832433228666e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 1,
+      "first_alignment": 0.100850955120363,
+      "mean_alignment": 0.10085037761837366,
+      "max_alignment_drift": 2.9685400077250623e-06,
+      "max_stance_norm_drift": 1.530619159106905e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 2,
+      "first_alignment": 0.096972585091398,
+      "mean_alignment": 0.0969708300472142,
+      "max_alignment_drift": 4.94769383947713e-06,
+      "max_stance_norm_drift": 2.3905593880768627e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 3,
+      "first_alignment": 0.09601256093008809,
+      "mean_alignment": 0.09601309986242647,
+      "max_alignment_drift": 3.544710493574854e-06,
+      "max_stance_norm_drift": 9.582108823402713e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 4,
+      "first_alignment": 0.0959172068150246,
+      "mean_alignment": 0.09591443299609621,
+      "max_alignment_drift": 7.0710108455024345e-06,
+      "max_stance_norm_drift": 1.3721471916250394e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 5,
+      "first_alignment": 0.08271037219473362,
+      "mean_alignment": 0.08270974431222498,
+      "max_alignment_drift": 2.9905089239251614e-06,
+      "max_stance_norm_drift": 1.6821758137552933e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 6,
+      "first_alignment": 0.09230092257367835,
+      "mean_alignment": 0.0922990532118081,
+      "max_alignment_drift": 4.190383644020468e-06,
+      "max_stance_norm_drift": 1.0621906160968031e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 7,
+      "first_alignment": 0.09230124135201513,
+      "mean_alignment": 0.0922989235610431,
+      "max_alignment_drift": 4.593463094892947e-06,
+      "max_stance_norm_drift": 1.586528176866775e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 8,
+      "first_alignment": 0.08787967524638349,
+      "mean_alignment": 0.08787921507076342,
+      "max_alignment_drift": 2.8081339225605184e-06,
+      "max_stance_norm_drift": 2.5556230563550386e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 9,
+      "first_alignment": 0.10019528962135354,
+      "mean_alignment": 0.10019067889654198,
+      "max_alignment_drift": 9.183284270700143e-06,
+      "max_stance_norm_drift": 1.261027316123986e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 10,
+      "first_alignment": 0.0923005420457856,
+      "mean_alignment": 0.09229896314962105,
+      "max_alignment_drift": 3.4046604706489125e-06,
+      "max_stance_norm_drift": 1.552321029862913e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 11,
+      "first_alignment": 0.09591609658405095,
+      "mean_alignment": 0.09591584039967684,
+      "max_alignment_drift": 3.440180086244915e-06,
+      "max_stance_norm_drift": 8.232016587950142e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 12,
+      "first_alignment": 0.10064727595115235,
+      "mean_alignment": 0.10064750893804662,
+      "max_alignment_drift": 2.236575787045725e-06,
+      "max_stance_norm_drift": 8.711549616680081e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 13,
+      "first_alignment": 0.09591659291389096,
+      "mean_alignment": 0.09591403095166673,
+      "max_alignment_drift": 4.934222152030987e-06,
+      "max_stance_norm_drift": 1.0296000322540522e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 14,
+      "first_alignment": 0.10015976290718165,
+      "mean_alignment": 0.10015649270261956,
+      "max_alignment_drift": 6.152857535052236e-06,
+      "max_stance_norm_drift": 1.6852766875130598e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "unused",
+      "copy": 15,
+      "first_alignment": 0.09591669064201187,
+      "mean_alignment": 0.09591501100370667,
+      "max_alignment_drift": 5.743257343052144e-06,
+      "max_stance_norm_drift": 1.5190102765738622e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 0,
+      "first_alignment": 0.09229480611506233,
+      "mean_alignment": 0.09229168050337735,
+      "max_alignment_drift": 5.9636080457919904e-06,
+      "max_stance_norm_drift": 1.2377179062994514e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 1,
+      "first_alignment": 0.100850955120363,
+      "mean_alignment": 0.10084902211514873,
+      "max_alignment_drift": 3.7256257691548056e-06,
+      "max_stance_norm_drift": 1.279239434004431e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 2,
+      "first_alignment": 0.096972585091398,
+      "mean_alignment": 0.09697012403117364,
+      "max_alignment_drift": 4.503745768505429e-06,
+      "max_stance_norm_drift": 7.278974635038793e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 3,
+      "first_alignment": 0.09601256093008809,
+      "mean_alignment": 0.0960081185247115,
+      "max_alignment_drift": 9.08653222851663e-06,
+      "max_stance_norm_drift": 7.160322777810535e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 4,
+      "first_alignment": 0.0959172068150246,
+      "mean_alignment": 0.09591432580346564,
+      "max_alignment_drift": 6.75447795438211e-06,
+      "max_stance_norm_drift": 2.9090505464735017e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 5,
+      "first_alignment": 0.08271037219473362,
+      "mean_alignment": 0.08270602158307697,
+      "max_alignment_drift": 7.134047774415286e-06,
+      "max_stance_norm_drift": 5.3324681057453915e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 6,
+      "first_alignment": 0.09230092257367835,
+      "mean_alignment": 0.09229628662228138,
+      "max_alignment_drift": 7.702066385492645e-06,
+      "max_stance_norm_drift": 2.2696093733620692e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 7,
+      "first_alignment": 0.09230124135201513,
+      "mean_alignment": 0.09229979504136397,
+      "max_alignment_drift": 5.47916112171587e-06,
+      "max_stance_norm_drift": 2.140439688613771e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 8,
+      "first_alignment": 0.08787967524638349,
+      "mean_alignment": 0.08787726229522394,
+      "max_alignment_drift": 4.579373584057134e-06,
+      "max_stance_norm_drift": 9.734272590988802e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 9,
+      "first_alignment": 0.10019528962135354,
+      "mean_alignment": 0.10019107132848885,
+      "max_alignment_drift": 8.146976517478532e-06,
+      "max_stance_norm_drift": 6.829054781332111e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 10,
+      "first_alignment": 0.0923005420457856,
+      "mean_alignment": 0.09230092582644996,
+      "max_alignment_drift": 1.3245182642618314e-06,
+      "max_stance_norm_drift": 1.0518751660026915e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 11,
+      "first_alignment": 0.09591609658405095,
+      "mean_alignment": 0.09591410697942214,
+      "max_alignment_drift": 4.033437749767499e-06,
+      "max_stance_norm_drift": 1.0296450773550347e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 12,
+      "first_alignment": 0.10064727595115235,
+      "mean_alignment": 0.10064880756513414,
+      "max_alignment_drift": 2.7850792841399574e-06,
+      "max_stance_norm_drift": 1.1073886245771547e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 13,
+      "first_alignment": 0.09591659291389096,
+      "mean_alignment": 0.09591465965516333,
+      "max_alignment_drift": 5.0107535320698116e-06,
+      "max_stance_norm_drift": 5.381511950619533e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 14,
+      "first_alignment": 0.10015976290718165,
+      "mean_alignment": 0.10015788296202406,
+      "max_alignment_drift": 4.992228162414847e-06,
+      "max_stance_norm_drift": 9.685191871500187e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "neighbor",
+      "copy": 15,
+      "first_alignment": 0.09591669064201187,
+      "mean_alignment": 0.09591399819963806,
+      "max_alignment_drift": 5.2369576448163535e-06,
+      "max_stance_norm_drift": 9.885844617585349e-06
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 0,
+      "first_alignment": 0.09229480611506233,
+      "mean_alignment": 0.09229456654078219,
+      "max_alignment_drift": 1.249466738739713e-06,
+      "max_stance_norm_drift": 1.3088468734268055e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 1,
+      "first_alignment": 0.100850955120363,
+      "mean_alignment": 0.10084713995725814,
+      "max_alignment_drift": 6.8238567757783475e-06,
+      "max_stance_norm_drift": 1.7878106356561396e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 2,
+      "first_alignment": 0.096972585091398,
+      "mean_alignment": 0.09697002409766999,
+      "max_alignment_drift": 6.94311373344858e-06,
+      "max_stance_norm_drift": 1.631313983785354e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 3,
+      "first_alignment": 0.09601256093008809,
+      "mean_alignment": 0.0960104575600254,
+      "max_alignment_drift": 7.099027963433646e-06,
+      "max_stance_norm_drift": 1.1920432629208833e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 4,
+      "first_alignment": 0.0959172068150246,
+      "mean_alignment": 0.09591445007395435,
+      "max_alignment_drift": 5.375606317317705e-06,
+      "max_stance_norm_drift": 2.511368877256004e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 5,
+      "first_alignment": 0.08271037219473362,
+      "mean_alignment": 0.08271090953407849,
+      "max_alignment_drift": 1.4666593958351237e-06,
+      "max_stance_norm_drift": 2.100477520239341e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 6,
+      "first_alignment": 0.09230092257367835,
+      "mean_alignment": 0.09229746672613863,
+      "max_alignment_drift": 8.113137641097001e-06,
+      "max_stance_norm_drift": 1.6725006095286155e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 7,
+      "first_alignment": 0.09230124135201513,
+      "mean_alignment": 0.092300230996009,
+      "max_alignment_drift": 4.271589880033844e-06,
+      "max_stance_norm_drift": 1.2189363702397316e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 8,
+      "first_alignment": 0.08787967524638349,
+      "mean_alignment": 0.0878797884785705,
+      "max_alignment_drift": 2.328146634020256e-06,
+      "max_stance_norm_drift": 1.542493753414753e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 9,
+      "first_alignment": 0.10019528962135354,
+      "mean_alignment": 0.10019586193442576,
+      "max_alignment_drift": 1.851742870179196e-06,
+      "max_stance_norm_drift": 2.0238834445795995e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 10,
+      "first_alignment": 0.0923005420457856,
+      "mean_alignment": 0.0922957632668594,
+      "max_alignment_drift": 8.05861274337516e-06,
+      "max_stance_norm_drift": 1.3583404734562876e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 11,
+      "first_alignment": 0.09591609658405095,
+      "mean_alignment": 0.09591250771422896,
+      "max_alignment_drift": 9.15150866186154e-06,
+      "max_stance_norm_drift": 1.10680081502057e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 12,
+      "first_alignment": 0.10064727595115235,
+      "mean_alignment": 0.10064442793993779,
+      "max_alignment_drift": 7.3564587452501495e-06,
+      "max_stance_norm_drift": 1.2307636403474653e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 13,
+      "first_alignment": 0.09591659291389096,
+      "mean_alignment": 0.09591424331838808,
+      "max_alignment_drift": 6.5040818326977945e-06,
+      "max_stance_norm_drift": 1.6599568889774652e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 14,
+      "first_alignment": 0.10015976290718165,
+      "mean_alignment": 0.10015978508501988,
+      "max_alignment_drift": 2.312040980792518e-06,
+      "max_stance_norm_drift": 1.3134904534695124e-05
+    },
+    {
+      "cohort": 84,
+      "condition": "mean",
+      "copy": 15,
+      "first_alignment": 0.09591669064201187,
+      "mean_alignment": 0.09591466223773429,
+      "max_alignment_drift": 5.541878812603818e-06,
+      "max_stance_norm_drift": 2.303662876779189e-05
+    }
+  ],
+  "maximum_alignment_drift": 2.564475030253366e-05,
+  "maximum_norm_drift": 2.9090505464735017e-05,
+  "indexing": "Pre-update s[t] paired with previous g[t-1], t=300..16719.",
+  "derivation": "The same orthogonal carry rotation maps previous decoded direction to current direction and rotates the stance, conserving their angle. This is a designed geometric memory, not learned self-recognition."
+}

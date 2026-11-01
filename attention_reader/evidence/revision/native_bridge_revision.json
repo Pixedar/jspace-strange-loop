@@ -1,0 +1,68 @@
+[
+  {
+    "model": "14B",
+    "training": "all four actual histories, readings 0\u2013999",
+    "validation": "all four histories, readings 1000\u20131499",
+    "test": "copy 0 readings 1500\u20132999; previously used for the older bridge, so this is exploratory",
+    "candidates": [
+      {
+        "alpha": 0.001,
+        "validation_r2": 0.4567161798477173
+      },
+      {
+        "alpha": 0.01,
+        "validation_r2": 0.6632017493247986
+      },
+      {
+        "alpha": 0.1,
+        "validation_r2": 0.8114303350448608
+      }
+    ],
+    "chosen_alpha": 0.1,
+    "held_out_r2": 0.8489243984222412,
+    "attention_tv": 0.36008034191748245,
+    "picture_cosine": 0.963727455110626,
+    "destination_cosine": 0.9570679013082322,
+    "passed": false,
+    "thresholds": {
+      "input_r2": 0.8,
+      "attention_tv": 0.15,
+      "picture_cosine": 0.9,
+      "destination_cosine": 0.9
+    },
+    "interpretation": "full-rank ridge map, standardized inputs, more early histories; no base-model training; no claim of multimodal behavior from text transfer"
+  },
+  {
+    "model": "Omni30B",
+    "training": "all four actual histories, readings 0\u2013999",
+    "validation": "all four histories, readings 1000\u20131499",
+    "test": "copy 0 readings 1500\u20132999; previously used for the older bridge, so this is exploratory",
+    "candidates": [
+      {
+        "alpha": 0.001,
+        "validation_r2": 0.6137923002243042
+      },
+      {
+        "alpha": 0.01,
+        "validation_r2": 0.6389015913009644
+      },
+      {
+        "alpha": 0.1,
+        "validation_r2": 0.7160896062850952
+      }
+    ],
+    "chosen_alpha": 0.1,
+    "held_out_r2": 0.7557799220085144,
+    "attention_tv": 0.4494717654554134,
+    "picture_cosine": 0.9434417096620544,
+    "destination_cosine": 0.9408295624592202,
+    "passed": false,
+    "thresholds": {
+      "input_r2": 0.8,
+      "attention_tv": 0.15,
+      "picture_cosine": 0.9,
+      "destination_cosine": 0.9
+    },
+    "interpretation": "full-rank ridge map, standardized inputs, more early histories; no base-model training; no claim of multimodal behavior from text transfer"
+  }
+]

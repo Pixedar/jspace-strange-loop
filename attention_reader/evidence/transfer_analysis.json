@@ -1,0 +1,339 @@
+{
+  "rows": [
+    {
+      "seed": 10,
+      "environment": "familiar",
+      "learning": "plastic",
+      "carryover": 1.120267606722892,
+      "local_persistence": 0.5156955595488163,
+      "schema_r2": 0.8773138523101807
+    },
+    {
+      "seed": 10,
+      "environment": "familiar",
+      "learning": "frozen",
+      "carryover": 1.1311864401559593,
+      "local_persistence": 0.5211858515755623,
+      "schema_r2": 0.8323615789413452
+    },
+    {
+      "seed": 10,
+      "environment": "changed",
+      "learning": "plastic",
+      "carryover": 0.7948595773349219,
+      "local_persistence": 0.61284348392426,
+      "schema_r2": 0.8966372013092041
+    },
+    {
+      "seed": 10,
+      "environment": "changed",
+      "learning": "frozen",
+      "carryover": 0.7960178051321487,
+      "local_persistence": 0.6098852672701787,
+      "schema_r2": 0.6648226380348206
+    },
+    {
+      "seed": 11,
+      "environment": "familiar",
+      "learning": "plastic",
+      "carryover": 0.6916840401593661,
+      "local_persistence": 0.2073708492565251,
+      "schema_r2": 0.8506584167480469
+    },
+    {
+      "seed": 11,
+      "environment": "familiar",
+      "learning": "frozen",
+      "carryover": 0.7616832182083896,
+      "local_persistence": 0.17594688987893736,
+      "schema_r2": 0.7937486171722412
+    },
+    {
+      "seed": 11,
+      "environment": "changed",
+      "learning": "plastic",
+      "carryover": 0.3448950154243886,
+      "local_persistence": 0.08276498509315594,
+      "schema_r2": 0.8686381578445435
+    },
+    {
+      "seed": 11,
+      "environment": "changed",
+      "learning": "frozen",
+      "carryover": 0.190900714450482,
+      "local_persistence": 0.06235203890317608,
+      "schema_r2": 0.5638220310211182
+    },
+    {
+      "seed": 12,
+      "environment": "familiar",
+      "learning": "plastic",
+      "carryover": 0.7625228020389074,
+      "local_persistence": 0.15434673083914044,
+      "schema_r2": 0.8108049035072327
+    },
+    {
+      "seed": 12,
+      "environment": "familiar",
+      "learning": "frozen",
+      "carryover": 0.7631069740366825,
+      "local_persistence": 0.16354128357894554,
+      "schema_r2": 0.7185465097427368
+    },
+    {
+      "seed": 12,
+      "environment": "changed",
+      "learning": "plastic",
+      "carryover": 0.2153916788048913,
+      "local_persistence": 0.19943312170875466,
+      "schema_r2": 0.8250465393066406
+    },
+    {
+      "seed": 12,
+      "environment": "changed",
+      "learning": "frozen",
+      "carryover": 0.25670095992532416,
+      "local_persistence": 0.23479298047563835,
+      "schema_r2": 0.4476150870323181
+    },
+    {
+      "seed": 13,
+      "environment": "familiar",
+      "learning": "plastic",
+      "carryover": 0.4756862806053761,
+      "local_persistence": 0.09223419821352442,
+      "schema_r2": 0.8659172058105469
+    },
+    {
+      "seed": 13,
+      "environment": "familiar",
+      "learning": "frozen",
+      "carryover": 0.6078844367296986,
+      "local_persistence": 0.13144544140931258,
+      "schema_r2": 0.8107699751853943
+    },
+    {
+      "seed": 13,
+      "environment": "changed",
+      "learning": "plastic",
+      "carryover": 0.22005437557217683,
+      "local_persistence": 0.041726984071041015,
+      "schema_r2": 0.8680844902992249
+    },
+    {
+      "seed": 13,
+      "environment": "changed",
+      "learning": "frozen",
+      "carryover": 0.21745931830300413,
+      "local_persistence": 0.06275144175440091,
+      "schema_r2": 0.7033731341362
+    },
+    {
+      "seed": 14,
+      "environment": "familiar",
+      "learning": "plastic",
+      "carryover": 0.694847649600546,
+      "local_persistence": 0.10916664041916359,
+      "schema_r2": 0.8598469495773315
+    },
+    {
+      "seed": 14,
+      "environment": "familiar",
+      "learning": "frozen",
+      "carryover": 0.6961129535967066,
+      "local_persistence": 0.09802316144817114,
+      "schema_r2": 0.8090835809707642
+    },
+    {
+      "seed": 14,
+      "environment": "changed",
+      "learning": "plastic",
+      "carryover": 0.2653673654140617,
+      "local_persistence": 0.07674479948020163,
+      "schema_r2": 0.8668761253356934
+    },
+    {
+      "seed": 14,
+      "environment": "changed",
+      "learning": "frozen",
+      "carryover": 0.2901969897009195,
+      "local_persistence": 0.13740360977042715,
+      "schema_r2": 0.6916983127593994
+    },
+    {
+      "seed": 15,
+      "environment": "familiar",
+      "learning": "plastic",
+      "carryover": 0.6124867728066551,
+      "local_persistence": 0.19300708555939766,
+      "schema_r2": 0.8602655529975891
+    },
+    {
+      "seed": 15,
+      "environment": "familiar",
+      "learning": "frozen",
+      "carryover": 0.7450881165550703,
+      "local_persistence": 0.16694180020346294,
+      "schema_r2": 0.809371829032898
+    },
+    {
+      "seed": 15,
+      "environment": "changed",
+      "learning": "plastic",
+      "carryover": 0.32708606940748225,
+      "local_persistence": 0.06272016988287295,
+      "schema_r2": 0.8704997301101685
+    },
+    {
+      "seed": 15,
+      "environment": "changed",
+      "learning": "frozen",
+      "carryover": 0.40654672911775086,
+      "local_persistence": 0.16438264117859014,
+      "schema_r2": 0.6834466457366943
+    }
+  ],
+  "contrasts": [
+    {
+      "environment": "familiar",
+      "metric": "carryover",
+      "frozen_minus_plastic": 0.057927831224794,
+      "ci95": [
+        0.01410282724499364,
+        0.10175283520459437
+      ],
+      "n": 6,
+      "values": [
+        0.01091883343306721,
+        0.06999917804902345,
+        0.0005841719977750515,
+        0.1321981561243225,
+        0.0012653039961605383,
+        0.13260134374841526
+      ]
+    },
+    {
+      "environment": "familiar",
+      "metric": "local_persistence",
+      "frozen_minus_plastic": -0.0024561059570292754,
+      "ci95": [
+        -0.020381014953314215,
+        0.017708881499663476
+      ],
+      "n": 6,
+      "values": [
+        0.005490292026746002,
+        -0.03142395937758774,
+        0.0091945527398051,
+        0.039211243195788156,
+        -0.011143478970992451,
+        -0.02606528535593472
+      ]
+    },
+    {
+      "environment": "familiar",
+      "metric": "schema_r2",
+      "frozen_minus_plastic": -0.05848746498425802,
+      "ci95": [
+        -0.07255701224009196,
+        -0.04893780450026195
+      ],
+      "n": 6,
+      "values": [
+        -0.04495227336883545,
+        -0.056909799575805664,
+        -0.09225839376449585,
+        -0.05514723062515259,
+        -0.05076336860656738,
+        -0.05089372396469116
+      ]
+    },
+    {
+      "environment": "changed",
+      "metric": "carryover",
+      "frozen_minus_plastic": -0.001638594221382193,
+      "ci95": [
+        -0.06852757109179622,
+        0.04670901758544385
+      ],
+      "n": 6,
+      "values": [
+        0.0011582277972268518,
+        -0.1539943009739066,
+        0.04130928112043286,
+        -0.002595057269172696,
+        0.02482962428685781,
+        0.07946065971026861
+      ]
+    },
+    {
+      "environment": "changed",
+      "metric": "local_persistence",
+      "frozen_minus_plastic": 0.03255573919868751,
+      "ci95": [
+        0.0016069984603535245,
+        0.06589371345094214
+      ],
+      "n": 6,
+      "values": [
+        -0.002958216654081358,
+        -0.02041294618997986,
+        0.03535985876688369,
+        0.021024457683359893,
+        0.06065881029022552,
+        0.10166247129571719
+      ]
+    },
+    {
+      "environment": "changed",
+      "metric": "schema_r2",
+      "frozen_minus_plastic": -0.2401673992474874,
+      "ci95": [
+        -0.30735047658284503,
+        -0.18310766418774924
+      ],
+      "n": 6,
+      "values": [
+        -0.23181456327438354,
+        -0.3048161268234253,
+        -0.3774314522743225,
+        -0.1647113561630249,
+        -0.17517781257629395,
+        -0.18705308437347412
+      ]
+    }
+  ],
+  "summary": [
+    {
+      "environment": "familiar",
+      "learning": "plastic",
+      "carryover": 0.726249191988957,
+      "local_persistence": 0.21197017730609458,
+      "schema_r2": 0.8541344801584879
+    },
+    {
+      "environment": "familiar",
+      "learning": "frozen",
+      "carryover": 0.7841770232137512,
+      "local_persistence": 0.2095140713490653,
+      "schema_r2": 0.79564701517423
+    },
+    {
+      "environment": "changed",
+      "learning": "plastic",
+      "carryover": 0.36127568032632046,
+      "local_persistence": 0.1793722573600477,
+      "schema_r2": 0.8659637073675791
+    },
+    {
+      "environment": "changed",
+      "learning": "frozen",
+      "carryover": 0.3596370861049383,
+      "local_persistence": 0.2119279965587352,
+      "schema_r2": 0.6257963081200918
+    }
+  ],
+  "plain_language": "In 24 additional continuations, a change to recorded stream 5 did not require continued updating to retain a distinctive way of reading: mean local persistence was 0.212 with frozen habit and schema, versus 0.179 with learning. Schema prediction fit relative to predicting no pull was 0.626 versus 0.866. This includes the steady component, not just changing attention. These are six matched lives and one previously recorded alternate stream; the result is not a general claim about adaptation to arbitrary new worlds.",
+  "method": "From each exact reading-1500 state, 1200 readings in familiar versus alternate context, with frozen versus plastic components. Initial 200 readings omitted from local persistence; final 600 used for schema fit and carryover.",
+  "limits": "Carryover concerns directions in selected LLM activity, not a semantic identity test. Local persistence uses fewer segments than the main metric; do not directly compare their absolute values."
+}

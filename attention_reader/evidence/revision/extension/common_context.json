@@ -1,0 +1,4615 @@
+{
+  "scenes": 16,
+  "families": [
+    "debate",
+    "editing",
+    "imagination",
+    "perspective",
+    "planning",
+    "promise",
+    "sensors",
+    "study"
+  ],
+  "rows": 9100,
+  "summary": [
+    {
+      "layer": 12,
+      "condition": "full",
+      "prediction_kl": 0.01690713956264198,
+      "next_token_logprob_change": 0.0018651466038687222,
+      "processed_return_norm": 22.495971023119413,
+      "reading_change": 0.04593311329403322,
+      "attention_change": 0.0071000514044066276,
+      "copy_template_return": 0.0007820965420663402,
+      "return_alignment": 0.0018225590254795148
+    },
+    {
+      "layer": 12,
+      "condition": "unused_schema",
+      "prediction_kl": 0.017164261397896043,
+      "next_token_logprob_change": -0.003126989821162869,
+      "processed_return_norm": 22.507164647028997,
+      "reading_change": 0.04804578152814674,
+      "attention_change": 0.007177701771561335,
+      "copy_template_return": 0.001641716044086823,
+      "return_alignment": 0.013740911707698897
+    },
+    {
+      "layer": 12,
+      "condition": "mean_memory",
+      "prediction_kl": 0.017609608207538777,
+      "next_token_logprob_change": 0.004666342865722911,
+      "processed_return_norm": 22.534992694854736,
+      "reading_change": 0.046741158177653286,
+      "attention_change": 0.007162279631641135,
+      "copy_template_return": 0.0021590713639518537,
+      "return_alignment": 0.004518568435350839
+    },
+    {
+      "layer": 12,
+      "condition": "random_act",
+      "prediction_kl": 0.00836166077983046,
+      "next_token_logprob_change": -0.00042966581449333646,
+      "processed_return_norm": 14.839928803077111,
+      "reading_change": 0.029054435234554997,
+      "attention_change": 0.0030920461259282034,
+      "copy_template_return": 0.0009567637077801385,
+      "return_alignment": -0.031653151928734954
+    },
+    {
+      "layer": 12,
+      "condition": "rotated_act",
+      "prediction_kl": 0.007921757275119581,
+      "next_token_logprob_change": 0.0006709158358446005,
+      "processed_return_norm": 14.762680103228643,
+      "reading_change": 0.029768739927393952,
+      "attention_change": 0.0036886665365184557,
+      "copy_template_return": -0.0005786140631559612,
+      "return_alignment": -0.010538687405623108
+    },
+    {
+      "layer": 12,
+      "condition": "fixed_act",
+      "prediction_kl": 0.007737486121266703,
+      "next_token_logprob_change": -0.003705923628924141,
+      "processed_return_norm": 14.870678380819468,
+      "reading_change": 0.028868688020696243,
+      "attention_change": 0.0035396924829139195,
+      "copy_template_return": 0.0026216900863321258,
+      "return_alignment": -0.02885144536398119
+    },
+    {
+      "layer": 12,
+      "condition": "neighbor_act",
+      "prediction_kl": 0.01625475843275413,
+      "next_token_logprob_change": 0.0020710149352322123,
+      "processed_return_norm": 22.410669627556434,
+      "reading_change": 0.04419454563478527,
+      "attention_change": 0.0075439262087276405,
+      "copy_template_return": -0.0018029971210052555,
+      "return_alignment": 0.017639051447210993
+    },
+    {
+      "layer": 16,
+      "condition": "full",
+      "prediction_kl": 0.012628243285329814,
+      "next_token_logprob_change": 0.001597098312509633,
+      "processed_return_norm": 21.787580383740938,
+      "reading_change": 0.040972432244893206,
+      "attention_change": 0.0067660024412720034,
+      "copy_template_return": 0.00657787651678226,
+      "return_alignment": 0.025692844118578976
+    },
+    {
+      "layer": 16,
+      "condition": "unused_schema",
+      "prediction_kl": 0.012151220043514585,
+      "next_token_logprob_change": -0.002269187737143651,
+      "processed_return_norm": 21.769651086513814,
+      "reading_change": 0.04139682008679344,
+      "attention_change": 0.00695035926676707,
+      "copy_template_return": 0.006531234322256907,
+      "return_alignment": 0.03581483423241399
+    },
+    {
+      "layer": 16,
+      "condition": "mean_memory",
+      "prediction_kl": 0.012725669753971566,
+      "next_token_logprob_change": 0.001972234141028541,
+      "processed_return_norm": 21.831251063713662,
+      "reading_change": 0.040727074065661055,
+      "attention_change": 0.006704167669613428,
+      "copy_template_return": 0.007084814630291973,
+      "return_alignment": 0.02787699868026512
+    },
+    {
+      "layer": 16,
+      "condition": "random_act",
+      "prediction_kl": 0.007901096424143026,
+      "next_token_logprob_change": -0.0001926375580410422,
+      "processed_return_norm": 15.581668740052443,
+      "reading_change": 0.02796429397117088,
+      "attention_change": 0.003134662781452412,
+      "copy_template_return": -0.0016104977554519178,
+      "return_alignment": -0.011859379249831534
+    },
+    {
+      "layer": 16,
+      "condition": "rotated_act",
+      "prediction_kl": 0.007476455936092099,
+      "next_token_logprob_change": 0.0016082821069639626,
+      "processed_return_norm": 15.522564141566937,
+      "reading_change": 0.024015639550007687,
+      "attention_change": 0.002461943165332948,
+      "copy_template_return": 0.0016435997124709342,
+      "return_alignment": 0.018809123931348006
+    },
+    {
+      "layer": 16,
+      "condition": "fixed_act",
+      "prediction_kl": 0.007574173005501027,
+      "next_token_logprob_change": -0.012572523389290451,
+      "processed_return_norm": 15.604000993875356,
+      "reading_change": 0.027159084822594135,
+      "attention_change": 0.0033498939057503077,
+      "copy_template_return": 0.002670011944860452,
+      "return_alignment": -0.004821810543382144
+    },
+    {
+      "layer": 16,
+      "condition": "neighbor_act",
+      "prediction_kl": 0.012109863065896457,
+      "next_token_logprob_change": -0.00162599506308757,
+      "processed_return_norm": 21.680159264344436,
+      "reading_change": 0.04088185936533272,
+      "attention_change": 0.007792363887993253,
+      "copy_template_return": 0.004995010833199735,
+      "return_alignment": 0.008918089293491272
+    },
+    {
+      "layer": 20,
+      "condition": "full",
+      "prediction_kl": 0.0063426449339371894,
+      "next_token_logprob_change": -0.01823513006959624,
+      "processed_return_norm": 16.399099100553073,
+      "reading_change": 0.039520287564413406,
+      "attention_change": 0.004815330191555262,
+      "copy_template_return": 0.010386237064474533,
+      "return_alignment": 0.03050600511208124
+    },
+    {
+      "layer": 20,
+      "condition": "unused_schema",
+      "prediction_kl": 0.005882554727884162,
+      "next_token_logprob_change": -0.02018283801931532,
+      "processed_return_norm": 16.412496027579675,
+      "reading_change": 0.04001138453252268,
+      "attention_change": 0.004818411870381535,
+      "copy_template_return": 0.010546861092697049,
+      "return_alignment": 0.04610333772390725
+    },
+    {
+      "layer": 20,
+      "condition": "mean_memory",
+      "prediction_kl": 0.006116257766544058,
+      "next_token_logprob_change": -0.017843505418784388,
+      "processed_return_norm": 16.40609233562763,
+      "reading_change": 0.04047178760694375,
+      "attention_change": 0.004779011423855675,
+      "copy_template_return": 0.011420477858608481,
+      "return_alignment": 0.026632025599756564
+    },
+    {
+      "layer": 20,
+      "condition": "random_act",
+      "prediction_kl": 0.004334735513966866,
+      "next_token_logprob_change": 0.0021318239432301968,
+      "processed_return_norm": 13.783177632551928,
+      "reading_change": 0.0268848652580938,
+      "attention_change": 0.0026943377894912404,
+      "copy_template_return": -0.0006094542003763829,
+      "return_alignment": -0.014701543578600318
+    },
+    {
+      "layer": 20,
+      "condition": "rotated_act",
+      "prediction_kl": 0.004451314135285855,
+      "next_token_logprob_change": -0.0017320003028255717,
+      "processed_return_norm": 13.774036368956933,
+      "reading_change": 0.029628913070014178,
+      "attention_change": 0.0021600897398990917,
+      "copy_template_return": -0.00028603858452185525,
+      "return_alignment": 0.010363732908626345
+    },
+    {
+      "layer": 20,
+      "condition": "fixed_act",
+      "prediction_kl": 0.004648242105850478,
+      "next_token_logprob_change": -0.008324612430744064,
+      "processed_return_norm": 13.797770896324744,
+      "reading_change": 0.028499118673089494,
+      "attention_change": 0.002349943650820253,
+      "copy_template_return": 3.253508254068432e-05,
+      "return_alignment": -0.021151458439234074
+    },
+    {
+      "layer": 20,
+      "condition": "neighbor_act",
+      "prediction_kl": 0.005856553107242408,
+      "next_token_logprob_change": -0.019346436448535523,
+      "processed_return_norm": 16.388127396656916,
+      "reading_change": 0.03742808763936737,
+      "attention_change": 0.006157000137935239,
+      "copy_template_return": 0.0061939090359209295,
+      "return_alignment": 0.03328599183002911
+    },
+    {
+      "layer": 24,
+      "condition": "full",
+      "prediction_kl": 0.0026399460804383532,
+      "next_token_logprob_change": 0.001521293514509545,
+      "processed_return_norm": 12.674504916484539,
+      "reading_change": 0.03447242031303294,
+      "attention_change": 0.003725449297162967,
+      "copy_template_return": 0.00997134484486014,
+      "return_alignment": 0.03449840142277227
+    },
+    {
+      "layer": 24,
+      "condition": "unused_schema",
+      "prediction_kl": 0.002522052596685607,
+      "next_token_logprob_change": -0.00042962300125719386,
+      "processed_return_norm": 12.672774564302884,
+      "reading_change": 0.036451287220815996,
+      "attention_change": 0.003885962382861451,
+      "copy_template_return": 0.01029951378732266,
+      "return_alignment": 0.04128798922136719
+    },
+    {
+      "layer": 24,
+      "condition": "mean_memory",
+      "prediction_kl": 0.002642547084674536,
+      "next_token_logprob_change": -7.182394167994761e-05,
+      "processed_return_norm": 12.672085426403926,
+      "reading_change": 0.03597343797895915,
+      "attention_change": 0.0037841623625263616,
+      "copy_template_return": 0.010529699861751198,
+      "return_alignment": 0.027110036967440868
+    },
+    {
+      "layer": 24,
+      "condition": "random_act",
+      "prediction_kl": 0.0018810631779750781,
+      "next_token_logprob_change": 0.006010813577691247,
+      "processed_return_norm": 12.084115173266484,
+      "reading_change": 0.015101101452890673,
+      "attention_change": 0.0014433707279091345,
+      "copy_template_return": -0.0019104228591276088,
+      "return_alignment": -0.00510986384751619
+    },
+    {
+      "layer": 24,
+      "condition": "rotated_act",
+      "prediction_kl": 0.001989773878585,
+      "next_token_logprob_change": -0.0044572303217417075,
+      "processed_return_norm": 12.124160858301016,
+      "reading_change": 0.016195252987984514,
+      "attention_change": 0.002207009753445837,
+      "copy_template_return": 0.0001945337507993263,
+      "return_alignment": 0.03151325982601398
+    },
+    {
+      "layer": 24,
+      "condition": "fixed_act",
+      "prediction_kl": 0.0022278858595143176,
+      "next_token_logprob_change": -0.010355131753422378,
+      "processed_return_norm": 12.134337401390075,
+      "reading_change": 0.01632483496467454,
+      "attention_change": 0.001433179344289747,
+      "copy_template_return": 0.0013787613554898544,
+      "return_alignment": -0.011143935780394465
+    },
+    {
+      "layer": 24,
+      "condition": "neighbor_act",
+      "prediction_kl": 0.0026838671943794387,
+      "next_token_logprob_change": -0.0004886445686889391,
+      "processed_return_norm": 12.668178804104144,
+      "reading_change": 0.030882314033013412,
+      "attention_change": 0.004830184283343211,
+      "copy_template_return": 0.004100104330430636,
+      "return_alignment": 0.04409150664103361
+    },
+    {
+      "layer": 28,
+      "condition": "full",
+      "prediction_kl": 0.0014545214943341514,
+      "next_token_logprob_change": -0.003591035828013061,
+      "processed_return_norm": 0.0,
+      "reading_change": 0.0,
+      "attention_change": 0.0,
+      "copy_template_return": 0.0,
+      "return_alignment": 0.0
+    },
+    {
+      "layer": 28,
+      "condition": "unused_schema",
+      "prediction_kl": 0.0013950955315174805,
+      "next_token_logprob_change": -0.0015551387908737105,
+      "processed_return_norm": 0.0,
+      "reading_change": 0.0,
+      "attention_change": 0.0,
+      "copy_template_return": 0.0,
+      "return_alignment": 0.0
+    },
+    {
+      "layer": 28,
+      "condition": "mean_memory",
+      "prediction_kl": 0.001410029920046649,
+      "next_token_logprob_change": -0.0030324454455021273,
+      "processed_return_norm": 0.0,
+      "reading_change": 0.0,
+      "attention_change": 0.0,
+      "copy_template_return": 0.0,
+      "return_alignment": 0.0
+    },
+    {
+      "layer": 28,
+      "condition": "random_act",
+      "prediction_kl": 0.0011085674778188585,
+      "next_token_logprob_change": 0.0005019030668170042,
+      "processed_return_norm": 0.0,
+      "reading_change": 0.0,
+      "attention_change": 0.0,
+      "copy_template_return": 0.0,
+      "return_alignment": 0.0
+    },
+    {
+      "layer": 28,
+      "condition": "rotated_act",
+      "prediction_kl": 0.001243095565984175,
+      "next_token_logprob_change": -0.0014997105618266898,
+      "processed_return_norm": 0.0,
+      "reading_change": 0.0,
+      "attention_change": 0.0,
+      "copy_template_return": 0.0,
+      "return_alignment": 0.0
+    },
+    {
+      "layer": 28,
+      "condition": "fixed_act",
+      "prediction_kl": 0.001176574893767025,
+      "next_token_logprob_change": -0.005265077704372673,
+      "processed_return_norm": 0.0,
+      "reading_change": 0.0,
+      "attention_change": 0.0,
+      "copy_template_return": 0.0,
+      "return_alignment": 0.0
+    },
+    {
+      "layer": 28,
+      "condition": "neighbor_act",
+      "prediction_kl": 0.001418517093103831,
+      "next_token_logprob_change": -0.0012448783305094716,
+      "processed_return_norm": 0.0,
+      "reading_change": 0.0,
+      "attention_change": 0.0,
+      "copy_template_return": 0.0,
+      "return_alignment": 0.0
+    }
+  ],
+  "contrasts": [
+    {
+      "layer": 12,
+      "control": "unused_schema",
+      "metric": "prediction_kl",
+      "full_minus_control": -0.0002825959156760898,
+      "family_differences": [
+        -8.781614087638445e-05,
+        -0.0003600605582505523,
+        -0.0018197919915889926,
+        -0.001066785621722894,
+        0.0016010335619082777,
+        0.0003546493621779945,
+        -0.0012945998718755113,
+        0.00041260393481934443
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0009851372635433647,
+        0.00041599938344792463
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "unused_schema",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.005219452180907698,
+      "family_differences": [
+        0.025297725573182106,
+        -0.008215358076995471,
+        -0.0032452546146828354,
+        0.019130249108586992,
+        0.012177514119280709,
+        0.002740486524920982,
+        -0.0026033369617329705,
+        -0.003526408225297928
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0023879246610060776,
+        0.013144049394918485
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "unused_schema",
+      "metric": "processed_return_norm",
+      "full_minus_control": -0.009209716367343117,
+      "family_differences": [
+        0.21631848812103271,
+        0.0918664038181305,
+        0.08833450078964233,
+        -0.17846414021083287,
+        -0.264053291744656,
+        -0.09840250015258789,
+        -0.05257455507914225,
+        0.12329736351966858
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.11835325431403895,
+        0.09686206428127159
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "unused_schema",
+      "metric": "reading_change",
+      "full_minus_control": -0.0020862755752939543,
+      "family_differences": [
+        -0.010832180023072624,
+        0.004233135217647899,
+        -0.00015593011546011226,
+        0.0005319762187708323,
+        -0.001593706488721283,
+        -0.0036189688103336337,
+        -0.0016761156910736947,
+        -0.003578414910109018
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.005056140194919468,
+        0.0005355451933863101
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "unused_schema",
+      "metric": "attention_change",
+      "full_minus_control": -8.216770132768049e-05,
+      "family_differences": [
+        -0.0005780688985623783,
+        4.607683839030763e-05,
+        -0.00010306685981154029,
+        -0.0004277042039148503,
+        -0.00020084786348838356,
+        -7.377527771335046e-05,
+        -1.5397320510856416e-05,
+        0.0006954419749896079
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00030078793761952207,
+        0.00018160751847004497
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "unused_schema",
+      "metric": "copy_template_return",
+      "full_minus_control": -0.0008781602355061933,
+      "family_differences": [
+        -0.0050684857680600715,
+        0.0003905113661932802,
+        1.5515033361529484e-07,
+        -7.431044484107474e-05,
+        -8.586114281822827e-05,
+        -0.0018163720774606595,
+        0.00033853813904214134,
+        -0.0007094571064385491
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.002214307385977221,
+        6.430043670211715e-05
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "unused_schema",
+      "metric": "return_alignment",
+      "full_minus_control": -0.01161780945388086,
+      "family_differences": [
+        -0.025562692191973865,
+        0.006048781088772557,
+        -0.040001196617560665,
+        0.017316546397270236,
+        -0.010920537344818952,
+        0.002131731767669051,
+        -0.0029160355537962038,
+        -0.039039073176609033
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.02524579242364791,
+        0.0020129673003819086
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "mean_memory",
+      "metric": "prediction_kl",
+      "full_minus_control": -0.000747065743907344,
+      "family_differences": [
+        -0.0011153582745464519,
+        -0.0010137275767192477,
+        -0.001708934750876967,
+        -0.0017623855133673974,
+        0.00025323095663528267,
+        -0.0004703512589898651,
+        0.00013612922177546553,
+        -0.0002951287551695714
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0012357146352604347,
+        -0.00025553424073436357
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "mean_memory",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.0025649608364369855,
+      "family_differences": [
+        -0.0017011985182762146,
+        -0.003387338299944531,
+        -0.010482682729644921,
+        0.005258966769490924,
+        -0.016039560238520306,
+        0.008149512112233026,
+        0.0033782635194559893,
+        -0.005695649306289852
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00799593048228194,
+        0.0025646458068164656
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "mean_memory",
+      "metric": "processed_return_norm",
+      "full_minus_control": -0.04198568456229709,
+      "family_differences": [
+        0.12672638893127441,
+        -0.3869651257991791,
+        0.10217747092247009,
+        -0.1730057512010847,
+        -0.005220810572306315,
+        -0.011513590812683105,
+        -0.017109791437784832,
+        0.029025733470916748
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.15890288811975292,
+        0.05383324687857005
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "mean_memory",
+      "metric": "reading_change",
+      "full_minus_control": -0.0008181449919671817,
+      "family_differences": [
+        0.0013542568629247853,
+        -0.0002176447125146197,
+        -0.00029456344826606085,
+        -0.0005189716649839836,
+        0.0005264324163805315,
+        -0.0008343676449502624,
+        -0.0012070420307692428,
+        -0.0053532597135586
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00224188300773152,
+        0.00025620677451895205
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "mean_memory",
+      "metric": "attention_change",
+      "full_minus_control": -6.384458883075596e-05,
+      "family_differences": [
+        0.0002052173901461174,
+        -0.0002304329191709087,
+        -7.210122596401636e-05,
+        -0.0002346894720777521,
+        -9.311450615870045e-05,
+        -4.485744241389256e-06,
+        -0.00010035605099362564,
+        1.9205817814227366e-05
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00015060819660363075,
+        3.176982523329225e-05
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "mean_memory",
+      "metric": "copy_template_return",
+      "full_minus_control": -0.0014041144348536482,
+      "family_differences": [
+        -0.0005617462794020867,
+        -0.01046411461761887,
+        5.142051328899111e-05,
+        -0.00013144929138115508,
+        6.374261698896235e-05,
+        3.728526763713269e-05,
+        0.0001647684997049876,
+        -0.0003928221880471483
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.004045440278705431,
+        1.1678774646314468e-05
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "mean_memory",
+      "metric": "return_alignment",
+      "full_minus_control": -0.002559133768460014,
+      "family_differences": [
+        -9.250913994861276e-05,
+        -0.04264730967606014,
+        -0.006542187018260245,
+        0.017762722093154597,
+        -0.002025599977970854,
+        -0.012479441267539212,
+        0.008332271610930052,
+        0.017218983228014306
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.01654347494971969,
+        0.009125182165518891
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "random_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.008168792656580236,
+      "family_differences": [
+        0.00805548793869093,
+        0.0012519718799239854,
+        0.011448548707136297,
+        0.0037285740857311922,
+        0.008731740407660659,
+        0.0017322422585475117,
+        0.027650224539684132,
+        0.0027515514352671744
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0035323449367286163,
+        0.014581040522496922
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "random_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.00393954808385903,
+      "family_differences": [
+        0.03139389120042324,
+        -0.010168920063733822,
+        -0.02600595897727942,
+        0.00694188688482557,
+        0.03477826383378771,
+        0.053182605421724816,
+        -0.1308046471224063,
+        0.07219926349353045
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.04171537841320588,
+        0.03987533893807544
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "random_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 7.627522453222246,
+      "family_differences": [
+        9.4667589366436,
+        8.941285103559494,
+        4.793280825018883,
+        8.587548426219396,
+        6.322069101863438,
+        5.511604756116867,
+        11.746786620881823,
+        5.650845855474472
+      ],
+      "descriptive_family_bootstrap95": [
+        6.165882637728715,
+        9.248404739399456
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "random_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.01665227182612248,
+      "family_differences": [
+        -0.011020487765577514,
+        0.04636247434770624,
+        -0.0005519651920855573,
+        0.02203648621483621,
+        0.0025613454193818244,
+        0.002389676341583602,
+        0.050843817789700076,
+        0.02059682745343494
+      ],
+      "descriptive_family_bootstrap95": [
+        0.003030679314559623,
+        0.03156799152489485
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "random_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.0038841061478129845,
+      "family_differences": [
+        -0.00147335274323801,
+        0.0005417956391335884,
+        3.3029918369620326e-05,
+        0.0092289741993138,
+        0.0009720037788080541,
+        -8.767927781283547e-05,
+        0.020194520061572376,
+        0.00166355760635728
+      ],
+      "descriptive_family_bootstrap95": [
+        3.400758745694933e-05,
+        0.009080418305875691
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "random_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.0008544784357593961,
+      "family_differences": [
+        0.022660644439227218,
+        0.02280261288879526,
+        -0.002473583172422522,
+        0.013330160406331868,
+        0.0008891716445605072,
+        0.008978664776971401,
+        -0.05359899689822692,
+        -0.005752846599161643
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.01745429023342912,
+        0.0143274451563774
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "random_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.03799369541200963,
+      "family_differences": [
+        0.18502428298382673,
+        0.0865527341182773,
+        -0.1096365100702047,
+        0.08308849636763975,
+        0.016633251256740728,
+        0.14355631357551749,
+        -0.18922004923377664,
+        0.08795104429805639
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0517401384455323,
+        0.11660257076406554
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "rotated_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.008660062388101937,
+      "family_differences": [
+        0.007097678455465939,
+        -0.0039841917159435525,
+        0.016959040392485303,
+        0.006863067704086591,
+        0.008997214719177768,
+        0.002216848346777933,
+        0.027671708835340623,
+        0.0034591323674248997
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0028309744695555763,
+        0.015330201077925104
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "rotated_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.003308046662228898,
+      "family_differences": [
+        0.019309014081954956,
+        0.008134552495903336,
+        -0.04236910205464994,
+        0.019199364951678684,
+        0.021393255641063053,
+        0.05490344832651317,
+        -0.13628387715046605,
+        0.08217771700583398
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.04216450762778443,
+        0.04266345053646466
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "rotated_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 7.711123743286682,
+      "family_differences": [
+        9.090980887413025,
+        9.415722370147705,
+        6.056376755237579,
+        8.694122280393328,
+        5.90146103170183,
+        5.583668828010559,
+        11.944651471243965,
+        5.002006322145462
+      ],
+      "descriptive_family_bootstrap95": [
+        6.1886020404878,
+        9.332506014600336
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "rotated_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.01607171771119746,
+      "family_differences": [
+        0.019474689545369017,
+        0.029233668292194537,
+        0.0005591110941840505,
+        0.028722677348806007,
+        0.004185068421413184,
+        -0.001455578993866169,
+        0.0466319442423074,
+        0.0012221617391716677
+      ],
+      "descriptive_family_bootstrap95": [
+        0.005250984714895793,
+        0.027760428805530802
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "rotated_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.003439018355170071,
+      "family_differences": [
+        0.0022968624168093754,
+        0.0006397875031073086,
+        0.0007249800890436059,
+        0.011295249541720263,
+        0.0010023467937369584,
+        -0.0011526465556372933,
+        0.01193574442982997,
+        0.0007698226227503824
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00045474492332963566,
+        0.007251901225793359
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "rotated_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.0022541326269514524,
+      "family_differences": [
+        0.012348443217616634,
+        0.01284529022665959,
+        -0.0008699890276440969,
+        0.017022086965852803,
+        0.000919890970345468,
+        0.0084636595844656,
+        -0.03971610278993597,
+        0.0070197818682515845
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.010860780105496508,
+        0.011297715075679976
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "rotated_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.01799357443412427,
+      "family_differences": [
+        0.09684897113146151,
+        0.024970478506174815,
+        -0.031157935484442213,
+        0.12497437000978714,
+        0.09209260106112069,
+        0.13363937871812087,
+        -0.3152259768136167,
+        0.017806708344388023
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.08705840635233987,
+        0.09478992529310745
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "fixed_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.008881706855672947,
+      "family_differences": [
+        0.004222464245685842,
+        -0.001891373360081161,
+        0.016713086714426062,
+        0.010005979470276673,
+        0.010910742600268955,
+        0.0005421354080819007,
+        0.02669347179633203,
+        0.003857147970393271
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0032828580610637275,
+        0.01531985863268223
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "fixed_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.008155312503780569,
+      "family_differences": [
+        0.07343161478638649,
+        0.01828571806254331,
+        -0.021570464101785092,
+        0.016885059220450267,
+        0.050451318422953285,
+        0.04053322249078661,
+        -0.1933866943129235,
+        0.08061272546183318
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.055334604568527776,
+        0.05358585845831716
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "fixed_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 7.61251914678585,
+      "family_differences": [
+        8.996011346578598,
+        8.931041330099106,
+        5.397034376859665,
+        9.337755594934736,
+        6.6760127147038775,
+        4.622939929366112,
+        11.104539235432943,
+        5.83481864631176
+      ],
+      "descriptive_family_bootstrap95": [
+        6.135733586813634,
+        9.089607137911733
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "fixed_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.017026549141095117,
+      "family_differences": [
+        0.009339480205355244,
+        0.03263160540472043,
+        -0.0008351090091118785,
+        0.020048544879013468,
+        -0.0017047587477918569,
+        0.006553722706928333,
+        0.041241801363621,
+        0.028937106326026196
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00660320151481969,
+        0.027916939156921696
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "fixed_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.003476385387737979,
+      "family_differences": [
+        0.0009979127547872224,
+        -0.0006397876564248617,
+        0.0010521518287297527,
+        0.009022850878875015,
+        -0.0002840123276099702,
+        -0.0006300680473209086,
+        0.018241528288280424,
+        5.050738258716159e-05
+      ],
+      "descriptive_family_bootstrap95": [
+        -8.799444262713332e-05,
+        0.008117283088011967
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "fixed_act",
+      "metric": "copy_template_return",
+      "full_minus_control": -0.0007202313357348019,
+      "family_differences": [
+        0.024208990517744944,
+        0.006542473171558871,
+        -0.002101878439376259,
+        0.011691319890996763,
+        -0.0002162585261286962,
+        0.004826381279929182,
+        -0.061571196473123334,
+        0.01085831789252012
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.01930604180784109,
+        0.012321034296833504
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "fixed_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.03403145396693456,
+      "family_differences": [
+        0.17332527073371812,
+        -0.11385877273815073,
+        -0.09336938362780087,
+        0.09942389644659788,
+        0.09605958798864447,
+        0.1826838573956719,
+        -0.18083846011091384,
+        0.10882563564770956
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.059088915536056115,
+        0.1198313271173689
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "neighbor_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.0006208696041339664,
+      "family_differences": [
+        -0.0008120565616991371,
+        -0.001397078900708948,
+        -0.0008605683732980651,
+        0.002458184483527605,
+        0.0012553679842110593,
+        0.0008347794615664039,
+        0.003871935277452899,
+        -0.0003836065379800857
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0004946311758046375,
+        0.0018261033209606703
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "neighbor_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.0003597494298937815,
+      "family_differences": [
+        0.013629429042339325,
+        0.0027767181818489917,
+        -0.006084710535105842,
+        0.015994108148983548,
+        -0.012942509104808172,
+        0.003756596939624046,
+        -0.007468787798037131,
+        -0.006782849435694516
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.006115433070004928,
+        0.007492906534296943
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "neighbor_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.09298468617692826,
+      "family_differences": [
+        -0.10088109970092773,
+        -0.06595426797866821,
+        0.07482126355171204,
+        0.6309435026986259,
+        -0.1229199038611518,
+        0.04543021321296692,
+        0.34743420282999676,
+        -0.06499642133712769
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.05924624700306191,
+        0.27733448617426415
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "neighbor_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.002243988389137118,
+      "family_differences": [
+        -0.0023123294892002377,
+        0.02469818084796671,
+        -0.006853886694196287,
+        0.016989901166290115,
+        0.0007774269535237485,
+        0.0031174185354547745,
+        -0.014395884840892468,
+        -0.0040689193658494105
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0053973685964747,
+        0.01084777959443147
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "neighbor_act",
+      "metric": "attention_change",
+      "full_minus_control": -0.0003179092265929541,
+      "family_differences": [
+        -0.0033670454209868694,
+        -0.0003180019572062154,
+        -0.002981358069918394,
+        0.0074743684454694715,
+        -0.0009085333046843718,
+        5.7881610646681736e-05,
+        -0.00012277002876287462,
+        -0.0023778150873010606
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.002128433792797798,
+        0.0021068830303182947
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "neighbor_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.00272162061702422,
+      "family_differences": [
+        0.0024915060319408155,
+        0.011410111364630326,
+        -0.0010503084733908263,
+        0.008940526265479618,
+        -0.00010336623698334633,
+        0.004645494432477193,
+        0.0028912611125666197,
+        -0.007452259560526642
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0010860249002389213,
+        0.006564050817358991
+      ]
+    },
+    {
+      "layer": 12,
+      "control": "neighbor_act",
+      "metric": "return_alignment",
+      "full_minus_control": -0.014614758096267506,
+      "family_differences": [
+        -0.09361431062711273,
+        0.02037693497344264,
+        -0.01116213480039073,
+        0.02023686483525832,
+        -0.03863951010524726,
+        0.0354538617606252,
+        -0.03385111431092089,
+        -0.015718656495794597
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.04273062811791338,
+        0.010977859677309817
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "unused_schema",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.00047352075761677336,
+      "family_differences": [
+        0.0007181713663158007,
+        0.0003784347980513303,
+        -0.0005071744574587367,
+        0.000947086998036996,
+        0.0012060485317104191,
+        1.1302110179502167e-05,
+        0.00044222069684312574,
+        0.0005920760172557493
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00010842204758223291,
+        0.0008048692051714603
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "unused_schema",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.00431717966653935,
+      "family_differences": [
+        0.025122499093413353,
+        0.00307478243848891,
+        -0.008862199814984706,
+        0.019742352621895925,
+        -0.0015910143653551738,
+        -0.0024103592150339637,
+        -0.0036575384438037872,
+        0.003118915017694235
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.002706251835599612,
+        0.01267929955332936
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "unused_schema",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.01508345809720811,
+      "family_differences": [
+        0.1357789933681488,
+        0.07495051622390747,
+        -0.17334085702896118,
+        -0.15360539300101145,
+        -0.03152857886420356,
+        0.11395126581192017,
+        0.07798618740505642,
+        0.07647553086280823
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0680391037230572,
+        0.08540085289213392
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "unused_schema",
+      "metric": "reading_change",
+      "full_minus_control": -0.00040690660432391335,
+      "family_differences": [
+        0.0007834231370509315,
+        0.0020903818901976123,
+        -0.0005507162999176529,
+        -0.001096361978543062,
+        -0.0015749790282421196,
+        -0.005507360646062054,
+        -0.0010645699970856823,
+        0.0036649300880107205
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.002270236780755036,
+        0.0012705595336084026
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "unused_schema",
+      "metric": "attention_change",
+      "full_minus_control": -0.00019164768646616885,
+      "family_differences": [
+        0.00015320703187171603,
+        -5.364421120079843e-05,
+        -0.00010200686268091452,
+        -0.000954162466602515,
+        -0.0008095498499756104,
+        -0.00020058265032663058,
+        0.00013764566002857464,
+        0.00029591185715682755
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0004987387689459721,
+        8.055433304634758e-05
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "unused_schema",
+      "metric": "copy_template_return",
+      "full_minus_control": 4.205010871901664e-05,
+      "family_differences": [
+        -0.0033673519136812047,
+        0.004005447765793146,
+        -0.0002474118980922979,
+        0.0005145212487763626,
+        0.0001596489898455881,
+        -0.0024495645609774463,
+        0.0006954079450616706,
+        0.0010257032930263144
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0013366036759265977,
+        0.0014902410836024381
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "unused_schema",
+      "metric": "return_alignment",
+      "full_minus_control": -0.009737575712083536,
+      "family_differences": [
+        -0.06238292614446476,
+        0.01546529405124925,
+        0.012880020068553868,
+        0.015983956655490607,
+        -0.008965402687711767,
+        0.003968032783123018,
+        -0.009775152482727133,
+        -0.045074427940181384
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.03045785919840031,
+        0.00736776727686231
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "mean_memory",
+      "metric": "prediction_kl",
+      "full_minus_control": -0.00010857744780691891,
+      "family_differences": [
+        0.0006468390492955223,
+        0.0008148019365421533,
+        -0.0014828731437157572,
+        -0.0005094786091441554,
+        -0.0003006208704997941,
+        -0.0007129390441322769,
+        0.00040737845928459946,
+        0.00026827263991435757
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0006198576619626426,
+        0.00037050774162909696
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "mean_memory",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.00010316151452075938,
+      "family_differences": [
+        0.009326605126261711,
+        -0.007889128362876363,
+        -0.00031021979455658766,
+        0.01988118886947632,
+        -0.009527028434806399,
+        -0.001643553841873313,
+        -0.001577948478774892,
+        -0.007434622966684401
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.005623348648238613,
+        0.00720287612330723
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "mean_memory",
+      "metric": "processed_return_norm",
+      "full_minus_control": -0.04787018238788559,
+      "family_differences": [
+        0.10051020979881287,
+        -0.19294366240501404,
+        -0.11623871326446533,
+        -0.1713589600154332,
+        -0.0066526465945773655,
+        0.028558284044265747,
+        0.06039116117689344,
+        -0.0852271318435669
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.11860477191115182,
+        0.02174815699487688
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "mean_memory",
+      "metric": "reading_change",
+      "full_minus_control": 0.00024841559376741185,
+      "family_differences": [
+        0.0034955301117918225,
+        -0.00012014679302918552,
+        0.00022905600300671125,
+        -0.0005688583006358629,
+        0.0005097051894153992,
+        -0.0009972466900940447,
+        -0.001028879841075852,
+        0.0004681650707603069
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.000549951246489773,
+        0.0012959448973184943
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "mean_memory",
+      "metric": "attention_change",
+      "full_minus_control": 5.2119898770551344e-05,
+      "family_differences": [
+        0.0007350806384209818,
+        -0.00018339258192812125,
+        -0.00016513736009482471,
+        -0.0005786780698450654,
+        -3.9794714262421214e-05,
+        -4.4485204823585534e-05,
+        0.00014470328090952263,
+        0.0005486632017879245
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00020871942866549075,
+        0.00033090895966480594
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "mean_memory",
+      "metric": "copy_template_return",
+      "full_minus_control": -0.0005190282256156908,
+      "family_differences": [
+        -0.00020209220727096522,
+        -0.005755882342189267,
+        0.00011381240242347435,
+        0.00024487078891015964,
+        0.00015690597094438394,
+        -0.00037717965376588003,
+        0.0003547938792386339,
+        0.001312545356783934
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0021162168325171405,
+        0.0004952933497307213
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "mean_memory",
+      "metric": "return_alignment",
+      "full_minus_control": -0.0022146101251447514,
+      "family_differences": [
+        0.01752427336402705,
+        -0.0271717001046654,
+        0.00475998049844579,
+        -0.02873950614957917,
+        -0.024696275455864683,
+        0.009059093482079835,
+        -0.004278229194049615,
+        0.03582548255844818
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.017170362939103987,
+        0.01315688237579294
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "random_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.004810877271924991,
+      "family_differences": [
+        0.010086657805004506,
+        -0.0003069540304068141,
+        0.011139687434109258,
+        0.005778632597606962,
+        0.0034854770114583922,
+        0.00500771022796398,
+        0.0016615561600903878,
+        0.0016342509695732588
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0023302968451767874,
+        0.0074912086900134995
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "random_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.003380817321334939,
+      "family_differences": [
+        0.15696455910801888,
+        -0.009082611384656047,
+        -0.06163854489622622,
+        -0.011486355747495378,
+        -0.016399621963500977,
+        0.04872154770435344,
+        -0.09512621076363656,
+        0.015093776513822377
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.04098716632941944,
+        0.05564805986687624
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "random_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 6.209759659000806,
+      "family_differences": [
+        7.886049151420593,
+        7.30817124247551,
+        4.946117728948593,
+        6.927982023784092,
+        5.8028450277116566,
+        5.343747198581696,
+        7.084775659773085,
+        4.378389239311218
+      ],
+      "descriptive_family_bootstrap95": [
+        5.386747429144406,
+        7.013422280771747
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "random_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.013390967191619179,
+      "family_differences": [
+        0.00530841289713635,
+        -0.00444807779313372,
+        -0.0009438172753810647,
+        0.028129906096864943,
+        0.0058867649646098625,
+        -0.004533326118975722,
+        0.010750228660578879,
+        0.0669776461012539
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0005420689572405827,
+        0.030920849786122893
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "random_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.003451803917448185,
+      "family_differences": [
+        0.0010429334137072033,
+        0.00027342962193559195,
+        0.0003288563577590886,
+        0.005350159317788071,
+        0.00148322400108943,
+        -0.0018289866908247632,
+        0.018988562488288264,
+        0.001976252829842595
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00019449607611547853,
+        0.008301952322669486
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "random_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.00850365908161798,
+      "family_differences": [
+        0.008993730543653378,
+        0.020917233878478214,
+        -0.0009865484585045436,
+        0.01703249298519654,
+        -0.00013411835840631485,
+        0.00809367797783933,
+        0.005176757815273763,
+        0.008936046269413467
+      ],
+      "descriptive_family_bootstrap95": [
+        0.003700421004876408,
+        0.013623148038727299
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "random_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.03882926844457686,
+      "family_differences": [
+        0.12505967833297368,
+        0.0920769187331751,
+        0.08685455760768318,
+        -0.05261572952444591,
+        -0.005145121231206376,
+        0.014959123585221295,
+        -0.09164926979947532,
+        0.14109398985268923
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.02037206825509007,
+        0.09129534979135467
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "rotated_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.005223470211256635,
+      "family_differences": [
+        0.0074587166018318385,
+        0.001027377057312151,
+        0.011665714981968112,
+        0.007490618274979559,
+        0.004008054655261933,
+        0.003125129225008294,
+        0.004046647799744581,
+        0.0029655030939466087
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0032036068217748655,
+        0.00756522178345803
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "rotated_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.0018292403148248582,
+      "family_differences": [
+        0.1321418657898903,
+        0.03523710649460554,
+        -0.06070292287091661,
+        -0.03181268487657819,
+        -0.04589729052450922,
+        0.04356629843750426,
+        -0.10371372114039129,
+        0.04581527120899409
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.04564943899646802,
+        0.05384945802527897
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "rotated_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 6.277159549473297,
+      "family_differences": [
+        8.100412279367447,
+        7.78856360912323,
+        4.831617832183838,
+        7.426001003810337,
+        5.710861139827305,
+        4.9130940437316895,
+        7.202984439002143,
+        4.243742048740387
+      ],
+      "descriptive_family_bootstrap95": [
+        5.304918591347006,
+        7.246551857603389
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "rotated_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.01755768923047956,
+      "family_differences": [
+        0.0011968975836325058,
+        0.00645725981165679,
+        0.0009868121936378316,
+        0.030318824388402277,
+        0.002440890544875174,
+        -0.001380689012865588,
+        0.006377348260393884,
+        0.09406417007410361
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0019308799589365822,
+        0.04092509189731114
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "rotated_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.004230463298031193,
+      "family_differences": [
+        0.002147442661481591,
+        -4.506100751749953e-05,
+        0.0008384346144890698,
+        0.010528529636354185,
+        0.0008035185590466022,
+        -2.1885641985353033e-06,
+        0.018739212939349877,
+        0.0008338175452442531
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0006135991885446889,
+        0.009110463701122153
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "rotated_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.005427543512558499,
+      "family_differences": [
+        -0.007516841061997681,
+        0.010429168063708416,
+        0.0002176444517589804,
+        0.026309607125112353,
+        -0.00017498190083150197,
+        -0.002976699194398691,
+        -0.00015020349756388206,
+        0.017282654114679996
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0013854147387932318,
+        0.013114494489379869
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "rotated_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.009379120601778182,
+      "family_differences": [
+        0.03588040678294393,
+        0.07394363182063078,
+        0.06851137286427923,
+        -0.03652325164545626,
+        -0.10238523621249268,
+        0.001148569350658754,
+        -0.08695992177675432,
+        0.12141739363041604
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.04305122924062456,
+        0.06253747459775544
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "fixed_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.0051916546881310595,
+      "family_differences": [
+        0.00984604721179494,
+        -0.0010036442560874548,
+        0.013341840466528754,
+        0.008653501790831797,
+        0.0012694784154013582,
+        0.0025661356167665517,
+        0.003632691523913915,
+        0.003227186735898613
+      ],
+      "descriptive_family_bootstrap95": [
+        0.002193034693163358,
+        0.008427526298293242
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "fixed_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.01615991383185654,
+      "family_differences": [
+        0.15441950969398022,
+        -0.001741526779369451,
+        -0.04269286326942279,
+        0.020624995231628418,
+        -0.011189309673176872,
+        0.03567131166355608,
+        -0.08139476971700788,
+        0.0555819635046646
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0273291265153263,
+        0.06515682831739876
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "fixed_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 6.189944341483097,
+      "family_differences": [
+        7.961035370826721,
+        7.509666174650192,
+        5.0151475965976715,
+        7.26496342250279,
+        5.915625095367432,
+        4.429088234901428,
+        7.125560813479954,
+        4.2984680235385895
+      ],
+      "descriptive_family_bootstrap95": [
+        5.19469085887577,
+        7.106787429735182
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "fixed_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.01476107299929023,
+      "family_differences": [
+        0.006153214844559329,
+        -0.0007225088820952408,
+        0.0004731597147902278,
+        0.040773445550077066,
+        0.0027098574139346157,
+        -0.002284040585259106,
+        -0.008777501368992802,
+        0.07976295730730776
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.001409082889771312,
+        0.0361718669350528
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "fixed_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.003402549467265273,
+      "family_differences": [
+        0.00029665354507102393,
+        -9.448985674828658e-06,
+        0.0003540486075022109,
+        0.011616946064530025,
+        0.0013164827827409908,
+        -0.001310521919454688,
+        0.014584352185721874,
+        0.0003718834576855734
+      ],
+      "descriptive_family_bootstrap95": [
+        -4.724535414806664e-06,
+        0.007874600326166232
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "fixed_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.004383763964559979,
+      "family_differences": [
+        0.0067647928147493985,
+        -0.0033997092902822157,
+        0.0010254093279267185,
+        0.020351126141239344,
+        -0.00013690465859797187,
+        0.006225358370618883,
+        -0.006061665757083803,
+        0.01030170476790948
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0007764677927038408,
+        0.010126362802231857
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "fixed_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.03186356724888191,
+      "family_differences": [
+        -0.0014479390798954744,
+        0.1421383222040462,
+        0.061614987092428186,
+        -0.0190602346067481,
+        0.01230941216099309,
+        0.13383002633408844,
+        -0.08718539766870989,
+        0.012709361554852833
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.01762354815316661,
+        0.08355198110192133
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "neighbor_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.0005815490115201587,
+      "family_differences": [
+        -0.0016406324357376434,
+        5.304142234763276e-06,
+        0.001262997107789099,
+        0.00435223792529931,
+        6.003854650771245e-06,
+        -0.0004617036971068522,
+        0.0008218115965266608,
+        0.00030637359850516077
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00039615384847159886,
+        0.001819442710555375
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "neighbor_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.0035451504981046534,
+      "family_differences": [
+        0.01292002759873867,
+        0.008294571514852578,
+        -0.014208528490115668,
+        0.019582808017730713,
+        -0.007579648246367772,
+        0.00014431076121468323,
+        0.009773893799218867,
+        -0.0005662309704348445
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.003778942963508846,
+        0.010682362941420345
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "neighbor_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.1156314548755449,
+      "family_differences": [
+        -0.010154753923416138,
+        0.05983227491378784,
+        0.08852341771125793,
+        0.521162850516183,
+        -0.05251595709058973,
+        0.08553886413574219,
+        0.1556384563446045,
+        0.07702648639678955
+      ],
+      "descriptive_family_bootstrap95": [
+        0.026211621529526184,
+        0.24323142053825514
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "neighbor_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.0006077273729476747,
+      "family_differences": [
+        -0.0026409027187810352,
+        0.007799382446341596,
+        -0.009933993457370782,
+        0.026896071685036254,
+        0.00630333059047593,
+        -0.010022153085213148,
+        -0.012414573602659271,
+        -0.0011253428742481475
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0070258996666892745,
+        0.009785817912241923
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "neighbor_act",
+      "metric": "attention_change",
+      "full_minus_control": -0.0009479406341493494,
+      "family_differences": [
+        -0.005768865174232474,
+        -0.0005310398484814627,
+        -0.003917943763603937,
+        0.006557858033567994,
+        0.000811553683377042,
+        -6.952312083230439e-05,
+        -0.00029898910113181364,
+        -0.00436657578185784
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0032179909841434638,
+        0.0017270968948224026
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "neighbor_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.0018898412775273628,
+      "family_differences": [
+        0.00372033555369633,
+        0.014255315439766658,
+        -0.0004856165032378623,
+        0.01643661530051954,
+        -0.0005324243627392712,
+        -0.0028115522498968204,
+        -0.0010945326656283177,
+        -0.014369410292261353
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.004405386941861395,
+        0.008171682770673195
+      ]
+    },
+    {
+      "layer": 16,
+      "control": "neighbor_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.020405479781114184,
+      "family_differences": [
+        -0.03196582965955909,
+        0.15462060200655742,
+        0.09340706855895423,
+        0.054031882515603195,
+        -0.09841080010091424,
+        -0.006668001174146482,
+        -0.0631489597440897,
+        0.061377875846508154
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.033786818688149006,
+        0.076107599276448
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "unused_schema",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.0004473498269112338,
+      "family_differences": [
+        0.0013223728055891115,
+        0.000944342530033282,
+        0.0006287238923476934,
+        -0.00039247765172539014,
+        0.0006299952898795406,
+        0.00021097279686732584,
+        0.0002530015295229128,
+        -1.8132577224605484e-05
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00010500456663617251,
+        0.0008012153100862482
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "unused_schema",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.001762341863609938,
+      "family_differences": [
+        -0.002516666427254677,
+        0.007729014192591421,
+        -0.0002693074347490665,
+        -0.005163531218256269,
+        0.0008320945004622141,
+        0.003579450072770385,
+        0.007815511741985878,
+        0.00209216948132962
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0011873863151248825,
+        0.004676244504795276
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "unused_schema",
+      "metric": "processed_return_norm",
+      "full_minus_control": -0.01608234602544043,
+      "family_differences": [
+        0.022443830966949463,
+        0.0392342209815979,
+        -0.04118126630783081,
+        -0.1322011947631836,
+        0.027955585055881076,
+        -0.06395205855369568,
+        -0.0016868909200032551,
+        0.020729005336761475
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.057376718479726044,
+        0.018031012680795457
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "unused_schema",
+      "metric": "reading_change",
+      "full_minus_control": -0.0005280354197768216,
+      "family_differences": [
+        -0.003883547576307933,
+        0.0014668102032580066,
+        0.00016139787322799748,
+        -0.0013982113453029196,
+        -0.0005762074404426838,
+        0.00023439863278618134,
+        0.0010509600337537488,
+        -0.001279883739186971
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0017362530795504254,
+        0.0004890360957261093
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "unused_schema",
+      "metric": "attention_change",
+      "full_minus_control": -8.103407540271827e-06,
+      "family_differences": [
+        0.00024150354732910273,
+        -5.2635210139317934e-05,
+        -0.0001238965034061068,
+        -0.0003845834827239817,
+        -0.0002982168438923812,
+        -6.249132800784096e-06,
+        0.0002319423200380386,
+        0.00032730804527325574
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00017855087188350471,
+        0.00015817296630616447
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "unused_schema",
+      "metric": "copy_template_return",
+      "full_minus_control": -0.00018352539120912586,
+      "family_differences": [
+        -0.0011151311328907454,
+        0.002802788489024266,
+        0.00013667156407359826,
+        -0.0011658646485610627,
+        0.00010598350667123668,
+        -0.000721987650799033,
+        3.321504768807573e-05,
+        -0.0015438783048793425
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0009394367965712372,
+        0.0007903231790520355
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "unused_schema",
+      "metric": "return_alignment",
+      "full_minus_control": -0.016463512742420548,
+      "family_differences": [
+        -0.04167910860018763,
+        0.00648529797957959,
+        0.005104517247625312,
+        -0.02616586046982041,
+        0.013048833300331807,
+        -0.04775355767630163,
+        0.0006235019760725824,
+        -0.041371725696664
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.032439993236118944,
+        -0.0002245359492803814
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "mean_memory",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.0002285038030585646,
+      "family_differences": [
+        0.0008090932678896934,
+        0.00036137198608798826,
+        0.00021201232061240916,
+        -1.068124921792852e-05,
+        4.520510426825947e-05,
+        0.00031839026577362706,
+        3.503613131922773e-05,
+        5.7602597735240124e-05
+      ],
+      "descriptive_family_bootstrap95": [
+        7.701651532077467e-05,
+        0.00042619003721157156
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "mean_memory",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.0006722765761961844,
+      "family_differences": [
+        -0.004175266250967979,
+        -0.0056910973908088636,
+        0.0026873635355997294,
+        -0.00933986050742013,
+        0.003880848073297077,
+        0.0006469981745382825,
+        0.004349389993068244,
+        0.002263411763124168
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.004183278513678365,
+        0.00243756396216164
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "mean_memory",
+      "metric": "processed_return_norm",
+      "full_minus_control": -0.008979717239974039,
+      "family_differences": [
+        0.05699950456619263,
+        -0.018390268087387085,
+        -0.06578958034515381,
+        -0.06711619240897042,
+        0.030594136979844835,
+        -0.027958661317825317,
+        0.022431294123331707,
+        -0.002607971429824829
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.03847600306783404,
+        0.019809551822346838
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "mean_memory",
+      "metric": "reading_change",
+      "full_minus_control": -0.0010039708801956012,
+      "family_differences": [
+        0.0011899383251616769,
+        -0.0035257698159263384,
+        0.00016233761665773727,
+        -0.0007482217776778757,
+        0.0010147984964735063,
+        6.546299934750976e-05,
+        0.0006436132938950499,
+        -0.006833926179496075
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0029771521092359443,
+        0.0005559942365033537
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "mean_memory",
+      "metric": "attention_change",
+      "full_minus_control": 3.514723712533506e-05,
+      "family_differences": [
+        0.0001790819007680966,
+        -0.00018704483192072408,
+        -0.0001314340281554638,
+        6.0758317224328196e-05,
+        0.0001635231830934774,
+        -1.0070831168773609e-05,
+        8.531858582567012e-06,
+        0.00019783232857917277
+      ],
+      "descriptive_family_bootstrap95": [
+        -6.0968991803851906e-05,
+        0.00012401668831476192
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "mean_memory",
+      "metric": "copy_template_return",
+      "full_minus_control": -0.001066267657369095,
+      "family_differences": [
+        -0.0007002843904357903,
+        -0.004044443172832146,
+        0.00011097438549623195,
+        -0.001129401650312786,
+        4.8310211127500224e-05,
+        -0.00012579773203613698,
+        -0.00016223340852484903,
+        -0.0025272655014347833
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0021690998574550547,
+        -0.00023986954537352803
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "mean_memory",
+      "metric": "return_alignment",
+      "full_minus_control": 0.003910826452716504,
+      "family_differences": [
+        -0.007416693758443684,
+        0.05382682417220174,
+        0.009966948910596357,
+        -0.03339559982896002,
+        0.0060442142075611315,
+        0.011859564225038158,
+        -0.03792403870927324,
+        0.028325392403011587
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.01582060071386586,
+        0.023999916804839958
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "random_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.0020656394084135866,
+      "family_differences": [
+        0.0036706834034703206,
+        0.00125008886783462,
+        0.0009168024328438662,
+        0.004335435413979992,
+        0.0019544587782244585,
+        0.0017780919557492947,
+        0.0006941667953570788,
+        0.0019253876198490616
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0012976413113688719,
+        0.002928940705364637
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "random_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.020601313624969867,
+      "family_differences": [
+        -0.040827641263604164,
+        -0.0017775168889784254,
+        0.005720891697677644,
+        -0.08507371161665235,
+        -0.011381076441870796,
+        0.021514174528753927,
+        -0.07906057401042846,
+        0.026074944995343685
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.049867582528235914,
+        0.006064971911193927
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "random_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 2.626874738860698,
+      "family_differences": [
+        3.555673271417618,
+        2.827991634607315,
+        2.443559229373932,
+        3.180328301021031,
+        2.3803119924333362,
+        1.8656501173973083,
+        2.7149284415774875,
+        2.046554923057556
+      ],
+      "descriptive_family_bootstrap95": [
+        2.279047785669802,
+        2.9861837223408716
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "random_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.012736233640349908,
+      "family_differences": [
+        0.032331259888216834,
+        0.02093311263651465,
+        -0.0014053771664643833,
+        0.0160714218370919,
+        0.0014739008318227003,
+        0.0035777849001306095,
+        0.020781017933649712,
+        0.008126748261837236
+      ],
+      "descriptive_family_bootstrap95": [
+        0.005345698948077089,
+        0.020222760915407464
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "random_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.0020079104880190452,
+      "family_differences": [
+        0.001580763484630765,
+        0.00013930108952509013,
+        0.00017784641624003783,
+        0.003718585942214731,
+        0.00032452852761682353,
+        -5.742649165019209e-05,
+        0.012752292315540446,
+        -0.0025726073799653415
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0003791433189244893,
+        0.0054236081360057075
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "random_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.010978209449176705,
+      "family_differences": [
+        0.020771463143581137,
+        0.03654973026141106,
+        -0.000490929148664554,
+        0.0019850605210483857,
+        -0.0014299158872417036,
+        -0.0014184371365970616,
+        0.015529503876290422,
+        0.01632919996358595
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0024366169659891215,
+        0.020571270770887624
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "random_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.04622721113811644,
+      "family_differences": [
+        0.09363189081976567,
+        0.14158553656808504,
+        0.02375455210661685,
+        -0.10301104055189426,
+        0.07663232611447052,
+        0.09353094274775148,
+        -0.19969421461151518,
+        0.24338769591165138
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.048454964110143675,
+        0.12947456688271886
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "rotated_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.0019453802284804828,
+      "family_differences": [
+        0.0035489085894369055,
+        0.0017339088065995156,
+        0.0003373762802867386,
+        0.004661573539384075,
+        0.0017449266642870498,
+        0.0010583771382877138,
+        0.0013488141646828605,
+        0.0011291566448790036
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0011284665357881184,
+        0.0029269148479974657
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "rotated_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.01704593459827593,
+      "family_differences": [
+        0.026493342593312263,
+        -0.0007171603756432887,
+        0.018946083609748143,
+        -0.12494422495365143,
+        -0.038813201089700065,
+        0.025232587009689667,
+        -0.06789464441438516,
+        0.02532974083442241
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.05507046977545542,
+        0.01654560944203347
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "rotated_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 2.6437504930155615,
+      "family_differences": [
+        3.7413079142570496,
+        2.936089366674423,
+        2.3208075761795044,
+        3.4175446374075755,
+        2.3720918893814087,
+        1.8811005651950836,
+        2.474498748779297,
+        2.0065632462501526
+      ],
+      "descriptive_family_bootstrap95": [
+        2.22837395287518,
+        3.0894480165759366
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "rotated_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.009991605447927602,
+      "family_differences": [
+        0.035381493341660075,
+        0.032335784343420215,
+        -0.001699279138408727,
+        0.012070895587476522,
+        0.002009418482411244,
+        -0.0018588185829777615,
+        0.013538070573648753,
+        -0.011844721023809512
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00017576350595245452,
+        0.021056103736476314
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "rotated_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.0025576836832522758,
+      "family_differences": [
+        0.0027259911652990354,
+        -0.00028170075523464844,
+        0.001048442683940859,
+        0.004338314959431521,
+        0.0005652976679597385,
+        -0.0006324919272320262,
+        0.01267189092097725,
+        2.5724750876476854e-05
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00029499258696815154,
+        0.005757653414041359
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "rotated_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.01061680985689779,
+      "family_differences": [
+        0.021989044987752226,
+        0.029369246648409564,
+        -0.0003007313227891828,
+        -0.002071566201263001,
+        -0.002121735091987789,
+        0.0006788295252622145,
+        0.01427225523403138,
+        0.023119135075766906
+      ],
+      "descriptive_family_bootstrap95": [
+        0.002416234398435671,
+        0.01917995239898812
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "rotated_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.02078342544036406,
+      "family_differences": [
+        0.06730267889455041,
+        0.26728049798859677,
+        -0.08562296600062863,
+        -0.10928854130140005,
+        -0.08108414863160344,
+        0.07098925072360446,
+        -0.04909592762852787,
+        0.0857865594783208
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.054081215455275305,
+        0.11091683498839669
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "fixed_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.0017202376138257397,
+      "family_differences": [
+        0.003949939120502677,
+        0.0024038381899913475,
+        -0.0009337191528997479,
+        0.0036081087434597847,
+        0.0020511489754224182,
+        -0.000319484586931873,
+        0.0015979363088263199,
+        0.0014041333122349897
+      ],
+      "descriptive_family_bootstrap95": [
+        0.000566542924224323,
+        0.002800836085137413
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "fixed_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.010215498410934514,
+      "family_differences": [
+        0.0050043985247612,
+        -0.021482680309418356,
+        0.009606289864464657,
+        -0.06756460879530225,
+        -0.01533032829562823,
+        0.021543492563075972,
+        -0.042626028725256525,
+        0.029125477885827422
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.03286593870131899,
+        0.00996320203237974
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "fixed_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 2.6145269345669515,
+      "family_differences": [
+        3.5902208983898163,
+        2.92588073015213,
+        2.2063870429992676,
+        3.262646334511893,
+        2.4982981416914196,
+        2.095002681016922,
+        2.5209576553768582,
+        1.8168219923973083
+      ],
+      "descriptive_family_bootstrap95": [
+        2.2419221777882843,
+        3.0261955252242467
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "fixed_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.01125391640696605,
+      "family_differences": [
+        0.025102671002422028,
+        0.010355189632076822,
+        -0.0046778659092781005,
+        0.018839026517903385,
+        0.00598191205161432,
+        0.0003036096193191895,
+        0.0089824423565164,
+        0.02514434598515436
+      ],
+      "descriptive_family_bootstrap95": [
+        0.004135290603969603,
+        0.01821760243904784
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "fixed_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.002339177480838787,
+      "family_differences": [
+        -0.00013521401805860478,
+        -8.017220538980574e-05,
+        0.0007292845730501041,
+        0.003859799718127179,
+        0.001331842907339996,
+        0.0004190548100557745,
+        0.013070723184880425,
+        -0.00048189912329477114
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00014572297529366466,
+        0.005716067919183347
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "fixed_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.010360112949242542,
+      "family_differences": [
+        0.02418616291057951,
+        0.030790988679030296,
+        -0.0014193161088977037,
+        0.004675781158965013,
+        -0.0012105885576577042,
+        -0.00040097156354879093,
+        0.015829769790800134,
+        0.010429077284669575
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0031585786436242646,
+        0.018675436416431046
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "fixed_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.05492264815382743,
+      "family_differences": [
+        0.11936264752355903,
+        0.30146551637287455,
+        0.0026019039153649115,
+        0.021232801180005704,
+        -0.08444638275665664,
+        0.056765969834711355,
+        -0.0516351670727976,
+        0.0740338962335581
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.013309889781205318,
+        0.13965551988955083
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "neighbor_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.000513494172791051,
+      "family_differences": [
+        0.000500767637277022,
+        0.0005715293726780146,
+        3.0115014521880923e-05,
+        0.001965521290133308,
+        0.0003531880140346604,
+        0.0003443601455110912,
+        0.00034467495263217844,
+        -2.203044459747616e-06
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00020350999208343655,
+        0.0009718878296498065
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "neighbor_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.0011425163381646136,
+      "family_differences": [
+        -0.003261413425207138,
+        0.005247878594673239,
+        0.00787692058567302,
+        -0.001896773065839495,
+        -0.004693245308266746,
+        0.002582272747545744,
+        0.0019103412309454547,
+        0.00137414934579283
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.001635104457270086,
+        0.0038515474869257153
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "neighbor_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.01264099729439569,
+      "family_differences": [
+        0.009881258010864258,
+        0.014031738042831421,
+        0.027584105730056763,
+        0.07327614511762347,
+        -0.054937283198038735,
+        0.05609658360481262,
+        0.03235035472446018,
+        -0.05715492367744446
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0196559968670564,
+        0.04258283985601295
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "neighbor_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.0022037506042151926,
+      "family_differences": [
+        0.009295162652342981,
+        0.04294647804711893,
+        -0.014090677487296865,
+        0.006251250130826439,
+        0.0019265785283298304,
+        -0.005311152702369704,
+        -0.0007223719392833851,
+        -0.022665262395946684
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.009294424209191281,
+        0.015378779714736477
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "neighbor_act",
+      "metric": "attention_change",
+      "full_minus_control": -0.0013062086508931472,
+      "family_differences": [
+        -0.0023645770524183263,
+        -0.00043173368851345817,
+        -0.003945841575299092,
+        0.0032349970142905144,
+        -0.0008165973737909048,
+        -1.7650417765135984e-06,
+        0.0004404015305443764,
+        -0.006564553020181774
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.003326747310691706,
+        0.0005586589099729511
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "neighbor_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.004342425646764517,
+      "family_differences": [
+        0.0036611557118293447,
+        0.03157662048777388,
+        0.0007850260965458489,
+        0.00924779702361006,
+        -0.001464901757868928,
+        -0.0034341761284537586,
+        0.005298779244533986,
+        -0.010930895503854288
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.002632983747846156,
+        0.013288948001073397
+      ]
+    },
+    {
+      "layer": 20,
+      "control": "neighbor_act",
+      "metric": "return_alignment",
+      "full_minus_control": -0.0013172282660920062,
+      "family_differences": [
+        -0.05394149071594331,
+        0.065642215773033,
+        -0.046311859298426766,
+        0.046024863596403016,
+        -0.08386843400928906,
+        0.039699244227511116,
+        0.03349676996896887,
+        -0.011279135670992917
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.038559217617912526,
+        0.03220895700372952
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "unused_schema",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.00012219968460110717,
+      "family_differences": [
+        0.0007229521688714158,
+        -6.079566470162945e-05,
+        -0.00020278899744108347,
+        0.00021585839879532744,
+        3.232386694031043e-05,
+        2.4505714244504873e-05,
+        2.5831161312655444e-05,
+        0.00021971082878735615
+      ],
+      "descriptive_family_bootstrap95": [
+        -3.373763322209787e-05,
+        0.000325704690967537
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "unused_schema",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.00205111969815911,
+      "family_differences": [
+        0.015302503481507301,
+        -0.0057809982499748,
+        0.00028047391927543686,
+        0.004211215036255973,
+        0.0030965598093138803,
+        -0.0069118009414950166,
+        -0.0033474319304029145,
+        0.009558436460793018
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0026919492997899974,
+        0.0073389485457799365
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "unused_schema",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.001346478002175452,
+      "family_differences": [
+        0.012874633073806763,
+        -0.00855305790901184,
+        0.006396979093551636,
+        -0.007922240665980749,
+        0.005968597200181749,
+        -0.01130223274230957,
+        0.012407461802164713,
+        0.0009016841650009155
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0048803276914571,
+        0.007312182233565386
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "unused_schema",
+      "metric": "reading_change",
+      "full_minus_control": -0.0020129109328923993,
+      "family_differences": [
+        -0.007687630175006177,
+        -0.000907749876351005,
+        -0.00017415166544054728,
+        -0.0011867679231361958,
+        -0.0003777311667868667,
+        -0.0021294857982407933,
+        -0.0006090860571343152,
+        -0.003030684801043293
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0038369310743309854,
+        -0.0007473715328789914
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "unused_schema",
+      "metric": "attention_change",
+      "full_minus_control": -0.00016173760928651335,
+      "family_differences": [
+        -0.0005246333268118519,
+        3.870111979331625e-05,
+        -0.00018528871646483758,
+        -0.0002560288454231753,
+        -0.0002365558292088584,
+        -3.244789699374806e-05,
+        -0.00010161659227892953,
+        3.969213095977864e-06
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0002856566865694459,
+        -5.518783472119022e-05
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "unused_schema",
+      "metric": "copy_template_return",
+      "full_minus_control": -0.000335270268305488,
+      "family_differences": [
+        -0.0031085048941283944,
+        0.0023198755053304154,
+        0.00013744777587199053,
+        -0.0006471879058557331,
+        -0.0005085760793911555,
+        -0.0008419027733721496,
+        -1.2295914977064922e-05,
+        -2.1017859921812487e-05
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0013030646384446553,
+        0.0006186757528244531
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "unused_schema",
+      "metric": "return_alignment",
+      "full_minus_control": -0.006348457403654242,
+      "family_differences": [
+        -0.04540495547569148,
+        -0.018992434611490198,
+        0.03261928404773067,
+        -0.0070080877391507325,
+        -0.019205957443582347,
+        0.03061745459148499,
+        -0.022824063370366746,
+        -0.0005888992281680918
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.022932805667223416,
+        0.011388285468789535
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "mean_memory",
+      "metric": "prediction_kl",
+      "full_minus_control": 8.062741259665016e-06,
+      "family_differences": [
+        -9.883430811896687e-05,
+        -4.266413988318618e-05,
+        -8.428657338532819e-05,
+        0.0005704043017301176,
+        -2.4336922352732574e-05,
+        -0.00021895495603496684,
+        -9.033949188758722e-05,
+        5.351402000997041e-05
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00011146982889392154,
+        0.0001818049397778719
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "mean_memory",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.0017483412433486382,
+      "family_differences": [
+        0.011855818331241608,
+        0.005933396641921718,
+        -0.008400150487403835,
+        0.006382473877498082,
+        0.0011369457675351037,
+        0.0008384815881541385,
+        -0.0030956768120328584,
+        -0.0006645589601248503
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0022642745278751352,
+        0.005901739936033423
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "mean_memory",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.002026167417329455,
+      "family_differences": [
+        0.012187063694000244,
+        -0.014349102973937988,
+        -0.002950310707092285,
+        -0.004892757960728237,
+        0.012983083724975586,
+        -0.008247137069702148,
+        0.00971629884507921,
+        0.01176220178604126
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00507444373908497,
+        0.009114620958765349
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "mean_memory",
+      "metric": "reading_change",
+      "full_minus_control": -0.0015169125009751555,
+      "family_differences": [
+        -0.001952708849181306,
+        -0.005725902364282831,
+        -1.1992715574393742e-05,
+        -0.0010453697664780342,
+        -0.0007146221570716685,
+        -0.00022034762110667572,
+        -0.0008144958321996872,
+        -0.001649860701906647
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.002831549190787119,
+        -0.0005856729833364864
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "mean_memory",
+      "metric": "attention_change",
+      "full_minus_control": -6.329253408107184e-05,
+      "family_differences": [
+        -0.00018706841449578349,
+        -4.738458234088139e-05,
+        -0.00017670006161674134,
+        -0.00023572092524882873,
+        7.316419400795994e-05,
+        -6.455606790245483e-07,
+        -7.451218668882515e-05,
+        0.00014252726441355001
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00014406600237490573,
+        2.1810894835278632e-05
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "mean_memory",
+      "metric": "copy_template_return",
+      "full_minus_control": -0.0005790910497242463,
+      "family_differences": [
+        -0.000973492274340515,
+        -0.002942710290043671,
+        0.00014394494273251013,
+        -0.0006313673664646302,
+        0.00011684866377474161,
+        0.00011433486152007122,
+        2.0535054193625433e-05,
+        -0.0004808219891661025
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.001308086677162829,
+        -3.367547655761512e-05
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "mean_memory",
+      "metric": "return_alignment",
+      "full_minus_control": 0.007583851674344733,
+      "family_differences": [
+        -0.01536228276543649,
+        0.020900377354045575,
+        0.028685078699482256,
+        0.0022110580989048354,
+        0.0021163620089475845,
+        -0.007092305418521947,
+        -0.0050281214715644056,
+        0.03424064688890045
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0040279536545046474,
+        0.01938861526048409
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "random_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.0008049581838138376,
+      "family_differences": [
+        0.0028301755069151113,
+        -5.0451249080651905e-05,
+        0.00020294644117491156,
+        0.0022913511649156654,
+        6.654864513519796e-05,
+        0.0005741236467735611,
+        3.4867415807740246e-05,
+        0.0004901038988691653
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00016023226832489405,
+        0.001601037362980377
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "random_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.003871268968109453,
+      "family_differences": [
+        0.027103526517748833,
+        0.0041769077652134,
+        0.0028836329587704768,
+        -0.021828134145055498,
+        -0.023504755563206144,
+        0.0038585518484097747,
+        -0.042380968729654946,
+        0.01872108760289848
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.019315912315191988,
+        0.010893148851467714
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "random_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.5917664170560856,
+      "family_differences": [
+        0.8916371762752533,
+        0.6594982445240021,
+        0.5364271253347397,
+        0.5570824827466693,
+        0.5285251273049248,
+        0.4939103424549103,
+        0.5308399730258517,
+        0.5362108647823334
+      ],
+      "descriptive_family_bootstrap95": [
+        0.525936157859507,
+        0.6833190678256668
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "random_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.019606114785490784,
+      "family_differences": [
+        0.04906103598765199,
+        0.01257078407288681,
+        0.0010940468718514396,
+        0.013261209614053573,
+        -0.00044964856106667465,
+        0.0006265590451244307,
+        0.018055237812957606,
+        0.0626296934404671
+      ],
+      "descriptive_family_bootstrap95": [
+        0.005753190610128963,
+        0.03578224188162246
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "random_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.002236602900455343,
+      "family_differences": [
+        0.005671986754194336,
+        0.0002635456405660555,
+        0.0008495498715559713,
+        0.001730558025224423,
+        0.0004733949156153648,
+        0.00011457130939773741,
+        0.006449684481966237,
+        0.0023395322051226186
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0007872804060767853,
+        0.003981910081728749
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "random_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.01187882977989712,
+      "family_differences": [
+        0.026247379579225516,
+        0.030652649224427897,
+        -0.0016810161437833815,
+        0.0038315641242876136,
+        -0.0012212268851100481,
+        -0.001839712052802145,
+        0.017122585855185717,
+        0.02191841453774579
+      ],
+      "descriptive_family_bootstrap95": [
+        0.002793629439232862,
+        0.020474370845142774
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "random_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.036690309780270075,
+      "family_differences": [
+        0.009090679010241146,
+        0.0276995491795598,
+        -0.10554899709873078,
+        -0.013192086636648887,
+        0.052280110973738886,
+        -0.0028499187900478187,
+        0.1608852190210776,
+        0.16515792258297068
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.019941056177498112,
+        0.09632126622703395
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "rotated_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.0006711649863190757,
+      "family_differences": [
+        0.002727856854107813,
+        -0.00031404767850062854,
+        0.00039805686874150314,
+        0.0012534563897393777,
+        0.0003304871346093326,
+        0.00021269950565994122,
+        0.00022960325117714496,
+        0.0005312075650181214
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00016083230923309092,
+        0.001354455270706982
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "rotated_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.007101094112650247,
+      "family_differences": [
+        0.06318793818354607,
+        0.004143028450926067,
+        0.0003299476076108476,
+        0.005956251706395831,
+        -0.009032477107312944,
+        0.014824588316869836,
+        -0.05087724503957563,
+        0.028276720782741904
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.014668279473483856,
+        0.02740624192644623
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "rotated_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.5522641916833226,
+      "family_differences": [
+        0.8370184600353241,
+        0.6400437653064728,
+        0.5120690166950226,
+        0.5391985348292759,
+        0.46836462285783553,
+        0.44457030296325684,
+        0.49828942616780597,
+        0.4785594046115875
+      ],
+      "descriptive_family_bootstrap95": [
+        0.4833421384915709,
+        0.6440124384260603
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "rotated_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.018336293820647838,
+      "family_differences": [
+        0.05366557541256611,
+        0.020988789273685526,
+        0.001255821295026216,
+        -0.0006767717630132049,
+        -0.0022498644395151737,
+        0.00021498889418314349,
+        0.0160661642831883,
+        0.05742564760906177
+      ],
+      "descriptive_family_bootstrap95": [
+        0.003756145449037946,
+        0.03580137435261093
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "rotated_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.0014464537403087226,
+      "family_differences": [
+        0.004971809180435827,
+        -6.369010330581348e-05,
+        0.0009762054860384395,
+        -0.0010365067048379941,
+        -0.0007542417353679159,
+        0.00019422375232136524,
+        0.00584326599238512,
+        0.0014405640548007526
+      ],
+      "descriptive_family_bootstrap95": [
+        -6.577867081766561e-05,
+        0.00321210313947355
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "rotated_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.009747225423620077,
+      "family_differences": [
+        0.029832289753506824,
+        0.019131739300861872,
+        -0.001533208455962387,
+        0.0010042605588144976,
+        -0.0006273229804902611,
+        0.0003201608146213286,
+        0.013301877541572773,
+        0.01654800685603597
+      ],
+      "descriptive_family_bootstrap95": [
+        0.002405497804644263,
+        0.017556616756069347
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "rotated_act",
+      "metric": "return_alignment",
+      "full_minus_control": -0.0018893210565435158,
+      "family_differences": [
+        0.046696065176051835,
+        0.00910198679674834,
+        -0.15533108734144882,
+        -0.12098242316921082,
+        0.09164539376293628,
+        0.00013413601426964794,
+        0.10232293447592697,
+        0.011298425832378459
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.06577074980684922,
+        0.054440956355427325
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "fixed_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.00043253108780529905,
+      "family_differences": [
+        0.0025016886133926164,
+        0.0002318197707253944,
+        -0.001184952561283814,
+        0.0008787263712812481,
+        0.00021046076815562427,
+        0.00040567332462315697,
+        -0.00022980965635118386,
+        0.0006466420718993504
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00020276142402037676,
+        0.001177125888045094
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "fixed_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.012490880840763243,
+      "family_differences": [
+        0.04504259489476681,
+        0.0019005992289748974,
+        0.005867556887352521,
+        0.028671896883419583,
+        0.003681936197810703,
+        0.0021371052130803037,
+        -0.0024587707076635626,
+        0.015084128128364682
+      ],
+      "descriptive_family_bootstrap95": [
+        0.003065917131633533,
+        0.024373275878263358
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "fixed_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.542097745611081,
+      "family_differences": [
+        0.8484840095043182,
+        0.6112216711044312,
+        0.4850037097930908,
+        0.5328053065708706,
+        0.5110360781351725,
+        0.43725258111953735,
+        0.4384019904666477,
+        0.4725766181945801
+      ],
+      "descriptive_family_bootstrap95": [
+        0.4706420318947898,
+        0.6406930695080922
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "fixed_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.018359051239836475,
+      "family_differences": [
+        0.050099996025618765,
+        0.01311991056611106,
+        0.0005855795230456096,
+        0.007912837678796882,
+        -0.006884911967006246,
+        0.0010087391940065693,
+        0.019411517939564908,
+        0.06161874095855424
+      ],
+      "descriptive_family_bootstrap95": [
+        0.003588013624730132,
+        0.03538129257069674
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "fixed_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.0022378612848080503,
+      "family_differences": [
+        0.005670326137704684,
+        0.00020273190949213205,
+        0.0009467969803617082,
+        0.0015211701953079249,
+        3.274716203489131e-05,
+        0.0003565136162017174,
+        0.007262847742317127,
+        0.0019097565350442158
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0006696695849424953,
+        0.004159800342956203
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "fixed_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.008626730345078281,
+      "family_differences": [
+        0.029133276155213217,
+        0.004404314475602855,
+        -0.0014587556004400093,
+        0.006957142606734654,
+        -0.0015098816922937254,
+        1.6387976248255498e-07,
+        0.014874209023087072,
+        0.016613373912959695
+      ],
+      "descriptive_family_bootstrap95": [
+        0.002175396527954886,
+        0.01610213680171937
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "fixed_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.044359391622790144,
+      "family_differences": [
+        0.004385813841598068,
+        0.011248675984820919,
+        -0.09237126107313823,
+        0.1018160472820827,
+        0.0956581584171473,
+        0.10753219997378806,
+        0.1339087432122038,
+        -0.0073032446561814846
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.008915021390386427,
+        0.09204396610681466
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "neighbor_act",
+      "metric": "prediction_kl",
+      "full_minus_control": -3.2100243908974e-05,
+      "family_differences": [
+        -2.6060759410029277e-05,
+        -0.00015713984730325592,
+        -0.00043180610381143847,
+        0.0006108994005314473,
+        -3.410413976073162e-05,
+        -0.0003375916580061755,
+        -0.00015545325570403494,
+        0.0002744544121924264
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0002349290541275297,
+        0.00020080146649266656
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "neighbor_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.0024118435450526917,
+      "family_differences": [
+        0.0035982802510261536,
+        0.00774243946216302,
+        0.005072500076011011,
+        0.014306234461920602,
+        -0.0024255087806118857,
+        -0.006380864651944762,
+        -0.006980268232938316,
+        0.004361935774795711
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.0022699442495935055,
+        0.007164233181651136
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "neighbor_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.006989623966907698,
+      "family_differences": [
+        0.02260330319404602,
+        -0.017843514680862427,
+        -0.011975884437561035,
+        0.039780684879847934,
+        -0.003954331080118815,
+        0.007740646600723267,
+        0.00759638680352105,
+        0.011969700455665588
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.004920255910191271,
+        0.019629707310112224
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "neighbor_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.003547108738423857,
+      "family_differences": [
+        0.008233133044582175,
+        0.00045110753476640397,
+        -0.012693914832882847,
+        0.003006034319281322,
+        -0.0026241804675161498,
+        -0.001986310203179187,
+        0.01197216372894003,
+        0.02201883678339911
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00310415356956955,
+        0.010483211748890924
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "neighbor_act",
+      "metric": "attention_change",
+      "full_minus_control": -0.0011333099309085454,
+      "family_differences": [
+        -0.0013858697619077986,
+        0.0002329025570957377,
+        -0.0046158785323843765,
+        0.0001646611528614204,
+        -0.0008827258530396244,
+        3.4920260760296085e-05,
+        0.0017714484823321058,
+        -0.004385937752986124
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.002729959393854527,
+        0.0002339308091619579
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "neighbor_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.005957027758108793,
+      "family_differences": [
+        0.002956310240109339,
+        0.02918332579262428,
+        -0.0012515671787962646,
+        0.007907230218688856,
+        -0.0002451684004951302,
+        -0.0021038255753143553,
+        0.008533255538139094,
+        0.0026766614299145175
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0006268097047886205,
+        0.013074722424875082
+      ]
+    },
+    {
+      "layer": 24,
+      "control": "neighbor_act",
+      "metric": "return_alignment",
+      "full_minus_control": -0.007905585307451377,
+      "family_differences": [
+        0.023915276470103355,
+        -0.007274269589392007,
+        -0.07395179580756545,
+        0.09212980817304597,
+        -0.052531770796428436,
+        0.13460827023306346,
+        0.027067199459375375,
+        -0.2072074006018133
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.07953156329313499,
+        0.05787038013741188
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "unused_schema",
+      "metric": "prediction_kl",
+      "full_minus_control": 6.256993144904926e-05,
+      "family_differences": [
+        -1.3880380265618442e-05,
+        -7.920945049733064e-05,
+        -4.865593185110484e-05,
+        0.0002522880879821189,
+        0.00016043061229235414,
+        0.000412895891432008,
+        -4.9930553965774983e-05,
+        -0.00013337882353425812
+      ],
+      "descriptive_family_bootstrap95": [
+        -5.4013737445756085e-05,
+        0.00019552814467303103
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "unused_schema",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.002012659143716446,
+      "family_differences": [
+        -0.011323483660817146,
+        0.013451472215820104,
+        -0.0061551395197625425,
+        -0.002083552735192435,
+        4.90136444568634e-05,
+        -0.005819943034943265,
+        -0.005655688595854574,
+        0.0014360485365614295
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.006285167133808243,
+        0.003266512583659953
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "unused_schema",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "unused_schema",
+      "metric": "reading_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "unused_schema",
+      "metric": "attention_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "unused_schema",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "unused_schema",
+      "metric": "return_alignment",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "mean_memory",
+      "metric": "prediction_kl",
+      "full_minus_control": 4.92079491239904e-05,
+      "family_differences": [
+        -0.00020821854332098155,
+        1.5118002956171495e-05,
+        -0.0001157740431751153,
+        0.00037025272078088686,
+        0.00024249474356313131,
+        0.00031436301962672886,
+        -0.00012959843802996652,
+        -9.497386940893193e-05
+      ],
+      "descriptive_family_bootstrap95": [
+        -9.235762514146801e-05,
+        0.0001997696835046792
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "mean_memory",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.0004818012426697568,
+      "family_differences": [
+        0.005819289013743401,
+        -0.006707873533741804,
+        -0.007650645070924611,
+        0.0012553568397249495,
+        0.002818266964621014,
+        0.0007330237422138453,
+        -0.00703600545724233,
+        0.006914177560247481
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.004249921892016475,
+        0.003190938291507315
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "mean_memory",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "mean_memory",
+      "metric": "reading_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "mean_memory",
+      "metric": "attention_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "mean_memory",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "mean_memory",
+      "metric": "return_alignment",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "random_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.00035555246993865036,
+      "family_differences": [
+        0.0006953542256269429,
+        -3.381046519024267e-05,
+        6.772940115862269e-06,
+        0.0007648278398327031,
+        0.00028008477458267106,
+        0.0006334763293840417,
+        0.00021639606267045665,
+        0.00028131805248676756
+      ],
+      "descriptive_family_bootstrap95": [
+        0.00015690219849887489,
+        0.0005504865233797575
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "random_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.0038202130181207595,
+      "family_differences": [
+        0.008015058934688568,
+        -0.0011884844971064012,
+        -0.008096515578813523,
+        -0.012970404965536935,
+        -0.013636187132861879,
+        -0.008317276137034924,
+        -0.020881612836900685,
+        0.0265137180685997
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.012423765465268537,
+        0.006852150987476031
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "random_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "random_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "random_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "random_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "random_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "rotated_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.00022235682441432722,
+      "family_differences": [
+        0.0007184776127360237,
+        -5.3264123707208455e-05,
+        1.920523213794212e-06,
+        0.0005604706633935816,
+        0.0001317215135006538,
+        0.0005297933304579949,
+        -5.9402269875540194e-05,
+        -5.086265440468196e-05
+      ],
+      "descriptive_family_bootstrap95": [
+        2.1469034568782286e-05,
+        0.00043841454467789755
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "rotated_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.001546294918583341,
+      "family_differences": [
+        0.022362619638442993,
+        -0.0030223385256249458,
+        -0.01579528163782129,
+        -7.13531460080828e-05,
+        -0.008242018520832062,
+        -0.0033983064351943426,
+        -0.028802602137956355,
+        0.024598921416327357
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.012477511654250446,
+        0.009882768714543798
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "rotated_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "rotated_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "rotated_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "rotated_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "rotated_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "fixed_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 0.00028774979297413597,
+      "family_differences": [
+        0.0007534809647040674,
+        3.9825920183034214e-05,
+        -7.035838154868801e-05,
+        0.0005147789925104007,
+        0.00013764716696742753,
+        0.0007709072791417526,
+        2.7674112061504275e-05,
+        0.0001280422897735889
+      ],
+      "descriptive_family_bootstrap95": [
+        7.089825401010062e-05,
+        0.0005059817059794557
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "fixed_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": 0.002020258865189752,
+      "family_differences": [
+        0.031288065016269684,
+        -0.006915528683748562,
+        -0.019187847487728504,
+        0.007559337786265782,
+        -0.007293773194154103,
+        -0.01243720063954612,
+        -0.005630734428349469,
+        0.028779752552509308
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.00944134934681695,
+        0.014817088165216033
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "fixed_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "fixed_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "fixed_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "fixed_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "fixed_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "neighbor_act",
+      "metric": "prediction_kl",
+      "full_minus_control": 4.0228299225602976e-05,
+      "family_differences": [
+        8.901553019313724e-05,
+        -0.00020080350705597994,
+        -5.867241706791759e-05,
+        0.0003002596983735982,
+        6.536404811817597e-05,
+        0.00014077844075102708,
+        5.705797876645294e-07,
+        -1.468597929488169e-05
+      ],
+      "descriptive_family_bootstrap95": [
+        -5.3768475964545504e-05,
+        0.00013315816697343955
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "neighbor_act",
+      "metric": "next_token_logprob_change",
+      "full_minus_control": -0.002336858630371934,
+      "family_differences": [
+        -0.003103487193584442,
+        -0.0011348064290359616,
+        -0.01096476684318759,
+        0.0007214077881404332,
+        -0.0009343090156714121,
+        -0.00130426231770997,
+        -0.001285568190117677,
+        -0.0006890768418088555
+      ],
+      "descriptive_family_bootstrap95": [
+        -0.004901539179483121,
+        -0.0005742855074839831
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "neighbor_act",
+      "metric": "processed_return_norm",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "neighbor_act",
+      "metric": "reading_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "neighbor_act",
+      "metric": "attention_change",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "neighbor_act",
+      "metric": "copy_template_return",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "layer": 28,
+      "control": "neighbor_act",
+      "metric": "return_alignment",
+      "full_minus_control": 0.0,
+      "family_differences": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "descriptive_family_bootstrap95": [
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "qualification": {
+    "maximum_relative_effective_norm_mismatch": 0.014331538045682558,
+    "rotation_direction_cosine_minimum": 0.9917975664138794,
+    "layer28_return_max": 0.0
+  },
+  "sensitivity_median_context_derivative_ratio": 0.04240472575162585,
+  "limits": [
+    "One-step counterfactuals share the same text and host cache; closed-loop generations do not.",
+    "Copies, probe positions and paired variants are nested in eight scene families.",
+    "KL measures strength of a distribution change, not improvement or awareness.",
+    "Positive template return means movement toward the copy-specific long-run summary direction, not recognized ownership."
+  ]
+}

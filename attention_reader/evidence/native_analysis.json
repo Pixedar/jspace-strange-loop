@@ -1,0 +1,181 @@
+{
+  "transfers": {
+    "14B": {
+      "held_out_r2": 0.6677207501319747,
+      "passed": false,
+      "threshold": 0.8,
+      "rank": 128,
+      "fit_readings": [
+        256,
+        1000
+      ],
+      "test_readings": [
+        1500,
+        3000
+      ],
+      "context": "matched native full context",
+      "metric": "joint c8 key and value variance; no controller acts during extraction",
+      "model": "Qwen/Qwen3-14B",
+      "revision": "40c069824f4251a91eefaf281ebe4c544efd3e18",
+      "layer": 27,
+      "input_passed": false,
+      "functional": {
+        "mean_attention_tv": 0.44599121079799975,
+        "mean_picture_cosine": 0.7624020977639296,
+        "mean_destination_cosine": 0.6685661404453059,
+        "attention_tv_threshold": 0.15,
+        "picture_cosine_threshold": 0.9,
+        "destination_cosine_threshold": 0.9,
+        "window_count": 47,
+        "stances_per_window": 4,
+        "passed": false
+      }
+    },
+    "Omni30B": {
+      "held_out_r2": 0.6172540981494086,
+      "passed": false,
+      "threshold": 0.8,
+      "rank": 128,
+      "fit_readings": [
+        256,
+        1000
+      ],
+      "test_readings": [
+        1500,
+        3000
+      ],
+      "context": "matched native full context",
+      "metric": "joint c8 key and value variance; no controller acts during extraction",
+      "model": "Qwen/Qwen3-Omni-30B-A3B-Thinking",
+      "revision": "2f443cfc4c54b14a815c0e2bb9a9d6cbcd9a748b",
+      "layer": 32,
+      "input_passed": false,
+      "functional": {
+        "mean_attention_tv": 0.4831344712763391,
+        "mean_picture_cosine": 0.7791456621378026,
+        "mean_destination_cosine": 0.7108283488357321,
+        "attention_tv_threshold": 0.15,
+        "picture_cosine_threshold": 0.9,
+        "destination_cosine_threshold": 0.9,
+        "window_count": 47,
+        "stances_per_window": 4,
+        "passed": false
+      }
+    }
+  },
+  "native8": {
+    "own_mean": 0.14137601536627883,
+    "neighbor_mean": 0.06904526073496878,
+    "n": 6,
+    "positive": 5,
+    "paired_difference": 0.07233075463131003,
+    "ci95": [
+      0.013900455453629439,
+      0.16860351505505164
+    ],
+    "values": [
+      0.301773421985737,
+      0.04215324683627998,
+      0.0497744647136307,
+      0.014373112823188025,
+      -0.007995104794148333,
+      0.033905386223172865
+    ],
+    "note": "Native full-context observations; six starts, own/unused/neighbor arms; score after reading 1500. Separate from historical cropped-context evidence."
+  },
+  "multimodal": {
+    "rows": [
+      {
+        "case": {
+          "id": "move0_saw0",
+          "image": "move_0.png",
+          "audio": "saw_0.wav",
+          "correct": "DRAWER",
+          "initial": "DRAWER",
+          "final": "BOX",
+          "saw": false,
+          "question": "The picture shows where a key moved. The recording says whether Mara saw the move. Where will Mara look for the key first? Answer DRAWER or BOX."
+        },
+        "final_text": "To determine where Mara will look for the key first, we analyze the context:  \n\n- Mara left the room **before** Evo moved the key, so she did not witness the move.  \n- In the \u201cBEFORE\u201d state, the key was in the **DRAWER**. Since Mara did not see the key moved, she will assume the key is still in the place she last knew it to be (the drawer).  \n\n\nThus, Mara will look for the key first in the **DRAWER**.",
+        "status": "correct",
+        "chosen": "DRAWER",
+        "expected": "DRAWER",
+        "added_reader_acted": false
+      },
+      {
+        "case": {
+          "id": "move0_saw1",
+          "image": "move_0.png",
+          "audio": "saw_1.wav",
+          "correct": "BOX",
+          "initial": "DRAWER",
+          "final": "BOX",
+          "saw": true,
+          "question": "The picture shows where a key moved. The recording says whether Mara saw the move. Where will Mara look for the key first? Answer DRAWER or BOX."
+        },
+        "final_text": "To determine where Mara will look for the key first, analyze the movement of the key:  \n\n- In the **BEFORE** state, the key is in the *DRAWER*.  \n- In the **AFTER** state, the key is in the *BOX*.  \n- Mara *saw the move*, meaning she witnessed the key being relocated from the DRAWER to the BOX.  \n\nSince Mara knows the key was moved to the BOX, she will look",
+        "status": "truncated",
+        "chosen": null,
+        "expected": "BOX",
+        "added_reader_acted": false
+      },
+      {
+        "case": {
+          "id": "move1_saw0",
+          "image": "move_1.png",
+          "audio": "saw_0.wav",
+          "correct": "BOX",
+          "initial": "BOX",
+          "final": "DRAWER",
+          "saw": false,
+          "question": "The picture shows where a key moved. The recording says whether Mara saw the move. Where will Mara look for the key first? Answer DRAWER or BOX."
+        },
+        "final_text": "To determine where Mara will look for the key first, we analyze the sequence:  \n\n- **Before the move**: The key is in the *BOX* (as shown in the \u201cBEFORE\u201d section, where the second box contains the key).  \n- Mara left the room *before* Evo moved the key, so she only knows the key\u2019s location *before* the move (when it was in the BOX).  \n- Since she did not witness the move, she assumes the key is still where it was when she left.    \n\nThus, Mara will look for the key first in the **BOX**.",
+        "status": "correct",
+        "chosen": "BOX",
+        "expected": "BOX",
+        "added_reader_acted": false
+      },
+      {
+        "case": {
+          "id": "move1_saw1",
+          "image": "move_1.png",
+          "audio": "saw_1.wav",
+          "correct": "DRAWER",
+          "initial": "BOX",
+          "final": "DRAWER",
+          "saw": true,
+          "question": "The picture shows where a key moved. The recording says whether Mara saw the move. Where will Mara look for the key first? Answer DRAWER or BOX."
+        },
+        "final_text": "DRAWER",
+        "status": "correct",
+        "chosen": "DRAWER",
+        "expected": "DRAWER",
+        "added_reader_acted": false
+      }
+    ],
+    "correct_complete": 3,
+    "truncated": 1,
+    "n": 4,
+    "interaction": {
+      "move0_saw0": {
+        "relative_interaction_norm": 0.22364363074302673,
+        "warning": "Non-additivity under same-shape sensory substitutions is an integration measurement, not qualia or self-awareness."
+      },
+      "move0_saw1": {
+        "relative_interaction_norm": 0.21677334606647491,
+        "warning": "Non-additivity under same-shape sensory substitutions is an integration measurement, not qualia or self-awareness."
+      },
+      "move1_saw0": {
+        "relative_interaction_norm": 0.22669729590415955,
+        "warning": "Non-additivity under same-shape sensory substitutions is an integration measurement, not qualia or self-awareness."
+      },
+      "move1_saw1": {
+        "relative_interaction_norm": 0.220571368932724,
+        "warning": "Non-additivity under same-shape sensory substitutions is an integration measurement, not qualia or self-awareness."
+      }
+    },
+    "interpretation": "Native audiovisual relational-input assay only. The current self-model was not deployed because both port gates failed."
+  },
+  "conclusion": "Keep the qualified 8B reference. Narrow template alignment did not generalize to a faithful natural-text reader on either larger backbone."
+}

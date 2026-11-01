@@ -1,28 +1,23 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "Strange loop in J-space: self-description in a language-model feedback loop"
+title: "Strange loop in J-space: one reader, many histories"
 authors:
   - family-names: Tomasik
     given-names: Wiktor
-date-released: 2026-10-19
-version: "4.0.2"
+date-released: 2026-11-01
+version: "5.0.0"
 url: "https://github.com/Pixedar/jspace-strange-loop"
 repository-code: "https://github.com/Pixedar/jspace-strange-loop"
 license: AGPL-3.0-only
 keywords:
   - self-modeling
-  - strange loop
-  - language models
   - attention
-  - representation geometry
-  - multimodal models
+  - recurrent controls
+  - language-model interventions
 abstract: >-
-  A learned reader repeatedly summarizes a frozen language model's activity. Its summary
-  sets the control state that determines the next reading. A centered-field objective
-  trains the summary to distinguish possible updates after removing their common
-  destination. Some runs develop substantial state dependence; path interventions
-  locate most of it in feedback through the reader. Applying the reader's attention
-  inside the language model changes predictions, but feedback through model processing
-  remains weak. Predictions match response patterns while retaining large scale errors.
-  The repository includes frozen J-space feedback, memory between reasoning segments,
-  evidence selection, multimodal input experiments and their controls.
+  A compact reader selects a frozen language model's activity and learns a prediction
+  of its own attention that participates in subsequent selection. Exchange and
+  restoration tests, ordinary-memory controls, information-driven recurrent controls
+  and fact-paired response tests separate ownership-sensitive reading from generic
+  structured influence. The package includes a selected reader, measured histories,
+  authored tasks, reproducibility code and an explained interactive explorer.
