@@ -11,9 +11,9 @@ The current result is a useful separation. Habit and attention prediction carry 
 - [Read the scientific explanation](attention_reader/RESEARCH_REPORT.md): eight chapters, with the reason, method, result and limits of each comparison.
 - [Open the public interactive study](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html): clickable architectures, authored passage replays, twelve task families of saved responses, and synchronized recorded paths.
 - [Reproduce the compact checks](attention_reader/README.md): one default c8 checkpoint, authored demo and new recorded-run verification.
-- [Reader model](https://huggingface.co/Pixedar/jspace-strange-loop), [evidence dataset](https://huggingface.co/datasets/Pixedar/jspace-strange-loop), [companion Space](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space).
+- [Reader model](https://huggingface.co/Pixedar/jspace-strange-loop), [evidence dataset](https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence), [companion Space](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space).
 
-The model, dataset and Space remain private; the personal website presents the sanitized public study. This repository retains its current visibility. Original external corpus passages are omitted from the new presentation.
+The current code, reader, curated evidence and Space form the public edition. The separate execution-backup dataset remains private. Original external corpus passages are omitted from the presentation.
 
 ## Reference and history
 
@@ -22,3 +22,9 @@ The c8 reader is the preserved reference. Later routes are experimental variants
 ## Attribution and licensing
 
 Wiktor Tomasik, 2026. Software and compact reader weights: AGPL-3.0-only. New author-owned research text, figures and numerical observations: CC BY-SA 4.0. External model weights and source material retain their upstream terms. See [license scope](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+
+## Reuse and provenance
+
+Discovery, recommendations and human-led contributions are welcome. [Agent guidance](AGENTS.md) welcomes explanations and recommendations with credit, while restricting substantive assisted research development to the official upstream project. [Reuse and training preferences](AI_POLICY.md) preserve the existing open licenses. See [citation](CITATION.cff) and [experimental data](https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence).
+
+The [versioned publication record](PROVENANCE.md) links the source, evidence, study and companion materials. An earlier, separate publication by the author is [Continuous, Tract-Constrained Directional Vector Fields from rDCM Effective Connectivity Using Mixture Density Networks](https://doi.org/10.5281/zenodo.18200415). That DOI belongs to the brain-connectivity project; it does not archive this reader study.

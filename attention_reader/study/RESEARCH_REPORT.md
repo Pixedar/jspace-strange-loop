@@ -60,9 +60,23 @@ The two-state replacement retains much of the selection organization. Holding th
 
 **Reading the timeline.** Horizontal position is recorded observation number. The top band marks input genre. Each lower band is one copy's nearest picture prototype; those two labels are arbitrary numerical clusters. In these displayed starts the copies occupy the same prototype at the same positions, despite having distinct selection histories. The fit is descriptive, using the recorded life; it is not a held-out demonstration that the reader understands genre.
 
-Across the inspected reference and other-forecast lives, two prototypes explain about 92–94% of picture variation in ten of twelve cases. The picture follows one genre against the others on roughly 90–91% of observations. Most starts also have very similar stances across copies. Four of twelve starts have clearer copy differences. Those individual cases matter, but they are a minority, not a typical population inferred from the best example.
+In the prototype analysis, two pictures explain about 92–94% of variation in ten of twelve inspected runs: six starts with each of two forecast conditions. The picture follows one genre against the others on roughly 90–91% of observations. A separate twelve-start reference cohort contains four starts with clearer selection differences. Later diagnostics refine the picture claim: where those copies read differently, their pictures also differ in three of the four individual starts. The picture map strongly suppresses that difference in one start. Its more general limitation is that different early histories often lead to almost the same stance, after which the copies continue reading similarly.
 
 The interpretation is concrete: the habit and forecast can preserve a private way of looking while the compact picture mainly reports a shared aspect of the text. A selector may repeatedly emphasize names or sentence boundaries without maintaining a rich private interpretation of their meaning. High persistence alone does not decide between those possibilities. Because it compares profiles, this score also does not measure the absolute amount of copy-specific information.
+
+### Preserving more content exposes a trade-off with stability
+
+Why do different early histories so often fail to leave different stances? The original reader was formed in a contest that distinguished copies reading different texts. Its compact picture learned a coarse distinction that separates those texts, largely their genre. Histories differing in other ways can therefore leave nearly identical stances. In seven of twelve starts, three copies leave their different warm-up texts with pairwise stance cosine above 0.999; in six of those seven the fourth soon joins them.
+
+The diagnostic replacement preserves more of the selected content. A fixed 32-dimensional projection is fitted to the earlier reference readings, retaining 99.1% of their variation. A rescaled eight-direction decoder then supplies the direction used to turn stance. The query, habit and attention forecast are retained. This changes both the picture map and its stance decoder, and is a recorded variant rather than a newly qualified default model.
+
+![Preserving more selected content separates histories but weakens persistence and responsiveness in matched recorded runs.](assets/content_and_stability.png)
+
+**Reading the figure.** Each thin line joins the same start under c8 and the replacement, for twelve starts using their own forecast. Thick lines compare means with the own or other-copy attention forecast. The first panel measures persistent distinctive selection and the second response to genre changes; both are differences between correlations. The two labelled starts improve in persistence, so the result is not uniform across starts.
+
+Different warm-up histories leave distinguishable stances in twelve of twelve replacement runs, compared with four of twelve under c8. Attention also separates more, from 0.084 to 0.231. Yet persistence falls from 0.158 to 0.056 and responsiveness from 0.115 to 0.025. Stance turns 2.6 times as much per observation. The own forecast still gives greater persistence than another copy's in eight of twelve starts, but it does not restore the original organization.
+
+The useful distinction is between **different copies** and **a copy that stays consistently itself while responding to input**. More detailed content can make the first easier while making the second harder. In this implementation, the coarse picture also slows the stance enough for the learned selection maps to build on it. The replacement changes compression and decoding together, so it does not isolate a general law that richer content causes instability. Its projection was fitted descriptively on the reference cohort, not validated on new text. These measurements establish neither recognized ownership of a thought nor new language behavior.
 
 The passage instrument below lets the reader inspect actual excess attention in authored replays. Highlighting means that a position received more attention than the cross-copy average over overlapping windows. It is neither a token-generation probability nor an explanation produced by the copy. These earlier reference replays do not test the later interpretation-feedback variants.
 
@@ -94,7 +108,19 @@ A further variant uses the same kind of prediction to guide **where the copy loo
 
 This is a useful architectural result rather than a new best model. A self-prediction can become causally important by changing the operation that actually carries organization. But coupling a forecast of a mostly shared picture back into selection can also favor the system's expectation over changes in input. Here that description refers to recorded numerical dynamics; it is not a finding that generated language becomes hallucinatory or that the system imagines an inner world.
 
-The synchronized path instrument shows stance, picture and selected-content profiles in one fixed projection across the displayed variants. It can reveal when paths diverge or converge. It cannot assign a psychological meaning to a bend. The content profile is sampled in 100-observation blocks, so it updates more slowly than the other two signals. Playback is of measured recordings, not a live language model.
+### Does looking against its expectation remove the cost?
+
+The earlier route draws attention toward content that would move the picture toward its own forecast. A matched test reverses only that route's sign: the copy is drawn toward content that challenges the forecast. It uses the same four previously identified individual starts, own versus another copy's forecast, and three strengths: 24 additional recorded runs.
+
+![Both directions of interpretation-based attention reduce responsiveness; ownership matters differently when the direction is reversed.](assets/forecast_direction.png)
+
+**Reading the figure.** Horizontal position increases the route's calibrated strength. The first panel measures persistence and the second responsiveness. Curves are four-start means with a common off-reference; they are not independent samples at each plotted point. Teal shows the earlier confirming route; orange reverses its direction using the own forecast; purple reverses it using another copy's forecast.
+
+Reversing the route preserves the picture's coarse genre agreement, but responsiveness still falls from 0.191 to 0.132, 0.085 and 0.062 at increasing strengths. Its own forecast now gives *lower* persistence than another copy's at half and full strength in three of four starts. Correctly learned self-related knowledge can therefore undermine the pattern when it is used in the opposite direction.
+
+This narrows the explanation: confirmation adds the picture's drift toward its expectation, but the responsiveness cost is not specific to confirmation. In this tested design, either direction adds a competing force to selection. The result concerns this route, these starts and this recorded text; it does not show that every model of interpretation must compete with input.
+
+The synchronized path instrument shows stance, picture and selected-content profiles in one fixed projection across the displayed variants. It can reveal when paths diverge or converge. It cannot assign a psychological meaning to a bend. The content profile is sampled in 100-observation blocks, so it updates more slowly than the other two signals. Playback is of measured recordings, not a live language model. This instrument covers the c8 and confirming-route variants. The later transparent picture changes coordinate meaning and is not overlaid on those picture axes.
 
 ## 5. What changes in Qwen's use of meaningful information?
 
@@ -177,3 +203,6 @@ Copies within a life, alternate wordings, answer-label orders and repeated analy
 The archive includes the compact reader, author-owned demo, code, configurations, measured arrays or compact exports, and provenance. Base Qwen weights are obtained separately under their upstream terms. Original external corpus passages are omitted from this public presentation; authored tasks and generated responses are identified. Software/reader and research-material licenses retain their separate scopes.
 
 The durable contribution is the set of separations: selection can remain individual while the picture is shared; accurate prediction can fail to improve organization; the same prediction can matter differently depending on where it enters; and an action can alter an interpretable language-model distinction without demonstrating that the compact controller knows that distinction as its own thought. Those conclusions make the mechanism more specific and its remaining questions easier to state.
+
+
+The late-evening extension freezes completed architecture sections 94–98. Its compact archive contains 72 matched records: 24 opposite-direction runs, 24 transparent-picture runs and 24 reference comparators. The comparators overlap earlier reference evidence and are not new replications. The numerical archive, normalized configurations and a CPU-only checker reproduce persistence, responsiveness, attention separation, stance turning and the warm-up history-registration count. Later running experiments are outside this snapshot.
