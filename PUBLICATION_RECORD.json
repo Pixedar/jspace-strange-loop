@@ -1,0 +1,63 @@
+{
+  "creator": "Wiktor Tomasik",
+  "edition": "2026.11.03",
+  "recorded_utc": "2026-11-03T22:36:23.731801+00:00",
+  "scope": "Completed architecture sections 65-98 and the earlier reference meaning studies. Later active experiments excluded.",
+  "source_commit": "98676d2e47f21ad48b8e90c0b9696da75356c399",
+  "source_url": "https://github.com/Pixedar/jspace-strange-loop/tree/98676d2e47f21ad48b8e90c0b9696da75356c399",
+  "version_tag": "study-2026-11-03",
+  "version_url": "https://github.com/Pixedar/jspace-strange-loop/tree/study-2026-11-03",
+  "study": "https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html",
+  "evidence_repository": "Pixedar/jspace-strange-loop-evidence",
+  "evidence_data_commit": "ddf5dbe50a20a9bc633e072e7ef808cee64c12d4",
+  "archives": [
+    {
+      "path": "attention_reader/evidence/current/current_runs.npz",
+      "bytes": 118800340,
+      "sha256": "be46f4a2ff3482ddb1768a8bc590565dd15a9819b36315685591b2c29a5a0074",
+      "url": "https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence/resolve/ddf5dbe50a20a9bc633e072e7ef808cee64c12d4/attention_reader/evidence/current/current_runs.npz"
+    },
+    {
+      "path": "attention_reader/evidence/late/late_runs.npz",
+      "bytes": 146083340,
+      "sha256": "1839f6729cdc14926e43b9f6cdcbc0f754831518c2058b10d75d94f4f40973b8",
+      "url": "https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence/resolve/ddf5dbe50a20a9bc633e072e7ef808cee64c12d4/attention_reader/evidence/late/late_runs.npz"
+    }
+  ],
+  "model": {
+    "repository": "Pixedar/jspace-strange-loop",
+    "commit": "5919f28fb2cd538a3b683ae6b053160f4e0dae1c",
+    "reader_weights": [
+      {
+        "path": "src/c8_reference.pt",
+        "sha256": "f58ee5d8e89b8687ef273ba3b310185756cf77a9a5becfa9844f32c1326195ca",
+        "git_blob": "debb7218d886ab0e4291aa743853b22921cfe275",
+        "bytes": 8598853
+      }
+    ],
+    "reference": "Unchanged c8 reader"
+  },
+  "space": "https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space",
+  "licensing": {
+    "software": "AGPL-3.0-only",
+    "author_owned_text_figures_data": "CC-BY-SA-4.0",
+    "prior_grants_and_upstream_terms_preserved": true
+  },
+  "agent_instructions": "AGENTS.md",
+  "automation_preferences": "Discovery and explanations welcome with attribution. Author-requested assisted research development is limited to the official upstream project; existing licenses remain in force.",
+  "zenodo": {
+    "new_deposit": false,
+    "new_doi": null,
+    "existing_record_altered": false,
+    "automatic_integration_enabled": false,
+    "earlier_separate_paper": "https://doi.org/10.5281/zenodo.18200415"
+  },
+  "signature": {
+    "file": "PUBLICATION_RECORD.json.sig",
+    "namespace": "file",
+    "identity": "pixedar@gmail.com",
+    "public_key": "PUBLICATION_SIGNER.pub",
+    "public_key_association": "https://github.com/Pixedar.keys",
+    "meaning": "Integrity under this key and a versioned publication trail; not independent proof of discovery priority, scientific validity or exclusive ownership."
+  }
+}

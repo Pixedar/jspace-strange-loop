@@ -9,3 +9,7 @@ The publication record fixes the source version and the numerical evidence by ch
 This edition has no newly minted DOI. No new Zenodo record or automatic GitHub deposit is created. DOI 10.5281/zenodo.18200415 refers to a separate, earlier brain-connectivity publication by Wiktor Tomasik and is not the DOI of this dataset.
 
 Use CITATION.cff for citation and AI_POLICY.md for reuse preferences and their legal limits. A signed version tag and publication-record files identify this edition once finalized. Signatures, source timestamps and checksums do not themselves prove scientific validity or exclusive ownership of an idea.
+
+## Fixed source and data
+
+[Signed source edition](https://github.com/Pixedar/jspace-strange-loop/tree/study-2026-11-03). `PUBLICATION_RECORD.json` pins the scientific source commit and evidence-data commit, with both numerical archive hashes. Its signature is `PUBLICATION_RECORD.json.sig`; `PUBLICATION_SIGNER.pub` is also associated with the public GitHub account key list. Run `python verify_publication.py` to verify the signed record. The data checks are described in `attention_reader/README.md`.
