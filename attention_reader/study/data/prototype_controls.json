@@ -1,0 +1,257 @@
+{
+  "scope": "Six matched recorded lives per condition; shared two-prototype or fixed picture, own versus other attention forecast.",
+  "rows": [
+    {
+      "seed": 10,
+      "arm": "S",
+      "persistence": 0.46092218650374583,
+      "responsiveness": 0.19207942432331804,
+      "attention_apart": 0.23963846266269684
+    },
+    {
+      "seed": 10,
+      "arm": "Sn",
+      "persistence": 0.0525975351863959,
+      "responsiveness": 0.007433761753266065,
+      "attention_apart": 0.03737960383296013
+    },
+    {
+      "seed": 10,
+      "arm": "S1",
+      "persistence": 0.43344488514670293,
+      "responsiveness": 0.18483973200277104,
+      "attention_apart": 0.2772156298160553
+    },
+    {
+      "seed": 10,
+      "arm": "Sn1",
+      "persistence": 0.08435576110768062,
+      "responsiveness": 0.026209756019838548,
+      "attention_apart": 0.0939013883471489
+    },
+    {
+      "seed": 10,
+      "arm": "S2",
+      "persistence": 0.4654673792312339,
+      "responsiveness": 0.19347726775818463,
+      "attention_apart": 0.2346220314502716
+    },
+    {
+      "seed": 10,
+      "arm": "Sn2",
+      "persistence": 0.06558635339785887,
+      "responsiveness": 0.06664266130280513,
+      "attention_apart": 0.04240773618221283
+    },
+    {
+      "seed": 11,
+      "arm": "S",
+      "persistence": 0.12763873825351746,
+      "responsiveness": 0.13247566913496017,
+      "attention_apart": 0.029076367616653442
+    },
+    {
+      "seed": 11,
+      "arm": "Sn",
+      "persistence": 0.1045556702065503,
+      "responsiveness": 0.10450491700475341,
+      "attention_apart": 0.01459057629108429
+    },
+    {
+      "seed": 11,
+      "arm": "S1",
+      "persistence": 0.10783404165934067,
+      "responsiveness": 0.09557647846962351,
+      "attention_apart": 0.014712395146489143
+    },
+    {
+      "seed": 11,
+      "arm": "Sn1",
+      "persistence": 0.0939136846299991,
+      "responsiveness": 0.09636407650391393,
+      "attention_apart": 0.011018259450793266
+    },
+    {
+      "seed": 11,
+      "arm": "S2",
+      "persistence": 0.12452716033288937,
+      "responsiveness": 0.11963558806085174,
+      "attention_apart": 0.0242425836622715
+    },
+    {
+      "seed": 11,
+      "arm": "Sn2",
+      "persistence": 0.11450682433667489,
+      "responsiveness": 0.1107901005606112,
+      "attention_apart": 0.011697242967784405
+    },
+    {
+      "seed": 12,
+      "arm": "S",
+      "persistence": 0.1272230495102268,
+      "responsiveness": 0.1524967781252001,
+      "attention_apart": 0.20954300463199615
+    },
+    {
+      "seed": 12,
+      "arm": "Sn",
+      "persistence": 0.058138802686178895,
+      "responsiveness": 0.10789260013445327,
+      "attention_apart": 0.088022381067276
+    },
+    {
+      "seed": 12,
+      "arm": "S1",
+      "persistence": 0.3516090612105332,
+      "responsiveness": 0.15722081689187103,
+      "attention_apart": 0.29323434829711914
+    },
+    {
+      "seed": 12,
+      "arm": "Sn1",
+      "persistence": 0.11774585056155586,
+      "responsiveness": 0.09141000001053712,
+      "attention_apart": 0.09216967970132828
+    },
+    {
+      "seed": 12,
+      "arm": "S2",
+      "persistence": 0.313144829604209,
+      "responsiveness": 0.23087749543447797,
+      "attention_apart": 0.26174646615982056
+    },
+    {
+      "seed": 12,
+      "arm": "Sn2",
+      "persistence": 0.10323333156575581,
+      "responsiveness": 0.18027327454736303,
+      "attention_apart": 0.12269346415996552
+    },
+    {
+      "seed": 13,
+      "arm": "S",
+      "persistence": 0.09781307996227137,
+      "responsiveness": 0.05649834976536702,
+      "attention_apart": 0.013882438652217388
+    },
+    {
+      "seed": 13,
+      "arm": "Sn",
+      "persistence": 0.0625117939159154,
+      "responsiveness": 0.03865160311172603,
+      "attention_apart": 0.007482184562832117
+    },
+    {
+      "seed": 13,
+      "arm": "S1",
+      "persistence": 0.04484725349372465,
+      "responsiveness": 0.034741681826794185,
+      "attention_apart": 0.007275441661477089
+    },
+    {
+      "seed": 13,
+      "arm": "Sn1",
+      "persistence": 0.035455567827426815,
+      "responsiveness": 0.04261613330511952,
+      "attention_apart": 0.005050482228398323
+    },
+    {
+      "seed": 13,
+      "arm": "S2",
+      "persistence": 0.1085998611505122,
+      "responsiveness": 0.05840046884331673,
+      "attention_apart": 0.012287002988159657
+    },
+    {
+      "seed": 13,
+      "arm": "Sn2",
+      "persistence": 0.06020570269732242,
+      "responsiveness": 0.03090659464414835,
+      "attention_apart": 0.0062424493953585625
+    },
+    {
+      "seed": 14,
+      "arm": "S",
+      "persistence": 0.09578219818928856,
+      "responsiveness": 0.0791303901294639,
+      "attention_apart": 0.019201155751943588
+    },
+    {
+      "seed": 14,
+      "arm": "Sn",
+      "persistence": 0.07696625225512368,
+      "responsiveness": 0.07366511734924194,
+      "attention_apart": 0.009854409843683243
+    },
+    {
+      "seed": 14,
+      "arm": "S1",
+      "persistence": 0.12191795192267621,
+      "responsiveness": 0.05863324441602666,
+      "attention_apart": 0.026406211778521538
+    },
+    {
+      "seed": 14,
+      "arm": "Sn1",
+      "persistence": 0.11535551321750925,
+      "responsiveness": 0.04714866255360725,
+      "attention_apart": 0.011279642581939697
+    },
+    {
+      "seed": 14,
+      "arm": "S2",
+      "persistence": 0.09963787574007665,
+      "responsiveness": 0.07718931039657373,
+      "attention_apart": 0.018703961744904518
+    },
+    {
+      "seed": 14,
+      "arm": "Sn2",
+      "persistence": 0.0790862716805861,
+      "responsiveness": 0.07062587912274265,
+      "attention_apart": 0.009387476369738579
+    },
+    {
+      "seed": 15,
+      "arm": "S",
+      "persistence": 0.13834628082037093,
+      "responsiveness": 0.07410676501909567,
+      "attention_apart": 0.024615835398435593
+    },
+    {
+      "seed": 15,
+      "arm": "Sn",
+      "persistence": 0.10554174158914523,
+      "responsiveness": 0.07935983990719124,
+      "attention_apart": 0.012365530245006084
+    },
+    {
+      "seed": 15,
+      "arm": "S1",
+      "persistence": 0.14680399120261517,
+      "responsiveness": 0.0850093554190758,
+      "attention_apart": 0.05158182233572006
+    },
+    {
+      "seed": 15,
+      "arm": "Sn1",
+      "persistence": 0.12398508947352374,
+      "responsiveness": 0.09337008472891063,
+      "attention_apart": 0.025709958747029305
+    },
+    {
+      "seed": 15,
+      "arm": "S2",
+      "persistence": 0.1290637120617494,
+      "responsiveness": 0.08251663831595285,
+      "attention_apart": 0.03155095502734184
+    },
+    {
+      "seed": 15,
+      "arm": "Sn2",
+      "persistence": 0.09675311905395596,
+      "responsiveness": 0.08374191505102703,
+      "attention_apart": 0.016476893797516823
+    }
+  ]
+}

@@ -1,30 +1,24 @@
-# Strange loop in J-space: one reader, many histories
+# Strange loop in J-space: a learned way of looking
 
-Wiktor Tomasik · measurements: 1 November 2026 · publication updated: 2026-11-01T23:52:27+01:00
+Wiktor Tomasik · consolidated through 3 November 2026
 
-A compact reader selects a frozen language model's recent internal activity, updates a persistent state, and predicts its own attention. That prediction helps shape what it reads next. In live mode, selected content can also change the language model and return through its later activity.
+A compact reader selects a frozen Qwen3-8B model's internal activity, learns a forecast of its own selection, and uses that forecast while selecting. The research separates three things: a persistent way of looking, the compact picture produced by that selection, and the meaning that an intervention acquires inside Qwen.
 
-The current study asks a specific question: **which effects depend on modeling this copy's attention, beyond private memory, structured steering and arbitrary recurrence?** Exchanging learned predictors changes developed reading habits. Matched recurrent controls and fact-paired response tests separate this ownership-sensitive relationship from the influence of the retained selector. See the [main report](attention_reader/RESEARCH_REPORT.md) for why each comparison was performed and what it means.
+The current result is a useful separation. Habit and attention prediction carry copy-specific selection while the compact picture mostly follows shared text structure. A model of that picture changes organization when it guides attention, but trades away responsiveness in the tested runs. Separate live tests trace part of an intervention's decision effect through an evidence-related representation. These are complementary results, not a completed demonstration of thought ownership or consciousness.
 
-## Explore the current study
+## One current account
 
-- [Public interactive explorer](https://pixedar.github.io/projects/self-awareness/attention-reader/explorer/index.html): separate recorded/live architectures, module details, guided examples and synchronized measured paths.
-- [Research report](attention_reader/RESEARCH_REPORT.md): the questions, methods, figures and interpretations.
-- [Attention model versus recurrence](attention_reader/RECURRENCE_REPORT.md): controls for generic recurrent influence and information-conditioned behavior.
-- [Response analysis](attention_reader/PATTERN_BEHAVIOR.md) and [architecture rationale](attention_reader/ARCHITECTURE_CHOICES.md).
-- [Reproducibility package](attention_reader/README.md): one default checkpoint, an authored CPU demo, recorded numerical evidence and live rerun instructions.
-- [Reader on Hugging Face](https://huggingface.co/Pixedar/jspace-strange-loop), [evidence dataset](https://huggingface.co/datasets/Pixedar/jspace-strange-loop), and [companion Space](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space).
+- [Read the scientific explanation](attention_reader/RESEARCH_REPORT.md): eight chapters, with the reason, method, result and limits of each comparison.
+- [Open the public interactive study](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html): clickable architectures, authored passage replays, twelve task families of saved responses, and synchronized recorded paths.
+- [Reproduce the compact checks](attention_reader/README.md): one default c8 checkpoint, authored demo and new recorded-run verification.
+- [Reader model](https://huggingface.co/Pixedar/jspace-strange-loop), [evidence dataset](https://huggingface.co/datasets/Pixedar/jspace-strange-loop), [companion Space](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space).
 
-GitHub and the three Hugging Face repositories are private at publication time. The personal website hosts the sanitized public explorer independently of their access settings.
+The model, dataset and Space remain private; the personal website presents the sanitized public study. This repository retains its current visibility. Original external corpus passages are omitted from the new presentation.
 
-## What the comparisons establish
+## Reference and history
 
-A learned prediction can participate in a persistent way of reading. Content-aligned actions influence the model more than equally sized noise or rotations. Much organization and live influence also survive simpler private-memory and recurrent controls. Counterbalanced information tests show mostly softer existing answer preferences rather than new decisions. The contribution is a controlled separation of these mechanisms; persistent individuality, general personality and subjective experience are not established.
+The c8 reader is the preserved reference. Later routes are experimental variants, not additional default model releases. Earlier J-space feedback, trained self-description and evidence-selection systems remain in their original directories; they use different mechanisms. Dated supporting reports and [research history](HISTORY.md) preserve the earlier record. The current explanation above integrates the findings without making those older reports required reading.
 
-## Earlier systems
+## Attribution and licensing
 
-The earlier frozen J-space feedback, memory-between-reasoning-segments, evidence-selection and self-description training studies remain in [frozen_loop/](frozen_loop/), [trained_loop/](trained_loop/), [selection_loop/](selection_loop/), [self_reference/](self_reference/) and [followups/](followups/). They use different mechanisms and are not extra versions of the current default reader. The [research history](HISTORY.md) and [previous release account](history/before_attention_reader_20261101/REPORT.md) preserve their findings.
-
-## Attribution and licenses
-
-Wiktor Tomasik, 2026. Software and the compact reader weights are AGPL-3.0-only; new author-owned research text, figures and numerical observations are CC BY-SA 4.0. Earlier grants remain valid. External model weights and source texts retain their upstream terms. The public explorer omits external corpus passages. See [license scope](LICENSING.md), [third-party sources](THIRD_PARTY_NOTICES.md) and [publication scope](attention_reader/PUBLICATION_NOTES.md).
+Wiktor Tomasik, 2026. Software and compact reader weights: AGPL-3.0-only. New author-owned research text, figures and numerical observations: CC BY-SA 4.0. External model weights and source material retain their upstream terms. See [license scope](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md).

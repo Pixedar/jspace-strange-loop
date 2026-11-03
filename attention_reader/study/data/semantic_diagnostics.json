@@ -1,0 +1,512 @@
+{
+  "J_probe": [
+    {
+      "family": "archive",
+      "J_squared_direction_fraction": 0.03635181486606598,
+      "J_heldout_correct": 6,
+      "n": 8
+    },
+    {
+      "family": "cause",
+      "J_squared_direction_fraction": 0.03983666002750397,
+      "J_heldout_correct": 6,
+      "n": 8
+    },
+    {
+      "family": "prototype",
+      "J_squared_direction_fraction": 0.05333327502012253,
+      "J_heldout_correct": 7,
+      "n": 8
+    },
+    {
+      "family": "pump",
+      "J_squared_direction_fraction": 0.041934266686439514,
+      "J_heldout_correct": 5,
+      "n": 8
+    },
+    {
+      "family": "route",
+      "J_squared_direction_fraction": 0.03952423110604286,
+      "J_heldout_correct": 6,
+      "n": 8
+    },
+    {
+      "family": "staffing",
+      "J_squared_direction_fraction": 0.04100742191076279,
+      "J_heldout_correct": 6,
+      "n": 8
+    }
+  ],
+  "causal_axis_gain_by_domain": {
+    "main": {
+      "archive": 3.0625,
+      "cause": 6.1875,
+      "prototype": 3.03125,
+      "pump": 1.09375,
+      "route": 4.28125,
+      "staffing": 1.3125
+    },
+    "forecast": {
+      "archive": 3.0625,
+      "cause": 6.1875,
+      "prototype": 3.03125,
+      "pump": 1.09375,
+      "route": 4.28125,
+      "staffing": 1.3125
+    }
+  },
+  "restoration": {
+    "main": {
+      "residual_squared_projection_fraction": 0.00020899210243980525,
+      "semantic_norm_mean": 1.7172053994839491,
+      "unrelated_norm_mean": 1.717459116152491
+    },
+    "forecast": {
+      "residual_squared_projection_fraction": 0.0004231602098069674,
+      "semantic_norm_mean": 1.3699543410456398,
+      "unrelated_norm_mean": 1.3709534571080946
+    }
+  },
+  "comparisons": [
+    {
+      "tag": "main",
+      "condition": "other_forecast",
+      "domains": {
+        "archive": {
+          "n": 16,
+          "none": 0.0234375,
+          "semantic_restore": 0.01953125,
+          "random_equal_norm": 0.033203125,
+          "J_semantic_restore": 0.0166015625,
+          "J_random_equal_norm": 0.0224609375,
+          "semantic_fraction_removed": 0.16666666666666663,
+          "unrelated_fraction_removed": -0.41666666666666674
+        },
+        "cause": {
+          "n": 16,
+          "none": 0.01953125,
+          "semantic_restore": 0.021728515625,
+          "random_equal_norm": 0.012939453125,
+          "J_semantic_restore": 0.01416015625,
+          "J_random_equal_norm": 0.01416015625,
+          "semantic_fraction_removed": -0.11250000000000004,
+          "unrelated_fraction_removed": 0.3375
+        },
+        "prototype": {
+          "n": 16,
+          "none": 0.033203125,
+          "semantic_restore": 0.0302734375,
+          "random_equal_norm": 0.013671875,
+          "J_semantic_restore": 0.029296875,
+          "J_random_equal_norm": 0.015625,
+          "semantic_fraction_removed": 0.08823529411764708,
+          "unrelated_fraction_removed": 0.5882352941176471
+        },
+        "pump": {
+          "n": 16,
+          "none": 0.0126953125,
+          "semantic_restore": 0.01171875,
+          "random_equal_norm": 0.0126953125,
+          "J_semantic_restore": 0.017578125,
+          "J_random_equal_norm": 0.017578125,
+          "semantic_fraction_removed": 0.07692307692307687,
+          "unrelated_fraction_removed": 0.0
+        },
+        "route": {
+          "n": 16,
+          "none": 0.033203125,
+          "semantic_restore": 0.026611328125,
+          "random_equal_norm": 0.021484375,
+          "J_semantic_restore": 0.027587890625,
+          "J_random_equal_norm": 0.028564453125,
+          "semantic_fraction_removed": 0.19852941176470584,
+          "unrelated_fraction_removed": 0.3529411764705882
+        },
+        "staffing": {
+          "n": 16,
+          "none": 0.033203125,
+          "semantic_restore": 0.03515625,
+          "random_equal_norm": 0.03125,
+          "J_semantic_restore": 0.033203125,
+          "J_random_equal_norm": 0.0400390625,
+          "semantic_fraction_removed": -0.05882352941176472,
+          "unrelated_fraction_removed": 0.05882352941176472
+        }
+      },
+      "leave_one_domain_out": [
+        {
+          "omitted_domain": "archive",
+          "semantic_removed": 0.04814814814814816,
+          "unrelated_removed": 0.3018518518518518
+        },
+        {
+          "omitted_domain": "cause",
+          "semantic_removed": 0.09172661870503596,
+          "unrelated_removed": 0.17266187050359716
+        },
+        {
+          "omitted_domain": "prototype",
+          "semantic_removed": 0.06000000000000005,
+          "unrelated_removed": 0.08599999999999997
+        },
+        {
+          "omitted_domain": "pump",
+          "semantic_removed": 0.06506849315068497,
+          "unrelated_removed": 0.2106164383561644
+        },
+        {
+          "omitted_domain": "route",
+          "semantic_removed": 0.030000000000000027,
+          "unrelated_removed": 0.15000000000000002
+        },
+        {
+          "omitted_domain": "staffing",
+          "semantic_removed": 0.09999999999999998,
+          "unrelated_removed": 0.22999999999999998
+        }
+      ],
+      "histories": [
+        {
+          "history": 10,
+          "semantic_removed": 0.09782608695652173,
+          "unrelated_removed": 0.15579710144927528
+        },
+        {
+          "history": 12,
+          "semantic_removed": 0.04166666666666663,
+          "unrelated_removed": 0.2222222222222222
+        }
+      ]
+    },
+    {
+      "tag": "main",
+      "condition": "recurrent_selector",
+      "domains": {
+        "archive": {
+          "n": 32,
+          "none": 1.10302734375,
+          "semantic_restore": 0.75634765625,
+          "random_equal_norm": 1.072265625,
+          "J_semantic_restore": 1.1650390625,
+          "J_random_equal_norm": 1.17236328125,
+          "semantic_fraction_removed": 0.314298362107127,
+          "unrelated_fraction_removed": 0.027888446215139417
+        },
+        "cause": {
+          "n": 32,
+          "none": 1.1015625,
+          "semantic_restore": 0.4918212890625,
+          "random_equal_norm": 1.1737060546875,
+          "J_semantic_restore": 1.078369140625,
+          "J_random_equal_norm": 1.08349609375,
+          "semantic_fraction_removed": 0.5535239361702128,
+          "unrelated_fraction_removed": -0.0654920212765957
+        },
+        "prototype": {
+          "n": 32,
+          "none": 2.1212158203125,
+          "semantic_restore": 0.9249267578125,
+          "random_equal_norm": 2.2032470703125,
+          "J_semantic_restore": 2.2061767578125,
+          "J_random_equal_norm": 2.1724853515625,
+          "semantic_fraction_removed": 0.5639638602750763,
+          "unrelated_fraction_removed": -0.03867180756171962
+        },
+        "pump": {
+          "n": 32,
+          "none": 0.2978515625,
+          "semantic_restore": 0.3125,
+          "random_equal_norm": 0.33740234375,
+          "J_semantic_restore": 0.3662109375,
+          "J_random_equal_norm": 0.30859375,
+          "semantic_fraction_removed": -0.049180327868852514,
+          "unrelated_fraction_removed": -0.13278688524590154
+        },
+        "route": {
+          "n": 32,
+          "none": 0.5352783203125,
+          "semantic_restore": 0.3336181640625,
+          "random_equal_norm": 0.572998046875,
+          "J_semantic_restore": 0.5115966796875,
+          "J_random_equal_norm": 0.495849609375,
+          "semantic_fraction_removed": 0.3767388825541619,
+          "unrelated_fraction_removed": -0.0704675028506272
+        },
+        "staffing": {
+          "n": 32,
+          "none": 0.4083251953125,
+          "semantic_restore": 0.36376953125,
+          "random_equal_norm": 0.419921875,
+          "J_semantic_restore": 0.3804931640625,
+          "J_random_equal_norm": 0.40380859375,
+          "semantic_fraction_removed": 0.10911808669656198,
+          "unrelated_fraction_removed": -0.0284005979073243
+        }
+      },
+      "leave_one_domain_out": [
+        {
+          "omitted_domain": "archive",
+          "semantic_removed": 0.45642722375652844,
+          "unrelated_removed": -0.054442044242706045
+        },
+        {
+          "omitted_domain": "cause",
+          "semantic_removed": 0.3973703632834923,
+          "unrelated_removed": -0.03138069595167159
+        },
+        {
+          "omitted_domain": "prototype",
+          "semantic_removed": 0.3447396386822529,
+          "unrelated_removed": -0.037796670208997574
+        },
+        {
+          "omitted_domain": "pump",
+          "semantic_removed": 0.4552551717747353,
+          "unrelated_removed": -0.03277966965506063
+        },
+        {
+          "omitted_domain": "route",
+          "semantic_removed": 0.43374896899713744,
+          "unrelated_removed": -0.03469021396341754
+        },
+        {
+          "omitted_domain": "staffing",
+          "semantic_removed": 0.4535279920495954,
+          "unrelated_removed": -0.038900194027731816
+        }
+      ],
+      "histories": [
+        {
+          "history": 10,
+          "semantic_removed": 0.4143301221876827,
+          "unrelated_removed": -0.028561755563078828
+        },
+        {
+          "history": 12,
+          "semantic_removed": 0.4627935346142117,
+          "unrelated_removed": -0.06183287587679165
+        }
+      ]
+    },
+    {
+      "tag": "forecast",
+      "condition": "recurrent_forecast",
+      "domains": {
+        "archive": {
+          "n": 32,
+          "none": 0.1533203125,
+          "semantic_restore": 0.0849609375,
+          "random_equal_norm": 0.14892578125,
+          "J_semantic_restore": 0.14990234375,
+          "J_random_equal_norm": 0.138671875,
+          "semantic_fraction_removed": 0.445859872611465,
+          "unrelated_fraction_removed": 0.0286624203821656
+        },
+        "cause": {
+          "n": 32,
+          "none": 0.212890625,
+          "semantic_restore": 0.1593017578125,
+          "random_equal_norm": 0.2257080078125,
+          "J_semantic_restore": 0.200927734375,
+          "J_random_equal_norm": 0.1905517578125,
+          "semantic_fraction_removed": 0.2517201834862385,
+          "unrelated_fraction_removed": -0.06020642201834869
+        },
+        "prototype": {
+          "n": 32,
+          "none": 0.0830078125,
+          "semantic_restore": 0.052734375,
+          "random_equal_norm": 0.103515625,
+          "J_semantic_restore": 0.08349609375,
+          "J_random_equal_norm": 0.1025390625,
+          "semantic_fraction_removed": 0.3647058823529412,
+          "unrelated_fraction_removed": -0.24705882352941178
+        },
+        "pump": {
+          "n": 32,
+          "none": 0.0283203125,
+          "semantic_restore": 0.03271484375,
+          "random_equal_norm": 0.041015625,
+          "J_semantic_restore": 0.04931640625,
+          "J_random_equal_norm": 0.04296875,
+          "semantic_fraction_removed": -0.15517241379310343,
+          "unrelated_fraction_removed": -0.4482758620689655
+        },
+        "route": {
+          "n": 32,
+          "none": 0.0682373046875,
+          "semantic_restore": 0.0396728515625,
+          "random_equal_norm": 0.0765380859375,
+          "J_semantic_restore": 0.061767578125,
+          "J_random_equal_norm": 0.1038818359375,
+          "semantic_fraction_removed": 0.41860465116279066,
+          "unrelated_fraction_removed": -0.12164579606440062
+        },
+        "staffing": {
+          "n": 32,
+          "none": 0.07275390625,
+          "semantic_restore": 0.0517578125,
+          "random_equal_norm": 0.06494140625,
+          "J_semantic_restore": 0.05859375,
+          "J_random_equal_norm": 0.06884765625,
+          "semantic_fraction_removed": 0.28859060402684567,
+          "unrelated_fraction_removed": 0.10738255033557043
+        }
+      },
+      "leave_one_domain_out": [
+        {
+          "omitted_domain": "archive",
+          "semantic_removed": 0.2773550249278405,
+          "unrelated_removed": -0.09997376016793491
+        },
+        {
+          "omitted_domain": "cause",
+          "semantic_removed": 0.35449894673487814,
+          "unrelated_removed": -0.072223894071622
+        },
+        {
+          "omitted_domain": "prototype",
+          "semantic_removed": 0.3120583542284021,
+          "unrelated_removed": -0.04034647823113735
+        },
+        {
+          "omitted_domain": "pump",
+          "semantic_removed": 0.3418821096173733,
+          "unrelated_removed": -0.04984488107549123
+        },
+        {
+          "omitted_domain": "route",
+          "semantic_removed": 0.3067879325643301,
+          "unrelated_removed": -0.06144631765749775
+        },
+        {
+          "omitted_domain": "staffing",
+          "semantic_removed": 0.3231939163498099,
+          "unrelated_removed": -0.09147841646164179
+        }
+      ],
+      "histories": [
+        {
+          "history": 10,
+          "semantic_removed": 0.2925877763328998,
+          "unrelated_removed": -0.007802340702210753
+        },
+        {
+          "history": 12,
+          "semantic_removed": 0.3238715681712425,
+          "unrelated_removed": -0.07887389483480689
+        }
+      ]
+    },
+    {
+      "tag": "forecast",
+      "condition": "unused_forecast",
+      "domains": {
+        "archive": {
+          "n": 32,
+          "none": 0.18701171875,
+          "semantic_restore": 0.150390625,
+          "random_equal_norm": 0.18408203125,
+          "J_semantic_restore": 0.224609375,
+          "J_random_equal_norm": 0.1982421875,
+          "semantic_fraction_removed": 0.19582245430809397,
+          "unrelated_fraction_removed": 0.015665796344647487
+        },
+        "cause": {
+          "n": 32,
+          "none": 0.040283203125,
+          "semantic_restore": 0.0269775390625,
+          "random_equal_norm": 0.0426025390625,
+          "J_semantic_restore": 0.026611328125,
+          "J_random_equal_norm": 0.0523681640625,
+          "semantic_fraction_removed": 0.3303030303030303,
+          "unrelated_fraction_removed": -0.05757575757575761
+        },
+        "prototype": {
+          "n": 32,
+          "none": 0.0693359375,
+          "semantic_restore": 0.0595703125,
+          "random_equal_norm": 0.068359375,
+          "J_semantic_restore": 0.068359375,
+          "J_random_equal_norm": 0.083984375,
+          "semantic_fraction_removed": 0.14084507042253525,
+          "unrelated_fraction_removed": 0.014084507042253502
+        },
+        "pump": {
+          "n": 32,
+          "none": 0.02197265625,
+          "semantic_restore": 0.025390625,
+          "random_equal_norm": 0.02734375,
+          "J_semantic_restore": 0.02734375,
+          "J_random_equal_norm": 0.0302734375,
+          "semantic_fraction_removed": -0.15555555555555545,
+          "unrelated_fraction_removed": -0.24444444444444446
+        },
+        "route": {
+          "n": 32,
+          "none": 0.1397705078125,
+          "semantic_restore": 0.1295166015625,
+          "random_equal_norm": 0.1463623046875,
+          "J_semantic_restore": 0.1634521484375,
+          "J_random_equal_norm": 0.1727294921875,
+          "semantic_fraction_removed": 0.07336244541484715,
+          "unrelated_fraction_removed": -0.04716157205240168
+        },
+        "staffing": {
+          "n": 32,
+          "none": 0.0380859375,
+          "semantic_restore": 0.041015625,
+          "random_equal_norm": 0.04296875,
+          "J_semantic_restore": 0.03271484375,
+          "J_random_equal_norm": 0.02734375,
+          "semantic_fraction_removed": -0.07692307692307687,
+          "unrelated_fraction_removed": -0.1282051282051282
+        }
+      },
+      "leave_one_domain_out": [
+        {
+          "omitted_domain": "archive",
+          "semantic_removed": 0.0871794871794872,
+          "unrelated_removed": -0.0587771203155818
+        },
+        {
+          "omitted_domain": "cause",
+          "semantic_removed": 0.11024886272411027,
+          "unrelated_removed": -0.028364998662028462
+        },
+        {
+          "omitted_domain": "prototype",
+          "semantic_removed": 0.12603601028865385,
+          "unrelated_removed": -0.038010860245784484
+        },
+        {
+          "omitted_domain": "pump",
+          "semantic_removed": 0.14124003087213788,
+          "unrelated_removed": -0.020838693079495707
+        },
+        {
+          "omitted_domain": "route",
+          "semantic_removed": 0.14955509924709098,
+          "unrelated_removed": -0.024298425735797435
+        },
+        {
+          "omitted_domain": "staffing",
+          "semantic_removed": 0.14513981358189076,
+          "unrelated_removed": -0.022636484687083902
+        }
+      ],
+      "histories": [
+        {
+          "history": 10,
+          "semantic_removed": -0.06656804733727806,
+          "unrelated_removed": 0.013313609467455634
+        },
+        {
+          "history": 12,
+          "semantic_removed": 0.16691241521675015,
+          "unrelated_removed": -0.039516366853435736
+        }
+      ]
+    }
+  ]
+}

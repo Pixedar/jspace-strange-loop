@@ -1,23 +1,10 @@
 cff-version: 1.2.0
-message: "If you use this work, please cite it as below."
-title: "Strange loop in J-space: one reader, many histories"
+message: "Please cite this software and research study when using it."
+title: "Strange loop in J-space: how a learned way of looking shapes a language model"
 authors:
   - family-names: Tomasik
     given-names: Wiktor
-date-released: 2026-11-01
-version: "5.0.0"
+version: "2026.11.03"
+date-released: "2026-11-03"
 url: "https://github.com/Pixedar/jspace-strange-loop"
-repository-code: "https://github.com/Pixedar/jspace-strange-loop"
 license: AGPL-3.0-only
-keywords:
-  - self-modeling
-  - attention
-  - recurrent controls
-  - language-model interventions
-abstract: >-
-  A compact reader selects a frozen language model's activity and learns a prediction
-  of its own attention that participates in subsequent selection. Exchange and
-  restoration tests, ordinary-memory controls, information-driven recurrent controls
-  and fact-paired response tests separate ownership-sensitive reading from generic
-  structured influence. The package includes a selected reader, measured histories,
-  authored tasks, reproducibility code and an explained interactive explorer.

@@ -1,5 +1,1 @@
-The current scientific explanation is [RESEARCH_REPORT.md](RESEARCH_REPORT.md). This entry preserves older links; the main report and its linked appendices are the single current account.
-
-
----
-Wiktor Tomasik · measurements: 1 November 2026 · publication updated: 2026-11-01T23:52:27+01:00
+The current account is [How a learned way of looking shapes a language model](RESEARCH_REPORT.md), consolidated through 3 November 2026 by Wiktor Tomasik. It integrates the mechanism and meaning studies in one chapter sequence. Other experiment reports remain dated supporting history.
