@@ -1353,8 +1353,8 @@
     },
     {
       "path": "RESEARCH_REPORT.md",
-      "bytes": 30806,
-      "sha256": "88975112b3de5599c36f3e3a530183dfe1634bfb352d1dc7aec97f0b46c7fa99"
+      "bytes": 30838,
+      "sha256": "8f446252f9824973affe8f40709af76244898d6ff1260feee20e36069c898b30"
     },
     {
       "path": "run_mean_control.py",
@@ -1538,18 +1538,18 @@
     },
     {
       "path": "study/index.html",
-      "bytes": 44563,
-      "sha256": "5659051bacbdb3a428c81bde653a1d056c7b4dba5fc15194c6e0060cd19f3d36"
+      "bytes": 44595,
+      "sha256": "ce3742129a5c44d957223101d8f0aadf8fcc1c39d4c905befce5d884bb380673"
     },
     {
       "path": "study/RESEARCH_REPORT.md",
-      "bytes": 30758,
-      "sha256": "d7038b9892bfa34d9b97d88b8dbfcc3ca091c099979e56b105a2e1b94f170c24"
+      "bytes": 30790,
+      "sha256": "185cf5062fe34a6d66f635f28a4c6911d98db9208fdc353c516208f7977e1685"
     },
     {
       "path": "study/style.css",
-      "bytes": 6089,
-      "sha256": "3593f1a32017211c60de87b98778a513ba30c6d670f0e3a615a50509ac2d92dd"
+      "bytes": 6167,
+      "sha256": "009c68ff415a11fee57d066138e77fb397ed04c1a9eeae81a34b7a028e0ef922"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
