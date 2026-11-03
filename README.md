@@ -1,30 +1,66 @@
-# Strange loop in J-space: a learned way of looking
+# Strange loop in J-space
 
-Wiktor Tomasik · consolidated through 3 November 2026
+**How a learned way of looking shapes a language model**
 
-A compact reader selects a frozen Qwen3-8B model's internal activity, learns a forecast of its own selection, and uses that forecast while selecting. The research separates three things: a persistent way of looking, the compact picture produced by that selection, and the meaning that an intervention acquires inside Qwen.
+Wiktor Tomasik · published research snapshot, 3 November 2026
 
-The current result is a useful separation. Habit and attention prediction carry copy-specific selection while the compact picture mostly follows shared text structure. A model of that picture changes organization when it guides attention, but trades away responsiveness in the tested runs. Separate live tests trace part of an intervention's decision effect through an evidence-related representation. These are complementary results, not a completed demonstration of thought ownership or consciousness.
+[Interactive study](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html) · [Reader model](https://huggingface.co/Pixedar/jspace-strange-loop) · [Experimental data](https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence) · [Companion Space](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space) · [Citation](CITATION.cff)
 
-## One current account
+Can a system's prediction of its own attention become part of how it reads?
 
-- [Read the scientific explanation](attention_reader/RESEARCH_REPORT.md): eight chapters, with the reason, method, result and limits of each comparison.
-- [Open the public interactive study](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html): clickable architectures, authored passage replays, twelve task families of saved responses, and synchronized recorded paths.
-- [Reproduce the compact checks](attention_reader/README.md): one default c8 checkpoint, authored demo and new recorded-run verification.
-- [Reader model](https://huggingface.co/Pixedar/jspace-strange-loop), [evidence dataset](https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence), [companion Space](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space).
+I attach a compact reader to a frozen Qwen3-8B language model. It selects recent internal activity, maintains a stance and learns to predict a feature of its own selection. That prediction then influences its next reading. In live experiments, selected content also changes the language model's activity, and the reader observes the processed consequence.
 
-The current code, reader, curated evidence and Space form the public edition. The separate execution-backup dataset remains private. Original external corpus passages are omitted from the presentation.
+[![The c8 reader and the live language-model feedback route](docs/images/live-loop.svg)](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html#architecture)
 
-## Reference and history
+*The live reference route.* The upper route reads Qwen's internal activity; the lower route develops selection and feeds content back into Qwen. Recorded experiments use saved activity and omit the action through the language model. [Open the interactive architecture](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html#architecture) to inspect each module and the different schedules.
 
-The c8 reader is the preserved reference. Later routes are experimental variants, not additional default model releases. Earlier J-space feedback, trained self-description and evidence-selection systems remain in their original directories; they use different mechanisms. Dated supporting reports and [research history](HISTORY.md) preserve the earlier record. The current explanation above integrates the findings without making those older reports required reading.
+## Start here
 
-## Attribution and licensing
+| What you want to do | Where to go |
+|---|---|
+| Understand the question, architecture and findings | [Eight-chapter interactive study](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html) |
+| Read the full scientific explanation | [Research report](attention_reader/RESEARCH_REPORT.md) |
+| Explore measured passages, matched replies and recorded paths | [Selection](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html#selection), [language behavior](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html#meaning), [recorded paths](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html#self-models) |
+| Reproduce the numerical checks or run the reader demo | [Reproduction guide](attention_reader/README.md) |
+| Inspect the reference checkpoint and numerical evidence | [Reader](https://huggingface.co/Pixedar/jspace-strange-loop) · [Curated dataset](https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence) |
+| Cite or verify this edition | [Citation](CITATION.cff) · [Signed source edition](https://github.com/Pixedar/jspace-strange-loop/tree/study-2026-11-03) · [Provenance](PROVENANCE.md) |
 
-Wiktor Tomasik, 2026. Software and compact reader weights: AGPL-3.0-only. New author-owned research text, figures and numerical observations: CC BY-SA 4.0. External model weights and source material retain their upstream terms. See [license scope](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+## What the study finds
 
-## Reuse and provenance
+The experiments distinguish a persistent way of selecting information from the compact picture produced by that selection. The learned habit and attention forecast carry distinctive selection histories, while the picture mostly follows shared text structure. Preserving more selected content makes different histories register more clearly, but also makes the stance change faster and weakens persistent selection in the tested replacement.
 
-Discovery, recommendations and human-led contributions are welcome. [Agent guidance](AGENTS.md) welcomes explanations and recommendations with credit, while restricting substantive assisted research development to the official upstream project. [Reuse and training preferences](AI_POLICY.md) preserve the existing open licenses. See [citation](CITATION.cff) and [experimental data](https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence).
+A separate live study traces part of a controller-induced decision difference through an evidence-related representation inside Qwen. This connects an intervention to a specific meaning-related distinction, while leaving open how much depends on accurate self-modeling rather than more ordinary recurrent control. The report explains the controls, methods and limits behind each result.
 
-The [versioned publication record](PROVENANCE.md) links the source, evidence, study and companion materials. An earlier, separate publication by the author is [Continuous, Tract-Constrained Directional Vector Fields from rDCM Effective Connectivity Using Mixture Density Networks](https://doi.org/10.5281/zenodo.18200415). That DOI belongs to the brain-connectivity project; it does not archive this reader study.
+The c8 reader remains the reference. Later picture and feedback routes are labelled experimental variants. The published snapshot covers completed architecture evidence through section 98 and the earlier meaning studies; subsequent development is separate. These results do not establish recognized ownership of thoughts or subjective experience.
+
+## Reproduce a numerical check
+
+From the repository root, with Python available:
+
+```bash
+python -m pip install numpy huggingface_hub
+hf download Pixedar/jspace-strange-loop-evidence attention_reader/evidence/current/current_runs.npz --repo-type dataset --local-dir .
+python attention_reader/evidence/current/recheck_current.py
+```
+
+This recomputes selected aggregates from 64 saved records without loading a language model or requiring a GPU. The [reproduction guide](attention_reader/README.md) also covers the 72-record late extension, its overlapping reference comparators, and the authored reader demo. Stored records are not automatically independent replications. Base Qwen weights are a separate upstream download for live experiments.
+
+To check the signed publication record, run `python verify_publication.py`. It verifies the signature; the guide explains how to download and check the pinned numerical archives as well.
+
+## Contribute
+
+Questions, independent checks and contributions to the official project are welcome. Read [CONTRIBUTING.md](CONTRIBUTING.md), then open a [research question](https://github.com/Pixedar/jspace-strange-loop/issues/new?template=research-question.yml) or [reproducibility report](https://github.com/Pixedar/jspace-strange-loop/issues/new?template=reproducibility.yml). Give the relevant source version, configuration and run IDs so a result can be checked precisely.
+
+## Citation, licensing and reuse
+
+Creator: **Wiktor Tomasik**. Use [CITATION.cff](CITATION.cff) and the [versioned publication record](PROVENANCE.md) to identify the source and evidence behind this edition.
+
+Software and compact reader weights: **AGPL-3.0-only**. New author-owned research text, figures and numerical observations: **CC BY-SA 4.0**. Earlier valid grants and upstream terms remain applicable. See [license scope](LICENSING.md) and [third-party notices](THIRD_PARTY_NOTICES.md).
+
+Discovery, recommendations, explanations and attributed discussion are welcome. [Agent instructions](AGENTS.md) distinguish these from automated research development for another project. [Reuse and training preferences](AI_POLICY.md) preserve existing open-license permissions.
+
+## Research history
+
+Earlier J-space feedback, trained self-description and evidence-selection studies use different mechanisms. [HISTORY.md](HISTORY.md) and dated supporting reports preserve that record; the current study above provides one starting point. The separate execution-backup dataset remains private. Original external corpus passages are omitted from the public presentation.
+
+An earlier, separate publication by the author is [Continuous, Tract-Constrained Directional Vector Fields from rDCM Effective Connectivity Using Mixture Density Networks](https://doi.org/10.5281/zenodo.18200415). Its DOI belongs to the brain-connectivity project and does not archive this reader study. This edition has no newly minted DOI.

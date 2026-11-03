@@ -16,7 +16,7 @@ python reproduce.py --states demo/states.npz --out results/demo --steps 468 --wa
 
 All four copies receive identical histories and should remain identical. This checks symmetry, not the emergence of individuality. Base Qwen weights are a separate upstream download for live experiments.
 
-Reaggregate the 64 new recorded runs without a GPU. From the repository root, download the numerical archive from the private evidence dataset (authenticated access is required while it remains private):
+Reaggregate the 64 new recorded runs without a GPU. From the repository root, download the numerical archive from the public curated evidence dataset:
 
 ```bash
 hf download Pixedar/jspace-strange-loop-evidence attention_reader/evidence/current/current_runs.npz --repo-type dataset --local-dir .
@@ -25,4 +25,11 @@ python attention_reader/evidence/current/recheck_current.py
 
 `evidence/current/` contains run configurations, expected aggregates, source snapshots and the archive checksum; the large unchanged-field archive is hosted on the evidence dataset. `study/data/` contains display exports and actual generated replies. The [methods chapter](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html#methods) explains experimental units, reference checks and interpretive limits. Earlier code/results remain available as dated supporting evidence rather than alternative current reports.
 
-The completed late-evening extension is in `evidence/late/`. Download `attention_reader/evidence/late/late_runs.npz` from the evidence dataset, then run `python attention_reader/evidence/late/recheck_late.py`. It checks 72 matched records, including 24 overlapping reference comparators, rather than claiming 72 independent replications.
+The completed late-evening extension is in `evidence/late/`. From the repository root:
+
+```bash
+hf download Pixedar/jspace-strange-loop-evidence attention_reader/evidence/late/late_runs.npz --repo-type dataset --local-dir .
+python attention_reader/evidence/late/recheck_late.py
+```
+
+This checks 72 matched records, including 24 overlapping reference comparators. Those records must not be counted as 72 independent replications.
