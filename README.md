@@ -1,14 +1,14 @@
 # Strange loop in J-space
 
-**How a learned way of looking shapes a language model**
+**Self-modeling of attention in a language-model feedback loop**
 
 Wiktor Tomasik · published research snapshot, 3 November 2026
 
 [Interactive study](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html) · [Reader model](https://huggingface.co/Pixedar/jspace-strange-loop) · [Experimental data](https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence) · [Companion Space](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space) · [Citation](CITATION.cff)
 
-Can a system's prediction of its own attention become part of how it reads?
+The project starts from a question about self-understanding. Can a system learn something about how it processes information and use that knowledge to change what it does next? Attention schema theory offers one concrete example: a simplified model of attention might help regulate attention itself.
 
-I attach a compact reader to a frozen Qwen3-8B language model. It selects recent internal activity, maintains a stance and learns to predict a feature of its own selection. That prediction then influences its next reading. In live experiments, selected content also changes the language model's activity, and the reader observes the processed consequence.
+Here the self-model belongs to a small reader attached to Qwen3-8B. The reader assigns weights to recent internal activity and learns to predict which features its own weighting will emphasize. That prediction helps set the next weights. In live tests the reader also feeds selected information back into Qwen, whose updated activity supplies the reader with new input. Qwen’s weights stay fixed. The experiments test how these loops affect selection, what information is carried forward, and which changes reach language output.
 
 [![The c8 reader and the live language-model feedback route](docs/images/live-loop.svg)](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html#architecture)
 

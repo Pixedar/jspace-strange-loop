@@ -36,10 +36,231 @@ const semanticNotes={pump:'Two display panels share one sensor, so agreement may
 function renderSemantic(){if(!semantic||!semanticTasks)return;let scene=semanticTasks.scenes.find(x=>x.id===$('semanticScene').value),match=r=>r.scene===scene.id&&r.history===10&&r.sampling_seed===202;let a=semantic.find(r=>match(r)&&r.condition===$('semanticCondition').value&&r.copy===+$('semanticCopy').value),b=semantic.find(r=>match(r)&&r.condition==='unchanged');$('semanticPrompt').textContent=scene.context+'\nOptions: '+scene.options.seek+'; '+scene.options.close;$('semanticChanged').textContent=a?a.text:'No saved reply for this combination.';$('semanticBaseline').textContent=b?b.text:'No saved baseline for this combination.';$('semanticAnalysis').textContent=(semanticNotes[scene.family]||'Compare whether the reply applies the stated evidence rule, not just whether it mentions checking.')+' These are displayed cases from the frozen reference; they do not establish a new capability of the 3 November interpretation route.';reportHeight()}
 Promise.all([data('semantic_generations'),data('tasks')]).then(([a,b])=>{semantic=a;semanticTasks=b;b.scenes.filter(s=>s.wording==='original').forEach(s=>$('semanticScene').add(new Option(s.name+' · '+(s.ready?'rule satisfied':'another check needed'),s.id)));renderSemantic()}).catch(showError);['semanticScene','semanticCopy','semanticCondition'].forEach(id=>$(id).onchange=renderSemantic);
 
-let paths,pathTimer=null,yaw=.7,pitch=-.35;const colors=['#167080','#bf7044','#8466a6','#4b915d'];
-function project(p){let a=p[0]*Math.cos(yaw)+p[2]*Math.sin(yaw),z=-p[0]*Math.sin(yaw)+p[2]*Math.cos(yaw);return[a,p[1]*Math.cos(pitch)-z*Math.sin(pitch)]}
-function drawPaths(){if(!paths)return;let s=paths[$('pathLife').value],arm=$('pathArm').value,t=+$('pathTime').value;$('pathPosition').textContent=t;for(const key of ['stance','picture','selected_content']){let d=s[key],cv=$('canvas-'+key),rect=cv.getBoundingClientRect();if(rect.width<1)continue;let ratio=devicePixelRatio||1;cv.width=Math.round(rect.width*ratio);cv.height=Math.round(rect.height*ratio);let ctx=cv.getContext('2d');ctx.scale(ratio,ratio);let w=rect.width,h=rect.height;ctx.clearRect(0,0,w,h);let flat=Object.values(d.coords).flat(2),range=Math.max(1e-5,...flat.map(p=>Math.hypot(...p)))*1.1,scale=Math.min(w,h)*.37/range,to=p=>{let q=project(p);return[w/2+q[0]*scale,h/2-q[1]*scale]},points=d.coords[arm],n=Math.max(0,d.times.findLastIndex(v=>v<=t));ctx.font='10px system-ui';ctx.fillStyle='#7d8f91';for(let a=0;a<3;a++){let q=[0,0,0];q[a]=range*.75;let p=to(q);ctx.beginPath();ctx.moveTo(w/2,h/2);ctx.lineTo(...p);ctx.strokeStyle='#ccd7d1';ctx.stroke();ctx.fillText('PC'+(a+1),p[0]+2,p[1])}for(let copy=0;copy<4;copy++){ctx.beginPath();for(let i=0;i<=n;i++){let p=to(points[i][copy]);if(i===0)ctx.moveTo(...p);else ctx.lineTo(...p)}ctx.strokeStyle=colors[copy];ctx.globalAlpha=.8;ctx.lineWidth=1.6;ctx.stroke();let p=to(points[n][copy]);ctx.globalAlpha=1;ctx.fillStyle=colors[copy];ctx.beginPath();ctx.arc(...p,3.1,0,Math.PI*2);ctx.fill()}$('variance-'+key).textContent=(100*d.variance_retained).toFixed(1)+'% of displayed variation retained'} }
-data('recorded_paths').then(d=>{paths=d;requestAnimationFrame(drawPaths)}).catch(showError);['pathLife','pathArm','pathTime'].forEach(id=>$(id).oninput=drawPaths);$('pathPlay').onclick=()=>{if(pathTimer){clearInterval(pathTimer);pathTimer=null;$('pathPlay').textContent='Play'}else{$('pathPlay').textContent='Pause';pathTimer=setInterval(()=>{let v=+$('pathTime').value;$('pathTime').value=v>=2990?300:v+10;drawPaths()},130)}};
-for(const cv of document.querySelectorAll('.path-panel canvas')){let last=null;cv.onpointerdown=e=>{last=[e.clientX,e.clientY];cv.setPointerCapture(e.pointerId)};cv.onpointermove=e=>{if(!last)return;yaw+=(e.clientX-last[0])*.01;pitch+=(e.clientY-last[1])*.01;last=[e.clientX,e.clientY];drawPaths()};cv.onpointerup=()=>last=null;cv.onpointercancel=()=>last=null}
-window.addEventListener('resize',drawPaths);
+const pathSignals = ['stance', 'picture', 'selected_content'];
+const pathColors = ['#167080', '#ad532d', '#7756a1', '#337348'];
+const initialView = {yaw: .64, pitch: .43};
+const trailLength = 500;
+const axisNames = ['X', 'Y', 'Z'];
+const textColors = {dialogue: '#a6cfd0', expository: '#d2daca', news: '#adbed8', story: '#d6b5db', reports: '#ebcb9c'};
+const view = {...initialView};
+let pathData, pathProfiles, pathTimer, pathFrame;
+
+function projectPoint(point) {
+  const [x, y, z] = point;
+  const horizontal = x * Math.cos(view.yaw) + z * Math.sin(view.yaw);
+  const depth = -x * Math.sin(view.yaw) + z * Math.cos(view.yaw);
+  return [
+    horizontal,
+    y * Math.cos(view.pitch) - depth * Math.sin(view.pitch),
+    y * Math.sin(view.pitch) + depth * Math.cos(view.pitch),
+  ];
+}
+
+function cameraBounds(signal, route, time, copies, detail) {
+  if (!detail) return {center: [0, 0, 0], radius: signal.radius};
+  const points = signal.coords[route].flatMap((frame, i) =>
+    signal.ends[i] > time - trailLength && signal.ends[i] <= time
+      ? copies.map(copy => frame[copy]) : []
+  );
+  const center = axisNames.map((_, i) => (Math.min(...points.map(p => p[i])) + Math.max(...points.map(p => p[i]))) / 2);
+  const radius = Math.max(signal.radius * .06, ...points.map(p => Math.hypot(...p.map((v, i) => v - center[i]))));
+  return {center, radius};
+}
+
+function drawAxes(ctx, w, h) {
+  const origin = [34, h - 34];
+  ctx.font = '600 11px system-ui';
+  axisNames.forEach((name, i) => {
+    const [x, y] = projectPoint(axisNames.map((_, axis) => axis === i ? 22 : 0));
+    const end = [origin[0] + x, origin[1] - y];
+    ctx.beginPath();
+    ctx.moveTo(...origin);
+    ctx.lineTo(...end);
+    ctx.strokeStyle = '#8aa09e';
+    ctx.lineWidth = 1;
+    ctx.stroke();
+    ctx.fillStyle = '#445f63';
+    ctx.fillText(name, end[0] + Math.sign(x) * 4 - 3, end[1] - Math.sign(y) * 4 + 3);
+  });
+  ctx.strokeStyle = '#dce7e3';
+  ctx.strokeRect(.5, .5, w - 1, h - 1);
+}
+
+function drawSignal(key, signal, route, time, focus, detail) {
+  const canvas = $('canvas-' + key);
+  const {width: w, height: h} = canvas.getBoundingClientRect();
+  if (!w || !h) return;
+  const ratio = Math.min(window.devicePixelRatio || 1, 2);
+  const width = Math.round(w * ratio);
+  const height = Math.round(h * ratio);
+  if (canvas.width !== width || canvas.height !== height) {
+    canvas.width = width;
+    canvas.height = height;
+  }
+  const ctx = canvas.getContext('2d');
+  ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+  ctx.clearRect(0, 0, w, h);
+  drawAxes(ctx, w, h);
+  const n = signal.ends.findLastIndex(t => t <= time);
+  if (n < 0) {
+    $('sample-' + key).textContent = 'First complete block ends at 399';
+    return;
+  }
+
+  const copies = detail && focus !== 'all' ? [Number(focus)] : [0, 1, 2, 3];
+  const {center, radius} = cameraBounds(signal, route, time, copies, detail);
+  const scale = Math.min(w - 58, h - 60) / (2 * radius);
+  const toScreen = p => {
+    const [x, y, z] = projectPoint(p.map((v, i) => v - center[i]));
+    return [w / 2 + x * scale, h / 2 - y * scale, z];
+  };
+  const frames = signal.coords[route];
+  const recent = signal.ends.findIndex(t => t > time - trailLength);
+  const first = detail ? recent : 0;
+  const emphasized = copy => focus === 'all' || Number(focus) === copy;
+  const order = copies.sort((a, b) => Number(emphasized(a)) - Number(emphasized(b)));
+  const heads = [];
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  for (const copy of order) {
+    const active = emphasized(copy);
+    const points = frames.slice(first, n + 1).map(frame => toScreen(frame[copy]));
+    for (let j = 1; j < points.length; j++) {
+      const age = time - signal.ends[first + j];
+      const freshness = Math.max(0, 1 - age / trailLength);
+      ctx.globalAlpha = active ? .09 + .64 * freshness : .06 + .20 * freshness;
+      ctx.lineWidth = active ? 1.1 + 1.6 * freshness : 1;
+      ctx.strokeStyle = pathColors[copy];
+      ctx.beginPath();
+      ctx.moveTo(points[j - 1][0], points[j - 1][1]);
+      ctx.lineTo(points[j][0], points[j][1]);
+      ctx.stroke();
+    }
+    heads.push({copy, point: points.at(-1), active});
+  }
+
+  // Draw heads after every trail so revisiting the same region never hides the current state.
+  heads.sort((a, b) => Number(a.active) - Number(b.active) || a.point[2] - b.point[2]);
+  for (const {copy, point: [x, y], active} of heads) {
+    ctx.globalAlpha = active ? 1 : .55;
+    ctx.beginPath();
+    ctx.arc(x, y, active ? 6.5 : 4.5, 0, 2 * Math.PI);
+    ctx.fillStyle = pathColors[copy];
+    ctx.fill();
+    ctx.strokeStyle = 'white';
+    ctx.lineWidth = 2;
+    ctx.stroke();
+    if (active && focus !== 'all') {
+      ctx.font = '700 12px system-ui';
+      ctx.lineWidth = 3;
+      ctx.strokeText(String(copy + 1), x + 10, y + 4);
+      ctx.fillStyle = '#203f44';
+      ctx.fillText(String(copy + 1), x + 10, y + 4);
+    }
+  }
+  ctx.globalAlpha = 1;
+  $('sample-' + key).textContent = key === 'selected_content'
+    ? 'Last completed block ' + signal.times[n] + '–' + signal.ends[n]
+    : 'Sample ' + signal.ends[n];
+}
+
+function drawPaths() {
+  if (!pathData || $('self-models').hidden) return;
+  const start = $('pathLife').value;
+  const route = $('pathArm').value;
+  const time = Number($('pathTime').value);
+  const detail = $('pathView').value === 'recent';
+  const genre = pathProfiles.text_spans.findLast(([begin]) => begin <= time)[1];
+  $('pathPosition').textContent = 'Observation ' + time.toLocaleString('en-US') + ' / 2,999';
+  $('pathGenre').textContent = genre === 'expository' ? 'Expository text' : genre[0].toUpperCase() + genre.slice(1);
+  $('pathTime').setAttribute('aria-valuetext', 'Observation ' + time + ', ' + genre);
+  for (const key of pathSignals) drawSignal(key, pathData[start][key], route, time, $('pathCopy').value, detail);
+}
+
+function queuePaths() {
+  if (pathFrame) return;
+  pathFrame = requestAnimationFrame(() => {
+    pathFrame = null;
+    drawPaths();
+  });
+}
+
+function updateAxisNotes() {
+  if (!pathProfiles) return;
+  const start = $('pathLife').value;
+  $('pathAxisStart').textContent = start;
+  for (const key of pathSignals) {
+    const pct = pathData[start][key].variance_retained * 100;
+    $('variance-' + key).textContent = pct.toFixed(1) + '% of original variation shown';
+  }
+  $('pathAxes').querySelectorAll('tbody').forEach(body => body.hidden = body.dataset.start !== start);
+}
+
+function pausePaths() {
+  if (pathTimer) clearInterval(pathTimer);
+  pathTimer = null;
+  $('pathPlay').textContent = Number($('pathTime').value) >= 2999 ? 'Replay' : 'Play';
+}
+
+function initializePaths(projections, profiles) {
+  for (const signals of Object.values(projections)) {
+    for (const [key, signal] of Object.entries(signals)) {
+      signal.ends = signal.times.map(t => key === 'selected_content' ? t + 99 : t);
+      signal.radius = Math.max(1e-5, ...Object.values(signal.coords).flat(2).map(p => Math.hypot(...p)));
+    }
+  }
+  pathData = projections;
+  pathProfiles = profiles;
+  for (const [i, [begin, label]] of profiles.text_spans.entries()) {
+    const end = profiles.text_spans[i + 1]?.[0] ?? 3000;
+    const span = document.createElement('span');
+    span.style.flex = String(end - begin);
+    span.style.background = textColors[label];
+    span.title = label + ' · observations ' + begin + '–' + (end - 1);
+    $('pathGenres').append(span);
+  }
+  updateAxisNotes();
+  queuePaths();
+}
+
+Promise.all([data('recorded_paths'), data('path_axis_profiles')])
+  .then(([projections, profiles]) => initializePaths(projections, profiles)).catch(showError);
+for (const id of ['pathArm', 'pathCopy', 'pathView']) $(id).addEventListener('change', queuePaths);
+$('pathLife').addEventListener('change', () => { updateAxisNotes(); queuePaths(); });
+$('pathTime').addEventListener('input', () => { pausePaths(); queuePaths(); });
+$('pathPlay').onclick = () => {
+  if (pathTimer) return pausePaths();
+  if (Number($('pathTime').value) >= 2999) $('pathTime').value = 300;
+  $('pathPlay').textContent = 'Pause';
+  queuePaths();
+  pathTimer = setInterval(() => {
+    if ($('self-models').hidden || document.hidden) return pausePaths();
+    const time = Math.min(2999, Number($('pathTime').value) + 10);
+    $('pathTime').value = time;
+    queuePaths();
+    if (time === 2999) pausePaths();
+  }, 85);
+};
+$('pathJump').onclick = () => { $('pathTime').value = 820; pausePaths(); queuePaths(); };
+$('pathReset').onclick = () => { Object.assign(view, initialView); queuePaths(); };
+$('pathRotate').onclick = () => { view.yaw += Math.PI / 4; queuePaths(); };
+for (const canvas of document.querySelectorAll('.path-panel canvas')) {
+  let drag;
+  canvas.onpointerdown = event => {
+    if (!event.isPrimary) return;
+    drag = [event.clientX, event.clientY];
+    canvas.setPointerCapture(event.pointerId);
+  };
+  canvas.onpointermove = event => {
+    if (!drag || !event.isPrimary) return;
+    view.yaw += (event.clientX - drag[0]) * .01;
+    view.pitch = Math.max(-1.45, Math.min(1.45, view.pitch + (event.clientY - drag[1]) * .01));
+    drag = [event.clientX, event.clientY];
+    queuePaths();
+  };
+  canvas.onlostpointercapture = () => { drag = null; };
+}
+window.addEventListener('resize', queuePaths);
+
+
 function showError(e){console.error(e);let p=document.createElement('p');p.className='surface';p.textContent='An evidence file could not be loaded. Serve the directory over HTTP or open the hosted study. '+e.message;$('main').append(p);reportHeight()}

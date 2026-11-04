@@ -1743,8 +1743,8 @@
     },
     {
       "path": "REPORT.md",
-      "bytes": 286,
-      "sha256": "a97d6c2871d0eee9610bc6d5035b2406c726e86a7b9267c179da907a99bfd3ff"
+      "bytes": 294,
+      "sha256": "ce1b8caef16f8e5c7c231a946076cbfa70dbd13cdf929c4e54298a176d3dcc49"
     },
     {
       "path": "reproduce.py",
@@ -1763,8 +1763,8 @@
     },
     {
       "path": "RESEARCH_REPORT.md",
-      "bytes": 36342,
-      "sha256": "f27df3468b988f2d4922e46a7355da1e09275917d710b29cead40e8379517700"
+      "bytes": 38402,
+      "sha256": "0c30b111a080a02682160eb0c39ca8b7193b2302814200a13a37aaf5fa905ef0"
     },
     {
       "path": "run_mean_control.py",
@@ -1793,8 +1793,8 @@
     },
     {
       "path": "study/app.js",
-      "bytes": 16037,
-      "sha256": "da6d85b3bc12d8aeae3ad42d6335fb08cb602a1e3cc1a85358f71db25fa70b2a"
+      "bytes": 22877,
+      "sha256": "9bc4f2ce10c64aba87f487cd542bf6fdb7d516ca7676376ca720d990a19d420b"
     },
     {
       "path": "study/assets/02-exchange-and-repair.png",
@@ -1983,23 +1983,28 @@
     },
     {
       "path": "study/index.html",
-      "bytes": 52184,
-      "sha256": "1388c96fbc09db5c39904c184753aa680b64ac88aeb545c3b5a4adce1ccc10fa"
+      "bytes": 60368,
+      "sha256": "8a1913b88a7d371ad087ca97bcd0eeed7977e7aaab43763a2d41f451d24866eb"
     },
     {
       "path": "study/RESEARCH_REPORT.md",
-      "bytes": 36282,
-      "sha256": "4b55c08c7e81d5bb6158a06f819fd424af748b5c245e5e047cd410cdddf648ef"
+      "bytes": 38342,
+      "sha256": "f07eda2428fe8f5bdc40b7f1b9dba2d27d4e0cb30932d51d693d5420977c84d0"
     },
     {
       "path": "study/style.css",
-      "bytes": 6167,
-      "sha256": "009c68ff415a11fee57d066138e77fb397ed04c1a9eeae81a34b7a028e0ef922"
+      "bytes": 8803,
+      "sha256": "bb016ba015a078d02c189935ccd21300c1113cee164a30be045229c7ccafcc97"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
       "bytes": 1836,
       "sha256": "fd0017c68eb299d97189ce9980daa8519552781ee69c893bebafb6a606fb911b"
+    },
+    {
+      "path": "study/data/path_axis_profiles.json",
+      "bytes": 5461,
+      "sha256": "b04be0fa21b465c34a470070afac84a342b60403249c5d65c426fff626b9b439"
     }
   ]
 }

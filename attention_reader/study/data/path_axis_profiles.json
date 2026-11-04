@@ -1,0 +1,248 @@
+{
+  "author": "Wiktor Tomasik",
+  "projection_sha256": "0346a7d95d56e192b49f08da5c809ff32e1825209c5b25b9c122aa6500ab6db8",
+  "runs": {
+    "pj_c8_SIx_seed10": "f94638ef1addfca6c7d6a6af382c49bbd9c8ab9d1de03fd83d0e16ae839bb896",
+    "pk_c8_L25_seed10": "b01039b3d2220c98435cbbdd134310488b17ca0e41a7491a310a043373780ae3",
+    "pk_c8_L_seed10": "1332f2b697de25d8576e18d3f267f97f9dffc99784958b65864245e234225e63",
+    "pj_c8_SIx_seed12": "7b183e605779cb3e60a5f236f2450b7a6f83570a3bd9efdac2ee4142c6b9a253",
+    "pk_c8_L25_seed12": "088e0c2d077211b695035e402dfeb47a63b8bc337a75c67d9a2586053f3cabd2",
+    "pk_c8_L_seed12": "aaa013c10211f4968aaccb9491e32a1abc8a19492700444aace75a6370898a8c"
+  },
+  "text_spans": [
+    [
+      300,
+      "dialogue"
+    ],
+    [
+      350,
+      "expository"
+    ],
+    [
+      667,
+      "news"
+    ],
+    [
+      868,
+      "story"
+    ],
+    [
+      1427,
+      "expository"
+    ],
+    [
+      1849,
+      "reports"
+    ],
+    [
+      2080,
+      "story"
+    ],
+    [
+      2619,
+      "dialogue"
+    ],
+    [
+      2749,
+      "news"
+    ]
+  ],
+  "axes": {
+    "10": {
+      "stance": [
+        {
+          "route": 0.014,
+          "copy": 0.953,
+          "shared": 0.01,
+          "genre": 0.002,
+          "time": 0.008,
+          "low": "expository",
+          "high": "reports",
+          "trend": "rises"
+        },
+        {
+          "route": 0.041,
+          "copy": 0.066,
+          "shared": 0.326,
+          "genre": 0.289,
+          "time": 0.001,
+          "low": "expository",
+          "high": "story",
+          "trend": "rises"
+        },
+        {
+          "route": 0.072,
+          "copy": 0.13,
+          "shared": 0.17,
+          "genre": 0.031,
+          "time": 0.147,
+          "low": "dialogue",
+          "high": "expository",
+          "trend": "falls"
+        }
+      ],
+      "picture": [
+        {
+          "route": 0.0,
+          "copy": 0.0,
+          "shared": 0.981,
+          "genre": 0.921,
+          "time": 0.031,
+          "low": "news",
+          "high": "story",
+          "trend": "rises"
+        },
+        {
+          "route": 0.061,
+          "copy": 0.066,
+          "shared": 0.279,
+          "genre": 0.013,
+          "time": 0.001,
+          "low": "story",
+          "high": "reports",
+          "trend": "rises"
+        },
+        {
+          "route": 0.064,
+          "copy": 0.074,
+          "shared": 0.597,
+          "genre": 0.038,
+          "time": 0.005,
+          "low": "dialogue",
+          "high": "reports",
+          "trend": "rises"
+        }
+      ],
+      "selected_content": [
+        {
+          "route": 0.0,
+          "copy": 0.889,
+          "shared": 0.0,
+          "genre": 0.0,
+          "time": 0.0,
+          "low": "dialogue",
+          "high": "expository",
+          "trend": "falls"
+        },
+        {
+          "route": 0.0,
+          "copy": 0.042,
+          "shared": 0.0,
+          "genre": 0.0,
+          "time": 0.0,
+          "low": "expository",
+          "high": "story",
+          "trend": "rises"
+        },
+        {
+          "route": 0.0,
+          "copy": 0.324,
+          "shared": 0.0,
+          "genre": 0.0,
+          "time": 0.0,
+          "low": "story",
+          "high": "reports",
+          "trend": "falls"
+        }
+      ]
+    },
+    "12": {
+      "stance": [
+        {
+          "route": 0.001,
+          "copy": 0.102,
+          "shared": 0.416,
+          "genre": 0.358,
+          "time": 0.036,
+          "low": "reports",
+          "high": "expository",
+          "trend": "falls"
+        },
+        {
+          "route": 0.022,
+          "copy": 0.544,
+          "shared": 0.141,
+          "genre": 0.126,
+          "time": 0.001,
+          "low": "story",
+          "high": "news",
+          "trend": "rises"
+        },
+        {
+          "route": 0.046,
+          "copy": 0.244,
+          "shared": 0.182,
+          "genre": 0.151,
+          "time": 0.0,
+          "low": "story",
+          "high": "expository",
+          "trend": "rises"
+        }
+      ],
+      "picture": [
+        {
+          "route": 0.001,
+          "copy": 0.01,
+          "shared": 0.949,
+          "genre": 0.885,
+          "time": 0.047,
+          "low": "news",
+          "high": "reports",
+          "trend": "rises"
+        },
+        {
+          "route": 0.021,
+          "copy": 0.316,
+          "shared": 0.107,
+          "genre": 0.049,
+          "time": 0.009,
+          "low": "story",
+          "high": "dialogue",
+          "trend": "rises"
+        },
+        {
+          "route": 0.003,
+          "copy": 0.19,
+          "shared": 0.12,
+          "genre": 0.024,
+          "time": 0.007,
+          "low": "dialogue",
+          "high": "expository",
+          "trend": "falls"
+        }
+      ],
+      "selected_content": [
+        {
+          "route": 0.0,
+          "copy": 0.636,
+          "shared": 0.0,
+          "genre": 0.0,
+          "time": 0.0,
+          "low": "dialogue",
+          "high": "news",
+          "trend": "falls"
+        },
+        {
+          "route": 0.0,
+          "copy": 0.29,
+          "shared": 0.0,
+          "genre": 0.0,
+          "time": 0.0,
+          "low": "expository",
+          "high": "dialogue",
+          "trend": "rises"
+        },
+        {
+          "route": 0.0,
+          "copy": 0.091,
+          "shared": 0.0,
+          "genre": 0.0,
+          "time": 0.0,
+          "low": "story",
+          "high": "expository",
+          "trend": "falls"
+        }
+      ]
+    }
+  }
+}

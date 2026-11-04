@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 message: "Please cite this software and research study when using it."
-title: "Strange loop in J-space: how a learned way of looking shapes a language model"
+title: "Strange loop in J-space: Self-modeling of attention in a language-model feedback loop"
 authors:
   - family-names: Tomasik
     given-names: Wiktor

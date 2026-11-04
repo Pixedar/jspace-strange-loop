@@ -1,1 +1,1 @@
-The current account is [How a learned way of looking shapes a language model](RESEARCH_REPORT.md), consolidated through 3 November 2026 by Wiktor Tomasik. It integrates the mechanism and meaning studies in one chapter sequence. Other experiment reports remain dated supporting history.
+The current account is [Self-modeling of attention in a language-model feedback loop](RESEARCH_REPORT.md), consolidated through 3 November 2026 by Wiktor Tomasik. It integrates the mechanism and meaning studies in one chapter sequence. Other experiment reports remain dated supporting history.
