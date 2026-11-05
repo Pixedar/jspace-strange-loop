@@ -6,6 +6,17 @@ Wiktor Tomasik · published research snapshot, 3 November 2026
 
 [Interactive study](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html) · [Reader model](https://huggingface.co/Pixedar/jspace-strange-loop) · [Experimental data](https://huggingface.co/datasets/Pixedar/jspace-strange-loop-evidence) · [Companion Space](https://huggingface.co/spaces/Pixedar/strange-loop-in-j-space) · [Citation](CITATION.cff)
 
+## Two paths into self-modeling
+
+Wiktor Tomasik · external reader snapshot, 3 November 2026 · Internal Mirror experiments begun 4–5 November 2026
+
+- **The external attention reader** learns what its own selection tends to emphasize and feeds the forecast back into selection. Different selection habits could persist even when the compact pictures mostly followed the same text. The original architecture, visualizations and eight chapters are below.
+- **J-space Internal Mirror** lets Qwen interpret a word readout of its own activity and choose changes through an instrument. Qwen learned to forecast that the “own workspace” label weakened a word’s influence, yet kept choosing as though the label strengthened it. At 8B, quoting its own conclusion at decision time changed strong-word choices in 27 of 36 runs. One run adopted “strangers” from a readout shaped by its earlier interventions.
+
+The two routes separate a persistent way of looking, an explicit description of what happens, and using that description to decide. In the external reader a forecast acts inside the selection rule. In Internal Mirror a description acts through the choice prompt. [Read the illustrated comparison](https://pixedar.github.io/projects/self-awareness/attention-reader/study/index.html#two-research-paths) · [Internal Mirror code and results](https://github.com/Pixedar/jspace-internal-mirror) · [Companion evidence DOI, reserved](https://doi.org/10.5281/zenodo.23989888)
+
+## The external attention reader
+
 The project starts from a question about self-understanding. Can a system learn something about how it processes information and use that knowledge to change what it does next? Attention schema theory offers one concrete example: a simplified model of attention might help regulate attention itself.
 
 Here the self-model belongs to a small reader attached to Qwen3-8B. The reader assigns weights to recent internal activity and learns to predict which features its own weighting will emphasize. That prediction helps set the next weights. In live tests the reader also feeds selected information back into Qwen, whose updated activity supplies the reader with new input. Qwen’s weights stay fixed. The experiments test how these loops affect selection, what information is carried forward, and which changes reach language output.
